@@ -25,6 +25,8 @@
 		167D92D81AF455BE00658E19 /* VpProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92C11AF455BE00658E19 /* VpProject.framework */; };
 		167D92D91AF455BE00658E19 /* VpProject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92C11AF455BE00658E19 /* VpProject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		167D92E01AF4651C00658E19 /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92721AF44E7B00658E19 /* DiagramElements.framework */; };
+		B02F3131F19F6A842F4E7C2F /* Primitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */; };
+		B02F335DD90932392B213890 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F380233C566D8903C545E /* Element.swift */; };
 		B02F398F99F10422DDA598A7 /* VpProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F36227CCA08C6FBEA11E1 /* VpProject.swift */; };
 		B02F3BCD5D45E713BE90C31F /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3EAA525458119BA5DB9A /* Document.swift */; };
 		B02F3C3EE0BA8C9E2E602E84 /* XMLParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A3D9DCC2A1660280BFB /* XMLParsingTest.swift */; };
@@ -123,8 +125,10 @@
 		167D92D31AF455BE00658E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167D92D41AF455BE00658E19 /* VpProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpProjectTests.swift; sourceTree = "<group>"; };
 		B02F36227CCA08C6FBEA11E1 /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
+		B02F380233C566D8903C545E /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = ../../../../sources/DiagramElements/Element.swift; sourceTree = "<group>"; };
 		B02F3A3D9DCC2A1660280BFB /* XMLParsingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParsingTest.swift; sourceTree = "<group>"; };
 		B02F3AD8A596BDBC1BF59290 /* XmlDocParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDocParser.swift; path = ../../../../sources/VpProject/XmlDocParser.swift; sourceTree = "<group>"; };
+		B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Primitive.swift; path = ../../../../sources/DiagramElements/Primitive.swift; sourceTree = "<group>"; };
 		B02F3EAA525458119BA5DB9A /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Document.swift; path = ../../../../sources/DiagramElements/Document.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +255,8 @@
 				167D92921AF44EB200658E19 /* DiagramLayers.swift */,
 				167D92941AF44EC800658E19 /* DiagramLayer.swift */,
 				B02F3EAA525458119BA5DB9A /* Document.swift */,
+				B02F380233C566D8903C545E /* Element.swift */,
+				B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */,
 			);
 			path = DiagramElements;
 			sourceTree = "<group>";
@@ -578,6 +584,8 @@
 				167D92931AF44EB200658E19 /* DiagramLayers.swift in Sources */,
 				167D92951AF44EC800658E19 /* DiagramLayer.swift in Sources */,
 				B02F3BCD5D45E713BE90C31F /* Document.swift in Sources */,
+				B02F335DD90932392B213890 /* Element.swift in Sources */,
+				B02F3131F19F6A842F4E7C2F /* Primitive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

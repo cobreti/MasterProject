@@ -11,6 +11,12 @@
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Document.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Document.swift" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Element.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Element.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Primitive.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Primitive.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/EmbeddedRes">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/EmbeddedRes" isTestSource="false" />
     </content>
