@@ -29,6 +29,8 @@ class XMLParsingTest : NSObject, NSXMLParserDelegate {
                 qualifiedName qName: String?,
                 attributes attributeDict: [NSObject:AnyObject]) {
 
+        debugPrintln("--> element name : \(elementName)")
+                    
         if let modelType = attributeDict["displayModelType"] as? String,
                 name = attributeDict["name"] as? String where modelType == "Class" {
             debugPrintln(" - \(elementName) --> \(name)")

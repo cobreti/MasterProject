@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import DiagramElements
+import VpProject
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -17,7 +19,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
 
-        var pt : XMLParsingTest = XMLParsingTest()
+//        var pt : XMLParsingTest = XMLParsingTest()
+
+        var proj = VpProject()
+
+
+        if let url = NSBundle.mainBundle().URLForResource("ProjectFV",
+                                                       withExtension: "xml",
+                                                       subdirectory: "EmbeddedRes/diagrams") {
+            proj.load(url)
+        }
+
+        debugPrintln("project loaded")
 
     }
 

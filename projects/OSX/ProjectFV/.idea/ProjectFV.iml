@@ -2,8 +2,26 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/DiagramLayer.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/DiagramLayer.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/DiagramLayers.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/DiagramLayers.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Document.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Document.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/EmbeddedRes">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/EmbeddedRes" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/VpProject.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/VpProject.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/XmlDocParser.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/XmlDocParser.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VppParser/VppParser.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VppParser/VppParser.swift" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

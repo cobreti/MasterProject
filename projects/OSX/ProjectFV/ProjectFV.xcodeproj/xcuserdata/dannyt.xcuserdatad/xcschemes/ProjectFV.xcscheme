@@ -34,6 +34,48 @@
                ReferencedContainer = "container:ProjectFV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "167D927B1AF44E7B00658E19"
+               BuildableName = "DiagramElementsTests.xctest"
+               BlueprintName = "DiagramElementsTests"
+               ReferencedContainer = "container:ProjectFV.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "167D92A41AF450C600658E19"
+               BuildableName = "VppParserTests.xctest"
+               BlueprintName = "VppParserTests"
+               ReferencedContainer = "container:ProjectFV.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "167D92CA1AF455BE00658E19"
+               BuildableName = "VpProjectTests.xctest"
+               BlueprintName = "VpProjectTests"
+               ReferencedContainer = "container:ProjectFV.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +91,36 @@
                BlueprintIdentifier = "165DFFCD1AEF0A7A003B8B44"
                BuildableName = "ProjectFVTests.xctest"
                BlueprintName = "ProjectFVTests"
+               ReferencedContainer = "container:ProjectFV.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "167D927B1AF44E7B00658E19"
+               BuildableName = "DiagramElementsTests.xctest"
+               BlueprintName = "DiagramElementsTests"
+               ReferencedContainer = "container:ProjectFV.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "167D92A41AF450C600658E19"
+               BuildableName = "VppParserTests.xctest"
+               BlueprintName = "VppParserTests"
+               ReferencedContainer = "container:ProjectFV.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "167D92CA1AF455BE00658E19"
+               BuildableName = "VpProjectTests.xctest"
+               BlueprintName = "VpProjectTests"
                ReferencedContainer = "container:ProjectFV.xcodeproj">
             </BuildableReference>
          </TestableReference>

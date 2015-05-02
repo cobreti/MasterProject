@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DiagramElements.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ProjectFV.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>VpProject.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>VppParser.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +33,36 @@
 			<true/>
 		</dict>
 		<key>165DFFCD1AEF0A7A003B8B44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>167D92711AF44E7B00658E19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>167D927B1AF44E7B00658E19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>167D929A1AF450C600658E19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>167D92A41AF450C600658E19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>167D92C01AF455BE00658E19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>167D92CA1AF455BE00658E19</key>
 		<dict>
 			<key>primary</key>
 			<true/>
