@@ -11,8 +11,13 @@ import Foundation
 
 public class DiagramLayers {
 
+    
     public func add( layer : DiagramLayer ) {
         _layers[layer.name] = layer
+    }
+    
+    public func get( name : String ) -> DiagramLayer! {
+        return _layers[name]
     }
     
     var _layers : [String : DiagramLayer] = [:]

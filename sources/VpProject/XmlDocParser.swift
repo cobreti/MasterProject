@@ -71,6 +71,7 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
     func onDiagram(attributeDict: [NSObject:AnyObject]) {
 
         if let name = attributeDict["name"] as? String {
+            debugPrintln("Diagram node of name : \(name)")
             var diag = DiagramLayer(name: name)
             _doc.layers.add(diag)
             currentDiagram = diag

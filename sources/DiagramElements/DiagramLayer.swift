@@ -28,6 +28,12 @@ public class DiagramLayer : DebugPrintable {
             return _name
         }
     }
+    
+    public var primitives : [Primitive] {
+        get {
+            return _primitives
+        }
+    }
 
     public init(name : String) {
         _name = name

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165C11361AF6B05100EC1A5E /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C11351AF6B05100EC1A5E /* DiagramView.swift */; };
+		165C11381AF6B08C00EC1A5E /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C11371AF6B08C00EC1A5E /* DiagramViewController.swift */; };
+		165C113C1AF6B1FA00EC1A5E /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C113B1AF6B1FA00EC1A5E /* MainWindow.swift */; };
+		165C113E1AF6B25B00EC1A5E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C113D1AF6B25B00EC1A5E /* MainWindowController.swift */; };
+		165C11401AF6B31800EC1A5E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165C113F1AF6B31800EC1A5E /* MainWindow.xib */; };
+		165C11421AF6B4BA00EC1A5E /* DiagramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165C11411AF6B4BA00EC1A5E /* DiagramView.xib */; };
 		165DFFC41AEF0A7A003B8B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DFFC31AEF0A7A003B8B44 /* AppDelegate.swift */; };
 		165DFFC61AEF0A7A003B8B44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165DFFC51AEF0A7A003B8B44 /* Images.xcassets */; };
 		165DFFC91AEF0A7A003B8B44 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165DFFC71AEF0A7A003B8B44 /* MainMenu.xib */; };
@@ -31,6 +37,7 @@
 		B02F3BCD5D45E713BE90C31F /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3EAA525458119BA5DB9A /* Document.swift */; };
 		B02F3C3EE0BA8C9E2E602E84 /* XMLParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A3D9DCC2A1660280BFB /* XMLParsingTest.swift */; };
 		B02F3F28D7FC80D771553403 /* XmlDocParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3AD8A596BDBC1BF59290 /* XmlDocParser.swift */; };
+		B02F3FE7E5029A8F4DA39CE2 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3686A6F8083BC92F7746 /* Application.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +108,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		165C11351AF6B05100EC1A5E /* DiagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramView.swift; path = DiagramView/DiagramView.swift; sourceTree = "<group>"; };
+		165C11371AF6B08C00EC1A5E /* DiagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewController.swift; path = DiagramView/DiagramViewController.swift; sourceTree = "<group>"; };
+		165C113B1AF6B1FA00EC1A5E /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWindow.swift; path = MainWindow/MainWindow.swift; sourceTree = "<group>"; };
+		165C113D1AF6B25B00EC1A5E /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWindowController.swift; path = MainWindow/MainWindowController.swift; sourceTree = "<group>"; };
+		165C113F1AF6B31800EC1A5E /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+		165C11411AF6B4BA00EC1A5E /* DiagramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiagramView.xib; path = Resources/DiagramView.xib; sourceTree = "<group>"; };
 		165DFFBE1AEF0A7A003B8B44 /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165DFFC21AEF0A7A003B8B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		165DFFC31AEF0A7A003B8B44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +138,7 @@
 		167D92D31AF455BE00658E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167D92D41AF455BE00658E19 /* VpProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpProjectTests.swift; sourceTree = "<group>"; };
 		B02F36227CCA08C6FBEA11E1 /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
+		B02F3686A6F8083BC92F7746 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		B02F380233C566D8903C545E /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = ../../../../sources/DiagramElements/Element.swift; sourceTree = "<group>"; };
 		B02F3A3D9DCC2A1660280BFB /* XMLParsingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParsingTest.swift; sourceTree = "<group>"; };
 		B02F3AD8A596BDBC1BF59290 /* XmlDocParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDocParser.swift; path = ../../../../sources/VpProject/XmlDocParser.swift; sourceTree = "<group>"; };
@@ -183,6 +197,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		165C11341AF6B02000EC1A5E /* DiagramView */ = {
+			isa = PBXGroup;
+			children = (
+				165C11351AF6B05100EC1A5E /* DiagramView.swift */,
+				165C11371AF6B08C00EC1A5E /* DiagramViewController.swift */,
+			);
+			name = DiagramView;
+			sourceTree = "<group>";
+		};
+		165C11391AF6B0EF00EC1A5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				165DFFC71AEF0A7A003B8B44 /* MainMenu.xib */,
+				165C113F1AF6B31800EC1A5E /* MainWindow.xib */,
+				165C11411AF6B4BA00EC1A5E /* DiagramView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		165C113A1AF6B1E400EC1A5E /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				165C113B1AF6B1FA00EC1A5E /* MainWindow.swift */,
+				165C113D1AF6B25B00EC1A5E /* MainWindowController.swift */,
+			);
+			name = MainWindow;
+			sourceTree = "<group>";
+		};
 		165DFFB51AEF0A7A003B8B44 = {
 			isa = PBXGroup;
 			children = (
@@ -212,12 +254,15 @@
 		165DFFC01AEF0A7A003B8B44 /* ProjectFV */ = {
 			isa = PBXGroup;
 			children = (
+				165C113A1AF6B1E400EC1A5E /* MainWindow */,
+				165C11391AF6B0EF00EC1A5E /* Resources */,
+				165C11341AF6B02000EC1A5E /* DiagramView */,
 				165DFFDE1AEF0CFC003B8B44 /* EmbeddedRes */,
 				165DFFC31AEF0A7A003B8B44 /* AppDelegate.swift */,
 				B02F3A3D9DCC2A1660280BFB /* XMLParsingTest.swift */,
 				165DFFC51AEF0A7A003B8B44 /* Images.xcassets */,
-				165DFFC71AEF0A7A003B8B44 /* MainMenu.xib */,
 				165DFFC11AEF0A7A003B8B44 /* Supporting Files */,
+				B02F3686A6F8083BC92F7746 /* Application.swift */,
 			);
 			path = ProjectFV;
 			sourceTree = "<group>";
@@ -516,7 +561,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165C11401AF6B31800EC1A5E /* MainWindow.xib in Resources */,
 				165DFFDF1AEF0CFC003B8B44 /* EmbeddedRes in Resources */,
+				165C11421AF6B4BA00EC1A5E /* DiagramView.xib in Resources */,
 				165DFFC61AEF0A7A003B8B44 /* Images.xcassets in Resources */,
 				165DFFC91AEF0A7A003B8B44 /* MainMenu.xib in Resources */,
 			);
@@ -564,8 +611,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165C11381AF6B08C00EC1A5E /* DiagramViewController.swift in Sources */,
+				165C113E1AF6B25B00EC1A5E /* MainWindowController.swift in Sources */,
+				165C11361AF6B05100EC1A5E /* DiagramView.swift in Sources */,
 				165DFFC41AEF0A7A003B8B44 /* AppDelegate.swift in Sources */,
 				B02F3C3EE0BA8C9E2E602E84 /* XMLParsingTest.swift in Sources */,
+				165C113C1AF6B1FA00EC1A5E /* MainWindow.swift in Sources */,
+				B02F3FE7E5029A8F4DA39CE2 /* Application.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
