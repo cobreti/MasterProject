@@ -13,28 +13,12 @@ import DiagramElements
 class DiagramView : NSView {
     
     override func drawRect(dirtyRect: NSRect) {
-
-//        var bezier : NSBezierPath = NSBezierPath()
-//        bezier.appendBezierPathWithRect(bounds)
-//        
-//        bezier.fill()
         
         if let layer = Application.instance().document.layers.get("DiagramLayout") {
+
+            let dd = DiagramDisplay(targetRect: bounds, layer: layer)
             
-            for prim in layer.primitives {
-                
-                var bezier : NSBezierPath = NSBezierPath()
-                
-                if let  x = prim.x,
-                        y = prim.y,
-                        width = prim.width,
-                        height = prim.height {
-                    var rc = NSMakeRect( CGFloat(x), CGFloat(y), CGFloat(width), CGFloat(height) )
-                    
-                    bezier.appendBezierPathWithRect(rc)
-                    bezier.stroke()
-                }
-            }
+            dd.display()
         }
     }
     

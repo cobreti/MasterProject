@@ -13,6 +13,8 @@
 		165C113E1AF6B25B00EC1A5E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C113D1AF6B25B00EC1A5E /* MainWindowController.swift */; };
 		165C11401AF6B31800EC1A5E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165C113F1AF6B31800EC1A5E /* MainWindow.xib */; };
 		165C11421AF6B4BA00EC1A5E /* DiagramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165C11411AF6B4BA00EC1A5E /* DiagramView.xib */; };
+		165C11461AF6EB2600EC1A5E /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C11451AF6EB2600EC1A5E /* DiagramDisplay.swift */; };
+		165C11481AF6EF7100EC1A5E /* DiagramDisplayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C11471AF6EF7000EC1A5E /* DiagramDisplayParameters.swift */; };
 		165DFFC41AEF0A7A003B8B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DFFC31AEF0A7A003B8B44 /* AppDelegate.swift */; };
 		165DFFC61AEF0A7A003B8B44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165DFFC51AEF0A7A003B8B44 /* Images.xcassets */; };
 		165DFFC91AEF0A7A003B8B44 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165DFFC71AEF0A7A003B8B44 /* MainMenu.xib */; };
@@ -114,6 +116,8 @@
 		165C113D1AF6B25B00EC1A5E /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWindowController.swift; path = MainWindow/MainWindowController.swift; sourceTree = "<group>"; };
 		165C113F1AF6B31800EC1A5E /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
 		165C11411AF6B4BA00EC1A5E /* DiagramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiagramView.xib; path = Resources/DiagramView.xib; sourceTree = "<group>"; };
+		165C11451AF6EB2600EC1A5E /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplay.swift; path = DiagramView/DiagramDisplay.swift; sourceTree = "<group>"; };
+		165C11471AF6EF7000EC1A5E /* DiagramDisplayParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplayParameters.swift; path = DiagramView/DiagramDisplayParameters.swift; sourceTree = "<group>"; };
 		165DFFBE1AEF0A7A003B8B44 /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165DFFC21AEF0A7A003B8B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		165DFFC31AEF0A7A003B8B44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 			children = (
 				165C11351AF6B05100EC1A5E /* DiagramView.swift */,
 				165C11371AF6B08C00EC1A5E /* DiagramViewController.swift */,
+				165C11451AF6EB2600EC1A5E /* DiagramDisplay.swift */,
+				165C11471AF6EF7000EC1A5E /* DiagramDisplayParameters.swift */,
 			);
 			name = DiagramView;
 			sourceTree = "<group>";
@@ -613,8 +619,10 @@
 			files = (
 				165C11381AF6B08C00EC1A5E /* DiagramViewController.swift in Sources */,
 				165C113E1AF6B25B00EC1A5E /* MainWindowController.swift in Sources */,
+				165C11461AF6EB2600EC1A5E /* DiagramDisplay.swift in Sources */,
 				165C11361AF6B05100EC1A5E /* DiagramView.swift in Sources */,
 				165DFFC41AEF0A7A003B8B44 /* AppDelegate.swift in Sources */,
+				165C11481AF6EF7100EC1A5E /* DiagramDisplayParameters.swift in Sources */,
 				B02F3C3EE0BA8C9E2E602E84 /* XMLParsingTest.swift in Sources */,
 				165C113C1AF6B1FA00EC1A5E /* MainWindow.swift in Sources */,
 				B02F3FE7E5029A8F4DA39CE2 /* Application.swift in Sources */,

@@ -20,7 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         Application.instance().finishedLaunching()
         
-        var proj = VpProject()
+        var proj = VpProject( document: Application.instance().document )
 
 
         if let url = NSBundle.mainBundle().URLForResource("ProjectFV",

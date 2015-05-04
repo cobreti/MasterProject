@@ -8,9 +8,14 @@ import DiagramElements
 
 public class VpProject {
 
-    public init() {
+    public init( document : DiagramElements.Document! = nil ) {
 
-        _document = DiagramElements.Document()
+        if let doc = document {
+            _document = doc
+        }
+        else {
+            _document = DiagramElements.Document()
+        }
     }
 
     public func load( url : NSURL ) {
