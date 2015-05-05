@@ -7,7 +7,7 @@ import Foundation
 
 public class Primitive {
 
-    public var x : Float! {
+    public var x : CGFloat! {
         get {
             return _x
         }
@@ -16,7 +16,7 @@ public class Primitive {
         }
     }
 
-    public var y : Float! {
+    public var y : CGFloat! {
         get {
             return _y
         }
@@ -25,7 +25,7 @@ public class Primitive {
         }
     }
 
-    public var width : Float! {
+    public var width : CGFloat! {
         get {
             return _width
         }
@@ -34,7 +34,7 @@ public class Primitive {
         }
     }
 
-    public var height : Float! {
+    public var height : CGFloat! {
         get {
             return _height
         }
@@ -64,11 +64,27 @@ public class Primitive {
     public init() {
 
     }
+    
+    public func onAdded( layer : DiagramLayer ) {
+        
+        if let  x = _x,
+                y = _y,
+                w = _width,
+                h = _height {
+                
+                    _edges.append( Edge(p1: CGPoint(x: x, y: y), p2: CGPoint(x: x, y: y + h) ) )
+                    _edges.append( Edge(p1: CGPoint(x: x, y: y), p2: CGPoint(x: x + w, y: y) ) )
+                    _edges.append( Edge(p1: CGPoint(x: x + w, y: y), p2: CGPoint(x: x + w, y: y + h) ) )
+                    _edges.append( Edge(p1: CGPoint(x: x, y: y + h), p2: CGPoint(x: x + w, y: y + h) ) )
+        }
+    }
 
-    var _x : Float!
-    var _y : Float!
-    var _width : Float!
-    var _height : Float!
+    var _x : CGFloat!
+    var _y : CGFloat!
+    var _width : CGFloat!
+    var _height : CGFloat!
     var _id : String!
     var _name : String!
+    var _edges : [Edge] = []
 }
+

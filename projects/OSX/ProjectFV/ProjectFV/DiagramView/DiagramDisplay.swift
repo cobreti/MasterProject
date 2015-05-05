@@ -24,19 +24,33 @@ class DiagramDisplay {
     
     func display() {
         
-        for prim in _layer.primitives {
+        for (id, prim) in _layer.primitives {
             
             var bezier : NSBezierPath = NSBezierPath()
             
-            if let  x = prim.x,
-                    y = prim.y,
-                    width = prim.width,
-                    height = prim.height {
+            if let elm = prim as? Element {
+                if let  x = elm.x,
+                        y = elm.y,
+                        width = elm.width,
+                        height = elm.height {
+                            
+                        var rc = NSMakeRect( CGFloat(x) * _scaling, CGFloat(y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
                         
-                    var rc = NSMakeRect( CGFloat(x) * _scaling, CGFloat(y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
-                    
-                    bezier.appendBezierPathWithRect(rc)
-                    bezier.stroke()
+                        bezier.appendBezierPathWithRect(rc)
+                        bezier.stroke()
+                }
+            }
+            else if let lnk = prim as? Link {
+                if let  x = lnk.x,
+                        y = lnk.y,
+                        width = lnk.width,
+                        height = lnk.height {
+                        
+                        var rc = NSMakeRect( CGFloat(x) * _scaling, CGFloat(y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
+                        
+                        bezier.appendBezierPathWithOvalInRect(rc)
+                        bezier.stroke()
+                }
             }
         }
     }

@@ -53,6 +53,8 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
                 self.onDiagram(attributeDict)
             case "Shape":
                 self.onShape(attributeDict)
+            case "Connector":
+                self.onConnector(attributeDict)
             default:
                 debugPrintln("unhandled element")
         }
@@ -83,27 +85,69 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
      */
     func onShape(attributeDict: [NSObject:AnyObject]) {
 
+        var numberFormatter = NSNumberFormatter()
+        
+        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+
         if let  id = attributeDict["id"] as? String,
                 name = attributeDict["name"] as? String,
-                x = attributeDict["x"] as? String,
-                y = attributeDict["y"] as? String,
-                width = attributeDict["width"] as? String,
-                height = attributeDict["height"] as? String,
+                xStr = attributeDict["x"] as? String,
+                x = numberFormatter.numberFromString(xStr)?.floatValue,
+                yStr = attributeDict["y"] as? String,
+                y = numberFormatter.numberFromString(yStr)?.floatValue,
+                widthStr = attributeDict["width"] as? String,
+                width = numberFormatter.numberFromString(widthStr)?.floatValue,
+                heightStr = attributeDict["height"] as? String,
+                height = numberFormatter.numberFromString(heightStr)?.floatValue,
                 currentDiag = _currentDiagram {
 
             var elm = DiagramElements.Element()
-            var numberFormatter = NSNumberFormatter()
 
-            numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
-
-            elm.x = numberFormatter.numberFromString(x)?.floatValue
-            elm.y = numberFormatter.numberFromString(y)?.floatValue
-            elm.width = numberFormatter.numberFromString(width)?.floatValue
-            elm.height = numberFormatter.numberFromString(height)?.floatValue
+            elm.x = CGFloat(x)
+            elm.y = CGFloat(y)
+            elm.width = CGFloat(width)
+            elm.height = CGFloat(height)
             elm.name = name
             elm.id = id
                     
             currentDiag.add(elm)
+        }
+    }
+
+    /**
+    *
+    */
+    func onConnector(attributeDict: [NSObject:AnyObject]) {
+        
+        var numberFormatter = NSNumberFormatter()
+        
+        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+
+        if let  id = attributeDict["id"] as? String,
+                xStr = attributeDict["x"] as? String,
+                x = numberFormatter.numberFromString(xStr)?.floatValue,
+                yStr = attributeDict["y"] as? String,
+                y = numberFormatter.numberFromString(yStr)?.floatValue,
+                widthStr = attributeDict["width"] as? String,
+                width = numberFormatter.numberFromString(widthStr)?.floatValue,
+                heightStr = attributeDict["height"] as? String,
+                height = numberFormatter.numberFromString(heightStr)?.floatValue,
+                to = attributeDict["to"] as? String,
+                from = attributeDict["from"] as? String,
+                currentDiag = _currentDiagram {
+                
+                var lnk = DiagramElements.Link()
+                
+                lnk.x = CGFloat(x)
+                lnk.y = CGFloat(y)
+                lnk.width = CGFloat(width)
+                lnk.height = CGFloat(height)
+                lnk.name = id
+                lnk.id = id
+                lnk.idTo = to
+                lnk.idFrom = from
+                
+                currentDiag.add(lnk)
         }
     }
 

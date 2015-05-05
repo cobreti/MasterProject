@@ -11,13 +11,13 @@ import Foundation
 
 public class DiagramLayer : DebugPrintable {
 
-    public var width : Float {
+    public var width : CGFloat {
         get {
             return _width
         }
     }
     
-    public var height : Float {
+    public var height : CGFloat {
         get {
             return _height
         }
@@ -29,7 +29,7 @@ public class DiagramLayer : DebugPrintable {
         }
     }
     
-    public var primitives : [Primitive] {
+    public var primitives : [String : Primitive] {
         get {
             return _primitives
         }
@@ -41,12 +41,12 @@ public class DiagramLayer : DebugPrintable {
 
     public func add( primitive : Primitive ) {
 
-        _primitives.append(primitive)
+        _primitives[primitive.id] = primitive
     }
 
     public func updateBoundingBox() {
         
-        for p in _primitives {
+        for (id, p) in _primitives {
             
             if let  x = p.x,
                     y = p.y,
@@ -65,7 +65,7 @@ public class DiagramLayer : DebugPrintable {
         get {
             var dbg = "DiagramLayer pos = (\(_x), \(_y)) size = (\(_width), \(_height))"
             
-            for p in _primitives {
+            for (id, p) in _primitives {
                 
                 if let name = p.name,
                         x = p.x,
@@ -81,12 +81,12 @@ public class DiagramLayer : DebugPrintable {
         }
     }
     
-    var _x : Float = 0.0
-    var _y : Float = 0.0
-    var _width : Float = 0.0
-    var _height : Float = 0.0
+    var _x : CGFloat = 0.0
+    var _y : CGFloat = 0.0
+    var _width : CGFloat = 0.0
+    var _height : CGFloat = 0.0
     var _name : String
 
-    var _primitives : [Primitive] = []
+    var _primitives : [String : Primitive] = [:]
 }
 
