@@ -5,6 +5,7 @@
 
 import Foundation
 import DiagramElements
+import Shapes
 
 class XmlDocParser : NSObject, NSXMLParserDelegate {
 
@@ -32,6 +33,7 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
             if let d = _currentDiagram {
                 
                 d.updateBoundingBox()
+                d.updateLinks()
                 debugPrintln(d)
             }
             
@@ -92,21 +94,22 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
         if let  id = attributeDict["id"] as? String,
                 name = attributeDict["name"] as? String,
                 xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.floatValue,
+                x = numberFormatter.numberFromString(xStr)?.doubleValue,
                 yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.floatValue,
+                y = numberFormatter.numberFromString(yStr)?.doubleValue,
                 widthStr = attributeDict["width"] as? String,
-                width = numberFormatter.numberFromString(widthStr)?.floatValue,
+                width = numberFormatter.numberFromString(widthStr)?.doubleValue,
                 heightStr = attributeDict["height"] as? String,
-                height = numberFormatter.numberFromString(heightStr)?.floatValue,
+                height = numberFormatter.numberFromString(heightStr)?.doubleValue,
                 currentDiag = _currentDiagram {
 
-            var elm = DiagramElements.Element()
+            var elm = DiagramElements.Element(ownerDiagram: currentDiag)
 
-            elm.x = CGFloat(x)
-            elm.y = CGFloat(y)
-            elm.width = CGFloat(width)
-            elm.height = CGFloat(height)
+            elm.box = Rect(x: x, y: y, width: width, height: height)
+//            elm.x = CGFloat(x)
+//            elm.y = CGFloat(y)
+//            elm.width = CGFloat(width)
+//            elm.height = CGFloat(height)
             elm.name = name
             elm.id = id
                     
@@ -125,23 +128,24 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
 
         if let  id = attributeDict["id"] as? String,
                 xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.floatValue,
+                x = numberFormatter.numberFromString(xStr)?.doubleValue,
                 yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.floatValue,
+                y = numberFormatter.numberFromString(yStr)?.doubleValue,
                 widthStr = attributeDict["width"] as? String,
-                width = numberFormatter.numberFromString(widthStr)?.floatValue,
+                width = numberFormatter.numberFromString(widthStr)?.doubleValue,
                 heightStr = attributeDict["height"] as? String,
-                height = numberFormatter.numberFromString(heightStr)?.floatValue,
+                height = numberFormatter.numberFromString(heightStr)?.doubleValue,
                 to = attributeDict["to"] as? String,
                 from = attributeDict["from"] as? String,
                 currentDiag = _currentDiagram {
                 
-                var lnk = DiagramElements.Link()
+                var lnk = DiagramElements.Link(ownerDiagram: currentDiag)
                 
-                lnk.x = CGFloat(x)
-                lnk.y = CGFloat(y)
-                lnk.width = CGFloat(width)
-                lnk.height = CGFloat(height)
+                lnk.box = Rect(x: x, y: y, width: width, height: height)
+//                lnk.x = CGFloat(x)
+//                lnk.y = CGFloat(y)
+//                lnk.width = CGFloat(width)
+//                lnk.height = CGFloat(height)
                 lnk.name = id
                 lnk.id = id
                 lnk.idTo = to

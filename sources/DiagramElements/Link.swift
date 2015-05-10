@@ -28,6 +28,19 @@ public class Link : Primitive {
         }
     }
     
+    public override init( ownerDiagram : DiagramLayer ) {
+        super.init(ownerDiagram: ownerDiagram)
+    }
+    
+    public func createAnchors() {
+        
+        createAnchorForId(_idFrom)
+    }
+
+    func createAnchorForId( id : String ) {
+        
+    }
+    
     var _idFrom : String!
     var _idTo : String!
 }

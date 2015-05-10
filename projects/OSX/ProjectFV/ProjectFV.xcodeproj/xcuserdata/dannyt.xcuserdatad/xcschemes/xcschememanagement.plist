@@ -14,10 +14,15 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>VpProject.xcscheme</key>
+		<key>Shapes.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>VpProject.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>VppParser.xcscheme</key>
 		<dict>
@@ -63,6 +68,16 @@
 			<true/>
 		</dict>
 		<key>167D92CA1AF455BE00658E19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1697DC651AFEDE910089E609</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1697DC6F1AFEDE910089E609</key>
 		<dict>
 			<key>primary</key>
 			<true/>

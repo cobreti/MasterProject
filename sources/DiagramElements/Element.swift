@@ -6,4 +6,8 @@
 import Foundation
 
 public class Element : Primitive {
+    
+    public override init( ownerDiagram : DiagramLayer ) {
+        super.init(ownerDiagram: ownerDiagram)
+    }
 }

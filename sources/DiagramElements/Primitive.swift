@@ -4,42 +4,16 @@
 //
 
 import Foundation
+import Shapes
 
 public class Primitive {
 
-    public var x : CGFloat! {
+    public var box : Rect! {
         get {
-            return _x
+            return _box
         }
-        set(value) {
-            _x = value
-        }
-    }
-
-    public var y : CGFloat! {
-        get {
-            return _y
-        }
-        set(value) {
-            _y = value
-        }
-    }
-
-    public var width : CGFloat! {
-        get {
-            return _width
-        }
-        set(value) {
-            _width = value
-        }
-    }
-
-    public var height : CGFloat! {
-        get {
-            return _height
-        }
-        set(value) {
-            _height = value
+        set (value) {
+            _box = value
         }
     }
     
@@ -60,31 +34,37 @@ public class Primitive {
             _name = value
         }
     }
+    
+    public var ownerDiagram : DiagramLayer! {
+        get {
+            return _diagram
+        }
+    }
 
-    public init() {
+    public init( ownerDiagram : DiagramLayer ) {
 
+        _diagram = ownerDiagram
     }
     
     public func onAdded( layer : DiagramLayer ) {
         
-        if let  x = _x,
-                y = _y,
-                w = _width,
-                h = _height {
-                
-                    _edges.append( Edge(p1: CGPoint(x: x, y: y), p2: CGPoint(x: x, y: y + h) ) )
-                    _edges.append( Edge(p1: CGPoint(x: x, y: y), p2: CGPoint(x: x + w, y: y) ) )
-                    _edges.append( Edge(p1: CGPoint(x: x + w, y: y), p2: CGPoint(x: x + w, y: y + h) ) )
-                    _edges.append( Edge(p1: CGPoint(x: x, y: y + h), p2: CGPoint(x: x + w, y: y + h) ) )
+        if let  x = box?.pos.x,
+                y = box?.pos.y,
+                w = box?.size.width,
+                h = box?.size.height {
+
+//                    _edges.append( Edge(p1: CGPoint(x: x, y: y), p2: CGPoint(x: x, y: y + h) ) )
+//                    _edges.append( Edge(p1: CGPoint(x: x, y: y), p2: CGPoint(x: x + w, y: y) ) )
+//                    _edges.append( Edge(p1: CGPoint(x: x + w, y: y), p2: CGPoint(x: x + w, y: y + h) ) )
+//                    _edges.append( Edge(p1: CGPoint(x: x, y: y + h), p2: CGPoint(x: x + w, y: y + h) ) )
         }
     }
 
-    var _x : CGFloat!
-    var _y : CGFloat!
-    var _width : CGFloat!
-    var _height : CGFloat!
+    var _box : Rect!
     var _id : String!
     var _name : String!
-    var _edges : [Edge] = []
+    var _anchorAreas : AnchorAreas = AnchorAreas()
+    
+    weak var _diagram : DiagramLayer!
 }
 

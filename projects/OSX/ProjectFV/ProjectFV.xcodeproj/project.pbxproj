@@ -16,7 +16,6 @@
 		165C11461AF6EB2600EC1A5E /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C11451AF6EB2600EC1A5E /* DiagramDisplay.swift */; };
 		165C11481AF6EF7100EC1A5E /* DiagramDisplayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C11471AF6EF7000EC1A5E /* DiagramDisplayParameters.swift */; };
 		165C114A1AF8425700EC1A5E /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C11491AF8425700EC1A5E /* Link.swift */; };
-		165C114C1AF854DB00EC1A5E /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C114B1AF854DB00EC1A5E /* Edge.swift */; };
 		165DFFC41AEF0A7A003B8B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DFFC31AEF0A7A003B8B44 /* AppDelegate.swift */; };
 		165DFFC61AEF0A7A003B8B44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165DFFC51AEF0A7A003B8B44 /* Images.xcassets */; };
 		165DFFC91AEF0A7A003B8B44 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165DFFC71AEF0A7A003B8B44 /* MainMenu.xib */; };
@@ -35,6 +34,17 @@
 		167D92D81AF455BE00658E19 /* VpProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92C11AF455BE00658E19 /* VpProject.framework */; };
 		167D92D91AF455BE00658E19 /* VpProject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92C11AF455BE00658E19 /* VpProject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		167D92E01AF4651C00658E19 /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92721AF44E7B00658E19 /* DiagramElements.framework */; };
+		1697DC5E1AFED2660089E609 /* AnchorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC5D1AFED2660089E609 /* AnchorArea.swift */; };
+		1697DC601AFED3230089E609 /* AnchorAreas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC5F1AFED3230089E609 /* AnchorAreas.swift */; };
+		1697DC6B1AFEDE910089E609 /* Shapes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1697DC6A1AFEDE910089E609 /* Shapes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1697DC711AFEDE910089E609 /* Shapes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1697DC661AFEDE910089E609 /* Shapes.framework */; };
+		1697DC7A1AFEDE910089E609 /* ShapesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC791AFEDE910089E609 /* ShapesTests.swift */; };
+		1697DC7D1AFEDE910089E609 /* Shapes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1697DC661AFEDE910089E609 /* Shapes.framework */; };
+		1697DC7E1AFEDE910089E609 /* Shapes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1697DC661AFEDE910089E609 /* Shapes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1697DC851AFEDEA50089E609 /* Shapes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1697DC661AFEDE910089E609 /* Shapes.framework */; };
+		1697DC871AFEDEBF0089E609 /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC861AFEDEBF0089E609 /* Rect.swift */; };
+		1697DC891AFEDEDB0089E609 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC881AFEDEDB0089E609 /* Point.swift */; };
+		1697DC8B1AFEDFF80089E609 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC8A1AFEDFF80089E609 /* Size.swift */; };
 		B02F3131F19F6A842F4E7C2F /* Primitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */; };
 		B02F335DD90932392B213890 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F380233C566D8903C545E /* Element.swift */; };
 		B02F398F99F10422DDA598A7 /* VpProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F36227CCA08C6FBEA11E1 /* VpProject.swift */; };
@@ -94,6 +104,27 @@
 			remoteGlobalIDString = 167D92C01AF455BE00658E19;
 			remoteInfo = VpProject;
 		};
+		1697DC721AFEDE910089E609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165DFFB61AEF0A7A003B8B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1697DC651AFEDE910089E609;
+			remoteInfo = Shapes;
+		};
+		1697DC741AFEDE910089E609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165DFFB61AEF0A7A003B8B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 165DFFBD1AEF0A7A003B8B44;
+			remoteInfo = ProjectFV;
+		};
+		1697DC7B1AFEDE910089E609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165DFFB61AEF0A7A003B8B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1697DC651AFEDE910089E609;
+			remoteInfo = Shapes;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,6 +134,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1697DC7E1AFEDE910089E609 /* Shapes.framework in Embed Frameworks */,
 				167D92D91AF455BE00658E19 /* VpProject.framework in Embed Frameworks */,
 				167D928A1AF44E7B00658E19 /* DiagramElements.framework in Embed Frameworks */,
 			);
@@ -121,7 +153,6 @@
 		165C11451AF6EB2600EC1A5E /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplay.swift; path = DiagramView/DiagramDisplay.swift; sourceTree = "<group>"; };
 		165C11471AF6EF7000EC1A5E /* DiagramDisplayParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplayParameters.swift; path = DiagramView/DiagramDisplayParameters.swift; sourceTree = "<group>"; };
 		165C11491AF8425700EC1A5E /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../sources/DiagramElements/Link.swift; sourceTree = "<group>"; };
-		165C114B1AF854DB00EC1A5E /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = ../../../../sources/DiagramElements/Edge.swift; sourceTree = "<group>"; };
 		165DFFBE1AEF0A7A003B8B44 /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165DFFC21AEF0A7A003B8B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		165DFFC31AEF0A7A003B8B44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +176,17 @@
 		167D92CB1AF455BE00658E19 /* VpProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VpProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		167D92D31AF455BE00658E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167D92D41AF455BE00658E19 /* VpProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpProjectTests.swift; sourceTree = "<group>"; };
+		1697DC5D1AFED2660089E609 /* AnchorArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorArea.swift; path = ../../../../sources/DiagramElements/AnchorArea.swift; sourceTree = "<group>"; };
+		1697DC5F1AFED3230089E609 /* AnchorAreas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorAreas.swift; path = ../../../../sources/DiagramElements/AnchorAreas.swift; sourceTree = "<group>"; };
+		1697DC661AFEDE910089E609 /* Shapes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shapes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1697DC691AFEDE910089E609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1697DC6A1AFEDE910089E609 /* Shapes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shapes.h; sourceTree = "<group>"; };
+		1697DC701AFEDE910089E609 /* ShapesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShapesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1697DC781AFEDE910089E609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1697DC791AFEDE910089E609 /* ShapesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesTests.swift; sourceTree = "<group>"; };
+		1697DC861AFEDEBF0089E609 /* Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rect.swift; path = ../../../../sources/Shapes/Rect.swift; sourceTree = "<group>"; };
+		1697DC881AFEDEDB0089E609 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Point.swift; path = ../../../../sources/Shapes/Point.swift; sourceTree = "<group>"; };
+		1697DC8A1AFEDFF80089E609 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Size.swift; path = ../../../../sources/Shapes/Size.swift; sourceTree = "<group>"; };
 		B02F36227CCA08C6FBEA11E1 /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
 		B02F3686A6F8083BC92F7746 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		B02F380233C566D8903C545E /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = ../../../../sources/DiagramElements/Element.swift; sourceTree = "<group>"; };
@@ -159,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1697DC7D1AFEDE910089E609 /* Shapes.framework in Frameworks */,
 				167D92D81AF455BE00658E19 /* VpProject.framework in Frameworks */,
 				167D92891AF44E7B00658E19 /* DiagramElements.framework in Frameworks */,
 			);
@@ -175,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1697DC851AFEDEA50089E609 /* Shapes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +243,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				167D92CC1AF455BE00658E19 /* VpProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1697DC621AFEDE910089E609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1697DC6D1AFEDE910089E609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1697DC711AFEDE910089E609 /* Shapes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +303,8 @@
 				167D92821AF44E7B00658E19 /* DiagramElementsTests */,
 				167D92C21AF455BE00658E19 /* VpProject */,
 				167D92D11AF455BE00658E19 /* VpProjectTests */,
+				1697DC671AFEDE910089E609 /* Shapes */,
+				1697DC761AFEDE910089E609 /* ShapesTests */,
 				165DFFBF1AEF0A7A003B8B44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -257,6 +318,8 @@
 				167D927C1AF44E7B00658E19 /* DiagramElementsTests.xctest */,
 				167D92C11AF455BE00658E19 /* VpProject.framework */,
 				167D92CB1AF455BE00658E19 /* VpProjectTests.xctest */,
+				1697DC661AFEDE910089E609 /* Shapes.framework */,
+				1697DC701AFEDE910089E609 /* ShapesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,7 +376,8 @@
 				B02F380233C566D8903C545E /* Element.swift */,
 				B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */,
 				165C11491AF8425700EC1A5E /* Link.swift */,
-				165C114B1AF854DB00EC1A5E /* Edge.swift */,
+				1697DC5D1AFED2660089E609 /* AnchorArea.swift */,
+				1697DC5F1AFED3230089E609 /* AnchorAreas.swift */,
 			);
 			path = DiagramElements;
 			sourceTree = "<group>";
@@ -379,6 +443,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1697DC671AFEDE910089E609 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				1697DC6A1AFEDE910089E609 /* Shapes.h */,
+				1697DC681AFEDE910089E609 /* Supporting Files */,
+				1697DC861AFEDEBF0089E609 /* Rect.swift */,
+				1697DC881AFEDEDB0089E609 /* Point.swift */,
+				1697DC8A1AFEDFF80089E609 /* Size.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		1697DC681AFEDE910089E609 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1697DC691AFEDE910089E609 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1697DC761AFEDE910089E609 /* ShapesTests */ = {
+			isa = PBXGroup;
+			children = (
+				1697DC791AFEDE910089E609 /* ShapesTests.swift */,
+				1697DC771AFEDE910089E609 /* Supporting Files */,
+			);
+			path = ShapesTests;
+			sourceTree = "<group>";
+		};
+		1697DC771AFEDE910089E609 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1697DC781AFEDE910089E609 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -395,6 +496,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				167D92C61AF455BE00658E19 /* VpProject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1697DC631AFEDE910089E609 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1697DC6B1AFEDE910089E609 /* Shapes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +524,7 @@
 			dependencies = (
 				167D92881AF44E7B00658E19 /* PBXTargetDependency */,
 				167D92D71AF455BE00658E19 /* PBXTargetDependency */,
+				1697DC7C1AFEDE910089E609 /* PBXTargetDependency */,
 			);
 			name = ProjectFV;
 			productName = ProjectFV;
@@ -513,6 +623,43 @@
 			productReference = 167D92CB1AF455BE00658E19 /* VpProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1697DC651AFEDE910089E609 /* Shapes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1697DC7F1AFEDE910089E609 /* Build configuration list for PBXNativeTarget "Shapes" */;
+			buildPhases = (
+				1697DC611AFEDE910089E609 /* Sources */,
+				1697DC621AFEDE910089E609 /* Frameworks */,
+				1697DC631AFEDE910089E609 /* Headers */,
+				1697DC641AFEDE910089E609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shapes;
+			productName = Shapes;
+			productReference = 1697DC661AFEDE910089E609 /* Shapes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1697DC6F1AFEDE910089E609 /* ShapesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1697DC821AFEDE910089E609 /* Build configuration list for PBXNativeTarget "ShapesTests" */;
+			buildPhases = (
+				1697DC6C1AFEDE910089E609 /* Sources */,
+				1697DC6D1AFEDE910089E609 /* Frameworks */,
+				1697DC6E1AFEDE910089E609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1697DC731AFEDE910089E609 /* PBXTargetDependency */,
+				1697DC751AFEDE910089E609 /* PBXTargetDependency */,
+			);
+			name = ShapesTests;
+			productName = ShapesTests;
+			productReference = 1697DC701AFEDE910089E609 /* ShapesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -543,6 +690,13 @@
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 165DFFBD1AEF0A7A003B8B44;
 					};
+					1697DC651AFEDE910089E609 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					1697DC6F1AFEDE910089E609 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 165DFFBD1AEF0A7A003B8B44;
+					};
 				};
 			};
 			buildConfigurationList = 165DFFB91AEF0A7A003B8B44 /* Build configuration list for PBXProject "ProjectFV" */;
@@ -564,6 +718,8 @@
 				167D927B1AF44E7B00658E19 /* DiagramElementsTests */,
 				167D92C01AF455BE00658E19 /* VpProject */,
 				167D92CA1AF455BE00658E19 /* VpProjectTests */,
+				1697DC651AFEDE910089E609 /* Shapes */,
+				1697DC6F1AFEDE910089E609 /* ShapesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -616,6 +772,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1697DC641AFEDE910089E609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1697DC6E1AFEDE910089E609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -649,11 +819,12 @@
 			files = (
 				167D92931AF44EB200658E19 /* DiagramLayers.swift in Sources */,
 				167D92951AF44EC800658E19 /* DiagramLayer.swift in Sources */,
-				165C114C1AF854DB00EC1A5E /* Edge.swift in Sources */,
 				B02F3BCD5D45E713BE90C31F /* Document.swift in Sources */,
+				1697DC601AFED3230089E609 /* AnchorAreas.swift in Sources */,
 				165C114A1AF8425700EC1A5E /* Link.swift in Sources */,
 				B02F335DD90932392B213890 /* Element.swift in Sources */,
 				B02F3131F19F6A842F4E7C2F /* Primitive.swift in Sources */,
+				1697DC5E1AFED2660089E609 /* AnchorArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +850,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				167D92D51AF455BE00658E19 /* VpProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1697DC611AFEDE910089E609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1697DC891AFEDEDB0089E609 /* Point.swift in Sources */,
+				1697DC8B1AFEDFF80089E609 /* Size.swift in Sources */,
+				1697DC871AFEDEBF0089E609 /* Rect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1697DC6C1AFEDE910089E609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1697DC7A1AFEDE910089E609 /* ShapesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +908,21 @@
 			isa = PBXTargetDependency;
 			target = 167D92C01AF455BE00658E19 /* VpProject */;
 			targetProxy = 167D92D61AF455BE00658E19 /* PBXContainerItemProxy */;
+		};
+		1697DC731AFEDE910089E609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1697DC651AFEDE910089E609 /* Shapes */;
+			targetProxy = 1697DC721AFEDE910089E609 /* PBXContainerItemProxy */;
+		};
+		1697DC751AFEDE910089E609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 165DFFBD1AEF0A7A003B8B44 /* ProjectFV */;
+			targetProxy = 1697DC741AFEDE910089E609 /* PBXContainerItemProxy */;
+		};
+		1697DC7C1AFEDE910089E609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1697DC651AFEDE910089E609 /* Shapes */;
+			targetProxy = 1697DC7B1AFEDE910089E609 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1031,6 +1235,87 @@
 			};
 			name = Release;
 		};
+		1697DC801AFEDE910089E609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Shapes/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1697DC811AFEDE910089E609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Shapes/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1697DC831AFEDE910089E609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShapesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectFV.app/Contents/MacOS/ProjectFV";
+			};
+			name = Debug;
+		};
+		1697DC841AFEDE910089E609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShapesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectFV.app/Contents/MacOS/ProjectFV";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1096,6 +1381,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1697DC7F1AFEDE910089E609 /* Build configuration list for PBXNativeTarget "Shapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1697DC801AFEDE910089E609 /* Debug */,
+				1697DC811AFEDE910089E609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1697DC821AFEDE910089E609 /* Build configuration list for PBXNativeTarget "ShapesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1697DC831AFEDE910089E609 /* Debug */,
+				1697DC841AFEDE910089E609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

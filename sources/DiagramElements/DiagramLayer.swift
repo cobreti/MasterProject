@@ -7,19 +7,14 @@
 //
 
 import Foundation
+import Shapes
 
 
 public class DiagramLayer : DebugPrintable {
 
-    public var width : CGFloat {
+    public var box : Rect! {
         get {
-            return _width
-        }
-    }
-    
-    public var height : CGFloat {
-        get {
-            return _height
+            return _box
         }
     }
 
@@ -43,48 +38,41 @@ public class DiagramLayer : DebugPrintable {
 
         _primitives[primitive.id] = primitive
     }
+    
+    public func get( id : String ) -> Primitive! {
+        return _primitives[id]
+    }
 
     public func updateBoundingBox() {
         
         for (id, p) in _primitives {
             
-            if let  x = p.x,
-                    y = p.y,
-                    w = p.width,
-                    h = p.height {
-                    
-                _x = min(_x, x)
-                _y = min(_y, y)
-                _width = max(_width, w + abs(x))
-                _height = max(_height, h + abs(y))
+            if let layerBox = self.box {
+                _box = Rect.union(_box, r2: p.box)
+            }
+            else {
+                _box = p.box
+            }
+        }
+    }
+    
+    public func updateLinks() {
+        
+        for (id, p) in _primitives {
+            
+            if let  lnk = p as? Link {
+                lnk.createAnchors()
             }
         }
     }
     
     public var debugDescription: String {
         get {
-            var dbg = "DiagramLayer pos = (\(_x), \(_y)) size = (\(_width), \(_height))"
-            
-            for (id, p) in _primitives {
-                
-                if let name = p.name,
-                        x = p.x,
-                        y = p.y,
-                        w = p.width,
-                        h = p.height {
-                        
-                    dbg += "\n     --> \(name) at (\(x), \(y)) of size (\(w), \(y))"
-                }
-            }
-            
-            return dbg
+            return ""
         }
     }
-    
-    var _x : CGFloat = 0.0
-    var _y : CGFloat = 0.0
-    var _width : CGFloat = 0.0
-    var _height : CGFloat = 0.0
+
+    var _box : Rect!
     var _name : String
 
     var _primitives : [String : Primitive] = [:]

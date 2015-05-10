@@ -2,6 +2,12 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/AnchorArea.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/AnchorArea.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/AnchorAreas.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/AnchorAreas.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/DiagramLayer.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/DiagramLayer.swift" isTestSource="false" />
     </content>
@@ -11,8 +17,14 @@
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Document.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Document.swift" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Edge.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Edge.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Element.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Element.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Link.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Link.swift" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Primitive.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Primitive.swift" isTestSource="false" />

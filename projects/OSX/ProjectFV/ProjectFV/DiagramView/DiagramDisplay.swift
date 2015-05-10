@@ -9,6 +9,7 @@
 import Foundation
 import AppKit
 import DiagramElements
+import Shapes
 
 class DiagramDisplay {
     
@@ -16,8 +17,10 @@ class DiagramDisplay {
         _targetRect = targetRect
         _layer = layer
         
-        let xScaling = targetRect.width / CGFloat(_layer.width)
-        let yScaling = targetRect.height / CGFloat(_layer.height)
+        _offset = Point(x: -_layer.box.pos.x, y: -_layer.box.pos.y)
+        
+        let xScaling = targetRect.width / CGFloat(_layer.box.size.width)
+        let yScaling = targetRect.height / CGFloat(_layer.box.size.height)
         
         _scaling = min(xScaling, yScaling)
     }
@@ -29,28 +32,26 @@ class DiagramDisplay {
             var bezier : NSBezierPath = NSBezierPath()
             
             if let elm = prim as? Element {
-                if let  x = elm.x,
-                        y = elm.y,
-                        width = elm.width,
-                        height = elm.height {
+                let     x = elm.box.pos.x,
+                        y = elm.box.pos.y,
+                        width = elm.box.size.width,
+                        height = elm.box.size.height
                             
-                        var rc = NSMakeRect( CGFloat(x) * _scaling, CGFloat(y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
-                        
-                        bezier.appendBezierPathWithRect(rc)
-                        bezier.stroke()
-                }
+                var rc = NSMakeRect( CGFloat(x + _offset.x) * _scaling, CGFloat(y + _offset.y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
+                
+                bezier.appendBezierPathWithRect(rc)
+                bezier.stroke()
             }
             else if let lnk = prim as? Link {
-                if let  x = lnk.x,
-                        y = lnk.y,
-                        width = lnk.width,
-                        height = lnk.height {
+                let     x = lnk.box.pos.x,
+                        y = lnk.box.pos.y,
+                        width = lnk.box.size.width,
+                        height = lnk.box.size.height
                         
-                        var rc = NSMakeRect( CGFloat(x) * _scaling, CGFloat(y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
-                        
-                        bezier.appendBezierPathWithOvalInRect(rc)
-                        bezier.stroke()
-                }
+                var rc = NSMakeRect( CGFloat(x + _offset.x) * _scaling, CGFloat(y + _offset.y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
+                
+                bezier.appendBezierPathWithOvalInRect(rc)
+                bezier.stroke()
             }
         }
     }
@@ -58,4 +59,5 @@ class DiagramDisplay {
     var _scaling : CGFloat
     var _targetRect : NSRect
     var _layer : DiagramLayer
+    var _offset : Point
 }
