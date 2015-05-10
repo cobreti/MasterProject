@@ -41,6 +41,18 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
         }
     }
 
+    var currentParser : XmlElementParser! {
+        get {
+            return _elementParsers.last
+        }
+    }
+    
+    var document : DiagramElements.Document! {
+        get {
+            return _doc
+        }
+    }
+
     /**
      *
      */
@@ -52,11 +64,11 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
 
         switch elementName {
             case "Diagram":
-                self.onDiagram(attributeDict)
+                pushElementParser(XmlDiagramParser(name: "Diagram", docParser: self))
             case "Shape":
-                self.onShape(attributeDict)
+                pushElementParser(XmlShapeParser(name: "Shape", docParser: self))
             case "Connector":
-                self.onConnector(attributeDict)
+                pushElementParser(XmlConnectorParser(name: "Connector", docParser: self))
             default:
                 debugPrintln("unhandled element")
         }
@@ -67,96 +79,40 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
         name = attributeDict["name"] as? String where modelType == "Class" {
             debugPrintln(" - \(elementName) --> \(name)")
         }
-    }
-
-    /**
-     *   handle Diagram node
-     */
-    func onDiagram(attributeDict: [NSObject:AnyObject]) {
-
-        if let name = attributeDict["name"] as? String {
-            debugPrintln("Diagram node of name : \(name)")
-            var diag = DiagramLayer(name: name)
-            _doc.layers.add(diag)
-            currentDiagram = diag
-        }
-    }
-
-    /**
-     *
-     */
-    func onShape(attributeDict: [NSObject:AnyObject]) {
-
-        var numberFormatter = NSNumberFormatter()
-        
-        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
-
-        if let  id = attributeDict["id"] as? String,
-                name = attributeDict["name"] as? String,
-                xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.doubleValue,
-                yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.doubleValue,
-                widthStr = attributeDict["width"] as? String,
-                width = numberFormatter.numberFromString(widthStr)?.doubleValue,
-                heightStr = attributeDict["height"] as? String,
-                height = numberFormatter.numberFromString(heightStr)?.doubleValue,
-                currentDiag = _currentDiagram {
-
-            var elm = DiagramElements.Element(ownerDiagram: currentDiag)
-
-            elm.box = Rect(x: x, y: y, width: width, height: height)
-//            elm.x = CGFloat(x)
-//            elm.y = CGFloat(y)
-//            elm.width = CGFloat(width)
-//            elm.height = CGFloat(height)
-            elm.name = name
-            elm.id = id
                     
-            currentDiag.add(elm)
+        if let p = currentParser {
+            p.onStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qName, attributeDict: attributeDict)
         }
+    }
+
+    func parser(    parser: NSXMLParser,
+                    didEndElement elementName: String,
+                    namespaceURI: String?,
+                    qualifiedName qName: String?) {
+
+        if let p = currentParser {
+            p.onEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qName)
+        }
+    }
+
+    func pushElementParser( parser : XmlElementParser ) {
+        _elementParsers.append(parser)
+    }
+
+    func popElementParser( parser : XmlElementParser ) {
+        _elementParsers.removeLast()
     }
 
     /**
     *
     */
-    func onConnector(attributeDict: [NSObject:AnyObject]) {
+    func onPoints(attributeDict : [NSObject:AnyObject]) {
         
-        var numberFormatter = NSNumberFormatter()
-        
-        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
-
-        if let  id = attributeDict["id"] as? String,
-                xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.doubleValue,
-                yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.doubleValue,
-                widthStr = attributeDict["width"] as? String,
-                width = numberFormatter.numberFromString(widthStr)?.doubleValue,
-                heightStr = attributeDict["height"] as? String,
-                height = numberFormatter.numberFromString(heightStr)?.doubleValue,
-                to = attributeDict["to"] as? String,
-                from = attributeDict["from"] as? String,
-                currentDiag = _currentDiagram {
-                
-                var lnk = DiagramElements.Link(ownerDiagram: currentDiag)
-                
-                lnk.box = Rect(x: x, y: y, width: width, height: height)
-//                lnk.x = CGFloat(x)
-//                lnk.y = CGFloat(y)
-//                lnk.width = CGFloat(width)
-//                lnk.height = CGFloat(height)
-                lnk.name = id
-                lnk.id = id
-                lnk.idTo = to
-                lnk.idFrom = from
-                
-                currentDiag.add(lnk)
-        }
     }
 
     var _currentDiagram : DiagramLayer!
 
+    var _elementParsers : [XmlElementParser] = []
     var _doc : DiagramElements.Document
 }
 

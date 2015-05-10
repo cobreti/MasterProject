@@ -46,12 +46,19 @@ class DiagramDisplay {
                 let     x = lnk.box.pos.x,
                         y = lnk.box.pos.y,
                         width = lnk.box.size.width,
-                        height = lnk.box.size.height
-                        
-                var rc = NSMakeRect( CGFloat(x + _offset.x) * _scaling, CGFloat(y + _offset.y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
-                
-                bezier.appendBezierPathWithOvalInRect(rc)
+                        height = lnk.box.size.height,
+                        anchorFrom = lnk.anchorFrom,
+                        anchorTo = lnk.anchorTo
+
+                bezier.moveToPoint(NSMakePoint(CGFloat(anchorFrom.box.left + _offset.x) * _scaling, CGFloat(anchorFrom.box.top + _offset.y) * _scaling))
+                bezier.lineToPoint(NSMakePoint(CGFloat(anchorTo.box.right + _offset.x) * _scaling, CGFloat(anchorTo.box.bottom + _offset.y) * _scaling))
+                bezier.lineWidth = 2.0
                 bezier.stroke()
+
+//                var rc = NSMakeRect( CGFloat(x + _offset.x) * _scaling, CGFloat(y + _offset.y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
+//                
+//                bezier.appendBezierPathWithOvalInRect(rc)
+//                bezier.stroke()
             }
         }
     }

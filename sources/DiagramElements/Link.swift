@@ -28,19 +28,40 @@ public class Link : Primitive {
         }
     }
     
+    public var anchorFrom : AnchorArea! {
+        get {
+            return _anchorFrom
+        }
+    }
+    
+    public var anchorTo : AnchorArea! {
+        get {
+            return _anchorTo
+        }
+    }
+    
     public override init( ownerDiagram : DiagramLayer ) {
         super.init(ownerDiagram: ownerDiagram)
     }
     
     public func createAnchors() {
         
-        createAnchorForId(_idFrom)
+        _anchorFrom = getAnchorForId(_idFrom)
+        _anchorTo = getAnchorForId(_idTo)
     }
 
-    func createAnchorForId( id : String ) {
+    func getAnchorForId( id : String ) -> AnchorArea! {
         
+        if let prim = self.ownerDiagram.get(id) {
+            return prim.anchorAreas.getAreaContainedInRect(self.box)
+        }
+        
+        return nil
     }
     
     var _idFrom : String!
     var _idTo : String!
+    
+    var _anchorFrom : AnchorArea!
+    var _anchorTo : AnchorArea!
 }

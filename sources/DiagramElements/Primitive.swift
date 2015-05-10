@@ -40,23 +40,29 @@ public class Primitive {
             return _diagram
         }
     }
+    
+    public var anchorAreas : AnchorAreas {
+        get {
+            return _anchorAreas
+        }
+    }
 
     public init( ownerDiagram : DiagramLayer ) {
 
         _diagram = ownerDiagram
     }
     
-    public func onAdded( layer : DiagramLayer ) {
+    public func onAdded() {
         
         if let  x = box?.pos.x,
                 y = box?.pos.y,
                 w = box?.size.width,
                 h = box?.size.height {
-
-//                    _edges.append( Edge(p1: CGPoint(x: x, y: y), p2: CGPoint(x: x, y: y + h) ) )
-//                    _edges.append( Edge(p1: CGPoint(x: x, y: y), p2: CGPoint(x: x + w, y: y) ) )
-//                    _edges.append( Edge(p1: CGPoint(x: x + w, y: y), p2: CGPoint(x: x + w, y: y + h) ) )
-//                    _edges.append( Edge(p1: CGPoint(x: x, y: y + h), p2: CGPoint(x: x + w, y: y + h) ) )
+                    
+            _anchorAreas.add("top", area: AnchorArea(x: x, y: y, width: w, height: 0))
+            _anchorAreas.add("bottom", area: AnchorArea(x: x, y: y+h, width: w, height: 0))
+            _anchorAreas.add("left", area: AnchorArea(x: x, y: y, width: 0, height: h))
+            _anchorAreas.add("right", area: AnchorArea(x: x+w, y: y, width: 0, height: h))
         }
     }
 

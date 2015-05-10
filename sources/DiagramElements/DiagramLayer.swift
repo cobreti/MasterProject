@@ -37,6 +37,8 @@ public class DiagramLayer : DebugPrintable {
     public func add( primitive : Primitive ) {
 
         _primitives[primitive.id] = primitive
+        
+        primitive.onAdded()
     }
     
     public func get( id : String ) -> Primitive! {

@@ -7,19 +7,20 @@
 //
 
 import Foundation
+import Shapes
 
 public class AnchorArea {
     
-    public init( x : CGFloat, y : CGFloat, width : CGFloat, height : CGFloat ) {
-        
-        _x = x
-        _y = y
-        _width = width
-        _height = height
+    public var box : Rect {
+        get {
+            return _box
+        }
     }
     
-    private var _x : CGFloat = 0
-    private var _y : CGFloat = 0
-    private var _width : CGFloat = 0
-    private var _height : CGFloat = 0
+    public init( x : Double, y : Double, width : Double, height : Double ) {
+        
+        _box = Rect(x: x, y: y, width: width, height: height)
+    }
+    
+    private var _box : Rect
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163DABA51AFFE9F600BFD159 /* XmlConnectorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DABA41AFFE9F600BFD159 /* XmlConnectorParser.swift */; };
+		1645C5381AFFBFE000FF7E77 /* XmlElementParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C5371AFFBFE000FF7E77 /* XmlElementParser.swift */; };
+		1645C53B1AFFC3DC00FF7E77 /* XmlDiagramParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C53A1AFFC3DC00FF7E77 /* XmlDiagramParser.swift */; };
+		1645C53D1AFFE6C700FF7E77 /* XmlShapeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C53C1AFFE6C700FF7E77 /* XmlShapeParser.swift */; };
 		165C11361AF6B05100EC1A5E /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C11351AF6B05100EC1A5E /* DiagramView.swift */; };
 		165C11381AF6B08C00EC1A5E /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C11371AF6B08C00EC1A5E /* DiagramViewController.swift */; };
 		165C113C1AF6B1FA00EC1A5E /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C113B1AF6B1FA00EC1A5E /* MainWindow.swift */; };
@@ -144,6 +148,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		163DABA41AFFE9F600BFD159 /* XmlConnectorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorParser.swift; sourceTree = "<group>"; };
+		1645C5371AFFBFE000FF7E77 /* XmlElementParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlElementParser.swift; path = ../../../../sources/VpProject/XmlElementParser.swift; sourceTree = "<group>"; };
+		1645C53A1AFFC3DC00FF7E77 /* XmlDiagramParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDiagramParser.swift; path = ../../../../sources/VpProject/parsers/XmlDiagramParser.swift; sourceTree = "<group>"; };
+		1645C53C1AFFE6C700FF7E77 /* XmlShapeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlShapeParser.swift; path = ../../../../sources/VpProject/parsers/XmlShapeParser.swift; sourceTree = "<group>"; };
 		165C11351AF6B05100EC1A5E /* DiagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramView.swift; path = DiagramView/DiagramView.swift; sourceTree = "<group>"; };
 		165C11371AF6B08C00EC1A5E /* DiagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewController.swift; path = DiagramView/DiagramViewController.swift; sourceTree = "<group>"; };
 		165C113B1AF6B1FA00EC1A5E /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWindow.swift; path = MainWindow/MainWindow.swift; sourceTree = "<group>"; };
@@ -264,6 +272,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1645C5391AFFC3B900FF7E77 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				1645C53A1AFFC3DC00FF7E77 /* XmlDiagramParser.swift */,
+				1645C53C1AFFE6C700FF7E77 /* XmlShapeParser.swift */,
+				163DABA41AFFE9F600BFD159 /* XmlConnectorParser.swift */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
 		165C11341AF6B02000EC1A5E /* DiagramView */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,10 +428,12 @@
 		167D92C21AF455BE00658E19 /* VpProject */ = {
 			isa = PBXGroup;
 			children = (
+				1645C5391AFFC3B900FF7E77 /* Parsers */,
 				167D92C51AF455BE00658E19 /* VpProject.h */,
 				167D92C31AF455BE00658E19 /* Supporting Files */,
 				B02F36227CCA08C6FBEA11E1 /* VpProject.swift */,
 				B02F3AD8A596BDBC1BF59290 /* XmlDocParser.swift */,
+				1645C5371AFFBFE000FF7E77 /* XmlElementParser.swift */,
 			);
 			path = VpProject;
 			sourceTree = "<group>";
@@ -840,8 +860,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1645C53B1AFFC3DC00FF7E77 /* XmlDiagramParser.swift in Sources */,
 				B02F398F99F10422DDA598A7 /* VpProject.swift in Sources */,
+				163DABA51AFFE9F600BFD159 /* XmlConnectorParser.swift in Sources */,
 				B02F3F28D7FC80D771553403 /* XmlDocParser.swift in Sources */,
+				1645C53D1AFFE6C700FF7E77 /* XmlShapeParser.swift in Sources */,
+				1645C5381AFFBFE000FF7E77 /* XmlElementParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1389,6 +1413,7 @@
 				1697DC811AFEDE910089E609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1697DC821AFEDE910089E609 /* Build configuration list for PBXNativeTarget "ShapesTests" */ = {
 			isa = XCConfigurationList;
@@ -1397,6 +1422,7 @@
 				1697DC841AFEDE910089E609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

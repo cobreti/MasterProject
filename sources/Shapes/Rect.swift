@@ -61,6 +61,14 @@ public class Rect {
         _pos = Point(x: x, y: y)
         _size = Size(width: width, height: height)
     }
+    
+    public func contains( rc : Rect ) -> Bool {
+
+        return  rc.left >= self.left &&
+                rc.right <= self.right &&
+                rc.top >= self.top &&
+                rc.bottom <= self.bottom
+    }
 
     private var _pos : Point
     private var _size : Size

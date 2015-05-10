@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import Shapes
 
 public class AnchorAreas {
     
@@ -17,6 +17,17 @@ public class AnchorAreas {
     
     public func add( id : String, area : AnchorArea ) {
         _areas[id] = area
+    }
+    
+    public func getAreaContainedInRect( rc : Rect ) -> AnchorArea! {
+        
+        for (id, area) in _areas {
+            if rc.contains(area.box) {
+                return area
+            }
+        }
+        
+        return nil
     }
     
     private var _areas : [String : AnchorArea] = [ : ]
