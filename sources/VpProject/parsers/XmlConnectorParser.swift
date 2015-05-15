@@ -12,6 +12,14 @@ import Shapes
 
 class XmlConnectorParser : XmlElementParser {
     
+    init( name : String, diagramLayer : DiagramLayer, delegate : XmlElementParserDelegate! = nil) {
+        
+        _diagramLayer = diagramLayer
+
+        super.init(name: name, delegate: delegate)
+        
+    }
+
     override func onStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
      
         switch elementName {
@@ -43,10 +51,9 @@ class XmlConnectorParser : XmlElementParser {
             heightStr = attributeDict["height"] as? String,
             height = numberFormatter.numberFromString(heightStr)?.doubleValue,
             to = attributeDict["to"] as? String,
-            from = attributeDict["from"] as? String,
-            currentDiag = docParser.currentDiagram {
+            from = attributeDict["from"] as? String {
                 
-                var lnk = DiagramElements.Link(ownerDiagram: currentDiag)
+                var lnk = DiagramElements.Link(ownerDiagram: _diagramLayer)
                 
                 lnk.box = Rect(x: x, y: y, width: width, height: height)
                 lnk.name = id
@@ -54,7 +61,9 @@ class XmlConnectorParser : XmlElementParser {
                 lnk.idTo = to
                 lnk.idFrom = from
                 
-                currentDiag.add(lnk)
+                _diagramLayer.add(lnk)
         }
     }
+    
+    var _diagramLayer : DiagramLayer
 }

@@ -50,6 +50,15 @@
     <content url="file://$MODULE_DIR$/../../../sources/VpProject/XmlElementParser.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/XmlElementParser.swift" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/XmlElementParserDelegate.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/XmlElementParserDelegate.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" isTestSource="false" />
     </content>

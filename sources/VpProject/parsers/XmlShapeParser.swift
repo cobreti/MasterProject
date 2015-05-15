@@ -10,7 +10,15 @@ import Foundation
 import DiagramElements
 import Shapes
 
-class XmlShapeParser : XmlElementParser {
+class XmlShapeParser : XmlSubTreeParser {
+
+    init( name : String, diagramLayer : DiagramLayer, delegate : XmlElementParserDelegate! = nil) {
+        
+        _diagramLayer = diagramLayer
+
+        super.init(name: name, delegate: delegate)
+        
+    }
 
     override func onStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
 
@@ -21,6 +29,8 @@ class XmlShapeParser : XmlElementParser {
             default:
                 break
         }
+
+        super.onStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
 
 
@@ -45,16 +55,17 @@ class XmlShapeParser : XmlElementParser {
         widthStr = attributeDict["width"] as? String,
         width = numberFormatter.numberFromString(widthStr)?.doubleValue,
         heightStr = attributeDict["height"] as? String,
-        height = numberFormatter.numberFromString(heightStr)?.doubleValue,
-        currentDiag = docParser.currentDiagram {
+        height = numberFormatter.numberFromString(heightStr)?.doubleValue {
 
-            var elm = DiagramElements.Element(ownerDiagram: currentDiag)
+            var elm = DiagramElements.Element(ownerDiagram: _diagramLayer)
 
             elm.box = Rect(x: x, y: y, width: width, height: height)
             elm.name = name
             elm.id = id
 
-            currentDiag.add(elm)
+            _diagramLayer.add(elm)
         }
     }
+
+    var _diagramLayer : DiagramLayer
 }

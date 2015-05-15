@@ -17,27 +17,15 @@ class XmlElementParser {
         }
     }
 
-    var docParser : XmlDocParser {
+    var delegate : XmlElementParserDelegate! {
         get {
-            return _docParser
-        }
-    }
-
-    var currentDiagram : DiagramLayer! {
-        get {
-            return docParser.currentDiagram
-        }
-    }
-
-    var document : DiagramElements.Document! {
-        get {
-            return docParser.document
+            return _delegate
         }
     }
     
-    init( name : String, docParser : XmlDocParser ) {
-        _docParser = docParser
+    init( name : String, delegate : XmlElementParserDelegate! = nil) {
         _name = name
+        _delegate = delegate
     }
 
     func onStartElement(    elementName : String,
@@ -52,16 +40,14 @@ class XmlElementParser {
                         qualifiedName : String? ) {
 
         if elementName == _name {
-            Stop()
+            if let delegate = self.delegate {
+                delegate.onParsingCompleted(self)
+            }
         }
                             
     }
 
-    func Stop() {
-        docParser.popElementParser(self)
-    }
-
-    var _docParser : XmlDocParser
     var _name : String
+    var _delegate : XmlElementParserDelegate!
 }
 

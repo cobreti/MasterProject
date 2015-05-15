@@ -64,11 +64,11 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
 
         switch elementName {
             case "Diagram":
-                pushElementParser(XmlDiagramParser(name: "Diagram", docParser: self))
-            case "Shape":
-                pushElementParser(XmlShapeParser(name: "Shape", docParser: self))
-            case "Connector":
-                pushElementParser(XmlConnectorParser(name: "Connector", docParser: self))
+                pushElementParser(XmlDiagramParser(name: "Diagram", document: self.document))
+//            case "Shape":
+//                pushElementParser(XmlShapeParser(name: "Shape", docParser: self))
+//            case "Connector":
+//                pushElementParser(XmlConnectorParser(name: "Connector", docParser: self))
             default:
                 debugPrintln("unhandled element")
         }

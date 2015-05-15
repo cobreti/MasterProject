@@ -9,30 +9,40 @@
 import Foundation
 import DiagramElements
 
-class XmlDiagramParser : XmlElementParser {
+class XmlDiagramParser : XmlSubTreeParser {
+
+    init( name : String, document : DiagramElements.Document, delegate : XmlElementParserDelegate! = nil) {
+        
+        _document = document
+
+        super.init(name: name, delegate: delegate)
+        
+    }
 
     override func onStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
 
         switch elementName {
             case "Diagram":
                 onDiagram(attributeDict)
-                break
+            case "Shape":
+                pushElementParser(XmlShapeParser(name: "Shape", diagramLayer: _diagram, delegate: self))
+            case "Connector":
+                pushElementParser(XmlConnectorParser(name: "Connector", diagramLayer: _diagram, delegate: self))
             default:
                 break
         }
+        
+        super.onStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
 
     override func onEndElement(elementName: String, namespaceURI: String?, qualifiedName: String?) {
 
-        super.onEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
-
-        switch elementName {
-            case "Diagram":
-                docParser.currentDiagram = nil
-                break
-            default:
-                break
+        if _name == elementName {
+            _diagram?.updateBoundingBox()
+            _diagram?.updateLinks()
         }
+        
+        super.onEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
     }
 
 
@@ -40,9 +50,11 @@ class XmlDiagramParser : XmlElementParser {
         
         if let name = attributeDict["name"] as? String {
             debugPrintln("Diagram node of name : \(name)")
-            var diag = DiagramLayer(name: name)
-            document.layers.add(diag)
-            docParser.currentDiagram = diag
+            _diagram = DiagramLayer(name: name)
+            _document.layers.add(_diagram)
         }
     }
+
+    var _diagram : DiagramLayer!
+    var _document : DiagramElements.Document
 }
