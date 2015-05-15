@@ -58,16 +58,6 @@ public class DiagramLayer : DebugPrintable {
         }
     }
     
-    public func updateLinks() {
-        
-        for (id, p) in _primitives {
-            
-            if let  lnk = p as? Link {
-                lnk.createAnchors()
-            }
-        }
-    }
-    
     public var debugDescription: String {
         get {
             return ""

@@ -20,27 +20,8 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
 
         parser?.delegate = self
         parser?.parse()
-        
-        currentDiagram = nil
     }
     
-    var currentDiagram : DiagramLayer! {
-        get {
-            return _currentDiagram
-        }
-        set(diag) {
-            
-            if let d = _currentDiagram {
-                
-                d.updateBoundingBox()
-                d.updateLinks()
-                debugPrintln(d)
-            }
-            
-            _currentDiagram = diag
-        }
-    }
-
     var currentParser : XmlElementParser! {
         get {
             return _elementParsers.last
@@ -65,10 +46,6 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
         switch elementName {
             case "Diagram":
                 pushElementParser(XmlDiagramParser(name: "Diagram", document: self.document))
-//            case "Shape":
-//                pushElementParser(XmlShapeParser(name: "Shape", docParser: self))
-//            case "Connector":
-//                pushElementParser(XmlConnectorParser(name: "Connector", docParser: self))
             default:
                 debugPrintln("unhandled element")
         }
@@ -109,8 +86,6 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
     func onPoints(attributeDict : [NSObject:AnyObject]) {
         
     }
-
-    var _currentDiagram : DiagramLayer!
 
     var _elementParsers : [XmlElementParser] = []
     var _doc : DiagramElements.Document

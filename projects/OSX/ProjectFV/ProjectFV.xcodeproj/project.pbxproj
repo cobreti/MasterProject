@@ -38,8 +38,6 @@
 		167D92D81AF455BE00658E19 /* VpProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92C11AF455BE00658E19 /* VpProject.framework */; };
 		167D92D91AF455BE00658E19 /* VpProject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92C11AF455BE00658E19 /* VpProject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		167D92E01AF4651C00658E19 /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92721AF44E7B00658E19 /* DiagramElements.framework */; };
-		1697DC5E1AFED2660089E609 /* AnchorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC5D1AFED2660089E609 /* AnchorArea.swift */; };
-		1697DC601AFED3230089E609 /* AnchorAreas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC5F1AFED3230089E609 /* AnchorAreas.swift */; };
 		1697DC6B1AFEDE910089E609 /* Shapes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1697DC6A1AFEDE910089E609 /* Shapes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1697DC711AFEDE910089E609 /* Shapes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1697DC661AFEDE910089E609 /* Shapes.framework */; };
 		1697DC7A1AFEDE910089E609 /* ShapesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC791AFEDE910089E609 /* ShapesTests.swift */; };
@@ -189,8 +187,6 @@
 		167D92CB1AF455BE00658E19 /* VpProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VpProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		167D92D31AF455BE00658E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167D92D41AF455BE00658E19 /* VpProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpProjectTests.swift; sourceTree = "<group>"; };
-		1697DC5D1AFED2660089E609 /* AnchorArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorArea.swift; path = ../../../../sources/DiagramElements/AnchorArea.swift; sourceTree = "<group>"; };
-		1697DC5F1AFED3230089E609 /* AnchorAreas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorAreas.swift; path = ../../../../sources/DiagramElements/AnchorAreas.swift; sourceTree = "<group>"; };
 		1697DC661AFEDE910089E609 /* Shapes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shapes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1697DC691AFEDE910089E609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1697DC6A1AFEDE910089E609 /* Shapes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shapes.h; sourceTree = "<group>"; };
@@ -406,8 +402,6 @@
 				B02F380233C566D8903C545E /* Element.swift */,
 				B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */,
 				165C11491AF8425700EC1A5E /* Link.swift */,
-				1697DC5D1AFED2660089E609 /* AnchorArea.swift */,
-				1697DC5F1AFED3230089E609 /* AnchorAreas.swift */,
 			);
 			path = DiagramElements;
 			sourceTree = "<group>";
@@ -855,11 +849,9 @@
 				167D92931AF44EB200658E19 /* DiagramLayers.swift in Sources */,
 				167D92951AF44EC800658E19 /* DiagramLayer.swift in Sources */,
 				B02F3BCD5D45E713BE90C31F /* Document.swift in Sources */,
-				1697DC601AFED3230089E609 /* AnchorAreas.swift in Sources */,
 				165C114A1AF8425700EC1A5E /* Link.swift in Sources */,
 				B02F335DD90932392B213890 /* Element.swift in Sources */,
 				B02F3131F19F6A842F4E7C2F /* Primitive.swift in Sources */,
-				1697DC5E1AFED2660089E609 /* AnchorArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

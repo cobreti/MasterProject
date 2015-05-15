@@ -29,23 +29,44 @@ class DiagramDisplay {
         
         for (id, prim) in _layer.primitives {
             
-            var bezier : NSBezierPath = NSBezierPath()
             
             if let elm = prim as? Element {
-                let     x = elm.box.pos.x,
-                        y = elm.box.pos.y,
-                        width = elm.box.size.width,
-                        height = elm.box.size.height
-                            
-                var rc = NSMakeRect( CGFloat(x + _offset.x) * _scaling, CGFloat(y + _offset.y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
-                
-                bezier.appendBezierPathWithRect(rc)
-                bezier.stroke()
+                displayElement(elm)
             }
             else if let lnk = prim as? Link {
                 
                 displayLink(lnk)
             }
+        }
+    }
+    
+    func displayElement( elm : Element ) {
+        
+        var bezier : NSBezierPath = NSBezierPath()
+
+        let     x = elm.box.pos.x,
+        y = elm.box.pos.y,
+        width = elm.box.size.width,
+        height = elm.box.size.height
+        
+        var rc = NSMakeRect( CGFloat(x + _offset.x) * _scaling, CGFloat(y + _offset.y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
+        
+        bezier.appendBezierPathWithRect(rc)
+        bezier.stroke()
+
+        if let name = elm.name {
+            var parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
+            var strSize = name.sizeWithAttributes([
+                NSParagraphStyleAttributeName: parStyle
+                ])
+            
+            parStyle.alignment = NSTextAlignment.CenterTextAlignment
+            
+            rc.inset(dx: 0, dy: (rc.height - strSize.height)/2)
+            
+            name.drawInRect(rc, withAttributes: [
+                NSParagraphStyleAttributeName: parStyle
+                ])
         }
     }
     

@@ -39,7 +39,6 @@ class XmlDiagramParser : XmlSubTreeParser {
 
         if _name == elementName {
             _diagram?.updateBoundingBox()
-            _diagram?.updateLinks()
         }
         
         super.onEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
