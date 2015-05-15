@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Shapes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>VpProject.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +53,16 @@
 			<true/>
 		</dict>
 		<key>1673BE541AF550B500C8F9AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>16EE9FF71B06A77900A872D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>16EEA0011B06A77900A872D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

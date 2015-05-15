@@ -62,6 +62,20 @@
                ReferencedContainer = "container:ProjectFV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "16EEA0011B06A77900A872D4"
+               BuildableName = "ShapesTests.xctest"
+               BlueprintName = "ShapesTests"
+               ReferencedContainer = "container:ProjectFV.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -97,6 +111,16 @@
                BlueprintIdentifier = "1673BE541AF550B500C8F9AE"
                BuildableName = "VpProjectTests.xctest"
                BlueprintName = "VpProjectTests"
+               ReferencedContainer = "container:ProjectFV.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "16EEA0011B06A77900A872D4"
+               BuildableName = "ShapesTests.xctest"
+               BlueprintName = "ShapesTests"
                ReferencedContainer = "container:ProjectFV.xcodeproj">
             </BuildableReference>
          </TestableReference>
