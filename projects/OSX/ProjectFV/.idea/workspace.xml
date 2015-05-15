@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488870e0-3fc1-4a98-af98-b2bc45967f8b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlElementParserDelegate.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/Shapes/Polyline.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointsParser.swift" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp~20" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp~21" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp.working" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp.working" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/Link.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Link.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ProjectFV.iml" afterPath="$PROJECT_DIR$/.idea/ProjectFV.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +40,21 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="XmlDiagramParser.swift" pinned="false" current-in-tab="true">
+          <file leaf-file-name="XmlDiagramParser.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.84615386" vertical-offset="378" max-vertical-offset="924">
-                  <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="924">
+                  <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="XmlPointParser.swift" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.64102566" vertical-offset="28" max-vertical-offset="644">
+                  <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -56,21 +64,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="XmlDocParser.swift" pinned="false" current-in-tab="true">
+          <file leaf-file-name="XmlDocParser.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.025878003" vertical-offset="938" max-vertical-offset="1736">
+                <state vertical-scroll-proportion="0.0" vertical-offset="938" max-vertical-offset="1736">
                   <caret line="66" column="72" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="72" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="XmlShapeParser.swift" pinned="false" current-in-tab="false">
+          <file leaf-file-name="XmlShapeParser.swift" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1064">
-                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.31053606" vertical-offset="490" max-vertical-offset="1064">
+                  <caret line="47" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -89,8 +97,8 @@
           <file leaf-file-name="XmlElementParser.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="826">
-                  <caret line="29" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826">
+                  <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -117,10 +125,11 @@
         <option value="$PROJECT_DIR$/../../../sources/DiagramElements/DiagramLayer.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Application.swift" />
         <option value="$PROJECT_DIR$/../../../sources/DiagramElements/Primitive.swift" />
-        <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift" />
+        <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" />
+        <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift" />
       </list>
     </option>
   </component>
@@ -128,8 +137,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="719" />
-    <option name="y" value="60" />
+    <option name="x" value="786" />
+    <option name="y" value="51" />
     <option name="width" value="1538" />
     <option name="height" value="1269" />
   </component>
@@ -352,7 +361,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="719" y="60" width="1538" height="1269" extended-state="1" />
+    <frame x="786" y="51" width="1538" height="1269" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -400,14 +409,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjectFV/XMLParsingTest.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="574" max-vertical-offset="658">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="756">
@@ -751,14 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1064">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="854">
@@ -767,26 +760,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift">
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="826">
-          <caret line="29" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="938" max-vertical-offset="1736">
+          <caret line="66" column="72" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84615386" vertical-offset="378" max-vertical-offset="924">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="924">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift">
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.025878003" vertical-offset="938" max-vertical-offset="1736">
-          <caret line="66" column="72" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31053606" vertical-offset="490" max-vertical-offset="1064">
+          <caret line="47" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64102566" vertical-offset="28" max-vertical-offset="644">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>

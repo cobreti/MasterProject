@@ -43,23 +43,29 @@ class DiagramDisplay {
                 bezier.stroke()
             }
             else if let lnk = prim as? Link {
-                let     x = lnk.box.pos.x,
-                        y = lnk.box.pos.y,
-                        width = lnk.box.size.width,
-                        height = lnk.box.size.height,
-                        anchorFrom = lnk.anchorFrom,
-                        anchorTo = lnk.anchorTo
-
-                bezier.moveToPoint(NSMakePoint(CGFloat(anchorFrom.box.left + _offset.x) * _scaling, CGFloat(anchorFrom.box.top + _offset.y) * _scaling))
-                bezier.lineToPoint(NSMakePoint(CGFloat(anchorTo.box.right + _offset.x) * _scaling, CGFloat(anchorTo.box.bottom + _offset.y) * _scaling))
-                bezier.lineWidth = 2.0
-                bezier.stroke()
-
-//                var rc = NSMakeRect( CGFloat(x + _offset.x) * _scaling, CGFloat(y + _offset.y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
-//                
-//                bezier.appendBezierPathWithOvalInRect(rc)
-//                bezier.stroke()
+                
+                displayLink(lnk)
             }
+        }
+    }
+    
+    func displayLink( lnk : Link ) {
+        
+        var bezier : NSBezierPath = NSBezierPath()
+        let count = lnk.segment.count
+        
+        if count > 1 {
+            
+            var pt = lnk.segment.get(0)
+            bezier.moveToPoint(NSMakePoint( CGFloat(pt.x + _offset.x) * _scaling, CGFloat(pt.y + _offset.y) * _scaling))
+            
+            for var idx = 1; idx < count; idx++ {
+                pt = lnk.segment.get(idx)
+                bezier.lineToPoint(NSMakePoint( CGFloat(pt.x + _offset.x) * _scaling, CGFloat(pt.y + _offset.y) * _scaling))
+            }
+            
+            bezier.lineWidth - 1.0
+            bezier.stroke()
         }
     }
     

@@ -47,15 +47,15 @@ class XmlShapeParser : XmlSubTreeParser {
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
 
         if let  id = attributeDict["id"] as? String,
-        name = attributeDict["name"] as? String,
-        xStr = attributeDict["x"] as? String,
-        x = numberFormatter.numberFromString(xStr)?.doubleValue,
-        yStr = attributeDict["y"] as? String,
-        y = numberFormatter.numberFromString(yStr)?.doubleValue,
-        widthStr = attributeDict["width"] as? String,
-        width = numberFormatter.numberFromString(widthStr)?.doubleValue,
-        heightStr = attributeDict["height"] as? String,
-        height = numberFormatter.numberFromString(heightStr)?.doubleValue {
+                name = attributeDict["name"] as? String,
+                xStr = attributeDict["x"] as? String,
+                x = numberFormatter.numberFromString(xStr)?.doubleValue,
+                yStr = attributeDict["y"] as? String,
+                y = numberFormatter.numberFromString(yStr)?.doubleValue,
+                widthStr = attributeDict["width"] as? String,
+                width = numberFormatter.numberFromString(widthStr)?.doubleValue,
+                heightStr = attributeDict["height"] as? String,
+                height = numberFormatter.numberFromString(heightStr)?.doubleValue {
 
             var elm = DiagramElements.Element(ownerDiagram: _diagramLayer)
 

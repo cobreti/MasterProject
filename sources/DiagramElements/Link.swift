@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Shapes
 
 public class Link : Primitive {
     
@@ -25,6 +26,12 @@ public class Link : Primitive {
         }
         set (value) {
             _idTo = value
+        }
+    }
+    
+    public var segment : Polyline {
+        get {
+            return _segment
         }
     }
     
@@ -61,6 +68,7 @@ public class Link : Primitive {
     
     var _idFrom : String!
     var _idTo : String!
+    var _segment : Polyline! = Polyline()
     
     var _anchorFrom : AnchorArea!
     var _anchorTo : AnchorArea!

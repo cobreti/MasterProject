@@ -10,7 +10,7 @@ import Foundation
 import DiagramElements
 import Shapes
 
-class XmlConnectorParser : XmlElementParser {
+class XmlConnectorParser : XmlSubTreeParser {
     
     init( name : String, diagramLayer : DiagramLayer, delegate : XmlElementParserDelegate! = nil) {
         
@@ -26,9 +26,13 @@ class XmlConnectorParser : XmlElementParser {
             case "Connector":
                 onConnector(attributeDict)
                 break
+            case "Points":
+                pushElementParser(XmlPointsParser(name: "Points", link: _lnk, delegate: self))
             default:
                 break
         }
+        
+        super.onStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
     
     override func onEndElement(elementName: String, namespaceURI: String?, qualifiedName: String?) {
@@ -53,17 +57,18 @@ class XmlConnectorParser : XmlElementParser {
             to = attributeDict["to"] as? String,
             from = attributeDict["from"] as? String {
                 
-                var lnk = DiagramElements.Link(ownerDiagram: _diagramLayer)
+                _lnk = DiagramElements.Link(ownerDiagram: _diagramLayer)
                 
-                lnk.box = Rect(x: x, y: y, width: width, height: height)
-                lnk.name = id
-                lnk.id = id
-                lnk.idTo = to
-                lnk.idFrom = from
+                _lnk.box = Rect(x: x, y: y, width: width, height: height)
+                _lnk.name = id
+                _lnk.id = id
+                _lnk.idTo = to
+                _lnk.idFrom = from
                 
-                _diagramLayer.add(lnk)
+                _diagramLayer.add(_lnk)
         }
     }
     
     var _diagramLayer : DiagramLayer
+    var _lnk : DiagramElements.Link!
 }

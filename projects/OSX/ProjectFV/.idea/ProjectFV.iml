@@ -35,6 +35,9 @@
     <content url="file://$MODULE_DIR$/../../../sources/Shapes/Point.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/Shapes/Point.swift" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../sources/Shapes/Polyline.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/Shapes/Polyline.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/Shapes/Rect.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/Shapes/Rect.swift" isTestSource="false" />
     </content>
@@ -61,6 +64,12 @@
     </content>
     <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlPointsParser.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlPointsParser.swift" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" isTestSource="false" />
