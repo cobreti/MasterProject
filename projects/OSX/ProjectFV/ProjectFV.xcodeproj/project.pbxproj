@@ -52,6 +52,8 @@
 		16EE9FDB1B06531D00A872D4 /* XmlPointsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FDA1B06531D00A872D4 /* XmlPointsParser.swift */; };
 		16EE9FDD1B06846000A872D4 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FDC1B06846000A872D4 /* Polyline.swift */; };
 		16EE9FDF1B06897F00A872D4 /* XmlPointParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FDE1B06897F00A872D4 /* XmlPointParser.swift */; };
+		16EEA0311B0AB08500A872D4 /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA0301B0AB08500A872D4 /* DiagramPortal.swift */; };
+		16EEA0331B0ABC8600A872D4 /* Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA0321B0ABC8600A872D4 /* Margins.swift */; };
 		B02F3131F19F6A842F4E7C2F /* Primitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */; };
 		B02F335DD90932392B213890 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F380233C566D8903C545E /* Element.swift */; };
 		B02F398F99F10422DDA598A7 /* VpProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F36227CCA08C6FBEA11E1 /* VpProject.swift */; };
@@ -201,6 +203,8 @@
 		16EE9FDA1B06531D00A872D4 /* XmlPointsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlPointsParser.swift; path = ../../../../sources/VpProject/parsers/XmlPointsParser.swift; sourceTree = "<group>"; };
 		16EE9FDC1B06846000A872D4 /* Polyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = ../../../../sources/Shapes/Polyline.swift; sourceTree = "<group>"; };
 		16EE9FDE1B06897F00A872D4 /* XmlPointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlPointParser.swift; path = ../../../../sources/VpProject/parsers/XmlPointParser.swift; sourceTree = "<group>"; };
+		16EEA0301B0AB08500A872D4 /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = ../../../../sources/ProjectFV/DiagramPortal.swift; sourceTree = "<group>"; };
+		16EEA0321B0ABC8600A872D4 /* Margins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Margins.swift; path = ../../../../sources/Shapes/Margins.swift; sourceTree = "<group>"; };
 		B02F36227CCA08C6FBEA11E1 /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
 		B02F3686A6F8083BC92F7746 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		B02F380233C566D8903C545E /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = ../../../../sources/DiagramElements/Element.swift; sourceTree = "<group>"; };
@@ -297,6 +301,7 @@
 				165C11371AF6B08C00EC1A5E /* DiagramViewController.swift */,
 				165C11451AF6EB2600EC1A5E /* DiagramDisplay.swift */,
 				165C11471AF6EF7000EC1A5E /* DiagramDisplayParameters.swift */,
+				16EEA0301B0AB08500A872D4 /* DiagramPortal.swift */,
 			);
 			name = DiagramView;
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 				1697DC881AFEDEDB0089E609 /* Point.swift */,
 				1697DC8A1AFEDFF80089E609 /* Size.swift */,
 				16EE9FDC1B06846000A872D4 /* Polyline.swift */,
+				16EEA0321B0ABC8600A872D4 /* Margins.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -827,6 +833,7 @@
 				165C11461AF6EB2600EC1A5E /* DiagramDisplay.swift in Sources */,
 				165C11361AF6B05100EC1A5E /* DiagramView.swift in Sources */,
 				165DFFC41AEF0A7A003B8B44 /* AppDelegate.swift in Sources */,
+				16EEA0311B0AB08500A872D4 /* DiagramPortal.swift in Sources */,
 				165C11481AF6EF7100EC1A5E /* DiagramDisplayParameters.swift in Sources */,
 				B02F3C3EE0BA8C9E2E602E84 /* XMLParsingTest.swift in Sources */,
 				165C113C1AF6B1FA00EC1A5E /* MainWindow.swift in Sources */,
@@ -896,6 +903,7 @@
 				16EE9FDD1B06846000A872D4 /* Polyline.swift in Sources */,
 				1697DC8B1AFEDFF80089E609 /* Size.swift in Sources */,
 				1697DC871AFEDEBF0089E609 /* Rect.swift in Sources */,
+				16EEA0331B0ABC8600A872D4 /* Margins.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

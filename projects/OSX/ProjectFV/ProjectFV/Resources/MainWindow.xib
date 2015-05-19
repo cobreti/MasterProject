@@ -21,14 +21,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="guk-2r-WSL">
-                        <rect key="frame" x="50" y="50" width="380" height="170"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                     </customView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="guk-2r-WSL" secondAttribute="bottom" constant="50" id="5dS-65-f1p"/>
-                    <constraint firstAttribute="trailing" secondItem="guk-2r-WSL" secondAttribute="trailing" constant="50" id="bFD-LW-UwV"/>
-                    <constraint firstItem="guk-2r-WSL" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="50" id="bJI-qO-tiX"/>
-                    <constraint firstItem="guk-2r-WSL" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="50" id="tij-e9-8NQ"/>
+                    <constraint firstAttribute="bottom" secondItem="guk-2r-WSL" secondAttribute="bottom" id="5dS-65-f1p"/>
+                    <constraint firstAttribute="trailing" secondItem="guk-2r-WSL" secondAttribute="trailing" id="bFD-LW-UwV"/>
+                    <constraint firstItem="guk-2r-WSL" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="bJI-qO-tiX"/>
+                    <constraint firstItem="guk-2r-WSL" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="tij-e9-8NQ"/>
                 </constraints>
             </view>
             <connections>

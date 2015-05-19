@@ -2,12 +2,6 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/AnchorArea.swift">
-      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/AnchorArea.swift" isTestSource="false" />
-    </content>
-    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/AnchorAreas.swift">
-      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/AnchorAreas.swift" isTestSource="false" />
-    </content>
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/DiagramLayer.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/DiagramLayer.swift" isTestSource="false" />
     </content>
@@ -31,6 +25,12 @@
     </content>
     <content url="file://$MODULE_DIR$/../../../sources/EmbeddedRes">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/EmbeddedRes" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/ProjectFV/DiagramPortal.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/ProjectFV/DiagramPortal.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/Shapes/Margins.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/Shapes/Margins.swift" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../sources/Shapes/Point.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/Shapes/Point.swift" isTestSource="false" />

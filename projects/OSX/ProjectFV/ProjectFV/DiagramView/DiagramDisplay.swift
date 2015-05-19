@@ -17,12 +17,16 @@ class DiagramDisplay {
         _targetRect = targetRect
         _layer = layer
         
-        _offset = Point(x: -_layer.box.pos.x, y: -_layer.box.pos.y)
+        _diagramPortal = DiagramPortal(
+            rcArea: Rect( x: Double(targetRect.origin.x), y: Double(targetRect.origin.y), width: Double(targetRect.size.width), height: Double(targetRect.size.height) ),
+            diagramBox: _layer.box )
         
-        let xScaling = targetRect.width / CGFloat(_layer.box.size.width)
-        let yScaling = targetRect.height / CGFloat(_layer.box.size.height)
+//        _offset = Point(x: -_layer.box.pos.x, y: -_layer.box.pos.y)
         
-        _scaling = min(xScaling, yScaling)
+//        let xScaling = targetRect.width / CGFloat(_layer.box.size.width)
+//        let yScaling = targetRect.height / CGFloat(_layer.box.size.height)
+//        
+//        _scaling = min(xScaling, yScaling)
     }
     
     func display() {
@@ -43,13 +47,13 @@ class DiagramDisplay {
     func displayElement( elm : Element ) {
         
         var bezier : NSBezierPath = NSBezierPath()
-
-        let     x = elm.box.pos.x,
-        y = elm.box.pos.y,
-        width = elm.box.size.width,
-        height = elm.box.size.height
         
-        var rc = NSMakeRect( CGFloat(x + _offset.x) * _scaling, CGFloat(y + _offset.y) * _scaling, CGFloat(width) * _scaling, CGFloat(height) * _scaling )
+        var portalRect = _diagramPortal.rectFromDiagramToPortal(elm.box)
+        var rc = NSMakeRect(
+            CGFloat(portalRect.pos.x),
+            CGFloat(portalRect.pos.y),
+            CGFloat(portalRect.size.width),
+            CGFloat(portalRect.size.height) )
         
         bezier.appendBezierPathWithRect(rc)
         bezier.stroke()
@@ -78,11 +82,13 @@ class DiagramDisplay {
         if count > 1 {
             
             var pt = lnk.segment.get(0)
-            bezier.moveToPoint(NSMakePoint( CGFloat(pt.x + _offset.x) * _scaling, CGFloat(pt.y + _offset.y) * _scaling))
+            var portalPt = _diagramPortal.pointFromDiagramToPortal(pt)
+            bezier.moveToPoint(NSMakePoint( CGFloat(portalPt.x), CGFloat(portalPt.y)))
             
             for var idx = 1; idx < count; idx++ {
                 pt = lnk.segment.get(idx)
-                bezier.lineToPoint(NSMakePoint( CGFloat(pt.x + _offset.x) * _scaling, CGFloat(pt.y + _offset.y) * _scaling))
+                portalPt = _diagramPortal.pointFromDiagramToPortal(pt)
+                bezier.lineToPoint(NSMakePoint( CGFloat(portalPt.x), CGFloat(portalPt.y)))
             }
             
             bezier.lineWidth - 1.0
@@ -90,8 +96,7 @@ class DiagramDisplay {
         }
     }
     
-    var _scaling : CGFloat
     var _targetRect : NSRect
     var _layer : DiagramLayer
-    var _offset : Point
+    var _diagramPortal : DiagramPortal
 }
