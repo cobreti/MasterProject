@@ -2,16 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488870e0-3fc1-4a98-af98-b2bc45967f8b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/ProjectFV/DiagramPortal.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/Shapes/Margins.swift" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../diagrams/XML/project.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/LinkDisplay.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/ModelsTable.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelsParser.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlParserState.swift" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../diagrams/XML/projectFV.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp.working" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp.working" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/data.zip" afterPath="$PROJECT_DIR$/../../../diagrams/XML/data.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Resources/MainWindow.xib" afterPath="$PROJECT_DIR$/ProjectFV/Resources/MainWindow.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/DiagramDisplay.swift" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/DiagramDisplay.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/DiagramView.swift" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/DiagramView.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/Document.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Document.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/Primitive.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Primitive.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointsParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointsParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,25 +51,76 @@
     <favorites_list name="ProjectFV" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
+    <splitter split-orientation="vertical" split-proportion="0.49131122">
       <split-first>
         <leaf>
           <file leaf-file-name="XmlDiagramParser.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="910">
-                  <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="910">
+                  <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="XmlPointParser.swift" pinned="false" current-in-tab="true">
+          <file leaf-file-name="XmlPointParser.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5082267" vertical-offset="240" max-vertical-offset="798">
-                  <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ProjectFV.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.6564195" vertical-offset="3445" max-vertical-offset="186312">
+                  <caret line="572" column="133" selection-start-line="572" selection-start-column="117" selection-end-line="572" selection-end-column="133" />
+                  <folding>
+                    <element signature="e#26088#28323#0" expanded="false" />
+                    <element signature="e#28326#30555#0" expanded="false" />
+                    <element signature="e#30558#32787#0" expanded="false" />
+                    <element signature="e#32790#35023#0" expanded="false" />
+                    <element signature="e#35026#37257#0" expanded="false" />
+                    <element signature="e#37260#39487#0" expanded="false" />
+                    <element signature="e#39490#41719#0" expanded="false" />
+                    <element signature="e#41722#43953#0" expanded="false" />
+                    <element signature="e#43956#46185#0" expanded="false" />
+                    <element signature="e#46188#48421#0" expanded="false" />
+                    <element signature="e#48615#50490#0" expanded="false" />
+                    <element signature="e#50512#584976#0" expanded="false" />
+                    <element signature="e#50703#52626#0" expanded="false" />
+                    <element signature="e#52652#70994#0" expanded="false" />
+                    <element signature="e#63629#70979#0" expanded="false" />
+                    <element signature="e#71001#89343#0" expanded="false" />
+                    <element signature="e#89350#107702#0" expanded="false" />
+                    <element signature="e#107709#126061#0" expanded="false" />
+                    <element signature="e#126068#144420#0" expanded="false" />
+                    <element signature="e#144427#162769#0" expanded="false" />
+                    <element signature="e#162776#181128#0" expanded="false" />
+                    <element signature="e#181135#199487#0" expanded="false" />
+                    <element signature="e#199494#217846#0" expanded="false" />
+                    <element signature="e#217853#236205#0" expanded="false" />
+                    <element signature="e#236212#254554#0" expanded="false" />
+                    <element signature="e#254561#272913#0" expanded="false" />
+                    <element signature="e#272920#291272#0" expanded="false" />
+                    <element signature="e#291423#294870#0" expanded="false" />
+                    <element signature="e#294878#302248#0" expanded="false" />
+                    <element signature="e#302256#309616#0" expanded="false" />
+                    <element signature="e#585175#587101#0" expanded="false" />
+                    <element signature="e#587127#590516#0" expanded="false" />
+                    <element signature="e#590523#593912#0" expanded="false" />
+                    <element signature="e#593919#597308#0" expanded="false" />
+                    <element signature="e#594069#597293#0" expanded="false" />
+                    <element signature="e#597315#600704#0" expanded="false" />
+                    <element signature="e#600711#604100#0" expanded="false" />
+                    <element signature="e#604107#607496#0" expanded="false" />
+                    <element signature="e#621118#626386#0" expanded="false" />
+                    <element signature="e#626391#631695#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -61,42 +129,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="XmlDocParser.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift">
+          <file leaf-file-name="ProjectFV.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="602" max-vertical-offset="1386">
-                  <caret line="43" column="65" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="XmlShapeParser.swift" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2693727" vertical-offset="512" max-vertical-offset="1064">
-                  <caret line="47" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="XmlSubTreeParser.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="854">
-                  <caret line="45" column="26" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="XmlElementParser.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="434" max-vertical-offset="826">
-                  <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-                  <folding />
+                <state vertical-scroll-proportion="0.23374341" vertical-offset="210399" max-vertical-offset="288246">
+                  <caret line="15454" column="141" selection-start-line="15454" selection-start-column="125" selection-end-line="15454" selection-end-column="141" />
+                  <folding>
+                    <element signature="e#48615#50490#0" expanded="false" />
+                    <element signature="e#50703#52626#0" expanded="false" />
+                    <element signature="e#52796#56243#0" expanded="false" />
+                    <element signature="e#56269#63603#0" expanded="false" />
+                    <element signature="e#71145#74592#0" expanded="false" />
+                    <element signature="e#74618#81952#0" expanded="false" />
+                    <element signature="e#81994#89312#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -127,6 +173,7 @@
         <option value="$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift" />
+        <option value="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml" />
       </list>
     </option>
   </component>
@@ -134,10 +181,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="786" />
-    <option name="y" value="51" />
-    <option name="width" value="1538" />
-    <option name="height" value="1269" />
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1382" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -358,7 +404,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="786" y="51" width="1538" height="1269" extended-state="0" />
+    <frame x="0" y="23" width="2560" height="1382" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -366,8 +412,8 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22874093" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19141394" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22874093" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -401,19 +447,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="756">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="658" max-vertical-offset="1022">
@@ -738,14 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="854">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="602" max-vertical-offset="1386">
@@ -756,33 +786,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="910">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="910">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2693727" vertical-offset="512" max-vertical-offset="1064">
-          <caret line="47" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.08856089" vertical-offset="512" max-vertical-offset="1064">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5867159" vertical-offset="312" max-vertical-offset="854">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27675277" vertical-offset="284" max-vertical-offset="826">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5082267" vertical-offset="240" max-vertical-offset="798">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6564195" vertical-offset="3445" max-vertical-offset="186312">
+          <caret line="572" column="133" selection-start-line="572" selection-start-column="117" selection-end-line="572" selection-end-column="133" />
+          <folding>
+            <element signature="e#26088#28323#0" expanded="false" />
+            <element signature="e#28326#30555#0" expanded="false" />
+            <element signature="e#30558#32787#0" expanded="false" />
+            <element signature="e#32790#35023#0" expanded="false" />
+            <element signature="e#35026#37257#0" expanded="false" />
+            <element signature="e#37260#39487#0" expanded="false" />
+            <element signature="e#39490#41719#0" expanded="false" />
+            <element signature="e#41722#43953#0" expanded="false" />
+            <element signature="e#43956#46185#0" expanded="false" />
+            <element signature="e#46188#48421#0" expanded="false" />
+            <element signature="e#48615#50490#0" expanded="false" />
+            <element signature="e#50512#584976#0" expanded="false" />
+            <element signature="e#50703#52626#0" expanded="false" />
+            <element signature="e#52652#70994#0" expanded="false" />
+            <element signature="e#63629#70979#0" expanded="false" />
+            <element signature="e#71001#89343#0" expanded="false" />
+            <element signature="e#89350#107702#0" expanded="false" />
+            <element signature="e#107709#126061#0" expanded="false" />
+            <element signature="e#126068#144420#0" expanded="false" />
+            <element signature="e#144427#162769#0" expanded="false" />
+            <element signature="e#162776#181128#0" expanded="false" />
+            <element signature="e#181135#199487#0" expanded="false" />
+            <element signature="e#199494#217846#0" expanded="false" />
+            <element signature="e#217853#236205#0" expanded="false" />
+            <element signature="e#236212#254554#0" expanded="false" />
+            <element signature="e#254561#272913#0" expanded="false" />
+            <element signature="e#272920#291272#0" expanded="false" />
+            <element signature="e#291423#294870#0" expanded="false" />
+            <element signature="e#294878#302248#0" expanded="false" />
+            <element signature="e#302256#309616#0" expanded="false" />
+            <element signature="e#585175#587101#0" expanded="false" />
+            <element signature="e#587127#590516#0" expanded="false" />
+            <element signature="e#590523#593912#0" expanded="false" />
+            <element signature="e#593919#597308#0" expanded="false" />
+            <element signature="e#594069#597293#0" expanded="false" />
+            <element signature="e#597315#600704#0" expanded="false" />
+            <element signature="e#600711#604100#0" expanded="false" />
+            <element signature="e#604107#607496#0" expanded="false" />
+            <element signature="e#621118#626386#0" expanded="false" />
+            <element signature="e#626391#631695#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

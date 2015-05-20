@@ -10,34 +10,59 @@ import Foundation
 
 class XmlSubTreeParser : XmlElementParser, XmlElementParserDelegate {
     
-
+    
     var currentParser : XmlElementParser! {
         get {
             return _elementParsers.last
         }
     }
-
-    override func onStartElement(   elementName : String,
-                                    namespaceURI : String?,
-                                    qualifiedName : String?,
-                                    attributeDict : [NSObject:AnyObject]) {
-            
+    
+    override func onGlobalStartElement( elementName : String,
+                                        namespaceURI : String?,
+                                        qualifiedName : String?,
+                                        attributeDict : [NSObject:AnyObject]) {
+        
+        _state = XmlParserState(elementName: elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
+        
         if let p = currentParser {
-            p.onStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
+            p.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
+        }
+        else {
+            self.onLocalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
         }
     }
     
-    override func onEndElement( elementName : String,
-                                namespaceURI : String?,
-                                qualifiedName : String? ) {
+    override func onGlobalEndElement(   elementName : String,
+                                        namespaceURI : String?,
+                                        qualifiedName : String? ) {
+            
+//            super.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
 
-        super.onEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
+        if elementName == _name && currentParser == nil {
+            onElementParsingCompleted()
+        }
+
             
         if let p = currentParser {
-            p.onEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
+            p.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
+        }
+        else {
+            self.onLocalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
         }
     }
+    
 
+    func onLocalStartElement(   elementName : String,
+                                namespaceURI : String?,
+                                qualifiedName : String?,
+                                attributeDict : [NSObject:AnyObject]) {
+    }
+
+    func onLocalEndElement( elementName : String,
+                            namespaceURI : String?,
+                            qualifiedName : String? ) {
+    }
+    
     func onParsingCompleted( elmParser : XmlElementParser ) {
         
         popElementParser(elmParser)
@@ -45,6 +70,10 @@ class XmlSubTreeParser : XmlElementParser, XmlElementParserDelegate {
     
     func pushElementParser( parser : XmlElementParser ) {
         _elementParsers.append(parser)
+        
+        if let state = _state {
+            parser.onElementParsingStarting(state.name, namespaceURI: state.namespaceURI, qualifiedName: state.qualifiedName, attributeDict: state.attributeDict)
+        }
     }
     
     func popElementParser( parser : XmlElementParser ) {
@@ -52,4 +81,6 @@ class XmlSubTreeParser : XmlElementParser, XmlElementParserDelegate {
     }
     
     var _elementParsers : [XmlElementParser] = []
+    var _state : XmlParserState!
 }
+

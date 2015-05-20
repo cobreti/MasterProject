@@ -9,14 +9,17 @@
 import Foundation
 import DiagramElements
 
+var g_xmlParserIndent = 0
+
 class XmlElementParser {
+  
     
     var name : String {
         get {
             return _name
         }
     }
-
+    
     var delegate : XmlElementParserDelegate! {
         get {
             return _delegate
@@ -27,26 +30,53 @@ class XmlElementParser {
         _name = name
         _delegate = delegate
     }
-
-    func onStartElement(    elementName : String,
-                            namespaceURI : String?,
-                            qualifiedName : String?,
-                            attributeDict : [NSObject:AnyObject]) {
+    
+    func onGlobalStartElement( elementName : String,
+        namespaceURI : String?,
+        qualifiedName : String?,
+        attributeDict : [NSObject:AnyObject]) {
             
     }
-
-    func onEndElement(  elementName : String,
-                        namespaceURI : String?,
-                        qualifiedName : String? ) {
-
+    
+    func onGlobalEndElement(  elementName : String,
+        namespaceURI : String?,
+        qualifiedName : String? ) {
+            
         if elementName == _name {
-            if let delegate = self.delegate {
-                delegate.onParsingCompleted(self)
-            }
+            onElementParsingCompleted()
         }
-                            
     }
+    
+    func onElementParsingStarting(  elementName : String,
+                                    namespaceURI : String?,
+                                    qualifiedName : String?,
+                                    attributeDict : [NSObject:AnyObject]) {
+            
+        var indent = ""
+        for var idx = 0; idx < g_xmlParserIndent; idx++ {
+            indent += "  "
+        }
 
+        var id = ""
+                                        
+        if let attrId = attributeDict["id"] as? String {
+            id = attrId
+        }
+                                        
+        debugPrintln(">\(indent)\(elementName) - \(id)")
+
+        g_xmlParserIndent++
+    }
+    
+    func onElementParsingCompleted() {
+        
+        g_xmlParserIndent--
+        
+        if let delegate = self.delegate {
+            delegate.onParsingCompleted(self)
+        }
+    }
+    
     var _name : String
     var _delegate : XmlElementParserDelegate!
 }

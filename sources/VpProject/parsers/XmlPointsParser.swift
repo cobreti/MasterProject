@@ -18,17 +18,20 @@ class XmlPointsParser : XmlSubTreeParser {
         super.init(name: name, delegate: delegate)
     }
     
-    override func onStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onGlobalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
         
+        super.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
+    }
+    
+    override func onLocalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+
         switch elementName {
-        case "Point":
-            pushElementParser( XmlPointParser(name: "Point", delegate: self) )
-            break
-        default:
-            break
+            case "Point":
+                pushElementParser( XmlPointParser(name: "Point", delegate: self) )
+                break
+            default:
+                break
         }
-        
-        super.onStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
     
     override func onParsingCompleted(elmParser: XmlElementParser) {

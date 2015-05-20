@@ -56,6 +56,14 @@
 		16EEA0251B06B81700A872D4 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA0241B06B81700A872D4 /* Application.swift */; };
 		16EEA0281B06B8A800A872D4 /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA0271B06B8A800A872D4 /* DiagramViewController.swift */; };
 		16EEA02F1B06C9BE00A872D4 /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA02E1B06C9BE00A872D4 /* DiagramDisplay.swift */; };
+		16FB69D41B0CD6F300322E1F /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69D31B0CD6F300322E1F /* DiagramPortal.swift */; };
+		16FB69D61B0CD92A00322E1F /* Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69D51B0CD92A00322E1F /* Margins.swift */; };
+		16FB69D81B0CE90300322E1F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69D71B0CE90300322E1F /* Model.swift */; };
+		16FB69DA1B0CE95100322E1F /* ModelsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69D91B0CE95100322E1F /* ModelsTable.swift */; };
+		16FB69DC1B0CEA9600322E1F /* XmlModelsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69DB1B0CEA9600322E1F /* XmlModelsParser.swift */; };
+		16FB69DE1B0CEB8200322E1F /* XmlModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69DD1B0CEB8200322E1F /* XmlModelParser.swift */; };
+		16FB69E01B0CF36300322E1F /* LinkDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69DF1B0CF36300322E1F /* LinkDisplay.swift */; };
+		16FB69E21B0D11A000322E1F /* XmlParserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E11B0D11A000322E1F /* XmlParserState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +210,14 @@
 		16EEA0241B06B81700A872D4 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		16EEA0271B06B8A800A872D4 /* DiagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramViewController.swift; sourceTree = "<group>"; };
 		16EEA02E1B06C9BE00A872D4 /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramDisplay.swift; sourceTree = "<group>"; };
+		16FB69D31B0CD6F300322E1F /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = ../../../../sources/ProjectFV/DiagramPortal.swift; sourceTree = "<group>"; };
+		16FB69D51B0CD92A00322E1F /* Margins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Margins.swift; path = ../../../../sources/Shapes/Margins.swift; sourceTree = "<group>"; };
+		16FB69D71B0CE90300322E1F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../../../sources/DiagramElements/Model.swift; sourceTree = "<group>"; };
+		16FB69D91B0CE95100322E1F /* ModelsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelsTable.swift; path = ../../../../sources/DiagramElements/ModelsTable.swift; sourceTree = "<group>"; };
+		16FB69DB1B0CEA9600322E1F /* XmlModelsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlModelsParser.swift; path = ../../../../sources/VpProject/parsers/XmlModelsParser.swift; sourceTree = "<group>"; };
+		16FB69DD1B0CEB8200322E1F /* XmlModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlModelParser.swift; path = ../../../../sources/VpProject/parsers/XmlModelParser.swift; sourceTree = "<group>"; };
+		16FB69DF1B0CF36300322E1F /* LinkDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkDisplay.swift; sourceTree = "<group>"; };
+		16FB69E11B0D11A000322E1F /* XmlParserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlParserState.swift; path = ../../../../sources/VpProject/XmlParserState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +371,8 @@
 				1673BE1E1AF5504800C8F9AE /* DiagramElements.h */,
 				16EE9FE01B06A72000A872D4 /* Link.swift */,
 				1673BE1C1AF5504800C8F9AE /* Supporting Files */,
+				16FB69D71B0CE90300322E1F /* Model.swift */,
+				16FB69D91B0CE95100322E1F /* ModelsTable.swift */,
 			);
 			path = DiagramElements;
 			sourceTree = "<group>";
@@ -394,6 +412,7 @@
 				16EE9FED1B06A75400A872D4 /* XmlElementParser.swift */,
 				16EE9FEE1B06A75400A872D4 /* XmlElementParserDelegate.swift */,
 				16EE9FEF1B06A75400A872D4 /* XmlSubTreeParser.swift */,
+				16FB69E11B0D11A000322E1F /* XmlParserState.swift */,
 				1673BE4D1AF550B500C8F9AE /* Supporting Files */,
 			);
 			path = VpProject;
@@ -432,6 +451,8 @@
 				16EE9FE51B06A73B00A872D4 /* XmlPointParser.swift */,
 				16EE9FE61B06A73B00A872D4 /* XmlPointsParser.swift */,
 				16EE9FE71B06A73B00A872D4 /* XmlShapeParser.swift */,
+				16FB69DB1B0CEA9600322E1F /* XmlModelsParser.swift */,
+				16FB69DD1B0CEB8200322E1F /* XmlModelParser.swift */,
 			);
 			name = parsers;
 			sourceTree = "<group>";
@@ -444,6 +465,7 @@
 				16EEA0181B06A78700A872D4 /* Polyline.swift */,
 				16EEA0191B06A78700A872D4 /* Rect.swift */,
 				16EEA01A1B06A78700A872D4 /* Size.swift */,
+				16FB69D51B0CD92A00322E1F /* Margins.swift */,
 				16EE9FFA1B06A77900A872D4 /* Supporting Files */,
 			);
 			path = Shapes;
@@ -480,6 +502,8 @@
 				16EEA0221B06B79A00A872D4 /* DiagramView.swift */,
 				16EEA0271B06B8A800A872D4 /* DiagramViewController.swift */,
 				16EEA02E1B06C9BE00A872D4 /* DiagramDisplay.swift */,
+				16FB69D31B0CD6F300322E1F /* DiagramPortal.swift */,
+				16FB69DF1B0CF36300322E1F /* LinkDisplay.swift */,
 			);
 			name = DiagramView;
 			sourceTree = "<group>";
@@ -797,10 +821,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FB69E01B0CF36300322E1F /* LinkDisplay.swift in Sources */,
 				16EEA0281B06B8A800A872D4 /* DiagramViewController.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
 				16EEA02F1B06C9BE00A872D4 /* DiagramDisplay.swift in Sources */,
 				16EEA0231B06B79A00A872D4 /* DiagramView.swift in Sources */,
+				16FB69D41B0CD6F300322E1F /* DiagramPortal.swift in Sources */,
 				1673BDF81AF5502600C8F9AE /* ViewController.swift in Sources */,
 				1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */,
 			);
@@ -818,6 +844,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FB69DA1B0CE95100322E1F /* ModelsTable.swift in Sources */,
+				16FB69D81B0CE90300322E1F /* Model.swift in Sources */,
 				1673BE3F1AF5506600C8F9AE /* DiagramLayer.swift in Sources */,
 				1673BE401AF5506600C8F9AE /* DiagramLayers.swift in Sources */,
 				1673BE421AF5506600C8F9AE /* Element.swift in Sources */,
@@ -840,10 +868,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				16EE9FE91B06A73B00A872D4 /* XmlDiagramParser.swift in Sources */,
+				16FB69E21B0D11A000322E1F /* XmlParserState.swift in Sources */,
 				16EE9FF01B06A75400A872D4 /* XmlElementParser.swift in Sources */,
 				16EE9FEB1B06A73B00A872D4 /* XmlPointsParser.swift in Sources */,
 				1673BE6C1AF550CA00C8F9AE /* VpProject.swift in Sources */,
 				1673BE6D1AF550CA00C8F9AE /* XmlDocParser.swift in Sources */,
+				16FB69DC1B0CEA9600322E1F /* XmlModelsParser.swift in Sources */,
+				16FB69DE1B0CEB8200322E1F /* XmlModelParser.swift in Sources */,
 				16EE9FEC1B06A73B00A872D4 /* XmlShapeParser.swift in Sources */,
 				16EE9FEA1B06A73B00A872D4 /* XmlPointParser.swift in Sources */,
 				16EE9FF21B06A75400A872D4 /* XmlSubTreeParser.swift in Sources */,
@@ -868,6 +899,7 @@
 				16EEA01B1B06A78700A872D4 /* Point.swift in Sources */,
 				16EEA01D1B06A78700A872D4 /* Rect.swift in Sources */,
 				16EEA01C1B06A78700A872D4 /* Polyline.swift in Sources */,
+				16FB69D61B0CD92A00322E1F /* Margins.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1389,6 +1421,7 @@
 				16EEA0131B06A77900A872D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16EEA0141B06A77900A872D4 /* Build configuration list for PBXNativeTarget "ShapesTests" */ = {
 			isa = XCConfigurationList;
@@ -1397,6 +1430,7 @@
 				16EEA0161B06A77900A872D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

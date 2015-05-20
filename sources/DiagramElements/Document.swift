@@ -12,10 +12,17 @@ public class Document {
             return _layers
         }
     }
+    
+    public var models : ModelsTable {
+        get {
+            return _models
+        }
+    }
 
     public init() {
 
     }
 
     var _layers : DiagramLayers = DiagramLayers()
+    var _models : ModelsTable = ModelsTable()
 }

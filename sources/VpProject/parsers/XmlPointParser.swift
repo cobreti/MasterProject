@@ -15,36 +15,25 @@ class XmlPointParser : XmlElementParser {
         get {
             return _pt
         }
-    }
+    }   
     
-    override func onStartElement(    elementName : String,
-                                    namespaceURI : String?,
-                                    qualifiedName : String?,
-                                    attributeDict : [NSObject:AnyObject]) {
-     
-        switch elementName {
-            case "Point":
-                onPoint(attributeDict)
-            default:
-                break
-        }
-    }
+    override func onElementParsingStarting(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
 
-
-    func onPoint(attributes : [NSObject:AnyObject]) {
+        super.onElementParsingStarting(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
 
         var numberFormatter = NSNumberFormatter()
-
+        
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
-
-        if let  xStr = attributes["x"] as? String,
+        
+        if let  xStr = attributeDict["x"] as? String,
                 x = numberFormatter.numberFromString(xStr)?.doubleValue,
-                yStr = attributes["y"] as? String,
+                yStr = attributeDict["y"] as? String,
                 y = numberFormatter.numberFromString(yStr)?.doubleValue {
-
+        
             _pt = Point(x: x, y: y)
         }
     }
+
 
     var _pt : Point!
 }

@@ -43,23 +43,32 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
                 qualifiedName qName: String?,
                 attributes attributeDict: [NSObject:AnyObject]) {
 
+        _xmlState = XmlParserState(elementName: elementName, namespaceURI: namespaceURI, qualifiedName: qName, attributeDict: attributeDict)
+                    
         switch elementName {
             case "Diagram":
                 pushElementParser(XmlDiagramParser(name: "Diagram", document: self.document))
+            case "Models":
+                pushElementParser(XmlModelsParser(name: "Models", parent: self.document.models))
             default:
-                debugPrintln("unhandled element")
+            onUnhandledElement()
+//                debugPrintln("unhandled element")
         }
 
-        debugPrintln("--> element name : \(elementName)")
+//        debugPrintln("--> element name : \(elementName)")
 
-        if let modelType = attributeDict["displayModelType"] as? String,
-        name = attributeDict["name"] as? String where modelType == "Class" {
-            debugPrintln(" - \(elementName) --> \(name)")
-        }
+//        if let modelType = attributeDict["displayModelType"] as? String,
+//                name = attributeDict["name"] as? String where modelType == "Class" {
+//            debugPrintln(" - \(elementName) --> \(name)")
+//        }
                     
         if let p = currentParser {
-            p.onStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qName, attributeDict: attributeDict)
+            p.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qName, attributeDict: attributeDict)
         }
+    }
+    
+    func onUnhandledElement() {
+        
     }
 
     func parser(    parser: NSXMLParser,
@@ -68,12 +77,16 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
                     qualifiedName qName: String?) {
 
         if let p = currentParser {
-            p.onEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qName)
+            p.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qName)
         }
     }
 
     func pushElementParser( parser : XmlElementParser ) {
         _elementParsers.append(parser)
+        
+        if let state = _xmlState {
+            parser.onElementParsingStarting(state.name, namespaceURI: state.namespaceURI, qualifiedName: state.qualifiedName, attributeDict: state.attributeDict)
+        }
     }
 
     func popElementParser( parser : XmlElementParser ) {
@@ -89,5 +102,6 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
 
     var _elementParsers : [XmlElementParser] = []
     var _doc : DiagramElements.Document
+    var _xmlState : XmlParserState!
 }
 

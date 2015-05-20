@@ -35,6 +35,15 @@ public class Primitive {
         }
     }
     
+    public var modelId : String! {
+        get {
+            return _modelId
+        }
+        set (value) {
+            _modelId = value
+        }
+    }
+    
     public var ownerDiagram : DiagramLayer! {
         get {
             return _diagram
@@ -53,6 +62,7 @@ public class Primitive {
     var _box : Rect!
     var _id : String!
     var _name : String!
+    var _modelId : String!
     
     weak var _diagram : DiagramLayer!
 }

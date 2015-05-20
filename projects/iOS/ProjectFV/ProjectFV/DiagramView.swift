@@ -18,9 +18,11 @@ class DiagramView : UIView {
         
 //        CGContextFillRect(ctx, rc)
         
-        if let layer = Application.instance().document.layers.get("DiagramLayout") {
+        let document = Application.instance().document
+        
+        if let layer = document.layers.get("VpProject") {
             
-            let dd = DiagramDisplay(targetRect: bounds, layer: layer)
+            let dd = DiagramDisplay(targetRect: bounds, layer: layer, document: document)
             
             dd.display(ctx)
         }

@@ -1,25 +1,26 @@
 //
-//  XmlDiagramParser.swift
+//  XmlModelParser.swift
 //  ProjectFV
 //
-//  Created by Danny Thibaudeau on 2015-05-10.
+//  Created by Danny Thibaudeau on 2015-05-20.
 //  Copyright (c) 2015 Danny Thibaudeau. All rights reserved.
 //
 
 import Foundation
 import DiagramElements
 
-class XmlDiagramParser : XmlSubTreeParser {
+class XmlModelParser : XmlSubTreeParser {
     
-    init( name : String, document : DiagramElements.Document, delegate : XmlElementParserDelegate! = nil) {
+    
+    init( name : String, parent : ModelsTable, delegate : XmlElementParserDelegate! = nil) {
         
-        _document = document
+        _parent = parent
         
         super.init(name: name, delegate: delegate)
-        
     }
     
     override func onGlobalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+        
         
         super.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
@@ -30,11 +31,12 @@ class XmlDiagramParser : XmlSubTreeParser {
     }
     
     override func onLocalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+        
         switch elementName {
-            case "Shape":
-                pushElementParser(XmlShapeParser(name: "Shape", diagramLayer: _diagram, delegate: self))
-            case "Connector":
-                pushElementParser(XmlConnectorParser(name: "Connector", diagramLayer: _diagram, delegate: self))
+            case "ChildModels":
+                if let parentModel = _model {
+                    pushElementParser( XmlModelsParser(name: "ChildModels", parent: parentModel.children, delegate: self) )
+                }
             default:
                 break
         }
@@ -44,18 +46,21 @@ class XmlDiagramParser : XmlSubTreeParser {
         
         super.onElementParsingStarting(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
 
-        if let name = attributeDict["name"] as? String {
-//            debugPrintln("Diagram node of name : \(name)")
-            _diagram = DiagramLayer(name: name)
-            _document.layers.add(_diagram)
+        if let  id = attributeDict["id"] as? String,
+                name = attributeDict["name"] as? String {
+                
+//            if id == "HRo6vzKGAqAEZwfy" {
+//                debugPrintln("wanted element")
+//            }
+            
+//            debugPrintln("==> found model element of name \(name)")
+            
+            _model = Model(id: id)
+            _parent.add(_model)
         }
     }
     
-    override func onElementParsingCompleted() {
-        _diagram?.updateBoundingBox()
-    }
     
-    
-    var _diagram : DiagramLayer!
-    var _document : DiagramElements.Document
+    var _model : Model!
+    var _parent : ModelsTable
 }
