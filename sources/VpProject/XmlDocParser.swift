@@ -49,7 +49,7 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
             case "Diagram":
                 pushElementParser(XmlDiagramParser(name: "Diagram", document: self.document))
             case "Models":
-                pushElementParser(XmlModelsParser(name: "Models", parent: self.document.models))
+                pushElementParser(XmlModelsParser(name: "Models", modelsTable: self.document.models))
             default:
             onUnhandledElement()
 //                debugPrintln("unhandled element")

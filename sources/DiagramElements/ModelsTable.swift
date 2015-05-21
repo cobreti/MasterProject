@@ -26,6 +26,9 @@ public class ModelsTable {
         }
         
         for (childId, childModel) in _models {
+            
+//            debugPrintln("looking for id \(id) in \(childId)")
+            
             if let m = childModel.children.get(id) {
                 return m
             }

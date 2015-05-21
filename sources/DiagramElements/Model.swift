@@ -21,14 +21,35 @@ public class Model {
             return _children
         }
     }
+
+    public var linkEndPointFrom : LinkEndPoint! {
+        get {
+            return _linkEndPointFrom
+        }
+        set (value) {
+            _linkEndPointFrom = value
+        }
+    }
     
-    public init(id : String) {
+    public var linkEndPointTo : LinkEndPoint! {
+        get {
+            return _linkEndPointTo
+        }
+        set (value) {
+            _linkEndPointTo = value
+        }
+    }
+    
+    
+    public init(id : String, parent: Model! = nil) {
         
         _id = id
     }
     
     
-    
     private var _id : String
+    private var _parent : Model!
+    private var _linkEndPointTo : LinkEndPoint!
+    private var _linkEndPointFrom : LinkEndPoint!
     private var _children : ModelsTable = ModelsTable()
 }

@@ -64,6 +64,9 @@
 		16FB69DE1B0CEB8200322E1F /* XmlModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69DD1B0CEB8200322E1F /* XmlModelParser.swift */; };
 		16FB69E01B0CF36300322E1F /* LinkDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69DF1B0CF36300322E1F /* LinkDisplay.swift */; };
 		16FB69E21B0D11A000322E1F /* XmlParserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E11B0D11A000322E1F /* XmlParserState.swift */; };
+		16FB69E41B0D44EF00322E1F /* LinkEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */; };
+		16FB69E61B0D452E00322E1F /* LinkEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */; };
+		16FB69E81B0D46EA00322E1F /* XmlLinkEndpointParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E71B0D46EA00322E1F /* XmlLinkEndpointParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +221,9 @@
 		16FB69DD1B0CEB8200322E1F /* XmlModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlModelParser.swift; path = ../../../../sources/VpProject/parsers/XmlModelParser.swift; sourceTree = "<group>"; };
 		16FB69DF1B0CF36300322E1F /* LinkDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkDisplay.swift; sourceTree = "<group>"; };
 		16FB69E11B0D11A000322E1F /* XmlParserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlParserState.swift; path = ../../../../sources/VpProject/XmlParserState.swift; sourceTree = "<group>"; };
+		16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPoint.swift; path = ../../../../sources/DiagramElements/LinkEndPoint.swift; sourceTree = "<group>"; };
+		16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPointType.swift; path = ../../../../sources/DiagramElements/LinkEndPointType.swift; sourceTree = "<group>"; };
+		16FB69E71B0D46EA00322E1F /* XmlLinkEndpointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlLinkEndpointParser.swift; path = ../../../../sources/VpProject/parsers/XmlLinkEndpointParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,9 +376,11 @@
 				1673BE3E1AF5506600C8F9AE /* Primitive.swift */,
 				1673BE1E1AF5504800C8F9AE /* DiagramElements.h */,
 				16EE9FE01B06A72000A872D4 /* Link.swift */,
-				1673BE1C1AF5504800C8F9AE /* Supporting Files */,
+				16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */,
+				16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */,
 				16FB69D71B0CE90300322E1F /* Model.swift */,
 				16FB69D91B0CE95100322E1F /* ModelsTable.swift */,
+				1673BE1C1AF5504800C8F9AE /* Supporting Files */,
 			);
 			path = DiagramElements;
 			sourceTree = "<group>";
@@ -453,6 +461,7 @@
 				16EE9FE71B06A73B00A872D4 /* XmlShapeParser.swift */,
 				16FB69DB1B0CEA9600322E1F /* XmlModelsParser.swift */,
 				16FB69DD1B0CEB8200322E1F /* XmlModelParser.swift */,
+				16FB69E71B0D46EA00322E1F /* XmlLinkEndpointParser.swift */,
 			);
 			name = parsers;
 			sourceTree = "<group>";
@@ -846,9 +855,11 @@
 			files = (
 				16FB69DA1B0CE95100322E1F /* ModelsTable.swift in Sources */,
 				16FB69D81B0CE90300322E1F /* Model.swift in Sources */,
+				16FB69E41B0D44EF00322E1F /* LinkEndPoint.swift in Sources */,
 				1673BE3F1AF5506600C8F9AE /* DiagramLayer.swift in Sources */,
 				1673BE401AF5506600C8F9AE /* DiagramLayers.swift in Sources */,
 				1673BE421AF5506600C8F9AE /* Element.swift in Sources */,
+				16FB69E61B0D452E00322E1F /* LinkEndPointType.swift in Sources */,
 				16EE9FE11B06A72000A872D4 /* Link.swift in Sources */,
 				1673BE411AF5506600C8F9AE /* Document.swift in Sources */,
 				1673BE431AF5506600C8F9AE /* Primitive.swift in Sources */,
@@ -876,6 +887,7 @@
 				16FB69DC1B0CEA9600322E1F /* XmlModelsParser.swift in Sources */,
 				16FB69DE1B0CEB8200322E1F /* XmlModelParser.swift in Sources */,
 				16EE9FEC1B06A73B00A872D4 /* XmlShapeParser.swift in Sources */,
+				16FB69E81B0D46EA00322E1F /* XmlLinkEndpointParser.swift in Sources */,
 				16EE9FEA1B06A73B00A872D4 /* XmlPointParser.swift in Sources */,
 				16EE9FF21B06A75400A872D4 /* XmlSubTreeParser.swift in Sources */,
 				16EE9FF11B06A75400A872D4 /* XmlElementParserDelegate.swift in Sources */,

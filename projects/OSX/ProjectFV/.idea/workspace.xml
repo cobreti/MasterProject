@@ -2,30 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488870e0-3fc1-4a98-af98-b2bc45967f8b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/LinkDisplay.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/ModelsTable.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelsParser.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlParserState.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/LinkEndPoint.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/LinkEndPointType.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlLinkEndpointParser.swift" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../../diagrams/XML/projectFV.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp.working" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp.working" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/data.zip" afterPath="$PROJECT_DIR$/../../../diagrams/XML/data.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/DiagramDisplay.swift" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/DiagramDisplay.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/DiagramView.swift" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/DiagramView.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/Document.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Document.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/Primitive.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Primitive.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/Link.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Link.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/LinkDisplay.swift" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV/LinkDisplay.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlElementParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointsParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointsParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlShapeParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelsParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelsParser.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../../iOS/ProjectFV/ProjectFV.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -51,14 +42,14 @@
     <favorites_list name="ProjectFV" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.49131122">
+    <splitter split-orientation="vertical" split-proportion="0.6413902">
       <split-first>
         <leaf>
           <file leaf-file-name="XmlDiagramParser.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="910">
-                  <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="938">
+                  <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -67,8 +58,8 @@
           <file leaf-file-name="XmlPointParser.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
-                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="644">
+                  <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -77,8 +68,8 @@
           <file leaf-file-name="ProjectFV.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6564195" vertical-offset="3445" max-vertical-offset="186312">
-                  <caret line="572" column="133" selection-start-line="572" selection-start-column="117" selection-end-line="572" selection-end-column="133" />
+                <state vertical-scroll-proportion="0.95423955" vertical-offset="6207" max-vertical-offset="187264">
+                  <caret line="8123" column="128" selection-start-line="8123" selection-start-column="112" selection-end-line="8123" selection-end-column="128" />
                   <folding>
                     <element signature="e#26088#28323#0" expanded="false" />
                     <element signature="e#28326#30555#0" expanded="false" />
@@ -91,7 +82,6 @@
                     <element signature="e#43956#46185#0" expanded="false" />
                     <element signature="e#46188#48421#0" expanded="false" />
                     <element signature="e#48615#50490#0" expanded="false" />
-                    <element signature="e#50512#584976#0" expanded="false" />
                     <element signature="e#50703#52626#0" expanded="false" />
                     <element signature="e#52652#70994#0" expanded="false" />
                     <element signature="e#63629#70979#0" expanded="false" />
@@ -107,9 +97,32 @@
                     <element signature="e#236212#254554#0" expanded="false" />
                     <element signature="e#254561#272913#0" expanded="false" />
                     <element signature="e#272920#291272#0" expanded="false" />
+                    <element signature="e#291279#309631#0" expanded="false" />
                     <element signature="e#291423#294870#0" expanded="false" />
                     <element signature="e#294878#302248#0" expanded="false" />
                     <element signature="e#302256#309616#0" expanded="false" />
+                    <element signature="e#309638#327990#0" expanded="false" />
+                    <element signature="e#327997#346349#0" expanded="false" />
+                    <element signature="e#346356#364698#0" expanded="false" />
+                    <element signature="e#364705#383050#0" expanded="false" />
+                    <element signature="e#383057#401402#0" expanded="false" />
+                    <element signature="e#401409#419761#0" expanded="false" />
+                    <element signature="e#419768#438113#0" expanded="false" />
+                    <element signature="e#438120#456472#0" expanded="false" />
+                    <element signature="e#456623#460070#0" expanded="false" />
+                    <element signature="e#460078#467444#0" expanded="false" />
+                    <element signature="e#460096#467426#0" expanded="false" />
+                    <element signature="e#467452#474812#0" expanded="false" />
+                    <element signature="e#478451#485781#0" expanded="false" />
+                    <element signature="e#485823#493141#0" expanded="false" />
+                    <element signature="e#493323#496770#0" expanded="false" />
+                    <element signature="e#496778#504144#0" expanded="false" />
+                    <element signature="e#500860#503330#0" expanded="false" />
+                    <element signature="e#511524#529876#0" expanded="false" />
+                    <element signature="e#529883#548235#0" expanded="false" />
+                    <element signature="e#548242#566584#0" expanded="false" />
+                    <element signature="e#566591#584943#0" expanded="false" />
+                    <element signature="e#584981#621113#0" expanded="false" />
                     <element signature="e#585175#587101#0" expanded="false" />
                     <element signature="e#587127#590516#0" expanded="false" />
                     <element signature="e#590523#593912#0" expanded="false" />
@@ -118,8 +131,9 @@
                     <element signature="e#597315#600704#0" expanded="false" />
                     <element signature="e#600711#604100#0" expanded="false" />
                     <element signature="e#604107#607496#0" expanded="false" />
+                    <element signature="e#607503#610892#0" expanded="false" />
+                    <element signature="e#610899#614288#0" expanded="false" />
                     <element signature="e#621118#626386#0" expanded="false" />
-                    <element signature="e#626391#631695#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -132,13 +146,11 @@
           <file leaf-file-name="ProjectFV.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23374341" vertical-offset="210399" max-vertical-offset="288246">
-                  <caret line="15454" column="141" selection-start-line="15454" selection-start-column="125" selection-end-line="15454" selection-end-column="141" />
+                <state vertical-scroll-proportion="0.36939314" vertical-offset="12726" max-vertical-offset="290164">
+                  <caret line="1198" column="108" selection-start-line="1198" selection-start-column="93" selection-end-line="1198" selection-end-column="108" />
                   <folding>
                     <element signature="e#48615#50490#0" expanded="false" />
                     <element signature="e#50703#52626#0" expanded="false" />
-                    <element signature="e#52796#56243#0" expanded="false" />
-                    <element signature="e#56269#63603#0" expanded="false" />
                     <element signature="e#71145#74592#0" expanded="false" />
                     <element signature="e#74618#81952#0" expanded="false" />
                     <element signature="e#81994#89312#0" expanded="false" />
@@ -447,7 +459,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -786,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="910">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="938">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -818,16 +830,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="644">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6564195" vertical-offset="3445" max-vertical-offset="186312">
-          <caret line="572" column="133" selection-start-line="572" selection-start-column="117" selection-end-line="572" selection-end-column="133" />
+        <state vertical-scroll-proportion="0.95423955" vertical-offset="6207" max-vertical-offset="187264">
+          <caret line="8123" column="128" selection-start-line="8123" selection-start-column="112" selection-end-line="8123" selection-end-column="128" />
           <folding>
             <element signature="e#26088#28323#0" expanded="false" />
             <element signature="e#28326#30555#0" expanded="false" />
@@ -840,7 +852,6 @@
             <element signature="e#43956#46185#0" expanded="false" />
             <element signature="e#46188#48421#0" expanded="false" />
             <element signature="e#48615#50490#0" expanded="false" />
-            <element signature="e#50512#584976#0" expanded="false" />
             <element signature="e#50703#52626#0" expanded="false" />
             <element signature="e#52652#70994#0" expanded="false" />
             <element signature="e#63629#70979#0" expanded="false" />
@@ -856,9 +867,32 @@
             <element signature="e#236212#254554#0" expanded="false" />
             <element signature="e#254561#272913#0" expanded="false" />
             <element signature="e#272920#291272#0" expanded="false" />
+            <element signature="e#291279#309631#0" expanded="false" />
             <element signature="e#291423#294870#0" expanded="false" />
             <element signature="e#294878#302248#0" expanded="false" />
             <element signature="e#302256#309616#0" expanded="false" />
+            <element signature="e#309638#327990#0" expanded="false" />
+            <element signature="e#327997#346349#0" expanded="false" />
+            <element signature="e#346356#364698#0" expanded="false" />
+            <element signature="e#364705#383050#0" expanded="false" />
+            <element signature="e#383057#401402#0" expanded="false" />
+            <element signature="e#401409#419761#0" expanded="false" />
+            <element signature="e#419768#438113#0" expanded="false" />
+            <element signature="e#438120#456472#0" expanded="false" />
+            <element signature="e#456623#460070#0" expanded="false" />
+            <element signature="e#460078#467444#0" expanded="false" />
+            <element signature="e#460096#467426#0" expanded="false" />
+            <element signature="e#467452#474812#0" expanded="false" />
+            <element signature="e#478451#485781#0" expanded="false" />
+            <element signature="e#485823#493141#0" expanded="false" />
+            <element signature="e#493323#496770#0" expanded="false" />
+            <element signature="e#496778#504144#0" expanded="false" />
+            <element signature="e#500860#503330#0" expanded="false" />
+            <element signature="e#511524#529876#0" expanded="false" />
+            <element signature="e#529883#548235#0" expanded="false" />
+            <element signature="e#548242#566584#0" expanded="false" />
+            <element signature="e#566591#584943#0" expanded="false" />
+            <element signature="e#584981#621113#0" expanded="false" />
             <element signature="e#585175#587101#0" expanded="false" />
             <element signature="e#587127#590516#0" expanded="false" />
             <element signature="e#590523#593912#0" expanded="false" />
@@ -867,8 +901,9 @@
             <element signature="e#597315#600704#0" expanded="false" />
             <element signature="e#600711#604100#0" expanded="false" />
             <element signature="e#604107#607496#0" expanded="false" />
+            <element signature="e#607503#610892#0" expanded="false" />
+            <element signature="e#610899#614288#0" expanded="false" />
             <element signature="e#621118#626386#0" expanded="false" />
-            <element signature="e#626391#631695#0" expanded="false" />
           </folding>
         </state>
       </provider>

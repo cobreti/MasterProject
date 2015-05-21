@@ -11,21 +11,22 @@ import Shapes
 
 public class Link : Primitive {
     
-    public var idFrom : String! {
+    
+    public var to : LinkEndPoint! {
         get {
-            return _idFrom
+            return _to
         }
         set (value) {
-            _idFrom = value
+            _to = value
         }
     }
     
-    public var idTo : String! {
+    public var from : LinkEndPoint! {
         get {
-            return _idTo
+            return _from
         }
         set (value) {
-            _idTo = value
+            _from = value
         }
     }
     
@@ -40,7 +41,8 @@ public class Link : Primitive {
     }
     
     
-    var _idFrom : String!
-    var _idTo : String!
+    var _to : LinkEndPoint!
+    var _from : LinkEndPoint!
+    
     var _segment : Polyline! = Polyline()
 }

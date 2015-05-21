@@ -36,8 +36,6 @@ class XmlSubTreeParser : XmlElementParser, XmlElementParserDelegate {
                                         namespaceURI : String?,
                                         qualifiedName : String? ) {
             
-//            super.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
-
         if elementName == _name && currentParser == nil {
             onElementParsingCompleted()
         }

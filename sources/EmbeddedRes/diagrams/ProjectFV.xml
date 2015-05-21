@@ -13191,8 +13191,8 @@
 						<IntegerProperty displayName="To Role Internal Width" name="toRoleInternalWidth" value="-2147483648"/>
 						<IntegerProperty displayName="To Role Internal Height" name="toRoleInternalHeight" value="-2147483648"/>
 						<IntegerProperty displayName="From Multiplicity Internal Width" name="fromMultiplicityInternalWidth" value="-2147483648"/>
-                        <IntegerProperty displayName="To Multiplicity Internal Width" name="toMultiplicityInternalWidth" value="-2147483648"/>
-                        <IntegerProperty displayName="From Multiplicity Internal Height" name="fromMultiplicityInternalHeight" value="-2147483648"/>
+						<IntegerProperty displayName="From Multiplicity Internal Height" name="fromMultiplicityInternalHeight" value="-2147483648"/>
+						<IntegerProperty displayName="To Multiplicity Internal Width" name="toMultiplicityInternalWidth" value="-2147483648"/>
 						<IntegerProperty displayName="To Multiplicity Internal Height" name="toMultiplicityInternalHeight" value="-2147483648"/>
 						<IntegerProperty displayName="Association End Property Strings AInternal Width" name="associationEndPropertyStringsAInternalWidth" value="-2147483648"/>
 						<IntegerProperty displayName="Association End Property Strings AInternal Height" name="associationEndPropertyStringsAInternalHeight" value="-2147483648"/>

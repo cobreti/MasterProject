@@ -11,11 +11,17 @@ import DiagramElements
 
 class XmlModelsParser : XmlSubTreeParser {
     
-    init( name : String, parent : ModelsTable, delegate : XmlElementParserDelegate! = nil) {
+    init( name : String, modelsTable : ModelsTable, delegate : XmlElementParserDelegate! = nil) {
         
-        _parent = parent
+        _modelsTable =  modelsTable
         
         super.init(name: name, delegate: delegate)
+    }
+
+    convenience init(name : String, parent : Model, delegate : XmlElementParserDelegate! = nil) {
+        self.init(name: name, modelsTable: parent.children, delegate: delegate)
+        
+        _parent = parent
     }
 
     override func onGlobalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
@@ -24,10 +30,7 @@ class XmlModelsParser : XmlSubTreeParser {
     }
 
     override func onGlobalEndElement(elementName: String, namespaceURI: String?, qualifiedName: String?) {
-        
-        if _name == elementName {
-        }
-        
+                
         super.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
     }
     
@@ -35,11 +38,17 @@ class XmlModelsParser : XmlSubTreeParser {
         
         switch elementName {
             case "Model":
-                pushElementParser(XmlModelParser(name: "Model", parent: _parent, delegate: self))
+                if let parent = _parent {
+                    pushElementParser(XmlModelParser(name: "Model", parent: parent, delegate: self))
+                }
+                else {
+                    pushElementParser(XmlModelParser(name: "Model", modelsTable: _modelsTable, delegate: self))
+                }
             default:
                 break
         }
     }
     
-    var _parent : ModelsTable
+    var _modelsTable : ModelsTable
+    var _parent : Model!
 }

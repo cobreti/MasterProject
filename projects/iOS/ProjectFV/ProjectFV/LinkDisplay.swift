@@ -22,8 +22,6 @@ class LinkDisplay {
         
         _model = _doc.models.get(_lnk.modelId)
         
-        var t1 = _doc.models.get("N8RavzKGAqAEZwc1")
-        
         debugPrintln("init linkdisplay end")
     }
     
@@ -46,6 +44,79 @@ class LinkDisplay {
             }
             
             CGContextDrawPath(_ctx, kCGPathStroke)
+            
+            if let  model = _model,
+                    startPt = model.linkEndPointFrom {
+                    
+                if startPt.type == LinkEndPointType.shared {
+                    
+                    var pt = _lnk.segment.get(0)
+                    var portalPt = _portal.pointFromDiagramToPortal(pt)
+
+                    let x = CGFloat(portalPt.x)
+                    let y = CGFloat(portalPt.y)
+                    let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
+                    
+                    CGContextSetRGBFillColor(_ctx, 0.0, 0.0, 0.0, 1.0)
+                    CGContextBeginPath(_ctx)
+                    CGContextStrokeEllipseInRect(_ctx, rc)
+                    CGContextFillPath(_ctx)
+                }
+
+                if startPt.type == LinkEndPointType.composited {
+                    
+                    var pt = _lnk.segment.get(0)
+                    var portalPt = _portal.pointFromDiagramToPortal(pt)
+
+                    let x = CGFloat(portalPt.x)
+                    let y = CGFloat(portalPt.y)
+                    let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
+
+                    CGContextSetRGBFillColor(_ctx, 0.0, 0.0, 0.0, 1.0)
+                    CGContextBeginPath(_ctx)
+                    CGContextStrokeEllipseInRect(_ctx, rc)
+                    CGContextFillEllipseInRect(_ctx, rc)
+                    CGContextFillPath(_ctx)
+                }
+
+
+                if let  model = _model,
+                    EndPt = model.linkEndPointTo {
+                        
+                    if EndPt.type == LinkEndPointType.shared {
+                        
+                        var pt = _lnk.segment.last
+                        var portalPt = _portal.pointFromDiagramToPortal(pt)
+                        
+                        let x = CGFloat(portalPt.x)
+                        let y = CGFloat(portalPt.y)
+                        let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
+                        
+                        CGContextSetRGBFillColor(_ctx, 0.0, 0.0, 0.0, 1.0)
+                        CGContextBeginPath(_ctx)
+                        CGContextStrokeEllipseInRect(_ctx, rc)
+                        CGContextFillPath(_ctx)
+                    }
+                    
+                    if EndPt.type == LinkEndPointType.composited {
+                        
+                        var pt = _lnk.segment.last
+                        var portalPt = _portal.pointFromDiagramToPortal(pt)
+                        
+                        let x = CGFloat(portalPt.x)
+                        let y = CGFloat(portalPt.y)
+                        let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
+                        
+                        CGContextSetRGBFillColor(_ctx, 0.0, 0.0, 0.0, 1.0)
+                        CGContextBeginPath(_ctx)
+                        CGContextStrokeEllipseInRect(_ctx, rc)
+                        CGContextFillEllipseInRect(_ctx, rc)
+                        CGContextFillPath(_ctx)
+                    }
+                        
+                }
+
+            }
         }
     }
     

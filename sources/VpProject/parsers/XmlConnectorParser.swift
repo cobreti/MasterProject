@@ -65,8 +65,8 @@ class XmlConnectorParser : XmlSubTreeParser {
                 _lnk.box = Rect(x: x, y: y, width: width, height: height)
                 _lnk.name = id
                 _lnk.id = id
-                _lnk.idTo = to
-                _lnk.idFrom = from
+                _lnk.to = LinkEndPoint(id: to)
+                _lnk.from = LinkEndPoint(id: from)
                 _lnk.modelId = modelId
                 
                 _diagramLayer.add(_lnk)
