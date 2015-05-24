@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163EFBE51B121EAF004C56E7 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE41B121EAF004C56E7 /* Vector2D.swift */; };
+		163EFBE71B1220D6004C56E7 /* AxisSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE61B1220D6004C56E7 /* AxisSystem.swift */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDF81AF5502600C8F9AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF71AF5502600C8F9AE /* ViewController.swift */; };
 		1673BDFB1AF5502600C8F9AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDF91AF5502600C8F9AE /* Main.storyboard */; };
@@ -66,7 +68,7 @@
 		16FB69E21B0D11A000322E1F /* XmlParserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E11B0D11A000322E1F /* XmlParserState.swift */; };
 		16FB69E41B0D44EF00322E1F /* LinkEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */; };
 		16FB69E61B0D452E00322E1F /* LinkEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */; };
-		16FB69E81B0D46EA00322E1F /* XmlLinkEndpointParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E71B0D46EA00322E1F /* XmlLinkEndpointParser.swift */; };
+		16FB69E81B0D46EA00322E1F /* XmlConnectorEndPointParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +161,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		163EFBE41B121EAF004C56E7 /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector2D.swift; path = ../../../../sources/Shapes/Vector2D.swift; sourceTree = "<group>"; };
+		163EFBE61B1220D6004C56E7 /* AxisSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisSystem.swift; path = ../../../../sources/Shapes/AxisSystem.swift; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -223,7 +227,7 @@
 		16FB69E11B0D11A000322E1F /* XmlParserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlParserState.swift; path = ../../../../sources/VpProject/XmlParserState.swift; sourceTree = "<group>"; };
 		16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPoint.swift; path = ../../../../sources/DiagramElements/LinkEndPoint.swift; sourceTree = "<group>"; };
 		16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPointType.swift; path = ../../../../sources/DiagramElements/LinkEndPointType.swift; sourceTree = "<group>"; };
-		16FB69E71B0D46EA00322E1F /* XmlLinkEndpointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlLinkEndpointParser.swift; path = ../../../../sources/VpProject/parsers/XmlLinkEndpointParser.swift; sourceTree = "<group>"; };
+		16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorEndPointParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,7 +465,7 @@
 				16EE9FE71B06A73B00A872D4 /* XmlShapeParser.swift */,
 				16FB69DB1B0CEA9600322E1F /* XmlModelsParser.swift */,
 				16FB69DD1B0CEB8200322E1F /* XmlModelParser.swift */,
-				16FB69E71B0D46EA00322E1F /* XmlLinkEndpointParser.swift */,
+				16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */,
 			);
 			name = parsers;
 			sourceTree = "<group>";
@@ -476,6 +480,8 @@
 				16EEA01A1B06A78700A872D4 /* Size.swift */,
 				16FB69D51B0CD92A00322E1F /* Margins.swift */,
 				16EE9FFA1B06A77900A872D4 /* Supporting Files */,
+				163EFBE41B121EAF004C56E7 /* Vector2D.swift */,
+				163EFBE61B1220D6004C56E7 /* AxisSystem.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -887,7 +893,7 @@
 				16FB69DC1B0CEA9600322E1F /* XmlModelsParser.swift in Sources */,
 				16FB69DE1B0CEB8200322E1F /* XmlModelParser.swift in Sources */,
 				16EE9FEC1B06A73B00A872D4 /* XmlShapeParser.swift in Sources */,
-				16FB69E81B0D46EA00322E1F /* XmlLinkEndpointParser.swift in Sources */,
+				16FB69E81B0D46EA00322E1F /* XmlConnectorEndPointParser.swift in Sources */,
 				16EE9FEA1B06A73B00A872D4 /* XmlPointParser.swift in Sources */,
 				16EE9FF21B06A75400A872D4 /* XmlSubTreeParser.swift in Sources */,
 				16EE9FF11B06A75400A872D4 /* XmlElementParserDelegate.swift in Sources */,
@@ -908,9 +914,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16EEA01E1B06A78700A872D4 /* Size.swift in Sources */,
+				163EFBE71B1220D6004C56E7 /* AxisSystem.swift in Sources */,
 				16EEA01B1B06A78700A872D4 /* Point.swift in Sources */,
 				16EEA01D1B06A78700A872D4 /* Rect.swift in Sources */,
 				16EEA01C1B06A78700A872D4 /* Polyline.swift in Sources */,
+				163EFBE51B121EAF004C56E7 /* Vector2D.swift in Sources */,
 				16FB69D61B0CD92A00322E1F /* Margins.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

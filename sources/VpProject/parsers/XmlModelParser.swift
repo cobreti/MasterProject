@@ -46,12 +46,12 @@ class XmlModelParser : XmlSubTreeParser {
             case "FromEnd":
                 if let parentModel = _model {
                     _model.linkEndPointFrom = LinkEndPoint()
-                    pushElementParser( XmlLinkEndpointParser(name: "FromEnd", linkEndPoint: _model.linkEndPointFrom, delegate: self) )
+                    pushElementParser( XmlConnectorEndPointParser(name: "FromEnd", linkEndPoint: _model.linkEndPointFrom, delegate: self) )
                 }
             case "ToEnd":
                 if let parentModel = _model {
                     _model.linkEndPointTo = LinkEndPoint()
-                    pushElementParser( XmlLinkEndpointParser(name: "ToEnd", linkEndPoint: _model.linkEndPointTo, delegate: self) )
+                    pushElementParser( XmlConnectorEndPointParser(name: "ToEnd", linkEndPoint: _model.linkEndPointTo, delegate: self) )
                 }
             default:
                 break

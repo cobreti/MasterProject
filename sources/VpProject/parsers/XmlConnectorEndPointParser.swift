@@ -9,7 +9,7 @@
 import Foundation
 import DiagramElements
 
-class XmlLinkEndpointParser : XmlSubTreeParser {
+class XmlConnectorEndPointParser : XmlSubTreeParser {
     
     init( name : String, linkEndPoint : LinkEndPoint, delegate : XmlElementParserDelegate! = nil) {
 
