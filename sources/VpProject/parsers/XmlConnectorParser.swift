@@ -48,19 +48,26 @@ class XmlConnectorParser : XmlSubTreeParser {
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         
         if let id = attributeDict["id"] as? String,
-            xStr = attributeDict["x"] as? String,
-            x = numberFormatter.numberFromString(xStr)?.doubleValue,
-            yStr = attributeDict["y"] as? String,
-            y = numberFormatter.numberFromString(yStr)?.doubleValue,
-            widthStr = attributeDict["width"] as? String,
-            width = numberFormatter.numberFromString(widthStr)?.doubleValue,
-            heightStr = attributeDict["height"] as? String,
-            height = numberFormatter.numberFromString(heightStr)?.doubleValue,
-            to = attributeDict["to"] as? String,
-            from = attributeDict["from"] as? String,
-            modelId = attributeDict["model"] as? String {
-                
-                _lnk = DiagramElements.Link(ownerDiagram: _diagramLayer)
+                xStr = attributeDict["x"] as? String,
+                x = numberFormatter.numberFromString(xStr)?.doubleValue,
+                yStr = attributeDict["y"] as? String,
+                y = numberFormatter.numberFromString(yStr)?.doubleValue,
+                widthStr = attributeDict["width"] as? String,
+                width = numberFormatter.numberFromString(widthStr)?.doubleValue,
+                heightStr = attributeDict["height"] as? String,
+                height = numberFormatter.numberFromString(heightStr)?.doubleValue,
+                to = attributeDict["to"] as? String,
+                from = attributeDict["from"] as? String,
+                modelId = attributeDict["model"] as? String,
+                shapeType = attributeDict["shapeType"] as? String {
+
+                var lnkType = LinkType.unknown
+
+                if let t = LinkType(rawValue: shapeType) {
+                    lnkType = t
+                }
+
+                _lnk = DiagramElements.Link(ownerDiagram: _diagramLayer, type: lnkType)
                 
                 _lnk.box = Rect(x: x, y: y, width: width, height: height)
                 _lnk.name = id

@@ -29,6 +29,12 @@ public class Link : Primitive {
             _from = value
         }
     }
+
+    public var type : LinkType {
+        get {
+            return _type
+        }
+    }
     
     public var segment : Polyline {
         get {
@@ -36,13 +42,17 @@ public class Link : Primitive {
         }
     }
     
-    public override init( ownerDiagram : DiagramLayer ) {
+    public init( ownerDiagram : DiagramLayer, type : LinkType ) {
+
+        _type = type
+
         super.init(ownerDiagram: ownerDiagram)
     }
     
     
     var _to : LinkEndPoint!
     var _from : LinkEndPoint!
+    var _type : LinkType
     
     var _segment : Polyline! = Polyline()
 }

@@ -46,82 +46,99 @@ class LinkDisplay {
             
             CGContextDrawPath(_ctx, kCGPathStroke)
             
-            if let  model = _model,
-                    startPt = model.linkEndPointFrom {
+            drawEndPoints()
+        }
+    }
 
-                if startPt.type == LinkEndPointType.shared {
+    func drawEndPoints() {
 
-                    drawShared( _lnk.segment.get(0), p2: _lnk.segment.get(1) )
-//                    var pt = _lnk.segment.get(0)
-//                    var portalPt = _portal.pointFromDiagramToPortal(pt)
-//
-//                    let x = CGFloat(portalPt.x)
-//                    let y = CGFloat(portalPt.y)
-//                    let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
-//
-//                    CGContextSetRGBFillColor(_ctx, 0.0, 0.0, 0.0, 1.0)
-//                    CGContextBeginPath(_ctx)
-//                    CGContextStrokeEllipseInRect(_ctx, rc)
-//                    CGContextFillPath(_ctx)
-                }
+        switch (_lnk.type) {
+            case LinkType.association:
+                drawAssociationEndPoints()
+            case LinkType.generalization:
+                drawGeneralizationEndPoints()
+            default:
+                break
+        }
+    }
 
-                if startPt.type == LinkEndPointType.composited {
+    func drawGeneralizationEndPoints() {
+        
+        let p1 = _lnk.segment.get(0)
+        let p2 = _lnk.segment.get(1)
+        var portalPt = _portal.pointFromDiagramToPortal(p1)
+        
+        let axisSystem = AxisSystem(p1: p1, p2: p2)
+        
+        var p : Point = p1
+        
+        CGContextBeginPath(_ctx)
+            p = axisSystem.fromAxis(Point(x: 0, y: 0))
+            portalPt = _portal.pointFromDiagramToPortal(p)
+            CGContextMoveToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            
+            p = axisSystem.fromAxis(Point(x: 15, y: 10))
+            portalPt = _portal.pointFromDiagramToPortal(p)
+            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+        
+            p = axisSystem.fromAxis(Point(x: 15, y: -10))
+            portalPt = _portal.pointFromDiagramToPortal(p)
+            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            
+            CGContextClosePath(_ctx)
+            CGContextSetRGBFillColor(_ctx, 1.0, 1.0, 1.0, 1.0)
+        CGContextFillPath(_ctx)
+        
+        CGContextBeginPath(_ctx)
+            p = axisSystem.fromAxis(Point(x: 0, y: 0))
+            portalPt = _portal.pointFromDiagramToPortal(p)
+            CGContextMoveToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            
+            p = axisSystem.fromAxis(Point(x: 15, y: 10))
+            portalPt = _portal.pointFromDiagramToPortal(p)
+            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+        
+            p = axisSystem.fromAxis(Point(x: 15, y: -10))
+            portalPt = _portal.pointFromDiagramToPortal(p)
+            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            
+            CGContextClosePath(_ctx)
+            CGContextSetRGBStrokeColor(_ctx, 0.0, 0.0, 0.0, 1.0)
+        CGContextStrokePath(_ctx)
+    }
 
-                    drawComposition( _lnk.segment.get(0), p2: _lnk.segment.get(1) )
-//                    var pt = _lnk.segment.get(0)
-//                    var portalPt = _portal.pointFromDiagramToPortal(pt)
-//
-//                    let x = CGFloat(portalPt.x)
-//                    let y = CGFloat(portalPt.y)
-//                    let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
-//
-//                    CGContextSetRGBFillColor(_ctx, 0.0, 0.0, 0.0, 1.0)
-//                    CGContextBeginPath(_ctx)
-//                    CGContextStrokeEllipseInRect(_ctx, rc)
-//                    CGContextFillEllipseInRect(_ctx, rc)
-//                    CGContextFillPath(_ctx)
-                }
+    func drawAssociationEndPoints() {
+
+        let count = _lnk.segment.count
+
+        if let  model = _model,
+        startPt = model.linkEndPointFrom {
+
+            if startPt.type == LinkEndPointType.shared {
+
+                drawShared( _lnk.segment.get(0), p2: _lnk.segment.get(1) )
             }
 
+            if startPt.type == LinkEndPointType.composited {
 
-            if let  model = _model,
-                EndPt = model.linkEndPointTo {
-
-                if EndPt.type == LinkEndPointType.shared {
-
-                    drawShared( _lnk.segment.get(count-1), p2: _lnk.segment.get(count-2) )
-
-//                    var pt = _lnk.segment.last
-//                    var portalPt = _portal.pointFromDiagramToPortal(pt)
-//
-//                    let x = CGFloat(portalPt.x)
-//                    let y = CGFloat(portalPt.y)
-//                    let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
-//
-//                    CGContextSetRGBFillColor(_ctx, 0.0, 0.0, 0.0, 1.0)
-//                    CGContextBeginPath(_ctx)
-//                    CGContextStrokeEllipseInRect(_ctx, rc)
-//                    CGContextFillPath(_ctx)
-                }
-
-                if EndPt.type == LinkEndPointType.composited {
-
-                    drawComposition( _lnk.segment.get(count-1), p2: _lnk.segment.get(count-2) )
-//                    var pt = _lnk.segment.last
-//                    var portalPt = _portal.pointFromDiagramToPortal(pt)
-//
-//                    let x = CGFloat(portalPt.x)
-//                    let y = CGFloat(portalPt.y)
-//                    let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
-//
-//                    CGContextSetRGBFillColor(_ctx, 0.0, 0.0, 0.0, 1.0)
-//                    CGContextBeginPath(_ctx)
-//                    CGContextStrokeEllipseInRect(_ctx, rc)
-//                    CGContextFillEllipseInRect(_ctx, rc)
-//                    CGContextFillPath(_ctx)
-                }
-
+                drawComposition( _lnk.segment.get(0), p2: _lnk.segment.get(1) )
             }
+        }
+
+
+        if let  model = _model,
+        EndPt = model.linkEndPointTo {
+
+            if EndPt.type == LinkEndPointType.shared {
+
+                drawShared( _lnk.segment.get(count-1), p2: _lnk.segment.get(count-2) )
+            }
+
+            if EndPt.type == LinkEndPointType.composited {
+
+                drawComposition( _lnk.segment.get(count-1), p2: _lnk.segment.get(count-2) )
+            }
+
         }
     }
     
@@ -129,9 +146,6 @@ class LinkDisplay {
         
         var portalPt = _portal.pointFromDiagramToPortal(p1)
         
-//        let x = CGFloat(portalPt.x)
-//        let y = CGFloat(portalPt.y)
-//        let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
         let axisSystem = AxisSystem(p1: p1, p2: p2)
 
         var p : Point = p1
@@ -183,9 +197,6 @@ class LinkDisplay {
         
         var portalPt = _portal.pointFromDiagramToPortal(p1)
         
-//        let x = CGFloat(portalPt.x)
-//        let y = CGFloat(portalPt.y)
-//        let rc = CGRect(x: x - 5, y: y - 5, width: 10, height: 10);
         let axisSystem = AxisSystem(p1: p1, p2: p2)
         
         var p : Point = p1

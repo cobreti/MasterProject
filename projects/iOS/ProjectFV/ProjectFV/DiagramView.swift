@@ -20,7 +20,7 @@ class DiagramView : UIView {
         
         let document = Application.instance().document
         
-        if let layer = document.layers.get("DiagramLayout") {
+        if let layer = document.layers.get("VpProject") {
             
             let dd = DiagramDisplay(targetRect: bounds, layer: layer, document: document)
             

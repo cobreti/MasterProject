@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		163EFBE51B121EAF004C56E7 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE41B121EAF004C56E7 /* Vector2D.swift */; };
 		163EFBE71B1220D6004C56E7 /* AxisSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE61B1220D6004C56E7 /* AxisSystem.swift */; };
+		163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE81B12321C004C56E7 /* LinkType.swift */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDF81AF5502600C8F9AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF71AF5502600C8F9AE /* ViewController.swift */; };
 		1673BDFB1AF5502600C8F9AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDF91AF5502600C8F9AE /* Main.storyboard */; };
@@ -163,6 +164,7 @@
 /* Begin PBXFileReference section */
 		163EFBE41B121EAF004C56E7 /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector2D.swift; path = ../../../../sources/Shapes/Vector2D.swift; sourceTree = "<group>"; };
 		163EFBE61B1220D6004C56E7 /* AxisSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisSystem.swift; path = ../../../../sources/Shapes/AxisSystem.swift; sourceTree = "<group>"; };
+		163EFBE81B12321C004C56E7 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 				16FB69D71B0CE90300322E1F /* Model.swift */,
 				16FB69D91B0CE95100322E1F /* ModelsTable.swift */,
 				1673BE1C1AF5504800C8F9AE /* Supporting Files */,
+				163EFBE81B12321C004C56E7 /* LinkType.swift */,
 			);
 			path = DiagramElements;
 			sourceTree = "<group>";
@@ -863,6 +866,7 @@
 				16FB69D81B0CE90300322E1F /* Model.swift in Sources */,
 				16FB69E41B0D44EF00322E1F /* LinkEndPoint.swift in Sources */,
 				1673BE3F1AF5506600C8F9AE /* DiagramLayer.swift in Sources */,
+				163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */,
 				1673BE401AF5506600C8F9AE /* DiagramLayers.swift in Sources */,
 				1673BE421AF5506600C8F9AE /* Element.swift in Sources */,
 				16FB69E61B0D452E00322E1F /* LinkEndPointType.swift in Sources */,

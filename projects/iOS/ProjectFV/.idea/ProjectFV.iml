@@ -23,6 +23,9 @@
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkEndPointType.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkEndPointType.swift" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkType.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkType.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Model.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Model.swift" isTestSource="false" />
     </content>
