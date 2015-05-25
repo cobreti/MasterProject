@@ -7,25 +7,59 @@
 //
 
 import Foundation
+import DiagramElements
+import Shapes
 import UIKit
 
 class DiagramView : UIView {
+
+
+    var diagramPortal : DiagramPortal? {
+        get {
+            return _portal
+        }
+        set (value) {
+            _portal = value
+        }
+    }
+    
+    var diagramLayer : DiagramLayer? {
+        get {
+            return _layer
+        }
+        set (value) {
+            _layer = value
+        }
+    }
+    
+    var diagramDocument : Document? {
+        get {
+            return _document
+        }
+        set (value) {
+            _document = value
+        }
+    }
     
     override func drawRect(dirtyRect: CGRect) {
         
-        var rc : CGRect = CGRect(x: 50, y: 50, width: 200, height: 200)
-        var ctx : CGContext = UIGraphicsGetCurrentContext()
-        
-//        CGContextFillRect(ctx, rc)
-        
-        let document = Application.instance().document
-        
-        if let layer = document.layers.get("VpProject") {
+        if let  layer = diagramLayer,
+                portal = diagramPortal,
+                document = diagramDocument {
+
+            var ctx : CGContext = UIGraphicsGetCurrentContext()
             
-            let dd = DiagramDisplay(targetRect: bounds, layer: layer, document: document)
+            portal.viewRect = Rect( x: Double(frame.origin.x),
+                                    y: Double(frame.origin.y),
+                                    width: Double(frame.size.width),
+                                    height: Double(frame.size.height))
+            let dd = DiagramDisplay(targetRect: bounds, layer: layer, document: document, portal: portal)
             
             dd.display(ctx)
         }
     }
     
+    var _portal : DiagramPortal?
+    var _layer : DiagramLayer?
+    var _document : Document?
 }
