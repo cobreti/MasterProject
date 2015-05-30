@@ -41,19 +41,33 @@ class DiagramView : UIView {
         }
     }
     
+    var pinPoint : PinPoint? {
+        get {
+            return _pinPoint
+        }
+        set (value) {
+            _pinPoint = value
+        }
+    }
+    
     override func drawRect(dirtyRect: CGRect) {
         
         if let  layer = diagramLayer,
                 portal = diagramPortal,
-                document = diagramDocument {
+                document = diagramDocument,
+                pinPt = pinPoint {
 
             var ctx : CGContext = UIGraphicsGetCurrentContext()
             
-            portal.viewRect = Rect( x: Double(frame.origin.x),
-                                    y: Double(frame.origin.y),
-                                    width: Double(frame.size.width),
-                                    height: Double(frame.size.height))
-            let dd = DiagramDisplay(targetRect: bounds, layer: layer, document: document, portal: portal)
+//            portal.viewRect = Rect( x: Double(frame.origin.x),
+//                                    y: Double(frame.origin.y),
+//                                    width: Double(frame.size.width),
+//                                    height: Double(frame.size.height))
+            let dd = DiagramDisplay(    targetRect: bounds,
+                                        layer: layer,
+                                        document: document,
+                                        portal: portal,
+                                        viewPinPt: pinPt )
             
             dd.display(ctx)
         }
@@ -62,4 +76,5 @@ class DiagramView : UIView {
     var _portal : DiagramPortal?
     var _layer : DiagramLayer?
     var _document : Document?
+    var _pinPoint : PinPoint?
 }

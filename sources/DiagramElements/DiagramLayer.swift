@@ -47,10 +47,12 @@ public class DiagramLayer : DebugPrintable {
 
     public func updateBoundingBox() {
         
+        _box = nil
+        
         for (id, p) in _primitives {
             
             if let layerBox = self.box {
-                _box = Rect.union(_box, r2: p.box)
+                _box = Rect.union(layerBox, r2: p.box)
             }
             else {
                 _box = p.box

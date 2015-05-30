@@ -35,6 +35,7 @@
 		1673BE6C1AF550CA00C8F9AE /* VpProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6A1AF550CA00C8F9AE /* VpProject.swift */; };
 		1673BE6D1AF550CA00C8F9AE /* XmlDocParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */; };
 		1673BE6E1AF550D000C8F9AE /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1673BE1A1AF5504800C8F9AE /* DiagramElements.framework */; };
+		16BE0F181B16977700888CBB /* PinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BE0F171B16977700888CBB /* PinPoint.swift */; };
 		16EE9FE11B06A72000A872D4 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE01B06A72000A872D4 /* Link.swift */; };
 		16EE9FE81B06A73B00A872D4 /* XmlConnectorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */; };
 		16EE9FE91B06A73B00A872D4 /* XmlDiagramParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */; };
@@ -195,6 +196,7 @@
 		1673BE5E1AF550B500C8F9AE /* VpProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpProjectTests.swift; sourceTree = "<group>"; };
 		1673BE6A1AF550CA00C8F9AE /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
 		1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDocParser.swift; path = ../../../../sources/VpProject/XmlDocParser.swift; sourceTree = "<group>"; };
+		16BE0F171B16977700888CBB /* PinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinPoint.swift; sourceTree = "<group>"; };
 		16EE9FE01B06A72000A872D4 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../sources/DiagramElements/Link.swift; sourceTree = "<group>"; };
 		16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorParser.swift; sourceTree = "<group>"; };
 		16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDiagramParser.swift; path = ../../../../sources/VpProject/parsers/XmlDiagramParser.swift; sourceTree = "<group>"; };
@@ -522,6 +524,7 @@
 				16EEA02E1B06C9BE00A872D4 /* DiagramDisplay.swift */,
 				16FB69D31B0CD6F300322E1F /* DiagramPortal.swift */,
 				16FB69DF1B0CF36300322E1F /* LinkDisplay.swift */,
+				16BE0F171B16977700888CBB /* PinPoint.swift */,
 			);
 			name = DiagramView;
 			sourceTree = "<group>";
@@ -845,6 +848,7 @@
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
 				16EEA02F1B06C9BE00A872D4 /* DiagramDisplay.swift in Sources */,
 				16EEA0231B06B79A00A872D4 /* DiagramView.swift in Sources */,
+				16BE0F181B16977700888CBB /* PinPoint.swift in Sources */,
 				16FB69D41B0CD6F300322E1F /* DiagramPortal.swift in Sources */,
 				1673BDF81AF5502600C8F9AE /* ViewController.swift in Sources */,
 				1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */,

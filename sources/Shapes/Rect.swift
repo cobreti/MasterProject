@@ -56,10 +56,33 @@ public class Rect {
         }
     }
     
+    public var midX : Double {
+        get {
+            return (left + right) / 2
+        }
+    }
+    
+    public var midY : Double {
+        get {
+            return (top + bottom) / 2
+        }
+    }
+    
     public init( x : Double, y : Double, width : Double, height : Double ) {
 
         _pos = Point(x: x, y: y)
         _size = Size(width: width, height: height)
+    }
+    
+    public convenience init( cgrect : CGRect ) {
+        self.init(  x: Double(cgrect.origin.x),
+                    y: Double(cgrect.origin.y),
+                    width: Double(cgrect.size.width),
+                    height: Double(cgrect.size.height) )
+    }
+    
+    public func toCGRect() -> CGRect {
+        return CGRect(x: CGFloat(_pos.x), y: CGFloat(_pos.y), width: CGFloat(_size.width), height: CGFloat(_size.height))
     }
     
     public func contains( rc : Rect ) -> Bool {

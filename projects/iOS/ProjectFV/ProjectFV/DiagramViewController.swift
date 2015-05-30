@@ -43,11 +43,25 @@ class DiagramViewController : UIViewController {
             rcArea: Rect( x: Double(frame.origin.x), y: Double(frame.origin.y), width: Double(frame.size.width), height: Double(frame.size.height) ),
             diagramBox: _diagramLayer.box )
         
-        if let dlgView = view as? DiagramView {
-            dlgView.diagramLayer = _diagramLayer
-            dlgView.diagramDocument = document
-            dlgView.diagramPortal = _diagramPortal
+        if let dgmView = view as? DiagramView {
+            dgmView.diagramLayer = _diagramLayer
+            dgmView.diagramDocument = document
+            dgmView.diagramPortal = _diagramPortal
+            dgmView.pinPoint = PinPoint( x: Double(frame.midX), y: Double(frame.midY) )
         }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        let frame = view.frame
+
+        if let dgmView = view as? DiagramView {
+            dgmView.pinPoint = PinPoint( x: Double(frame.midX), y: Double(frame.midY) )
+        }
+        
+        _diagramPortal.viewRect = Rect( cgrect: frame )
+
+        view.setNeedsDisplay()
     }
     
     func onZoom( sender : UIPinchGestureRecognizer ) {
