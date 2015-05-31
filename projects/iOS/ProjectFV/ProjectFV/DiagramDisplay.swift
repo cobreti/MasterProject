@@ -40,8 +40,8 @@ class DiagramDisplay {
             }
         }
         
-        drawPinningPoints(ctx)
-        drawPortalBBox(ctx)
+//        drawPinningPoints(ctx)
+//        drawPortalBBox(ctx)
     }
                 
     func displayElement( ctx: CGContext, elm : Element ) {
