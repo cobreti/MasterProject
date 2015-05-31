@@ -43,7 +43,7 @@ class DiagramDisplay {
         drawPinningPoints(ctx)
         drawPortalBBox(ctx)
     }
-    
+                
     func displayElement( ctx: CGContext, elm : Element ) {
         
         let     x = elm.box.pos.x,
@@ -103,12 +103,12 @@ class DiagramDisplay {
         CGContextSetRGBStrokeColor(ctx, 0.0, 0.5, 0.0, 1.0)
         CGContextStrokeEllipseInRect(ctx, rc)
         
-        debugPrintln("vpp = \(_viewPinPoint.x), \(_viewPinPoint.y)")
-        debugPrintln("ppp = \(_portal.pinPoint.x), \(_portal.pinPoint.y)")
+//        debugPrintln("vpp = \(_viewPinPoint.x), \(_viewPinPoint.y)")
+//        debugPrintln("ppp = \(_portal.pinPoint.x), \(_portal.pinPoint.y)")
         
         pt = _portal.pointFromDiagramToPortal(_portal.pinPoint)
         
-        debugPrintln("pt = \(pt.x), \(pt.y)")
+//        debugPrintln("pt = \(pt.x), \(pt.y)")
         
         rc = CGRect( origin: CGPoint(x: pt.x-7, y:pt.y-7), size: CGSize(width: 14, height: 14))
 

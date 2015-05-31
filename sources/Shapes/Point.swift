@@ -33,6 +33,11 @@ public class Point {
         _y = y
     }
     
+    public init(pt : Point) {
+        _x = pt.x
+        _y = pt.y
+    }
+    
     private var _x : Double
     private var _y : Double
 }

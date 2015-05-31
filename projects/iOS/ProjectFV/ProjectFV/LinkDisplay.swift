@@ -23,7 +23,7 @@ class LinkDisplay {
         
         _model = _doc.models.get(_lnk.modelId)
         
-        debugPrintln("init linkdisplay end")
+//        debugPrintln("init linkdisplay end")
     }
     
     func draw() {

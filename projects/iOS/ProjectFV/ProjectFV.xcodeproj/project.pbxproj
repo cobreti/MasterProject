@@ -10,6 +10,7 @@
 		163EFBE51B121EAF004C56E7 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE41B121EAF004C56E7 /* Vector2D.swift */; };
 		163EFBE71B1220D6004C56E7 /* AxisSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE61B1220D6004C56E7 /* AxisSystem.swift */; };
 		163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE81B12321C004C56E7 /* LinkType.swift */; };
+		1642F1661B1B528D00AA600D /* PanGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F1651B1B528D00AA600D /* PanGestureHandler.swift */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDF81AF5502600C8F9AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF71AF5502600C8F9AE /* ViewController.swift */; };
 		1673BDFB1AF5502600C8F9AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDF91AF5502600C8F9AE /* Main.storyboard */; };
@@ -166,6 +167,7 @@
 		163EFBE41B121EAF004C56E7 /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector2D.swift; path = ../../../../sources/Shapes/Vector2D.swift; sourceTree = "<group>"; };
 		163EFBE61B1220D6004C56E7 /* AxisSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisSystem.swift; path = ../../../../sources/Shapes/AxisSystem.swift; sourceTree = "<group>"; };
 		163EFBE81B12321C004C56E7 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
+		1642F1651B1B528D00AA600D /* PanGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGestureHandler.swift; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -302,6 +304,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1642F1641B1B526900AA600D /* GestureHandler */ = {
+			isa = PBXGroup;
+			children = (
+				1642F1651B1B528D00AA600D /* PanGestureHandler.swift */,
+			);
+			name = GestureHandler;
+			sourceTree = "<group>";
+		};
 		1673BDE71AF5502600C8F9AE = {
 			isa = PBXGroup;
 			children = (
@@ -519,6 +529,7 @@
 		16EEA0261B06B88700A872D4 /* DiagramView */ = {
 			isa = PBXGroup;
 			children = (
+				1642F1641B1B526900AA600D /* GestureHandler */,
 				16EEA0221B06B79A00A872D4 /* DiagramView.swift */,
 				16EEA0271B06B8A800A872D4 /* DiagramViewController.swift */,
 				16EEA02E1B06C9BE00A872D4 /* DiagramDisplay.swift */,
@@ -847,6 +858,7 @@
 				16EEA0281B06B8A800A872D4 /* DiagramViewController.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
 				16EEA02F1B06C9BE00A872D4 /* DiagramDisplay.swift in Sources */,
+				1642F1661B1B528D00AA600D /* PanGestureHandler.swift in Sources */,
 				16EEA0231B06B79A00A872D4 /* DiagramView.swift in Sources */,
 				16BE0F181B16977700888CBB /* PinPoint.swift in Sources */,
 				16FB69D41B0CD6F300322E1F /* DiagramPortal.swift in Sources */,
