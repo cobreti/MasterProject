@@ -5,5 +5,13 @@
       <ContextState
          contextName = "DiagramElements.ModelsTable.get (DiagramElements.ModelsTable)(Swift.String) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;DiagramElements.Model&gt;:ModelsTable.swift">
       </ContextState>
+      <ContextState
+         contextName = "ProjectFV.TapGestureHandler.onTap (ProjectFV.TapGestureHandler)(ObjectiveC.UITapGestureRecognizer) -&gt; ():TapGestureHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.state">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

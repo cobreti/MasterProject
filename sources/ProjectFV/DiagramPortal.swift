@@ -74,10 +74,10 @@ class DiagramPortal {
     
     func alignWithViewPinPoint( viewPinPoint: PinPoint ) {
         
-        var portalPinPoint : Point = pointFromDiagramToPortal(_pinPoint)
+        let factor = _zoom * _scaling
         
-//        _translation.x = (viewPinPoint.x - portalPinPoint.x)
-//        _translation.y = (viewPinPoint.y - portalPinPoint.y)
+        _translation.x = viewPinPoint.x - _offset.x - _margins.left - (_pinPoint.x * factor)
+        _translation.y = viewPinPoint.y - _offset.y - _margins.top - (_pinPoint.y * factor)
     }
     
     func updateScaling() {
@@ -96,16 +96,18 @@ class DiagramPortal {
     func rectFromDiagramToPortal( rc : Rect ) -> Rect {
         
         return Rect(
-            x: (rc.left + _translation.x + _offset.x) * _scaling * _zoom + _margins.left,
-            y: (rc.top + _translation.y + _offset.y) * _scaling * _zoom + _margins.top ,
+            x: (rc.left * _scaling * _zoom) + _margins.left + _translation.x + _offset.x,
+            y: (rc.top  * _scaling * _zoom) + _margins.top + _translation.y + _offset.y ,
             width: rc.size.width * _scaling * _zoom,
             height: rc.size.height * _scaling * _zoom )
     }
     
     func PointFromViewToPortal( pt: Point ) -> Point {
+        let factor = _scaling * _zoom
+    
         return Point(
-            x: pt.x - _margins.left - _translation.x + _offset.x,
-            y: pt.y - _margins.top - _translation.y + _offset.y
+            x: (pt.x - _margins.left - _translation.x - _offset.x) / factor,
+            y: (pt.y - _margins.top - _translation.y - _offset.y) / factor
         )
     }
     
@@ -119,8 +121,9 @@ class DiagramPortal {
     func pointFromDiagramToPortal( pt : Point ) -> Point {
         
         return Point(
-            x: (pt.x + _offset.x) * _scaling * _zoom + _margins.left + _translation.x,
-            y: (pt.y + _offset.y) * _scaling * _zoom + _margins.top + _translation.y )
+            x: (pt.x ) * _scaling * _zoom + _margins.left + _translation.x + _offset.x,
+            y: (pt.y ) * _scaling * _zoom + _margins.top + _translation.y + _offset.y
+        )
     }
     
     private var _area : Rect

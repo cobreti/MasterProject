@@ -33,15 +33,7 @@ class DiagramViewController : UIViewController {
         
         view.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
         
-        var zoomRecognizer = UIPinchGestureRecognizer()
-        zoomRecognizer.addTarget(self, action: "onZoom:")
-        view.addGestureRecognizer(zoomRecognizer)
         
-        
-//        var panRecognizer = UIPanGestureRecognizer()
-//        panRecognizer.addTarget(self, action: "onPan:")
-//        view.addGestureRecognizer(panRecognizer)
-
         let frame = view.frame
 
         _diagramPortal = DiagramPortal(
@@ -55,6 +47,8 @@ class DiagramViewController : UIViewController {
             dgmView.pinPoint = PinPoint( x: Double(frame.midX), y: Double(frame.midY) )
 
             _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal)
+            _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal)
+//            _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal)
         }
     }
     
@@ -70,15 +64,6 @@ class DiagramViewController : UIViewController {
         }
     }
     
-//    func onPan( sender : UIPanGestureRecognizer ) {
-//        if let dgmView = view as? DiagramView {
-//            let pt = sender.velocityInView(view)
-//            debugPrintln("pan : \(pt.x), \(pt.y)")
-//            
-//            _diagramPortal.translate(Double(pt.x), y: Double(pt.y))
-//            dgmView.setNeedsDisplay()
-//        }
-//    }
     
     func onZoom( sender : UIPinchGestureRecognizer ) {
 //        debugPrintln("scale : \(sender.scale)")
@@ -123,4 +108,6 @@ class DiagramViewController : UIViewController {
     var _diagramLayer : DiagramLayer!
     
     var _panGestureHandler : PanGestureHandler!
+    var _zoomGestureHandler : ZoomGestureHandler!
+    var _tapGestureHandler : TapGestureHandler!
 }

@@ -11,6 +11,8 @@
 		163EFBE71B1220D6004C56E7 /* AxisSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE61B1220D6004C56E7 /* AxisSystem.swift */; };
 		163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE81B12321C004C56E7 /* LinkType.swift */; };
 		1642F1661B1B528D00AA600D /* PanGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F1651B1B528D00AA600D /* PanGestureHandler.swift */; };
+		1642F1681B1B869E00AA600D /* ZoomGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F1671B1B869E00AA600D /* ZoomGestureHandler.swift */; };
+		1642F16A1B1BA04000AA600D /* TapGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F1691B1BA04000AA600D /* TapGestureHandler.swift */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDF81AF5502600C8F9AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF71AF5502600C8F9AE /* ViewController.swift */; };
 		1673BDFB1AF5502600C8F9AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDF91AF5502600C8F9AE /* Main.storyboard */; };
@@ -168,6 +170,8 @@
 		163EFBE61B1220D6004C56E7 /* AxisSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisSystem.swift; path = ../../../../sources/Shapes/AxisSystem.swift; sourceTree = "<group>"; };
 		163EFBE81B12321C004C56E7 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
 		1642F1651B1B528D00AA600D /* PanGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGestureHandler.swift; sourceTree = "<group>"; };
+		1642F1671B1B869E00AA600D /* ZoomGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomGestureHandler.swift; sourceTree = "<group>"; };
+		1642F1691B1BA04000AA600D /* TapGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapGestureHandler.swift; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -308,6 +312,8 @@
 			isa = PBXGroup;
 			children = (
 				1642F1651B1B528D00AA600D /* PanGestureHandler.swift */,
+				1642F1671B1B869E00AA600D /* ZoomGestureHandler.swift */,
+				1642F1691B1BA04000AA600D /* TapGestureHandler.swift */,
 			);
 			name = GestureHandler;
 			sourceTree = "<group>";
@@ -854,6 +860,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1642F16A1B1BA04000AA600D /* TapGestureHandler.swift in Sources */,
 				16FB69E01B0CF36300322E1F /* LinkDisplay.swift in Sources */,
 				16EEA0281B06B8A800A872D4 /* DiagramViewController.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
@@ -863,6 +870,7 @@
 				16BE0F181B16977700888CBB /* PinPoint.swift in Sources */,
 				16FB69D41B0CD6F300322E1F /* DiagramPortal.swift in Sources */,
 				1673BDF81AF5502600C8F9AE /* ViewController.swift in Sources */,
+				1642F1681B1B869E00AA600D /* ZoomGestureHandler.swift in Sources */,
 				1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

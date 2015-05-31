@@ -32,18 +32,13 @@ class PanGestureHandler : NSObject {
             case UIGestureRecognizerState.Began:
                 _startPt = sender.translationInView(_view)
                 _originalTranslation = _portal.translation
-                debugPrintln("start point : \(_startPt)")
-                debugPrintln("original translation : \(_originalTranslation.x), \(_originalTranslation.y)")
                 break
             case UIGestureRecognizerState.Changed:
                 let pt = sender.translationInView(_view)
-                debugPrintln("translation pt : \(pt)")
-                debugPrintln("original translation : \(_originalTranslation.x), \(_originalTranslation.y)")
                 var transform = Point(pt: _originalTranslation)
                 transform.x += Double(pt.x)/_portal.scalingFactor
                 transform.y += Double(pt.y)/_portal.scalingFactor
                 _portal.translation = transform
-                debugPrintln("final translation : \(transform.x), \(transform.y)")
                 _view.setNeedsDisplay();
                 break
             default:
