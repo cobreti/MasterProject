@@ -23,6 +23,13 @@ class Application {
         return g_app!
     }
     
+    
+    var stories : StoriesMgr {
+        get {
+            return _storiesMgr!
+        }
+    }
+    
     var document : DiagramElements.Document {
         get {
             return _document
@@ -31,20 +38,13 @@ class Application {
     
     func finishedLaunching() {
         
-        if let wnd = UIApplication.sharedApplication().keyWindow {
+        _storiesMgr = StoriesMgr()
         
-            for view in wnd.subviews {
-                view.removeFromSuperview();
-            }
-        
-            _mainViewController = DiagramViewController(nibName: "DiagramView", bundle: nil)
-            wnd.addSubview(_mainViewController.view)
-            
-            _mainViewController.view.frame = wnd.bounds
-        }
+        stories.push( SchematicViewStory(diagramName: "VpProject") )
     }
     
     var _document : DiagramElements.Document = DiagramElements.Document()
     var _mainViewController : DiagramViewController!
+    var _storiesMgr : StoriesMgr!
 }
 

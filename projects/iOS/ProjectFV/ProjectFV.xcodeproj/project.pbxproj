@@ -10,9 +10,8 @@
 		163EFBE51B121EAF004C56E7 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE41B121EAF004C56E7 /* Vector2D.swift */; };
 		163EFBE71B1220D6004C56E7 /* AxisSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE61B1220D6004C56E7 /* AxisSystem.swift */; };
 		163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE81B12321C004C56E7 /* LinkType.swift */; };
-		1642F1661B1B528D00AA600D /* PanGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F1651B1B528D00AA600D /* PanGestureHandler.swift */; };
-		1642F1681B1B869E00AA600D /* ZoomGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F1671B1B869E00AA600D /* ZoomGestureHandler.swift */; };
-		1642F16A1B1BA04000AA600D /* TapGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F1691B1BA04000AA600D /* TapGestureHandler.swift */; };
+		1642F16D1B1D396B00AA600D /* StoriesMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F16C1B1D396B00AA600D /* StoriesMgr.swift */; };
+		1642F16F1B1D398600AA600D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F16E1B1D398600AA600D /* Story.swift */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDF81AF5502600C8F9AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF71AF5502600C8F9AE /* ViewController.swift */; };
 		1673BDFB1AF5502600C8F9AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDF91AF5502600C8F9AE /* Main.storyboard */; };
@@ -38,7 +37,16 @@
 		1673BE6C1AF550CA00C8F9AE /* VpProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6A1AF550CA00C8F9AE /* VpProject.swift */; };
 		1673BE6D1AF550CA00C8F9AE /* XmlDocParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */; };
 		1673BE6E1AF550D000C8F9AE /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1673BE1A1AF5504800C8F9AE /* DiagramElements.framework */; };
-		16BE0F181B16977700888CBB /* PinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BE0F171B16977700888CBB /* PinPoint.swift */; };
+		16CF29C51B23941300E72CCA /* SchematicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C41B23941300E72CCA /* SchematicViewStory.swift */; };
+		16CF29CC1B23987D00E72CCA /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */; };
+		16CF29CD1B23987D00E72CCA /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C71B23987D00E72CCA /* DiagramPortal.swift */; };
+		16CF29CE1B23987D00E72CCA /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C81B23987D00E72CCA /* DiagramView.swift */; };
+		16CF29CF1B23987D00E72CCA /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C91B23987D00E72CCA /* DiagramViewController.swift */; };
+		16CF29D01B23987D00E72CCA /* LinkDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29CA1B23987D00E72CCA /* LinkDisplay.swift */; };
+		16CF29D11B23987D00E72CCA /* PinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29CB1B23987D00E72CCA /* PinPoint.swift */; };
+		16CF29D51B23989400E72CCA /* PanGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29D21B23989400E72CCA /* PanGestureHandler.swift */; };
+		16CF29D61B23989400E72CCA /* TapGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29D31B23989400E72CCA /* TapGestureHandler.swift */; };
+		16CF29D71B23989400E72CCA /* ZoomGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29D41B23989400E72CCA /* ZoomGestureHandler.swift */; };
 		16EE9FE11B06A72000A872D4 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE01B06A72000A872D4 /* Link.swift */; };
 		16EE9FE81B06A73B00A872D4 /* XmlConnectorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */; };
 		16EE9FE91B06A73B00A872D4 /* XmlDiagramParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */; };
@@ -59,17 +67,12 @@
 		16EEA01E1B06A78700A872D4 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA01A1B06A78700A872D4 /* Size.swift */; };
 		16EEA01F1B06A79600A872D4 /* Shapes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EE9FF81B06A77900A872D4 /* Shapes.framework */; };
 		16EEA0211B06B75100A872D4 /* DiagramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EEA0201B06B75100A872D4 /* DiagramView.xib */; };
-		16EEA0231B06B79A00A872D4 /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA0221B06B79A00A872D4 /* DiagramView.swift */; };
 		16EEA0251B06B81700A872D4 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA0241B06B81700A872D4 /* Application.swift */; };
-		16EEA0281B06B8A800A872D4 /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA0271B06B8A800A872D4 /* DiagramViewController.swift */; };
-		16EEA02F1B06C9BE00A872D4 /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA02E1B06C9BE00A872D4 /* DiagramDisplay.swift */; };
-		16FB69D41B0CD6F300322E1F /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69D31B0CD6F300322E1F /* DiagramPortal.swift */; };
 		16FB69D61B0CD92A00322E1F /* Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69D51B0CD92A00322E1F /* Margins.swift */; };
 		16FB69D81B0CE90300322E1F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69D71B0CE90300322E1F /* Model.swift */; };
 		16FB69DA1B0CE95100322E1F /* ModelsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69D91B0CE95100322E1F /* ModelsTable.swift */; };
 		16FB69DC1B0CEA9600322E1F /* XmlModelsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69DB1B0CEA9600322E1F /* XmlModelsParser.swift */; };
 		16FB69DE1B0CEB8200322E1F /* XmlModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69DD1B0CEB8200322E1F /* XmlModelParser.swift */; };
-		16FB69E01B0CF36300322E1F /* LinkDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69DF1B0CF36300322E1F /* LinkDisplay.swift */; };
 		16FB69E21B0D11A000322E1F /* XmlParserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E11B0D11A000322E1F /* XmlParserState.swift */; };
 		16FB69E41B0D44EF00322E1F /* LinkEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */; };
 		16FB69E61B0D452E00322E1F /* LinkEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */; };
@@ -169,9 +172,8 @@
 		163EFBE41B121EAF004C56E7 /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector2D.swift; path = ../../../../sources/Shapes/Vector2D.swift; sourceTree = "<group>"; };
 		163EFBE61B1220D6004C56E7 /* AxisSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisSystem.swift; path = ../../../../sources/Shapes/AxisSystem.swift; sourceTree = "<group>"; };
 		163EFBE81B12321C004C56E7 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
-		1642F1651B1B528D00AA600D /* PanGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGestureHandler.swift; sourceTree = "<group>"; };
-		1642F1671B1B869E00AA600D /* ZoomGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomGestureHandler.swift; sourceTree = "<group>"; };
-		1642F1691B1BA04000AA600D /* TapGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapGestureHandler.swift; sourceTree = "<group>"; };
+		1642F16C1B1D396B00AA600D /* StoriesMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesMgr.swift; sourceTree = "<group>"; };
+		1642F16E1B1D398600AA600D /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,7 +204,16 @@
 		1673BE5E1AF550B500C8F9AE /* VpProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpProjectTests.swift; sourceTree = "<group>"; };
 		1673BE6A1AF550CA00C8F9AE /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
 		1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDocParser.swift; path = ../../../../sources/VpProject/XmlDocParser.swift; sourceTree = "<group>"; };
-		16BE0F171B16977700888CBB /* PinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinPoint.swift; sourceTree = "<group>"; };
+		16CF29C41B23941300E72CCA /* SchematicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewStory.swift; path = SchematicView/SchematicViewStory.swift; sourceTree = "<group>"; };
+		16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplay.swift; path = SchematicView/DiagramDisplay.swift; sourceTree = "<group>"; };
+		16CF29C71B23987D00E72CCA /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = SchematicView/DiagramPortal.swift; sourceTree = "<group>"; };
+		16CF29C81B23987D00E72CCA /* DiagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramView.swift; path = SchematicView/DiagramView.swift; sourceTree = "<group>"; };
+		16CF29C91B23987D00E72CCA /* DiagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewController.swift; path = SchematicView/DiagramViewController.swift; sourceTree = "<group>"; };
+		16CF29CA1B23987D00E72CCA /* LinkDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkDisplay.swift; path = SchematicView/LinkDisplay.swift; sourceTree = "<group>"; };
+		16CF29CB1B23987D00E72CCA /* PinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinPoint.swift; path = SchematicView/PinPoint.swift; sourceTree = "<group>"; };
+		16CF29D21B23989400E72CCA /* PanGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PanGestureHandler.swift; path = SchematicView/GestureHandler/PanGestureHandler.swift; sourceTree = "<group>"; };
+		16CF29D31B23989400E72CCA /* TapGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapGestureHandler.swift; path = SchematicView/GestureHandler/TapGestureHandler.swift; sourceTree = "<group>"; };
+		16CF29D41B23989400E72CCA /* ZoomGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomGestureHandler.swift; path = SchematicView/GestureHandler/ZoomGestureHandler.swift; sourceTree = "<group>"; };
 		16EE9FE01B06A72000A872D4 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../sources/DiagramElements/Link.swift; sourceTree = "<group>"; };
 		16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorParser.swift; sourceTree = "<group>"; };
 		16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDiagramParser.swift; path = ../../../../sources/VpProject/parsers/XmlDiagramParser.swift; sourceTree = "<group>"; };
@@ -223,17 +234,12 @@
 		16EEA0191B06A78700A872D4 /* Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rect.swift; path = ../../../../sources/Shapes/Rect.swift; sourceTree = "<group>"; };
 		16EEA01A1B06A78700A872D4 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Size.swift; path = ../../../../sources/Shapes/Size.swift; sourceTree = "<group>"; };
 		16EEA0201B06B75100A872D4 /* DiagramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiagramView.xib; sourceTree = "<group>"; };
-		16EEA0221B06B79A00A872D4 /* DiagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramView.swift; sourceTree = "<group>"; };
 		16EEA0241B06B81700A872D4 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
-		16EEA0271B06B8A800A872D4 /* DiagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramViewController.swift; sourceTree = "<group>"; };
-		16EEA02E1B06C9BE00A872D4 /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramDisplay.swift; sourceTree = "<group>"; };
-		16FB69D31B0CD6F300322E1F /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = ../../../../sources/ProjectFV/DiagramPortal.swift; sourceTree = "<group>"; };
 		16FB69D51B0CD92A00322E1F /* Margins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Margins.swift; path = ../../../../sources/Shapes/Margins.swift; sourceTree = "<group>"; };
 		16FB69D71B0CE90300322E1F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../../../sources/DiagramElements/Model.swift; sourceTree = "<group>"; };
 		16FB69D91B0CE95100322E1F /* ModelsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelsTable.swift; path = ../../../../sources/DiagramElements/ModelsTable.swift; sourceTree = "<group>"; };
 		16FB69DB1B0CEA9600322E1F /* XmlModelsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlModelsParser.swift; path = ../../../../sources/VpProject/parsers/XmlModelsParser.swift; sourceTree = "<group>"; };
 		16FB69DD1B0CEB8200322E1F /* XmlModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlModelParser.swift; path = ../../../../sources/VpProject/parsers/XmlModelParser.swift; sourceTree = "<group>"; };
-		16FB69DF1B0CF36300322E1F /* LinkDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkDisplay.swift; sourceTree = "<group>"; };
 		16FB69E11B0D11A000322E1F /* XmlParserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlParserState.swift; path = ../../../../sources/VpProject/XmlParserState.swift; sourceTree = "<group>"; };
 		16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPoint.swift; path = ../../../../sources/DiagramElements/LinkEndPoint.swift; sourceTree = "<group>"; };
 		16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPointType.swift; path = ../../../../sources/DiagramElements/LinkEndPointType.swift; sourceTree = "<group>"; };
@@ -311,11 +317,21 @@
 		1642F1641B1B526900AA600D /* GestureHandler */ = {
 			isa = PBXGroup;
 			children = (
-				1642F1651B1B528D00AA600D /* PanGestureHandler.swift */,
-				1642F1671B1B869E00AA600D /* ZoomGestureHandler.swift */,
-				1642F1691B1BA04000AA600D /* TapGestureHandler.swift */,
+				16CF29D21B23989400E72CCA /* PanGestureHandler.swift */,
+				16CF29D31B23989400E72CCA /* TapGestureHandler.swift */,
+				16CF29D41B23989400E72CCA /* ZoomGestureHandler.swift */,
 			);
 			name = GestureHandler;
+			sourceTree = "<group>";
+		};
+		1642F16B1B1D392800AA600D /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				16CF29C31B2393E700E72CCA /* SchematicView */,
+				1642F16C1B1D396B00AA600D /* StoriesMgr.swift */,
+				1642F16E1B1D398600AA600D /* Story.swift */,
+			);
+			name = Stories;
 			sourceTree = "<group>";
 		};
 		1673BDE71AF5502600C8F9AE = {
@@ -351,7 +367,7 @@
 		1673BDF21AF5502600C8F9AE /* ProjectFV */ = {
 			isa = PBXGroup;
 			children = (
-				16EEA0261B06B88700A872D4 /* DiagramView */,
+				1642F16B1B1D392800AA600D /* Stories */,
 				1673BE441AF550A700C8F9AE /* EmbeddedRes */,
 				1673BDF51AF5502600C8F9AE /* AppDelegate.swift */,
 				1673BDF71AF5502600C8F9AE /* ViewController.swift */,
@@ -476,6 +492,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		16CF29C31B2393E700E72CCA /* SchematicView */ = {
+			isa = PBXGroup;
+			children = (
+				1642F1641B1B526900AA600D /* GestureHandler */,
+				16CF29C41B23941300E72CCA /* SchematicViewStory.swift */,
+				16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */,
+				16CF29C71B23987D00E72CCA /* DiagramPortal.swift */,
+				16CF29C81B23987D00E72CCA /* DiagramView.swift */,
+				16CF29C91B23987D00E72CCA /* DiagramViewController.swift */,
+				16CF29CA1B23987D00E72CCA /* LinkDisplay.swift */,
+				16CF29CB1B23987D00E72CCA /* PinPoint.swift */,
+			);
+			name = SchematicView;
+			sourceTree = "<group>";
+		};
 		16EE9FE21B06A72D00A872D4 /* parsers */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,20 +561,6 @@
 				16EEA00A1B06A77900A872D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		16EEA0261B06B88700A872D4 /* DiagramView */ = {
-			isa = PBXGroup;
-			children = (
-				1642F1641B1B526900AA600D /* GestureHandler */,
-				16EEA0221B06B79A00A872D4 /* DiagramView.swift */,
-				16EEA0271B06B8A800A872D4 /* DiagramViewController.swift */,
-				16EEA02E1B06C9BE00A872D4 /* DiagramDisplay.swift */,
-				16FB69D31B0CD6F300322E1F /* DiagramPortal.swift */,
-				16FB69DF1B0CF36300322E1F /* LinkDisplay.swift */,
-				16BE0F171B16977700888CBB /* PinPoint.swift */,
-			);
-			name = DiagramView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -860,18 +877,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1642F16A1B1BA04000AA600D /* TapGestureHandler.swift in Sources */,
-				16FB69E01B0CF36300322E1F /* LinkDisplay.swift in Sources */,
-				16EEA0281B06B8A800A872D4 /* DiagramViewController.swift in Sources */,
+				16CF29CE1B23987D00E72CCA /* DiagramView.swift in Sources */,
+				1642F16D1B1D396B00AA600D /* StoriesMgr.swift in Sources */,
+				16CF29C51B23941300E72CCA /* SchematicViewStory.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
-				16EEA02F1B06C9BE00A872D4 /* DiagramDisplay.swift in Sources */,
-				1642F1661B1B528D00AA600D /* PanGestureHandler.swift in Sources */,
-				16EEA0231B06B79A00A872D4 /* DiagramView.swift in Sources */,
-				16BE0F181B16977700888CBB /* PinPoint.swift in Sources */,
-				16FB69D41B0CD6F300322E1F /* DiagramPortal.swift in Sources */,
+				16CF29D71B23989400E72CCA /* ZoomGestureHandler.swift in Sources */,
+				16CF29D61B23989400E72CCA /* TapGestureHandler.swift in Sources */,
+				1642F16F1B1D398600AA600D /* Story.swift in Sources */,
 				1673BDF81AF5502600C8F9AE /* ViewController.swift in Sources */,
-				1642F1681B1B869E00AA600D /* ZoomGestureHandler.swift in Sources */,
+				16CF29D51B23989400E72CCA /* PanGestureHandler.swift in Sources */,
+				16CF29CF1B23987D00E72CCA /* DiagramViewController.swift in Sources */,
+				16CF29CC1B23987D00E72CCA /* DiagramDisplay.swift in Sources */,
+				16CF29D11B23987D00E72CCA /* PinPoint.swift in Sources */,
 				1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */,
+				16CF29D01B23987D00E72CCA /* LinkDisplay.swift in Sources */,
+				16CF29CD1B23987D00E72CCA /* DiagramPortal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1122,12 +1142,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Danny Thibaudeau (HXRFYDMG6J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjectFV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d2a494d5-a975-48e3-97b2-143362503abf";
 			};
 			name = Debug;
 		};
@@ -1135,12 +1155,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Danny Thibaudeau (HXRFYDMG6J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjectFV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d2a494d5-a975-48e3-97b2-143362503abf";
 			};
 			name = Release;
 		};
