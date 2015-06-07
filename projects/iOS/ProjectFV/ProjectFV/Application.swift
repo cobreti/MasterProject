@@ -40,7 +40,8 @@ class Application {
     
         _storiesMgr = StoriesMgr()
         
-        stories.push( SchematicViewStory(diagramName: "VpProject") )
+        stories.push( DiagramSelectionStory() )
+//        stories.push( SchematicViewStory(diagramName: "VpProject") )
     }
     
     var _document : DiagramElements.Document = DiagramElements.Document()

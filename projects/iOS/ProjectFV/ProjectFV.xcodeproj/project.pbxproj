@@ -36,6 +36,10 @@
 		1673BE6D1AF550CA00C8F9AE /* XmlDocParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */; };
 		1673BE6E1AF550D000C8F9AE /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1673BE1A1AF5504800C8F9AE /* DiagramElements.framework */; };
 		16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FB61B23CFE500ABDC4E /* Main.storyboard */; };
+		16A44FBB1B23D1CC00ABDC4E /* DiagramSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FBA1B23D1CC00ABDC4E /* DiagramSelectionController.swift */; };
+		16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */; };
+		16A44FBF1B23D2A200ABDC4E /* DiagramSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FBE1B23D2A200ABDC4E /* DiagramSelectionStory.swift */; };
+		16A44FC11B23D43200ABDC4E /* DiagramsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */; };
 		16CF29C51B23941300E72CCA /* SchematicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C41B23941300E72CCA /* SchematicViewStory.swift */; };
 		16CF29CC1B23987D00E72CCA /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */; };
 		16CF29CD1B23987D00E72CCA /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C71B23987D00E72CCA /* DiagramPortal.swift */; };
@@ -202,6 +206,10 @@
 		1673BE6A1AF550CA00C8F9AE /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
 		1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDocParser.swift; path = ../../../../sources/VpProject/XmlDocParser.swift; sourceTree = "<group>"; };
 		16A44FB71B23CFE500ABDC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16A44FBA1B23D1CC00ABDC4E /* DiagramSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramSelectionController.swift; path = DiagramSelection/DiagramSelectionController.swift; sourceTree = "<group>"; };
+		16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiagramSelection.xib; path = Resources/DiagramSelection.xib; sourceTree = "<group>"; };
+		16A44FBE1B23D2A200ABDC4E /* DiagramSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramSelectionStory.swift; path = DiagramSelection/DiagramSelectionStory.swift; sourceTree = "<group>"; };
+		16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramsDataSource.swift; sourceTree = "<group>"; };
 		16CF29C41B23941300E72CCA /* SchematicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewStory.swift; path = SchematicView/SchematicViewStory.swift; sourceTree = "<group>"; };
 		16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplay.swift; path = SchematicView/DiagramDisplay.swift; sourceTree = "<group>"; };
 		16CF29C71B23987D00E72CCA /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = SchematicView/DiagramPortal.swift; sourceTree = "<group>"; };
@@ -325,6 +333,7 @@
 		1642F16B1B1D392800AA600D /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				16A44FB91B23D14400ABDC4E /* DiagramSelection */,
 				16CF29C31B2393E700E72CCA /* SchematicView */,
 				1642F16C1B1D396B00AA600D /* StoriesMgr.swift */,
 				1642F16E1B1D398600AA600D /* Story.swift */,
@@ -486,6 +495,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		16A44FB91B23D14400ABDC4E /* DiagramSelection */ = {
+			isa = PBXGroup;
+			children = (
+				16A44FBA1B23D1CC00ABDC4E /* DiagramSelectionController.swift */,
+				16A44FBE1B23D2A200ABDC4E /* DiagramSelectionStory.swift */,
+				16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */,
+			);
+			name = DiagramSelection;
+			sourceTree = "<group>";
+		};
 		16CF29C31B2393E700E72CCA /* SchematicView */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +526,7 @@
 				16A44FB61B23CFE500ABDC4E /* Main.storyboard */,
 				1673BDFE1AF5502600C8F9AE /* LaunchScreen.xib */,
 				16EEA0201B06B75100A872D4 /* DiagramView.xib */,
+				16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -826,6 +846,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */,
 				1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */,
 				16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */,
 				16EEA0211B06B75100A872D4 /* DiagramView.xib in Resources */,
@@ -892,14 +913,17 @@
 			files = (
 				16CF29CE1B23987D00E72CCA /* DiagramView.swift in Sources */,
 				1642F16D1B1D396B00AA600D /* StoriesMgr.swift in Sources */,
+				16A44FBF1B23D2A200ABDC4E /* DiagramSelectionStory.swift in Sources */,
 				16CF29C51B23941300E72CCA /* SchematicViewStory.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
+				16A44FBB1B23D1CC00ABDC4E /* DiagramSelectionController.swift in Sources */,
 				16CF29D71B23989400E72CCA /* ZoomGestureHandler.swift in Sources */,
 				16CF29D61B23989400E72CCA /* TapGestureHandler.swift in Sources */,
 				1642F16F1B1D398600AA600D /* Story.swift in Sources */,
 				16CF29D51B23989400E72CCA /* PanGestureHandler.swift in Sources */,
 				16CF29CF1B23987D00E72CCA /* DiagramViewController.swift in Sources */,
 				16CF29CC1B23987D00E72CCA /* DiagramDisplay.swift in Sources */,
+				16A44FC11B23D43200ABDC4E /* DiagramsDataSource.swift in Sources */,
 				16CF29D11B23987D00E72CCA /* PinPoint.swift in Sources */,
 				1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */,
 				16CF29D01B23987D00E72CCA /* LinkDisplay.swift in Sources */,

@@ -20,5 +20,16 @@ public class DiagramLayers {
         return _layers[name]
     }
     
+    public func list() -> [String] {
+        
+        var list : [String] = []
+        
+        for (name, obj) in _layers {
+            list.append(name)
+        }
+        
+        return list
+    }
+    
     var _layers : [String : DiagramLayer] = [:]
 }

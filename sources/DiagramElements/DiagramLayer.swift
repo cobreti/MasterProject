@@ -58,6 +58,10 @@ public class DiagramLayer : DebugPrintable {
                 _box = p.box
             }
         }
+
+        if _box == nil {
+            _box = Rect(x: 0, y: 0, width: 50, height: 50)
+        }
     }
     
     public var debugDescription: String {
