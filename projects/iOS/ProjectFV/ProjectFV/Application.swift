@@ -37,14 +37,14 @@ class Application {
     }
     
     func finishedLaunching() {
-        
+    
         _storiesMgr = StoriesMgr()
         
         stories.push( SchematicViewStory(diagramName: "VpProject") )
     }
     
     var _document : DiagramElements.Document = DiagramElements.Document()
-    var _mainViewController : DiagramViewController!
+    var _mainViewController : UIViewController!
     var _storiesMgr : StoriesMgr!
 }
 
