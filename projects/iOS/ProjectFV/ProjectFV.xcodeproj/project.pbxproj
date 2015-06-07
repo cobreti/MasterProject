@@ -40,6 +40,8 @@
 		16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */; };
 		16A44FBF1B23D2A200ABDC4E /* DiagramSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FBE1B23D2A200ABDC4E /* DiagramSelectionStory.swift */; };
 		16A44FC11B23D43200ABDC4E /* DiagramsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */; };
+		16A44FC31B23EDC600ABDC4E /* SchematicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FC21B23EDC600ABDC4E /* SchematicViewController.swift */; };
+		16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FC41B23EDE900ABDC4E /* SchematicView.xib */; };
 		16CF29C51B23941300E72CCA /* SchematicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C41B23941300E72CCA /* SchematicViewStory.swift */; };
 		16CF29CC1B23987D00E72CCA /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */; };
 		16CF29CD1B23987D00E72CCA /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C71B23987D00E72CCA /* DiagramPortal.swift */; };
@@ -210,6 +212,8 @@
 		16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiagramSelection.xib; path = Resources/DiagramSelection.xib; sourceTree = "<group>"; };
 		16A44FBE1B23D2A200ABDC4E /* DiagramSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramSelectionStory.swift; path = DiagramSelection/DiagramSelectionStory.swift; sourceTree = "<group>"; };
 		16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramsDataSource.swift; sourceTree = "<group>"; };
+		16A44FC21B23EDC600ABDC4E /* SchematicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewController.swift; path = SchematicView/SchematicViewController.swift; sourceTree = "<group>"; };
+		16A44FC41B23EDE900ABDC4E /* SchematicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SchematicView.xib; path = Resources/SchematicView.xib; sourceTree = "<group>"; };
 		16CF29C41B23941300E72CCA /* SchematicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewStory.swift; path = SchematicView/SchematicViewStory.swift; sourceTree = "<group>"; };
 		16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplay.swift; path = SchematicView/DiagramDisplay.swift; sourceTree = "<group>"; };
 		16CF29C71B23987D00E72CCA /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = SchematicView/DiagramPortal.swift; sourceTree = "<group>"; };
@@ -516,6 +520,7 @@
 				16CF29C91B23987D00E72CCA /* DiagramViewController.swift */,
 				16CF29CA1B23987D00E72CCA /* LinkDisplay.swift */,
 				16CF29CB1B23987D00E72CCA /* PinPoint.swift */,
+				16A44FC21B23EDC600ABDC4E /* SchematicViewController.swift */,
 			);
 			name = SchematicView;
 			sourceTree = "<group>";
@@ -527,6 +532,7 @@
 				1673BDFE1AF5502600C8F9AE /* LaunchScreen.xib */,
 				16EEA0201B06B75100A872D4 /* DiagramView.xib */,
 				16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */,
+				16A44FC41B23EDE900ABDC4E /* SchematicView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -848,6 +854,7 @@
 			files = (
 				16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */,
 				1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */,
+				16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */,
 				16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */,
 				16EEA0211B06B75100A872D4 /* DiagramView.xib in Resources */,
 				1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */,
@@ -915,6 +922,7 @@
 				1642F16D1B1D396B00AA600D /* StoriesMgr.swift in Sources */,
 				16A44FBF1B23D2A200ABDC4E /* DiagramSelectionStory.swift in Sources */,
 				16CF29C51B23941300E72CCA /* SchematicViewStory.swift in Sources */,
+				16A44FC31B23EDC600ABDC4E /* SchematicViewController.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
 				16A44FBB1B23D1CC00ABDC4E /* DiagramSelectionController.swift in Sources */,
 				16CF29D71B23989400E72CCA /* ZoomGestureHandler.swift in Sources */,

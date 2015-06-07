@@ -21,13 +21,13 @@ class SchematicViewStory : Story {
     init(diagramName : String) {
         
         _diagramName = diagramName
-        _controller = DiagramViewController(nibName: "DiagramView", bundle: nil)
+        _controller = SchematicViewController(nibName: "SchematicView", bundle: nil)
         
         let document = Application.instance().document
         _controller.diagramLayer = document.layers.get(_diagramName)
 
     }
     
-    var _controller : DiagramViewController!
+    var _controller : SchematicViewController!
     var _diagramName : String!
 }

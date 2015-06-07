@@ -3,7 +3,21 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ProjectFV.SchematicViewController.viewDidLoad (ProjectFV.SchematicViewController)() -&gt; ():SchematicViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_diagramArea.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProjectFV.DiagramViewController.viewDidLoad (ProjectFV.DiagramViewController)() -&gt; ():DiagramViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "DiagramElements.ModelsTable.get (DiagramElements.ModelsTable)(Swift.String) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;DiagramElements.Model&gt;:ModelsTable.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DiagramElements.DiagramLayer.updateBoundingBox (DiagramElements.DiagramLayer)() -&gt; ():DiagramLayer.swift">
       </ContextState>
       <ContextState
          contextName = "ProjectFV.TapGestureHandler.onTap (ProjectFV.TapGestureHandler)(ObjectiveC.UITapGestureRecognizer) -&gt; ():TapGestureHandler.swift">

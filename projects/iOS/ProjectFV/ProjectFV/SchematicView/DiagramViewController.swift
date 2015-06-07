@@ -65,7 +65,6 @@ class DiagramViewController : UIViewController {
         }
     }
     
-    
     func onZoom( sender : UIPinchGestureRecognizer ) {
 //        debugPrintln("scale : \(sender.scale)")
         
