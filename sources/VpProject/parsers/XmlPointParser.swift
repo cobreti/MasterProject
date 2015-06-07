@@ -26,11 +26,11 @@ class XmlPointParser : XmlElementParser {
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         
         if let  xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.doubleValue,
+                x = numberFormatter.numberFromString(xStr)?.floatValue,
                 yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.doubleValue {
+                y = numberFormatter.numberFromString(yStr)?.floatValue {
         
-            _pt = Point(x: x, y: y)
+            _pt = Point(x: CGFloat(x), y: CGFloat(y))
         }
     }
 

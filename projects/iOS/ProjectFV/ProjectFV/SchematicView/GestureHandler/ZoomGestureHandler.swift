@@ -33,16 +33,16 @@ class ZoomGestureHandler : NSObject {
             case UIGestureRecognizerState.Began:
                 sender.scale = CGFloat(_portal.zoom)
                 let pt = sender.locationInView(_view)
-                let pinPt = PinPoint(x: Double(pt.x), y: Double(pt.y))
+                let pinPt = PinPoint(x: pt.x, y: pt.y)
                 
-                _ptInView = Point(x: Double(pt.x), y: Double(pt.y))
+                _ptInView = Point(x: pt.x, y: pt.y)
                 _view.pinPoint = pinPt
             
                 let diagPt = _portal.PointFromViewToPortal(pinPt)
                 _portal.pinPoint = PinPoint(x: diagPt.x, y: diagPt.y)
             
             case UIGestureRecognizerState.Changed:
-                _portal.zoom = Double(sender.scale)
+                _portal.zoom = sender.scale
                 _portal.alignWithViewPinPoint(_view.pinPoint!)
                 _view.setNeedsDisplay()
             default:

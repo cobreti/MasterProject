@@ -36,8 +36,8 @@ class PanGestureHandler : NSObject {
             case UIGestureRecognizerState.Changed:
                 let pt = sender.translationInView(_view)
                 var transform = Point(pt: _originalTranslation)
-                transform.x += Double(pt.x)/_portal.scalingFactor
-                transform.y += Double(pt.y)/_portal.scalingFactor
+                transform.x += pt.x / _portal.scalingFactor
+                transform.y += pt.y / _portal.scalingFactor
                 _portal.translation = transform
                 _view.setNeedsDisplay();
                 break

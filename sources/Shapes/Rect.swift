@@ -32,53 +32,53 @@ public class Rect {
         }
     }
     
-    public var left : Double {
+    public var left : CGFloat {
         get {
             return _pos.x
         }
     }
     
-    public var top : Double {
+    public var top : CGFloat {
         get {
             return _pos.y
         }
     }
     
-    public var right : Double {
+    public var right : CGFloat {
         get {
             return _pos.x + _size.width
         }
     }
     
-    public var bottom : Double {
+    public var bottom : CGFloat {
         get {
             return _pos.y + _size.height
         }
     }
     
-    public var midX : Double {
+    public var midX : CGFloat {
         get {
             return (left + right) / 2
         }
     }
     
-    public var midY : Double {
+    public var midY : CGFloat {
         get {
             return (top + bottom) / 2
         }
     }
     
-    public init( x : Double, y : Double, width : Double, height : Double ) {
+    public init( x : CGFloat, y : CGFloat, width : CGFloat, height : CGFloat ) {
 
         _pos = Point(x: x, y: y)
         _size = Size(width: width, height: height)
     }
     
     public convenience init( cgrect : CGRect ) {
-        self.init(  x: Double(cgrect.origin.x),
-                    y: Double(cgrect.origin.y),
-                    width: Double(cgrect.size.width),
-                    height: Double(cgrect.size.height) )
+        self.init(  x: CGFloat(cgrect.origin.x),
+                    y: CGFloat(cgrect.origin.y),
+                    width: CGFloat(cgrect.size.width),
+                    height: CGFloat(cgrect.size.height) )
     }
     
     public func toCGRect() -> CGRect {

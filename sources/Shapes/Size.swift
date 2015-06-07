@@ -10,7 +10,7 @@ import Foundation
 
 public class Size {
     
-    public var width : Double {
+    public var width : CGFloat {
         get {
             return _width
         }
@@ -19,7 +19,7 @@ public class Size {
         }
     }
     
-    public var height : Double {
+    public var height : CGFloat {
         get {
             return _height
         }
@@ -28,11 +28,11 @@ public class Size {
         }
     }
     
-    public init(width : Double, height : Double) {
+    public init(width : CGFloat, height : CGFloat) {
         _width = width
         _height = height
     }
     
-    private var _width : Double
-    private var _height : Double
+    private var _width : CGFloat
+    private var _height : CGFloat
 }

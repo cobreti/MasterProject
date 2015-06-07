@@ -10,7 +10,7 @@ import Foundation
 
 public class Vector2D {
 
-    public var x : Double {
+    public var x : CGFloat {
         get {
             return _x
         }
@@ -19,7 +19,7 @@ public class Vector2D {
         }
     }
 
-    public var y : Double {
+    public var y : CGFloat {
         get {
             return _y
         }
@@ -28,7 +28,7 @@ public class Vector2D {
         }
     }
 
-    public var module : Double {
+    public var module : CGFloat {
         get {
             return sqrt( _x*_x + _y*_y )
         }
@@ -41,12 +41,12 @@ public class Vector2D {
         }
     }
 
-    public init(x : Double, y : Double) {
+    public init(x : CGFloat, y : CGFloat) {
         _x = x
         _y = y
     }
 
-    private var _x : Double
-    private var _y : Double
+    private var _x : CGFloat
+    private var _y : CGFloat
 }
 

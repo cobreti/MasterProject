@@ -10,7 +10,7 @@ import Foundation
 
 public class Margins {
     
-    public var left : Double {
+    public var left : CGFloat {
         get {
             return _left
         }
@@ -19,7 +19,7 @@ public class Margins {
         }
     }
     
-    public var top : Double {
+    public var top : CGFloat {
         get {
             return _top
         }
@@ -28,7 +28,7 @@ public class Margins {
         }
     }
     
-    public var right : Double {
+    public var right : CGFloat {
         get {
             return _right
         }
@@ -37,7 +37,7 @@ public class Margins {
         }
     }
     
-    public var bottom : Double {
+    public var bottom : CGFloat {
         get {
             return _bottom
         }
@@ -46,7 +46,7 @@ public class Margins {
         }
     }
     
-    public init( left : Double = 0, top : Double = 0, right : Double = 0, bottom : Double = 0 ) {
+    public init( left : CGFloat = 0, top : CGFloat = 0, right : CGFloat = 0, bottom : CGFloat = 0 ) {
         
         _left = left
         _right = right
@@ -54,8 +54,8 @@ public class Margins {
         _bottom = bottom
     }
     
-    private var _left : Double = 0
-    private var _right : Double = 0
-    private var _top : Double = 0
-    private var _bottom : Double = 0
+    private var _left : CGFloat = 0
+    private var _right : CGFloat = 0
+    private var _top : CGFloat = 0
+    private var _bottom : CGFloat = 0
 }

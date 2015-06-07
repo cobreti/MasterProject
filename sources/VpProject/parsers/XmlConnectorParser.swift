@@ -49,13 +49,13 @@ class XmlConnectorParser : XmlSubTreeParser {
         
         if let id = attributeDict["id"] as? String,
                 xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.doubleValue,
+                x = numberFormatter.numberFromString(xStr)?.floatValue,
                 yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.doubleValue,
+                y = numberFormatter.numberFromString(yStr)?.floatValue,
                 widthStr = attributeDict["width"] as? String,
-                width = numberFormatter.numberFromString(widthStr)?.doubleValue,
+                width = numberFormatter.numberFromString(widthStr)?.floatValue,
                 heightStr = attributeDict["height"] as? String,
-                height = numberFormatter.numberFromString(heightStr)?.doubleValue,
+                height = numberFormatter.numberFromString(heightStr)?.floatValue,
                 to = attributeDict["to"] as? String,
                 from = attributeDict["from"] as? String,
                 modelId = attributeDict["model"] as? String,
@@ -69,7 +69,7 @@ class XmlConnectorParser : XmlSubTreeParser {
 
                 _lnk = DiagramElements.Link(ownerDiagram: _diagramLayer, type: lnkType)
                 
-                _lnk.box = Rect(x: x, y: y, width: width, height: height)
+                _lnk.box = Rect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(width), height: CGFloat(height))
                 _lnk.name = id
                 _lnk.id = id
                 _lnk.to = LinkEndPoint(id: to)

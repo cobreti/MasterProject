@@ -29,7 +29,7 @@ class TapGestureHandler : NSObject {
         switch sender.state {
             case UIGestureRecognizerState.Ended:
                 let ptInView = sender.locationInView(_view)
-                _view.pinPoint = PinPoint(x: Double(ptInView.x), y: Double(ptInView.y))
+                _view.pinPoint = PinPoint(x: ptInView.x, y: ptInView.y)
                 
                 let diagPt = _portal.PointFromViewToPortal(_view.pinPoint!)
                 _portal.pinPoint = PinPoint(x: diagPt.x, y: diagPt.y)

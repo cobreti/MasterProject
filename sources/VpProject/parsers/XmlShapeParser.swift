@@ -46,18 +46,18 @@ class XmlShapeParser : XmlSubTreeParser {
         if let  id = attributeDict["id"] as? String,
                 name = attributeDict["name"] as? String,
                 xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.doubleValue,
+                x = numberFormatter.numberFromString(xStr)?.floatValue,
                 yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.doubleValue,
+                y = numberFormatter.numberFromString(yStr)?.floatValue,
                 widthStr = attributeDict["width"] as? String,
-                width = numberFormatter.numberFromString(widthStr)?.doubleValue,
+                width = numberFormatter.numberFromString(widthStr)?.floatValue,
                 heightStr = attributeDict["height"] as? String,
-                height = numberFormatter.numberFromString(heightStr)?.doubleValue,
+                height = numberFormatter.numberFromString(heightStr)?.floatValue,
                 modelId = attributeDict["model"] as? String {
         
             var elm = DiagramElements.Element(ownerDiagram: _diagramLayer)
             
-            elm.box = Rect(x: x, y: y, width: width, height: height)
+            elm.box = Rect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(width), height: CGFloat(height))
             elm.name = name
             elm.id = id
             elm.modelId = modelId

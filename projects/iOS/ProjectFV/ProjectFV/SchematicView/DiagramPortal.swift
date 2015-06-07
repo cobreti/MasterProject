@@ -21,7 +21,7 @@ class DiagramPortal {
         }
     }
     
-    var zoom : Double {
+    var zoom : CGFloat {
         get {
             return _zoom
         }
@@ -30,7 +30,7 @@ class DiagramPortal {
         }
     }
     
-    var scalingFactor : Double {
+    var scalingFactor : CGFloat {
         get {
             return _scaling
         }
@@ -131,9 +131,9 @@ class DiagramPortal {
     private var _boundingBox : Rect
     private var _margins : Margins = Margins(left: 10, top: 10, right: 10, bottom: 10)
     private var _offset : Point
-    private var _scaling : Double = 1.0
+    private var _scaling : CGFloat = 1.0
     
-    private var _zoom : Double = 1.0
+    private var _zoom : CGFloat = 1.0
     private var _translation : Point
     private var _pinPoint : PinPoint
 }

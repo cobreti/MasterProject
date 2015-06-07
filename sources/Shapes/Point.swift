@@ -10,7 +10,7 @@ import Foundation
 
 public class Point {
 
-    public var x : Double {
+    public var x : CGFloat {
         get {
             return _x
         }
@@ -19,7 +19,7 @@ public class Point {
         }
     }
     
-    public var y : Double {
+    public var y : CGFloat {
         get {
             return _y
         }
@@ -28,7 +28,7 @@ public class Point {
         }
     }
     
-    public init(x : Double, y : Double) {
+    public init(x : CGFloat, y : CGFloat) {
         _x = x
         _y = y
     }
@@ -38,6 +38,6 @@ public class Point {
         _y = pt.y
     }
     
-    private var _x : Double
-    private var _y : Double
+    private var _x : CGFloat
+    private var _y : CGFloat
 }

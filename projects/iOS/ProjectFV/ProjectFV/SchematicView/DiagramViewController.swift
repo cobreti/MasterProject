@@ -38,14 +38,14 @@ class DiagramViewController : UIViewController {
         let frame = view.frame
 
         _diagramPortal = DiagramPortal(
-            rcArea: Rect( x: Double(frame.origin.x), y: Double(frame.origin.y), width: Double(frame.size.width), height: Double(frame.size.height) ),
+            rcArea: Rect( x: frame.origin.x, y: frame.origin.y, width: frame.size.width, height: frame.size.height ),
             diagramBox: _diagramLayer.box )
         
         if let dgmView = view as? DiagramView {
             dgmView.diagramLayer = _diagramLayer
             dgmView.diagramDocument = document
             dgmView.diagramPortal = _diagramPortal
-            dgmView.pinPoint = PinPoint( x: Double(frame.midX), y: Double(frame.midY) )
+            dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
 
             _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal)
             _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal)
@@ -58,7 +58,7 @@ class DiagramViewController : UIViewController {
         let frame = view.frame
 
         if let dgmView = view as? DiagramView {
-            dgmView.pinPoint = PinPoint( x: Double(frame.midX), y: Double(frame.midY) )
+            dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
             _diagramPortal.viewRect = Rect( cgrect: frame )
             _diagramPortal.alignWithViewPinPoint(dgmView.pinPoint!)
             dgmView.setNeedsDisplay()
@@ -72,7 +72,7 @@ class DiagramViewController : UIViewController {
             sender.scale = CGFloat(_diagramPortal.zoom)
             
             var ptInView = sender.locationInView(view)
-            let pt = PinPoint( x: Double(ptInView.x), y: Double(ptInView.y) )
+            let pt = PinPoint( x: ptInView.x, y: ptInView.y )
 
             debugPrintln("ptInView : \(pt.x), \(pt.y)")
 
@@ -91,7 +91,7 @@ class DiagramViewController : UIViewController {
             
             if let dgmView = view as? DiagramView {
 //                _diagramPortal.alignWithViewPinPoint(dgmView.pinPoint!)
-                _diagramPortal.zoom = Double(sender.scale)
+                _diagramPortal.zoom = sender.scale
                 view.setNeedsDisplay()
             }
         }

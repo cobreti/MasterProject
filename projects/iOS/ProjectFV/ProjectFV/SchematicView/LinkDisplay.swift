@@ -67,23 +67,22 @@ class LinkDisplay {
         let p1 = _lnk.segment.get(0)
         let p2 = _lnk.segment.get(1)
         var portalPt = _portal.pointFromDiagramToPortal(p1)
+        var portalEndPt1 = _portal.pointFromDiagramToPortal(p1)
+        var portalEndPt2 = _portal.pointFromDiagramToPortal(p2)
         
-        let axisSystem = AxisSystem(p1: p1, p2: p2)
+        let axisSystem = AxisSystem(p1: portalEndPt1, p2: portalEndPt2)
         
         var p : Point = p1
         
         CGContextBeginPath(_ctx)
             p = axisSystem.fromAxis(Point(x: 0, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextMoveToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextMoveToPoint(_ctx, p.x, p.y)
             
             p = axisSystem.fromAxis(Point(x: 15, y: 10))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
         
             p = axisSystem.fromAxis(Point(x: 15, y: -10))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
             
             CGContextClosePath(_ctx)
             CGContextSetRGBFillColor(_ctx, 1.0, 1.0, 1.0, 1.0)
@@ -91,16 +90,13 @@ class LinkDisplay {
         
         CGContextBeginPath(_ctx)
             p = axisSystem.fromAxis(Point(x: 0, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextMoveToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextMoveToPoint(_ctx, p.x, p.y)
             
             p = axisSystem.fromAxis(Point(x: 15, y: 10))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
         
             p = axisSystem.fromAxis(Point(x: 15, y: -10))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
             
             CGContextClosePath(_ctx)
             CGContextSetRGBStrokeColor(_ctx, 0.0, 0.0, 0.0, 1.0)
@@ -146,26 +142,26 @@ class LinkDisplay {
         
         var portalPt = _portal.pointFromDiagramToPortal(p1)
         
-        let axisSystem = AxisSystem(p1: p1, p2: p2)
+        var portalEndPt1 = _portal.pointFromDiagramToPortal(p1)
+        var portalEndPt2 = _portal.pointFromDiagramToPortal(p2)
+        
+        let axisSystem = AxisSystem(p1: portalEndPt1, p2: portalEndPt2)
 
         var p : Point = p1
+        var p2 : Point = Point(x: 0,y: 0)
 
         CGContextBeginPath(_ctx)
             p = axisSystem.fromAxis(Point(x: 0, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextMoveToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextMoveToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 10, y: 7))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 20, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 10, y: -7))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             CGContextClosePath(_ctx)
             CGContextSetRGBFillColor(_ctx, 0.0, 0.0, 0.0, 1.0)
@@ -173,20 +169,16 @@ class LinkDisplay {
 
         CGContextBeginPath(_ctx)
             p = axisSystem.fromAxis(Point(x: 0, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextMoveToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextMoveToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 10, y: 7))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 20, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 10, y: -7))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             CGContextClosePath(_ctx)
             CGContextSetRGBStrokeColor(_ctx, 0.0, 0.0, 0.0, 1.0)
@@ -196,27 +188,25 @@ class LinkDisplay {
     func drawShared( p1 : Point, p2 : Point ) {
         
         var portalPt = _portal.pointFromDiagramToPortal(p1)
+        var portalEndPt1 = _portal.pointFromDiagramToPortal(p1)
+        var portalEndPt2 = _portal.pointFromDiagramToPortal(p2)
         
-        let axisSystem = AxisSystem(p1: p1, p2: p2)
+        let axisSystem = AxisSystem(p1: portalEndPt1, p2: portalEndPt2)
         
         var p : Point = p1
         
         CGContextBeginPath(_ctx)
             p = axisSystem.fromAxis(Point(x: 0, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextMoveToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextMoveToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 10, y: 7))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 20, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 10, y: -7))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             CGContextClosePath(_ctx)
             CGContextSetRGBFillColor(_ctx, 1.0, 1.0, 1.0, 1.0)
@@ -224,20 +214,16 @@ class LinkDisplay {
 
         CGContextBeginPath(_ctx)
             p = axisSystem.fromAxis(Point(x: 0, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextMoveToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextMoveToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 10, y: 7))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 20, y: 0))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             p = axisSystem.fromAxis(Point(x: 10, y: -7))
-            portalPt = _portal.pointFromDiagramToPortal(p)
-            CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            CGContextAddLineToPoint(_ctx, p.x, p.y)
 
             CGContextClosePath(_ctx)
             CGContextSetRGBStrokeColor(_ctx, 0.0, 0.0, 0.0, 1.0)
