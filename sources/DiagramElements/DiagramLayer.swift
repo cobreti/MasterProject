@@ -29,9 +29,16 @@ public class DiagramLayer : DebugPrintable {
             return _primitives
         }
     }
+    
+    public var selection : LayerSelection {
+        get {
+            return _selection
+        }
+    }
 
     public init(name : String) {
         _name = name
+        _selection = LayerSelection()
     }
 
     public func add( primitive : Primitive ) {
@@ -69,9 +76,23 @@ public class DiagramLayer : DebugPrintable {
             return ""
         }
     }
+    
+    public func primitivesFromPt(pt: Point) -> [Primitive] {
+        var res : [Primitive] = []
+        
+        for (key, item) in _primitives {
+            
+            if item.box.contains(pt) {
+                res.append(item)
+            }
+        }
+        
+        return res
+    }
 
     var _box : Rect!
     var _name : String
+    var _selection : LayerSelection
 
     var _primitives : [String : Primitive] = [:]
 }

@@ -102,7 +102,7 @@ class DiagramPortal {
             height: rc.size.height * _scaling * _zoom )
     }
     
-    func PointFromViewToPortal( pt: Point ) -> Point {
+    func pointFromViewToPortal( pt: Point ) -> Point {
         let factor = _scaling * _zoom
     
         return Point(
@@ -111,7 +111,7 @@ class DiagramPortal {
         )
     }
     
-    func PointFromPortalToDiagram( pt: Point ) -> Point {
+    func pointFromPortalToDiagram( pt: Point ) -> Point {
         return Point(
             x: (pt.x - _margins.left - _translation.x) / (_zoom * _scaling) - _offset.x,
             y: (pt.y - _margins.top - _translation.y) / (_zoom * _scaling) - _offset.y

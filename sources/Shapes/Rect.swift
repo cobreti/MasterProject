@@ -92,6 +92,10 @@ public class Rect {
                 rc.top >= self.top &&
                 rc.bottom <= self.bottom
     }
+    
+    public func contains(pt: Point) -> Bool {
+        return pt.x >= self.left && pt.x <= self.right && pt.y >= self.top && pt.y <= self.bottom
+    }
 
     private var _pos : Point
     private var _size : Size

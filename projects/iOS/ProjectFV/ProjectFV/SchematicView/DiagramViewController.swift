@@ -49,7 +49,7 @@ class DiagramViewController : UIViewController {
 
             _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal)
             _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal)
-//            _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal)
+            _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal)
         }
     }
     
@@ -79,10 +79,10 @@ class DiagramViewController : UIViewController {
             if let dgmView = view as? DiagramView {
                 dgmView.pinPoint = pt
                 debugPrintln("current portal pinPt : \(_diagramPortal.pinPoint.x), \(_diagramPortal.pinPoint.y)")
-                let portalPt = _diagramPortal.PointFromViewToPortal(pt)
+                let portalPt = _diagramPortal.pointFromViewToPortal(pt)
                 debugPrintln("portal point : \(portalPt.x), \(portalPt.y)")
                 
-                let pinPt = _diagramPortal.PointFromPortalToDiagram(portalPt)
+                let pinPt = _diagramPortal.pointFromPortalToDiagram(portalPt)
                 debugPrintln("pinPt portal -> diagram : \(pinPt.x), \(pinPt.y)")
                 _diagramPortal.pinPoint = PinPoint(x: pinPt.x, y: pinPt.y)
             }

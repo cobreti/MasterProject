@@ -38,7 +38,7 @@ class ZoomGestureHandler : NSObject {
                 _ptInView = Point(x: pt.x, y: pt.y)
                 _view.pinPoint = pinPt
             
-                let diagPt = _portal.PointFromViewToPortal(pinPt)
+                let diagPt = _portal.pointFromViewToPortal(pinPt)
                 _portal.pinPoint = PinPoint(x: diagPt.x, y: diagPt.y)
             
             case UIGestureRecognizerState.Changed:

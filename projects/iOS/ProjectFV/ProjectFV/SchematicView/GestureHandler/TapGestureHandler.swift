@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Shapes
+import DiagramElements
 
 class TapGestureHandler : NSObject {
     
@@ -28,13 +29,24 @@ class TapGestureHandler : NSObject {
         
         switch sender.state {
             case UIGestureRecognizerState.Ended:
-                let ptInView = sender.locationInView(_view)
-                _view.pinPoint = PinPoint(x: ptInView.x, y: ptInView.y)
-                
-                let diagPt = _portal.PointFromViewToPortal(_view.pinPoint!)
-                _portal.pinPoint = PinPoint(x: diagPt.x, y: diagPt.y)
-                
-                _view.setNeedsDisplay()
+                if let layer = _view.diagramLayer {
+                    let ptInView = sender.locationInView(_view)
+                    
+                    let diagPt = _portal.pointFromViewToPortal(Point(x: ptInView.x, y: ptInView.y))
+
+                    let primitives = layer.primitivesFromPt(diagPt)
+                    
+                    if primitives.isEmpty {
+                        layer.selection.clear()
+                    }
+                    else {
+                        for item in primitives {
+                            layer.selection.add(item)
+                        }
+                    }
+
+                    _view.setNeedsDisplay()
+                }
             default:
                 break
         }

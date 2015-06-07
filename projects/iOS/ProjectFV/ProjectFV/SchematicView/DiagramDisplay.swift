@@ -75,6 +75,18 @@ class DiagramDisplay {
                 NSParagraphStyleAttributeName: parStyle
                 ])
         }
+        
+        if _layer.selection.isSelected(elm) {
+            
+            rc = CGRect(
+                x: portalRect.pos.x,
+                y: portalRect.pos.y,
+                width: portalRect.size.width,
+                height: portalRect.size.height )
+            rc.inset(dx: -5, dy: -5)
+            CGContextSetRGBStrokeColor(ctx, 0, 0.5, 0, 1.0)
+            CGContextStrokeRect(ctx, rc)
+        }
     }
     
     func drawPortalBBox( ctx : CGContext ) {

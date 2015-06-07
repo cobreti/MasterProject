@@ -26,6 +26,12 @@ public class Primitive {
         }
     }
     
+    public var uuid : NSUUID {
+        get {
+            return _uuid
+        }
+    }
+    
     public var name : String! {
         get {
             return _name
@@ -53,6 +59,7 @@ public class Primitive {
     public init( ownerDiagram : DiagramLayer ) {
 
         _diagram = ownerDiagram
+        _uuid = NSUUID()
     }
     
     public func onAdded() {
@@ -63,6 +70,7 @@ public class Primitive {
     var _id : String!
     var _name : String!
     var _modelId : String!
+    var _uuid : NSUUID
     
     weak var _diagram : DiagramLayer!
 }
