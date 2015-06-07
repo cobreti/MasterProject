@@ -22,10 +22,17 @@ class SchematicViewStory : Story {
         
         _diagramName = diagramName
         _controller = SchematicViewController(nibName: "SchematicView", bundle: nil)
+
+        super.init()
         
         let document = Application.instance().document
         _controller.diagramLayer = document.layers.get(_diagramName)
-
+        _controller._backEventHandler = onBack
+    }
+    
+    func onBack(sender: AnyObject, args: [String: AnyObject]!) {
+        debugPrintln("onBack story handler")
+        ownerStoriesMgr?.pop(self)
     }
     
     var _controller : SchematicViewController!

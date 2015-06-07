@@ -42,6 +42,7 @@
 		16A44FC11B23D43200ABDC4E /* DiagramsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */; };
 		16A44FC31B23EDC600ABDC4E /* SchematicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FC21B23EDC600ABDC4E /* SchematicViewController.swift */; };
 		16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FC41B23EDE900ABDC4E /* SchematicView.xib */; };
+		16A44FC81B248BF100ABDC4E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FC71B248BF100ABDC4E /* back.png */; };
 		16CF29C51B23941300E72CCA /* SchematicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C41B23941300E72CCA /* SchematicViewStory.swift */; };
 		16CF29CC1B23987D00E72CCA /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */; };
 		16CF29CD1B23987D00E72CCA /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C71B23987D00E72CCA /* DiagramPortal.swift */; };
@@ -214,6 +215,7 @@
 		16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramsDataSource.swift; sourceTree = "<group>"; };
 		16A44FC21B23EDC600ABDC4E /* SchematicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewController.swift; path = SchematicView/SchematicViewController.swift; sourceTree = "<group>"; };
 		16A44FC41B23EDE900ABDC4E /* SchematicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SchematicView.xib; path = Resources/SchematicView.xib; sourceTree = "<group>"; };
+		16A44FC71B248BF100ABDC4E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Resources/icons/back.png; sourceTree = "<group>"; };
 		16CF29C41B23941300E72CCA /* SchematicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewStory.swift; path = SchematicView/SchematicViewStory.swift; sourceTree = "<group>"; };
 		16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplay.swift; path = SchematicView/DiagramDisplay.swift; sourceTree = "<group>"; };
 		16CF29C71B23987D00E72CCA /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = SchematicView/DiagramPortal.swift; sourceTree = "<group>"; };
@@ -509,6 +511,14 @@
 			name = DiagramSelection;
 			sourceTree = "<group>";
 		};
+		16A44FC61B248BDF00ABDC4E /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				16A44FC71B248BF100ABDC4E /* back.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
 		16CF29C31B2393E700E72CCA /* SchematicView */ = {
 			isa = PBXGroup;
 			children = (
@@ -528,6 +538,7 @@
 		16CF29D81B23BA9E00E72CCA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				16A44FC61B248BDF00ABDC4E /* icons */,
 				16A44FB61B23CFE500ABDC4E /* Main.storyboard */,
 				1673BDFE1AF5502600C8F9AE /* LaunchScreen.xib */,
 				16EEA0201B06B75100A872D4 /* DiagramView.xib */,
@@ -856,6 +867,7 @@
 				1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */,
 				16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */,
 				16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */,
+				16A44FC81B248BF100ABDC4E /* back.png in Resources */,
 				16EEA0211B06B75100A872D4 /* DiagramView.xib in Resources */,
 				1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */,
 				1673BE451AF550A700C8F9AE /* EmbeddedRes in Resources */,

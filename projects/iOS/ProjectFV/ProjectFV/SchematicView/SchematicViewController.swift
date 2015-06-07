@@ -21,6 +21,15 @@ class SchematicViewController : UIViewController {
         }
     }
     
+    var backEventHandler : EventHandler! {
+        get {
+            return _backEventHandler
+        }
+        set (value) {
+            _backEventHandler = value
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,9 +44,16 @@ class SchematicViewController : UIViewController {
         _diagramController.view.frame = _diagramArea.bounds
     }
 
+    @IBAction func onBack(sender: AnyObject) {
+        if let handler = _backEventHandler {
+            handler(sender: self, args: nil)
+        }
+    }
+    
     var _diagramLayer : DiagramLayer!
     var _diagramController : DiagramViewController!
-
+    var _backEventHandler : EventHandler!
+    
     @IBOutlet weak var _controlsArea: UIView!
     @IBOutlet weak var _diagramArea: UIView!
 }

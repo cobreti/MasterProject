@@ -27,10 +27,22 @@ class StoriesMgr {
         if let wnd = UIApplication.sharedApplication().keyWindow {
         
             _stories.append(story)
+            story.ownerStoriesMgr = self
             wnd.addSubview(story.view)
             story.view.frame = wnd.bounds
+        }
+    }
+    
+    func pop(story: Story) {
+
+        if let lastStory = _stories.last where lastStory === story {
+            
+            story.view?.removeFromSuperview()
+            _stories.removeLast()
+            story.ownerStoriesMgr = nil
         }
     }
  
     var _stories : [Story] = []
 }
+

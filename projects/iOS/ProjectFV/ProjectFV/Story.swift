@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+typealias EventHandler = (sender : AnyObject, args: [String : AnyObject]!) -> Void
+
 class Story {
     
     
@@ -18,6 +20,15 @@ class Story {
         }
     }
     
+    var ownerStoriesMgr : StoriesMgr? {
+        get {
+            return _ownerStoriesMgr
+        }
+        set (owner) {
+            _ownerStoriesMgr = owner
+        }
+    }
     
     
+    var _ownerStoriesMgr : StoriesMgr?
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SchematicViewController" customModule="ProjectFV" customModuleProvider="target">
@@ -17,15 +17,35 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flt-J9-SI4">
-                    <rect key="frame" x="10" y="60" width="580" height="530"/>
-                    <color key="backgroundColor" red="0.60783824404596642" green="1" blue="0.88227759465724798" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="10" y="70" width="580" height="520"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oi0-VJ-8ql">
-                    <rect key="frame" x="10" y="10" width="580" height="50"/>
-                    <color key="backgroundColor" red="1" green="0.84786241403858997" blue="0.7193899602308278" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="10" y="20" width="580" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3k-6k-wit">
+                            <rect key="frame" x="20" y="14" width="30" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="uMg-Ji-oBM"/>
+                            </constraints>
+                            <state key="normal" image="back.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="EB7-rU-BDo"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <constraints>
+                        <constraint firstItem="E3k-6k-wit" firstAttribute="leading" secondItem="oi0-VJ-8ql" secondAttribute="leading" constant="20" id="Idl-aG-Lko"/>
+                        <constraint firstAttribute="centerY" secondItem="E3k-6k-wit" secondAttribute="centerY" id="R7k-8W-Far"/>
+                        <constraint firstItem="E3k-6k-wit" firstAttribute="top" secondItem="oi0-VJ-8ql" secondAttribute="top" constant="10" id="a30-a8-W8i"/>
                         <constraint firstAttribute="height" constant="50" id="edd-Xf-w0W"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="a30-a8-W8i"/>
+                        </mask>
+                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -33,11 +53,14 @@
                 <constraint firstAttribute="trailing" secondItem="flt-J9-SI4" secondAttribute="trailing" constant="10" id="2AQ-TL-R6b"/>
                 <constraint firstItem="flt-J9-SI4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="C1U-Fc-6fn"/>
                 <constraint firstAttribute="bottom" secondItem="flt-J9-SI4" secondAttribute="bottom" constant="10" id="QBJ-7r-Ehb"/>
-                <constraint firstItem="oi0-VJ-8ql" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Wlu-zH-lVV"/>
+                <constraint firstItem="oi0-VJ-8ql" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Wlu-zH-lVV"/>
                 <constraint firstItem="flt-J9-SI4" firstAttribute="top" secondItem="oi0-VJ-8ql" secondAttribute="bottom" id="cBu-W3-o2U"/>
                 <constraint firstItem="oi0-VJ-8ql" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cMW-Fl-lcc"/>
                 <constraint firstAttribute="trailing" secondItem="oi0-VJ-8ql" secondAttribute="trailing" constant="10" id="ppc-jq-mLK"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="back.png" width="15" height="15"/>
+    </resources>
 </document>
