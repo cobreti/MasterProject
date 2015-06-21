@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FileViewController" customModule="ProjectFV" customModuleProvider="target">
+            <connections>
+                <outlet property="_webView" destination="4GO-IT-A6c" id="9A7-uR-Jg6"/>
+                <outlet property="view" destination="iN0-l3-epB" id="bog-ey-lQZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GO-IT-A6c">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4GO-IT-A6c" secondAttribute="trailing" id="bKD-GG-b8b"/>
+                <constraint firstAttribute="bottom" secondItem="4GO-IT-A6c" secondAttribute="bottom" id="oK9-j3-hy5"/>
+                <constraint firstItem="4GO-IT-A6c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xTi-0i-DFQ"/>
+                <constraint firstItem="4GO-IT-A6c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zDk-R6-7Jt"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

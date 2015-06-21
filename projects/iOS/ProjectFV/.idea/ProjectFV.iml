@@ -14,6 +14,9 @@
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Element.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Element.swift" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/LayerSelection.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/LayerSelection.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Link.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Link.swift" isTestSource="false" />
     </content>

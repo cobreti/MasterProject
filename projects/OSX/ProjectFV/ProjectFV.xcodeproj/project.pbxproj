@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1627DAD81B2BB5EB00D94287 /* LinkEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DAD31B2BB5EB00D94287 /* LinkEndPoint.swift */; };
+		1627DAD91B2BB5EB00D94287 /* LinkEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DAD41B2BB5EB00D94287 /* LinkEndPointType.swift */; };
+		1627DADA1B2BB5EB00D94287 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DAD51B2BB5EB00D94287 /* LinkType.swift */; };
+		1627DADB1B2BB5EB00D94287 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DAD61B2BB5EB00D94287 /* Model.swift */; };
+		1627DADC1B2BB5EB00D94287 /* ModelsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DAD71B2BB5EB00D94287 /* ModelsTable.swift */; };
+		1627DADE1B2BB60E00D94287 /* LayerSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DADD1B2BB60E00D94287 /* LayerSelection.swift */; };
+		1627DAE01B2BB64A00D94287 /* XmlConnectorEndPointParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DADF1B2BB64A00D94287 /* XmlConnectorEndPointParser.swift */; };
+		1627DAE31B2BB65700D94287 /* XmlModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DAE11B2BB65700D94287 /* XmlModelParser.swift */; };
+		1627DAE41B2BB65700D94287 /* XmlModelsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DAE21B2BB65700D94287 /* XmlModelsParser.swift */; };
+		1627DAE61B2BB66800D94287 /* XmlParserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627DAE51B2BB66800D94287 /* XmlParserState.swift */; };
 		163DABA51AFFE9F600BFD159 /* XmlConnectorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DABA41AFFE9F600BFD159 /* XmlConnectorParser.swift */; };
 		1645C5381AFFBFE000FF7E77 /* XmlElementParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C5371AFFBFE000FF7E77 /* XmlElementParser.swift */; };
 		1645C53B1AFFC3DC00FF7E77 /* XmlDiagramParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C53A1AFFC3DC00FF7E77 /* XmlDiagramParser.swift */; };
@@ -153,6 +163,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1627DAD31B2BB5EB00D94287 /* LinkEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPoint.swift; path = ../../../../sources/DiagramElements/LinkEndPoint.swift; sourceTree = "<group>"; };
+		1627DAD41B2BB5EB00D94287 /* LinkEndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPointType.swift; path = ../../../../sources/DiagramElements/LinkEndPointType.swift; sourceTree = "<group>"; };
+		1627DAD51B2BB5EB00D94287 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
+		1627DAD61B2BB5EB00D94287 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../../../sources/DiagramElements/Model.swift; sourceTree = "<group>"; };
+		1627DAD71B2BB5EB00D94287 /* ModelsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelsTable.swift; path = ../../../../sources/DiagramElements/ModelsTable.swift; sourceTree = "<group>"; };
+		1627DADD1B2BB60E00D94287 /* LayerSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerSelection.swift; path = ../../../../sources/DiagramElements/LayerSelection.swift; sourceTree = "<group>"; };
+		1627DADF1B2BB64A00D94287 /* XmlConnectorEndPointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorEndPointParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift; sourceTree = "<group>"; };
+		1627DAE11B2BB65700D94287 /* XmlModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlModelParser.swift; path = ../../../../sources/VpProject/parsers/XmlModelParser.swift; sourceTree = "<group>"; };
+		1627DAE21B2BB65700D94287 /* XmlModelsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlModelsParser.swift; path = ../../../../sources/VpProject/parsers/XmlModelsParser.swift; sourceTree = "<group>"; };
+		1627DAE51B2BB66800D94287 /* XmlParserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlParserState.swift; path = ../../../../sources/VpProject/XmlParserState.swift; sourceTree = "<group>"; };
 		163DABA41AFFE9F600BFD159 /* XmlConnectorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorParser.swift; sourceTree = "<group>"; };
 		1645C5371AFFBFE000FF7E77 /* XmlElementParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlElementParser.swift; path = ../../../../sources/VpProject/XmlElementParser.swift; sourceTree = "<group>"; };
 		1645C53A1AFFC3DC00FF7E77 /* XmlDiagramParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDiagramParser.swift; path = ../../../../sources/VpProject/parsers/XmlDiagramParser.swift; sourceTree = "<group>"; };
@@ -282,6 +302,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1627DAE71B2BB6A200D94287 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				165DFFC31AEF0A7A003B8B44 /* AppDelegate.swift */,
+				B02F3686A6F8083BC92F7746 /* Application.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		1627DAE81B2BB6CA00D94287 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Stories;
+			sourceTree = "<group>";
+		};
 		1645C5391AFFC3B900FF7E77 /* Parsers */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +326,9 @@
 				163DABA41AFFE9F600BFD159 /* XmlConnectorParser.swift */,
 				16EE9FDA1B06531D00A872D4 /* XmlPointsParser.swift */,
 				16EE9FDE1B06897F00A872D4 /* XmlPointParser.swift */,
+				1627DADF1B2BB64A00D94287 /* XmlConnectorEndPointParser.swift */,
+				1627DAE11B2BB65700D94287 /* XmlModelParser.swift */,
+				1627DAE21B2BB65700D94287 /* XmlModelsParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -358,15 +397,15 @@
 		165DFFC01AEF0A7A003B8B44 /* ProjectFV */ = {
 			isa = PBXGroup;
 			children = (
+				1627DAE81B2BB6CA00D94287 /* Stories */,
+				1627DAE71B2BB6A200D94287 /* Application */,
 				165C113A1AF6B1E400EC1A5E /* MainWindow */,
 				165C11391AF6B0EF00EC1A5E /* Resources */,
 				165C11341AF6B02000EC1A5E /* DiagramView */,
 				165DFFDE1AEF0CFC003B8B44 /* EmbeddedRes */,
-				165DFFC31AEF0A7A003B8B44 /* AppDelegate.swift */,
 				B02F3A3D9DCC2A1660280BFB /* XMLParsingTest.swift */,
 				165DFFC51AEF0A7A003B8B44 /* Images.xcassets */,
 				165DFFC11AEF0A7A003B8B44 /* Supporting Files */,
-				B02F3686A6F8083BC92F7746 /* Application.swift */,
 			);
 			path = ProjectFV;
 			sourceTree = "<group>";
@@ -407,6 +446,12 @@
 				B02F380233C566D8903C545E /* Element.swift */,
 				B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */,
 				165C11491AF8425700EC1A5E /* Link.swift */,
+				1627DAD31B2BB5EB00D94287 /* LinkEndPoint.swift */,
+				1627DAD41B2BB5EB00D94287 /* LinkEndPointType.swift */,
+				1627DAD51B2BB5EB00D94287 /* LinkType.swift */,
+				1627DAD61B2BB5EB00D94287 /* Model.swift */,
+				1627DAD71B2BB5EB00D94287 /* ModelsTable.swift */,
+				1627DADD1B2BB60E00D94287 /* LayerSelection.swift */,
 			);
 			path = DiagramElements;
 			sourceTree = "<group>";
@@ -447,6 +492,7 @@
 				1645C5371AFFBFE000FF7E77 /* XmlElementParser.swift */,
 				16EE9FD61B06358F00A872D4 /* XmlElementParserDelegate.swift */,
 				16EE9FD81B0638DD00A872D4 /* XmlSubTreeParser.swift */,
+				1627DAE51B2BB66800D94287 /* XmlParserState.swift */,
 			);
 			path = VpProject;
 			sourceTree = "<group>";
@@ -853,9 +899,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1627DAD81B2BB5EB00D94287 /* LinkEndPoint.swift in Sources */,
 				167D92931AF44EB200658E19 /* DiagramLayers.swift in Sources */,
+				1627DADE1B2BB60E00D94287 /* LayerSelection.swift in Sources */,
+				1627DAD91B2BB5EB00D94287 /* LinkEndPointType.swift in Sources */,
+				1627DADA1B2BB5EB00D94287 /* LinkType.swift in Sources */,
 				167D92951AF44EC800658E19 /* DiagramLayer.swift in Sources */,
+				1627DADB1B2BB5EB00D94287 /* Model.swift in Sources */,
 				B02F3BCD5D45E713BE90C31F /* Document.swift in Sources */,
+				1627DADC1B2BB5EB00D94287 /* ModelsTable.swift in Sources */,
 				165C114A1AF8425700EC1A5E /* Link.swift in Sources */,
 				B02F335DD90932392B213890 /* Element.swift in Sources */,
 				B02F3131F19F6A842F4E7C2F /* Primitive.swift in Sources */,
@@ -874,15 +926,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1627DAE41B2BB65700D94287 /* XmlModelsParser.swift in Sources */,
 				1645C53B1AFFC3DC00FF7E77 /* XmlDiagramParser.swift in Sources */,
 				16EE9FD91B0638DD00A872D4 /* XmlSubTreeParser.swift in Sources */,
 				B02F398F99F10422DDA598A7 /* VpProject.swift in Sources */,
 				16EE9FDF1B06897F00A872D4 /* XmlPointParser.swift in Sources */,
 				163DABA51AFFE9F600BFD159 /* XmlConnectorParser.swift in Sources */,
+				1627DAE01B2BB64A00D94287 /* XmlConnectorEndPointParser.swift in Sources */,
+				1627DAE31B2BB65700D94287 /* XmlModelParser.swift in Sources */,
 				B02F3F28D7FC80D771553403 /* XmlDocParser.swift in Sources */,
 				1645C53D1AFFE6C700FF7E77 /* XmlShapeParser.swift in Sources */,
 				1645C5381AFFBFE000FF7E77 /* XmlElementParser.swift in Sources */,
 				16EE9FDB1B06531D00A872D4 /* XmlPointsParser.swift in Sources */,
+				1627DAE61B2BB66800D94287 /* XmlParserState.swift in Sources */,
 				16EE9FD71B06358F00A872D4 /* XmlElementParserDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

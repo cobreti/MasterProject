@@ -12,6 +12,23 @@
 		163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE81B12321C004C56E7 /* LinkType.swift */; };
 		1642F16D1B1D396B00AA600D /* StoriesMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F16C1B1D396B00AA600D /* StoriesMgr.swift */; };
 		1642F16F1B1D398600AA600D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F16E1B1D398600AA600D /* Story.swift */; };
+		1664058D1B370838003F720A /* DiagramsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664058A1B370838003F720A /* DiagramsDataSource.swift */; };
+		1664058E1B370838003F720A /* DiagramSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664058B1B370838003F720A /* DiagramSelectionController.swift */; };
+		1664058F1B370838003F720A /* DiagramSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664058C1B370838003F720A /* DiagramSelectionStory.swift */; };
+		166405931B370847003F720A /* PanGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405901B370847003F720A /* PanGestureHandler.swift */; };
+		166405941B370847003F720A /* TapGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405911B370847003F720A /* TapGestureHandler.swift */; };
+		166405951B370847003F720A /* ZoomGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405921B370847003F720A /* ZoomGestureHandler.swift */; };
+		1664059E1B370857003F720A /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405961B370857003F720A /* DiagramDisplay.swift */; };
+		1664059F1B370857003F720A /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405971B370857003F720A /* DiagramPortal.swift */; };
+		166405A01B370857003F720A /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405981B370857003F720A /* DiagramView.swift */; };
+		166405A11B370857003F720A /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405991B370857003F720A /* DiagramViewController.swift */; };
+		166405A21B370857003F720A /* LinkDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664059A1B370857003F720A /* LinkDisplay.swift */; };
+		166405A31B370857003F720A /* PinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664059B1B370857003F720A /* PinPoint.swift */; };
+		166405A41B370857003F720A /* SchematicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664059C1B370857003F720A /* SchematicViewController.swift */; };
+		166405A51B370857003F720A /* SchematicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664059D1B370857003F720A /* SchematicViewStory.swift */; };
+		166405A71B370A2A003F720A /* FileViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405A61B370A2A003F720A /* FileViewStory.swift */; };
+		166405A91B370BA7003F720A /* FileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405A81B370BA7003F720A /* FileViewController.swift */; };
+		166405AB1B370D25003F720A /* FileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166405AA1B370D25003F720A /* FileView.xib */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFC1AF5502600C8F9AE /* Images.xcassets */; };
 		1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFE1AF5502600C8F9AE /* LaunchScreen.xib */; };
@@ -36,24 +53,10 @@
 		1673BE6D1AF550CA00C8F9AE /* XmlDocParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */; };
 		1673BE6E1AF550D000C8F9AE /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1673BE1A1AF5504800C8F9AE /* DiagramElements.framework */; };
 		16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FB61B23CFE500ABDC4E /* Main.storyboard */; };
-		16A44FBB1B23D1CC00ABDC4E /* DiagramSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FBA1B23D1CC00ABDC4E /* DiagramSelectionController.swift */; };
 		16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */; };
-		16A44FBF1B23D2A200ABDC4E /* DiagramSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FBE1B23D2A200ABDC4E /* DiagramSelectionStory.swift */; };
-		16A44FC11B23D43200ABDC4E /* DiagramsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */; };
-		16A44FC31B23EDC600ABDC4E /* SchematicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FC21B23EDC600ABDC4E /* SchematicViewController.swift */; };
 		16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FC41B23EDE900ABDC4E /* SchematicView.xib */; };
 		16A44FC81B248BF100ABDC4E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FC71B248BF100ABDC4E /* back.png */; };
 		16A44FCE1B24DB6600ABDC4E /* LayerSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FCD1B24DB6600ABDC4E /* LayerSelection.swift */; };
-		16CF29C51B23941300E72CCA /* SchematicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C41B23941300E72CCA /* SchematicViewStory.swift */; };
-		16CF29CC1B23987D00E72CCA /* DiagramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */; };
-		16CF29CD1B23987D00E72CCA /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C71B23987D00E72CCA /* DiagramPortal.swift */; };
-		16CF29CE1B23987D00E72CCA /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C81B23987D00E72CCA /* DiagramView.swift */; };
-		16CF29CF1B23987D00E72CCA /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29C91B23987D00E72CCA /* DiagramViewController.swift */; };
-		16CF29D01B23987D00E72CCA /* LinkDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29CA1B23987D00E72CCA /* LinkDisplay.swift */; };
-		16CF29D11B23987D00E72CCA /* PinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29CB1B23987D00E72CCA /* PinPoint.swift */; };
-		16CF29D51B23989400E72CCA /* PanGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29D21B23989400E72CCA /* PanGestureHandler.swift */; };
-		16CF29D61B23989400E72CCA /* TapGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29D31B23989400E72CCA /* TapGestureHandler.swift */; };
-		16CF29D71B23989400E72CCA /* ZoomGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29D41B23989400E72CCA /* ZoomGestureHandler.swift */; };
 		16EE9FE11B06A72000A872D4 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE01B06A72000A872D4 /* Link.swift */; };
 		16EE9FE81B06A73B00A872D4 /* XmlConnectorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */; };
 		16EE9FE91B06A73B00A872D4 /* XmlDiagramParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */; };
@@ -181,6 +184,23 @@
 		163EFBE81B12321C004C56E7 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
 		1642F16C1B1D396B00AA600D /* StoriesMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesMgr.swift; sourceTree = "<group>"; };
 		1642F16E1B1D398600AA600D /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		1664058A1B370838003F720A /* DiagramsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramsDataSource.swift; path = Stories/DiagramSelection/DiagramsDataSource.swift; sourceTree = "<group>"; };
+		1664058B1B370838003F720A /* DiagramSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramSelectionController.swift; path = Stories/DiagramSelection/DiagramSelectionController.swift; sourceTree = "<group>"; };
+		1664058C1B370838003F720A /* DiagramSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramSelectionStory.swift; path = Stories/DiagramSelection/DiagramSelectionStory.swift; sourceTree = "<group>"; };
+		166405901B370847003F720A /* PanGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PanGestureHandler.swift; path = Stories/SchematicView/GestureHandler/PanGestureHandler.swift; sourceTree = "<group>"; };
+		166405911B370847003F720A /* TapGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapGestureHandler.swift; path = Stories/SchematicView/GestureHandler/TapGestureHandler.swift; sourceTree = "<group>"; };
+		166405921B370847003F720A /* ZoomGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomGestureHandler.swift; path = Stories/SchematicView/GestureHandler/ZoomGestureHandler.swift; sourceTree = "<group>"; };
+		166405961B370857003F720A /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplay.swift; path = Stories/SchematicView/DiagramDisplay.swift; sourceTree = "<group>"; };
+		166405971B370857003F720A /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = Stories/SchematicView/DiagramPortal.swift; sourceTree = "<group>"; };
+		166405981B370857003F720A /* DiagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramView.swift; path = Stories/SchematicView/DiagramView.swift; sourceTree = "<group>"; };
+		166405991B370857003F720A /* DiagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewController.swift; path = Stories/SchematicView/DiagramViewController.swift; sourceTree = "<group>"; };
+		1664059A1B370857003F720A /* LinkDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkDisplay.swift; path = Stories/SchematicView/LinkDisplay.swift; sourceTree = "<group>"; };
+		1664059B1B370857003F720A /* PinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinPoint.swift; path = Stories/SchematicView/PinPoint.swift; sourceTree = "<group>"; };
+		1664059C1B370857003F720A /* SchematicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewController.swift; path = Stories/SchematicView/SchematicViewController.swift; sourceTree = "<group>"; };
+		1664059D1B370857003F720A /* SchematicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewStory.swift; path = Stories/SchematicView/SchematicViewStory.swift; sourceTree = "<group>"; };
+		166405A61B370A2A003F720A /* FileViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileViewStory.swift; path = Stories/FileView/FileViewStory.swift; sourceTree = "<group>"; };
+		166405A81B370BA7003F720A /* FileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileViewController.swift; path = Stories/FileView/FileViewController.swift; sourceTree = "<group>"; };
+		166405AA1B370D25003F720A /* FileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FileView.xib; path = Resources/FileView.xib; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -210,24 +230,10 @@
 		1673BE6A1AF550CA00C8F9AE /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
 		1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDocParser.swift; path = ../../../../sources/VpProject/XmlDocParser.swift; sourceTree = "<group>"; };
 		16A44FB71B23CFE500ABDC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		16A44FBA1B23D1CC00ABDC4E /* DiagramSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramSelectionController.swift; path = DiagramSelection/DiagramSelectionController.swift; sourceTree = "<group>"; };
 		16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiagramSelection.xib; path = Resources/DiagramSelection.xib; sourceTree = "<group>"; };
-		16A44FBE1B23D2A200ABDC4E /* DiagramSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramSelectionStory.swift; path = DiagramSelection/DiagramSelectionStory.swift; sourceTree = "<group>"; };
-		16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramsDataSource.swift; sourceTree = "<group>"; };
-		16A44FC21B23EDC600ABDC4E /* SchematicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewController.swift; path = SchematicView/SchematicViewController.swift; sourceTree = "<group>"; };
 		16A44FC41B23EDE900ABDC4E /* SchematicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SchematicView.xib; path = Resources/SchematicView.xib; sourceTree = "<group>"; };
 		16A44FC71B248BF100ABDC4E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Resources/icons/back.png; sourceTree = "<group>"; };
 		16A44FCD1B24DB6600ABDC4E /* LayerSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerSelection.swift; path = ../../../../sources/DiagramElements/LayerSelection.swift; sourceTree = "<group>"; };
-		16CF29C41B23941300E72CCA /* SchematicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewStory.swift; path = SchematicView/SchematicViewStory.swift; sourceTree = "<group>"; };
-		16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramDisplay.swift; path = SchematicView/DiagramDisplay.swift; sourceTree = "<group>"; };
-		16CF29C71B23987D00E72CCA /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = SchematicView/DiagramPortal.swift; sourceTree = "<group>"; };
-		16CF29C81B23987D00E72CCA /* DiagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramView.swift; path = SchematicView/DiagramView.swift; sourceTree = "<group>"; };
-		16CF29C91B23987D00E72CCA /* DiagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewController.swift; path = SchematicView/DiagramViewController.swift; sourceTree = "<group>"; };
-		16CF29CA1B23987D00E72CCA /* LinkDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkDisplay.swift; path = SchematicView/LinkDisplay.swift; sourceTree = "<group>"; };
-		16CF29CB1B23987D00E72CCA /* PinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinPoint.swift; path = SchematicView/PinPoint.swift; sourceTree = "<group>"; };
-		16CF29D21B23989400E72CCA /* PanGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PanGestureHandler.swift; path = SchematicView/GestureHandler/PanGestureHandler.swift; sourceTree = "<group>"; };
-		16CF29D31B23989400E72CCA /* TapGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapGestureHandler.swift; path = SchematicView/GestureHandler/TapGestureHandler.swift; sourceTree = "<group>"; };
-		16CF29D41B23989400E72CCA /* ZoomGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomGestureHandler.swift; path = SchematicView/GestureHandler/ZoomGestureHandler.swift; sourceTree = "<group>"; };
 		16EE9FE01B06A72000A872D4 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../sources/DiagramElements/Link.swift; sourceTree = "<group>"; };
 		16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorParser.swift; sourceTree = "<group>"; };
 		16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDiagramParser.swift; path = ../../../../sources/VpProject/parsers/XmlDiagramParser.swift; sourceTree = "<group>"; };
@@ -331,9 +337,9 @@
 		1642F1641B1B526900AA600D /* GestureHandler */ = {
 			isa = PBXGroup;
 			children = (
-				16CF29D21B23989400E72CCA /* PanGestureHandler.swift */,
-				16CF29D31B23989400E72CCA /* TapGestureHandler.swift */,
-				16CF29D41B23989400E72CCA /* ZoomGestureHandler.swift */,
+				166405901B370847003F720A /* PanGestureHandler.swift */,
+				166405911B370847003F720A /* TapGestureHandler.swift */,
+				166405921B370847003F720A /* ZoomGestureHandler.swift */,
 			);
 			name = GestureHandler;
 			sourceTree = "<group>";
@@ -341,12 +347,22 @@
 		1642F16B1B1D392800AA600D /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				166405891B3707B3003F720A /* FileView */,
 				16A44FB91B23D14400ABDC4E /* DiagramSelection */,
 				16CF29C31B2393E700E72CCA /* SchematicView */,
 				1642F16C1B1D396B00AA600D /* StoriesMgr.swift */,
 				1642F16E1B1D398600AA600D /* Story.swift */,
 			);
 			name = Stories;
+			sourceTree = "<group>";
+		};
+		166405891B3707B3003F720A /* FileView */ = {
+			isa = PBXGroup;
+			children = (
+				166405A61B370A2A003F720A /* FileViewStory.swift */,
+				166405A81B370BA7003F720A /* FileViewController.swift */,
+			);
+			name = FileView;
 			sourceTree = "<group>";
 		};
 		1673BDE71AF5502600C8F9AE = {
@@ -382,6 +398,7 @@
 		1673BDF21AF5502600C8F9AE /* ProjectFV */ = {
 			isa = PBXGroup;
 			children = (
+				16A44FCF1B27C7A300ABDC4E /* FileViewer */,
 				16CF29D91B23BAB300E72CCA /* Application */,
 				16CF29D81B23BA9E00E72CCA /* Resources */,
 				1642F16B1B1D392800AA600D /* Stories */,
@@ -507,9 +524,9 @@
 		16A44FB91B23D14400ABDC4E /* DiagramSelection */ = {
 			isa = PBXGroup;
 			children = (
-				16A44FBA1B23D1CC00ABDC4E /* DiagramSelectionController.swift */,
-				16A44FBE1B23D2A200ABDC4E /* DiagramSelectionStory.swift */,
-				16A44FC01B23D43200ABDC4E /* DiagramsDataSource.swift */,
+				1664058A1B370838003F720A /* DiagramsDataSource.swift */,
+				1664058B1B370838003F720A /* DiagramSelectionController.swift */,
+				1664058C1B370838003F720A /* DiagramSelectionStory.swift */,
 			);
 			name = DiagramSelection;
 			sourceTree = "<group>";
@@ -522,18 +539,25 @@
 			name = icons;
 			sourceTree = "<group>";
 		};
+		16A44FCF1B27C7A300ABDC4E /* FileViewer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FileViewer;
+			sourceTree = "<group>";
+		};
 		16CF29C31B2393E700E72CCA /* SchematicView */ = {
 			isa = PBXGroup;
 			children = (
 				1642F1641B1B526900AA600D /* GestureHandler */,
-				16CF29C41B23941300E72CCA /* SchematicViewStory.swift */,
-				16CF29C61B23987D00E72CCA /* DiagramDisplay.swift */,
-				16CF29C71B23987D00E72CCA /* DiagramPortal.swift */,
-				16CF29C81B23987D00E72CCA /* DiagramView.swift */,
-				16CF29C91B23987D00E72CCA /* DiagramViewController.swift */,
-				16CF29CA1B23987D00E72CCA /* LinkDisplay.swift */,
-				16CF29CB1B23987D00E72CCA /* PinPoint.swift */,
-				16A44FC21B23EDC600ABDC4E /* SchematicViewController.swift */,
+				166405961B370857003F720A /* DiagramDisplay.swift */,
+				166405971B370857003F720A /* DiagramPortal.swift */,
+				166405981B370857003F720A /* DiagramView.swift */,
+				166405991B370857003F720A /* DiagramViewController.swift */,
+				1664059A1B370857003F720A /* LinkDisplay.swift */,
+				1664059B1B370857003F720A /* PinPoint.swift */,
+				1664059C1B370857003F720A /* SchematicViewController.swift */,
+				1664059D1B370857003F720A /* SchematicViewStory.swift */,
 			);
 			name = SchematicView;
 			sourceTree = "<group>";
@@ -547,6 +571,7 @@
 				16EEA0201B06B75100A872D4 /* DiagramView.xib */,
 				16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */,
 				16A44FC41B23EDE900ABDC4E /* SchematicView.xib */,
+				166405AA1B370D25003F720A /* FileView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -870,6 +895,7 @@
 				1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */,
 				16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */,
 				16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */,
+				166405AB1B370D25003F720A /* FileView.xib in Resources */,
 				16A44FC81B248BF100ABDC4E /* back.png in Resources */,
 				16EEA0211B06B75100A872D4 /* DiagramView.xib in Resources */,
 				1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */,
@@ -933,24 +959,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16CF29CE1B23987D00E72CCA /* DiagramView.swift in Sources */,
+				166405951B370847003F720A /* ZoomGestureHandler.swift in Sources */,
+				1664059F1B370857003F720A /* DiagramPortal.swift in Sources */,
+				166405A11B370857003F720A /* DiagramViewController.swift in Sources */,
 				1642F16D1B1D396B00AA600D /* StoriesMgr.swift in Sources */,
-				16A44FBF1B23D2A200ABDC4E /* DiagramSelectionStory.swift in Sources */,
-				16CF29C51B23941300E72CCA /* SchematicViewStory.swift in Sources */,
-				16A44FC31B23EDC600ABDC4E /* SchematicViewController.swift in Sources */,
+				166405941B370847003F720A /* TapGestureHandler.swift in Sources */,
+				166405A21B370857003F720A /* LinkDisplay.swift in Sources */,
+				166405A91B370BA7003F720A /* FileViewController.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
-				16A44FBB1B23D1CC00ABDC4E /* DiagramSelectionController.swift in Sources */,
-				16CF29D71B23989400E72CCA /* ZoomGestureHandler.swift in Sources */,
-				16CF29D61B23989400E72CCA /* TapGestureHandler.swift in Sources */,
+				1664058D1B370838003F720A /* DiagramsDataSource.swift in Sources */,
+				1664058F1B370838003F720A /* DiagramSelectionStory.swift in Sources */,
 				1642F16F1B1D398600AA600D /* Story.swift in Sources */,
-				16CF29D51B23989400E72CCA /* PanGestureHandler.swift in Sources */,
-				16CF29CF1B23987D00E72CCA /* DiagramViewController.swift in Sources */,
-				16CF29CC1B23987D00E72CCA /* DiagramDisplay.swift in Sources */,
-				16A44FC11B23D43200ABDC4E /* DiagramsDataSource.swift in Sources */,
-				16CF29D11B23987D00E72CCA /* PinPoint.swift in Sources */,
+				166405A31B370857003F720A /* PinPoint.swift in Sources */,
 				1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */,
-				16CF29D01B23987D00E72CCA /* LinkDisplay.swift in Sources */,
-				16CF29CD1B23987D00E72CCA /* DiagramPortal.swift in Sources */,
+				166405A51B370857003F720A /* SchematicViewStory.swift in Sources */,
+				1664058E1B370838003F720A /* DiagramSelectionController.swift in Sources */,
+				1664059E1B370857003F720A /* DiagramDisplay.swift in Sources */,
+				166405A71B370A2A003F720A /* FileViewStory.swift in Sources */,
+				166405931B370847003F720A /* PanGestureHandler.swift in Sources */,
+				166405A41B370857003F720A /* SchematicViewController.swift in Sources */,
+				166405A01B370857003F720A /* DiagramView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

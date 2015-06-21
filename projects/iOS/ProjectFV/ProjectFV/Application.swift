@@ -39,9 +39,9 @@ class Application {
     func finishedLaunching() {
     
         _storiesMgr = StoriesMgr()
-        
-        stories.push( DiagramSelectionStory() )
-//        stories.push( SchematicViewStory(diagramName: "VpProject") )
+  
+        stories.push( FileViewStory() )
+//        stories.push( DiagramSelectionStory() )
     }
     
     var _document : DiagramElements.Document = DiagramElements.Document()
