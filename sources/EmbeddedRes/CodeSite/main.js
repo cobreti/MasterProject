@@ -13,8 +13,8 @@
       });
     }
     if (args.file != null) {
-      file = args.file.replace('.', '/');
-      return $.get("http://www.cds.essai.danny-thibaudeau.ca/services/file/" + file, function(data) {
+//      file = args.file.replace('.', '/');
+      return $.get(args.file, function(data) {
         $("#code").text(data);
         return SyntaxHighlighter.highlight($("#code"));
       });
