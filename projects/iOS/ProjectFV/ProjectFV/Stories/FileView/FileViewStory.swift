@@ -18,12 +18,32 @@ class FileViewStory : Story {
         }
     }
     
-    override init() {
-        
-        _controller = FileViewController(nibName: "FileView", bundle: nil)
+    init(file: String) {
         
         super.init()
+
+        var fileParts = file.componentsSeparatedByString("/")
+        let lastFilePart = fileParts.removeLast()
+        let filenameParts = lastFilePart.componentsSeparatedByString(".")
+        
+        var filePath = ""
+        
+        for s in fileParts {
+            filePath += "\(s)/"
+        }
+        
+        if let fileURL = NSBundle.mainBundle().URLForResource(filenameParts[0], withExtension: filenameParts[1], subdirectory: filePath) {
+            
+            debugPrintln(fileURL)
+            _controller = FileViewController(fileURL: fileURL)
+            _controller.backEventHandler = onBack
+        }
     }
     
+    func onBack(sender: AnyObject, args: [String: AnyObject]!) {
+        debugPrintln("onBack story handler")
+        ownerStoriesMgr?.pop(self)
+    }
+
     var _controller : FileViewController!
 }

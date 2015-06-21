@@ -40,7 +40,7 @@ class Application {
     
         _storiesMgr = StoriesMgr()
   
-        stories.push( FileViewStory() )
+        stories.push( FileViewStory(file: "EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Source/NyxTaskExecuterPool_Impl.cpp") )
 //        stories.push( DiagramSelectionStory() )
     }
     

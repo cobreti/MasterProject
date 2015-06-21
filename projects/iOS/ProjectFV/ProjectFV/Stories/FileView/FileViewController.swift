@@ -11,27 +11,58 @@ import UIKit
 
 class FileViewController : UIViewController {
     
+    var backEventHandler : EventHandler! {
+        get {
+            return _backEventHandler
+        }
+        set (value) {
+            _backEventHandler = value
+        }
+    }
+ 
+    init( fileURL : NSURL ) {
+        
+        _fileURL = fileURL
+        
+        super.init(nibName: "FileView", bundle: nil)
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
  
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let bundle = NSBundle.mainBundle();
         
-        let fileURL = bundle.URLForResource("NyxTaskExecuterPool_Impl", withExtension: "cpp", subdirectory: "EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Source")
-        let filePath = fileURL?.absoluteString
+        if let  url = bundle.URLForResource("index", withExtension: "html", subdirectory: "EmbeddedRes/CodeSite"),
+                filePath = _fileURL.absoluteString,
+                indexPath = url.absoluteString,
+                components = NSURLComponents(string: indexPath) {
         
-        if let url = bundle.URLForResource("index", withExtension: "html", subdirectory: "EmbeddedRes/CodeSite") {
+            components.query = "file=\(filePath)"
         
-            let components = NSURLComponents(string: url.absoluteString!)
-            components?.query = "file=\(filePath!)"
-        
-            let request = NSMutableURLRequest(URL: components!.URL!)
+            if let componentsURL = components.URL {
+                let request = NSURLRequest(URL: componentsURL)
+
+                _webView.loadRequest(request)
+            }
             
-            _webView.loadRequest(request)
+            
         }
 
     }
   
+    @IBAction func onBack(sender: AnyObject) {
+        if let handler = _backEventHandler {
+            handler(sender: self, args: nil)
+        }
+    }
     
     @IBOutlet weak var _webView: UIWebView!
+    @IBOutlet weak var _backBtn: UIButton!
+    
+    var _fileURL : NSURL
+    var _backEventHandler : EventHandler!
 }
