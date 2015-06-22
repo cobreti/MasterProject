@@ -29,6 +29,7 @@
 		166405A71B370A2A003F720A /* FileViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405A61B370A2A003F720A /* FileViewStory.swift */; };
 		166405A91B370BA7003F720A /* FileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405A81B370BA7003F720A /* FileViewController.swift */; };
 		166405AB1B370D25003F720A /* FileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166405AA1B370D25003F720A /* FileView.xib */; };
+		166405AF1B387A62003F720A /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = 166405AE1B387A62003F720A /* file.png */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFC1AF5502600C8F9AE /* Images.xcassets */; };
 		1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFE1AF5502600C8F9AE /* LaunchScreen.xib */; };
@@ -201,6 +202,7 @@
 		166405A61B370A2A003F720A /* FileViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileViewStory.swift; path = Stories/FileView/FileViewStory.swift; sourceTree = "<group>"; };
 		166405A81B370BA7003F720A /* FileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileViewController.swift; path = Stories/FileView/FileViewController.swift; sourceTree = "<group>"; };
 		166405AA1B370D25003F720A /* FileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FileView.xib; path = Resources/FileView.xib; sourceTree = "<group>"; };
+		166405AE1B387A62003F720A /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = file.png; path = Resources/icons/file.png; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -534,6 +536,7 @@
 		16A44FC61B248BDF00ABDC4E /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				166405AE1B387A62003F720A /* file.png */,
 				16A44FC71B248BF100ABDC4E /* back.png */,
 			);
 			name = icons;
@@ -892,6 +895,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */,
+				166405AF1B387A62003F720A /* file.png in Resources */,
 				1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */,
 				16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */,
 				16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */,

@@ -61,6 +61,17 @@ class DiagramDisplay {
         
         CGContextStrokeRect(ctx, rc)
         
+        if let  model = _document.models.get(elm.modelId),
+                path = model.filePath {
+                
+            let img = UIImage(named: "file.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil)
+            
+            let rcImg = CGRect( x: rc.maxX-22, y: rc.minY+2, width: 20, height: 20 )
+            
+            img?.drawInRect(rcImg)
+            
+        }
+        
         if let name = elm.name {
             var parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
             var strSize = name.sizeWithAttributes([
