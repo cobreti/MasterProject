@@ -3,12 +3,7 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ProjectFV.SchematicViewController.viewDidLoad (ProjectFV.SchematicViewController)() -&gt; ():SchematicViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "_diagramArea.bounds">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "ProjectFV.FileViewController.webView (ProjectFV.FileViewController)(ObjectiveC.UIWebView, shouldStartLoadWithRequest : ObjectiveC.NSURLRequest, navigationType : C.UIWebViewNavigationType) -&gt; Swift.Bool:FileViewController.swift">
       </ContextState>
       <ContextState
          contextName = "ProjectFV.DiagramViewController.viewDidLoad (ProjectFV.DiagramViewController)() -&gt; ():DiagramViewController.swift">
@@ -24,6 +19,14 @@
          <PersistentStrings>
             <PersistentString
                value = "sender.state">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProjectFV.SchematicViewController.viewDidLoad (ProjectFV.SchematicViewController)() -&gt; ():SchematicViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_diagramArea.bounds">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -65,8 +65,15 @@ class DiagramDisplay {
                 path = model.filePath {
                 
             let img = UIImage(named: "file.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil)
+            var imgWidth = max(rc.width / 3 - 2, 0)
+            var imgHeight = rc.height / 3
             
-            let rcImg = CGRect( x: rc.maxX-22, y: rc.minY+2, width: 20, height: 20 )
+            imgWidth = min(imgWidth, 20)
+            imgHeight = min(imgHeight, 20)
+            
+            let imgSize = min(imgWidth, imgHeight)
+            
+            let rcImg = CGRect( x: rc.maxX-imgWidth-2, y: rc.minY+2, width: imgSize, height: imgSize )
             
             img?.drawInRect(rcImg)
             
