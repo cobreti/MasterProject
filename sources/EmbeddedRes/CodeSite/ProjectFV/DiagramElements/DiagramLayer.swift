@@ -82,8 +82,8 @@ public class DiagramLayer : DebugPrintable {
         
         for (key, item) in _primitives {
             
-            if let elm = item as? Element where elm.box.contains(pt) {
-                res.append(elm)
+            if item.box.contains(pt) {
+                res.append(item)
             }
         }
         

@@ -8,6 +8,7 @@
 
 import Foundation
 import DiagramElements
+import VpProject
 
 var g_app : Application!
 
@@ -36,12 +37,26 @@ class Application {
         }
     }
     
+    func loadDiagrams() {
+    
+        var proj = VpProject( document: _document )
+        
+        if let url = NSBundle.mainBundle().URLForResource(  "ProjectFV",
+                                                            withExtension: "xml",
+                                                            subdirectory: "EmbeddedRes/diagrams") {
+            proj.load(url)
+            _document.filesPathRoot = "EmbeddedRes/CodeSite/ProjectFV/"
+        }
+    }
+    
     func finishedLaunching() {
+    
+        loadDiagrams()
     
         _storiesMgr = StoriesMgr()
   
-        stories.push( FileViewStory(file: "EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Source/NyxTaskExecuterPool_Impl.cpp") )
-//        stories.push( DiagramSelectionStory() )
+//        stories.push( FileViewStory(file: "EmbeddedRes/CodeSite/ProjectFV/DiagramElements/DiagramLayer.swift") )
+        stories.push( DiagramSelectionStory() )
     }
     
     var _document : DiagramElements.Document = DiagramElements.Document()

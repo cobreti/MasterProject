@@ -40,15 +40,6 @@ public class Model {
         }
     }
     
-    public var filePath : String! {
-        get {
-            return _filePath
-        }
-        set (value) {
-            _filePath = value
-        }
-    }
-    
     
     public init(id : String, parent: Model! = nil) {
         
@@ -61,6 +52,4 @@ public class Model {
     private var _linkEndPointTo : LinkEndPoint!
     private var _linkEndPointFrom : LinkEndPoint!
     private var _children : ModelsTable = ModelsTable()
-    private var _filePath : String!
 }
-

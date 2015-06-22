@@ -13,15 +13,6 @@ public class Document {
         }
     }
     
-    public var filesPathRoot : String! {
-        get {
-            return _filesPathRoot
-        }
-        set (value) {
-            _filesPathRoot = value
-        }
-    }
-    
     public var models : ModelsTable {
         get {
             return _models
@@ -32,7 +23,6 @@ public class Document {
 
     }
 
-    var _filesPathRoot : String!
     var _layers : DiagramLayers = DiagramLayers()
     var _models : ModelsTable = ModelsTable()
 }

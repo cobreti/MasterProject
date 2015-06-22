@@ -41,11 +41,22 @@ class TapGestureHandler : NSObject {
                     }
                     else {
                         for item in primitives {
-                            layer.selection.add(item)
+//                            layer.selection.add(item)
+                            
+                            if let  model = _view.diagramDocument?.models.get(item.modelId),
+                                    filePath = model.filePath,
+                                    rootPath = _view.diagramDocument?.filesPathRoot {
+                                    
+                                let app = Application.instance()
+                                
+                                app.stories.push( FileViewStory(file: rootPath + filePath) )
+                            
+//                                debugPrintln("file path for item : '\(model.filePath)' with root being '\(_view.diagramDocument?.filesPathRoot)'")
+                            }
                         }
                     }
 
-                    _view.setNeedsDisplay()
+//                    _view.setNeedsDisplay()
                 }
             default:
                 break
