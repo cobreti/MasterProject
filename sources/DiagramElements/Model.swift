@@ -49,6 +49,14 @@ public class Model {
         }
     }
     
+    public var subDiagramId : String! {
+        get {
+            return _subDiagramId
+        }
+        set (value) {
+            _subDiagramId = value
+        }
+    }
     
     public init(id : String, parent: Model! = nil) {
         
@@ -62,5 +70,6 @@ public class Model {
     private var _linkEndPointFrom : LinkEndPoint!
     private var _children : ModelsTable = ModelsTable()
     private var _filePath : String!
+    private var _subDiagramId : String!
 }
 

@@ -40,13 +40,7 @@ class XmlModelParser : XmlSubTreeParser {
         
         switch elementName {
             case "StringProperty":
-                if let  displayName = attributeDict["displayName"] as? String,
-                    pathName = attributeDict["pathName"] as? String,
-                    value = attributeDict["value"] as? String {
-                        
-                    _model?.filePath = value
-                    debugPrintln("url found for \(pathName) = '\(value)'")
-                }
+                onStringProperty(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
             case "ChildModels":
                 if let parentModel = _model {
                     pushElementParser( XmlModelsParser(name: "ChildModels", parent: parentModel, delegate: self) )
@@ -76,6 +70,28 @@ class XmlModelParser : XmlSubTreeParser {
         }
     }
     
+    
+    func onStringProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+        
+        
+        if let  displayName = attributeDict["displayName"] as? String,
+                pathName = attributeDict["pathName"] as? String,
+                value = attributeDict["value"] as? String {
+                
+            _model?.filePath = value
+            debugPrintln("url found for \(pathName) = '\(value)'")
+        }
+        
+        if let  diagramName = attributeDict["diagramName"] as? String,
+                diagramType = attributeDict["diagramType"] as? String,
+                displayName = attributeDict["displayName"] as? String,
+                name = attributeDict["name"] as? String,
+                value = attributeDict["value"] as? String {
+                
+            _model?.subDiagramId = value
+            debugPrintln("sub diagram with id : \(value)")
+        }
+    }
     
     var _model : Model!
     var _modelsTable : ModelsTable

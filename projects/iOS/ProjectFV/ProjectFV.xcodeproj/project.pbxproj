@@ -32,6 +32,7 @@
 		166405AF1B387A62003F720A /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = 166405AE1B387A62003F720A /* file.png */; };
 		166405B11B38D609003F720A /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 166405B01B38D609003F720A /* cross.png */; };
 		166405B31B38D7D2003F720A /* circled-cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 166405B21B38D7D2003F720A /* circled-cross.png */; };
+		166405B51B39AE77003F720A /* subdiagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 166405B41B39AE77003F720A /* subdiagram.png */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFC1AF5502600C8F9AE /* Images.xcassets */; };
 		1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFE1AF5502600C8F9AE /* LaunchScreen.xib */; };
@@ -207,6 +208,7 @@
 		166405AE1B387A62003F720A /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = file.png; path = Resources/icons/file.png; sourceTree = "<group>"; };
 		166405B01B38D609003F720A /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cross.png; path = Resources/icons/cross.png; sourceTree = "<group>"; };
 		166405B21B38D7D2003F720A /* circled-cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circled-cross.png"; path = "Resources/icons/circled-cross.png"; sourceTree = "<group>"; };
+		166405B41B39AE77003F720A /* subdiagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subdiagram.png; path = Resources/icons/subdiagram.png; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -544,6 +546,7 @@
 				16A44FC71B248BF100ABDC4E /* back.png */,
 				166405B01B38D609003F720A /* cross.png */,
 				166405B21B38D7D2003F720A /* circled-cross.png */,
+				166405B41B39AE77003F720A /* subdiagram.png */,
 			);
 			name = icons;
 			sourceTree = "<group>";
@@ -905,6 +908,7 @@
 				1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */,
 				16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */,
 				16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */,
+				166405B51B39AE77003F720A /* subdiagram.png in Resources */,
 				166405B31B38D7D2003F720A /* circled-cross.png in Resources */,
 				166405AB1B370D25003F720A /* FileView.xib in Resources */,
 				16A44FC81B248BF100ABDC4E /* back.png in Resources */,

@@ -61,21 +61,17 @@ class DiagramDisplay {
         
         CGContextStrokeRect(ctx, rc)
         
-        if let  model = _document.models.get(elm.modelId),
-                path = model.filePath {
+        if let  model = _document.models.get(elm.modelId) {
                 
-            let img = UIImage(named: "file.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil)
-            var imgWidth = max(rc.width / 3 - 2, 0)
-            var imgHeight = rc.height / 3
+            if let  path = model.filePath,
+                    img = UIImage(named: "file.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) {
+                drawElementIcon(rc, image: img)
+            }
             
-            imgWidth = min(imgWidth, 20)
-            imgHeight = min(imgHeight, 20)
-            
-            let imgSize = min(imgWidth, imgHeight)
-            
-            let rcImg = CGRect( x: rc.maxX-imgWidth-2, y: rc.minY+2, width: imgSize, height: imgSize )
-            
-            img?.drawInRect(rcImg)
+            if let  id = model.subDiagramId,
+                    img = UIImage(named: "subdiagram.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) {
+                drawElementIcon(rc, image: img)
+            }
             
         }
         
@@ -105,6 +101,21 @@ class DiagramDisplay {
             CGContextSetRGBStrokeColor(ctx, 0, 0.5, 0, 1.0)
             CGContextStrokeRect(ctx, rc)
         }
+    }
+    
+    func drawElementIcon(rect: CGRect, image: UIImage) {
+        
+        var imgWidth = max(rect.width / 3 - 2, 0)
+        var imgHeight = rect.height / 3
+        
+        imgWidth = min(imgWidth, image.size.width)
+        imgHeight = min(imgHeight, image.size.height)
+        
+        let imgSize = min(imgWidth, imgHeight)
+        
+        let rcImg = CGRect( x: rect.maxX-imgWidth-2, y: rect.minY+2, width: imgSize, height: imgSize )
+        
+        image.drawInRect(rcImg)
     }
     
     func drawPortalBBox( ctx : CGContext ) {
