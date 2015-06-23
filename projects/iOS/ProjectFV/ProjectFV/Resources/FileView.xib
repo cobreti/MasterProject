@@ -6,7 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FileViewController" customModule="ProjectFV" customModuleProvider="target">
             <connections>
-                <outlet property="_backBtn" destination="h73-h4-Z11" id="0EB-fy-bMA"/>
                 <outlet property="_webView" destination="4GO-IT-A6c" id="9A7-uR-Jg6"/>
                 <outlet property="view" destination="iN0-l3-epB" id="bog-ey-lQZ"/>
             </connections>
@@ -16,46 +15,35 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDQ-Bo-hAI">
-                    <rect key="frame" x="10" y="20" width="580" height="50"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h73-h4-Z11">
-                            <rect key="frame" x="20" y="14" width="30" height="22"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="30" id="5i5-sA-Kxy"/>
-                            </constraints>
-                            <state key="normal" image="back.png">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="xg4-gY-ZhR"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="V9v-Tn-tGV"/>
-                        <constraint firstAttribute="centerY" secondItem="h73-h4-Z11" secondAttribute="centerY" id="nTD-ff-EZQ"/>
-                        <constraint firstItem="h73-h4-Z11" firstAttribute="leading" secondItem="MDQ-Bo-hAI" secondAttribute="leading" constant="20" id="wyF-3X-fDh"/>
-                    </constraints>
-                </view>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GO-IT-A6c">
-                    <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                    <rect key="frame" x="100" y="50" width="400" height="540"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="ldj-5o-Q9Q"/>
                     </connections>
                 </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nU-Aq-vpe">
+                    <rect key="frame" x="475" y="35" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5ak-vw-5sJ"/>
+                        <constraint firstAttribute="width" constant="40" id="W1q-Ht-rL1"/>
+                    </constraints>
+                    <state key="normal" image="circled-cross.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="5dx-Fq-ohS"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="MDQ-Bo-hAI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="7bw-0m-I5b"/>
-                <constraint firstItem="MDQ-Bo-hAI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="BEB-At-5vf"/>
-                <constraint firstAttribute="trailing" secondItem="MDQ-Bo-hAI" secondAttribute="trailing" constant="10" id="N3X-2O-suw"/>
-                <constraint firstItem="4GO-IT-A6c" firstAttribute="top" secondItem="MDQ-Bo-hAI" secondAttribute="bottom" id="aNc-T2-QIY"/>
-                <constraint firstAttribute="trailing" secondItem="4GO-IT-A6c" secondAttribute="trailing" id="bKD-GG-b8b"/>
-                <constraint firstAttribute="bottom" secondItem="4GO-IT-A6c" secondAttribute="bottom" id="oK9-j3-hy5"/>
-                <constraint firstItem="4GO-IT-A6c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xTi-0i-DFQ"/>
+                <constraint firstItem="2nU-Aq-vpe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="23N-Ww-iwU"/>
+                <constraint firstAttribute="trailing" secondItem="2nU-Aq-vpe" secondAttribute="trailing" constant="85" id="ZGG-Db-j6A"/>
+                <constraint firstAttribute="trailing" secondItem="4GO-IT-A6c" secondAttribute="trailing" constant="100" id="bKD-GG-b8b"/>
+                <constraint firstAttribute="bottom" secondItem="4GO-IT-A6c" secondAttribute="bottom" constant="10" id="oK9-j3-hy5"/>
+                <constraint firstItem="4GO-IT-A6c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="qmk-Ro-E3x"/>
+                <constraint firstItem="4GO-IT-A6c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="xTi-0i-DFQ"/>
                 <constraint firstItem="4GO-IT-A6c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zDk-R6-7Jt"/>
             </constraints>
             <variation key="default">
@@ -63,9 +51,17 @@
                     <exclude reference="zDk-R6-7Jt"/>
                 </mask>
             </variation>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="I1d-PN-biJ" appends="YES" id="jet-i1-sJ4"/>
+            </connections>
         </view>
+        <tapGestureRecognizer id="I1d-PN-biJ">
+            <connections>
+                <action selector="onBack:" destination="-1" id="Ah0-4k-wHN"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="back.png" width="15" height="15"/>
+        <image name="circled-cross.png" width="20" height="20"/>
     </resources>
 </document>
