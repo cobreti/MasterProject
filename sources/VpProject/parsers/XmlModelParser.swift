@@ -88,8 +88,8 @@ class XmlModelParser : XmlSubTreeParser {
                 name = attributeDict["name"] as? String,
                 value = attributeDict["value"] as? String {
                 
-            _model?.subDiagramId = value
-            debugPrintln("sub diagram with id : \(value)")
+            _model?.subDiagramName = diagramName
+            debugPrintln("sub diagram with name : \(diagramName)")
         }
     }
     

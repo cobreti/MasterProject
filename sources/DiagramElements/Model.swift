@@ -49,12 +49,12 @@ public class Model {
         }
     }
     
-    public var subDiagramId : String! {
+    public var subDiagramName : String! {
         get {
-            return _subDiagramId
+            return _subDiagramName
         }
         set (value) {
-            _subDiagramId = value
+            _subDiagramName = value
         }
     }
     
@@ -70,6 +70,6 @@ public class Model {
     private var _linkEndPointFrom : LinkEndPoint!
     private var _children : ModelsTable = ModelsTable()
     private var _filePath : String!
-    private var _subDiagramId : String!
+    private var _subDiagramName : String!
 }
 

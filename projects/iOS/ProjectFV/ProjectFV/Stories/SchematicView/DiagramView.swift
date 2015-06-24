@@ -59,10 +59,6 @@ class DiagramView : UIView {
 
             var ctx : CGContext = UIGraphicsGetCurrentContext()
             
-//            portal.viewRect = Rect( x: Double(frame.origin.x),
-//                                    y: Double(frame.origin.y),
-//                                    width: Double(frame.size.width),
-//                                    height: Double(frame.size.height))
             let dd = DiagramDisplay(    targetRect: bounds,
                                         layer: layer,
                                         document: document,

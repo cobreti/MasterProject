@@ -96,8 +96,8 @@ class DiagramPortal {
     func rectFromDiagramToPortal( rc : Rect ) -> Rect {
         
         return Rect(
-            x: (rc.left * _scaling * _zoom) + _margins.left + _translation.x + _offset.x,
-            y: (rc.top  * _scaling * _zoom) + _margins.top + _translation.y + _offset.y ,
+            x: (rc.left * _scaling * _zoom) + _margins.left + _translation.x + _offset.x + _area.pos.x,
+            y: (rc.top  * _scaling * _zoom) + _margins.top + _translation.y + _offset.y + _area.pos.y,
             width: rc.size.width * _scaling * _zoom,
             height: rc.size.height * _scaling * _zoom )
     }
@@ -106,23 +106,23 @@ class DiagramPortal {
         let factor = _scaling * _zoom
     
         return Point(
-            x: (pt.x - _margins.left - _translation.x - _offset.x) / factor,
-            y: (pt.y - _margins.top - _translation.y - _offset.y) / factor
+            x: (pt.x - _area.pos.x - _margins.left - _translation.x - _offset.x) / factor,
+            y: (pt.y - _area.pos.y - _margins.top - _translation.y - _offset.y) / factor
         )
     }
     
     func pointFromPortalToDiagram( pt: Point ) -> Point {
         return Point(
-            x: (pt.x - _margins.left - _translation.x) / (_zoom * _scaling) - _offset.x,
-            y: (pt.y - _margins.top - _translation.y) / (_zoom * _scaling) - _offset.y
+            x: (pt.x - _area.pos.x - _margins.left - _translation.x) / (_zoom * _scaling) - _offset.x,
+            y: (pt.y - _area.pos.y - _margins.top - _translation.y) / (_zoom * _scaling) - _offset.y
         )
     }
     
     func pointFromDiagramToPortal( pt : Point ) -> Point {
         
         return Point(
-            x: (pt.x ) * _scaling * _zoom + _margins.left + _translation.x + _offset.x,
-            y: (pt.y ) * _scaling * _zoom + _margins.top + _translation.y + _offset.y
+            x: (pt.x ) * _scaling * _zoom + _margins.left + _translation.x + _offset.x + _area.pos.x,
+            y: (pt.y ) * _scaling * _zoom + _margins.top + _translation.y + _offset.y + _area.pos.y
         )
     }
     
