@@ -11,28 +11,29 @@ import UIKit
 import Shapes
 import DiagramElements
 
-class TapGestureHandler : NSObject {
+class TapGestureHandler : BaseGestureHandler {
     
-    init(view: DiagramView, portal: DiagramPortal) {
+    override init(view: DiagramView, portal: DiagramPortal) {
         
-        _view = view
-        _portal = portal
-        
-        super.init()
+        super.init(view: view, portal: portal)
         
         var tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.addTarget(self, action: "onTap:")
-        _view.addGestureRecognizer(tapRecognizer)
+        self.view.addGestureRecognizer(tapRecognizer)
     }
     
     func onTap( sender : UITapGestureRecognizer ) {
         
+        if !enabled {
+            return
+        }
+        
         switch sender.state {
             case UIGestureRecognizerState.Ended:
-                if let layer = _view.diagramLayer {
-                    let ptInView = sender.locationInView(_view)
+                if let layer = view.diagramLayer {
+                    let ptInView = sender.locationInView(view)
                     
-                    let diagPt = _portal.pointFromViewToPortal(Point(x: ptInView.x, y: ptInView.y))
+                    let diagPt = portal.pointFromViewToPortal(Point(x: ptInView.x, y: ptInView.y))
 
                     let primitives = layer.primitivesFromPt(diagPt)
                     
@@ -43,9 +44,9 @@ class TapGestureHandler : NSObject {
                         for item in primitives {
 //                            layer.selection.add(item)
                             
-                            if let  model = _view.diagramDocument?.models.get(item.modelId),
+                            if let  model = view.diagramDocument?.models.get(item.modelId),
                                     filePath = model.filePath,
-                                    rootPath = _view.diagramDocument?.filesPathRoot {
+                                    rootPath = view.diagramDocument?.filesPathRoot {
                                     
                                 let app = Application.instance()
                                 
@@ -62,7 +63,4 @@ class TapGestureHandler : NSObject {
                 break
         }
     }
-    
-    var _view : DiagramView
-    var _portal : DiagramPortal
 }

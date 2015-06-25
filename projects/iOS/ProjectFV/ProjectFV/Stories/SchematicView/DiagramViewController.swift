@@ -28,6 +28,18 @@ class DiagramViewController : UIViewController {
         }
     }
     
+    var gestureEnabled : Bool {
+        get {
+            return _gestureEnabled
+        }
+        set (value) {
+            _gestureEnabled = value
+            _panGestureHandler?.enabled = value
+            _zoomGestureHandler?.enabled = value
+            _tapGestureHandler?.enabled = value
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,7 +47,7 @@ class DiagramViewController : UIViewController {
         
         view.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
         
-        let frame = view.frame
+        let frame = view.bounds
 
         _diagramPortal = DiagramPortal(
             rcArea: Rect( x: frame.origin.x, y: frame.origin.y, width: frame.size.width, height: frame.size.height ),
@@ -50,12 +62,16 @@ class DiagramViewController : UIViewController {
             _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal)
             _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal)
             _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal)
+            
+            _panGestureHandler?.enabled = _gestureEnabled
+            _zoomGestureHandler?.enabled = _gestureEnabled
+            _tapGestureHandler?.enabled = _gestureEnabled
         }
     }
     
     override func viewDidAppear(animated: Bool) {
         
-        let frame = view.frame
+        let frame = view.bounds
 
         if let dgmView = view as? DiagramView {
             dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
@@ -65,43 +81,9 @@ class DiagramViewController : UIViewController {
         }
     }
     
-    func onZoom( sender : UIPinchGestureRecognizer ) {
-//        debugPrintln("scale : \(sender.scale)")
+    func updatePortalRect() {
         
-        if ( sender.state == UIGestureRecognizerState.Began ) {
-            sender.scale = CGFloat(_diagramPortal.zoom)
-            
-            var ptInView = sender.locationInView(view)
-            let pt = PinPoint( x: ptInView.x, y: ptInView.y )
-
-            debugPrintln("ptInView : \(pt.x), \(pt.y)")
-
-            if let dgmView = view as? DiagramView {
-                dgmView.pinPoint = pt
-                debugPrintln("current portal pinPt : \(_diagramPortal.pinPoint.x), \(_diagramPortal.pinPoint.y)")
-                let portalPt = _diagramPortal.pointFromViewToPortal(pt)
-                debugPrintln("portal point : \(portalPt.x), \(portalPt.y)")
-                
-                let pinPt = _diagramPortal.pointFromPortalToDiagram(portalPt)
-                debugPrintln("pinPt portal -> diagram : \(pinPt.x), \(pinPt.y)")
-                _diagramPortal.pinPoint = PinPoint(x: pinPt.x, y: pinPt.y)
-            }
-        }
-        else if sender.state == UIGestureRecognizerState.Changed {
-            
-            if let dgmView = view as? DiagramView {
-//                _diagramPortal.alignWithViewPinPoint(dgmView.pinPoint!)
-                _diagramPortal.zoom = sender.scale
-                view.setNeedsDisplay()
-            }
-        }
-        else if sender.state == UIGestureRecognizerState.Ended {
-            if let dgmView = view as? DiagramView {
-//                _diagramPortal.alignWithViewPinPoint(dgmView.pinPoint!)
-                view.setNeedsDisplay()
-            }
-        }
-        
+        _diagramPortal.viewRect = Rect( cgrect: view.bounds )
     }
 
     var _diagramPortal : DiagramPortal!
@@ -110,4 +92,6 @@ class DiagramViewController : UIViewController {
     var _panGestureHandler : PanGestureHandler!
     var _zoomGestureHandler : ZoomGestureHandler!
     var _tapGestureHandler : TapGestureHandler!
+    
+    var _gestureEnabled : Bool = true
 }

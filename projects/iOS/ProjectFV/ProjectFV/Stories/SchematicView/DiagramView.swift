@@ -52,6 +52,8 @@ class DiagramView : UIView {
     
     override func drawRect(dirtyRect: CGRect) {
         
+        super.drawRect(dirtyRect)
+        
         if let  layer = diagramLayer,
                 portal = diagramPortal,
                 document = diagramDocument,
@@ -66,7 +68,9 @@ class DiagramView : UIView {
                                         viewPinPt: pinPt )
             
             dd.display(ctx)
+            CGContextStrokeRect(ctx, dirtyRect)
         }
+        
     }
     
     var _portal : DiagramPortal?

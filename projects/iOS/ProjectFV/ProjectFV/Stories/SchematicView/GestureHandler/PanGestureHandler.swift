@@ -10,45 +10,44 @@ import Foundation
 import UIKit
 import Shapes
 
-class PanGestureHandler : NSObject {
+class PanGestureHandler : BaseGestureHandler {
     
-    init( view: DiagramView, portal: DiagramPortal ) {
+    override init( view: DiagramView, portal: DiagramPortal ) {
         
-        _view = view
-        _portal = portal
         _startPt = CGPoint(x: 0,y: 0)
         _originalTranslation = Point(x: 0, y: 0)
 
-        super.init()
+        super.init(view: view, portal: portal)
 
         var panRecognizer = UIPanGestureRecognizer()
         panRecognizer.addTarget(self, action: "onPan:")
-        _view.addGestureRecognizer(panRecognizer)
+        self.view.addGestureRecognizer(panRecognizer)
     }
     
     func onPan( sender : UIPanGestureRecognizer ) {
     
+        if !enabled {
+            return
+        }
+    
         switch sender.state {
             case UIGestureRecognizerState.Began:
-                _startPt = sender.translationInView(_view)
-                _originalTranslation = _portal.translation
+                _startPt = sender.translationInView(self.view)
+                _originalTranslation = self.portal.translation
                 break
             case UIGestureRecognizerState.Changed:
-                let pt = sender.translationInView(_view)
+                let pt = sender.translationInView(self.view)
                 var transform = Point(pt: _originalTranslation)
-                transform.x += pt.x / _portal.scalingFactor
-                transform.y += pt.y / _portal.scalingFactor
-                _portal.translation = transform
-                _view.setNeedsDisplay();
+                transform.x += pt.x / self.portal.scalingFactor
+                transform.y += pt.y / self.portal.scalingFactor
+                self.portal.translation = transform
+                self.view.setNeedsDisplay();
                 break
             default:
                 break
         }
     }
     
-
-    var _view : DiagramView
-    var _portal : DiagramPortal
     
     var _startPt : CGPoint
     var _originalTranslation : Point

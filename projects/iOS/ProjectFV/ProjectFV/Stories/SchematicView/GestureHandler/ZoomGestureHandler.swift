@@ -10,48 +10,57 @@ import Foundation
 import UIKit
 import Shapes
 
-class ZoomGestureHandler : NSObject {
+class ZoomGestureHandler : BaseGestureHandler {
     
 
-    init( view: DiagramView, portal: DiagramPortal ) {
+    override init( view: DiagramView, portal: DiagramPortal ) {
         
-        _view = view
-        _portal = portal
         _originalTranslation = Point(x: 0, y: 0)
         _ptInView = Point(x: 0, y: 0)
+        _subDiagramHandler = SubDiagramHandler(view: view, portal: portal)
 
-        super.init()
+        super.init(view: view, portal: portal)
 
         var zoomRecognizer = UIPinchGestureRecognizer()
         zoomRecognizer.addTarget(self, action: "onZoom:")
-        _view.addGestureRecognizer(zoomRecognizer)
+        view.addGestureRecognizer(zoomRecognizer)
     }
     
     func onZoom( sender : UIPinchGestureRecognizer ) {
+    
+        if !enabled {
+            return
+        }
         
         switch sender.state {
             case UIGestureRecognizerState.Began:
-                sender.scale = CGFloat(_portal.zoom)
-                let pt = sender.locationInView(_view)
+                sender.scale = CGFloat(portal.zoom)
+                let pt = sender.locationInView(view)
                 let pinPt = PinPoint(x: pt.x, y: pt.y)
                 
                 _ptInView = Point(x: pt.x, y: pt.y)
-                _view.pinPoint = pinPt
+                view.pinPoint = pinPt
             
-                let diagPt = _portal.pointFromViewToPortal(pinPt)
-                _portal.pinPoint = PinPoint(x: diagPt.x, y: diagPt.y)
+                let diagPt = portal.pointFromViewToPortal(pinPt)
+                portal.pinPoint = PinPoint(x: diagPt.x, y: diagPt.y)
             
             case UIGestureRecognizerState.Changed:
-                _portal.zoom = sender.scale
-                _portal.alignWithViewPinPoint(_view.pinPoint!)
-                _view.setNeedsDisplay()
+                portal.zoom = sender.scale
+                portal.alignWithViewPinPoint(view.pinPoint!)
+//                _subDiagramHandler.checkForSubDiagramDisplay()
+                view.setNeedsDisplay()
+            
+            case UIGestureRecognizerState.Ended:
+                _subDiagramHandler.checkForSubDiagramDisplay()
+                view.setNeedsDisplay()
+            
             default:
                 break
         }
     }
 
-    var _view : DiagramView
-    var _portal : DiagramPortal
     var _originalTranslation : Point
     var _ptInView : Point
+    var _subDiagramHandler : SubDiagramHandler
 }
+
