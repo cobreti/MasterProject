@@ -23,6 +23,12 @@ class BaseGestureHandler : NSObject {
         }
     }
     
+    var delegate : GestureHandlerDelegate! {
+        get {
+            return _delegate
+        }
+    }
+    
     var enabled : Bool {
         get {
             return _enabled
@@ -32,12 +38,14 @@ class BaseGestureHandler : NSObject {
         }
     }
     
-    init( view: DiagramView, portal: DiagramPortal ) {
+    init( view: DiagramView, portal: DiagramPortal, delegate: GestureHandlerDelegate! ) {
         _view = view
         _portal = portal
+        _delegate = delegate
     }
     
     private var _view : DiagramView
     private var _portal : DiagramPortal
+    private var _delegate : GestureHandlerDelegate!
     private var _enabled : Bool = true
 }

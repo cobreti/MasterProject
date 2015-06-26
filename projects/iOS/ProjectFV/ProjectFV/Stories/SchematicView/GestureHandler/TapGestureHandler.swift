@@ -13,9 +13,9 @@ import DiagramElements
 
 class TapGestureHandler : BaseGestureHandler {
     
-    override init(view: DiagramView, portal: DiagramPortal) {
+    override init(view: DiagramView, portal: DiagramPortal, delegate: GestureHandlerDelegate!) {
         
-        super.init(view: view, portal: portal)
+        super.init(view: view, portal: portal, delegate: delegate)
         
         var tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.addTarget(self, action: "onTap:")

@@ -11,7 +11,7 @@ import DiagramElements
 import Shapes
 import UIKit
 
-class DiagramViewController : UIViewController {
+class DiagramViewController : UIViewController, GestureHandlerDelegate {
     
     var diagramPortal : DiagramPortal! {
         get {
@@ -59,9 +59,10 @@ class DiagramViewController : UIViewController {
             dgmView.diagramPortal = _diagramPortal
             dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
 
-            _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal)
-            _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal)
-            _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal)
+            _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
+            _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
+            _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
+            _subDiagramPortal = SubDiagramPortal(view: dgmView, portal: _diagramPortal)
             
             _panGestureHandler?.enabled = _gestureEnabled
             _zoomGestureHandler?.enabled = _gestureEnabled
@@ -83,7 +84,27 @@ class DiagramViewController : UIViewController {
     
     func updatePortalRect() {
         
-        _diagramPortal.viewRect = Rect( cgrect: view.bounds )
+        let frame = view.bounds
+        
+        if let dgmView = view as? DiagramView {
+            dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
+            _diagramPortal.viewRect = Rect( cgrect: frame )
+            _diagramPortal.alignWithViewPinPoint(dgmView.pinPoint!)
+            dgmView.setNeedsDisplay()
+        }
+    }
+    
+    func onGestureStarted() {
+    
+        _subDiagramPortal?.pickElm()
+    }
+    
+    func onGestureChanged() {
+        _subDiagramPortal?.updateSubDiagramArea()
+    }
+    
+    func onGestureEnded() {
+        _subDiagramPortal?.updateSubDiagramArea()
     }
 
     var _diagramPortal : DiagramPortal!
@@ -92,6 +113,7 @@ class DiagramViewController : UIViewController {
     var _panGestureHandler : PanGestureHandler!
     var _zoomGestureHandler : ZoomGestureHandler!
     var _tapGestureHandler : TapGestureHandler!
+    var _subDiagramPortal : SubDiagramPortal!
     
     var _gestureEnabled : Bool = true
 }

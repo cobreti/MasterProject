@@ -68,7 +68,6 @@ class DiagramView : UIView {
                                         viewPinPt: pinPt )
             
             dd.display(ctx)
-            CGContextStrokeRect(ctx, dirtyRect)
         }
         
     }

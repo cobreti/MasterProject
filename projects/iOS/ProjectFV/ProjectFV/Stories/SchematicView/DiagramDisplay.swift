@@ -40,7 +40,7 @@ class DiagramDisplay {
             }
         }
         
-        drawPinningPoints(ctx)
+//        drawPinningPoints(ctx)
 //        drawPortalBBox(ctx)
     }
                 
@@ -69,26 +69,13 @@ class DiagramDisplay {
             }
             
             if let  name = model.subDiagramName {
-//
+
                 var pt : Point = _viewPinPoint
-//
-                if (rc.width > 400 || rc.height > 400) && portalRect.contains(pt) {
-//
-//                    if let subDiagram = _document.layers.get(name) {
-//                        
-//                        let portal = DiagramPortal(rcArea: portalRect, diagramBox: Rect(x: 0, y: 0, width: subDiagram.box.size.width + subDiagram.box.pos.x, height: subDiagram.box.size.height + subDiagram.box.pos.y))
-//                        let dd = DiagramDisplay(
-//                            targetRect: rc,
-//                            layer: subDiagram,
-//                            document: _document,
-//                            portal: portal,
-//                            viewPinPt: PinPoint(x: portalRect.midX, y: portalRect.midY))
-//                        
-//                        dd.display(ctx)
-//                    }
-                }
-                else if let img = UIImage(named: "subdiagram.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) {
-                    drawElementIcon(rc, image: img)
+
+                if (rc.width < 400 && rc.height < 400) || !portalRect.contains(pt) {
+                    if let img = UIImage(named: "subdiagram.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) {
+                        drawElementIcon(rc, image: img)
+                    }
                 }
             }
             
