@@ -79,7 +79,7 @@ class XmlModelParser : XmlSubTreeParser {
                 value = attributeDict["value"] as? String {
                 
             _model?.filePath = value
-            debugPrintln("url found for \(pathName) = '\(value)'")
+            debugPrint("url found for \(pathName) = '\(value)'")
         }
         
         if let  diagramName = attributeDict["diagramName"] as? String,
@@ -89,7 +89,7 @@ class XmlModelParser : XmlSubTreeParser {
                 value = attributeDict["value"] as? String {
                 
             _model?.subDiagramName = diagramName
-            debugPrintln("sub diagram with name : \(diagramName)")
+            debugPrint("sub diagram with name : \(diagramName)")
         }
     }
     

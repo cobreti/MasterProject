@@ -16,7 +16,7 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
 
     func parse( url : NSURL ) {
 
-        var parser = NSXMLParser(contentsOfURL: url)
+        let parser = NSXMLParser(contentsOfURL: url)
 
         parser?.delegate = self
         parser?.parse()
@@ -41,7 +41,7 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
                 didStartElement elementName: String,
                 namespaceURI: String?,
                 qualifiedName qName: String?,
-                attributes attributeDict: [NSObject:AnyObject]) {
+                attributes attributeDict: [String: String]) {
 
         _xmlState = XmlParserState(elementName: elementName, namespaceURI: namespaceURI, qualifiedName: qName, attributeDict: attributeDict)
                     

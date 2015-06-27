@@ -36,17 +36,19 @@ class FileViewController : UIViewController {
 
         let bundle = NSBundle.mainBundle();
         
-        if let  url = bundle.URLForResource("index", withExtension: "html", subdirectory: "EmbeddedRes/CodeSite"),
-                filePath = _fileURL.absoluteString,
-                indexPath = url.absoluteString,
-                components = NSURLComponents(string: indexPath) {
+        if let  url = bundle.URLForResource("index", withExtension: "html", subdirectory: "EmbeddedRes/CodeSite") {
         
-            components.query = "file=\(filePath)"
+            let filePath = _fileURL.absoluteString
+            let indexPath = url.absoluteString
         
-            if let componentsURL = components.URL {
-                let request = NSURLRequest(URL: componentsURL)
+            if let components = NSURLComponents(string: indexPath)  {
+                components.query = "file=\(filePath)"
+            
+                if let componentsURL = components.URL {
+                    let request = NSURLRequest(URL: componentsURL)
 
-                _webView.loadRequest(request)
+                    _webView.loadRequest(request)
+                }
             }
             
             

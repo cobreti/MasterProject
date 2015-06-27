@@ -17,7 +17,7 @@ class TapGestureHandler : BaseGestureHandler {
         
         super.init(view: view, portal: portal, delegate: delegate)
         
-        var tapRecognizer = UITapGestureRecognizer()
+        let tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.addTarget(self, action: "onTap:")
         self.view.addGestureRecognizer(tapRecognizer)
     }

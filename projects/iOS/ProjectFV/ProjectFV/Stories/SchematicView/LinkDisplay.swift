@@ -10,6 +10,7 @@
 import Foundation
 import DiagramElements
 import Shapes
+import UIKit
 
 class LinkDisplay {
     
@@ -44,7 +45,7 @@ class LinkDisplay {
                 CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
             }
             
-            CGContextDrawPath(_ctx, kCGPathStroke)
+            CGContextDrawPath(_ctx, CGPathDrawingMode.Stroke)
             
             drawEndPoints()
         }

@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import UIKit
 import DiagramElements
+import UIKit
 
 class SubDiagramPortal {
     
@@ -22,7 +22,7 @@ class SubDiagramPortal {
         if let  layer = _view.diagramLayer,
                 pinPt = _view.pinPoint {
                 
-            for (id, prim) in layer.primitives {
+            for (_, prim) in layer.primitives {
                 
                 if let elm = prim as? Element {
                 

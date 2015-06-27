@@ -21,7 +21,7 @@ class DiagramSelectionController : UIViewController, UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let name = _dataSource.getDiagramAtIndex(indexPath.indexAtPosition(1))
-        debugPrintln("diagram selected :\(name)")
+        debugPrint("diagram selected :\(name)")
         
         Application.instance().stories.push( SchematicViewStory(diagramName: name) )
     }
