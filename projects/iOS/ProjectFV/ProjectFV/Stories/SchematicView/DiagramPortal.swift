@@ -72,6 +72,15 @@ class DiagramPortal {
         updateScaling()
     }
     
+    func reset() {
+        
+        _offset = Point(x: -_diagramBox.pos.x, y: -_diagramBox.pos.y)
+        _translation = Point(x: 0, y: 0)
+        _zoom = 1.0
+        
+        _pinPoint = PinPoint(x: _diagramBox.midX, y: _diagramBox.midY)
+    }
+    
     func alignWithViewPinPoint( viewPinPoint: PinPoint ) {
         
         let factor = _zoom * _scaling

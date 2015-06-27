@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160D0D571B3F33BA00BC3C1C /* recenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 160D0D561B3F33BA00BC3C1C /* recenter.png */; };
 		163EFBE51B121EAF004C56E7 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE41B121EAF004C56E7 /* Vector2D.swift */; };
 		163EFBE71B1220D6004C56E7 /* AxisSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE61B1220D6004C56E7 /* AxisSystem.swift */; };
 		163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE81B12321C004C56E7 /* LinkType.swift */; };
@@ -186,6 +187,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		160D0D561B3F33BA00BC3C1C /* recenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recenter.png; path = Resources/icons/recenter.png; sourceTree = "<group>"; };
 		163EFBE41B121EAF004C56E7 /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector2D.swift; path = ../../../../sources/Shapes/Vector2D.swift; sourceTree = "<group>"; };
 		163EFBE61B1220D6004C56E7 /* AxisSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisSystem.swift; path = ../../../../sources/Shapes/AxisSystem.swift; sourceTree = "<group>"; };
 		163EFBE81B12321C004C56E7 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
@@ -555,6 +557,7 @@
 				166405B01B38D609003F720A /* cross.png */,
 				166405B21B38D7D2003F720A /* circled-cross.png */,
 				166405B41B39AE77003F720A /* subdiagram.png */,
+				160D0D561B3F33BA00BC3C1C /* recenter.png */,
 			);
 			name = icons;
 			sourceTree = "<group>";
@@ -924,6 +927,7 @@
 				16A44FC81B248BF100ABDC4E /* back.png in Resources */,
 				16EEA0211B06B75100A872D4 /* DiagramView.xib in Resources */,
 				1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */,
+				160D0D571B3F33BA00BC3C1C /* recenter.png in Resources */,
 				166405B11B38D609003F720A /* cross.png in Resources */,
 				1673BE451AF550A700C8F9AE /* EmbeddedRes in Resources */,
 			);

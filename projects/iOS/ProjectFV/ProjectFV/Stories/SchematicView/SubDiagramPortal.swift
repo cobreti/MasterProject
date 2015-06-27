@@ -17,6 +17,17 @@ class SubDiagramPortal {
         _portal = portal
     }
     
+    func reset() {
+        
+        if let ctrller = _controller {
+            ctrller.view.removeFromSuperview()
+        }
+        
+        _element = nil
+        _subLayer = nil
+        _controller = nil
+    }
+    
     func pickElm() {
         
         if let  layer = _view.diagramLayer,

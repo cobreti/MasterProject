@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import DiagramElements
+import Shapes
 
 class SchematicViewController : UIViewController {
     
@@ -48,6 +49,11 @@ class SchematicViewController : UIViewController {
         if let handler = _backEventHandler {
             handler(sender: self, args: nil)
         }
+    }
+    
+    @IBAction func onRecenter(sender: AnyObject) {
+
+        _diagramController?.resetView()
     }
     
     var _diagramLayer : DiagramLayer!

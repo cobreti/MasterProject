@@ -40,6 +40,13 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         }
     }
     
+    func resetView() {
+        
+        _diagramPortal.reset()
+        _subDiagramPortal.reset()
+        updatePortalRect()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
