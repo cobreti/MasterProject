@@ -31,7 +31,7 @@ class SchematicViewStory : Story {
     }
     
     func onBack(sender: AnyObject, args: [String: AnyObject]!) {
-        debugPrint("onBack story handler")
+        debugPrintln("onBack story handler")
         ownerStoriesMgr?.pop(self)
     }
     

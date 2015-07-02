@@ -34,14 +34,14 @@ class FileViewStory : Story {
         
         if let fileURL = NSBundle.mainBundle().URLForResource(filenameParts[0], withExtension: filenameParts[1], subdirectory: filePath) {
             
-            debugPrint(fileURL)
+            debugPrintln(fileURL)
             _controller = FileViewController(fileURL: fileURL)
             _controller.backEventHandler = onBack
         }
     }
     
     func onBack(sender: AnyObject, args: [String: AnyObject]!) {
-        debugPrint("onBack story handler")
+        debugPrintln("onBack story handler")
         ownerStoriesMgr?.pop(self)
     }
 

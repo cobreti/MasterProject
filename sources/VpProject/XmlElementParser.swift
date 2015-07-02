@@ -63,7 +63,7 @@ class XmlElementParser {
             id = attrId
         }
                                         
-        debugPrint(">\(indent)\(elementName) - \(id)")
+        debugPrintln(">\(indent)\(elementName) - \(id)")
 
         g_xmlParserIndent++
     }

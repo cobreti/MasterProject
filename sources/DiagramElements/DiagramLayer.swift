@@ -10,7 +10,7 @@ import Foundation
 import Shapes
 
 
-public class DiagramLayer : CustomDebugStringConvertible {
+public class DiagramLayer : DebugPrintable {
 
     public var box : Rect! {
         get {

@@ -98,8 +98,8 @@ class DiagramPortal {
         let dx = _area.size.width - _margins.left - _margins.right - _scaling * _diagramBox.size.width
         let dy = _area.size.height - _margins.top - _margins.bottom - _scaling * _diagramBox.size.height
         
-        debugPrint("scalingX = \(scalingX), scalingY = \(scalingY)")
-        debugPrint("dx = \(dx)   dy = \(dy)")
+        debugPrintln("scalingX = \(scalingX), scalingY = \(scalingY)")
+        debugPrintln("dx = \(dx)   dy = \(dy)")
     }
     
     func rectFromDiagramToPortal( rc : Rect ) -> Rect {

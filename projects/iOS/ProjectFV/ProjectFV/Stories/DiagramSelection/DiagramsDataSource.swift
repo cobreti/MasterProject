@@ -27,7 +27,7 @@ class DiagramsDataSource : NSObject, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     
-        if let reusableCell = tableView.dequeueReusableCellWithIdentifier("DiagramSelection") {
+        if let reusableCell = tableView.dequeueReusableCellWithIdentifier("DiagramSelection") as? UITableViewCell {
         
             reusableCell.textLabel?.text = _diagramsList[indexPath.indexAtPosition(1)]
             return reusableCell

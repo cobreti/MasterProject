@@ -45,7 +45,7 @@ class LinkDisplay {
                 CGContextAddLineToPoint(_ctx, CGFloat(portalPt.x), CGFloat(portalPt.y))
             }
             
-            CGContextDrawPath(_ctx, CGPathDrawingMode.Stroke)
+            CGContextDrawPath(_ctx, kCGPathStroke)
             
             drawEndPoints()
         }

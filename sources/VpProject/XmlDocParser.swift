@@ -41,7 +41,7 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
                 didStartElement elementName: String,
                 namespaceURI: String?,
                 qualifiedName qName: String?,
-                attributes attributeDict: [String: String]) {
+                attributes attributeDict: [NSObject: AnyObject]) {
 
         _xmlState = XmlParserState(elementName: elementName, namespaceURI: namespaceURI, qualifiedName: qName, attributeDict: attributeDict)
                     

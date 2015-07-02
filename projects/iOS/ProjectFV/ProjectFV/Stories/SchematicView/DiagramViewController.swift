@@ -52,7 +52,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         
         let document = Application.instance().document
         
-        view.autoresizingMask = [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
+        view.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
         
         let frame = view.bounds
 
