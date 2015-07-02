@@ -40,6 +40,17 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         }
     }
     
+    init(parentController: SchematicViewController) {
+        
+        _parentController = parentController
+        
+        super.init(nibName: "DiagramView", bundle: nil)
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func resetView() {
         
         _diagramPortal.reset()
@@ -69,7 +80,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
             _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
             _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
             _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
-            _subDiagramPortal = SubDiagramPortal(view: dgmView, portal: _diagramPortal)
+            _subDiagramPortal = SubDiagramPortal(view: dgmView, portal: _diagramPortal, parentController: _parentController)
             
             _panGestureHandler?.enabled = _gestureEnabled
             _zoomGestureHandler?.enabled = _gestureEnabled
@@ -112,10 +123,17 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     
     func onGestureEnded() {
         _subDiagramPortal?.updateSubDiagramArea()
+        _subDiagramPortal?.onGestureEnded()
+        
+        let portalRect = _diagramPortal.rectFromDiagramToPortal(_diagramLayer.box)
+        if portalRect.size.width < 400 || portalRect.size.height < 400 {
+            _parentController.removeLastController()
+        }
     }
 
     var _diagramPortal : DiagramPortal!
     var _diagramLayer : DiagramLayer!
+    var _parentController : SchematicViewController
     
     var _panGestureHandler : PanGestureHandler!
     var _zoomGestureHandler : ZoomGestureHandler!

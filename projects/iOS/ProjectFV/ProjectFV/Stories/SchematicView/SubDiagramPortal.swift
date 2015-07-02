@@ -12,9 +12,10 @@ import UIKit
 
 class SubDiagramPortal {
     
-    init(view: DiagramView, portal: DiagramPortal) {
+    init(view: DiagramView, portal: DiagramPortal, parentController: SchematicViewController) {
         _view  = view
         _portal = portal
+        _parentController = parentController
     }
     
     func reset() {
@@ -72,7 +73,7 @@ class SubDiagramPortal {
             if (portalRect.size.width > 400 || portalRect.size.height > 400) {
                 
                 if _controller == nil {
-                    _controller = DiagramViewController(nibName: "DiagramView", bundle: nil)
+                    _controller = DiagramViewController(parentController: _parentController)
                     _controller.diagramLayer = _subLayer
                     _controller.view?.userInteractionEnabled = false
                     _view.addSubview(_controller.view)
@@ -95,10 +96,24 @@ class SubDiagramPortal {
         
     }
     
+    func onGestureEnded() {
+        
+        if let  elm = _element {
+            
+            let portalRect = _portal.rectFromDiagramToPortal(elm.box)
+            
+            if (portalRect.size.width > 800 || portalRect.size.height > 800) {
+                
+                _parentController.pushController(_controller)
+            }
+        }
+    }
+    
     
     var _element : Element!
     var _controller : DiagramViewController!
     var _subLayer : DiagramLayer!
+    var _parentController: SchematicViewController
     
     var _view : DiagramView
     var _portal : DiagramPortal
