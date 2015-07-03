@@ -20,8 +20,13 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flt-J9-SI4">
+                <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Twb-6L-G20">
+                    <rect key="frame" x="10" y="68" width="866" height="690"/>
+                    <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flt-J9-SI4">
                     <rect key="frame" x="10" y="70" width="864" height="688"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oi0-VJ-8ql">
                     <rect key="frame" x="10" y="20" width="1004" height="50"/>
@@ -49,6 +54,7 @@
                             </connections>
                         </button>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="E3k-6k-wit" firstAttribute="leading" secondItem="oi0-VJ-8ql" secondAttribute="leading" constant="20" id="Idl-aG-Lko"/>
                         <constraint firstAttribute="centerY" secondItem="E3k-6k-wit" secondAttribute="centerY" id="R7k-8W-Far"/>
@@ -67,12 +73,16 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="flt-J9-SI4" secondAttribute="trailing" constant="150" id="2AQ-TL-R6b"/>
+                <constraint firstAttribute="trailing" secondItem="Twb-6L-G20" secondAttribute="trailing" constant="148" id="Bw7-jY-anF"/>
                 <constraint firstItem="flt-J9-SI4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="C1U-Fc-6fn"/>
                 <constraint firstAttribute="bottom" secondItem="flt-J9-SI4" secondAttribute="bottom" constant="10" id="QBJ-7r-Ehb"/>
+                <constraint firstItem="Twb-6L-G20" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="68" id="Wdw-2Z-J5U"/>
                 <constraint firstItem="oi0-VJ-8ql" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Wlu-zH-lVV"/>
                 <constraint firstItem="flt-J9-SI4" firstAttribute="top" secondItem="oi0-VJ-8ql" secondAttribute="bottom" id="cBu-W3-o2U"/>
                 <constraint firstItem="oi0-VJ-8ql" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cMW-Fl-lcc"/>
                 <constraint firstAttribute="trailing" secondItem="oi0-VJ-8ql" secondAttribute="trailing" constant="10" id="ppc-jq-mLK"/>
+                <constraint firstItem="Twb-6L-G20" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="qwB-th-0xv"/>
+                <constraint firstAttribute="bottom" secondItem="Twb-6L-G20" secondAttribute="bottom" constant="10" id="uau-q9-a4r"/>
             </constraints>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
