@@ -117,6 +117,8 @@ class SchematicViewController : UIViewController {
                 _downArrowImageView.removeFromSuperview()
                 _leftArrowImageView.removeFromSuperview()
                 _rightArrowImageView.removeFromSuperview()
+                _tempParentController?.view.removeFromSuperview()
+                _tempParentController = nil
                 break
             case .WillShowParentDiagram:
                 onWillShowParentDiagram()
@@ -128,6 +130,10 @@ class SchematicViewController : UIViewController {
     }
     
     func onWillShowParentDiagram() {
+        
+        if _controllers.count < 2 {
+            return
+        }
         
         let rc = _diagramArea.bounds
         
@@ -142,6 +148,15 @@ class SchematicViewController : UIViewController {
         
         _rightArrowImageView.frame = CGRect(x: 0, y: rc.midY-10, width: 20, height: 20)
         _diagramArea.addSubview(_rightArrowImageView)
+        
+        _tempParentController = _controllers[_controllers.count-2]
+        _tempParentController.view.frame = _diagramArea.bounds
+        _tempParentController.resetView()
+        _tempParentController.view.alpha = 0.5
+        _tempParentController.view.userInteractionEnabled = false
+        _diagramArea.addSubview(_tempParentController.view)
+//        _diagramArea.sendSubviewToBack(_tempParentController.view)
+        
     }
     
     func onWillShowSubDiagram() {
@@ -176,6 +191,7 @@ class SchematicViewController : UIViewController {
     var _diagramLayer : DiagramLayer!
     var _diagramController : DiagramViewController!
     var _backEventHandler : EventHandler!
+    var _tempParentController : DiagramViewController!
 
     var _controllers : [DiagramViewController] = []
 

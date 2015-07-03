@@ -29,6 +29,11 @@ class SubDiagramPortal {
         if let ctrller = _controller {
             ctrller.view.removeFromSuperview()
         }
+
+        detach()
+    }
+    
+    func detach() {
         
         _element = nil
         _subLayer = nil

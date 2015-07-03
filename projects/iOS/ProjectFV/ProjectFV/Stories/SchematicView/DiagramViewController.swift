@@ -144,6 +144,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         
         if _subDiagramPortal?.enterSubDiagram() == true {
             _parentController.pushController(_subDiagramPortal.subDiagramController)
+            _subDiagramPortal.detach()
         }
         else if enterParentDiagram() {
             _parentController.removeLastController()
