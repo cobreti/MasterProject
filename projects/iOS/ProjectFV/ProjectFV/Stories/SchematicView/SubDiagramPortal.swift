@@ -12,6 +12,12 @@ import UIKit
 
 class SubDiagramPortal {
     
+    var subDiagramController : DiagramViewController! {
+        get {
+            return _controller
+        }
+    }
+    
     init(view: DiagramView, portal: DiagramPortal, parentController: SchematicViewController) {
         _view  = view
         _portal = portal
@@ -96,17 +102,16 @@ class SubDiagramPortal {
         
     }
     
-    func onGestureEnded() {
+    func enterSubDiagram() -> Bool {
         
         if let  elm = _element {
             
             let portalRect = _portal.rectFromDiagramToPortal(elm.box)
             
-            if (portalRect.size.width > 800 || portalRect.size.height > 800) {
-                
-                _parentController.pushController(_controller)
-            }
+            return (portalRect.size.width > 800 || portalRect.size.height > 800)
         }
+
+        return false
     }
     
     
@@ -118,3 +123,4 @@ class SubDiagramPortal {
     var _view : DiagramView
     var _portal : DiagramPortal
 }
+

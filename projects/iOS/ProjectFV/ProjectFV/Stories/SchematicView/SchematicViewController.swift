@@ -108,6 +108,59 @@ class SchematicViewController : UIViewController {
                 })
         }        
     }
+    
+    func onDiagramViewStateChanged( state: DiagramViewController.State ) {
+        
+        switch state {
+            case .Normal:
+                _upArrowImageView.removeFromSuperview()
+                _downArrowImageView.removeFromSuperview()
+                _leftArrowImageView.removeFromSuperview()
+                _rightArrowImageView.removeFromSuperview()
+                break
+            case .WillShowParentDiagram:
+                onWillShowParentDiagram()
+                break
+            case .WillShowSubDiagram:
+                onWillShowSubDiagram()
+                break
+        }
+    }
+    
+    func onWillShowParentDiagram() {
+        
+        let rc = _diagramArea.bounds
+        
+        _upArrowImageView.frame = CGRect(x: rc.midX-10, y: rc.size.height-20, width: 20, height: 20)
+        _diagramArea.addSubview(_upArrowImageView)
+        
+        _downArrowImageView.frame = CGRect(x: rc.midX-10, y: 0, width: 20, height: 20)
+        _diagramArea.addSubview(_downArrowImageView)
+        
+        _leftArrowImageView.frame = CGRect(x: rc.size.width-20, y: rc.midY-10, width: 20, height: 20)
+        _diagramArea.addSubview(_leftArrowImageView)
+        
+        _rightArrowImageView.frame = CGRect(x: 0, y: rc.midY-10, width: 20, height: 20)
+        _diagramArea.addSubview(_rightArrowImageView)
+    }
+    
+    func onWillShowSubDiagram() {
+        
+        let rc = _diagramArea.bounds
+        
+        _upArrowImageView.frame = CGRect(x: rc.midX-10, y: 0, width: 20, height: 20)
+        _diagramArea.addSubview(_upArrowImageView)
+        
+        _downArrowImageView.frame = CGRect(x: rc.midX-10, y: rc.size.height-20, width: 20, height: 20)
+        _diagramArea.addSubview(_downArrowImageView)
+        
+        _leftArrowImageView.frame = CGRect(x: 0, y: rc.midY-10, width: 20, height: 20)
+        _diagramArea.addSubview(_leftArrowImageView)
+        
+        _rightArrowImageView.frame = CGRect(x: rc.size.width-20, y: rc.midY-10, width: 20, height: 20)
+        _diagramArea.addSubview(_rightArrowImageView)
+    }
+    
 
     @IBAction func onBack(sender: AnyObject) {
         if let handler = _backEventHandler {
@@ -126,9 +179,14 @@ class SchematicViewController : UIViewController {
 
     var _controllers : [DiagramViewController] = []
 
+    @IBOutlet var _upArrowImageView: UIImageView!
+    @IBOutlet var _downArrowImageView: UIImageView!
+    @IBOutlet var _leftArrowImageView: UIImageView!
+    @IBOutlet var _rightArrowImageView: UIImageView!
     
     @IBOutlet weak var _controlsArea: UIView!
     @IBOutlet weak var _diagramArea: UIView!
+    
 }
 
 

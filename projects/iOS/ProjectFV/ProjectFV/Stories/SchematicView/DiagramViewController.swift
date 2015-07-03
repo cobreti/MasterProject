@@ -13,6 +13,12 @@ import UIKit
 
 class DiagramViewController : UIViewController, GestureHandlerDelegate {
     
+    enum State {
+        case Normal
+        case WillShowSubDiagram
+        case WillShowParentDiagram
+    }
+    
     var diagramPortal : DiagramPortal! {
         get {
             return _diagramPortal
@@ -119,15 +125,42 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     
     func onGestureChanged() {
         _subDiagramPortal?.updateSubDiagramArea()
+
+        if _subDiagramPortal?.enterSubDiagram() == true {
+            setState(.WillShowSubDiagram)
+        }
+        else if enterParentDiagram() {
+            setState(.WillShowParentDiagram)
+        }
+        else {
+            setState(.Normal)
+        }
     }
     
     func onGestureEnded() {
         _subDiagramPortal?.updateSubDiagramArea()
-        _subDiagramPortal?.onGestureEnded()
+        
+        setState(.Normal)
+        
+        if _subDiagramPortal?.enterSubDiagram() == true {
+            _parentController.pushController(_subDiagramPortal.subDiagramController)
+        }
+        else if enterParentDiagram() {
+            _parentController.removeLastController()
+        }
+    }
+    
+    func enterParentDiagram() -> Bool {
         
         let portalRect = _diagramPortal.rectFromDiagramToPortal(_diagramLayer.box)
-        if portalRect.size.width < 400 || portalRect.size.height < 400 {
-            _parentController.removeLastController()
+        return portalRect.size.width < 400 || portalRect.size.height < 400
+    }
+    
+    func setState( state: State ) {
+    
+        if _state != state {
+            _state = state
+            _parentController.onDiagramViewStateChanged(state)
         }
     }
 
@@ -139,6 +172,8 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     var _zoomGestureHandler : ZoomGestureHandler!
     var _tapGestureHandler : TapGestureHandler!
     var _subDiagramPortal : SubDiagramPortal!
+    
+    var _state : State = .Normal
     
     var _gestureEnabled : Bool = true
 }

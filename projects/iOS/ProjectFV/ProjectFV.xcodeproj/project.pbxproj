@@ -65,6 +65,10 @@
 		16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FC41B23EDE900ABDC4E /* SchematicView.xib */; };
 		16A44FC81B248BF100ABDC4E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FC71B248BF100ABDC4E /* back.png */; };
 		16A44FCE1B24DB6600ABDC4E /* LayerSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A44FCD1B24DB6600ABDC4E /* LayerSelection.swift */; };
+		16AE13F71B45F9D300F2FCFB /* DnArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F31B45F9D300F2FCFB /* DnArrow.png */; };
+		16AE13F81B45F9D300F2FCFB /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F41B45F9D300F2FCFB /* LeftArrow.png */; };
+		16AE13F91B45F9D300F2FCFB /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F51B45F9D300F2FCFB /* RightArrow.png */; };
+		16AE13FA1B45F9D300F2FCFB /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F61B45F9D300F2FCFB /* UpArrow.png */; };
 		16EE9FE11B06A72000A872D4 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE01B06A72000A872D4 /* Link.swift */; };
 		16EE9FE81B06A73B00A872D4 /* XmlConnectorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */; };
 		16EE9FE91B06A73B00A872D4 /* XmlDiagramParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */; };
@@ -250,6 +254,10 @@
 		16A44FC41B23EDE900ABDC4E /* SchematicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SchematicView.xib; path = Resources/SchematicView.xib; sourceTree = "<group>"; };
 		16A44FC71B248BF100ABDC4E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Resources/icons/back.png; sourceTree = "<group>"; };
 		16A44FCD1B24DB6600ABDC4E /* LayerSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerSelection.swift; path = ../../../../sources/DiagramElements/LayerSelection.swift; sourceTree = "<group>"; };
+		16AE13F31B45F9D300F2FCFB /* DnArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DnArrow.png; path = Resources/icons/DnArrow.png; sourceTree = "<group>"; };
+		16AE13F41B45F9D300F2FCFB /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LeftArrow.png; path = Resources/icons/LeftArrow.png; sourceTree = "<group>"; };
+		16AE13F51B45F9D300F2FCFB /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RightArrow.png; path = Resources/icons/RightArrow.png; sourceTree = "<group>"; };
+		16AE13F61B45F9D300F2FCFB /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UpArrow.png; path = Resources/icons/UpArrow.png; sourceTree = "<group>"; };
 		16EE9FE01B06A72000A872D4 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../sources/DiagramElements/Link.swift; sourceTree = "<group>"; };
 		16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorParser.swift; sourceTree = "<group>"; };
 		16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDiagramParser.swift; path = ../../../../sources/VpProject/parsers/XmlDiagramParser.swift; sourceTree = "<group>"; };
@@ -558,6 +566,10 @@
 				166405B21B38D7D2003F720A /* circled-cross.png */,
 				166405B41B39AE77003F720A /* subdiagram.png */,
 				160D0D561B3F33BA00BC3C1C /* recenter.png */,
+				16AE13F31B45F9D300F2FCFB /* DnArrow.png */,
+				16AE13F41B45F9D300F2FCFB /* LeftArrow.png */,
+				16AE13F51B45F9D300F2FCFB /* RightArrow.png */,
+				16AE13F61B45F9D300F2FCFB /* UpArrow.png */,
 			);
 			name = icons;
 			sourceTree = "<group>";
@@ -918,11 +930,15 @@
 			files = (
 				16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */,
 				166405AF1B387A62003F720A /* file.png in Resources */,
+				16AE13F71B45F9D300F2FCFB /* DnArrow.png in Resources */,
 				1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */,
 				16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */,
 				16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */,
+				16AE13F81B45F9D300F2FCFB /* LeftArrow.png in Resources */,
+				16AE13F91B45F9D300F2FCFB /* RightArrow.png in Resources */,
 				166405B51B39AE77003F720A /* subdiagram.png in Resources */,
 				166405B31B38D7D2003F720A /* circled-cross.png in Resources */,
+				16AE13FA1B45F9D300F2FCFB /* UpArrow.png in Resources */,
 				166405AB1B370D25003F720A /* FileView.xib in Resources */,
 				16A44FC81B248BF100ABDC4E /* back.png in Resources */,
 				16EEA0211B06B75100A872D4 /* DiagramView.xib in Resources */,
