@@ -60,6 +60,8 @@ class SchematicViewController : UIViewController {
             }, completion: {(Bool) -> Void in
                 controller.view.userInteractionEnabled = true
                 controller.updatePortalRect()
+                self._diagramController = controller
+                self._diagramLayer = self._diagramController.diagramLayer
             })
         
 //        controller.view.userInteractionEnabled = true
@@ -92,6 +94,7 @@ class SchematicViewController : UIViewController {
             newController.view.frame = newViewFrame
             newController.view.alpha = 0.0
             newController.resetView()
+            newController.view.userInteractionEnabled = true
             _diagramArea.addSubview(newController.view)
             currentController.view.alpha = 1.0
             
@@ -105,6 +108,8 @@ class SchematicViewController : UIViewController {
                 completion: {(Bool) -> Void in
                     currentController.view.removeFromSuperview()
                     newController.resetView()
+                    self._diagramController = newController
+                    self._diagramLayer = self._diagramController.diagramLayer
                 })
         }        
     }
@@ -126,6 +131,13 @@ class SchematicViewController : UIViewController {
             case .WillShowSubDiagram:
                 onWillShowSubDiagram()
                 break
+        }
+    }
+    
+    func onDiagramChanged() {
+        
+        if let ctrller = _tempParentController {
+            ctrller.adjustAroundChild(_diagramController)
         }
     }
     
@@ -151,7 +163,7 @@ class SchematicViewController : UIViewController {
         
         _tempParentController = _controllers[_controllers.count-2]
         _tempParentController.view.frame = _diagramArea.bounds
-        _tempParentController.resetView()
+        _tempParentController.adjustAroundChild(_diagramController)
         _tempParentController.view.alpha = 0.5
         _tempParentController.view.userInteractionEnabled = false
         _diagramArea.addSubview(_tempParentController.view)

@@ -106,11 +106,65 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         }
     }
     
+    func adjustAroundChild( childDiagramController: DiagramViewController ) {
+        
+        let childDiagramBox = childDiagramController._diagramPortal.boundingBox
+        
+        debugPrintln("adjusting around child")
+        
+        if let  childDiagram = childDiagramController.diagramLayer,
+                elm = getDiagramElementContainingChild(childDiagram),
+                box = elm.box,
+                dgmView = view as? DiagramView {
+
+            debugPrintln("-- adjusting around child")
+
+            _diagramPortal.pinPoint = PinPoint(x: box.midX, y: box.midY)
+            dgmView.pinPoint = PinPoint(x: childDiagramBox.midX, y: childDiagramBox.midY)
+            
+            let dx = childDiagramBox.size.width / box.size.width
+            let dy = childDiagramBox.size.height / box.size.height
+                        
+            _diagramPortal.zoom = max(dx, dy)
+
+            _diagramPortal.viewRect = Rect( cgrect: view.bounds )
+            _diagramPortal.updateScaling()
+            _diagramPortal.alignWithViewPinPoint(dgmView.pinPoint!)
+            dgmView.setNeedsDisplay()
+        }
+
+    }
+    
+    func getDiagramElementContainingChild( childDiagram : DiagramLayer ) -> Element! {
+        
+        let document = Application.instance().document
+
+        debugPrintln("looking for element containing \(childDiagram.name)")
+
+        for (id, p) in _diagramLayer.primitives {
+            if let  elm = p as? Element,
+                    modelId = elm.modelId,
+                    model = document.models.get(modelId),
+                    subDiagramName = model.subDiagramName {
+                
+                debugPrintln("- subDiagramName : \(subDiagramName)")
+                
+                if subDiagramName == childDiagram.name {
+                    return elm
+                }
+            }
+        }
+        
+        debugPrintln("--> no element found for child")
+
+        return nil
+    }
+    
     func updatePortalRect() {
         
         let frame = view.bounds
         
-        if let dgmView = view as? DiagramView {
+        if let  dgmView = view as? DiagramView {
             dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
             _diagramPortal.viewRect = Rect( cgrect: frame )
             _diagramPortal.alignWithViewPinPoint(dgmView.pinPoint!)
@@ -135,6 +189,8 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         else {
             setState(.Normal)
         }
+        
+        _parentController.onDiagramChanged()
     }
     
     func onGestureEnded() {
