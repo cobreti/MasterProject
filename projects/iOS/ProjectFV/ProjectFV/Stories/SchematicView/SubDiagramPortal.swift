@@ -36,16 +36,16 @@ class SubDiagramPortal {
     func detach() {
         
         _element = nil
-        _subLayer = nil
+        _subDiagram = nil
         _controller = nil
     }
     
     func pickElm() {
         
-        if let  layer = _view.diagramLayer,
+        if let  diagram = _view.diagram,
                 pinPt = _view.pinPoint {
                 
-            for (_, prim) in layer.primitives {
+            for (_, prim) in diagram.primitives {
                 
                 if let elm = prim as? Element {
                 
@@ -54,10 +54,10 @@ class SubDiagramPortal {
                     if portalRect.contains(pinPt) {
                         if let  model = _view.diagramDocument?.models.get(elm.modelId),
                                 name = model.subDiagramName,
-                                subLayer = _view.diagramDocument?.layers.get(name) {
+                                subDiagram = _view.diagramDocument?.diagrams.get(name) {
                                 
                             _element = elm
-                            _subLayer = subLayer
+                            _subDiagram = subDiagram
                             return
                         }
                     }
@@ -71,7 +71,7 @@ class SubDiagramPortal {
         }
         
         _element = nil
-        _subLayer = nil
+        _subDiagram = nil
         _controller = nil
     }
         
@@ -85,7 +85,7 @@ class SubDiagramPortal {
                 
                 if _controller == nil {
                     _controller = DiagramViewController(parentController: _parentController)
-                    _controller.diagramLayer = _subLayer
+                    _controller.diagram = _subDiagram
                     _controller.view?.userInteractionEnabled = false
                     _view.addSubview(_controller.view)
                 }
@@ -122,7 +122,7 @@ class SubDiagramPortal {
     
     var _element : Element!
     var _controller : DiagramViewController!
-    var _subLayer : DiagramLayer!
+    var _subDiagram : Diagram!
     var _parentController: SchematicViewController
     
     var _view : DiagramView

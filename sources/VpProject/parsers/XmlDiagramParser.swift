@@ -32,9 +32,9 @@ class XmlDiagramParser : XmlSubTreeParser {
     override func onLocalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
         switch elementName {
             case "Shape":
-                pushElementParser(XmlShapeParser(name: "Shape", diagramLayer: _diagram, delegate: self))
+                pushElementParser(XmlShapeParser(name: "Shape", diagram: _diagram, delegate: self))
             case "Connector":
-                pushElementParser(XmlConnectorParser(name: "Connector", diagramLayer: _diagram, delegate: self))
+                pushElementParser(XmlConnectorParser(name: "Connector", diagram: _diagram, delegate: self))
             default:
                 break
         }
@@ -46,8 +46,8 @@ class XmlDiagramParser : XmlSubTreeParser {
 
         if let name = attributeDict["name"] as? String {
 //            debugPrintln("Diagram node of name : \(name)")
-            _diagram = DiagramLayer(name: name)
-            _document.layers.add(_diagram)
+            _diagram = Diagram(name: name)
+            _document.diagrams.add(_diagram)
         }
     }
     
@@ -56,6 +56,6 @@ class XmlDiagramParser : XmlSubTreeParser {
     }
     
     
-    var _diagram : DiagramLayer!
+    var _diagram : Diagram!
     var _document : DiagramElements.Document
 }

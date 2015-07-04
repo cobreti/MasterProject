@@ -14,13 +14,13 @@ import Shapes
 class DiagramDisplay {
     
     init(   targetRect : CGRect,
-            layer : DiagramLayer,
+            diagram : Diagram,
             document : Document,
             portal : DiagramPortal,
             viewPinPt : PinPoint ) {
             
         _targetRect = targetRect
-        _layer = layer
+        _diagram = diagram
         _document = document
         _portal = portal
         _viewPinPoint = viewPinPt
@@ -28,7 +28,7 @@ class DiagramDisplay {
     
     func display(ctx : CGContext) {
         
-        for (id, prim) in _layer.primitives {
+        for (id, prim) in _diagram.primitives {
                         
             if let elm = prim as? Element {
                 displayElement(ctx, elm: elm)
@@ -96,7 +96,7 @@ class DiagramDisplay {
                 ])
         }
         
-        if _layer.selection.isSelected(elm) {
+        if _diagram.selection.isSelected(elm) {
             
             rc = CGRect(
                 x: portalRect.pos.x,
@@ -165,7 +165,7 @@ class DiagramDisplay {
     
     
     var _targetRect : CGRect
-    var _layer : DiagramLayer
+    var _diagram : Diagram
     var _document : Document
     var _portal : DiagramPortal
     var _viewPinPoint : PinPoint

@@ -12,9 +12,9 @@ import Shapes
 
 class XmlConnectorParser : XmlSubTreeParser {
     
-    init( name : String, diagramLayer : DiagramLayer, delegate : XmlElementParserDelegate! = nil) {
+    init( name : String, diagram : Diagram, delegate : XmlElementParserDelegate! = nil) {
         
-        _diagramLayer = diagramLayer
+        _diagram = diagram
         
         super.init(name: name, delegate: delegate)
         
@@ -67,7 +67,7 @@ class XmlConnectorParser : XmlSubTreeParser {
                     lnkType = t
                 }
 
-                _lnk = DiagramElements.Link(ownerDiagram: _diagramLayer, type: lnkType)
+                _lnk = DiagramElements.Link(ownerDiagram: _diagram, type: lnkType)
                 
                 _lnk.box = Rect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(width), height: CGFloat(height))
                 _lnk.name = id
@@ -76,10 +76,10 @@ class XmlConnectorParser : XmlSubTreeParser {
                 _lnk.from = LinkEndPoint(id: from)
                 _lnk.modelId = modelId
                 
-                _diagramLayer.add(_lnk)
+                _diagram.add(_lnk)
         }
     }
     
-    var _diagramLayer : DiagramLayer
+    var _diagram : Diagram
     var _lnk : DiagramElements.Link!
 }

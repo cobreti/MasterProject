@@ -7,7 +7,7 @@ import Foundation
 
 public class Document {
 
-    public var layers : DiagramLayers {
+    public var diagrams : Diagrams {
         get {
             return _layers
         }
@@ -33,6 +33,6 @@ public class Document {
     }
 
     var _filesPathRoot : String!
-    var _layers : DiagramLayers = DiagramLayers()
+    var _layers : Diagrams = Diagrams()
     var _models : ModelsTable = ModelsTable()
 }

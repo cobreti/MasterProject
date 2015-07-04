@@ -23,12 +23,12 @@ class DiagramView : UIView {
         }
     }
     
-    var diagramLayer : DiagramLayer? {
+    var diagram : Diagram? {
         get {
-            return _layer
+            return _diagram
         }
         set (value) {
-            _layer = value
+            _diagram = value
         }
     }
     
@@ -54,7 +54,7 @@ class DiagramView : UIView {
         
         super.drawRect(dirtyRect)
         
-        if let  layer = diagramLayer,
+        if let  diag = diagram,
                 portal = diagramPortal,
                 document = diagramDocument,
                 pinPt = pinPoint {
@@ -62,7 +62,7 @@ class DiagramView : UIView {
             var ctx : CGContext = UIGraphicsGetCurrentContext()
             
             let dd = DiagramDisplay(    targetRect: bounds,
-                                        layer: layer,
+                                        diagram: diag,
                                         document: document,
                                         portal: portal,
                                         viewPinPt: pinPt )
@@ -73,7 +73,7 @@ class DiagramView : UIView {
     }
     
     var _portal : DiagramPortal?
-    var _layer : DiagramLayer?
+    var _diagram : Diagram?
     var _document : Document?
     var _pinPoint : PinPoint?
 }

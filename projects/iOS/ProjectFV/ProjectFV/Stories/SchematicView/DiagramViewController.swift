@@ -25,12 +25,12 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         }
     }
     
-    var diagramLayer : DiagramLayer! {
+    var diagram : Diagram! {
         get {
-            return _diagramLayer
+            return _diagram
         }
         set (value) {
-            _diagramLayer = value
+            _diagram = value
         }
     }
     
@@ -75,10 +75,10 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
 
         _diagramPortal = DiagramPortal(
             rcArea: Rect( x: frame.origin.x, y: frame.origin.y, width: frame.size.width, height: frame.size.height ),
-            diagramBox: _diagramLayer.box )
+            diagramBox: _diagram.box )
         
         if let dgmView = view as? DiagramView {
-            dgmView.diagramLayer = _diagramLayer
+            dgmView.diagram = _diagram
             dgmView.diagramDocument = document
             dgmView.diagramPortal = _diagramPortal
             dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
@@ -112,7 +112,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         
         debugPrintln("adjusting around child")
         
-        if let  childDiagram = childDiagramController.diagramLayer,
+        if let  childDiagram = childDiagramController.diagram,
                 elm = getDiagramElementContainingChild(childDiagram),
                 box = elm.box,
                 dgmView = view as? DiagramView {
@@ -135,13 +135,13 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
 
     }
     
-    func getDiagramElementContainingChild( childDiagram : DiagramLayer ) -> Element! {
+    func getDiagramElementContainingChild( childDiagram : Diagram ) -> Element! {
         
         let document = Application.instance().document
 
         debugPrintln("looking for element containing \(childDiagram.name)")
 
-        for (id, p) in _diagramLayer.primitives {
+        for (id, p) in _diagram.primitives {
             if let  elm = p as? Element,
                     modelId = elm.modelId,
                     model = document.models.get(modelId),
@@ -209,7 +209,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     
     func enterParentDiagram() -> Bool {
         
-        let portalRect = _diagramPortal.rectFromDiagramToPortal(_diagramLayer.box)
+        let portalRect = _diagramPortal.rectFromDiagramToPortal(_diagram.box)
         return portalRect.size.width < 400 || portalRect.size.height < 400
     }
     
@@ -222,7 +222,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     }
 
     var _diagramPortal : DiagramPortal!
-    var _diagramLayer : DiagramLayer!
+    var _diagram : Diagram!
     var _parentController : SchematicViewController
     
     var _panGestureHandler : PanGestureHandler!

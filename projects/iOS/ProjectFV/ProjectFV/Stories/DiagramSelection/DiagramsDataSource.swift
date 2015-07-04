@@ -14,7 +14,7 @@ class DiagramsDataSource : NSObject, UITableViewDataSource {
     override init() {
         super.init()
         
-        _diagramsList = Application.instance().document.layers.list()
+        _diagramsList = Application.instance().document.diagrams.list()
     }
     
     func getDiagramAtIndex(idx : Int) -> String {

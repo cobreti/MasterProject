@@ -30,15 +30,15 @@ class TapGestureHandler : BaseGestureHandler {
         
         switch sender.state {
             case UIGestureRecognizerState.Ended:
-                if let layer = view.diagramLayer {
+                if let diagram = view.diagram {
                     let ptInView = sender.locationInView(view)
                     
                     let diagPt = portal.pointFromViewToPortal(Point(x: ptInView.x, y: ptInView.y))
 
-                    let primitives = layer.primitivesFromPt(diagPt)
+                    let primitives = diagram.primitivesFromPt(diagPt)
                     
                     if primitives.isEmpty {
-                        layer.selection.clear()
+                        diagram.selection.clear()
                     }
                     else {
                         for item in primitives {

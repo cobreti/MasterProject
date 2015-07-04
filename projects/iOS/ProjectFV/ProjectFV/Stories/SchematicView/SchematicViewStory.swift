@@ -26,7 +26,7 @@ class SchematicViewStory : Story {
         super.init()
         
         let document = Application.instance().document
-        _controller.diagramLayer = document.layers.get(_diagramName)
+        _controller.diagram = document.diagrams.get(_diagramName)
         _controller._backEventHandler = onBack
     }
     

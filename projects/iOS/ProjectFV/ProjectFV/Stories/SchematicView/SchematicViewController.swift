@@ -13,12 +13,12 @@ import Shapes
 
 class SchematicViewController : UIViewController {
     
-    var diagramLayer : DiagramLayer! {
+    var diagram : Diagram! {
         get {
-            return _diagramLayer
+            return _diagram
         }
         set (value) {
-            _diagramLayer = value
+            _diagram = value
         }
     }
     
@@ -39,7 +39,7 @@ class SchematicViewController : UIViewController {
     override func viewDidAppear(animated: Bool) {
         
         _diagramController = DiagramViewController(parentController: self)
-        _diagramController.diagramLayer = diagramLayer
+        _diagramController.diagram = diagram
 
         pushController(_diagramController)
     }
@@ -61,7 +61,7 @@ class SchematicViewController : UIViewController {
                 controller.view.userInteractionEnabled = true
                 controller.updatePortalRect()
                 self._diagramController = controller
-                self._diagramLayer = self._diagramController.diagramLayer
+                self._diagram = self._diagramController.diagram
             })
         
 //        controller.view.userInteractionEnabled = true
@@ -109,7 +109,7 @@ class SchematicViewController : UIViewController {
                     currentController.view.removeFromSuperview()
                     newController.resetView()
                     self._diagramController = newController
-                    self._diagramLayer = self._diagramController.diagramLayer
+                    self._diagram = self._diagramController.diagram
                 })
         }        
     }
@@ -167,7 +167,6 @@ class SchematicViewController : UIViewController {
         _tempParentController.view.alpha = 0.5
         _tempParentController.view.userInteractionEnabled = false
         _diagramArea.addSubview(_tempParentController.view)
-//        _diagramArea.sendSubviewToBack(_tempParentController.view)
         
     }
     
@@ -200,7 +199,7 @@ class SchematicViewController : UIViewController {
         _diagramController?.resetView()
     }
     
-    var _diagramLayer : DiagramLayer!
+    var _diagram : Diagram!
     var _diagramController : DiagramViewController!
     var _backEventHandler : EventHandler!
     var _tempParentController : DiagramViewController!

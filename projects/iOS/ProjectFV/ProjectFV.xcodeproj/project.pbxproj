@@ -46,8 +46,8 @@
 		1673BE2E1AF5504800C8F9AE /* DiagramElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE2D1AF5504800C8F9AE /* DiagramElementsTests.swift */; };
 		1673BE311AF5504800C8F9AE /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1673BE1A1AF5504800C8F9AE /* DiagramElements.framework */; };
 		1673BE321AF5504800C8F9AE /* DiagramElements.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1673BE1A1AF5504800C8F9AE /* DiagramElements.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1673BE3F1AF5506600C8F9AE /* DiagramLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE3A1AF5506600C8F9AE /* DiagramLayer.swift */; };
-		1673BE401AF5506600C8F9AE /* DiagramLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE3B1AF5506600C8F9AE /* DiagramLayers.swift */; };
+		1673BE3F1AF5506600C8F9AE /* Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE3A1AF5506600C8F9AE /* Diagram.swift */; };
+		1673BE401AF5506600C8F9AE /* Diagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE3B1AF5506600C8F9AE /* Diagrams.swift */; };
 		1673BE411AF5506600C8F9AE /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE3C1AF5506600C8F9AE /* Document.swift */; };
 		1673BE421AF5506600C8F9AE /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE3D1AF5506600C8F9AE /* Element.swift */; };
 		1673BE431AF5506600C8F9AE /* Primitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE3E1AF5506600C8F9AE /* Primitive.swift */; };
@@ -69,6 +69,8 @@
 		16AE13F81B45F9D300F2FCFB /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F41B45F9D300F2FCFB /* LeftArrow.png */; };
 		16AE13F91B45F9D300F2FCFB /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F51B45F9D300F2FCFB /* RightArrow.png */; };
 		16AE13FA1B45F9D300F2FCFB /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F61B45F9D300F2FCFB /* UpArrow.png */; };
+		16E1C5B91B48783C00B909F3 /* DiagramViewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1C5B81B48783C00B909F3 /* DiagramViewsManager.swift */; };
+		16E1C5BB1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1C5BA1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift */; };
 		16EE9FE11B06A72000A872D4 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE01B06A72000A872D4 /* Link.swift */; };
 		16EE9FE81B06A73B00A872D4 /* XmlConnectorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */; };
 		16EE9FE91B06A73B00A872D4 /* XmlDiagramParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */; };
@@ -235,8 +237,8 @@
 		1673BE241AF5504800C8F9AE /* DiagramElementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiagramElementsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BE2C1AF5504800C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BE2D1AF5504800C8F9AE /* DiagramElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramElementsTests.swift; sourceTree = "<group>"; };
-		1673BE3A1AF5506600C8F9AE /* DiagramLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramLayer.swift; path = ../../../../sources/DiagramElements/DiagramLayer.swift; sourceTree = "<group>"; };
-		1673BE3B1AF5506600C8F9AE /* DiagramLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramLayers.swift; path = ../../../../sources/DiagramElements/DiagramLayers.swift; sourceTree = "<group>"; };
+		1673BE3A1AF5506600C8F9AE /* Diagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Diagram.swift; path = ../../../../sources/DiagramElements/Diagram.swift; sourceTree = "<group>"; };
+		1673BE3B1AF5506600C8F9AE /* Diagrams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Diagrams.swift; path = ../../../../sources/DiagramElements/Diagrams.swift; sourceTree = "<group>"; };
 		1673BE3C1AF5506600C8F9AE /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Document.swift; path = ../../../../sources/DiagramElements/Document.swift; sourceTree = "<group>"; };
 		1673BE3D1AF5506600C8F9AE /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = ../../../../sources/DiagramElements/Element.swift; sourceTree = "<group>"; };
 		1673BE3E1AF5506600C8F9AE /* Primitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Primitive.swift; path = ../../../../sources/DiagramElements/Primitive.swift; sourceTree = "<group>"; };
@@ -258,6 +260,8 @@
 		16AE13F41B45F9D300F2FCFB /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LeftArrow.png; path = Resources/icons/LeftArrow.png; sourceTree = "<group>"; };
 		16AE13F51B45F9D300F2FCFB /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RightArrow.png; path = Resources/icons/RightArrow.png; sourceTree = "<group>"; };
 		16AE13F61B45F9D300F2FCFB /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UpArrow.png; path = Resources/icons/UpArrow.png; sourceTree = "<group>"; };
+		16E1C5B81B48783C00B909F3 /* DiagramViewsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewsManager.swift; path = Stories/SchematicView/DiagramViewsManager.swift; sourceTree = "<group>"; };
+		16E1C5BA1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewsManagerDelegate.swift; path = Stories/SchematicView/DiagramViewsManagerDelegate.swift; sourceTree = "<group>"; };
 		16EE9FE01B06A72000A872D4 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../sources/DiagramElements/Link.swift; sourceTree = "<group>"; };
 		16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorParser.swift; sourceTree = "<group>"; };
 		16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDiagramParser.swift; path = ../../../../sources/VpProject/parsers/XmlDiagramParser.swift; sourceTree = "<group>"; };
@@ -463,8 +467,8 @@
 		1673BE1B1AF5504800C8F9AE /* DiagramElements */ = {
 			isa = PBXGroup;
 			children = (
-				1673BE3A1AF5506600C8F9AE /* DiagramLayer.swift */,
-				1673BE3B1AF5506600C8F9AE /* DiagramLayers.swift */,
+				1673BE3A1AF5506600C8F9AE /* Diagram.swift */,
+				1673BE3B1AF5506600C8F9AE /* Diagrams.swift */,
 				1673BE3C1AF5506600C8F9AE /* Document.swift */,
 				1673BE3D1AF5506600C8F9AE /* Element.swift */,
 				1673BE3E1AF5506600C8F9AE /* Primitive.swift */,
@@ -594,6 +598,8 @@
 				1664059C1B370857003F720A /* SchematicViewController.swift */,
 				1664059D1B370857003F720A /* SchematicViewStory.swift */,
 				166405BA1B3CDA8C003F720A /* SubDiagramPortal.swift */,
+				16E1C5B81B48783C00B909F3 /* DiagramViewsManager.swift */,
+				16E1C5BA1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift */,
 			);
 			name = SchematicView;
 			sourceTree = "<group>";
@@ -1015,6 +1021,7 @@
 				166405A21B370857003F720A /* LinkDisplay.swift in Sources */,
 				166405A91B370BA7003F720A /* FileViewController.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
+				16E1C5B91B48783C00B909F3 /* DiagramViewsManager.swift in Sources */,
 				1664058D1B370838003F720A /* DiagramsDataSource.swift in Sources */,
 				1664058F1B370838003F720A /* DiagramSelectionStory.swift in Sources */,
 				1642F16F1B1D398600AA600D /* Story.swift in Sources */,
@@ -1026,6 +1033,7 @@
 				166405A71B370A2A003F720A /* FileViewStory.swift in Sources */,
 				166405931B370847003F720A /* PanGestureHandler.swift in Sources */,
 				166405A41B370857003F720A /* SchematicViewController.swift in Sources */,
+				16E1C5BB1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift in Sources */,
 				166405A01B370857003F720A /* DiagramView.swift in Sources */,
 				166405B71B3B0A4A003F720A /* BaseGestureHandler.swift in Sources */,
 			);
@@ -1047,9 +1055,9 @@
 				16FB69D81B0CE90300322E1F /* Model.swift in Sources */,
 				16A44FCE1B24DB6600ABDC4E /* LayerSelection.swift in Sources */,
 				16FB69E41B0D44EF00322E1F /* LinkEndPoint.swift in Sources */,
-				1673BE3F1AF5506600C8F9AE /* DiagramLayer.swift in Sources */,
+				1673BE3F1AF5506600C8F9AE /* Diagram.swift in Sources */,
 				163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */,
-				1673BE401AF5506600C8F9AE /* DiagramLayers.swift in Sources */,
+				1673BE401AF5506600C8F9AE /* Diagrams.swift in Sources */,
 				1673BE421AF5506600C8F9AE /* Element.swift in Sources */,
 				16FB69E61B0D452E00322E1F /* LinkEndPointType.swift in Sources */,
 				16EE9FE11B06A72000A872D4 /* Link.swift in Sources */,

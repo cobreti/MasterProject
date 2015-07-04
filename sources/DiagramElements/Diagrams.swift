@@ -9,14 +9,14 @@
 import Foundation
 
 
-public class DiagramLayers {
+public class Diagrams {
 
     
-    public func add( layer : DiagramLayer ) {
+    public func add( layer : Diagram ) {
         _layers[layer.name] = layer
     }
     
-    public func get( name : String ) -> DiagramLayer! {
+    public func get( name : String ) -> Diagram! {
         return _layers[name]
     }
     
@@ -31,5 +31,5 @@ public class DiagramLayers {
         return list
     }
     
-    var _layers : [String : DiagramLayer] = [:]
+    var _layers : [String : Diagram] = [:]
 }

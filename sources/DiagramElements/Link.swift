@@ -42,7 +42,7 @@ public class Link : Primitive {
         }
     }
     
-    public init( ownerDiagram : DiagramLayer, type : LinkType ) {
+    public init( ownerDiagram : Diagram, type : LinkType ) {
 
         _type = type
 

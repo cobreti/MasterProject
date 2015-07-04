@@ -12,9 +12,9 @@ import Shapes
 
 class XmlShapeParser : XmlSubTreeParser {
 
-    init( name : String, diagramLayer : DiagramLayer, delegate : XmlElementParserDelegate! = nil) {
+    init( name : String, diagram : Diagram, delegate : XmlElementParserDelegate! = nil) {
         
-        _diagramLayer = diagramLayer
+        _diagram = diagram
 
         super.init(name: name, delegate: delegate)
         
@@ -55,16 +55,16 @@ class XmlShapeParser : XmlSubTreeParser {
                 height = numberFormatter.numberFromString(heightStr)?.floatValue,
                 modelId = attributeDict["model"] as? String {
         
-            var elm = DiagramElements.Element(ownerDiagram: _diagramLayer)
+            var elm = DiagramElements.Element(ownerDiagram: _diagram)
             
             elm.box = Rect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(width), height: CGFloat(height))
             elm.name = name
             elm.id = id
             elm.modelId = modelId
             
-            _diagramLayer.add(elm)
+            _diagram.add(elm)
         }
     }
 
-    var _diagramLayer : DiagramLayer
+    var _diagram : Diagram
 }

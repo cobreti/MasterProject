@@ -50,13 +50,13 @@ public class Primitive {
         }
     }
     
-    public var ownerDiagram : DiagramLayer! {
+    public var ownerDiagram : Diagram! {
         get {
             return _diagram
         }
     }
     
-    public init( ownerDiagram : DiagramLayer ) {
+    public init( ownerDiagram : Diagram ) {
 
         _diagram = ownerDiagram
         _uuid = NSUUID()
@@ -72,6 +72,6 @@ public class Primitive {
     var _modelId : String!
     var _uuid : NSUUID
     
-    weak var _diagram : DiagramLayer!
+    weak var _diagram : Diagram!
 }
 
