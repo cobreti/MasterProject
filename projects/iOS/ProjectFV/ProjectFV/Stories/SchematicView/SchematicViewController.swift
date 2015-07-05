@@ -13,15 +13,6 @@ import Shapes
 
 class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     
-//    var diagram : Diagram! {
-//        get {
-//            return _diagram
-//        }
-//        set (value) {
-//            _diagram = value
-//        }
-//    }
-    
     var diagramViewsManager: DiagramViewsManager! {
         get {
             return _diagramViewsManager
@@ -57,16 +48,12 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         super.viewDidLoad()
         
         _diagramViewsManager = DiagramViewsManager(schematicViewController: self, delegate: self)
-        
+        _diagramsHistoryController._diagramViewsManager = _diagramViewsManager
     }
     
     override func viewDidAppear(animated: Bool) {
 
         _diagramViewsManager.activate( DiagramViewController(parentController: self, diagram: _diagram) )
-//        _diagramController = DiagramViewController(parentController: self)
-//        _diagramController.diagram = diagram
-//
-//        pushController(_diagramController)
     }
 
     func activate(controller: DiagramViewController, completionHandler: (() -> Void)! ) {
@@ -82,30 +69,6 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                 completionHandler?()
         })
     }
-
-//    func pushController(controller : DiagramViewController) {
-    
-//        if let oldController = _controllers.last {
-//            oldController.view.removeFromSuperview()
-//        }
-//        
-//        _controllers.append(controller)
-//        
-//        _diagramArea.addSubview(controller.view)
-//        
-//        UIView.animateWithDuration(
-//            NSTimeInterval(0.5), animations: {() -> Void in
-//                controller.view.frame = self._diagramArea.bounds
-//            }, completion: {(Bool) -> Void in
-//                controller.view.userInteractionEnabled = true
-//                controller.updatePortalRect()
-//                self._diagramController = controller
-//                self._diagram = self._diagramController.diagram
-//            })
-        
-//        controller.view.userInteractionEnabled = true
-//        controller.updatePortalRect()
-//    }
     
     func deactivate( controller: DiagramViewController, newController: DiagramViewController ) {
      
@@ -123,7 +86,6 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             newController.resetView()
             newController.view.userInteractionEnabled = true
             newController.activateInView(_diagramArea)
-//            _diagramArea.addSubview(newController.view)
             controller.view.alpha = 1.0
             
             UIView.animateWithDuration(
@@ -134,60 +96,11 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                     newController.view.alpha = 1.0
                 },
                 completion: {(Bool) -> Void in
-//                    controller.view.removeFromSuperview()
                     controller.deactivate()
                     newController.resetView()
-//                    self._diagramController = newController
-//                    self._diagram = self._diagramController.diagram
             })
         }
     }
-    
-//    func removeLastController() {
-//        
-//        if _controllers.count < 2 {
-//            return
-//        }
-//        
-//        let currentController = _controllers.last!
-//        
-////        currentController.view.removeFromSuperview()
-//        _controllers.removeLast()
-//        
-//        let newController = _controllers.last!
-//        
-//        if let dgmView = currentController.view as? DiagramView {
-//            
-//            let pinPt = dgmView.pinPoint!
-//            let x = pinPt.x + dgmView.frame.origin.x
-//            let y = pinPt.y + dgmView.frame.origin.y
-//            
-//            let dx = (dgmView.frame.size.width - 10) / 2
-//            let dy = (dgmView.frame.size.height - 10) / 2
-//            
-//            let newViewFrame = CGRect(x: -dx, y: -dy, width: _diagramArea.bounds.width + dx*2, height: _diagramArea.bounds.height + dy*2)
-//            newController.view.frame = newViewFrame
-//            newController.view.alpha = 0.0
-//            newController.resetView()
-//            newController.view.userInteractionEnabled = true
-//            _diagramArea.addSubview(newController.view)
-//            currentController.view.alpha = 1.0
-//            
-//            UIView.animateWithDuration(
-//                NSTimeInterval(0.5),
-//                animations: { () -> Void in
-//                    currentController.view.alpha = 0.0
-//                    newController.view.frame = self._diagramArea.bounds
-//                    newController.view.alpha = 1.0
-//                },
-//                completion: {(Bool) -> Void in
-//                    currentController.view.removeFromSuperview()
-//                    newController.resetView()
-//                    self._diagramController = newController
-//                    self._diagram = self._diagramController.diagram
-//                })
-//        }        
-//    }
     
     func onDiagramViewStateChanged( state: DiagramViewController.State ) {
         
@@ -273,21 +186,20 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         if let ctrller = _diagramViewsManager.currentController {
             ctrller.resetView()
         }
-//        _diagramController?.resetView()
     }
     
     func onDiagramViewActivated(    oldDiagramView: DiagramViewController!,
                                     newDiagramView: DiagramViewController ) {
-                                        
+     
+        if let ctrller = oldDiagramView {
+            _diagramsHistoryController.add(oldDiagramView)
+        }
     }
 
     var _diagram : Diagram
-//    var _diagramController : DiagramViewController!
     var _backEventHandler : EventHandler!
     var _tempParentController : DiagramViewController!
 
-//    var _controllers : [DiagramViewController] = []
-    
     var _diagramViewsManager : DiagramViewsManager!
 
     @IBOutlet var _upArrowImageView: UIImageView!
@@ -295,6 +207,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     @IBOutlet var _leftArrowImageView: UIImageView!
     @IBOutlet var _rightArrowImageView: UIImageView!
     
+    @IBOutlet var _diagramsHistoryController: DiagramsHistoryController!
     @IBOutlet weak var _controlsArea: UIView!
     @IBOutlet weak var _diagramArea: UIView!
     

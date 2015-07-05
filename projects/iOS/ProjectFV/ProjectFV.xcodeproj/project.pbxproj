@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		160D0D571B3F33BA00BC3C1C /* recenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 160D0D561B3F33BA00BC3C1C /* recenter.png */; };
+		163694D31B48DE49000EAF38 /* DiagramsHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163694D21B48DE49000EAF38 /* DiagramsHistoryController.swift */; };
 		163EFBE51B121EAF004C56E7 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE41B121EAF004C56E7 /* Vector2D.swift */; };
 		163EFBE71B1220D6004C56E7 /* AxisSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE61B1220D6004C56E7 /* AxisSystem.swift */; };
 		163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE81B12321C004C56E7 /* LinkType.swift */; };
@@ -194,6 +195,7 @@
 
 /* Begin PBXFileReference section */
 		160D0D561B3F33BA00BC3C1C /* recenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recenter.png; path = Resources/icons/recenter.png; sourceTree = "<group>"; };
+		163694D21B48DE49000EAF38 /* DiagramsHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramsHistoryController.swift; path = Stories/SchematicView/DiagramsHistoryController.swift; sourceTree = "<group>"; };
 		163EFBE41B121EAF004C56E7 /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector2D.swift; path = ../../../../sources/Shapes/Vector2D.swift; sourceTree = "<group>"; };
 		163EFBE61B1220D6004C56E7 /* AxisSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisSystem.swift; path = ../../../../sources/Shapes/AxisSystem.swift; sourceTree = "<group>"; };
 		163EFBE81B12321C004C56E7 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
@@ -600,6 +602,7 @@
 				166405BA1B3CDA8C003F720A /* SubDiagramPortal.swift */,
 				16E1C5B81B48783C00B909F3 /* DiagramViewsManager.swift */,
 				16E1C5BA1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift */,
+				163694D21B48DE49000EAF38 /* DiagramsHistoryController.swift */,
 			);
 			name = SchematicView;
 			sourceTree = "<group>";
@@ -1033,6 +1036,7 @@
 				166405A71B370A2A003F720A /* FileViewStory.swift in Sources */,
 				166405931B370847003F720A /* PanGestureHandler.swift in Sources */,
 				166405A41B370857003F720A /* SchematicViewController.swift in Sources */,
+				163694D31B48DE49000EAF38 /* DiagramsHistoryController.swift in Sources */,
 				16E1C5BB1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift in Sources */,
 				166405A01B370857003F720A /* DiagramView.swift in Sources */,
 				166405B71B3B0A4A003F720A /* BaseGestureHandler.swift in Sources */,

@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="_controlsArea" destination="oi0-VJ-8ql" id="dVX-sI-y9R"/>
                 <outlet property="_diagramArea" destination="flt-J9-SI4" id="0MF-3S-NXB"/>
+                <outlet property="_diagramsHistoryController" destination="MU6-5r-UWE" id="Hhr-iW-Pjy"/>
                 <outlet property="_downArrowImageView" destination="vOx-IW-dBA" id="KEN-xg-x4O"/>
                 <outlet property="_leftArrowImageView" destination="HIR-fT-qnS" id="cgK-78-FoZ"/>
                 <outlet property="_rightArrowImageView" destination="kU9-iP-REh" id="KPm-6c-DaM"/>
@@ -15,6 +16,20 @@
                 <outlet property="view" destination="iN0-l3-epB" id="eWQ-9h-F0C"/>
             </connections>
         </placeholder>
+        <viewController id="MU6-5r-UWE" customClass="DiagramsHistoryController" customModule="ProjectFV" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="vjG-KB-L2b"/>
+                <viewControllerLayoutGuide type="bottom" id="JSa-VO-dAH"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="Ute-VS-d7m">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+            <connections>
+                <outlet property="view" destination="SuD-xX-MFb" id="n8j-3R-Icq"/>
+            </connections>
+        </viewController>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
@@ -69,17 +84,24 @@
                         </mask>
                     </variation>
                 </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuD-xX-MFb">
+                    <rect key="frame" x="874" y="70" width="150" height="698"/>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="flt-J9-SI4" secondAttribute="trailing" constant="150" id="2AQ-TL-R6b"/>
                 <constraint firstAttribute="trailing" secondItem="Twb-6L-G20" secondAttribute="trailing" constant="148" id="Bw7-jY-anF"/>
                 <constraint firstItem="flt-J9-SI4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="C1U-Fc-6fn"/>
+                <constraint firstItem="SuD-xX-MFb" firstAttribute="top" secondItem="oi0-VJ-8ql" secondAttribute="bottom" id="J3B-3b-RTD"/>
                 <constraint firstAttribute="bottom" secondItem="flt-J9-SI4" secondAttribute="bottom" constant="10" id="QBJ-7r-Ehb"/>
+                <constraint firstAttribute="trailing" secondItem="SuD-xX-MFb" secondAttribute="trailing" id="WMn-Xw-013"/>
                 <constraint firstItem="Twb-6L-G20" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="68" id="Wdw-2Z-J5U"/>
                 <constraint firstItem="oi0-VJ-8ql" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Wlu-zH-lVV"/>
                 <constraint firstItem="flt-J9-SI4" firstAttribute="top" secondItem="oi0-VJ-8ql" secondAttribute="bottom" id="cBu-W3-o2U"/>
                 <constraint firstItem="oi0-VJ-8ql" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cMW-Fl-lcc"/>
+                <constraint firstAttribute="bottom" secondItem="SuD-xX-MFb" secondAttribute="bottom" id="kbk-gs-aKM"/>
+                <constraint firstItem="SuD-xX-MFb" firstAttribute="leading" secondItem="flt-J9-SI4" secondAttribute="trailing" id="mNv-ui-Poh"/>
                 <constraint firstAttribute="trailing" secondItem="oi0-VJ-8ql" secondAttribute="trailing" constant="10" id="ppc-jq-mLK"/>
                 <constraint firstItem="Twb-6L-G20" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="qwB-th-0xv"/>
                 <constraint firstAttribute="bottom" secondItem="Twb-6L-G20" secondAttribute="bottom" constant="10" id="uau-q9-a4r"/>
