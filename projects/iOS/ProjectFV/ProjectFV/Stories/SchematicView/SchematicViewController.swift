@@ -59,6 +59,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     func activate(controller: DiagramViewController, completionHandler: (() -> Void)! ) {
         
         controller.activateInView( _diagramArea )
+        controller.viewDrawingMode = .Normal
         
         UIView.animateWithDuration(
             NSTimeInterval(0.5), animations: {() -> Void in
@@ -94,6 +95,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                     controller.view.alpha = 0.0
                     newController.view.frame = self._diagramArea.bounds
                     newController.view.alpha = 1.0
+                    newController.viewDrawingMode = .Normal
                 },
                 completion: {(Bool) -> Void in
                     controller.deactivate()

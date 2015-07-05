@@ -14,6 +14,14 @@ import UIKit
 
 class LinkDisplay {
     
+    var viewDrawingMode : ViewDrawingMode {
+        get {
+            return _viewDrawingMode
+        }
+        set (value) {
+            _viewDrawingMode = value
+        }
+    }
     
     init( ctx : CGContext, portal : DiagramPortal, lnk : Link, document: Document ) {
         
@@ -47,7 +55,9 @@ class LinkDisplay {
             
             CGContextDrawPath(_ctx, kCGPathStroke)
             
-            drawEndPoints()
+            if viewDrawingMode == .Normal {
+                drawEndPoints()
+            }
         }
     }
 
@@ -236,4 +246,5 @@ class LinkDisplay {
     var _lnk : Link
     var _doc : Document
     var _model : Model!
+    var _viewDrawingMode : ViewDrawingMode = .Normal
 }

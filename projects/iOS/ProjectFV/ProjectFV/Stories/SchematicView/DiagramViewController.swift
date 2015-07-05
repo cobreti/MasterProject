@@ -52,6 +52,19 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         }
     }
     
+    var viewDrawingMode : ViewDrawingMode {
+        get {
+            return _viewDrawingMode
+        }
+        set (value) {
+            _viewDrawingMode = value
+            
+            if let v = diagramView {
+                v.drawingMode = value
+            }
+        }
+    }
+    
     init(parentController: SchematicViewController, diagram: Diagram) {
         
         _parentController = parentController
@@ -116,6 +129,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         let frame = view.bounds
 
         if let dgmView = view as? DiagramView {
+            dgmView.drawingMode = _viewDrawingMode
             dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
             _diagramPortal.viewRect = Rect( cgrect: frame )
             _diagramPortal.alignWithViewPinPoint(dgmView.pinPoint!)
@@ -182,6 +196,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         let frame = view.bounds
         
         if let  dgmView = view as? DiagramView {
+            dgmView.drawingMode = _viewDrawingMode
             dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
             _diagramPortal.viewRect = Rect( cgrect: frame )
             _diagramPortal.alignWithViewPinPoint(dgmView.pinPoint!)
@@ -251,4 +266,5 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     var _state : State = .Normal
     
     var _gestureEnabled : Bool = true
+    var _viewDrawingMode : ViewDrawingMode = .Normal
 }

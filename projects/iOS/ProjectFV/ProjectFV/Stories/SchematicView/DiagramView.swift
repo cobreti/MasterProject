@@ -50,6 +50,16 @@ class DiagramView : UIView {
         }
     }
     
+    var drawingMode : ViewDrawingMode {
+        get {
+            return _drawingMode
+        }
+        set (value) {
+            _drawingMode = value
+        }
+    }
+    
+    
     override func drawRect(dirtyRect: CGRect) {
         
         super.drawRect(dirtyRect)
@@ -66,14 +76,16 @@ class DiagramView : UIView {
                                         document: document,
                                         portal: portal,
                                         viewPinPt: pinPt )
+            dd.viewDrawingMode = _drawingMode
             
             dd.display(ctx)
         }
-        
     }
     
     var _portal : DiagramPortal?
     var _diagram : Diagram?
     var _document : Document?
     var _pinPoint : PinPoint?
+    var _drawingMode : ViewDrawingMode = .Normal
 }
+

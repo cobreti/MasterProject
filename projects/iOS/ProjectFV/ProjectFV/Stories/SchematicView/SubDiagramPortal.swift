@@ -86,6 +86,7 @@ class SubDiagramPortal {
                 if _controller == nil {
                     _controller = DiagramViewController(parentController: _parentController, diagram: _subDiagram)
                     _controller.view?.userInteractionEnabled = false
+                    _controller.viewDrawingMode = .Thumbnail
                     _view.addSubview(_controller.view)
                 }
 

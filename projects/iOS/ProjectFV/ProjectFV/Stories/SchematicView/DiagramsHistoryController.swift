@@ -26,6 +26,7 @@ class DiagramsHistoryController : UIViewController {
         view.addSubview(controller.view)
         controller.view.frame = CGRect(x: 25, y: 10, width: 100, height: 100)
         controller.resetView()
+        controller.viewDrawingMode = .Thumbnail
     }
  
     weak var _diagramViewsManager : DiagramViewsManager!

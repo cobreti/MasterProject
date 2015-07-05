@@ -13,6 +13,15 @@ import Shapes
 
 class DiagramDisplay {
     
+    var viewDrawingMode : ViewDrawingMode {
+        get {
+            return _drawingMode
+        }
+        set (value) {
+            _drawingMode = value
+        }
+    }
+    
     init(   targetRect : CGRect,
             diagram : Diagram,
             document : Document,
@@ -36,6 +45,7 @@ class DiagramDisplay {
             else if let lnk = prim as? Link {
                 
                 let linkDisplay = LinkDisplay(ctx: ctx, portal: _portal, lnk: lnk, document: _document)
+                linkDisplay.viewDrawingMode = viewDrawingMode
                 linkDisplay.draw()
             }
         }
@@ -81,7 +91,8 @@ class DiagramDisplay {
             
         }
         
-        if let name = elm.name {
+        if let name = elm.name where viewDrawingMode == .Normal {
+        
             var parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
             var strSize = name.sizeWithAttributes([
                 NSParagraphStyleAttributeName: parStyle
@@ -169,4 +180,5 @@ class DiagramDisplay {
     var _document : Document
     var _portal : DiagramPortal
     var _viewPinPoint : PinPoint
+    var _drawingMode : ViewDrawingMode = .Normal
 }
