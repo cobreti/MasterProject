@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>02292900-E2C6-4102-B255-5C7162B6BD9E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>ProjectFV</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1742C317F3D44412A7C4A123D52B172AB49DFFB5</key>
 		<string>https://github.com/cobreti/MasterProject.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>projects/iOS/ProjectFV/ProjectFV.xcodeproj</string>
+	<string>projects/iOS/ProjectFV/ProjectFV.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1742C317F3D44412A7C4A123D52B172AB49DFFB5</key>

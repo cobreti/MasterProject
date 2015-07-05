@@ -34,6 +34,12 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         }
     }
     
+    var diagramView : DiagramView! {
+        get {
+            return self.view as? DiagramView
+        }
+    }
+    
     var gestureEnabled : Bool {
         get {
             return _gestureEnabled
@@ -46,15 +52,26 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         }
     }
     
-    init(parentController: SchematicViewController) {
+    init(parentController: SchematicViewController, diagram: Diagram) {
         
         _parentController = parentController
+        _diagram = diagram
         
         super.init(nibName: "DiagramView", bundle: nil)
     }
 
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func deactivate() {
+        
+        view.removeFromSuperview()
+    }
+    
+    func activateInView(parentView : UIView) {
+        
+        parentView.addSubview(view)
     }
     
     func resetView() {
@@ -199,11 +216,12 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         setState(.Normal)
         
         if _subDiagramPortal?.enterSubDiagram() == true {
-            _parentController.pushController(_subDiagramPortal.subDiagramController)
+            _parentController.diagramViewsManager.activate(_subDiagramPortal.subDiagramController)
             _subDiagramPortal.detach()
         }
         else if enterParentDiagram() {
-            _parentController.removeLastController()
+            _parentController.diagramViewsManager.deactivate(self)
+//            _parentController.removeLastController()
         }
     }
     

@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+protocol DiagramViewsManagerDelegate {
+    
+    func onDiagramViewActivated(    oldDiagramView: DiagramViewController!,
+                                    newDiagramView: DiagramViewController )
+}

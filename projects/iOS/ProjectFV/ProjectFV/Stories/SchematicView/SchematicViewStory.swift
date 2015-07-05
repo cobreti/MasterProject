@@ -21,12 +21,15 @@ class SchematicViewStory : Story {
     init(diagramName : String) {
         
         _diagramName = diagramName
-        _controller = SchematicViewController(nibName: "SchematicView", bundle: nil)
+        let document = Application.instance().document
+        
+        if let diagram = document.diagrams.get(diagramName) {
+            _controller = SchematicViewController(diagram: diagram)
+        }
 
         super.init()
         
-        let document = Application.instance().document
-        _controller.diagram = document.diagrams.get(_diagramName)
+//        _controller.diagram = document.diagrams.get(_diagramName)
         _controller._backEventHandler = onBack
     }
     

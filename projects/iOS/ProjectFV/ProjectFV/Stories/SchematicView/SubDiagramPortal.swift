@@ -84,8 +84,7 @@ class SubDiagramPortal {
             if (portalRect.size.width > 400 || portalRect.size.height > 400) {
                 
                 if _controller == nil {
-                    _controller = DiagramViewController(parentController: _parentController)
-                    _controller.diagram = _subDiagram
+                    _controller = DiagramViewController(parentController: _parentController, diagram: _subDiagram)
                     _controller.view?.userInteractionEnabled = false
                     _view.addSubview(_controller.view)
                 }
