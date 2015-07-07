@@ -23,12 +23,18 @@ class DiagramsHistoryController : UIViewController {
 
     func add(controller: DiagramViewController) {
         
+        let yPos = _controllers.count * (100 + 10)
+        
+        
+        _controllers.append(controller)
         view.addSubview(controller.view)
-        controller.view.frame = CGRect(x: 25, y: 10, width: 100, height: 100)
+        controller.view.frame = CGRect(x: 25, y: yPos, width: 100, height: 100)
         controller.resetView()
         controller.viewDrawingMode = .Thumbnail
     }
  
     weak var _diagramViewsManager : DiagramViewsManager!
+    
+    var _controllers : [DiagramViewController] = []
 }
 

@@ -54,7 +54,7 @@ class SubDiagramPortal {
                     if portalRect.contains(pinPt) {
                         if let  model = _view.diagramDocument?.models.get(elm.modelId),
                                 name = model.subDiagramName,
-                                subDiagram = _view.diagramDocument?.diagrams.get(name) {
+                                subDiagram = _view.diagramDocument?.diagrams.get(name) where !_parentController.diagramViewsManager.contains(name) {
                                 
                             _element = elm
                             _subDiagram = subDiagram

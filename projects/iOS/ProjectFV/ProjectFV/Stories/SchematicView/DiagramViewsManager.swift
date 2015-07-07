@@ -59,6 +59,17 @@ class DiagramViewsManager {
             _schematicViewController.deactivate(controller, newController: currentController!)
         }
     }
+    
+    func contains(diagramName : String) -> Bool {
+        
+        for c in _diagramViewControllers {
+            if let  d = c.diagram where d.name == diagramName {
+                return true
+            }
+        }
+        
+        return false
+    }
  
     var _diagramViewControllers : [DiagramViewController] = []
     var _schematicViewController : SchematicViewController

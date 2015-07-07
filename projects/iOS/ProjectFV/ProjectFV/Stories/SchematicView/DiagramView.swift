@@ -41,6 +41,15 @@ class DiagramView : UIView {
         }
     }
     
+    var diagramViewsManager : DiagramViewsManager! {
+        get {
+            return _diagramViewsManager
+        }
+        set (value) {
+            _diagramViewsManager = value
+        }
+    }
+    
     var pinPoint : PinPoint? {
         get {
             return _pinPoint
@@ -87,5 +96,6 @@ class DiagramView : UIView {
     var _document : Document?
     var _pinPoint : PinPoint?
     var _drawingMode : ViewDrawingMode = .Normal
+    var _diagramViewsManager : DiagramViewsManager!
 }
 

@@ -112,6 +112,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
             dgmView.diagramDocument = document
             dgmView.diagramPortal = _diagramPortal
             dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
+            dgmView.diagramViewsManager = _parentController.diagramViewsManager
 
             _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
             _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
@@ -212,7 +213,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     func onGestureChanged() {
         _subDiagramPortal?.updateSubDiagramArea()
 
-        if _subDiagramPortal?.enterSubDiagram() == true {
+        if enterSubDiagram() {
             setState(.WillShowSubDiagram)
         }
         else if enterParentDiagram() {
@@ -230,7 +231,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         
         setState(.Normal)
         
-        if _subDiagramPortal?.enterSubDiagram() == true {
+        if enterSubDiagram() {
             _parentController.diagramViewsManager.activate(_subDiagramPortal.subDiagramController)
             _subDiagramPortal.detach()
         }
@@ -240,10 +241,26 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
         }
     }
     
+    func enterSubDiagram() -> Bool {
+        
+        if let  portal = _subDiagramPortal,
+                ctrller = portal.subDiagramController,
+                diagram = ctrller.diagram {
+            
+            if _parentController.diagramViewsManager.contains(diagram.name) {
+                return false
+            }
+            
+            return portal.enterSubDiagram()
+        }
+        
+        return false
+    }
+    
     func enterParentDiagram() -> Bool {
         
         let portalRect = _diagramPortal.rectFromDiagramToPortal(_diagram.box)
-        return portalRect.size.width < 400 || portalRect.size.height < 400
+        return portalRect.size.width < 400 && portalRect.size.height < 400
     }
     
     func setState( state: State ) {
