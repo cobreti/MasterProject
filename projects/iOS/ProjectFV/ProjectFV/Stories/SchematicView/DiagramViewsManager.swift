@@ -56,7 +56,9 @@ class DiagramViewsManager {
         if let ctrller = currentController where ctrller === controller {
             
             _diagramViewControllers.removeLast()
-            _schematicViewController.deactivate(controller, newController: currentController!)
+            _schematicViewController.deactivate(controller, newController: currentController!, completionHandler: {() -> Void in
+                self._delegate.onDiagramViewDeactivated(controller)
+            })
         }
     }
     

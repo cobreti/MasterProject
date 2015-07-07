@@ -32,6 +32,13 @@ class DiagramsHistoryController : UIViewController {
         controller.resetView()
         controller.viewDrawingMode = .Thumbnail
     }
+    
+    func remove(controller: DiagramViewController) {
+        
+        if let l = _controllers.last {
+            _controllers.removeLast()
+        }
+    }
  
     weak var _diagramViewsManager : DiagramViewsManager!
     

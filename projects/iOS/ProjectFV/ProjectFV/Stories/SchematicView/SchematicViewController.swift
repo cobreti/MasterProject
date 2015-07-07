@@ -71,7 +71,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         })
     }
     
-    func deactivate( controller: DiagramViewController, newController: DiagramViewController ) {
+    func deactivate( controller: DiagramViewController, newController: DiagramViewController, completionHandler: (() -> Void)! ) {
      
         if let dgmView = controller.diagramView {
             let pinPt = dgmView.pinPoint!
@@ -100,6 +100,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                 completion: {(Bool) -> Void in
                     controller.deactivate()
                     newController.resetView()
+                    completionHandler?()
             })
         }
     }
@@ -196,6 +197,10 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         if let ctrller = oldDiagramView {
             _diagramsHistoryController.add(oldDiagramView)
         }
+    }
+    
+    func onDiagramViewDeactivated(diagramView: DiagramViewController) {
+        _diagramsHistoryController.remove(diagramView)
     }
 
     var _diagram : Diagram

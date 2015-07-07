@@ -12,4 +12,6 @@ protocol DiagramViewsManagerDelegate {
     
     func onDiagramViewActivated(    oldDiagramView: DiagramViewController!,
                                     newDiagramView: DiagramViewController )
+    
+    func onDiagramViewDeactivated( diagramView: DiagramViewController )
 }
