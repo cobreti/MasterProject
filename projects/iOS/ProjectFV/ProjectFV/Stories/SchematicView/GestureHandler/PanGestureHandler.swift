@@ -34,7 +34,7 @@ class PanGestureHandler : BaseGestureHandler {
             case UIGestureRecognizerState.Began:
                 _startPt = sender.translationInView(self.view)
                 _originalTranslation = self.portal.translation
-                delegate?.onGestureStarted()
+                delegate?.onGestureStarted(self)
                 break
             case UIGestureRecognizerState.Changed:
                 let pt = sender.translationInView(self.view)
@@ -43,10 +43,10 @@ class PanGestureHandler : BaseGestureHandler {
                 transform.y += pt.y / self.portal.scalingFactor
                 self.portal.translation = transform
                 self.view.setNeedsDisplay()
-                delegate?.onGestureChanged()
+                delegate?.onGestureChanged(self)
                 break
             case UIGestureRecognizerState.Ended:
-                delegate?.onGestureEnded()
+                delegate?.onGestureEnded(self)
             default:
                 break
         }

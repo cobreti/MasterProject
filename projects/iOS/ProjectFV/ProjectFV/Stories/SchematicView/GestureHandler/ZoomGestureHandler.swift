@@ -44,7 +44,7 @@ class ZoomGestureHandler : BaseGestureHandler {
                 let diagPt = portal.pointFromViewToPortal(pinPt)
                 portal.pinPoint = PinPoint(x: diagPt.x, y: diagPt.y)
             
-                delegate?.onGestureStarted()
+                delegate?.onGestureStarted(self)
             
             case UIGestureRecognizerState.Changed:
                 portal.zoom = sender.scale
@@ -52,10 +52,10 @@ class ZoomGestureHandler : BaseGestureHandler {
 //                _subDiagramHandler.checkForSubDiagramDisplay()
                 view.setNeedsDisplay()
             
-                delegate?.onGestureChanged()
+                delegate?.onGestureChanged(self)
             
             case UIGestureRecognizerState.Ended:
-                delegate?.onGestureEnded()
+                delegate?.onGestureEnded(self)
 //                _subDiagramHandler.checkForSubDiagramDisplay()
 //                view.setNeedsDisplay()
             

@@ -10,7 +10,7 @@ import Foundation
 
 protocol GestureHandlerDelegate {
     
-    func onGestureStarted()
-    func onGestureChanged()
-    func onGestureEnded()
+    func onGestureStarted( handler: BaseGestureHandler )
+    func onGestureChanged( handler: BaseGestureHandler )
+    func onGestureEnded( handler: BaseGestureHandler )
 }

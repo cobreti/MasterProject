@@ -13,6 +13,12 @@ import DiagramElements
 
 class TapGestureHandler : BaseGestureHandler {
     
+    var pickedElement : Element! {
+        get {
+            return _element
+        }
+    }
+    
     override init(view: DiagramView, portal: DiagramPortal, delegate: GestureHandlerDelegate!) {
         
         super.init(view: view, portal: portal, delegate: delegate)
@@ -29,6 +35,9 @@ class TapGestureHandler : BaseGestureHandler {
         }
         
         switch sender.state {
+            case UIGestureRecognizerState.Began:
+                _element = nil
+            
             case UIGestureRecognizerState.Ended:
                 if let diagram = view.diagram {
                     let ptInView = sender.locationInView(view)
@@ -42,25 +51,21 @@ class TapGestureHandler : BaseGestureHandler {
                     }
                     else {
                         for item in primitives {
-//                            layer.selection.add(item)
                             
-                            if let  model = view.diagramDocument?.models.get(item.modelId),
-                                    filePath = model.filePath,
-                                    rootPath = view.diagramDocument?.filesPathRoot {
-                                    
-                                let app = Application.instance()
-                                
-                                app.stories.push( FileViewStory(file: rootPath + filePath) )
-                            
-//                                debugPrintln("file path for item : '\(model.filePath)' with root being '\(_view.diagramDocument?.filesPathRoot)'")
+                            if let elm = item as? Element {
+                                _element = elm
                             }
-                        }
+                            
+                       }
                     }
+                    
+                    delegate?.onGestureEnded(self)
 
-//                    _view.setNeedsDisplay()
                 }
             default:
                 break
         }
     }
+    
+    var _element : Element!
 }
