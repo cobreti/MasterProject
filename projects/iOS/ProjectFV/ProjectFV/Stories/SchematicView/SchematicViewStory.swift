@@ -18,7 +18,7 @@ class SchematicViewStory : Story {
         }
     }
     
-    init(diagramName : String) {
+    init( diagramName : String) {
         
         _diagramName = diagramName
         let document = Application.instance().document

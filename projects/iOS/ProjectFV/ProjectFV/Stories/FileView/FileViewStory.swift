@@ -42,7 +42,7 @@ class FileViewStory : Story {
     
     func onBack(sender: AnyObject, args: [String: AnyObject]!) {
         debugPrintln("onBack story handler")
-        ownerStoriesMgr?.pop(self)
+        ownerStoriesMgr.pop(self)
     }
 
     var _controller : FileViewController!

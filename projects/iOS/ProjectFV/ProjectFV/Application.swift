@@ -31,6 +31,12 @@ class Application {
         }
     }
     
+    var actionsBus : ActionsBus {
+        get {
+            return _actionsBus!
+        }
+    }
+    
     var document : DiagramElements.Document {
         get {
             return _document
@@ -53,7 +59,10 @@ class Application {
     
         loadDiagrams()
     
+        _actionsBus = ActionsBus()
         _storiesMgr = StoriesMgr()
+        
+        _actionsBus.listeners.add(_storiesMgr)
   
 //        stories.push( FileViewStory(file: "EmbeddedRes/CodeSite/ProjectFV/DiagramElements/DiagramLayer.swift") )
         stories.push( DiagramSelectionStory() )
@@ -62,5 +71,6 @@ class Application {
     var _document : DiagramElements.Document = DiagramElements.Document()
     var _mainViewController : UIViewController!
     var _storiesMgr : StoriesMgr!
+    var _actionsBus : ActionsBus!
 }
 

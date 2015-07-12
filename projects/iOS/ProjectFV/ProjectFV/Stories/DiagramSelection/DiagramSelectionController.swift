@@ -23,7 +23,9 @@ class DiagramSelectionController : UIViewController, UITableViewDelegate {
         let name = _dataSource.getDiagramAtIndex(indexPath.indexAtPosition(1))
         debugPrintln("diagram selected :\(name)")
         
-        Application.instance().stories.push( SchematicViewStory(diagramName: name) )
+        Application.instance().actionsBus.send( DiagramSelectedAction(name: name, sender: self) )
+        
+//        Application.instance().stories.push( SchematicViewStory(diagramName: name) )
     }
  
     var _dataSource : DiagramsDataSource!

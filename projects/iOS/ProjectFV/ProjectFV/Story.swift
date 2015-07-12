@@ -20,7 +20,7 @@ class Story {
         }
     }
     
-    var ownerStoriesMgr : StoriesMgr? {
+    var ownerStoriesMgr : StoriesMgr! {
         get {
             return _ownerStoriesMgr
         }
@@ -29,6 +29,12 @@ class Story {
         }
     }
     
+    init() {
+    }
     
-    var _ownerStoriesMgr : StoriesMgr?
+    func onAction(action: Action) {
+        
+    }
+    
+    var _ownerStoriesMgr : StoriesMgr!
 }

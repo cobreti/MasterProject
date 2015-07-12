@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class StoriesMgr {
+class StoriesMgr : ActionListener {
  
     
     init() {
@@ -41,6 +41,11 @@ class StoriesMgr {
             _stories.removeLast()
             story.ownerStoriesMgr = nil
         }
+    }
+    
+    func onAction(action: Action) {
+        
+        _stories.last?.onAction(action)
     }
  
     var _stories : [Story] = []

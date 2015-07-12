@@ -19,7 +19,21 @@ class DiagramSelectionStory : Story {
     
     override init() {
         
+        super.init()
+        
         _controller = DiagramSelectionController(nibName: "DiagramSelection", bundle: nil)
+    }
+    
+    override func onAction(action: Action) {
+        
+        switch action.id {
+            case .DiagramSelected:
+                if let selAction = action as? DiagramSelectedAction {
+                    ownerStoriesMgr?.push( SchematicViewStory(diagramName: selAction.diagramName) )
+                }
+            default:
+                break
+        }
     }
     
     var _controller : DiagramSelectionController!
