@@ -2,7 +2,7 @@
 //  ActionsBus.swift
 //  ProjectFV
 //
-//  Created by Danny Thibaudeau on 2015-07-11.
+    //  Created by Danny Thibaudeau on 2015-07-11.
 //  Copyright (c) 2015 Danny Thibaudeau. All rights reserved.
 //
 
@@ -25,15 +25,15 @@ class ActionsBus : NSObject {
     
     func send( action: Action ) {
         
-        debugPrintln(action.description)
-        writeToLog(action.description)
+        debugPrintln(action.traceline)
+        writeToLog(action.traceline)
         _listeners.send(action)
     }
     
     func writeToLog(text: String) {
         
         let file = "actions_log_\(_timestamp).txt"
-        let textLine = "\(text)\n"
+        let textLine = text
         let data = textLine.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
 
         
@@ -51,7 +51,7 @@ class ActionsBus : NSObject {
                 textLine.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding, error: nil);
             }
 
-        }
+            }
     }
     
     private var _listeners : ActionListeners

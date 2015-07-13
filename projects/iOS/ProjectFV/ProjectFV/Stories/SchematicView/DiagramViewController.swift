@@ -304,6 +304,10 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
             _parentController.onDiagramViewStateChanged(state)
         }
     }
+    
+    func onAction(action: Action) {
+        
+    }
 
     var _diagramPortal : DiagramPortal!
     var _diagram : Diagram!

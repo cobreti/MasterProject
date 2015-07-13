@@ -11,6 +11,12 @@ import Foundation
 
 class Action {
     
+    var traceline : String {
+        get {
+            return "\(header) \(description)\n"
+        }
+    }
+    
     var header : String {
         get {
             let formatter = NSDateFormatter()
@@ -22,7 +28,7 @@ class Action {
     
     var description: String {
         get {
-            return "\(header)"
+            return ""
         }
     }
     

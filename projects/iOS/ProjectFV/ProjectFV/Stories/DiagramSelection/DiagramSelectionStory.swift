@@ -29,7 +29,9 @@ class DiagramSelectionStory : Story {
         switch action.id {
             case .DiagramSelected:
                 if let selAction = action as? DiagramSelectedAction {
-                    ownerStoriesMgr?.push( SchematicViewStory(diagramName: selAction.diagramName) )
+                    let story = SchematicViewStory(diagramName: selAction.diagramName)
+                    Application.instance().actionsBus.send( OpenStoryAction(story: story, sender: self) )
+//                    ownerStoriesMgr?.push( SchematicViewStory(diagramName: selAction.diagramName) )
                 }
             default:
                 break

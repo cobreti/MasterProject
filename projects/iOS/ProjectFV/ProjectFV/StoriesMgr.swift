@@ -33,19 +33,31 @@ class StoriesMgr : ActionListener {
         }
     }
     
-    func pop(story: Story) {
+    func pop() {
 
-        if let lastStory = _stories.last where lastStory === story {
+        if let lastStory = _stories.last {
             
-            story.view?.removeFromSuperview()
+            lastStory.view?.removeFromSuperview()
             _stories.removeLast()
-            story.ownerStoriesMgr = nil
+            lastStory.ownerStoriesMgr = nil
         }
     }
     
     func onAction(action: Action) {
         
-        _stories.last?.onAction(action)
+        switch action.id {
+            
+            case .CloseStory:
+                pop()
+            
+            case .OpenStory:
+                if let osa = action as? OpenStoryAction {
+                    push(osa.story)
+                }
+            
+            default:
+                _stories.last?.onAction(action)
+        }
     }
  
     var _stories : [Story] = []

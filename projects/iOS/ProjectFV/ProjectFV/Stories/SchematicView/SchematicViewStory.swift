@@ -35,7 +35,12 @@ class SchematicViewStory : Story {
     
     func onBack(sender: AnyObject, args: [String: AnyObject]!) {
         debugPrintln("onBack story handler")
-        ownerStoriesMgr?.pop(self)
+        Application.instance().actionsBus.send( CloseStoryAction(story: self, sender: self) )
+//        ownerStoriesMgr?.pop(self)
+    }
+    
+    override func onAction(action: Action) {
+        
     }
     
     var _controller : SchematicViewController!

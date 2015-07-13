@@ -32,6 +32,10 @@ class DiagramViewsManager {
         _delegate = delegate
     }
     
+    func onAction(action: Action) {
+        currentController?.onAction(action)
+    }
+    
     func activate(controller: DiagramViewController) {
      
         var oldController : DiagramViewController! = nil

@@ -12,7 +12,7 @@ class DiagramSelectedAction : Action {
     
     override var description: String {
         get {
-            return "\(header) diagram selected : \(_diagramName)"
+            return "diagram selected : \(_diagramName)"
         }
     }
     

@@ -202,7 +202,11 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     func onDiagramViewDeactivated(diagramView: DiagramViewController) {
         _diagramsHistoryController.remove(diagramView)
     }
-
+    
+    func onAction(action: Action) {
+        
+    }
+    
     var _diagram : Diagram
     var _backEventHandler : EventHandler!
     var _tempParentController : DiagramViewController!
