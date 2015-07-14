@@ -307,6 +307,21 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     
     func onAction(action: Action) {
         
+        switch action.id {
+            
+            case .PanDiagram:
+                if let pda = action as? PanDiagramAction {
+                 
+//                    if pda.state == .Ended {
+                    
+                        _diagramPortal.translation = pda.translation
+                        view.setNeedsDisplay()
+//                    }
+                }
+            
+            default:
+                break
+        }
     }
 
     var _diagramPortal : DiagramPortal!

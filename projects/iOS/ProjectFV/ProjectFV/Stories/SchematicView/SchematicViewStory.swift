@@ -41,6 +41,7 @@ class SchematicViewStory : Story {
     
     override func onAction(action: Action) {
         
+        _controller.onAction(action)
     }
     
     var _controller : SchematicViewController!

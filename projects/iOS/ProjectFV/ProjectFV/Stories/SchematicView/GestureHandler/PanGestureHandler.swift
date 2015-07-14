@@ -30,23 +30,28 @@ class PanGestureHandler : BaseGestureHandler {
             return
         }
     
+        let actionsBus = Application.instance().actionsBus
+    
         switch sender.state {
             case UIGestureRecognizerState.Began:
                 _startPt = sender.translationInView(self.view)
                 _originalTranslation = self.portal.translation
-                delegate?.onGestureStarted(self)
+//                delegate?.onGestureStarted(self)
+                actionsBus.send( PanDiagramAction(translation: self.portal.translation, state: .Began, sender: self) )
                 break
             case UIGestureRecognizerState.Changed:
                 let pt = sender.translationInView(self.view)
                 var transform = Point(pt: _originalTranslation)
                 transform.x += pt.x / self.portal.scalingFactor
                 transform.y += pt.y / self.portal.scalingFactor
-                self.portal.translation = transform
-                self.view.setNeedsDisplay()
-                delegate?.onGestureChanged(self)
+//                self.portal.translation = transform
+//                self.view.setNeedsDisplay()
+//                delegate?.onGestureChanged(self)
+                actionsBus.send( PanDiagramAction(translation: transform, state: .Changed, sender: self) )
                 break
             case UIGestureRecognizerState.Ended:
-                delegate?.onGestureEnded(self)
+//                delegate?.onGestureEnded(self)
+                actionsBus.send( PanDiagramAction(translation: self.portal.translation, state: .Ended, sender: self) )
             default:
                 break
         }

@@ -205,6 +205,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     
     func onAction(action: Action) {
         
+        _diagramViewsManager.onAction(action)
     }
     
     var _diagram : Diagram

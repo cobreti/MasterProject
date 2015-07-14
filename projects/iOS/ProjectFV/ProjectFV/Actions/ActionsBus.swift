@@ -25,8 +25,11 @@ class ActionsBus : NSObject {
     
     func send( action: Action ) {
         
-        debugPrintln(action.traceline)
-        writeToLog(action.traceline)
+        
+        if action.log {
+            debugPrintln(action.traceline)
+            writeToLog(action.traceline)
+        }
         _listeners.send(action)
     }
     

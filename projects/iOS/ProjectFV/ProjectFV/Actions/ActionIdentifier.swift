@@ -12,5 +12,6 @@ enum ActionIdentifier : String {
     case DiagramSelected = "Diagram Selected"
     case CloseStory = "Close Story"
     case OpenStory = "Open Story"
+    case PanDiagram = "Pan Diagram"
 }
 

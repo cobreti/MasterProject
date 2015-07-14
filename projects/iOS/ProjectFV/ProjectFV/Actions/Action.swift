@@ -26,6 +26,12 @@ class Action {
         }
     }
     
+    var log : Bool {
+        get {
+            return true
+        }
+    }
+    
     var description: String {
         get {
             return ""

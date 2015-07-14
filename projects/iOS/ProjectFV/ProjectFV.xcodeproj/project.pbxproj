@@ -16,6 +16,7 @@
 		16247E231B51E68200F1D341 /* ActionListeners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16247E221B51E68200F1D341 /* ActionListeners.swift */; };
 		16247E251B5478B000F1D341 /* CloseStoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16247E241B5478B000F1D341 /* CloseStoryAction.swift */; };
 		16247E271B547C9200F1D341 /* OpenStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16247E261B547C9200F1D341 /* OpenStory.swift */; };
+		16247E291B5494B200F1D341 /* PanDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16247E281B5494B200F1D341 /* PanDiagramAction.swift */; };
 		163694D31B48DE49000EAF38 /* DiagramsHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163694D21B48DE49000EAF38 /* DiagramsHistoryController.swift */; };
 		163694D51B4971D0000EAF38 /* ViewDrawingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163694D41B4971D0000EAF38 /* ViewDrawingMode.swift */; };
 		163EFBE51B121EAF004C56E7 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE41B121EAF004C56E7 /* Vector2D.swift */; };
@@ -212,6 +213,7 @@
 		16247E221B51E68200F1D341 /* ActionListeners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionListeners.swift; path = Actions/ActionListeners.swift; sourceTree = "<group>"; };
 		16247E241B5478B000F1D341 /* CloseStoryAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloseStoryAction.swift; path = Actions/ActionObjects/CloseStoryAction.swift; sourceTree = "<group>"; };
 		16247E261B547C9200F1D341 /* OpenStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenStory.swift; path = Actions/ActionObjects/OpenStory.swift; sourceTree = "<group>"; };
+		16247E281B5494B200F1D341 /* PanDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PanDiagramAction.swift; path = Actions/ActionObjects/PanDiagramAction.swift; sourceTree = "<group>"; };
 		163694D21B48DE49000EAF38 /* DiagramsHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramsHistoryController.swift; path = Stories/SchematicView/DiagramsHistoryController.swift; sourceTree = "<group>"; };
 		163694D41B4971D0000EAF38 /* ViewDrawingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewDrawingMode.swift; path = Stories/SchematicView/ViewDrawingMode.swift; sourceTree = "<group>"; };
 		163EFBE41B121EAF004C56E7 /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector2D.swift; path = ../../../../sources/Shapes/Vector2D.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 				16247E1E1B51E05000F1D341 /* DiagramSelectedAction.swift */,
 				16247E241B5478B000F1D341 /* CloseStoryAction.swift */,
 				16247E261B547C9200F1D341 /* OpenStory.swift */,
+				16247E281B5494B200F1D341 /* PanDiagramAction.swift */,
 			);
 			name = ActionObjects;
 			sourceTree = "<group>";
@@ -1068,6 +1071,7 @@
 				163694D51B4971D0000EAF38 /* ViewDrawingMode.swift in Sources */,
 				16247E1A1B51DC8000F1D341 /* ActionIdentifier.swift in Sources */,
 				16247E271B547C9200F1D341 /* OpenStory.swift in Sources */,
+				16247E291B5494B200F1D341 /* PanDiagramAction.swift in Sources */,
 				166405A21B370857003F720A /* LinkDisplay.swift in Sources */,
 				166405A91B370BA7003F720A /* FileViewController.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
