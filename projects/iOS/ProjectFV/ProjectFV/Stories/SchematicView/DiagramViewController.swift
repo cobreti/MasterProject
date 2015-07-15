@@ -209,7 +209,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     
         if handler.dynamicType === ZoomGestureHandler.self {
             
-            _subDiagramPortal?.pickElm()
+//            _subDiagramPortal?.pickElm()
         }
     }
     
@@ -217,19 +217,19 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
     
         if handler.dynamicType === ZoomGestureHandler.self {
         
-            _subDiagramPortal?.updateSubDiagramArea()
-
-            if enterSubDiagram() {
-                setState(.WillShowSubDiagram)
-            }
-            else if enterParentDiagram() {
-                setState(.WillShowParentDiagram)
-            }
-            else {
-                setState(.Normal)
-            }
-            
-            _parentController.onDiagramChanged()
+//            _subDiagramPortal?.updateSubDiagramArea()
+//
+//            if enterSubDiagram() {
+//                setState(.WillShowSubDiagram)
+//            }
+//            else if enterParentDiagram() {
+//                setState(.WillShowParentDiagram)
+//            }
+//            else {
+//                setState(.Normal)
+//            }
+//            
+//            _parentController.onDiagramChanged()
         }
     }
     
@@ -237,45 +237,45 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
 
         if let _ = handler as? ZoomGestureHandler {
         
-            _subDiagramPortal?.updateSubDiagramArea()
-            
-            setState(.Normal)
-            
-            if enterSubDiagram() {
-                _parentController.diagramViewsManager.activate(_subDiagramPortal.subDiagramController)
-                _subDiagramPortal.detach()
-            }
-            else if enterParentDiagram() {
-                _parentController.diagramViewsManager.deactivate(self)
-    //            _parentController.removeLastController()
-            }
+//            _subDiagramPortal?.updateSubDiagramArea()
+//            
+//            setState(.Normal)
+//            
+//            if enterSubDiagram() {
+//                _parentController.diagramViewsManager.activate(_subDiagramPortal.subDiagramController)
+//                _subDiagramPortal.detach()
+//            }
+//            else if enterParentDiagram() {
+//                _parentController.diagramViewsManager.deactivate(self)
+//    //            _parentController.removeLastController()
+//            }
         }
         else if let tapHandler = handler as? TapGestureHandler,
                     elm = tapHandler.pickedElement {
                     
-            let document = Application.instance().document
-            
-            if let  model = document.models.get(elm.modelId) {
-                
-                if let  filePath = model.filePath,
-                        rootPath = document.filesPathRoot {
-
-                    let app = Application.instance()
-
-                    app.stories.push( FileViewStory(file: rootPath + filePath) )
-                }
-                else if let name = model.subDiagramName,
-                            subDiagram = document.diagrams.get(name) where !_parentController.diagramViewsManager.contains(name) {
-                                
-                    let  controller = DiagramViewController(parentController: _parentController, diagram: subDiagram)
-                    _parentController.diagramViewsManager.activate(controller)
-                }
-
-            }
+//            let document = Application.instance().document
+//            
+//            if let  model = document.models.get(elm.modelId) {
+//                
+//                if let  filePath = model.filePath,
+//                        rootPath = document.filesPathRoot {
+//
+//                    let app = Application.instance()
+//
+//                    app.stories.push( FileViewStory(file: rootPath + filePath) )
+//                }
+//                else if let name = model.subDiagramName,
+//                            subDiagram = document.diagrams.get(name) where !_parentController.diagramViewsManager.contains(name) {
+//                                
+//                    let  controller = DiagramViewController(parentController: _parentController, diagram: subDiagram)
+//                    _parentController.diagramViewsManager.activate(controller)
+//                }
+//
+//            }
         }
     }
     
-    func enterSubDiagram() -> Bool {
+    func enterSubDiagram(velocity: CGFloat) -> Bool {
         
         if let  portal = _subDiagramPortal,
                 ctrller = portal.subDiagramController,
@@ -285,7 +285,11 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
                 return false
             }
             
-            return portal.enterSubDiagram()
+            if velocity > 1.0 {
+                return true
+            }
+            
+//            return portal.enterSubDiagram()
         }
         
         return false
@@ -311,16 +315,87 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
             
             case .PanDiagram:
                 if let pda = action as? PanDiagramAction {
-                 
-//                    if pda.state == .Ended {
-                    
-                        _diagramPortal.translation = pda.translation
-                        view.setNeedsDisplay()
-//                    }
+                    onPanAction(pda)
+                }
+
+            case .ZoomDiagram:
+                if let zda = action as? ZoomDiagramAction {
+                    onZoomAction(zda)
+                }
+
+            case .TapDiagram:
+                if let tda = action as? TapDiagramAction {
+                    onTapAction(tda)
                 }
             
             default:
                 break
+        }
+    }
+    
+    func onPanAction(action: PanDiagramAction) {
+    
+        _diagramPortal.translation = action.translation
+        view.setNeedsDisplay()
+    }
+    
+    func onZoomAction(action: ZoomDiagramAction) {
+        
+        switch action.state {
+            case .Began:
+                _subDiagramPortal?.pickElm()
+
+            case .Changed:
+                _subDiagramPortal?.updateSubDiagramArea()
+                
+                if enterSubDiagram(action.velocity) {
+                    setState(.WillShowSubDiagram)
+                }
+                else if enterParentDiagram() {
+                    setState(.WillShowParentDiagram)
+                }
+                else {
+                    setState(.Normal)
+                }
+                
+                view.setNeedsDisplay()
+                
+                _parentController.onDiagramChanged()
+
+            case .Ended:
+                _subDiagramPortal?.updateSubDiagramArea()
+                
+                setState(.Normal)
+                
+                if enterSubDiagram(action.velocity) {
+                    _parentController.diagramViewsManager.activate(_subDiagramPortal.subDiagramController)
+                    _subDiagramPortal.detach()
+                }
+                else if enterParentDiagram() {
+                    _parentController.diagramViewsManager.deactivate(self)
+                    //            _parentController.removeLastController()
+                }
+            
+                view.setNeedsDisplay()
+        }
+    }
+    
+    func onTapAction(action: TapDiagramAction) {
+        
+        let primitives = _diagram.primitivesFromPt(action.pt)
+        
+        if primitives.isEmpty {
+            diagram.selection.clear()
+        }
+        else {
+            for item in primitives {
+                
+                if let elm = item as? Element {
+                    Application.instance().actionsBus.send( SelectDiagramElementAction(element: elm, sender: self))
+//                    _element = elm
+                }
+                
+            }
         }
     }
 

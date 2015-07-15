@@ -80,6 +80,12 @@
 		16AE13F81B45F9D300F2FCFB /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F41B45F9D300F2FCFB /* LeftArrow.png */; };
 		16AE13F91B45F9D300F2FCFB /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F51B45F9D300F2FCFB /* RightArrow.png */; };
 		16AE13FA1B45F9D300F2FCFB /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F61B45F9D300F2FCFB /* UpArrow.png */; };
+		16C0E79B1B55CF2C00AEA0A0 /* GestureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E79A1B55CF2C00AEA0A0 /* GestureAction.swift */; };
+		16C0E79D1B55D02900AEA0A0 /* ZoomDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E79C1B55D02900AEA0A0 /* ZoomDiagramAction.swift */; };
+		16C0E79F1B55DB9100AEA0A0 /* TapDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E79E1B55DB9100AEA0A0 /* TapDiagramAction.swift */; };
+		16C0E7A11B55DE0B00AEA0A0 /* SelectDiagramElementAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E7A01B55DE0B00AEA0A0 /* SelectDiagramElementAction.swift */; };
+		16C0E7A31B55E1B200AEA0A0 /* FileViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E7A21B55E1B200AEA0A0 /* FileViewAction.swift */; };
+		16C0E7A51B55E2EC00AEA0A0 /* ShowDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E7A41B55E2EC00AEA0A0 /* ShowDiagramAction.swift */; };
 		16E1C5B91B48783C00B909F3 /* DiagramViewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1C5B81B48783C00B909F3 /* DiagramViewsManager.swift */; };
 		16E1C5BB1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1C5BA1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift */; };
 		16EE9FE11B06A72000A872D4 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE01B06A72000A872D4 /* Link.swift */; };
@@ -282,6 +288,12 @@
 		16AE13F41B45F9D300F2FCFB /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LeftArrow.png; path = Resources/icons/LeftArrow.png; sourceTree = "<group>"; };
 		16AE13F51B45F9D300F2FCFB /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RightArrow.png; path = Resources/icons/RightArrow.png; sourceTree = "<group>"; };
 		16AE13F61B45F9D300F2FCFB /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UpArrow.png; path = Resources/icons/UpArrow.png; sourceTree = "<group>"; };
+		16C0E79A1B55CF2C00AEA0A0 /* GestureAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GestureAction.swift; path = Actions/ActionObjects/GestureAction.swift; sourceTree = "<group>"; };
+		16C0E79C1B55D02900AEA0A0 /* ZoomDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomDiagramAction.swift; path = Actions/ActionObjects/ZoomDiagramAction.swift; sourceTree = "<group>"; };
+		16C0E79E1B55DB9100AEA0A0 /* TapDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapDiagramAction.swift; path = Actions/ActionObjects/TapDiagramAction.swift; sourceTree = "<group>"; };
+		16C0E7A01B55DE0B00AEA0A0 /* SelectDiagramElementAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectDiagramElementAction.swift; path = Actions/ActionObjects/SelectDiagramElementAction.swift; sourceTree = "<group>"; };
+		16C0E7A21B55E1B200AEA0A0 /* FileViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileViewAction.swift; path = Actions/ActionObjects/FileViewAction.swift; sourceTree = "<group>"; };
+		16C0E7A41B55E2EC00AEA0A0 /* ShowDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowDiagramAction.swift; path = Actions/ActionObjects/ShowDiagramAction.swift; sourceTree = "<group>"; };
 		16E1C5B81B48783C00B909F3 /* DiagramViewsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewsManager.swift; path = Stories/SchematicView/DiagramViewsManager.swift; sourceTree = "<group>"; };
 		16E1C5BA1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewsManagerDelegate.swift; path = Stories/SchematicView/DiagramViewsManagerDelegate.swift; sourceTree = "<group>"; };
 		16EE9FE01B06A72000A872D4 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../sources/DiagramElements/Link.swift; sourceTree = "<group>"; };
@@ -404,6 +416,12 @@
 				16247E241B5478B000F1D341 /* CloseStoryAction.swift */,
 				16247E261B547C9200F1D341 /* OpenStory.swift */,
 				16247E281B5494B200F1D341 /* PanDiagramAction.swift */,
+				16C0E79A1B55CF2C00AEA0A0 /* GestureAction.swift */,
+				16C0E79C1B55D02900AEA0A0 /* ZoomDiagramAction.swift */,
+				16C0E79E1B55DB9100AEA0A0 /* TapDiagramAction.swift */,
+				16C0E7A01B55DE0B00AEA0A0 /* SelectDiagramElementAction.swift */,
+				16C0E7A21B55E1B200AEA0A0 /* FileViewAction.swift */,
+				16C0E7A41B55E2EC00AEA0A0 /* ShowDiagramAction.swift */,
 			);
 			name = ActionObjects;
 			sourceTree = "<group>";
@@ -1063,10 +1081,12 @@
 				166405BB1B3CDA8C003F720A /* SubDiagramPortal.swift in Sources */,
 				166405BD1B3CDCE0003F720A /* GestureHandlerDelegate.swift in Sources */,
 				166405951B370847003F720A /* ZoomGestureHandler.swift in Sources */,
+				16C0E79F1B55DB9100AEA0A0 /* TapDiagramAction.swift in Sources */,
 				1664059F1B370857003F720A /* DiagramPortal.swift in Sources */,
 				166405A11B370857003F720A /* DiagramViewController.swift in Sources */,
 				1642F16D1B1D396B00AA600D /* StoriesMgr.swift in Sources */,
 				16247E211B51E4EF00F1D341 /* ActionsBus.swift in Sources */,
+				16C0E7A11B55DE0B00AEA0A0 /* SelectDiagramElementAction.swift in Sources */,
 				166405941B370847003F720A /* TapGestureHandler.swift in Sources */,
 				163694D51B4971D0000EAF38 /* ViewDrawingMode.swift in Sources */,
 				16247E1A1B51DC8000F1D341 /* ActionIdentifier.swift in Sources */,
@@ -1077,6 +1097,7 @@
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
 				16247E231B51E68200F1D341 /* ActionListeners.swift in Sources */,
 				16E1C5B91B48783C00B909F3 /* DiagramViewsManager.swift in Sources */,
+				16C0E79B1B55CF2C00AEA0A0 /* GestureAction.swift in Sources */,
 				1664058D1B370838003F720A /* DiagramsDataSource.swift in Sources */,
 				1664058F1B370838003F720A /* DiagramSelectionStory.swift in Sources */,
 				1642F16F1B1D398600AA600D /* Story.swift in Sources */,
@@ -1091,8 +1112,11 @@
 				166405A71B370A2A003F720A /* FileViewStory.swift in Sources */,
 				166405931B370847003F720A /* PanGestureHandler.swift in Sources */,
 				166405A41B370857003F720A /* SchematicViewController.swift in Sources */,
+				16C0E79D1B55D02900AEA0A0 /* ZoomDiagramAction.swift in Sources */,
 				163694D31B48DE49000EAF38 /* DiagramsHistoryController.swift in Sources */,
+				16C0E7A51B55E2EC00AEA0A0 /* ShowDiagramAction.swift in Sources */,
 				16E1C5BB1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift in Sources */,
+				16C0E7A31B55E1B200AEA0A0 /* FileViewAction.swift in Sources */,
 				16247E181B51DBDB00F1D341 /* Action.swift in Sources */,
 				166405A01B370857003F720A /* DiagramView.swift in Sources */,
 				166405B71B3B0A4A003F720A /* BaseGestureHandler.swift in Sources */,

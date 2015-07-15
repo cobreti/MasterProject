@@ -9,13 +9,7 @@
 import Foundation
 import Shapes
 
-class PanDiagramAction : Action {
-    
-    enum State : String {
-        case Began = "Began"
-        case Changed = "Changed"
-        case Ended = "Ended"
-    }
+class PanDiagramAction : GestureAction {
     
     var translation: Point {
         get {
@@ -23,17 +17,6 @@ class PanDiagramAction : Action {
         }
     }
     
-    override var log : Bool {
-        get {
-            return _state != .Changed
-        }
-    }
-    
-    var state: State {
-        get {
-            return _state
-        }
-    }
     
     override var description: String {
         get {
@@ -44,12 +27,10 @@ class PanDiagramAction : Action {
     init(translation: Point, state: State, sender: AnyObject) {
         
         _translation = translation
-        _state = state
         
-        super.init(id: .PanDiagram, sender: sender)
+        super.init(id: .PanDiagram, state: state, sender: sender)
     }
     
     var _translation : Point
-    var _state : State
 }
 

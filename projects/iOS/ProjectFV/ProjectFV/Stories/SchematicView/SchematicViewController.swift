@@ -205,9 +205,67 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     
     func onAction(action: Action) {
         
-        _diagramViewsManager.onAction(action)
+        switch action.id {
+
+            case .SelectDiagramElement:
+                if let sdea = action as? SelectDiagramElementAction {
+                    onSelectDiagramElement(sdea)
+                }
+                break
+            
+            case .FileView:
+                if let fva = action as? FileViewAction {
+                    onFileViewAction(fva)
+                }
+            
+            case .ShowDiagram:
+                if let sda = action as? ShowDiagramAction {
+                    onShowDiagram(sda)
+                }
+            
+            default:
+                _diagramViewsManager.onAction(action)
+        }
     }
     
+    func onSelectDiagramElement(action: SelectDiagramElementAction) {
+        let document = Application.instance().document
+        
+        if let  model = document.models.get(action.element.modelId) {
+            
+            if let  filePath = model.filePath,
+                    rootPath = document.filesPathRoot {
+                    
+                let app = Application.instance()
+                
+                app.actionsBus.send( FileViewAction(file: rootPath + filePath, sender: self))
+//                    app.stories.push( FileViewStory(file: rootPath + filePath) )
+            }
+            else if let name = model.subDiagramName,
+                        subDiagram = document.diagrams.get(name) where !diagramViewsManager.contains(name) {
+                        
+                let app = Application.instance()
+                
+                app.actionsBus.send( ShowDiagramAction(diagram: subDiagram, sender: self) )
+//                    let  controller = DiagramViewController(parentController: self, diagram: subDiagram)
+//                    diagramViewsManager.activate(controller)
+            }
+            
+        }
+    }
+    
+    func onFileViewAction(action: FileViewAction) {
+
+        let app = Application.instance()
+        app.stories.push( FileViewStory(file: action.file) )
+    }
+    
+    func onShowDiagram(action: ShowDiagramAction) {
+        
+        let  controller = DiagramViewController(parentController: self, diagram: action.diagram)
+        diagramViewsManager.activate(controller)
+    }
+
     var _diagram : Diagram
     var _backEventHandler : EventHandler!
     var _tempParentController : DiagramViewController!
