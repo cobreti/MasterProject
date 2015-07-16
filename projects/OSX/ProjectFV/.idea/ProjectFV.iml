@@ -17,8 +17,26 @@
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Element.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Element.swift" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/LayerSelection.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/LayerSelection.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Link.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Link.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkEndPoint.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkEndPoint.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkEndPointType.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkEndPointType.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkType.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/LinkType.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Model.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Model.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/ModelsTable.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/ModelsTable.swift" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Primitive.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Primitive.swift" isTestSource="false" />
@@ -56,14 +74,26 @@
     <content url="file://$MODULE_DIR$/../../../sources/VpProject/XmlElementParserDelegate.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/XmlElementParserDelegate.swift" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/XmlParserState.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/XmlParserState.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlModelsParser.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlModelsParser.swift" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift" isTestSource="false" />

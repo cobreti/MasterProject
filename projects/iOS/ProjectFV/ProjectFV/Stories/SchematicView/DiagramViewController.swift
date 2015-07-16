@@ -374,8 +374,8 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
 
                 }
                 else if enterParentDiagram() {
-//                    _parentController.diagramViewsManager.deactivate(self)
-                    //            _parentController.removeLastController()
+                    
+                    Application.instance().actionsBus.send( ExitSubDiagramAction(controller: self, sender:nil) )
                 }
             
                 view.setNeedsDisplay()

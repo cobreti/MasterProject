@@ -186,9 +186,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     
     @IBAction func onRecenter(sender: AnyObject) {
 
-        if let ctrller = _diagramViewsManager.currentController {
-            ctrller.resetView()
-        }
+        Application.instance().actionsBus.send( RecenterDiagramAction(sender: nil) )
     }
     
     func onDiagramViewActivated(    oldDiagramView: DiagramViewController!,
@@ -227,6 +225,17 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                 if let esda = action as? EnterSubDiagramAction {
                     diagramViewsManager.activate(esda.subDiagramController)
                 }
+
+            case .ExitSubDiagram:
+                if let esda = action as? ExitSubDiagramAction {
+                    diagramViewsManager.deactivate(esda.subDiagramViewController)
+                }
+
+            case .RecenterDiagram:
+                if let ctrller = _diagramViewsManager.currentController {
+                    ctrller.resetView()
+                }
+
             
             default:
                 _diagramViewsManager.onAction(action)

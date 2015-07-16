@@ -40,8 +40,6 @@
 		167D92861AF44E7B00658E19 /* DiagramElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D92851AF44E7B00658E19 /* DiagramElementsTests.swift */; };
 		167D92891AF44E7B00658E19 /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92721AF44E7B00658E19 /* DiagramElements.framework */; };
 		167D928A1AF44E7B00658E19 /* DiagramElements.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92721AF44E7B00658E19 /* DiagramElements.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		167D92931AF44EB200658E19 /* DiagramLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D92921AF44EB200658E19 /* DiagramLayers.swift */; };
-		167D92951AF44EC800658E19 /* DiagramLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D92941AF44EC800658E19 /* DiagramLayer.swift */; };
 		167D92C61AF455BE00658E19 /* VpProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 167D92C51AF455BE00658E19 /* VpProject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		167D92CC1AF455BE00658E19 /* VpProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167D92C11AF455BE00658E19 /* VpProject.framework */; };
 		167D92D51AF455BE00658E19 /* VpProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D92D41AF455BE00658E19 /* VpProjectTests.swift */; };
@@ -69,6 +67,8 @@
 		B02F398F99F10422DDA598A7 /* VpProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F36227CCA08C6FBEA11E1 /* VpProject.swift */; };
 		B02F3BCD5D45E713BE90C31F /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3EAA525458119BA5DB9A /* Document.swift */; };
 		B02F3C3EE0BA8C9E2E602E84 /* XMLParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A3D9DCC2A1660280BFB /* XMLParsingTest.swift */; };
+		B02F3DA19D130C7B00F275A6 /* Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B7D88B11FFF98B220C3 /* Diagram.swift */; };
+		B02F3DFC4FA0F3BAD02D0DB0 /* Diagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A33C2C9588A61A7D3C6 /* Diagrams.swift */; };
 		B02F3F28D7FC80D771553403 /* XmlDocParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3AD8A596BDBC1BF59290 /* XmlDocParser.swift */; };
 		B02F3FE7E5029A8F4DA39CE2 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3686A6F8083BC92F7746 /* Application.swift */; };
 /* End PBXBuildFile section */
@@ -201,8 +201,6 @@
 		167D927C1AF44E7B00658E19 /* DiagramElementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiagramElementsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		167D92841AF44E7B00658E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167D92851AF44E7B00658E19 /* DiagramElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramElementsTests.swift; sourceTree = "<group>"; };
-		167D92921AF44EB200658E19 /* DiagramLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramLayers.swift; path = ../../../../sources/DiagramElements/DiagramLayers.swift; sourceTree = "<group>"; };
-		167D92941AF44EC800658E19 /* DiagramLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramLayer.swift; path = ../../../../sources/DiagramElements/DiagramLayer.swift; sourceTree = "<group>"; };
 		167D92C11AF455BE00658E19 /* VpProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VpProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		167D92C41AF455BE00658E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167D92C51AF455BE00658E19 /* VpProject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VpProject.h; sourceTree = "<group>"; };
@@ -228,8 +226,10 @@
 		B02F36227CCA08C6FBEA11E1 /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
 		B02F3686A6F8083BC92F7746 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		B02F380233C566D8903C545E /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = ../../../../sources/DiagramElements/Element.swift; sourceTree = "<group>"; };
+		B02F3A33C2C9588A61A7D3C6 /* Diagrams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diagrams.swift; sourceTree = "<group>"; };
 		B02F3A3D9DCC2A1660280BFB /* XMLParsingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParsingTest.swift; sourceTree = "<group>"; };
 		B02F3AD8A596BDBC1BF59290 /* XmlDocParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDocParser.swift; path = ../../../../sources/VpProject/XmlDocParser.swift; sourceTree = "<group>"; };
+		B02F3B7D88B11FFF98B220C3 /* Diagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diagram.swift; sourceTree = "<group>"; };
 		B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Primitive.swift; path = ../../../../sources/DiagramElements/Primitive.swift; sourceTree = "<group>"; };
 		B02F3EAA525458119BA5DB9A /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Document.swift; path = ../../../../sources/DiagramElements/Document.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -440,8 +440,6 @@
 			children = (
 				167D92761AF44E7B00658E19 /* DiagramElements.h */,
 				167D92741AF44E7B00658E19 /* Supporting Files */,
-				167D92921AF44EB200658E19 /* DiagramLayers.swift */,
-				167D92941AF44EC800658E19 /* DiagramLayer.swift */,
 				B02F3EAA525458119BA5DB9A /* Document.swift */,
 				B02F380233C566D8903C545E /* Element.swift */,
 				B02F3B9AE6A8A2E111DDD094 /* Primitive.swift */,
@@ -452,6 +450,8 @@
 				1627DAD61B2BB5EB00D94287 /* Model.swift */,
 				1627DAD71B2BB5EB00D94287 /* ModelsTable.swift */,
 				1627DADD1B2BB60E00D94287 /* LayerSelection.swift */,
+				B02F3B7D88B11FFF98B220C3 /* Diagram.swift */,
+				B02F3A33C2C9588A61A7D3C6 /* Diagrams.swift */,
 			);
 			path = DiagramElements;
 			sourceTree = "<group>";
@@ -900,11 +900,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1627DAD81B2BB5EB00D94287 /* LinkEndPoint.swift in Sources */,
-				167D92931AF44EB200658E19 /* DiagramLayers.swift in Sources */,
 				1627DADE1B2BB60E00D94287 /* LayerSelection.swift in Sources */,
 				1627DAD91B2BB5EB00D94287 /* LinkEndPointType.swift in Sources */,
 				1627DADA1B2BB5EB00D94287 /* LinkType.swift in Sources */,
-				167D92951AF44EC800658E19 /* DiagramLayer.swift in Sources */,
 				1627DADB1B2BB5EB00D94287 /* Model.swift in Sources */,
 				B02F3BCD5D45E713BE90C31F /* Document.swift in Sources */,
 				1627DADC1B2BB5EB00D94287 /* ModelsTable.swift in Sources */,
@@ -940,6 +938,8 @@
 				16EE9FDB1B06531D00A872D4 /* XmlPointsParser.swift in Sources */,
 				1627DAE61B2BB66800D94287 /* XmlParserState.swift in Sources */,
 				16EE9FD71B06358F00A872D4 /* XmlElementParserDelegate.swift in Sources */,
+				B02F3DA19D130C7B00F275A6 /* Diagram.swift in Sources */,
+				B02F3DFC4FA0F3BAD02D0DB0 /* Diagrams.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
