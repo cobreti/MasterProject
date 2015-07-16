@@ -18,5 +18,6 @@ enum ActionIdentifier : String {
     case SelectDiagramElement       = "Select Diagram Element"
     case FileView                   = "File View"
     case ShowDiagram                = "Show Diagram"
+    case EnterSubDiagram            = "Enter Sub-diagram"
 }
 

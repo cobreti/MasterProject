@@ -223,6 +223,11 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                     onShowDiagram(sda)
                 }
             
+            case .EnterSubDiagram:
+                if let esda = action as? EnterSubDiagramAction {
+                    diagramViewsManager.activate(esda.subDiagramController)
+                }
+            
             default:
                 _diagramViewsManager.onAction(action)
         }

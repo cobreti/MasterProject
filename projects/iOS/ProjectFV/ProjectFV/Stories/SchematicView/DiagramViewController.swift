@@ -368,11 +368,13 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
                 setState(.Normal)
                 
                 if enterSubDiagram(action.velocity) {
-                    _parentController.diagramViewsManager.activate(_subDiagramPortal.subDiagramController)
+                    let subDiagramController = _subDiagramPortal.subDiagramController
                     _subDiagramPortal.detach()
+                    Application.instance().actionsBus.send( EnterSubDiagramAction(subDiagramController: subDiagramController, sender: nil) )
+
                 }
                 else if enterParentDiagram() {
-                    _parentController.diagramViewsManager.deactivate(self)
+//                    _parentController.diagramViewsManager.deactivate(self)
                     //            _parentController.removeLastController()
                 }
             
