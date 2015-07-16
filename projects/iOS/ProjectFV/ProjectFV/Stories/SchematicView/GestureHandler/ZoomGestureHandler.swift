@@ -13,13 +13,12 @@ import Shapes
 class ZoomGestureHandler : BaseGestureHandler {
     
 
-    override init( view: DiagramView, portal: DiagramPortal, delegate: GestureHandlerDelegate! ) {
+    override init( view: DiagramView, portal: DiagramPortal) {
         
         _originalTranslation = Point(x: 0, y: 0)
         _ptInView = Point(x: 0, y: 0)
-//        _subDiagramHandler = SubDiagramHandler(view: view, portal: portal)
 
-        super.init(view: view, portal: portal, delegate: delegate)
+        super.init(view: view, portal: portal)
 
         var zoomRecognizer = UIPinchGestureRecognizer()
         zoomRecognizer.addTarget(self, action: "onZoom:")
@@ -44,24 +43,17 @@ class ZoomGestureHandler : BaseGestureHandler {
                 let diagPt = portal.pointFromViewToPortal(pinPt)
                 portal.pinPoint = PinPoint(x: diagPt.x, y: diagPt.y)
             
-//                delegate?.onGestureStarted(self)
                 Application.instance().actionsBus.send( ZoomDiagramAction(scale: sender.scale, velocity: sender.velocity, state: .Began, sender: self) )
             
             case UIGestureRecognizerState.Changed:
                 portal.zoom = sender.scale
                 portal.alignWithViewPinPoint(view.pinPoint!)
-//                _subDiagramHandler.checkForSubDiagramDisplay()
-//                view.setNeedsDisplay()
-            
+
                 Application.instance().actionsBus.send( ZoomDiagramAction(scale: sender.scale, velocity: sender.velocity, state: .Changed, sender: self) )
-//                delegate?.onGestureChanged(self)
-            
+
             case UIGestureRecognizerState.Ended:
                 Application.instance().actionsBus.send( ZoomDiagramAction(scale: sender.scale, velocity: sender.velocity, state: .Ended, sender: self) )
-//                delegate?.onGestureEnded(self)
-//                _subDiagramHandler.checkForSubDiagramDisplay()
-//                view.setNeedsDisplay()
-            
+
             default:
                 break
         }
@@ -69,6 +61,5 @@ class ZoomGestureHandler : BaseGestureHandler {
 
     var _originalTranslation : Point
     var _ptInView : Point
-//    var _subDiagramHandler : SubDiagramHandler
 }
 

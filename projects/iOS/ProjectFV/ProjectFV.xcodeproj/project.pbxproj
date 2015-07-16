@@ -47,7 +47,6 @@
 		166405B51B39AE77003F720A /* subdiagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 166405B41B39AE77003F720A /* subdiagram.png */; };
 		166405B71B3B0A4A003F720A /* BaseGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405B61B3B0A4A003F720A /* BaseGestureHandler.swift */; };
 		166405BB1B3CDA8C003F720A /* SubDiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405BA1B3CDA8C003F720A /* SubDiagramPortal.swift */; };
-		166405BD1B3CDCE0003F720A /* GestureHandlerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405BC1B3CDCE0003F720A /* GestureHandlerDelegate.swift */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFC1AF5502600C8F9AE /* Images.xcassets */; };
 		1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFE1AF5502600C8F9AE /* LaunchScreen.xib */; };
@@ -253,7 +252,6 @@
 		166405B41B39AE77003F720A /* subdiagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subdiagram.png; path = Resources/icons/subdiagram.png; sourceTree = "<group>"; };
 		166405B61B3B0A4A003F720A /* BaseGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseGestureHandler.swift; path = Stories/SchematicView/GestureHandler/BaseGestureHandler.swift; sourceTree = "<group>"; };
 		166405BA1B3CDA8C003F720A /* SubDiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubDiagramPortal.swift; path = Stories/SchematicView/SubDiagramPortal.swift; sourceTree = "<group>"; };
-		166405BC1B3CDCE0003F720A /* GestureHandlerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GestureHandlerDelegate.swift; path = Stories/SchematicView/GestureHandler/GestureHandlerDelegate.swift; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -442,7 +440,6 @@
 				166405911B370847003F720A /* TapGestureHandler.swift */,
 				166405921B370847003F720A /* ZoomGestureHandler.swift */,
 				166405B61B3B0A4A003F720A /* BaseGestureHandler.swift */,
-				166405BC1B3CDCE0003F720A /* GestureHandlerDelegate.swift */,
 			);
 			name = GestureHandler;
 			sourceTree = "<group>";
@@ -1089,7 +1086,6 @@
 			files = (
 				16C0E7A71B57EB7100AEA0A0 /* EnterSubDiagramAction.swift in Sources */,
 				166405BB1B3CDA8C003F720A /* SubDiagramPortal.swift in Sources */,
-				166405BD1B3CDCE0003F720A /* GestureHandlerDelegate.swift in Sources */,
 				166405951B370847003F720A /* ZoomGestureHandler.swift in Sources */,
 				16C0E79F1B55DB9100AEA0A0 /* TapDiagramAction.swift in Sources */,
 				1664059F1B370857003F720A /* DiagramPortal.swift in Sources */,

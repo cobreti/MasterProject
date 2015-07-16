@@ -19,9 +19,9 @@ class TapGestureHandler : BaseGestureHandler {
         }
     }
     
-    override init(view: DiagramView, portal: DiagramPortal, delegate: GestureHandlerDelegate!) {
+    override init(view: DiagramView, portal: DiagramPortal) {
         
-        super.init(view: view, portal: portal, delegate: delegate)
+        super.init(view: view, portal: portal)
         
         let tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.addTarget(self, action: "onTap:")
@@ -45,24 +45,6 @@ class TapGestureHandler : BaseGestureHandler {
                     let diagPt = portal.pointFromViewToPortal(Point(x: ptInView.x, y: ptInView.y))
                     
                     Application.instance().actionsBus.send( TapDiagramAction(pt: diagPt, sender: self))
-
-//                    let primitives = diagram.primitivesFromPt(diagPt)
-//                    
-//                    if primitives.isEmpty {
-//                        diagram.selection.clear()
-//                    }
-//                    else {
-//                        for item in primitives {
-//                            
-//                            if let elm = item as? Element {
-//                                _element = elm
-//                            }
-//                            
-//                       }
-//                    }
-//                    
-//                    delegate?.onGestureEnded(self)
-
                 }
             default:
                 break

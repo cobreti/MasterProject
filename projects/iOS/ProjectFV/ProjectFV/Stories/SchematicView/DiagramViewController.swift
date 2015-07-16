@@ -11,7 +11,7 @@ import DiagramElements
 import Shapes
 import UIKit
 
-class DiagramViewController : UIViewController, GestureHandlerDelegate {
+class DiagramViewController : UIViewController {
     
     enum State {
         case Normal
@@ -114,9 +114,9 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
             dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
             dgmView.diagramViewsManager = _parentController.diagramViewsManager
 
-            _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
-            _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
-            _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal, delegate: self)
+            _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal)
+            _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal)
+            _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal)
             _subDiagramPortal = SubDiagramPortal(view: dgmView, portal: _diagramPortal, parentController: _parentController)
             
             _panGestureHandler?.enabled = _gestureEnabled
@@ -204,77 +204,7 @@ class DiagramViewController : UIViewController, GestureHandlerDelegate {
             dgmView.setNeedsDisplay()
         }
     }
-    
-    func onGestureStarted(handler: BaseGestureHandler) {
-    
-        if handler.dynamicType === ZoomGestureHandler.self {
-            
-//            _subDiagramPortal?.pickElm()
-        }
-    }
-    
-    func onGestureChanged(handler: BaseGestureHandler) {
-    
-        if handler.dynamicType === ZoomGestureHandler.self {
-        
-//            _subDiagramPortal?.updateSubDiagramArea()
-//
-//            if enterSubDiagram() {
-//                setState(.WillShowSubDiagram)
-//            }
-//            else if enterParentDiagram() {
-//                setState(.WillShowParentDiagram)
-//            }
-//            else {
-//                setState(.Normal)
-//            }
-//            
-//            _parentController.onDiagramChanged()
-        }
-    }
-    
-    func onGestureEnded(handler: BaseGestureHandler) {
 
-        if let _ = handler as? ZoomGestureHandler {
-        
-//            _subDiagramPortal?.updateSubDiagramArea()
-//            
-//            setState(.Normal)
-//            
-//            if enterSubDiagram() {
-//                _parentController.diagramViewsManager.activate(_subDiagramPortal.subDiagramController)
-//                _subDiagramPortal.detach()
-//            }
-//            else if enterParentDiagram() {
-//                _parentController.diagramViewsManager.deactivate(self)
-//    //            _parentController.removeLastController()
-//            }
-        }
-        else if let tapHandler = handler as? TapGestureHandler,
-                    elm = tapHandler.pickedElement {
-                    
-//            let document = Application.instance().document
-//            
-//            if let  model = document.models.get(elm.modelId) {
-//                
-//                if let  filePath = model.filePath,
-//                        rootPath = document.filesPathRoot {
-//
-//                    let app = Application.instance()
-//
-//                    app.stories.push( FileViewStory(file: rootPath + filePath) )
-//                }
-//                else if let name = model.subDiagramName,
-//                            subDiagram = document.diagrams.get(name) where !_parentController.diagramViewsManager.contains(name) {
-//                                
-//                    let  controller = DiagramViewController(parentController: _parentController, diagram: subDiagram)
-//                    _parentController.diagramViewsManager.activate(controller)
-//                }
-//
-//            }
-        }
-    }
-    
     func enterSubDiagram(velocity: CGFloat) -> Bool {
         
         if let  portal = _subDiagramPortal,

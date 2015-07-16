@@ -12,12 +12,12 @@ import Shapes
 
 class PanGestureHandler : BaseGestureHandler {
     
-    override init( view: DiagramView, portal: DiagramPortal, delegate: GestureHandlerDelegate! ) {
+    override init( view: DiagramView, portal: DiagramPortal ) {
         
         _startPt = CGPoint(x: 0,y: 0)
         _originalTranslation = Point(x: 0, y: 0)
 
-        super.init(view: view, portal: portal, delegate: delegate)
+        super.init(view: view, portal: portal)
 
         var panRecognizer = UIPanGestureRecognizer()
         panRecognizer.addTarget(self, action: "onPan:")
@@ -36,7 +36,6 @@ class PanGestureHandler : BaseGestureHandler {
             case UIGestureRecognizerState.Began:
                 _startPt = sender.translationInView(self.view)
                 _originalTranslation = self.portal.translation
-//                delegate?.onGestureStarted(self)
                 actionsBus.send( PanDiagramAction(translation: self.portal.translation, state: .Began, sender: self) )
                 break
             case UIGestureRecognizerState.Changed:
@@ -44,13 +43,9 @@ class PanGestureHandler : BaseGestureHandler {
                 var transform = Point(pt: _originalTranslation)
                 transform.x += pt.x / self.portal.scalingFactor
                 transform.y += pt.y / self.portal.scalingFactor
-//                self.portal.translation = transform
-//                self.view.setNeedsDisplay()
-//                delegate?.onGestureChanged(self)
                 actionsBus.send( PanDiagramAction(translation: transform, state: .Changed, sender: self) )
                 break
             case UIGestureRecognizerState.Ended:
-//                delegate?.onGestureEnded(self)
                 actionsBus.send( PanDiagramAction(translation: self.portal.translation, state: .Ended, sender: self) )
             default:
                 break

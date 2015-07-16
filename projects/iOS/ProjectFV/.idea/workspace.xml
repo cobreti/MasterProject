@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/ExitSubDiagramAction.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/RecenterDiagramAction.swift" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/GestureHandlerDelegate.swift" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift" afterPath="$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/BaseGestureHandler.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/BaseGestureHandler.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../OSX/ProjectFV/.idea/ProjectFV.iml" afterPath="$PROJECT_DIR$/../../OSX/ProjectFV/.idea/ProjectFV.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ProjectFV.iml" afterPath="$PROJECT_DIR$/.idea/ProjectFV.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../OSX/ProjectFV/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/../../OSX/ProjectFV/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../OSX/ProjectFV/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../../OSX/ProjectFV/ProjectFV.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/PanGestureHandler.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/PanGestureHandler.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/ZoomGestureHandler.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/ZoomGestureHandler.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../OSX/ProjectFV/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../OSX/ProjectFV/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
@@ -33,39 +26,69 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_iPhone_6_Plus_8.4_x86_64_1" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_0343b3cd753a0df3730dc63520f84d3e3bc15e72" />
   <component name="FavoritesManager">
     <favorites_list name="ProjectFV" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.46463743">
+    <splitter split-orientation="vertical" split-proportion="0.59028417">
       <split-first>
         <leaf>
-          <file leaf-file-name="EnterSubDiagramAction.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/EnterSubDiagramAction.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DiagramSelectedAction.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/DiagramSelectedAction.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DiagramViewController.swift" pinned="false" current-in-tab="false">
+          <file leaf-file-name="DiagramViewController.swift" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.27704918">
+                  <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PanGestureHandler.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/PanGestureHandler.swift">
+              <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="330" column="20" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
+                  <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TapGestureHandler.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ZoomGestureHandler.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/ZoomGestureHandler.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BaseGestureHandler.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/BaseGestureHandler.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ViewDrawingMode.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/ViewDrawingMode.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -91,11 +114,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SchematicViewController.swift" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SchematicViewController.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.22633745">
-                  <caret line="190" column="4" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="198" column="4" selection-start-line="198" selection-start-column="4" selection-end-line="198" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -109,17 +132,27 @@
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="359" column="16" selection-start-line="359" selection-start-column="16" selection-end-line="359" selection-end-column="16" />
+                  <caret line="289" column="16" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SchematicViewController.swift" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SchematicViewController.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4250441">
-                  <caret line="226" column="17" selection-start-line="226" selection-start-column="17" selection-end-line="226" selection-end-column="17" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="217" column="12" selection-start-line="217" selection-start-column="12" selection-end-line="217" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DiagramsHistoryController.swift" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramsHistoryController.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.20383693">
+                  <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -135,10 +168,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/RecenterDiagramAction.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/BaseGestureHandler.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/PanGestureHandler.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/ZoomGestureHandler.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
       </list>
     </option>
   </component>
@@ -150,8 +187,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="374" />
-    <option name="y" value="149" />
+    <option name="x" value="448" />
+    <option name="y" value="126" />
     <option name="width" value="1958" />
     <option name="height" value="1209" />
   </component>
@@ -258,6 +295,32 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Stories" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchematicView" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GestureHandler" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Actions" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
@@ -291,7 +354,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.File Status" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ProjectFV" />
@@ -361,20 +424,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="374" y="149" width="1958" height="1209" extended-state="0" />
+    <frame x="448" y="126" width="1958" height="1209" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294539" sideWeight="0.49801248" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290559" sideWeight="0.49801248" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24987094" sideWeight="0.45031333" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24987094" sideWeight="0.5496867" order="2" side_tool="true" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31871083" sideWeight="0.4981931" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24987094" sideWeight="0.45096242" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24987094" sideWeight="0.5490376" order="2" side_tool="true" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31805682" sideWeight="0.4981931" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20443985" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31871083" sideWeight="0.5018069" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31805682" sideWeight="0.5018069" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -427,18 +490,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/ViewDrawingMode.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="359" column="16" selection-start-line="359" selection-start-column="16" selection-end-line="359" selection-end-column="16" />
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4250441">
-          <caret line="226" column="17" selection-start-line="226" selection-start-column="17" selection-end-line="226" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="217" column="12" selection-start-line="217" selection-start-column="12" selection-end-line="217" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/BaseGestureHandler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/PanGestureHandler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/ZoomGestureHandler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="289" column="16" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramsHistoryController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20383693">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
