@@ -88,6 +88,7 @@
 		16C0E7A71B57EB7100AEA0A0 /* EnterSubDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E7A61B57EB7100AEA0A0 /* EnterSubDiagramAction.swift */; };
 		16C0E7A91B57EE7F00AEA0A0 /* ExitSubDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E7A81B57EE7F00AEA0A0 /* ExitSubDiagramAction.swift */; };
 		16C0E7AB1B5808D100AEA0A0 /* DiagramHistoryThumbnailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C0E7AA1B5808D100AEA0A0 /* DiagramHistoryThumbnailView.xib */; };
+		16C0E7AD1B5865BD00AEA0A0 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C0E7AC1B5865BD00AEA0A0 /* home.png */; };
 		16E1C5B91B48783C00B909F3 /* DiagramViewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1C5B81B48783C00B909F3 /* DiagramViewsManager.swift */; };
 		16E1C5BB1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1C5BA1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift */; };
 		16EE9FE11B06A72000A872D4 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE01B06A72000A872D4 /* Link.swift */; };
@@ -301,6 +302,7 @@
 		16C0E7A61B57EB7100AEA0A0 /* EnterSubDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterSubDiagramAction.swift; path = Actions/ActionObjects/EnterSubDiagramAction.swift; sourceTree = "<group>"; };
 		16C0E7A81B57EE7F00AEA0A0 /* ExitSubDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExitSubDiagramAction.swift; path = Actions/ActionObjects/ExitSubDiagramAction.swift; sourceTree = "<group>"; };
 		16C0E7AA1B5808D100AEA0A0 /* DiagramHistoryThumbnailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiagramHistoryThumbnailView.xib; path = Resources/DiagramHistoryThumbnailView.xib; sourceTree = "<group>"; };
+		16C0E7AC1B5865BD00AEA0A0 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Resources/icons/home.png; sourceTree = "<group>"; };
 		16E1C5B81B48783C00B909F3 /* DiagramViewsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewsManager.swift; path = Stories/SchematicView/DiagramViewsManager.swift; sourceTree = "<group>"; };
 		16E1C5BA1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewsManagerDelegate.swift; path = Stories/SchematicView/DiagramViewsManagerDelegate.swift; sourceTree = "<group>"; };
 		16EE9FE01B06A72000A872D4 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../sources/DiagramElements/Link.swift; sourceTree = "<group>"; };
@@ -642,6 +644,7 @@
 		16A44FC61B248BDF00ABDC4E /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				16C0E7AC1B5865BD00AEA0A0 /* home.png */,
 				166405AE1B387A62003F720A /* file.png */,
 				16A44FC71B248BF100ABDC4E /* back.png */,
 				166405B01B38D609003F720A /* cross.png */,
@@ -1032,6 +1035,7 @@
 				16A44FC81B248BF100ABDC4E /* back.png in Resources */,
 				16EEA0211B06B75100A872D4 /* DiagramView.xib in Resources */,
 				1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */,
+				16C0E7AD1B5865BD00AEA0A0 /* home.png in Resources */,
 				160D0D571B3F33BA00BC3C1C /* recenter.png in Resources */,
 				166405B11B38D609003F720A /* cross.png in Resources */,
 				1673BE451AF550A700C8F9AE /* EmbeddedRes in Resources */,

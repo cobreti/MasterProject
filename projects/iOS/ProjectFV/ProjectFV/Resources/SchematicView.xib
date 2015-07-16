@@ -57,7 +57,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="uMg-Ji-oBM"/>
                             </constraints>
-                            <state key="normal" image="back.png">
+                            <state key="normal" image="home.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -142,7 +142,7 @@
         <image name="LeftArrow.png" width="20" height="20"/>
         <image name="RightArrow.png" width="20" height="20"/>
         <image name="UpArrow.png" width="20" height="20"/>
-        <image name="back.png" width="15" height="15"/>
+        <image name="home.png" width="15" height="15"/>
         <image name="recenter.png" width="20" height="20"/>
     </resources>
 </document>
