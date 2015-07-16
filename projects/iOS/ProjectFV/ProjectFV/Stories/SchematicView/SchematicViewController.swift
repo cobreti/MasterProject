@@ -238,8 +238,11 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
 
             
             default:
-                _diagramViewsManager.onAction(action)
+                break
         }
+
+        _diagramViewsManager.onAction(action)
+        _diagramsHistoryController.onAction(action)
     }
     
     func onSelectDiagramElement(action: SelectDiagramElementAction) {

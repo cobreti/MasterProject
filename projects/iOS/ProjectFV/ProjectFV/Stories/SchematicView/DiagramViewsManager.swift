@@ -33,7 +33,36 @@ class DiagramViewsManager {
     }
     
     func onAction(action: Action) {
+
+        switch action.id {
+
+            case .HistoryDiagramSelected:
+                if let hdsa = action as? HistoryDiagramSelectedAction {
+                    onHistoryDiagramSelected(hdsa)
+                }
+
+            default:
+                break
+        }
+
         currentController?.onAction(action)
+    }
+
+    func onHistoryDiagramSelected(action: HistoryDiagramSelectedAction) {
+
+        while let item = _diagramViewControllers.last where item !== action.diagramController {
+
+            item.deactivate()
+            _diagramViewControllers.removeLast()
+        }
+
+        if let item = _diagramViewControllers.last {
+            item.activateInView(_schematicViewController._diagramArea)
+            item.view.frame = _schematicViewController._diagramArea.bounds
+            item.viewDrawingMode = .Normal
+            item.view.userInteractionEnabled = true
+            item.updatePortalRect()
+        }
     }
     
     func activate(controller: DiagramViewController) {

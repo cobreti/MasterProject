@@ -23,25 +23,53 @@ class DiagramsHistoryController : UIViewController {
 
     func add(controller: DiagramViewController) {
         
-        let yPos = _controllers.count * (100 + 10)
-        
-        
-        _controllers.append(controller)
-        view.addSubview(controller.view)
-        controller.view.frame = CGRect(x: 25, y: yPos, width: 100, height: 100)
-        controller.resetView()
-        controller.viewDrawingMode = .Thumbnail
+        let yPos = _historyControllers.count * (100 + 10)
+
+        let ctrller = DiagramHistoryThumbnailViewController(diagramController: controller)
+        view.addSubview(ctrller.view)
+        ctrller.view.frame = CGRect(x: 25, y: yPos, width: 100, height: 100)
+
+        _historyControllers.append(ctrller)
     }
     
     func remove(controller: DiagramViewController) {
         
-        if let l = _controllers.last {
-            _controllers.removeLast()
+        if let l = _historyControllers.last {
+            _historyControllers.removeLast()
+            l.view.removeFromSuperview()
         }
+    }
+
+    func onAction(action: Action) {
+
+        switch action.id {
+
+            case .HistoryDiagramSelected:
+                if let hdsa = action as? HistoryDiagramSelectedAction {
+                    onHistoryDiagramSelected(hdsa)
+                }
+
+            default:
+                break
+        }
+    }
+
+    func onHistoryDiagramSelected(action: HistoryDiagramSelectedAction) {
+
+        while let item = _historyControllers.last where item.diagramController !== action.diagramController {
+            _historyControllers.removeLast()
+            item.view.removeFromSuperview()
+        }
+
+        if let item = _historyControllers.last {
+            _historyControllers.removeLast()
+            item.view.removeFromSuperview()
+        }
+
     }
  
     weak var _diagramViewsManager : DiagramViewsManager!
     
-    var _controllers : [DiagramViewController] = []
+    var _historyControllers : [DiagramHistoryThumbnailViewController] = []
 }
 

@@ -21,5 +21,6 @@ enum ActionIdentifier : String {
     case EnterSubDiagram            = "Enter subdiagram"
     case ExitSubDiagram             = "Exit subdiagram"
     case RecenterDiagram            = "Recenter Diagram"
+    case HistoryDiagramSelected     = "History Diagram Selected"
 }
 
