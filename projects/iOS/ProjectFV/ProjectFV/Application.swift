@@ -64,8 +64,8 @@ class Application {
         
         _actionsBus.listeners.add(_storiesMgr)
   
-//        stories.push( FileViewStory(file: "EmbeddedRes/CodeSite/ProjectFV/DiagramElements/DiagramLayer.swift") )
-        stories.push( DiagramSelectionStory() )
+//        stories.push( DiagramSelectionStory() )
+        stories.push( QuestionnaireStory() )
     }
     
     var _document : DiagramElements.Document = DiagramElements.Document()
