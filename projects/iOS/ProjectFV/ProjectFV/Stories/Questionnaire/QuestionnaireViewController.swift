@@ -35,6 +35,14 @@ class QuestionnaireViewController : UIViewController {
 
     }
 
+    @IBAction func onContinue(sender: AnyObject) {
+
+        for question in _questions {
+            question.writeAnswer()
+        }
+
+        Application.instance().stories.push( DiagramSelectionStory() )
+    }
 
     func addQuestion(title : String) {
 

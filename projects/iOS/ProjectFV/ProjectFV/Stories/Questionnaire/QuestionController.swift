@@ -29,6 +29,16 @@ class QuestionController : UIViewController {
         _questionLabel.text = _question
     }
 
+    func writeAnswer() {
+
+        if let  q = _questionLabel.text,
+        a = _answerTextView.text {
+            Application.instance().actionsBus.send(
+                WriteQuestionAnswerAction(question: q, answer: a, sender: self)
+            )
+        }
+    }
+
 
     @IBOutlet weak var _questionLabel: UILabel!
     @IBOutlet weak var _answerTextView: UITextView!

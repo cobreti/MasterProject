@@ -123,6 +123,7 @@
 		16FB69E41B0D44EF00322E1F /* LinkEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */; };
 		16FB69E61B0D452E00322E1F /* LinkEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */; };
 		16FB69E81B0D46EA00322E1F /* XmlConnectorEndPointParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */; };
+		B02F32888BCE847FB41A2E2E /* WriteQuestionAnswerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */; };
 		B02F3614E249ED471C6EA8D3 /* QuestionnaireStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F357257A40C9FD7C43DE7 /* QuestionnaireStory.swift */; };
 		B02F36931E3B515662B6F0A6 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */; };
 		B02F399E81ACA3183182F4DA /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35FB0F03E66AF590258C /* QuestionController.swift */; };
@@ -345,6 +346,7 @@
 		B02F357257A40C9FD7C43DE7 /* QuestionnaireStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireStory.swift; path = Stories/Questionnaire/QuestionnaireStory.swift; sourceTree = "<group>"; };
 		B02F35FB0F03E66AF590258C /* QuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionController.swift; path = Stories/Questionnaire/QuestionController.swift; sourceTree = "<group>"; };
 		B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecenterDiagramAction.swift; path = Actions/ActionObjects/RecenterDiagramAction.swift; sourceTree = "<group>"; };
+		B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WriteQuestionAnswerAction.swift; path = Actions/ActionObjects/WriteQuestionAnswerAction.swift; sourceTree = "<group>"; };
 		B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDiagramSelectedAction.swift; path = Actions/ActionObjects/HistoryDiagramSelectedAction.swift; sourceTree = "<group>"; };
 		B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireViewController.swift; path = Stories/Questionnaire/QuestionnaireViewController.swift; sourceTree = "<group>"; };
 		B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramHistoryThumbnailViewController.swift; path = Stories/SchematicView/DiagramHistoryThumbnailViewController.swift; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 				16C0E7A81B57EE7F00AEA0A0 /* ExitSubDiagramAction.swift */,
 				B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */,
 				B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */,
+				B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */,
 			);
 			name = ActionObjects;
 			sourceTree = "<group>";
@@ -1172,6 +1175,7 @@
 				B02F3614E249ED471C6EA8D3 /* QuestionnaireStory.swift in Sources */,
 				B02F36931E3B515662B6F0A6 /* QuestionnaireViewController.swift in Sources */,
 				B02F399E81ACA3183182F4DA /* QuestionController.swift in Sources */,
+				B02F32888BCE847FB41A2E2E /* WriteQuestionAnswerAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1423,12 +1427,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Danny Thibaudeau (HXRFYDMG6J)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjectFV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d2a494d5-a975-48e3-97b2-143362503abf";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1437,12 +1441,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Danny Thibaudeau (HXRFYDMG6J)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjectFV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d2a494d5-a975-48e3-97b2-143362503abf";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

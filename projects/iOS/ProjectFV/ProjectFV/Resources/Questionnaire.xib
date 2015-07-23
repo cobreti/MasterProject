@@ -16,26 +16,63 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssb-4t-Gri">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="3aO-e3-mD2"/>
+                        <constraint firstAttribute="height" constant="30" id="3aO-e3-mD2"/>
                     </constraints>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-Wq-BLp">
-                    <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                    <rect key="frame" x="0.0" y="30" width="600" height="530"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCD-tQ-IdJ">
+                    <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-tI-y5v">
+                            <rect key="frame" x="400" y="9" width="150" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="eT4-qM-i1s"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="110" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Continue" image="RightArrow.png">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onContinue:" destination="-1" eventType="touchUpInside" id="gc0-0n-SVq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="A0R-Wq-Mf6"/>
+                        <constraint firstAttribute="trailing" secondItem="X4F-tI-y5v" secondAttribute="trailing" constant="50" id="Pg7-9M-rSC"/>
+                        <constraint firstAttribute="centerY" secondItem="X4F-tI-y5v" secondAttribute="centerY" id="zDC-KC-6Mp"/>
+                    </constraints>
+                </view>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ssb-4t-Gri" secondAttribute="trailing" id="1bE-Vg-qzF"/>
                 <constraint firstAttribute="bottom" secondItem="PZe-Wq-BLp" secondAttribute="bottom" id="F0C-sa-WBz"/>
+                <constraint firstAttribute="bottom" secondItem="CCD-tQ-IdJ" secondAttribute="bottom" id="KOQ-FL-cYV"/>
+                <constraint firstItem="CCD-tQ-IdJ" firstAttribute="top" secondItem="PZe-Wq-BLp" secondAttribute="bottom" id="LBh-gC-Qkt"/>
+                <constraint firstItem="CCD-tQ-IdJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TBs-xj-kJO"/>
                 <constraint firstItem="ssb-4t-Gri" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UOc-SU-acI"/>
                 <constraint firstItem="ssb-4t-Gri" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bGq-mT-Fnf"/>
                 <constraint firstItem="PZe-Wq-BLp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bSy-74-HX6"/>
                 <constraint firstItem="PZe-Wq-BLp" firstAttribute="top" secondItem="ssb-4t-Gri" secondAttribute="bottom" id="f9w-JP-wT9"/>
                 <constraint firstAttribute="trailing" secondItem="PZe-Wq-BLp" secondAttribute="trailing" id="w0r-dl-ttj"/>
+                <constraint firstAttribute="trailing" secondItem="CCD-tQ-IdJ" secondAttribute="trailing" id="wzt-TT-PMU"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="F0C-sa-WBz"/>
+                </mask>
+            </variation>
         </view>
     </objects>
+    <resources>
+        <image name="RightArrow.png" width="20" height="20"/>
+    </resources>
 </document>
