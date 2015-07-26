@@ -41,7 +41,8 @@ class QuestionnaireViewController : UIViewController {
             question.writeAnswer()
         }
 
-        Application.instance().stories.push( DiagramSelectionStory() )
+        Application.instance().actionsBus.send( OpenStoryAction(story: RechercheSelectionStory(), sender: self))
+//        Application.instance().stories.push( RechercheSelectionStory() )
     }
 
     func addQuestion(title : String) {
@@ -90,7 +91,7 @@ class QuestionnaireViewController : UIViewController {
                         attribute: NSLayoutAttribute.Top,
                         relatedBy: NSLayoutRelation.Equal,
                         toItem: _scrollView,
-                        attribute: NSLayoutAttribute.Bottom,
+                        attribute: NSLayoutAttribute.Top,
                         multiplier: 1.0,
                         constant: 0)
             )

@@ -65,7 +65,9 @@ class Application {
         _actionsBus.listeners.add(_storiesMgr)
   
 //        stories.push( DiagramSelectionStory() )
-        stories.push( QuestionnaireStory() )
+//        stories.push( QuestionnaireStory() )
+
+        actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
     }
     
     var _document : DiagramElements.Document = DiagramElements.Document()

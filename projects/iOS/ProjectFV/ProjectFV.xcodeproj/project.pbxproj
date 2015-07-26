@@ -70,6 +70,8 @@
 		1673BE6C1AF550CA00C8F9AE /* VpProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6A1AF550CA00C8F9AE /* VpProject.swift */; };
 		1673BE6D1AF550CA00C8F9AE /* XmlDocParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */; };
 		1673BE6E1AF550D000C8F9AE /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1673BE1A1AF5504800C8F9AE /* DiagramElements.framework */; };
+		16980D061B65651E00D45DED /* RechercheSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16980D051B65651E00D45DED /* RechercheSelection.xib */; };
+		16980D081B656AD400D45DED /* RechercheItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16980D071B656AD400D45DED /* RechercheItem.xib */; };
 		16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FB61B23CFE500ABDC4E /* Main.storyboard */; };
 		16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */; };
 		16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FC41B23EDE900ABDC4E /* SchematicView.xib */; };
@@ -123,9 +125,12 @@
 		16FB69E41B0D44EF00322E1F /* LinkEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */; };
 		16FB69E61B0D452E00322E1F /* LinkEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */; };
 		16FB69E81B0D46EA00322E1F /* XmlConnectorEndPointParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */; };
+		B02F3009E4AC2A1D428201EB /* RechercheItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A0B131D57B393B90497 /* RechercheItemController.swift */; };
+		B02F30B1EAD97062BB3E8F53 /* RechercheSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F345B968A431F1414649D /* RechercheSelectionStory.swift */; };
 		B02F32888BCE847FB41A2E2E /* WriteQuestionAnswerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */; };
 		B02F3614E249ED471C6EA8D3 /* QuestionnaireStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F357257A40C9FD7C43DE7 /* QuestionnaireStory.swift */; };
 		B02F36931E3B515662B6F0A6 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */; };
+		B02F390BACFBA5E5581CB0A6 /* RechercheSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3D2A7D55282E3F2197A0 /* RechercheSelectionViewController.swift */; };
 		B02F399E81ACA3183182F4DA /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35FB0F03E66AF590258C /* QuestionController.swift */; };
 		B02F3BD2D8752D8F13DD7EF7 /* RecenterDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */; };
 		B02F3E18136AE7EDDEF7D031 /* DiagramHistoryThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */; };
@@ -290,6 +295,8 @@
 		1673BE5E1AF550B500C8F9AE /* VpProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpProjectTests.swift; sourceTree = "<group>"; };
 		1673BE6A1AF550CA00C8F9AE /* VpProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpProject.swift; path = ../../../../sources/VpProject/VpProject.swift; sourceTree = "<group>"; };
 		1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDocParser.swift; path = ../../../../sources/VpProject/XmlDocParser.swift; sourceTree = "<group>"; };
+		16980D051B65651E00D45DED /* RechercheSelection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RechercheSelection.xib; path = Resources/RechercheSelection.xib; sourceTree = "<group>"; };
+		16980D071B656AD400D45DED /* RechercheItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RechercheItem.xib; sourceTree = "<group>"; };
 		16A44FB71B23CFE500ABDC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16A44FBC1B23D1FC00ABDC4E /* DiagramSelection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiagramSelection.xib; path = Resources/DiagramSelection.xib; sourceTree = "<group>"; };
 		16A44FC41B23EDE900ABDC4E /* SchematicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SchematicView.xib; path = Resources/SchematicView.xib; sourceTree = "<group>"; };
@@ -343,12 +350,15 @@
 		16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPoint.swift; path = ../../../../sources/DiagramElements/LinkEndPoint.swift; sourceTree = "<group>"; };
 		16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPointType.swift; path = ../../../../sources/DiagramElements/LinkEndPointType.swift; sourceTree = "<group>"; };
 		16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorEndPointParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift; sourceTree = "<group>"; };
+		B02F345B968A431F1414649D /* RechercheSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheSelectionStory.swift; path = Stories/RechercheSelection/RechercheSelectionStory.swift; sourceTree = "<group>"; };
 		B02F357257A40C9FD7C43DE7 /* QuestionnaireStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireStory.swift; path = Stories/Questionnaire/QuestionnaireStory.swift; sourceTree = "<group>"; };
 		B02F35FB0F03E66AF590258C /* QuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionController.swift; path = Stories/Questionnaire/QuestionController.swift; sourceTree = "<group>"; };
 		B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecenterDiagramAction.swift; path = Actions/ActionObjects/RecenterDiagramAction.swift; sourceTree = "<group>"; };
 		B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WriteQuestionAnswerAction.swift; path = Actions/ActionObjects/WriteQuestionAnswerAction.swift; sourceTree = "<group>"; };
 		B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDiagramSelectedAction.swift; path = Actions/ActionObjects/HistoryDiagramSelectedAction.swift; sourceTree = "<group>"; };
+		B02F3A0B131D57B393B90497 /* RechercheItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemController.swift; path = Stories/RechercheSelection/RechercheItemController.swift; sourceTree = "<group>"; };
 		B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireViewController.swift; path = Stories/Questionnaire/QuestionnaireViewController.swift; sourceTree = "<group>"; };
+		B02F3D2A7D55282E3F2197A0 /* RechercheSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheSelectionViewController.swift; path = Stories/RechercheSelection/RechercheSelectionViewController.swift; sourceTree = "<group>"; };
 		B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramHistoryThumbnailViewController.swift; path = Stories/SchematicView/DiagramHistoryThumbnailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -475,6 +485,7 @@
 				1642F16C1B1D396B00AA600D /* StoriesMgr.swift */,
 				1642F16E1B1D398600AA600D /* Story.swift */,
 				B02F32083F79DAE30C21F4AE /* Questionnaire */,
+				B02F348782D80E0711BFB7B4 /* RechercheSelection */,
 			);
 			name = Stories;
 			sourceTree = "<group>";
@@ -715,6 +726,8 @@
 				16C0E7AA1B5808D100AEA0A0 /* DiagramHistoryThumbnailView.xib */,
 				16C0E7AE1B5AE4F200AEA0A0 /* Questionnaire.xib */,
 				16B36ABA1B5BE0B1004B5928 /* Question.xib */,
+				16980D051B65651E00D45DED /* RechercheSelection.xib */,
+				16980D071B656AD400D45DED /* RechercheItem.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -792,6 +805,16 @@
 				B02F35FB0F03E66AF590258C /* QuestionController.swift */,
 			);
 			name = Questionnaire;
+			sourceTree = "<group>";
+		};
+		B02F348782D80E0711BFB7B4 /* RechercheSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B02F345B968A431F1414649D /* RechercheSelectionStory.swift */,
+				B02F3D2A7D55282E3F2197A0 /* RechercheSelectionViewController.swift */,
+				B02F3A0B131D57B393B90497 /* RechercheItemController.swift */,
+			);
+			name = RechercheSelection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1047,9 +1070,11 @@
 			files = (
 				16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */,
 				166405AF1B387A62003F720A /* file.png in Resources */,
+				16980D081B656AD400D45DED /* RechercheItem.xib in Resources */,
 				16AE13F71B45F9D300F2FCFB /* DnArrow.png in Resources */,
 				1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */,
 				16A44FC51B23EDE900ABDC4E /* SchematicView.xib in Resources */,
+				16980D061B65651E00D45DED /* RechercheSelection.xib in Resources */,
 				16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */,
 				16C0E7AB1B5808D100AEA0A0 /* DiagramHistoryThumbnailView.xib in Resources */,
 				16AE13F81B45F9D300F2FCFB /* LeftArrow.png in Resources */,
@@ -1176,6 +1201,9 @@
 				B02F36931E3B515662B6F0A6 /* QuestionnaireViewController.swift in Sources */,
 				B02F399E81ACA3183182F4DA /* QuestionController.swift in Sources */,
 				B02F32888BCE847FB41A2E2E /* WriteQuestionAnswerAction.swift in Sources */,
+				B02F30B1EAD97062BB3E8F53 /* RechercheSelectionStory.swift in Sources */,
+				B02F390BACFBA5E5581CB0A6 /* RechercheSelectionViewController.swift in Sources */,
+				B02F3009E4AC2A1D428201EB /* RechercheItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
