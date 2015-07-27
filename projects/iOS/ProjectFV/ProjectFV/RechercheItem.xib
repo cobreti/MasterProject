@@ -26,19 +26,18 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElB-xx-foD">
-                    <rect key="frame" x="20" y="50" width="570" height="101"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="30" y="50" width="540" height="101"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="ElB-xx-foD" secondAttribute="trailing" constant="10" id="KaL-cq-ZJO"/>
+                <constraint firstAttribute="trailing" secondItem="ElB-xx-foD" secondAttribute="trailing" constant="30" id="KaL-cq-ZJO"/>
                 <constraint firstAttribute="bottom" secondItem="ElB-xx-foD" secondAttribute="bottom" constant="10" id="OWE-W3-KQZ"/>
                 <constraint firstItem="gQI-rA-qNk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="SwN-hl-1n6"/>
                 <constraint firstAttribute="trailing" secondItem="gQI-rA-qNk" secondAttribute="trailing" constant="10" id="V8S-LU-xt5"/>
-                <constraint firstItem="ElB-xx-foD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="mzl-vv-Vsz"/>
+                <constraint firstItem="ElB-xx-foD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="mzl-vv-Vsz"/>
                 <constraint firstItem="gQI-rA-qNk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="qQ4-Oc-cIM"/>
                 <constraint firstItem="ElB-xx-foD" firstAttribute="top" secondItem="gQI-rA-qNk" secondAttribute="bottom" constant="10" id="sBr-s5-UiS"/>
             </constraints>

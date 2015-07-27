@@ -5,6 +5,7 @@
 
 import Foundation
 import UIKit
+import DiagramElements
 
 class RechercheSelectionViewController : UIViewController {
 
@@ -18,7 +19,24 @@ class RechercheSelectionViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addRechercheItem("sample title", question: "test content")
+        let doc = Application.instance().document
+
+        if let diag = doc.diagrams.get("Recherches") {
+
+            for (id, p) in diag.primitives {
+
+                if let  elm = p as? Element,
+                        modelId = elm.modelId,
+                        model = doc.models.get(modelId),
+                        name = elm.name,
+                        plainTextValue = model.plainTextValue {
+
+                    addRechercheItem(name, question: plainTextValue)
+                }
+            }
+        }
+
+//        addRechercheItem("sample title", question: "test content")
 
 //        let cs = _itemsArea.contentSize
 //        _itemsArea.contentSize = CGSize(width: cs.width, height: _nextYPos + 300)
@@ -37,12 +55,22 @@ class RechercheSelectionViewController : UIViewController {
 
         _itemsArea.addConstraint(
         NSLayoutConstraint( item: controller.view,
-                attribute: NSLayoutAttribute.Width,
+                attribute: NSLayoutAttribute.Right,
                 relatedBy: NSLayoutRelation.Equal,
                 toItem: _itemsArea,
-                attribute: NSLayoutAttribute.Width,
+                attribute: NSLayoutAttribute.Right,
                 multiplier: 1.0,
-                constant: 0)
+                constant: -30)
+        )
+
+        _itemsArea.addConstraint(
+            NSLayoutConstraint( item: controller.view,
+                    attribute: NSLayoutAttribute.Left,
+                    relatedBy: NSLayoutRelation.Equal,
+                    toItem: _itemsArea,
+                    attribute: NSLayoutAttribute.Left,
+                    multiplier: 1.0,
+                    constant: 30)
         )
 
         _itemsArea.addConstraint(
@@ -52,7 +80,7 @@ class RechercheSelectionViewController : UIViewController {
                 toItem: nil,
                 attribute: NSLayoutAttribute.NotAnAttribute,
                 multiplier: 1.0,
-                constant: 250)
+                constant: 150)
         )
 
         if let prevController = _rechercheItems.last {
@@ -63,7 +91,7 @@ class RechercheSelectionViewController : UIViewController {
                     toItem: prevController.view,
                     attribute: NSLayoutAttribute.Bottom,
                     multiplier: 1.0,
-                    constant: 0)
+                    constant: 20)
             )
         }
         else {
@@ -78,10 +106,10 @@ class RechercheSelectionViewController : UIViewController {
             )
         }
 
-        let bounds = controller.view.bounds
-        controller.view.frame = CGRect(x:0, y:_nextYPos, width:_itemsArea.bounds.width, height: 170)
-        controller.view.setNeedsLayout()
-        _nextYPos += 170
+//        let bounds = controller.view.bounds
+//        controller.view.frame = CGRect(x:0, y:_nextYPos, width:_itemsArea.bounds.width, height: 170)
+//        controller.view.setNeedsLayout()
+//        _nextYPos += 170
 
         _rechercheItems.append(controller)
     }

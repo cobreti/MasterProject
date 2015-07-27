@@ -54,14 +54,25 @@ class QuestionnaireViewController : UIViewController {
 
         _scrollView.addSubview(controller.view)
 
+
         _scrollView.addConstraint(
-            NSLayoutConstraint( item: controller.view,
-                                attribute: NSLayoutAttribute.Width,
-                                relatedBy: NSLayoutRelation.Equal,
-                                toItem: _scrollView,
-                                attribute: NSLayoutAttribute.Width,
-                                multiplier: 1.0,
-                                constant: 0)
+        NSLayoutConstraint( item: controller.view,
+                attribute: NSLayoutAttribute.Left,
+                relatedBy: NSLayoutRelation.Equal,
+                toItem: _scrollView,
+                attribute: NSLayoutAttribute.Left,
+                multiplier: 1.0,
+                constant: 20)
+        )
+
+        _scrollView.addConstraint(
+        NSLayoutConstraint( item: controller.view,
+                attribute: NSLayoutAttribute.Width,
+                relatedBy: NSLayoutRelation.Equal,
+                toItem: _scrollView,
+                attribute: NSLayoutAttribute.Width,
+                multiplier: 1.0,
+                constant: -40)
         )
 
         _scrollView.addConstraint(
@@ -82,7 +93,7 @@ class QuestionnaireViewController : UIViewController {
                         toItem: prevController.view,
                         attribute: NSLayoutAttribute.Bottom,
                         multiplier: 1.0,
-                        constant: 0)
+                        constant: 20)
             )
         }
         else {

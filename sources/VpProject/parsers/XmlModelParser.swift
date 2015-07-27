@@ -41,6 +41,8 @@ class XmlModelParser : XmlSubTreeParser {
         switch elementName {
             case "StringProperty":
                 onStringProperty(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
+            case "HTMLProperty":
+                onHTMLProperty(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
             case "ChildModels":
                 if let parentModel = _model {
                     pushElementParser( XmlModelsParser(name: "ChildModels", parent: parentModel, delegate: self) )
@@ -90,6 +92,16 @@ class XmlModelParser : XmlSubTreeParser {
                 
             _model?.subDiagramName = diagramName
             debugPrint("sub diagram with name : \(diagramName)")
+        }
+    }
+
+    func onHTMLProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject:AnyObject]) {
+
+        if let  name = attributeDict["name"] as? String,
+                displayName = attributeDict["displayName"] as? String,
+                plainTextValue = attributeDict["plainTextValue"] as? String where name == "documentation" && displayName == "Description" {
+
+            _model?.plainTextValue = plainTextValue
         }
     }
     

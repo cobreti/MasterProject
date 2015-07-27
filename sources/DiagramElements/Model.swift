@@ -57,7 +57,16 @@ public class Model {
             _subDiagramName = value
         }
     }
-    
+
+    public var plainTextValue : String! {
+        get {
+            return _plainTextValue
+        }
+        set (value) {
+            _plainTextValue = value
+        }
+    }
+
     public init(id : String, parent: Model! = nil) {
         
         _id = id
@@ -71,5 +80,6 @@ public class Model {
     private var _children : ModelsTable = ModelsTable()
     private var _filePath : String!
     private var _subDiagramName : String!
+    private var _plainTextValue : String!
 }
 
