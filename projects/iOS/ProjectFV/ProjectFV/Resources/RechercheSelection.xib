@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RechercheSelectionViewController" customModule="ProjectFV" customModuleProvider="target">
             <connections>
                 <outlet property="_itemsArea" destination="eDt-yd-IfU" id="A6a-Na-5pl"/>
+                <outlet property="_startBtn" destination="ebm-xY-zim" id="2Xk-Xs-h9U"/>
                 <outlet property="view" destination="iN0-l3-epB" id="JHW-fe-jB2"/>
             </connections>
         </placeholder>

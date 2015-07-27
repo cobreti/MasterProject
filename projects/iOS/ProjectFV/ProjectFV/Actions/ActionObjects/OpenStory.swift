@@ -22,7 +22,7 @@ class OpenStoryAction : Action {
         }
     }
     
-    init(story: Story, sender: AnyObject) {
+    init(story: Story, sender: AnyObject!) {
         
         _story = story
         

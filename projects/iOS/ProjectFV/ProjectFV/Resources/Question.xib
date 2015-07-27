@@ -31,6 +31,7 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
             </subviews>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="MKu-qh-BGC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="0u1-Z5-Kxa"/>
                 <constraint firstItem="9mh-jh-Tm0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="9yU-3Z-TAA"/>

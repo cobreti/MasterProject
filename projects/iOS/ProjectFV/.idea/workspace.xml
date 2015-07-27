@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemControllerDelegate.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/RechercheItemSelectedAction.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift" afterPath="$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift" afterPath="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Resources/Question.xib" afterPath="$PROJECT_DIR$/ProjectFV/Resources/Question.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Resources/Questionnaire.xib" afterPath="$PROJECT_DIR$/ProjectFV/Resources/Questionnaire.xib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/RechercheItem.xib" afterPath="$PROJECT_DIR$/ProjectFV/RechercheItem.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Resources/RechercheSelection.xib" afterPath="$PROJECT_DIR$/ProjectFV/Resources/RechercheSelection.xib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +50,8 @@
           <file leaf-file-name="RechercheSelectionViewController.swift" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.72861356">
-                  <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+                <state vertical-scroll-proportion="0.54385966">
+                  <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -65,7 +71,27 @@
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+                  <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RechercheItemControllerDelegate.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemControllerDelegate.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UIKit.UIView.swift" pinned="false" current-in-tab="false">
+            <entry file="mock:///UIKit.UIView.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="252" column="19" selection-start-line="252" selection-start-column="19" selection-end-line="252" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -75,7 +101,17 @@
             <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                  <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="OpenStory.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -135,11 +171,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="QuestionnaireViewController.swift" pinned="false" current-in-tab="true">
+          <file leaf-file-name="QuestionnaireViewController.swift" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7243402">
-                  <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RechercheItemSelectedAction.swift" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/RechercheItemSelectedAction.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.1770428">
+                  <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -185,12 +231,15 @@
         <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionStory.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/StartStoryAction.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Application.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift" />
         <option value="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemControllerDelegate.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/RechercheItemSelectedAction.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionViewController.swift" />
       </list>
     </option>
@@ -432,7 +481,7 @@
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ProjectFV" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="FullScreen" value="false" />
@@ -519,9 +568,9 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24987094" sideWeight="0.42876345" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24987094" sideWeight="0.57123655" order="2" side_tool="true" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31805682" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24987094" sideWeight="0.42988086" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24987094" sideWeight="0.57011914" order="2" side_tool="true" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31805682" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20443985" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31805682" sideWeight="0.503872" order="7" side_tool="true" content_ui="tabs" />
@@ -572,32 +621,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/ViewDrawingMode.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManager.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -885,26 +913,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -941,18 +953,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionViewController.swift">
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72861356">
-          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift">
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionIdentifier.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7243402">
-          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemControllerDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54385966">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/RechercheItemSelectedAction.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1770428">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
           <folding />
         </state>
       </provider>

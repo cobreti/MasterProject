@@ -7,11 +7,12 @@ import Foundation
 import UIKit
 import DiagramElements
 
-class RechercheSelectionViewController : UIViewController {
+class RechercheSelectionViewController : UIViewController, RechercheItemControllerDelegate {
 
     @IBAction func OnStart(sender: AnyObject) {
 //        Application.instance().stories.push( DiagramSelectionStory() )
 
+        Application.instance().actionsBus.send( RechercheItemSelectedAction(title: _selection.itemTitle, question: _selection.itemQuestion, sender: self))
         Application.instance().actionsBus.send( OpenStoryAction(story: DiagramSelectionStory(), sender: self))
     }
 
@@ -36,17 +37,14 @@ class RechercheSelectionViewController : UIViewController {
             }
         }
 
-//        addRechercheItem("sample title", question: "test content")
-
-//        let cs = _itemsArea.contentSize
-//        _itemsArea.contentSize = CGSize(width: cs.width, height: _nextYPos + 300)
+        _startBtn.enabled = false
     }
 
 
     func addRechercheItem(title: String, question: String) {
 
         var controller = RechercheItemController(title: title, question: question)
-
+        controller.delegate = self
 
         controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)
         _itemsArea.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -115,8 +113,25 @@ class RechercheSelectionViewController : UIViewController {
     }
 
 
+    func onItemSelected(item: RechercheItemController) {
+
+        if item !== _selection {
+
+            _selection?.onUnselected()
+            _selection = item
+            _selection?.onSelected()
+            view.setNeedsDisplay()
+
+            _startBtn.enabled = true
+        }
+    }
+
+
     @IBOutlet weak var _itemsArea: UIView!
+    @IBOutlet weak var _startBtn: UIButton!
 
     var _nextYPos : CGFloat = 0
     var _rechercheItems : [RechercheItemController] = []
+
+    weak var _selection : RechercheItemController!
 }
