@@ -34,11 +34,16 @@
 
 #import "KOTreeTableViewCell.h"
 
+#import "KOTreeViewDelegate.h"
+
 @interface KOTreeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, KOTreeTableViewCellDelegate>
+
+- (void)invalidate;
 
 @property (nonatomic, strong) KOTreeItem *item0, *item1, *item1_1, *item1_2, *item1_2_1, *item2, *item3;
 @property (nonatomic, strong) UITableView *treeTableView;
 @property (nonatomic, strong) NSMutableArray *treeItems;
 @property (nonatomic, strong) NSMutableArray *selectedTreeItems;
+@property (weak) id<KOTreeViewDelegate> delegate;
 
 @end

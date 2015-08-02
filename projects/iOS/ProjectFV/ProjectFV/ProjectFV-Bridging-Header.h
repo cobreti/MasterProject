@@ -9,6 +9,9 @@
 #ifndef ProjectFV_ProjectFV_Bridging_Header_h
 #define ProjectFV_ProjectFV_Bridging_Header_h
 
+#import "KOTreeViewDelegate.h"
 #import "KOTreeViewController.h"
+#import "KOTreeItem.h"
+
 
 #endif

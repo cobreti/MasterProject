@@ -6,6 +6,23 @@
 import Foundation
 import UIKit
 
-class HierarchicViewController : UIViewController {
+@objc
+class HierarchicViewController : UIViewController, KOTreeViewDelegate {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        _kotreeViewController.delegate = self
+        _kotreeViewController.invalidate()
+    }
+
+    public func listItemsAtPath(path: String) -> NSMutableArray {
+
+        var ret : NSMutableArray = NSMutableArray()
+
+        return ret
+    }
+
+
     @IBOutlet var _kotreeViewController: KOTreeViewController!
 }

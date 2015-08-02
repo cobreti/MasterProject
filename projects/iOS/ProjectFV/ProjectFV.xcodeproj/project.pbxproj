@@ -378,6 +378,7 @@
 		B02F3213F2C9BD239D9CAC52 /* KOTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOTreeViewController.m; sourceTree = "<group>"; };
 		B02F325B252D23E9CB1A6E08 /* copymove-cell-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "copymove-cell-bg.png"; sourceTree = "<group>"; };
 		B02F32734438F4575BF05AFA /* item-icon-folder-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder-selected.png"; sourceTree = "<group>"; };
+		B02F33A073FE7D0A3444C096 /* KOTreeViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeViewDelegate.h; sourceTree = "<group>"; };
 		B02F3458A90DD28749A0C356 /* KOTreeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeItem.h; sourceTree = "<group>"; };
 		B02F345B968A431F1414649D /* RechercheSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheSelectionStory.swift; path = Stories/RechercheSelection/RechercheSelectionStory.swift; sourceTree = "<group>"; };
 		B02F351608B8EDF8324867F0 /* item-icon-folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder@2x.png"; sourceTree = "<group>"; };
@@ -887,6 +888,7 @@
 				B02F314482A25B21AA99FE59 /* KOTreeTableViewCell.m */,
 				B02F390E3135CBDE36C39229 /* KOTreeViewController.h */,
 				B02F3213F2C9BD239D9CAC52 /* KOTreeViewController.m */,
+				B02F33A073FE7D0A3444C096 /* KOTreeViewDelegate.h */,
 			);
 			path = KOTree;
 			sourceTree = "<group>";

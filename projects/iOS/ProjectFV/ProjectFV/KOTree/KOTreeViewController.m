@@ -44,7 +44,11 @@
 @synthesize item0, item1, item1_1, item1_2, item1_2_1, item2, item3;
 
 - (NSMutableArray *)listItemsAtPath:(NSString *)path {
-	
+
+	if (self.delegate != nil) {
+		return [self.delegate listItemsAtPath:@"/"];
+	}
+
 	item0 = [[KOTreeItem alloc] init];
 	[item0 setBase:@"Item 0"];
 	[item0 setPath:@"/"];
@@ -122,8 +126,12 @@
 	self.selectedTreeItems = [NSMutableArray array];
 	// Do any additional setup after loading the view.
 	
-	self.treeItems = [self listItemsAtPath:@"/"];
-	
+//	self.treeItems = [self listItemsAtPath:@"/"];
+
+	if (self.delegate != nil) {
+		self.treeItems = [self.delegate listItemsAtPath:@"/"];
+	}
+
 	treeTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
 	[treeTableView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
 	[treeTableView setBackgroundColor:[UIColor colorWithRed:1 green:0.976 blue:0.957 alpha:1] /*#fff9f4*/];
@@ -284,6 +292,11 @@
 	NSLog(@"didTapIconWithselectingItem.base: %@", [tmpTreeItem base]);
 	
 	[self iconButtonAction:cell treeItem:tmpTreeItem];
+}
+
+- (void)invalidate {
+
+	[self.treeTableView reloadData];
 }
 
 @end
