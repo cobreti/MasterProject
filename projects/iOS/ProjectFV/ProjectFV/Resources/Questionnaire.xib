@@ -23,14 +23,14 @@
                     </constraints>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-Wq-BLp">
-                    <rect key="frame" x="0.0" y="30" width="600" height="520"/>
+                    <rect key="frame" x="0.0" y="30" width="600" height="490"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </scrollView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCD-tQ-IdJ">
-                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <rect key="frame" x="0.0" y="520" width="600" height="80"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-tI-y5v">
-                            <rect key="frame" x="400" y="14" width="150" height="22"/>
+                            <rect key="frame" x="400" y="29" width="150" height="22"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="eT4-qM-i1s"/>
                             </constraints>
@@ -46,7 +46,7 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="A0R-Wq-Mf6"/>
+                        <constraint firstAttribute="height" constant="80" id="A0R-Wq-Mf6"/>
                         <constraint firstAttribute="trailing" secondItem="X4F-tI-y5v" secondAttribute="trailing" constant="50" id="Pg7-9M-rSC"/>
                         <constraint firstAttribute="centerY" secondItem="X4F-tI-y5v" secondAttribute="centerY" id="zDC-KC-6Mp"/>
                     </constraints>

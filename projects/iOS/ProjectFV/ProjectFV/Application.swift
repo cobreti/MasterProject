@@ -12,7 +12,7 @@ import VpProject
 
 var g_app : Application!
 
-class Application {
+class Application : ActionListener {
     
     class func instance() -> Application {
         
@@ -23,7 +23,12 @@ class Application {
         g_app = Application()
         return g_app!
     }
-    
+
+    var method : MethodType {
+        get {
+            return _method
+        }
+    }
     
     var stories : StoriesMgr {
         get {
@@ -63,16 +68,32 @@ class Application {
         _storiesMgr = StoriesMgr()
         
         _actionsBus.listeners.add(_storiesMgr)
+        _actionsBus.listeners.add(self)
   
 //        stories.push( DiagramSelectionStory() )
 //        stories.push( QuestionnaireStory() )
 
         actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
     }
-    
+
+    func onAction(action: Action) {
+
+        switch action.id {
+            case .MethodSelection:
+                if let msa = action as? MethodSelectionAction {
+                    _method = msa.method
+                    actionsBus.send( OpenStoryAction(story: RechercheSelectionStory(), sender: self) )
+                }
+
+            default:
+                break
+        }
+    }
+
     var _document : DiagramElements.Document = DiagramElements.Document()
     var _mainViewController : UIViewController!
     var _storiesMgr : StoriesMgr!
     var _actionsBus : ActionsBus!
+    var _method : MethodType!
 }
 
