@@ -12,8 +12,20 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
     @IBAction func OnStart(sender: AnyObject) {
 //        Application.instance().stories.push( DiagramSelectionStory() )
 
-        Application.instance().actionsBus.send( RechercheItemSelectedAction(title: _selection.itemTitle, question: _selection.itemQuestion, sender: self))
-        Application.instance().actionsBus.send( OpenStoryAction(story: DiagramSelectionStory(), sender: self))
+        let app = Application.instance()
+
+        app.actionsBus.send( RechercheItemSelectedAction(title: _selection.itemTitle, question: _selection.itemQuestion, sender: self))
+
+        if let method = app.method {
+            switch method {
+                case .Hierarchique:
+                    app.actionsBus.send( OpenStoryAction(story: HierarchicViewStory(), sender: self))
+                    break
+                case .Schematique:
+                    app.actionsBus.send( OpenStoryAction(story: DiagramSelectionStory(), sender: self))
+                    break
+            }
+        }
     }
 
 

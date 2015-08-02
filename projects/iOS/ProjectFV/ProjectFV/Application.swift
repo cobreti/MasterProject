@@ -24,7 +24,7 @@ class Application : ActionListener {
         return g_app!
     }
 
-    var method : MethodType {
+    var method : MethodType! {
         get {
             return _method
         }
