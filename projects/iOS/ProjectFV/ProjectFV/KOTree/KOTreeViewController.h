@@ -38,6 +38,7 @@
 
 @interface KOTreeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, KOTreeTableViewCellDelegate>
 
+- (void)createControl;
 - (void)invalidate;
 
 @property (nonatomic, strong) KOTreeItem *item0, *item1, *item1_1, *item1_2, *item1_2_1, *item2, *item3;

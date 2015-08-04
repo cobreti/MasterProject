@@ -46,7 +46,7 @@
 - (NSMutableArray *)listItemsAtPath:(NSString *)path {
 
 	if (self.delegate != nil) {
-		return [self.delegate listItemsAtPath:@"/"];
+		return [self.delegate listItemsAtPath:path];
 	}
 
 	item0 = [[KOTreeItem alloc] init];
@@ -56,7 +56,7 @@
 	[item0 setParentSelectingItem:nil];
 	[item0 setAncestorSelectingItems:[NSMutableArray arrayWithObjects:item1, item2, item3, nil]];
 	[item0 setNumberOfSubitems:3];
-	
+
 	item1 = [[KOTreeItem alloc] init];
 	[item1 setBase:@"Item 1"];
 	[item1 setPath:@"/Item 0"];
@@ -64,7 +64,7 @@
 	[item1 setParentSelectingItem:item0];
 	[item1 setAncestorSelectingItems:[NSMutableArray arrayWithObjects:item1_1, item1_2, nil]];
 	[item1 setNumberOfSubitems:2];
-	
+
 	item1_1 = [[KOTreeItem alloc] init];
 	[item1_1 setBase:@"Item 1 1"];
 	[item1_1 setPath:@"/Item 0/Item 1"];
@@ -72,7 +72,7 @@
 	[item1_1 setParentSelectingItem:item1];
 	[item1_1 setAncestorSelectingItems:[NSMutableArray array]];
 	[item1_1 setNumberOfSubitems:0];
-	
+
 	item1_2 = [[KOTreeItem alloc] init];
 	[item1_2 setBase:@"Item 1 2"];
 	[item1_2 setPath:@"/Item 0/Item 1"];
@@ -80,7 +80,7 @@
 	[item1_2 setParentSelectingItem:item1];
 	[item1_2 setAncestorSelectingItems:[NSMutableArray arrayWithObjects:item1_2_1, nil]];
 	[item1_2 setNumberOfSubitems:1];
-	
+
 	item1_2_1 = [[KOTreeItem alloc] init];
 	[item1_2_1 setBase:@"Item 1 2 1"];
 	[item1_2_1 setPath:@"/Item 0/Item 1/Item 1 2"];
@@ -88,7 +88,7 @@
 	[item1_2_1 setParentSelectingItem:item1_2];
 	[item1_2_1 setAncestorSelectingItems:[NSMutableArray array]];
 	[item1_2_1 setNumberOfSubitems:0];
-	
+
 	item2 = [[KOTreeItem alloc] init];
 	[item2 setBase:@"Item 2"];
 	[item2 setPath:@"/Item 0"];
@@ -96,7 +96,7 @@
 	[item2 setParentSelectingItem:item0];
 	[item2 setAncestorSelectingItems:[NSMutableArray array]];
 	[item2 setNumberOfSubitems:0];
-	
+
 	item3 = [[KOTreeItem alloc] init];
 	[item3 setBase:@"Item 3"];
 	[item3 setPath:@"/Item 0"];
@@ -104,7 +104,7 @@
 	[item3 setParentSelectingItem:item0];
 	[item3 setAncestorSelectingItems:[NSMutableArray array]];
 	[item3 setNumberOfSubitems:0];
-	
+
 	NSLog(@"%@", path);
 	if ([path isEqualToString:@"/"]) {
 		return [NSMutableArray arrayWithObject:item0];
@@ -119,15 +119,8 @@
 	}
 }
 
-- (void)viewDidLoad
+- (void)createControl
 {
-    [super viewDidLoad];
-	
-	self.selectedTreeItems = [NSMutableArray array];
-	// Do any additional setup after loading the view.
-	
-//	self.treeItems = [self listItemsAtPath:@"/"];
-
 	if (self.delegate != nil) {
 		self.treeItems = [self.delegate listItemsAtPath:@"/"];
 	}
@@ -142,10 +135,21 @@
 	[self.view addSubview:treeTableView];
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	
+	self.selectedTreeItems = [NSMutableArray array];
+	// Do any additional setup after loading the view.
+	
+//	self.treeItems = [self listItemsAtPath:@"/"];
+
+}
+
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	
-	[[[self treeTableView] delegate] tableView:treeTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+//	[[[self treeTableView] delegate] tableView:treeTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 }
 
 #pragma mark - UITableViewDatasource
