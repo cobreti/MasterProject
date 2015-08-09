@@ -164,7 +164,15 @@
 		cell = [[KOTreeTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"selectingTableViewCell"];
 	
 	KOTreeItem *treeItem = [self.treeItems objectAtIndex:indexPath.row];
-	
+
+	NSMutableString* indexPathStr = @"";
+	for (int idx = 0; idx < [indexPath length]; ++idx) {
+		int ip = [indexPath indexAtPosition:idx];
+		indexPathStr = [indexPathStr stringByAppendingString:[NSString stringWithFormat:@":%i", ip] ];
+	}
+
+	NSLog(@"cell index %@ for item : %@ : %@", indexPathStr, [treeItem path], [treeItem base]);
+
 	cell.treeItem = treeItem;
 	
 	[cell.iconButton setSelected:[self.selectedTreeItems containsObject:cell.treeItem]];
