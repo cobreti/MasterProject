@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HierarchicViewController" customModule="ProjectFV" customModuleProvider="target">
             <connections>
-                <outlet property="_kotreeViewController" destination="jJ1-3h-eV8" id="cJl-x7-x2J"/>
+                <outlet property="_tableView" destination="5mR-Tr-hlH" id="Ic0-Ta-S1d"/>
                 <outlet property="view" destination="iN0-l3-epB" id="MQ7-S0-qtn"/>
             </connections>
         </placeholder>
@@ -17,7 +17,19 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzx-Mf-vpE">
                     <rect key="frame" x="50" y="50" width="500" height="500"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5mR-Tr-hlH">
+                            <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="5mR-Tr-hlH" firstAttribute="top" secondItem="bzx-Mf-vpE" secondAttribute="top" id="7Fv-gc-MQC"/>
+                        <constraint firstItem="5mR-Tr-hlH" firstAttribute="leading" secondItem="bzx-Mf-vpE" secondAttribute="leading" id="ao2-8e-W4y"/>
+                        <constraint firstAttribute="trailing" secondItem="5mR-Tr-hlH" secondAttribute="trailing" id="jNi-Pc-jmh"/>
+                        <constraint firstAttribute="bottom" secondItem="5mR-Tr-hlH" secondAttribute="bottom" id="wwc-kv-GME"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -28,10 +40,5 @@
                 <constraint firstItem="bzx-Mf-vpE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="nZf-cI-mUC"/>
             </constraints>
         </view>
-        <viewController id="jJ1-3h-eV8" customClass="KOTreeViewController">
-            <connections>
-                <outlet property="view" destination="bzx-Mf-vpE" id="HN4-kP-CHo"/>
-            </connections>
-        </viewController>
     </objects>
 </document>

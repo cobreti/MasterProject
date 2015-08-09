@@ -6,31 +6,34 @@
 import Foundation
 import UIKit
 
-@objc
-class HierarchicViewController : UIViewController, KOTreeViewDelegate {
+class HierarchicViewController : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        _treeController = TreeController(table: _tableView)
+
         parseSourceFolders()
 
-        _kotreeViewController.delegate = self
-        _kotreeViewController.createControl()
+        _treeController.invalidate()
+
+//        _kotreeViewController.delegate = self
+//        _kotreeViewController.createControl()
 //        _kotreeViewController.invalidate()
     }
 
-    public func listItemsAtPath(path: String) -> NSMutableArray {
-
-        var ret : NSMutableArray = NSMutableArray()
-
-        if let items = _treeItems[path] {
-            for item in items {
-                ret.addObject(item)
-            }
-        }
-
-        return ret
-    }
+//    public func listItemsAtPath(path: String) -> NSMutableArray {
+//
+//        var ret : NSMutableArray = NSMutableArray()
+//
+//        if let items = _treeItems[path] {
+//            for item in items {
+//                ret.addObject(item)
+//            }
+//        }
+//
+//        return ret
+//    }
 
     func parseSourceFolders() {
 
@@ -38,12 +41,12 @@ class HierarchicViewController : UIViewController, KOTreeViewDelegate {
         let bundle = NSBundle.mainBundle()
 
         if let url = bundle.URLForResource("ProjectFV", withExtension: "", subdirectory: "EmbeddedRes/CodeSite") {
-            let items = parseSourceFolderAtUrl(fm, basePath: "", url: url)
-            _treeItems["/"] = items
+            let items = parseSourceFolderAtUrl(fm, basePath: "", url: url, group: _treeController.root)
+//            _treeItems["/"] = items
         }
     }
 
-    func parseSourceFolderAtUrl(fileManager: NSFileManager, basePath: String, url: NSURL, level: Int = 0, parentItem: KOTreeItem! = nil) -> [KOTreeItem] {
+    func parseSourceFolderAtUrl(fileManager: NSFileManager, basePath: String, url: NSURL, group: TreeItems) {
 
         debugPrintln("parsing content of '\(url)")
 
@@ -78,47 +81,51 @@ class HierarchicViewController : UIViewController, KOTreeViewDelegate {
 
 
         for folder in folders {
-            let p = basePath + "/\(folder.lastPathComponent!)"
+//            let p = basePath + "/\(folder.lastPathComponent!)"
 
-            debugPrintln("folder : \(p)")
+//            debugPrintln("folder : \(p)")
 
-            var item = KOTreeItem()
-            item.path = itemBasePath
-            item.base = folder.lastPathComponent!
-            item.ancestorSelectingItems = NSMutableArray()
-            item.numberOfSubitems = 0
-            item.submersionLevel = level
-            item.parentSelectingItem = parentItem
-
-            retItems.append(item)
-
-            let items = parseSourceFolderAtUrl(fileManager, basePath: p, url: folder, level: level+1, parentItem: item)
-
-            item.ancestorSelectingItems.addObjectsFromArray(items)
-            item.numberOfSubitems = items.count
-
-            _treeItems[p] = items
+            group.add( TreeItem(name: folder.lastPathComponent!) )
+//            var item = KOTreeItem()
+//            item.path = itemBasePath
+//            item.base = folder.lastPathComponent!
+//            item.ancestorSelectingItems = NSMutableArray()
+//            item.numberOfSubitems = 0
+//            item.submersionLevel = level
+//            item.parentSelectingItem = parentItem
+//
+//            retItems.append(item)
+//
+//            let items = parseSourceFolderAtUrl(fileManager, basePath: p, url: folder, level: level+1, parentItem: item)
+//
+//            item.ancestorSelectingItems.addObjectsFromArray(items)
+//            item.numberOfSubitems = items.count
+//
+//            _treeItems[p] = items
         }
 
         for file in files {
-            let p = basePath + "/\(file.lastPathComponent!)"
 
-            debugPrintln("file : \(p)")
-            var item = KOTreeItem()
-            item.path = itemBasePath
-            item.base = file.lastPathComponent!
-            item.ancestorSelectingItems = NSMutableArray()
-            item.numberOfSubitems = 0
-            item.submersionLevel = level
-            item.parentSelectingItem = parentItem
-
-            retItems.append(item)
+            group.add( TreeItem(name: file.lastPathComponent!) )
+//            let p = basePath + "/\(file.lastPathComponent!)"
+//
+//            debugPrintln("file : \(p)")
+//            var item = KOTreeItem()
+//            item.path = itemBasePath
+//            item.base = file.lastPathComponent!
+//            item.ancestorSelectingItems = NSMutableArray()
+//            item.numberOfSubitems = 0
+//            item.submersionLevel = level
+//            item.parentSelectingItem = parentItem
+//
+//            retItems.append(item)
         }
 
-        return retItems
+//        return retItems
     }
 
-    @IBOutlet var _kotreeViewController: KOTreeViewController!
+    @IBOutlet weak var _tableView: UITableView!
 
-    var _treeItems : [String:[KOTreeItem]] = [:]
+    var _treeController : TreeController!
+//    var _treeItems : [String:[KOTreeItem]] = [:]
 }

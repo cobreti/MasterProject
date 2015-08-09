@@ -143,17 +143,24 @@
 		B02F36931E3B515662B6F0A6 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */; };
 		B02F36CFCB5E54AD1E32209C /* item-icon-folder.png in Resources */ = {isa = PBXBuildFile; fileRef = B02F3EACA1476ACE48B8ABD1 /* item-icon-folder.png */; };
 		B02F36D099C0C0958FB37101 /* KOTreeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B02F314482A25B21AA99FE59 /* KOTreeTableViewCell.m */; };
+		B02F36D921A33AEBFE81A2FB /* TreeTableDataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3D1E03E6568B9130B67F /* TreeTableDataNode.swift */; };
+		B02F36FA275155BBD58427C0 /* TreeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3F867005CFB33B7A4A98 /* TreeItem.swift */; };
+		B02F3749D8FB884CB0595029 /* TreeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3509C60750E4CA0427ED /* TreeItems.swift */; };
 		B02F375CC261D64BD164AD75 /* item-icon-folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B02F351608B8EDF8324867F0 /* item-icon-folder@2x.png */; };
 		B02F37B4CAF3433C37E28F30 /* KOTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02F3213F2C9BD239D9CAC52 /* KOTreeViewController.m */; };
 		B02F3879E9C4CE541181B2E6 /* item-counter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B02F3E83538668A956E867AC /* item-counter@2x.png */; };
 		B02F390BACFBA5E5581CB0A6 /* RechercheSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3D2A7D55282E3F2197A0 /* RechercheSelectionViewController.swift */; };
 		B02F397B7452DB4DA7C7465D /* RechercheItemSelectedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F388F4CDD1992AA97E9B0 /* RechercheItemSelectedAction.swift */; };
 		B02F399E81ACA3183182F4DA /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35FB0F03E66AF590258C /* QuestionController.swift */; };
+		B02F3AE00830FE3193596B52 /* TreeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */; };
 		B02F3B3419ADBE03038C3515 /* MethodSelectionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */; };
+		B02F3B4C2216F0B6BB77DA45 /* TreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F303F237A284112FED013 /* TreeController.swift */; };
 		B02F3BD2D8752D8F13DD7EF7 /* RecenterDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */; };
+		B02F3C367A5EDAF6C309CD38 /* TreeSectionsMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3F73D7DAAE5943FB2111 /* TreeSectionsMgr.swift */; };
 		B02F3D38C476C171D08E4F00 /* MethodSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */; };
 		B02F3E18136AE7EDDEF7D031 /* DiagramHistoryThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */; };
 		B02F3E469FB70DF8D315CB02 /* HistoryDiagramSelectedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */; };
+		B02F3F5B1B7B77C51D7EAC4C /* TreeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F39A37A7E180E456E04D7 /* TreeSection.swift */; };
 		B02F3FBA8ACEA4D329717C49 /* item-icon-folder-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B02F378FB18C99D464F637B4 /* item-icon-folder-selected@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -373,14 +380,17 @@
 		16FB69E31B0D44EF00322E1F /* LinkEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPoint.swift; path = ../../../../sources/DiagramElements/LinkEndPoint.swift; sourceTree = "<group>"; };
 		16FB69E51B0D452E00322E1F /* LinkEndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkEndPointType.swift; path = ../../../../sources/DiagramElements/LinkEndPointType.swift; sourceTree = "<group>"; };
 		16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorEndPointParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift; sourceTree = "<group>"; };
+		B02F303F237A284112FED013 /* TreeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeController.swift; path = Stories/HerarchicView/TreeController.swift; sourceTree = "<group>"; };
 		B02F314482A25B21AA99FE59 /* KOTreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOTreeTableViewCell.m; sourceTree = "<group>"; };
 		B02F318A893BA2A7A8BDB829 /* item-counter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-counter.png"; sourceTree = "<group>"; };
 		B02F3213F2C9BD239D9CAC52 /* KOTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOTreeViewController.m; sourceTree = "<group>"; };
 		B02F325B252D23E9CB1A6E08 /* copymove-cell-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "copymove-cell-bg.png"; sourceTree = "<group>"; };
 		B02F32734438F4575BF05AFA /* item-icon-folder-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder-selected.png"; sourceTree = "<group>"; };
+		B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataSource.swift; path = Stories/HerarchicView/TreeTableDataSource.swift; sourceTree = "<group>"; };
 		B02F33A073FE7D0A3444C096 /* KOTreeViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeViewDelegate.h; sourceTree = "<group>"; };
 		B02F3458A90DD28749A0C356 /* KOTreeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeItem.h; sourceTree = "<group>"; };
 		B02F345B968A431F1414649D /* RechercheSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheSelectionStory.swift; path = Stories/RechercheSelection/RechercheSelectionStory.swift; sourceTree = "<group>"; };
+		B02F3509C60750E4CA0427ED /* TreeItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItems.swift; path = Stories/HerarchicView/TreeItems.swift; sourceTree = "<group>"; };
 		B02F351608B8EDF8324867F0 /* item-icon-folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder@2x.png"; sourceTree = "<group>"; };
 		B02F357257A40C9FD7C43DE7 /* QuestionnaireStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireStory.swift; path = Stories/Questionnaire/QuestionnaireStory.swift; sourceTree = "<group>"; };
 		B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionStory.swift; path = Stories/MethodSelection/MethodSelectionStory.swift; sourceTree = "<group>"; };
@@ -395,15 +405,19 @@
 		B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WriteQuestionAnswerAction.swift; path = Actions/ActionObjects/WriteQuestionAnswerAction.swift; sourceTree = "<group>"; };
 		B02F390E3135CBDE36C39229 /* KOTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeViewController.h; sourceTree = "<group>"; };
 		B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDiagramSelectedAction.swift; path = Actions/ActionObjects/HistoryDiagramSelectedAction.swift; sourceTree = "<group>"; };
+		B02F39A37A7E180E456E04D7 /* TreeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeSection.swift; path = Stories/HerarchicView/TreeSection.swift; sourceTree = "<group>"; };
 		B02F3A0B131D57B393B90497 /* RechercheItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemController.swift; path = Stories/RechercheSelection/RechercheItemController.swift; sourceTree = "<group>"; };
 		B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierarchicViewController.swift; path = Stories/HerarchicView/HierarchicViewController.swift; sourceTree = "<group>"; };
 		B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireViewController.swift; path = Stories/Questionnaire/QuestionnaireViewController.swift; sourceTree = "<group>"; };
 		B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionAction.swift; path = Actions/ActionObjects/MethodSelectionAction.swift; sourceTree = "<group>"; };
+		B02F3D1E03E6568B9130B67F /* TreeTableDataNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataNode.swift; path = Stories/HerarchicView/TreeTableDataNode.swift; sourceTree = "<group>"; };
 		B02F3D2A7D55282E3F2197A0 /* RechercheSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheSelectionViewController.swift; path = Stories/RechercheSelection/RechercheSelectionViewController.swift; sourceTree = "<group>"; };
 		B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramHistoryThumbnailViewController.swift; path = Stories/SchematicView/DiagramHistoryThumbnailViewController.swift; sourceTree = "<group>"; };
 		B02F3E4510669556D3E99287 /* MethodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodType.swift; sourceTree = "<group>"; };
 		B02F3E83538668A956E867AC /* item-counter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-counter@2x.png"; sourceTree = "<group>"; };
 		B02F3EACA1476ACE48B8ABD1 /* item-icon-folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder.png"; sourceTree = "<group>"; };
+		B02F3F73D7DAAE5943FB2111 /* TreeSectionsMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeSectionsMgr.swift; path = Stories/HerarchicView/TreeSectionsMgr.swift; sourceTree = "<group>"; };
+		B02F3F867005CFB33B7A4A98 /* TreeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItem.swift; path = Stories/HerarchicView/TreeItem.swift; sourceTree = "<group>"; };
 		B02F3FE2ADC5ED662181720C /* RechercheItemControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemControllerDelegate.swift; path = Stories/RechercheSelection/RechercheItemControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -907,6 +921,13 @@
 			children = (
 				B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */,
 				B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */,
+				B02F303F237A284112FED013 /* TreeController.swift */,
+				B02F3F867005CFB33B7A4A98 /* TreeItem.swift */,
+				B02F3509C60750E4CA0427ED /* TreeItems.swift */,
+				B02F39A37A7E180E456E04D7 /* TreeSection.swift */,
+				B02F3F73D7DAAE5943FB2111 /* TreeSectionsMgr.swift */,
+				B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */,
+				B02F3D1E03E6568B9130B67F /* TreeTableDataNode.swift */,
 			);
 			name = HierarchicView;
 			sourceTree = "<group>";
@@ -1318,6 +1339,13 @@
 				B02F37B4CAF3433C37E28F30 /* KOTreeViewController.m in Sources */,
 				B02F33FE2B92A937DBE7F8F7 /* HierarchicViewController.swift in Sources */,
 				B02F33338E3FB2ED18E9EA66 /* HierachicViewStory.swift in Sources */,
+				B02F3B4C2216F0B6BB77DA45 /* TreeController.swift in Sources */,
+				B02F36FA275155BBD58427C0 /* TreeItem.swift in Sources */,
+				B02F3749D8FB884CB0595029 /* TreeItems.swift in Sources */,
+				B02F3F5B1B7B77C51D7EAC4C /* TreeSection.swift in Sources */,
+				B02F3C367A5EDAF6C309CD38 /* TreeSectionsMgr.swift in Sources */,
+				B02F3AE00830FE3193596B52 /* TreeTableDataSource.swift in Sources */,
+				B02F36D921A33AEBFE81A2FB /* TreeTableDataNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
