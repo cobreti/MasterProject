@@ -156,11 +156,9 @@
 		B02F3B3419ADBE03038C3515 /* MethodSelectionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */; };
 		B02F3B4C2216F0B6BB77DA45 /* TreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F303F237A284112FED013 /* TreeController.swift */; };
 		B02F3BD2D8752D8F13DD7EF7 /* RecenterDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */; };
-		B02F3C367A5EDAF6C309CD38 /* TreeSectionsMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3F73D7DAAE5943FB2111 /* TreeSectionsMgr.swift */; };
 		B02F3D38C476C171D08E4F00 /* MethodSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */; };
 		B02F3E18136AE7EDDEF7D031 /* DiagramHistoryThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */; };
 		B02F3E469FB70DF8D315CB02 /* HistoryDiagramSelectedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */; };
-		B02F3F5B1B7B77C51D7EAC4C /* TreeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F39A37A7E180E456E04D7 /* TreeSection.swift */; };
 		B02F3FBA8ACEA4D329717C49 /* item-icon-folder-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B02F378FB18C99D464F637B4 /* item-icon-folder-selected@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -405,7 +403,6 @@
 		B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WriteQuestionAnswerAction.swift; path = Actions/ActionObjects/WriteQuestionAnswerAction.swift; sourceTree = "<group>"; };
 		B02F390E3135CBDE36C39229 /* KOTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeViewController.h; sourceTree = "<group>"; };
 		B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDiagramSelectedAction.swift; path = Actions/ActionObjects/HistoryDiagramSelectedAction.swift; sourceTree = "<group>"; };
-		B02F39A37A7E180E456E04D7 /* TreeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeSection.swift; path = Stories/HerarchicView/TreeSection.swift; sourceTree = "<group>"; };
 		B02F3A0B131D57B393B90497 /* RechercheItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemController.swift; path = Stories/RechercheSelection/RechercheItemController.swift; sourceTree = "<group>"; };
 		B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierarchicViewController.swift; path = Stories/HerarchicView/HierarchicViewController.swift; sourceTree = "<group>"; };
 		B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireViewController.swift; path = Stories/Questionnaire/QuestionnaireViewController.swift; sourceTree = "<group>"; };
@@ -416,7 +413,6 @@
 		B02F3E4510669556D3E99287 /* MethodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodType.swift; sourceTree = "<group>"; };
 		B02F3E83538668A956E867AC /* item-counter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-counter@2x.png"; sourceTree = "<group>"; };
 		B02F3EACA1476ACE48B8ABD1 /* item-icon-folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder.png"; sourceTree = "<group>"; };
-		B02F3F73D7DAAE5943FB2111 /* TreeSectionsMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeSectionsMgr.swift; path = Stories/HerarchicView/TreeSectionsMgr.swift; sourceTree = "<group>"; };
 		B02F3F867005CFB33B7A4A98 /* TreeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItem.swift; path = Stories/HerarchicView/TreeItem.swift; sourceTree = "<group>"; };
 		B02F3FE2ADC5ED662181720C /* RechercheItemControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemControllerDelegate.swift; path = Stories/RechercheSelection/RechercheItemControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -924,8 +920,6 @@
 				B02F303F237A284112FED013 /* TreeController.swift */,
 				B02F3F867005CFB33B7A4A98 /* TreeItem.swift */,
 				B02F3509C60750E4CA0427ED /* TreeItems.swift */,
-				B02F39A37A7E180E456E04D7 /* TreeSection.swift */,
-				B02F3F73D7DAAE5943FB2111 /* TreeSectionsMgr.swift */,
 				B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */,
 				B02F3D1E03E6568B9130B67F /* TreeTableDataNode.swift */,
 			);
@@ -1342,8 +1336,6 @@
 				B02F3B4C2216F0B6BB77DA45 /* TreeController.swift in Sources */,
 				B02F36FA275155BBD58427C0 /* TreeItem.swift in Sources */,
 				B02F3749D8FB884CB0595029 /* TreeItems.swift in Sources */,
-				B02F3F5B1B7B77C51D7EAC4C /* TreeSection.swift in Sources */,
-				B02F3C367A5EDAF6C309CD38 /* TreeSectionsMgr.swift in Sources */,
 				B02F3AE00830FE3193596B52 /* TreeTableDataSource.swift in Sources */,
 				B02F36D921A33AEBFE81A2FB /* TreeTableDataNode.swift in Sources */,
 			);

@@ -23,7 +23,23 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
         return _nodeIndex.count
     }
 
+    func getNodeFromIndexPath( indexPath: NSIndexPath ) -> TreeTableDataNode! {
+
+        let idx = indexPath.indexAtPosition(1)
+
+        if idx < _nodeIndex.count {
+            return _nodeIndex[idx]
+        }
+
+        return nil
+    }
+
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+        if _dirty {
+            rebuildIndex()
+        }
+
         var cell : UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("TreeViewCell") as? UITableViewCell
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier:"TreeViewCell")
@@ -42,6 +58,19 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
         }
 
         return cell!
+    }
+
+    func expand( node: TreeTableDataNode ) -> Int {
+
+        let item = node.item
+        var count : Int = 0
+
+        item.children.forEach( { (subItem: TreeItem) -> Void in
+            self.addVisibleItem(subItem, parentNode: node)
+            ++count
+        })
+
+        return count
     }
 
     func addVisibleItem( item: TreeItem, parentNode: TreeTableDataNode! ) {

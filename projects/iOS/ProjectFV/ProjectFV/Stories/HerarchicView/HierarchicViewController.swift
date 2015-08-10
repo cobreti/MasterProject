@@ -41,23 +41,23 @@ class HierarchicViewController : UIViewController {
         let bundle = NSBundle.mainBundle()
 
         if let url = bundle.URLForResource("ProjectFV", withExtension: "", subdirectory: "EmbeddedRes/CodeSite") {
-            let items = parseSourceFolderAtUrl(fm, basePath: "", url: url, group: _treeController.root)
+            let items = parseSourceFolderAtUrl(fm, url: url, group: _treeController.root)
 //            _treeItems["/"] = items
         }
     }
 
-    func parseSourceFolderAtUrl(fileManager: NSFileManager, basePath: String, url: NSURL, group: TreeItems) {
+    func parseSourceFolderAtUrl(fileManager: NSFileManager, url: NSURL, group: TreeItems) {
 
         debugPrintln("parsing content of '\(url)")
 
         var folders : [NSURL] = []
         var files : [NSURL] = []
         var retItems : [KOTreeItem] = []
-        var itemBasePath = basePath
+//        var itemBasePath = basePath
 
-        if basePath == "" {
-            itemBasePath = "/"
-        }
+//        if basePath == "" {
+//            itemBasePath = "/"
+//        }
 
         if let content = fileManager.contentsOfDirectoryAtURL(  url,
                                                                 includingPropertiesForKeys: nil,
@@ -85,7 +85,8 @@ class HierarchicViewController : UIViewController {
 
 //            debugPrintln("folder : \(p)")
 
-            group.add( TreeItem(name: folder.lastPathComponent!) )
+            var item = TreeItem(name: folder.lastPathComponent!)
+            group.add( item )
 //            var item = KOTreeItem()
 //            item.path = itemBasePath
 //            item.base = folder.lastPathComponent!
@@ -96,7 +97,7 @@ class HierarchicViewController : UIViewController {
 //
 //            retItems.append(item)
 //
-//            let items = parseSourceFolderAtUrl(fileManager, basePath: p, url: folder, level: level+1, parentItem: item)
+            parseSourceFolderAtUrl(fileManager, url: folder, group: item.children )
 //
 //            item.ancestorSelectingItems.addObjectsFromArray(items)
 //            item.numberOfSubitems = items.count

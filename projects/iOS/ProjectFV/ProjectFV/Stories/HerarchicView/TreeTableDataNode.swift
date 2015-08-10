@@ -19,6 +19,12 @@ class TreeTableDataNode {
         }
     }
 
+    var hasChildren : Bool {
+        get {
+            return _childNodes.count > 0
+        }
+    }
+
     init( item: TreeItem ) {
         _item = item
     }
