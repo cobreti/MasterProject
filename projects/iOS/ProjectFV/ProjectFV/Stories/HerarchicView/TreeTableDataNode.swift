@@ -13,6 +13,12 @@ class TreeTableDataNode {
         }
     }
 
+    var level : Int {
+        get {
+            return _level
+        }
+    }
+
     var nodes : [TreeTableDataNode] {
         get {
             return _childNodes
@@ -25,8 +31,9 @@ class TreeTableDataNode {
         }
     }
 
-    init( item: TreeItem ) {
+    init( item: TreeItem, level: Int ) {
         _item = item
+        _level = level
     }
 
     func add(node: TreeTableDataNode) {
@@ -43,5 +50,6 @@ class TreeTableDataNode {
     }
 
     var _item : TreeItem
+    var _level : Int = 0
     var _childNodes : [TreeTableDataNode] = []
 }

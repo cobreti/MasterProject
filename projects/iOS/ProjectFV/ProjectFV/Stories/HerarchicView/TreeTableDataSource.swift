@@ -51,6 +51,8 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
             let node = _nodeIndex[idx]
 
             cell.textLabel?.text = node.item.name
+            cell.indentationLevel = node.level
+            cell.indentationWidth = 50
         }
         else {
 
@@ -76,10 +78,10 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
     func addVisibleItem( item: TreeItem, parentNode: TreeTableDataNode! ) {
 
         if let parent = parentNode {
-            parent.add( TreeTableDataNode(item: item) )
+            parent.add( TreeTableDataNode(item: item, level: parent.level+1) )
         }
         else {
-            _nodes.append( TreeTableDataNode(item: item) )
+            _nodes.append( TreeTableDataNode(item: item, level: 0) )
         }
 
         setDirty()
@@ -110,7 +112,7 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
         _nodes.removeAll(keepCapacity: true)
 
         _root.forEach( { (item: TreeItem) -> Void in
-            self._nodes.append( TreeTableDataNode(item: item) )
+            self._nodes.append( TreeTableDataNode(item: item, level: 0) )
         })
 
         setDirty()
