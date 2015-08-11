@@ -14,6 +14,14 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
         }
     }
 
+    override init() {
+        super.init()
+
+        let bundle = NSBundle.mainBundle()
+//        let url = bundle.pathForResource("folder", ofType: "png")
+        _folderImage = UIImage(named: "folder.png", inBundle: bundle, compatibleWithTraitCollection: nil)
+    }
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         if _dirty {
@@ -53,6 +61,13 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
             cell.textLabel?.text = node.item.name
             cell.indentationLevel = node.level
             cell.indentationWidth = 50
+
+            if node.item.children.count > 0 {
+                cell.imageView?.image = _folderImage
+            }
+            else {
+                cell.imageView?.image = nil
+            }
         }
         else {
 
@@ -132,4 +147,5 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
     var _nodes : [TreeTableDataNode] = [] // tree of visible nodes
     var _nodeIndex : [TreeTableDataNode] = [] // index to visible nodes for table mapping
     var _dirty : Bool = false
+    var _folderImage : UIImage!
 }

@@ -136,6 +136,7 @@
 		B02F32888BCE847FB41A2E2E /* WriteQuestionAnswerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */; };
 		B02F33338E3FB2ED18E9EA66 /* HierachicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */; };
 		B02F33FE2B92A937DBE7F8F7 /* HierarchicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */; };
+		B02F34BB167D35E632578E5B /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = B02F381A4E25B7456735F63C /* folder.png */; };
 		B02F35110C785EA324A665C7 /* MethodSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F38A82FCE0F348562B663 /* MethodSelectionViewController.swift */; };
 		B02F35501E560333D9F1395C /* MethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3E4510669556D3E99287 /* MethodType.swift */; };
 		B02F3554F9CD0F1235023678 /* item-icon-folder-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B02F32734438F4575BF05AFA /* item-icon-folder-selected.png */; };
@@ -397,6 +398,7 @@
 		B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecenterDiagramAction.swift; path = Actions/ActionObjects/RecenterDiagramAction.swift; sourceTree = "<group>"; };
 		B02F378FB18C99D464F637B4 /* item-icon-folder-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder-selected@2x.png"; sourceTree = "<group>"; };
 		B02F37FB217BD7DBF4D36EEC /* KOTreeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOTreeItem.m; sourceTree = "<group>"; };
+		B02F381A4E25B7456735F63C /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = folder.png; path = Resources/icons/folder.png; sourceTree = "<group>"; };
 		B02F386B07BF62482818D436 /* KOTreeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeTableViewCell.h; sourceTree = "<group>"; };
 		B02F388F4CDD1992AA97E9B0 /* RechercheItemSelectedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemSelectedAction.swift; path = Actions/ActionObjects/RechercheItemSelectedAction.swift; sourceTree = "<group>"; };
 		B02F38A82FCE0F348562B663 /* MethodSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionViewController.swift; path = Stories/MethodSelection/MethodSelectionViewController.swift; sourceTree = "<group>"; };
@@ -741,6 +743,7 @@
 				16AE13F41B45F9D300F2FCFB /* LeftArrow.png */,
 				16AE13F51B45F9D300F2FCFB /* RightArrow.png */,
 				16AE13F61B45F9D300F2FCFB /* UpArrow.png */,
+				B02F381A4E25B7456735F63C /* folder.png */,
 			);
 			name = icons;
 			sourceTree = "<group>";
@@ -1210,6 +1213,7 @@
 				B02F3FBA8ACEA4D329717C49 /* item-icon-folder-selected@2x.png in Resources */,
 				B02F36CFCB5E54AD1E32209C /* item-icon-folder.png in Resources */,
 				B02F375CC261D64BD164AD75 /* item-icon-folder@2x.png in Resources */,
+				B02F34BB167D35E632578E5B /* folder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
