@@ -75,6 +75,16 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
         return count
     }
 
+    func collapse( node: TreeTableDataNode ) -> Int {
+
+        var count : Int = node.getSubNodesCount()
+
+        node.removeChildNodes()
+        setDirty()
+
+        return count
+    }
+
     func addVisibleItem( item: TreeItem, parentNode: TreeTableDataNode! ) {
 
         if let parent = parentNode {

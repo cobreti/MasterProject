@@ -35,23 +35,40 @@ class TreeController : NSObject, UITableViewDelegate {
 
         if let node = _dataSource.getNodeFromIndexPath(indexPath) {
 
+            let startIndex = indexPath.indexAtPosition(1) + 1
+
             if node.hasChildren {
 
+                let removedCount = _dataSource.collapse(node)
+                let indexes: [NSIndexPath] = createIndexPaths( startIndex, count: removedCount )
+
+                _table?.deleteRowsAtIndexPaths(indexes, withRowAnimation: UITableViewRowAnimation.Top)
             }
             else {
                 let addedCount = _dataSource.expand(node)
-                let idxPos = indexPath.indexAtPosition(1)
-                var indexes: [NSIndexPath] = []
+                let indexes: [NSIndexPath] = createIndexPaths( startIndex, count: addedCount )
 
-                for (var idx : Int = 0; idx < addedCount; ++idx) {
-
-                    let index = NSIndexPath(indexes: [0, idxPos+idx+1], length: 2)
-                    indexes.append(index)
-                }
+//                for (var idx : Int = 0; idx < addedCount; ++idx) {
+//
+//                    let index = NSIndexPath(indexes: [0, idxPos+idx+1], length: 2)
+//                    indexes.append(index)
+//                }
 
                 _table?.insertRowsAtIndexPaths(indexes, withRowAnimation: UITableViewRowAnimation.Bottom)
             }
         }
+    }
+
+    func createIndexPaths( startIndex: Int, count: Int ) -> [NSIndexPath] {
+
+        var indexes : [NSIndexPath] = []
+
+        for (var idx : Int = 0; idx < count; ++idx) {
+            let index = NSIndexPath(indexes: [0, idx + startIndex], length: 2)
+            indexes.append(index)
+        }
+
+        return indexes
     }
 
 
