@@ -179,9 +179,14 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     
 
     @IBAction func onBack(sender: AnyObject) {
-        if let handler = _backEventHandler {
-            handler(sender: self, args: nil)
-        }
+
+        let app = Application.instance()
+
+        app.actionsBus.send( RestartAction(sender: self) )
+
+//        if let handler = _backEventHandler {
+//            handler(sender: self, args: nil)
+//        }
     }
     
     @IBAction func onRecenter(sender: AnyObject) {

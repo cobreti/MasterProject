@@ -54,7 +54,11 @@ class StoriesMgr : ActionListener {
                 if let osa = action as? OpenStoryAction {
                     push(osa.story)
                 }
-            
+
+            case .Restart:
+                _stories.removeAll(keepCapacity: false)
+                Application.instance().actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
+
             default:
                 _stories.last?.onAction(action)
         }

@@ -25,5 +25,6 @@ enum ActionIdentifier : String {
     case WriteQuestionAnswer        = "Write Question & Answer"
     case RechercheItemSelected      = "Item de recherche selectionne"
     case MethodSelection            = "Method Selection"
+    case Restart                    = "Restart"
 }
 

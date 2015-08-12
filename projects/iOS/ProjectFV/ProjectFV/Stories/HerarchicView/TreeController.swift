@@ -48,12 +48,6 @@ class TreeController : NSObject, UITableViewDelegate {
                 let addedCount = _dataSource.expand(node)
                 let indexes: [NSIndexPath] = createIndexPaths( startIndex, count: addedCount )
 
-//                for (var idx : Int = 0; idx < addedCount; ++idx) {
-//
-//                    let index = NSIndexPath(indexes: [0, idxPos+idx+1], length: 2)
-//                    indexes.append(index)
-//                }
-
                 _table?.insertRowsAtIndexPaths(indexes, withRowAnimation: UITableViewRowAnimation.Bottom)
             }
         }

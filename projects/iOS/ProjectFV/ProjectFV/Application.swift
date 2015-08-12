@@ -52,9 +52,9 @@ class Application : ActionListener {
     
         var proj = VpProject( document: _document )
         
-        if let url = NSBundle.mainBundle().URLForResource(  "ProjectFV",
+        if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
                                                             withExtension: "xml",
-                                                            subdirectory: "EmbeddedRes/diagrams") {
+                                                            subdirectory: "EmbeddedRes/diagrams/ProjectFV") {
             proj.load(url)
             _document.filesPathRoot = "EmbeddedRes/CodeSite/ProjectFV/"
         }
