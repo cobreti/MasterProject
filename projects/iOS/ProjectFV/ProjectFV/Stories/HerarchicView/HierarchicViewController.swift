@@ -69,6 +69,14 @@ class HierarchicViewController : UIViewController {
         }
     }
 
+    @IBAction func onHome(sender: AnyObject) {
+
+        let app = Application.instance()
+
+        app.actionsBus.send( RestartAction(sender: self) )
+    }
+    
+    
     @IBOutlet weak var _tableView: UITableView!
 
     var _treeController : TreeController!

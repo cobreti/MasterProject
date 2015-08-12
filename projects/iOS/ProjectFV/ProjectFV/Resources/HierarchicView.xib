@@ -15,6 +15,35 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOx-RA-c8n">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTX-lE-b3y">
+                            <rect key="frame" x="20" y="14" width="15" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Yh2-UC-hMF"/>
+                                <constraint firstAttribute="width" constant="30" id="f6d-vG-P4t"/>
+                            </constraints>
+                            <state key="normal" image="home.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Yh2-UC-hMF"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="onHome:" destination="-1" eventType="touchUpInside" id="A8b-5v-D08"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="RTX-lE-b3y" secondAttribute="centerY" id="Lu2-MH-z01"/>
+                        <constraint firstItem="RTX-lE-b3y" firstAttribute="leading" secondItem="aOx-RA-c8n" secondAttribute="leading" constant="20" id="aFM-Ku-IRg"/>
+                        <constraint firstAttribute="height" constant="50" id="whD-iz-9dz"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzx-Mf-vpE">
                     <rect key="frame" x="50" y="50" width="500" height="500"/>
                     <subviews>
@@ -34,11 +63,24 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="aOx-RA-c8n" secondAttribute="trailing" id="42c-YH-gaK"/>
                 <constraint firstAttribute="bottom" secondItem="bzx-Mf-vpE" secondAttribute="bottom" constant="50" id="GNg-m4-HOs"/>
                 <constraint firstItem="bzx-Mf-vpE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="KdN-Wc-XzG"/>
+                <constraint firstItem="aOx-RA-c8n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ldv-gI-RLR"/>
                 <constraint firstAttribute="trailing" secondItem="bzx-Mf-vpE" secondAttribute="trailing" constant="50" id="Ml8-fe-z4C"/>
+                <constraint firstItem="aOx-RA-c8n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Q3w-K2-gtO"/>
+                <constraint firstItem="bzx-Mf-vpE" firstAttribute="top" secondItem="aOx-RA-c8n" secondAttribute="bottom" id="QUP-fL-iyu"/>
                 <constraint firstItem="bzx-Mf-vpE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="nZf-cI-mUC"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="KdN-Wc-XzG"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="307" y="344"/>
         </view>
     </objects>
+    <resources>
+        <image name="home.png" width="15" height="15"/>
+    </resources>
 </document>
