@@ -33,7 +33,9 @@ class XmlConnectorParser : XmlSubTreeParser {
         
         switch elementName {
             case "Points":
-                pushElementParser(XmlPointsParser(name: "Points", link: _lnk, delegate: self))
+                if let lnk = _lnk {
+                    pushElementParser(XmlPointsParser(name: "Points", link: lnk, delegate: self))
+                }
             default:
                 break
         }

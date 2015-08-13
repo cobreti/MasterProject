@@ -36,6 +36,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DiagramView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Images.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/MainViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/MethodType.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/ProjectFV-Bridging-Header.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/RechercheItem.xib" isTestSource="false" />

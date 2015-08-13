@@ -73,7 +73,7 @@ class Application : ActionListener {
 //        stories.push( DiagramSelectionStory() )
 //        stories.push( QuestionnaireStory() )
 
-        actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
+//        actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
     }
 
     func onAction(action: Action) {
