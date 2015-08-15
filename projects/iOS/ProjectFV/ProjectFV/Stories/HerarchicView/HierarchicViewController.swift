@@ -22,8 +22,10 @@ class HierarchicViewController : UIViewController {
 
         let fm = NSFileManager()
         let bundle = NSBundle.mainBundle()
+        let doc = Application.instance().document
 
-        if let url = bundle.URLForResource("ProjectFV", withExtension: "", subdirectory: "EmbeddedRes/CodeSite") {
+        if let  projectName = doc.projectName,
+                url = bundle.URLForResource(projectName, withExtension: "", subdirectory: "EmbeddedRes/CodeSite") {
             let items = parseSourceFolderAtUrl(fm, url: url, group: _treeController.root)
         }
     }

@@ -82,6 +82,7 @@
 		16AE13F91B45F9D300F2FCFB /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F51B45F9D300F2FCFB /* RightArrow.png */; };
 		16AE13FA1B45F9D300F2FCFB /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE13F61B45F9D300F2FCFB /* UpArrow.png */; };
 		16B36ABB1B5BE0B1004B5928 /* Question.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B36ABA1B5BE0B1004B5928 /* Question.xib */; };
+		16C075381B7EDDB1004D090D /* ProjectSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C075371B7EDDB1004D090D /* ProjectSelection.xib */; };
 		16C0E79B1B55CF2C00AEA0A0 /* GestureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E79A1B55CF2C00AEA0A0 /* GestureAction.swift */; };
 		16C0E79D1B55D02900AEA0A0 /* ZoomDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E79C1B55D02900AEA0A0 /* ZoomDiagramAction.swift */; };
 		16C0E79F1B55DB9100AEA0A0 /* TapDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0E79E1B55DB9100AEA0A0 /* TapDiagramAction.swift */; };
@@ -141,6 +142,7 @@
 		B02F3614E249ED471C6EA8D3 /* QuestionnaireStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F357257A40C9FD7C43DE7 /* QuestionnaireStory.swift */; };
 		B02F36931E3B515662B6F0A6 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */; };
 		B02F36D921A33AEBFE81A2FB /* TreeTableDataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3D1E03E6568B9130B67F /* TreeTableDataNode.swift */; };
+		B02F36F70A8469EC39773CE8 /* ProjectSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3CDF44A0CC467A849D7E /* ProjectSelectionViewController.swift */; };
 		B02F36FA275155BBD58427C0 /* TreeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3F867005CFB33B7A4A98 /* TreeItem.swift */; };
 		B02F3749D8FB884CB0595029 /* TreeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3509C60750E4CA0427ED /* TreeItems.swift */; };
 		B02F390BACFBA5E5581CB0A6 /* RechercheSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3D2A7D55282E3F2197A0 /* RechercheSelectionViewController.swift */; };
@@ -150,6 +152,7 @@
 		B02F3B3419ADBE03038C3515 /* MethodSelectionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */; };
 		B02F3B4C2216F0B6BB77DA45 /* TreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F303F237A284112FED013 /* TreeController.swift */; };
 		B02F3BD2D8752D8F13DD7EF7 /* RecenterDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */; };
+		B02F3CC589F4D1306F2CF041 /* ProjectSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */; };
 		B02F3D38C476C171D08E4F00 /* MethodSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */; };
 		B02F3E18136AE7EDDEF7D031 /* DiagramHistoryThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */; };
 		B02F3E469FB70DF8D315CB02 /* HistoryDiagramSelectedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */; };
@@ -325,6 +328,7 @@
 		16AE13F51B45F9D300F2FCFB /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RightArrow.png; path = Resources/icons/RightArrow.png; sourceTree = "<group>"; };
 		16AE13F61B45F9D300F2FCFB /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UpArrow.png; path = Resources/icons/UpArrow.png; sourceTree = "<group>"; };
 		16B36ABA1B5BE0B1004B5928 /* Question.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Question.xib; path = Resources/Question.xib; sourceTree = "<group>"; };
+		16C075371B7EDDB1004D090D /* ProjectSelection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectSelection.xib; path = Resources/ProjectSelection.xib; sourceTree = "<group>"; };
 		16C0E79A1B55CF2C00AEA0A0 /* GestureAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GestureAction.swift; path = Actions/ActionObjects/GestureAction.swift; sourceTree = "<group>"; };
 		16C0E79C1B55D02900AEA0A0 /* ZoomDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomDiagramAction.swift; path = Actions/ActionObjects/ZoomDiagramAction.swift; sourceTree = "<group>"; };
 		16C0E79E1B55DB9100AEA0A0 /* TapDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapDiagramAction.swift; path = Actions/ActionObjects/TapDiagramAction.swift; sourceTree = "<group>"; };
@@ -374,6 +378,7 @@
 		16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorEndPointParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift; sourceTree = "<group>"; };
 		B02F303F237A284112FED013 /* TreeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeController.swift; path = Stories/HerarchicView/TreeController.swift; sourceTree = "<group>"; };
 		B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataSource.swift; path = Stories/HerarchicView/TreeTableDataSource.swift; sourceTree = "<group>"; };
+		B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectSelectionStory.swift; path = Stories/ProjectSelection/ProjectSelectionStory.swift; sourceTree = "<group>"; };
 		B02F345B968A431F1414649D /* RechercheSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheSelectionStory.swift; path = Stories/RechercheSelection/RechercheSelectionStory.swift; sourceTree = "<group>"; };
 		B02F3509C60750E4CA0427ED /* TreeItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItems.swift; path = Stories/HerarchicView/TreeItems.swift; sourceTree = "<group>"; };
 		B02F357257A40C9FD7C43DE7 /* QuestionnaireStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireStory.swift; path = Stories/Questionnaire/QuestionnaireStory.swift; sourceTree = "<group>"; };
@@ -391,6 +396,7 @@
 		B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierarchicViewController.swift; path = Stories/HerarchicView/HierarchicViewController.swift; sourceTree = "<group>"; };
 		B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireViewController.swift; path = Stories/Questionnaire/QuestionnaireViewController.swift; sourceTree = "<group>"; };
 		B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionAction.swift; path = Actions/ActionObjects/MethodSelectionAction.swift; sourceTree = "<group>"; };
+		B02F3CDF44A0CC467A849D7E /* ProjectSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectSelectionViewController.swift; path = Stories/ProjectSelection/ProjectSelectionViewController.swift; sourceTree = "<group>"; };
 		B02F3D1E03E6568B9130B67F /* TreeTableDataNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataNode.swift; path = Stories/HerarchicView/TreeTableDataNode.swift; sourceTree = "<group>"; };
 		B02F3D2A7D55282E3F2197A0 /* RechercheSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheSelectionViewController.swift; path = Stories/RechercheSelection/RechercheSelectionViewController.swift; sourceTree = "<group>"; };
 		B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramHistoryThumbnailViewController.swift; path = Stories/SchematicView/DiagramHistoryThumbnailViewController.swift; sourceTree = "<group>"; };
@@ -528,6 +534,7 @@
 				B02F348782D80E0711BFB7B4 /* RechercheSelection */,
 				B02F36C7122ACD3BB8C1EB9E /* MethodSelection */,
 				B02F3F209C12C1DC8CF7CA3B /* HierarchicView */,
+				B02F359FEB6A1A02FB349D28 /* ProjectSelection */,
 			);
 			name = Stories;
 			sourceTree = "<group>";
@@ -774,6 +781,7 @@
 				16980D071B656AD400D45DED /* RechercheItem.xib */,
 				16ECF3D01B6E89A100591783 /* MethodSelection.xib */,
 				16ECF3D21B6E970A00591783 /* HierarchicView.xib */,
+				16C075371B7EDDB1004D090D /* ProjectSelection.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -864,6 +872,15 @@
 				B02F3FE2ADC5ED662181720C /* RechercheItemControllerDelegate.swift */,
 			);
 			name = RechercheSelection;
+			sourceTree = "<group>";
+		};
+		B02F359FEB6A1A02FB349D28 /* ProjectSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */,
+				B02F3CDF44A0CC467A849D7E /* ProjectSelectionViewController.swift */,
+			);
+			name = ProjectSelection;
 			sourceTree = "<group>";
 		};
 		B02F36C7122ACD3BB8C1EB9E /* MethodSelection */ = {
@@ -1166,6 +1183,7 @@
 				160D0D571B3F33BA00BC3C1C /* recenter.png in Resources */,
 				166405B11B38D609003F720A /* cross.png in Resources */,
 				1673BE451AF550A700C8F9AE /* EmbeddedRes in Resources */,
+				16C075381B7EDDB1004D090D /* ProjectSelection.xib in Resources */,
 				B02F34BB167D35E632578E5B /* folder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1294,6 +1312,8 @@
 				B02F3AE00830FE3193596B52 /* TreeTableDataSource.swift in Sources */,
 				B02F36D921A33AEBFE81A2FB /* TreeTableDataNode.swift in Sources */,
 				B02F3308C2A0E44B5F43D7FA /* RestartAction.swift in Sources */,
+				B02F3CC589F4D1306F2CF041 /* ProjectSelectionStory.swift in Sources */,
+				B02F36F70A8469EC39773CE8 /* ProjectSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

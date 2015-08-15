@@ -36,6 +36,10 @@ public class ModelsTable {
         
         return nil
     }
+
+    public func clear() {
+        _models.removeAll(keepCapacity: false)
+    }
         
     private var _models : [String : Model] = [:]
 }

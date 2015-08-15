@@ -30,6 +30,10 @@ public class Diagrams {
         
         return list
     }
+
+    public func clear() {
+        _layers.removeAll(keepCapacity: false)
+    }
     
     var _layers : [String : Diagram] = [:]
 }

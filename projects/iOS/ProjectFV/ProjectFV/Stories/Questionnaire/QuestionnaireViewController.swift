@@ -48,7 +48,7 @@ class QuestionnaireViewController : UIViewController {
             question.writeAnswer()
         }
 
-        Application.instance().actionsBus.send( OpenStoryAction(story: MethodSelectionStory(), sender: self))
+        Application.instance().actionsBus.send( OpenStoryAction(story: ProjectSelectionStory(), sender: self))
 //        Application.instance().stories.push( RechercheSelectionStory() )
     }
 

@@ -45,6 +45,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/FileView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/HierarchicView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/MethodSelection.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/ProjectSelection.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/Question.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/Questionnaire.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/RechercheSelection.xib" isTestSource="false" />
@@ -75,6 +76,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/HerarchicView/TreeTableDataSource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/MethodSelection/MethodSelectionStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/MethodSelection/MethodSelectionViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/ProjectSelection/ProjectSelectionStory.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/ProjectSelection/ProjectSelectionViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" isTestSource="false" />

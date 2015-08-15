@@ -28,6 +28,22 @@ public class Document {
         }
     }
 
+    public var projectName : String! {
+        get {
+            return _projectName
+        }
+        set (value) {
+            _projectName = value
+        }
+    }
+
+    public func clear() {
+
+        _filesPathRoot = nil
+        _layers.clear()
+        _models.clear()
+    }
+
     public init() {
 
     }
@@ -35,4 +51,5 @@ public class Document {
     var _filesPathRoot : String!
     var _layers : Diagrams = Diagrams()
     var _models : ModelsTable = ModelsTable()
+    var _projectName : String!
 }
