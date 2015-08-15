@@ -22,7 +22,7 @@
 		<key>1742C317F3D44412A7C4A123D52B172AB49DFFB5</key>
 		<string>../../../../..</string>
 		<key>9E84D01FFAF048D5D4A96A2F61690CECA735BC76</key>
-		<string>../../../../../sources/EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/</string>
+		<string>../../../../../sources/EmbeddedRes/CodeSite/Nyx/NyxTraceViewer</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/cobreti/MasterProject.git</string>

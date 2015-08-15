@@ -9,11 +9,18 @@ import DiagramElements
 
 class QuestionnaireViewController : UIViewController {
 
+    convenience init(document: DiagramElements.Document) {
+
+        self.init(nibName: "Questionnaire", bundle: nil)
+
+        _document = document
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let doc = Application.instance().document
-        _diagram = doc.diagrams.get("Questionnaire")
+//        let doc = Application.instance().document
+        _diagram = _document.diagrams.get("Questionnaire")
 
         if let diag = _diagram {
 
@@ -117,6 +124,7 @@ class QuestionnaireViewController : UIViewController {
     }
 
     var _diagram : Diagram!
+    var _document : DiagramElements.Document!
     
     @IBOutlet weak var _scrollView: UIScrollView!
 

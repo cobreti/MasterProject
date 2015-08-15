@@ -62,7 +62,7 @@ class Application : ActionListener {
     
     func finishedLaunching() {
     
-        loadDiagrams()
+//        loadDiagrams()
     
         _actionsBus = ActionsBus()
         _storiesMgr = StoriesMgr()

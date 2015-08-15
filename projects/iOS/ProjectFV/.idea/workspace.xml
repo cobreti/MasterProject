@@ -2,867 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjectFV/MainViewController.swift" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/.settings/org.eclipse.cdt.codan.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxAString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxActiveObject_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxActiveObject_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxAnsiFile_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxAnsiFile_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxConsoleTraceOutput_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxConsoleTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxEvent_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxEvent_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxExternalModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxExternalModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxFixedString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxLocalTime_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMFString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMemPoolWString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMemoryPool_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMemoryPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMsgHandlers_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMsgHandlers_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMsgQueue_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMsgQueue_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMutex_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxMutex_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxObjectsPool_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxObjectsPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxTestUnitsGroup_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxTestUnitsGroup_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxThreadId_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxThreadId_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxThreadModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxThreadModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxThread_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxThread_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxTime_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxTraceCompositor_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxTraceCompositor_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxTraceModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxTraceModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxTraceStream.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxTraceTimeReference.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxUtf8String_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Linux/Source/NyxWString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxAString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxActiveObject_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxActiveObject_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxAnsiFile_Impl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxAnsiFile_Impl.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxConsoleTraceOutput_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxConsoleTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxEvent_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxEvent_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxExternalModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxExternalModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxFixedString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxLocalTime_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMFString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMemPoolWString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMemoryPool_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMemoryPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxModule_Impl.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMsgHandlers_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMsgHandlers_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMsgQueue_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMsgQueue_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMutex_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxMutex_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxObjectsPool_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxObjectsPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxString_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxTestUnitsGroup_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxTestUnitsGroup_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxThreadId_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxThreadId_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxThreadModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxThreadModule_Impl.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxThread_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxThread_Impl.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxTime_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxTraceCompositor_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxTraceCompositor_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxTraceModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxTraceModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxTraceStream.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxTraceTimeReference.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxUtf8String_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/OSX/Source/NyxWString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Source/NyxTaskExecuterPool_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Source/NyxTaskExecuterPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Source/NyxThreadTaskExecuter_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Source/NyxThreadTaskExecuter_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Source/NyxTraceCompositorBuffer_Ansi.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Source/NyxTraceCompositorBuffer_WideChar.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxAString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxActiveObject_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxActiveObject_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxAnsiFile_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxAnsiFile_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxConsoleTraceOutput_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxConsoleTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxEvent_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxEvent_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxExternalModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxExternalModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxFixedString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxLocalTime_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMFString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMemPoolWString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMemoryPool_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMemoryPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMsgHandlers_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMsgHandlers_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMsgQueue_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMsgQueue_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMutex_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxMutex_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxObjectsPool_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxObjectsPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxTestUnitsGroup_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxTestUnitsGroup_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxThreadId_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxThreadId_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxThreadModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxThreadModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxThread_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxThread_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxTime_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxTraceCompositor_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxTraceCompositor_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxTraceModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxTraceModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxTraceStream.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxTraceTimeReference.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxUtf8String_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxBase/Windows/Source/NyxWString_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetPipeClientConn.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetPipeClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetPipeServer_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetPipeServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetPipeSocketReader_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetPipeSocketReader_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetPipeSocketWriter_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetPipeSocketWriter_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetSSLTcpIpSocket_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetSSLTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetTcpIpClientConn.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetTcpIpClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetTcpIpServer_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetTcpIpServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetTcpIpSocket_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Linux/Source/NyxNetTraceFlags.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetPipeClientConn.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetPipeClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetPipeServer_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetPipeServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetPipeSocketReader_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetPipeSocketReader_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetPipeSocketWriter_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetPipeSocketWriter_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetSSLTcpIpSocket_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetSSLTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetTcpIpClientConn.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetTcpIpClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetTcpIpServer_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetTcpIpServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetTcpIpSocket_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/OSX/Source/NyxNetTraceFlags.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetConnectionsTable_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetConnectionsTable_Impl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetConnectionsTable_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetNxConnection_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetNxConnection_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetPipeTraceOutput_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetPipeTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetTcpIpTraceOutput_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetTcpIpTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Source/NyxNetTraceStreamWriter.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetModule_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetPipeClientConn.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetPipeClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetPipeServer_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetPipeServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetPipeSocketReader_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetPipeSocketReader_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetPipeSocketWriter_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetPipeSocketWriter_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetSSLTcpIpSocket_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetSSLTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetTcpIpClientConn.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetTcpIpClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetTcpIpServer_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetTcpIpServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetTcpIpSocket_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxNet/Windows/Source/NyxNetTraceFlags.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/.settings/language.settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Linux/Source/Module_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Linux/Source/Module_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/OSX/Source/Module_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/OSX/Source/Module_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/ConnHandler_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/ConnHandler_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/ConnHttpHandler_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/ConnHttpHandler_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/ConnListener_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/ConnListener_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/Header_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/Header_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/HttpHandlersTable_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/HttpHandlersTable_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/HttpServer_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/HttpServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/HttpsServer_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Source/HttpsServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Windows/Source/Module_Impl.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/NyxWebSvr/Windows/Source/Module_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxAssert.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxAtomicValue.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxDbg.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxMsgBucket.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxNet/NyxNetTypes.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxSize.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxStdAllocators.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxSystem.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxTraceFeeds.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/NyxTypes.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/aes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/asn1.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/asn1_mac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/asn1t.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/bio.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/blowfish.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/bn.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/buffer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/camellia.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/cast.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/cmac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/cms.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/comp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/conf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/conf_api.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/crypto.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/des.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/des_old.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/dh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/dsa.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/dso.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/dtls1.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/e_os2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ebcdic.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ec.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ecdh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ecdsa.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/engine.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/err.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/evp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/hmac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/idea.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/krb5_asn.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/kssl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/lhash.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/md4.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/md5.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/mdc2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/modes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/obj_mac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/objects.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ocsp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/opensslconf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/opensslv.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ossl_typ.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/pem.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/pem2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/pkcs12.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/pkcs7.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/pqueue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/rand.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/rc2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/rc4.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ripemd.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/rsa.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/safestack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/seed.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/sha.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/srp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/srtp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ssl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ssl2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ssl23.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ssl3.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/stack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/symhacks.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/tls1.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ts.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/txt_db.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/ui.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/whrlpool.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/x509.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/x509_vfy.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Linux/openssl/x509v3.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Nyx.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxAString.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxActiveObject.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxAlgorithm.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxAnsiFile.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxBodyBlock.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxBuffer.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxConsoleTraceOutput.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxDefs.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxDelegateBase.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxEvent.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxException.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxExternalModule.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxFile.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxFixedString.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxInterfaceRef.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxLocalTime.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxLock.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxMFString.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxMemPoolObj.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxMemPoolWString.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxMemoryPool.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxModule.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxMsg.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxMsgHandler.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxMsgHandlers.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxMsgQueue.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxMutex.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNet.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetAddress.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetConnection.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetConnectionHandler.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetConnectionsTable.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetModule.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetNxConnection.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetNxConnectionHandler.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetNxDataHeader.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetNxStreamRW.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetPipeServer.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetPipeSocket.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetPipeSocketReader.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetPipeSocketWriter.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetPipeTraceOutput.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetSSLTcpIpSocket.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetServer.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetServerListener.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetSocket.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetSocketListener.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetTcpIpServer.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetTcpIpSocket.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetTcpIpTraceOutput.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetTraceFlags.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxNet/NyxNetTraceStreamWriter.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxObject.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxObject_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxObjectsPool.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxRange.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxRef.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxRefCount_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxResException.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxStreamHandler.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxStreamRW.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxStreamReader.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxStreamWriter.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxStringsFormat.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxSwap.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTask.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTaskExecuter.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTaskExecuterPool.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTestUnit.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTestUnitsGroup.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTextFile.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxThread.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxThreadId.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxThreadModule.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxThreadProc.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTime.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTimeException.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceCompositor.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceCompositorBuffer.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceCompositorBuffer_Ansi.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceCompositorBuffer_WideChar.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceFeed.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceHeader.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceModule.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceOutput.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceStream.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraceTimeReference.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxTraces.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxUtf8String.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWString.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWebSvr/ConnHttpHandler.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWebSvr/ConnListener.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWebSvr/ConnStream.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWebSvr/Header.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWebSvr/HttpHandler.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWebSvr/HttpHandlersTable.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWebSvr/HttpServer.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWebSvr/HttpsServer.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/NyxWebSvr/Module.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxAssert.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxAtomicValue.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxDbg.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxMsgBucket.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxNet/NyxNetTypes.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxSize.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxStdAllocators.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxSystem.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxTraceFeeds.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/NyxTypes.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/aes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/asn1.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/asn1_mac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/asn1t.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/bio.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/blowfish.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/bn.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/buffer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/camellia.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/cast.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/cmac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/cms.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/comp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/conf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/conf_api.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/crypto.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/des.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/des_old.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/dh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/dsa.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/dso.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/dtls1.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/e_os2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ebcdic.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ec.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ecdh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ecdsa.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/engine.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/err.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/evp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/hmac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/idea.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/krb5_asn.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/kssl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/lhash.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/md4.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/md5.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/mdc2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/modes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/obj_mac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/objects.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ocsp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/opensslconf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/opensslv.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ossl_typ.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/pem.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/pem2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/pkcs12.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/pkcs7.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/pqueue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/rand.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/rc2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/rc4.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ripemd.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/rsa.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/safestack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/seed.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/sha.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/srp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/srtp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ssl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ssl2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ssl23.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ssl3.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/stack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/symhacks.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/tls1.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ts.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/txt_db.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/ui.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/whrlpool.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/x509.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/x509_vfy.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/OSX/openssl/x509v3.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxAssert.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxAtomicValue.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxClrDelegates.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxDbg.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxMsgBucket.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxNet/NyxNetTypes.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxSize.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxStdAllocators.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxSystem.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxTraceFeeds.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/NyxTypes.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/aes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/asn1.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/asn1_mac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/asn1t.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/bio.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/blowfish.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/bn.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/buffer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/camellia.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/cast.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/cmac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/cms.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/comp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/conf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/conf_api.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/crypto.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/des.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/des_old.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/dh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/dsa.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/dso.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/dtls1.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/e_os2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ebcdic.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ec.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ecdh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ecdsa.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/engine.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/err.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/evp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/hmac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/idea.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/krb5_asn.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/kssl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/lhash.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/md4.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/md5.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/mdc2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/modes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/obj_mac.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/objects.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ocsp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/opensslconf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/opensslv.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ossl_typ.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/pem.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/pem2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/pkcs12.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/pkcs7.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/pqueue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/rand.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/rc2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/rc4.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ripemd.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/rsa.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/safestack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/seed.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/sha.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/srp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/srtp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ssl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ssl2.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ssl23.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ssl3.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/stack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/symhacks.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/tls1.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ts.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/txt_db.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/ui.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/whrlpool.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/x509.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/x509_vfy.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/Nyx/include/Win32/openssl/x509v3.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/ChannelsMgr.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/ConnectionsMgr.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/DataStruct/PoolsList.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/DbgTracesFeeder.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/DbgTracesFeederCore.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/MultiViewTracesIterator.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/PipeTraceFeeder.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/PoolsUpdateClock.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/RepositoryObserver.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/RepositoryTraceInserter.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TcpModule.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TcpNxTracesReceiver.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TcpNxTracesReceiversSvr.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TcpTracesReceiversListener.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TcpTracesReceiversSvr.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TcpTracesReceiversTable.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TcpTxtTracesReceiver.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TcpTxtTracesReceiversSvr.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TextTraceHandler.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TimeStamp.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TraceChannel.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TraceChannels.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TraceClientCoreModule.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TraceData.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TraceDataRepository.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TraceFeeder.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TraceInserter.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TraceNxStreamReader.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesGroup.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesGroupMgr.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesIterator.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesList.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesPool.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesPoolCollection.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesReceiverProtocol.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesReceiverProtocol_WebSocket.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesView.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesViewNotificationsListener.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/include/TracesViewRepoObserver.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/ChannelsMgr.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/ConnectionsMgr.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/DbgTracesFeeder.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/DbgTracesFeederCore.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/MultiViewTracesIterator.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/PipeTraceFeeder.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/PoolsList.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/PoolsUpdateClock.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/RepositoryObserver.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/RepositoryTraceInserter.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TcpModule.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TcpNxTracesReceiver.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TcpNxTracesReceiversSvr.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TcpTracesReceiversSvr.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TcpTracesReceiversTable.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TcpTxtTracesReceiver.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TcpTxtTracesReceiversSvr.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TextTraceHandler.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TimeStamp.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TraceChannel.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TraceChannels.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TraceClientCoreModule.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TraceData.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TraceDataRepository.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TraceFeeder.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TraceNxStreamReader.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesGroup.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesGroupMgr.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesIterator.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesList.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesPool.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesPoolCollection.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesReceiverProtocol.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesReceiverProtocol_WebSocket.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesView.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/Core/sources/TracesViewRepoObserver.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/AppSettings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/AppSettings.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelSelection.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelSelection.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsListener.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsListener.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsMgnt/CChannelTreeItem.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsMgnt/CChannelTreeItem.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsMgnt/CChannelTreeItemDelegate.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsMgnt/CChannelTreeItemDelegate.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsMgnt/CClearChannelContentConfirmationDlg.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsMgnt/CClearChannelContentConfirmationDlg.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsMgnt/ChannelsMgnt.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ChannelsMgnt/ChannelsMgnt.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Color/ColorBtn.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Color/ColorBtn.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Config/ConfigReader.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Config/ConfigReader.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Config/ConfigWriter.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Config/ConfigWriter.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Controls/ConnectionStatusToolButton.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Controls/ConnectionStatusToolButton.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Controls/ToggleToolButton.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Controls/ToggleToolButton.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Device.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Device.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/DevicesMapping.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/DevicesMapping.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/DevicesMgr.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/DevicesMgr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/AboutDlg.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/AboutDlg.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/HighlightColorsSelectionDlg.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/HighlightColorsSelectionDlg.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/NewDocumentDlg.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/NewDocumentDlg.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/NewPoolDlg.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/NewPoolDlg.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/NewViewDlg.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Dialogs/NewViewDlg.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/MainWindow.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/MainWindow.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/PipesMgntPage.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/PipesMgntPage.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/PipesMgntPageItemDelegate.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/PipesMgntPageItemDelegate.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/PoolTreeItem.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/PoolTreeItem.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/TcpIpSettingsPanel.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/TcpIpSettingsPanel.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/ViewPage.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/MainWindow/ViewPage.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Panels/DevicesSelectionPanel.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Panels/DevicesSelectionPanel.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Panels/SettingsPanel.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Panels/SettingsPanel.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/TraceServerMonitor.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/TraceServerMonitor.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/TraceServerPortal.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/TraceServerPortal.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSGetDevices.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSGetDevices.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSHeartbeat.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSHeartbeat.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSMapDevice.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSMapDevice.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSSetTraceClient.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSSetTraceClient.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSUnmapDevice.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WSUnmapDevice.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WebServiceRequest.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/ServerAccess/WebServiceRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Servers/TextInputServer.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/Servers/TextInputServer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/StatusUpdater.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/StatusUpdater.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/UISensor.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/UISensor.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/UISensorCreator.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/UISensor_LineEdit.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/UISensorsCollection.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/UISensorsCollection.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/UISensorsFactory.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/StatusUpdaters/UISensorsFactory.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TraceClientApp.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TraceClientApp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesGroupListItem.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesGroupListItem.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesGroupMgrListener.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesGroupMgrListener.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesGroupNotificationsListener.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesGroupNotificationsListener.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesView.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesView.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesWindow.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesWindow.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesWindows.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/TracesWindows.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/DynamicFocusedItemHighlight.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/DynamicFocusedItemHighlight.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/DynamicHighlight.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/DynamicHighlight.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/DynamicHighlightsDirectory.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/DynamicHighlightsDirectory.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/DynamicTextHighlight.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/DynamicTextHighlight.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/StaticHighlights.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/StaticHighlights.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/ViewObject.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/ViewObject.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/ViewTraceObject.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/ViewTraceObject.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/ViewTraceSectionHilight.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Decorations/ViewTraceSectionHilight.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/DrawViewItemState.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/DrawViewItemState.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Formater/TracesViewTextFormater.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Formater/TracesViewTextFormater.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightBrush.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightBrush.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightBrushesSet.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightBrushesSet.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightColorsPopup.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightColorsPopup.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightTreeItem.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightTreeItem.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightTreeItemDelegate.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightTreeItemDelegate.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightTreeItemEventsConnection.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightTreeItemEventsConnection.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightsMgrWnd.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/HighlightsMgrWnd.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewHighlightSettings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewHighlightSettings.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemHighlighter.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemHighlighter.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemHighlighter_SearchedLine.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemHighlighter_SearchedLine.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemHighlightersSet.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemHighlightersSet.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemPattern.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemPattern.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemPattern_Text.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/Highlight/ViewItemPattern_Text.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/SettingsToolBar.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/SettingsToolBar.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TraceSectionId.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TraceSectionId.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TracesGroupView.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TracesGroupView.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TracesGroupViewMgr.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TracesGroupViewMgr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TracesViewCore.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TracesViewCore.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TracesViewSet.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/TracesViewSet.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewColumnId.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewColumnSettings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewColumnSettings.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewColumnsOrder.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewColumnsOrder.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewColumnsSettings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewColumnsSettings.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewDrawSettings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewDrawSettings.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewEnums.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewHeader.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewHeader.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewItemMargins.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewItemMargins.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewItemSettings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewItemSettings.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewItemsSettings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewItemsSettings.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewSearchEngine.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewSearchEngine.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewSettings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewSettings.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTraceMetrics.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTraceMetrics.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracePainter.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracePainter.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracePicker.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracePicker.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracePortal.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracePortal.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracesContentIterator.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracesContentIterator.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracesDisplayCache.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracesDisplayCache.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracesIterator.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/View/ViewTracesIterator.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/WindowsManager.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/WindowsManager.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/cpp_source/NyxTraceViewer/TraceClient/Sources/main.cpp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/AppDelegate.swift" afterPath="$PROJECT_DIR$/ProjectFV/AppDelegate.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Application.swift" afterPath="$PROJECT_DIR$/ProjectFV/Application.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/ProjectFV/Base.lproj/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ProjectFV.iml" afterPath="$PROJECT_DIR$/.idea/ProjectFV.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcshareddata/ProjectFV.xccheckout" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcshareddata/ProjectFV.xccheckout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
@@ -883,98 +28,126 @@
     <favorites_list name="ProjectFV" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="OpenStory.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlSubTreeParser.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlConnectorParser.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectFV/Application.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="69" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HierarchicViewController.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2802198">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VpProject.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/VpProject.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlDocParser.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlModelsParser.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelsParser.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlDiagramParser.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="OpenStory.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="XmlSubTreeParser.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlSubTreeParser.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="XmlConnectorParser.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HierarchicViewController.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="QuestionnaireStory.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="QuestionnaireViewController.swift" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.26699835">
+                  <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VpProject.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/VpProject.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="XmlDocParser.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/XmlDocParser.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="XmlModelsParser.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelsParser.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="XmlDiagramParser.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Application.swift" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Application.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.49586776">
+                  <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -993,7 +166,6 @@
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManager.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramsHistoryController.swift" />
         <option value="$PROJECT_DIR$/../../../sources/DiagramElements/LinkEndPoint.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/WriteQuestionAnswerAction.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionStory.swift" />
@@ -1006,7 +178,6 @@
         <option value="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/MethodSelection/MethodSelectionViewController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/MethodSelection/MethodSelectionStory.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/MethodType.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/MethodSelectionAction.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierachicViewStory.swift" />
@@ -1031,8 +202,10 @@
         <option value="$PROJECT_DIR$/ProjectFV/StoriesMgr.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Application.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Application.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" />
       </list>
     </option>
   </component>
@@ -1087,6 +260,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1166,10 +340,6 @@
               <option name="myItemId" value="diagrams" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1190,6 +360,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="diagrams" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1232,37 +406,14 @@
               <option name="myItemId" value="Stories" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HierarchicView" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stories" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ProjectFV" />
@@ -1343,17 +494,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1390" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="2560" height="1390" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18983851" sideWeight="0.40831557" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18983851" sideWeight="0.59168446" order="3" side_tool="true" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2625786" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18983851" sideWeight="0.4033019" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18983851" sideWeight="0.5966981" order="3" side_tool="true" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2625786" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2039236" sideWeight="0.45737857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31805682" sideWeight="0.503872" order="8" side_tool="true" content_ui="tabs" />
@@ -1430,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.105362184">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43650046">
@@ -1483,13 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1628,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1636,7 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1644,7 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1652,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1660,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1668,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1676,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1684,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="189" column="5" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1708,6 +837,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1746,16 +883,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Application.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="69" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.49586776">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift">
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2802198">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26699835">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
