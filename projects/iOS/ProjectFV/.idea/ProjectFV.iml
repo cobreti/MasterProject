@@ -37,8 +37,12 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphItem.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphItems.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_CompositionEndPoint.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Element.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_EndPoint.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_GeneralizationEndPoint.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Link.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_SharedEndPoint.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphs.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Images.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Info.plist" isTestSource="false" />

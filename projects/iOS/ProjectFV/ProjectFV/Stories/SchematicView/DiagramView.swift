@@ -102,10 +102,10 @@ class DiagramView : UIView {
             for (id, prim) in diag.primitives {
 
                 if let elm = prim as? Element {
-                    graph.items.add( createDisplayGraphElement(elm) )
+                    createDisplayGraphElement(graph, elm: elm)
                 }
                 else if let lnk = prim as? Link {
-                    graph.items.add( createDisplayGraphLink(lnk))
+                    createDisplayGraphLink(graph, lnk: lnk)
                 }
             }
 
@@ -115,7 +115,7 @@ class DiagramView : UIView {
         return nil
     }
 
-    func createDisplayGraphElement(elm: Element) -> DisplayGraph_Element {
+    func createDisplayGraphElement(graph: DisplayGraph, elm: Element) {
 
         var dgElm = DisplayGraph_Element(rect: elm.box)
 
@@ -136,26 +136,72 @@ class DiagramView : UIView {
             dgElm.name = name
         }
 
-        return dgElm
+        graph.items.add(dgElm)
     }
 
-    func createDisplayGraphLink(lnk: Link) -> DisplayGraph_Link {
+    func createDisplayGraphLink(graph: DisplayGraph, lnk: Link) {
 
         var dgLnk = DisplayGraph_Link(pts: lnk.segment, type: lnk.type)
 
-        if let  doc = _document,
-                model = doc.models.get(lnk.modelId) {
+//        if let  doc = _document,
+//                model = doc.models.get(lnk.modelId) {
+//
+//            if let endPointFrom = model.linkEndPointFrom {
+//                dgLnk.fromEndType = endPointFrom.type
+//            }
+//
+//            if let endPointTo = model.linkEndPointTo {
+//                dgLnk.toEndType = endPointTo.type
+//            }
+//        }
 
-            if let endPointFrom = model.linkEndPointFrom {
-                dgLnk.fromEndType = endPointFrom.type
-            }
+        graph.items.add(dgLnk)
 
-            if let endPointTo = model.linkEndPointTo {
-                dgLnk.toEndType = endPointTo.type
-            }
+        if lnk.type == .generalization {
+
+            var dgEndPt = DisplayGraph_GeneralizationEndPoint(  p1: lnk.segment.get(0),
+                                                                p2: lnk.segment.get(1))
+            graph.items.add(dgEndPt)
         }
 
-        return dgLnk
+        if lnk.type == .association {
+
+            if let  doc = _document,
+                    model = doc.models.get(lnk.modelId) {
+
+                let count = lnk.segment.count
+
+                if let endPtFrom = model.linkEndPointFrom {
+                    switch endPtFrom.type {
+                        case .composited:
+                            let dgEndPt = DisplayGraph_CompositionEndPoint(p1: lnk.segment.get(0),
+                                                                           p2: lnk.segment.get(1))
+                            graph.items.add(dgEndPt)
+                        case .shared:
+                            let dgEndPt = DisplayGraph_SharedEndPoint(p1: lnk.segment.get(0),
+                                                                      p2: lnk.segment.get(1))
+                            graph.items.add(dgEndPt)
+                        default:
+                            break
+                    }
+                }
+
+                if let endPtTo = model.linkEndPointTo {
+                    switch endPtTo.type {
+                        case .composited:
+                            let dgEndPt = DisplayGraph_CompositionEndPoint(p1: lnk.segment.get(count - 1),
+                                                                           p2: lnk.segment.get(count - 2))
+                            graph.items.add(dgEndPt)
+                        case .shared:
+                            let dgEndPt = DisplayGraph_SharedEndPoint(p1: lnk.segment.get(count - 1),
+                                                                      p2: lnk.segment.get(count - 2))
+                            graph.items.add(dgEndPt)
+                        default:
+                            break
+                    }
+                }
+            }
+        }
     }
 
     var _portal : DiagramPortal?
