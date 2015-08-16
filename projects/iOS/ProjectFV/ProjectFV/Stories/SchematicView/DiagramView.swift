@@ -90,23 +90,6 @@ class DiagramView : UIView {
                 graph.draw(ctx, portal: portal)
             }
         }
-
-//        if let  diag = diagram,
-//                portal = diagramPortal,
-//                document = diagramDocument,
-//                pinPt = pinPoint {
-//
-//            var ctx : CGContext = UIGraphicsGetCurrentContext()
-//
-//            let dd = DiagramDisplay(    targetRect: bounds,
-//                                        diagram: diag,
-//                                        document: document,
-//                                        portal: portal,
-//                                        viewPinPt: pinPt )
-//            dd.viewDrawingMode = _drawingMode
-//
-//            dd.display(ctx)
-//        }
     }
 
     func buildDisplayGraph() -> DisplayGraph! {
@@ -159,6 +142,18 @@ class DiagramView : UIView {
     func createDisplayGraphLink(lnk: Link) -> DisplayGraph_Link {
 
         var dgLnk = DisplayGraph_Link(pts: lnk.segment, type: lnk.type)
+
+        if let  doc = _document,
+                model = doc.models.get(lnk.modelId) {
+
+            if let endPointFrom = model.linkEndPointFrom {
+                dgLnk.fromEndType = endPointFrom.type
+            }
+
+            if let endPointTo = model.linkEndPointTo {
+                dgLnk.toEndType = endPointTo.type
+            }
+        }
 
         return dgLnk
     }
