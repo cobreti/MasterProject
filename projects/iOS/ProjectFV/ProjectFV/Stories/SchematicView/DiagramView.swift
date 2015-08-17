@@ -80,14 +80,17 @@ class DiagramView : UIView {
 
             let diagName = diag.name
             let graphs = DisplayGraphs.instance
+            let params = DisplayGraphDrawParams(    ctx: ctx,
+                                                    portal: portal,
+                                                    drawingMode: _drawingMode )
 
             if let graph = graphs.get(diagName) {
 
-                graph.draw(ctx, portal: portal)
+                graph.draw(params)
             }
             else if let graph = buildDisplayGraph() {
                 graphs.add(graph)
-                graph.draw(ctx, portal: portal)
+                graph.draw(params)
             }
         }
     }
@@ -142,18 +145,6 @@ class DiagramView : UIView {
     func createDisplayGraphLink(graph: DisplayGraph, lnk: Link) {
 
         var dgLnk = DisplayGraph_Link(pts: lnk.segment, type: lnk.type)
-
-//        if let  doc = _document,
-//                model = doc.models.get(lnk.modelId) {
-//
-//            if let endPointFrom = model.linkEndPointFrom {
-//                dgLnk.fromEndType = endPointFrom.type
-//            }
-//
-//            if let endPointTo = model.linkEndPointTo {
-//                dgLnk.toEndType = endPointTo.type
-//            }
-//        }
 
         graph.items.add(dgLnk)
 

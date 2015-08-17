@@ -8,8 +8,7 @@ import UIKit
 
 class DisplayGraphItem {
 
-    func draw(  ctx: CGContext,
-                portal: DiagramPortal ) {
+    func draw(  params: DisplayGraphDrawParams ) {
 
     }
 }

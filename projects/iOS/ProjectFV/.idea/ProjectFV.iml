@@ -35,6 +35,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DiagramView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphDrawParams.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphItem.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphItems.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_CompositionEndPoint.swift" isTestSource="false" />

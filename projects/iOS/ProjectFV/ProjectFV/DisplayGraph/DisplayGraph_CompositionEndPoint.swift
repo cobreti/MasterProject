@@ -9,51 +9,55 @@ import UIKit
 
 class DisplayGraph_CompositionEndPoint : DisplayGraph_EndPoint {
 
-    override func draw(ctx: CGContext, portal: DiagramPortal) {
+    override func draw(params: DisplayGraphDrawParams) {
+
+        if params.drawingMode != .Normal {
+            return
+        }
 
 //        var portalPt = portal.pointFromDiagramToPortal(_p1)
 
-        var portalEndPt1 = portal.pointFromDiagramToPortal(_p1)
-        var portalEndPt2 = portal.pointFromDiagramToPortal(_p2)
+        var portalEndPt1 = params.portal.pointFromDiagramToPortal(_p1)
+        var portalEndPt2 = params.portal.pointFromDiagramToPortal(_p2)
 
         let axisSystem = AxisSystem(p1: portalEndPt1, p2: portalEndPt2)
 
         var p : Point = _p1
         var p2 : Point = Point(x: 0,y: 0)
 
-        CGContextBeginPath(ctx)
+        CGContextBeginPath(params.context)
         p = axisSystem.fromAxis(Point(x: 0, y: 0))
-        CGContextMoveToPoint(ctx, p.x, p.y)
+        CGContextMoveToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 10, y: 7))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 20, y: 0))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 10, y: -7))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
-        CGContextClosePath(ctx)
-        CGContextSetRGBFillColor(ctx, 0.0, 0.0, 0.0, 1.0)
-        CGContextFillPath(ctx)
+        CGContextClosePath(params.context)
+        CGContextSetRGBFillColor(params.context, 0.0, 0.0, 0.0, 1.0)
+        CGContextFillPath(params.context)
 
-        CGContextBeginPath(ctx)
+        CGContextBeginPath(params.context)
         p = axisSystem.fromAxis(Point(x: 0, y: 0))
-        CGContextMoveToPoint(ctx, p.x, p.y)
+        CGContextMoveToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 10, y: 7))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 20, y: 0))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 10, y: -7))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
-        CGContextClosePath(ctx)
-        CGContextSetRGBStrokeColor(ctx, 0.0, 0.0, 0.0, 1.0)
-        CGContextStrokePath(ctx)
+        CGContextClosePath(params.context)
+        CGContextSetRGBStrokeColor(params.context, 0.0, 0.0, 0.0, 1.0)
+        CGContextStrokePath(params.context)
     }
 
 }

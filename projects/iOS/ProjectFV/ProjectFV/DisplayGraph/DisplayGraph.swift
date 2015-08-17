@@ -24,12 +24,11 @@ class DisplayGraph {
         _name = name
     }
 
-    func draw(  ctx: CGContext,
-                portal: DiagramPortal ) {
+    func draw(  params: DisplayGraphDrawParams ) {
 
         _items.forEach( { (item: DisplayGraphItem) -> Void in
 
-            item.draw(ctx, portal: portal)
+            item.draw(params)
         })
     }
 

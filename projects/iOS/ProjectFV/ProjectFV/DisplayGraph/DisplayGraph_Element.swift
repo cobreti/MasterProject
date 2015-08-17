@@ -31,21 +31,21 @@ class DisplayGraph_Element : DisplayGraphItem {
         _rect = rect
     }
 
-    override func draw(ctx: CGContext, portal: DiagramPortal) {
+    override func draw(params: DisplayGraphDrawParams) {
 
-        let portalRect = portal.rectFromDiagramToPortal(_rect)
+        let portalRect = params.portal.rectFromDiagramToPortal(_rect)
         let cgRC = CGRect(  x: portalRect.pos.x,
                             y: portalRect.pos.y,
                             width: portalRect.size.width,
                             height: portalRect.size.height)
 
-        CGContextStrokeRect(ctx, cgRC)
+        CGContextStrokeRect(params.context, cgRC)
 
         if let fileIcon = _fileIcon {
             drawFileIcon(cgRC)
         }
 
-        if let name = _name {
+        if let name = _name where params.drawingMode == .Normal {
             drawName(cgRC)
         }
     }

@@ -9,45 +9,49 @@ import UIKit
 
 class DisplayGraph_GeneralizationEndPoint : DisplayGraph_EndPoint {
 
-    override func draw(ctx: CGContext, portal: DiagramPortal) {
+    override func draw(params: DisplayGraphDrawParams) {
+
+        if params.drawingMode != .Normal {
+            return
+        }
 
         let p1 = _p1
         let p2 = _p2
-        var portalPt = portal.pointFromDiagramToPortal(p1)
-        var portalEndPt1 = portal.pointFromDiagramToPortal(p1)
-        var portalEndPt2 = portal.pointFromDiagramToPortal(p2)
+        var portalPt = params.portal.pointFromDiagramToPortal(p1)
+        var portalEndPt1 = params.portal.pointFromDiagramToPortal(p1)
+        var portalEndPt2 = params.portal.pointFromDiagramToPortal(p2)
 
         let axisSystem = AxisSystem(p1: portalEndPt1, p2: portalEndPt2)
 
         var p : Point = p1
 
-        CGContextBeginPath(ctx)
+        CGContextBeginPath(params.context)
         p = axisSystem.fromAxis(Point(x: 0, y: 0))
-        CGContextMoveToPoint(ctx, p.x, p.y)
+        CGContextMoveToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 15, y: 10))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 15, y: -10))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
-        CGContextClosePath(ctx)
-        CGContextSetRGBFillColor(ctx, 1.0, 1.0, 1.0, 1.0)
-        CGContextFillPath(ctx)
+        CGContextClosePath(params.context)
+        CGContextSetRGBFillColor(params.context, 1.0, 1.0, 1.0, 1.0)
+        CGContextFillPath(params.context)
 
-        CGContextBeginPath(ctx)
+        CGContextBeginPath(params.context)
         p = axisSystem.fromAxis(Point(x: 0, y: 0))
-        CGContextMoveToPoint(ctx, p.x, p.y)
+        CGContextMoveToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 15, y: 10))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
         p = axisSystem.fromAxis(Point(x: 15, y: -10))
-        CGContextAddLineToPoint(ctx, p.x, p.y)
+        CGContextAddLineToPoint(params.context, p.x, p.y)
 
-        CGContextClosePath(ctx)
-        CGContextSetRGBStrokeColor(ctx, 0.0, 0.0, 0.0, 1.0)
-        CGContextStrokePath(ctx)
+        CGContextClosePath(params.context)
+        CGContextSetRGBStrokeColor(params.context, 0.0, 0.0, 0.0, 1.0)
+        CGContextStrokePath(params.context)
     }
 
 }
