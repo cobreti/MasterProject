@@ -36,19 +36,30 @@ class TreeController : NSObject, UITableViewDelegate {
         if let node = _dataSource.getNodeFromIndexPath(indexPath) {
 
             let startIndex = indexPath.indexAtPosition(1) + 1
+            let actionsBus = Application.instance().actionsBus
 
             if node.hasChildren {
+
+                actionsBus.send( TreeItemCollapsed(node: node, sender: self) )
 
                 let removedCount = _dataSource.collapse(node)
                 let indexes: [NSIndexPath] = createIndexPaths( startIndex, count: removedCount )
 
                 _table?.deleteRowsAtIndexPaths(indexes, withRowAnimation: UITableViewRowAnimation.Top)
             }
-            else {
+            else if node.item.children.count > 0 {
+
+                actionsBus.send( TreeItemExpanded(node: node, sender:self) )
+
                 let addedCount = _dataSource.expand(node)
                 let indexes: [NSIndexPath] = createIndexPaths( startIndex, count: addedCount )
 
                 _table?.insertRowsAtIndexPaths(indexes, withRowAnimation: UITableViewRowAnimation.Bottom)
+            }
+            else {
+
+                actionsBus.send( TreeItemSelected(node: node, sender: self) )
+
             }
         }
     }

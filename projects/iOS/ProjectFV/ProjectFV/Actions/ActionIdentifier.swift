@@ -26,5 +26,8 @@ enum ActionIdentifier : String {
     case RechercheItemSelected      = "Item de recherche selectionne"
     case MethodSelection            = "Method Selection"
     case Restart                    = "Restart"
+    case TreeItemExpanded           = "Tree Item Expanded"
+    case TreeItemCollapsed          = "Tree Item Collapsed"
+    case TreeItemSelected           = "Tree Item Selected"
 }
 

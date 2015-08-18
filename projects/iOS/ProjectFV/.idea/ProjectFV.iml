@@ -26,6 +26,9 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/SelectDiagramElementAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/ShowDiagramAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/TapDiagramAction.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/TreeItemCollapsed.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/TreeItemExpanded.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/TreeItemSelected.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/WriteQuestionAnswerAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/ZoomDiagramAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionsBus.swift" isTestSource="false" />
