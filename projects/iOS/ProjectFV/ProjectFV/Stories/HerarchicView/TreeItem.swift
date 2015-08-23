@@ -13,17 +13,25 @@ class TreeItem {
         }
     }
 
+    public var path : String {
+        get {
+            return _path
+        }
+    }
+
     public var children: TreeItems {
         get {
             return _children
         }
     }
 
-    init(name: String) {
+    init(name: String, path: String ) {
         _name = name
+        _path = path
     }
 
     var _name : String
+    var _path : String
     var _children : TreeItems = TreeItems()
 }
 

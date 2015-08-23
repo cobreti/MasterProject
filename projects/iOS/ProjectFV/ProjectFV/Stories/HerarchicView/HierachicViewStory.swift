@@ -14,12 +14,26 @@ class HierarchicViewStory : Story {
         }
     }
 
-
     override init() {
         super.init()
 
         _controller = HierarchicViewController(nibName: "HierarchicView", bundle: nil)
     }
+
+    override func onAction(action: Action) {
+
+        switch action.id {
+
+            case .FileView:
+                if let fva = action as? FileViewAction {
+                    Application.instance().stories.push( FileViewStory(file: fva.file) )
+                }
+
+            default:
+                break
+        }
+    }
+
 
     var _controller : HierarchicViewController!
 }

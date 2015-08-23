@@ -26,11 +26,13 @@ class HierarchicViewController : UIViewController {
 
         if let  projectName = doc.projectName,
                 url = bundle.URLForResource(projectName, withExtension: "", subdirectory: "EmbeddedRes/CodeSite") {
-            let items = parseSourceFolderAtUrl(fm, url: url, group: _treeController.root)
+
+            let relPath = "EmbeddedRes/CodeSite/\(projectName)"
+            let items = parseSourceFolderAtUrl(fm, url: url, group: _treeController.root, relPath: relPath)
         }
     }
 
-    func parseSourceFolderAtUrl(fileManager: NSFileManager, url: NSURL, group: TreeItems) {
+    func parseSourceFolderAtUrl(fileManager: NSFileManager, url: NSURL, group: TreeItems, relPath: String) {
 
         debugPrintln("parsing content of '\(url)")
 
@@ -59,15 +61,22 @@ class HierarchicViewController : UIViewController {
 
         for folder in folders {
 
-            var item = TreeItem(name: folder.lastPathComponent!)
-            group.add( item )
+            if let component = folder.lastPathComponent {
+                let subPath: String = relPath + "/\(component)"
+                var item = TreeItem(name: component, path: subPath)
+                group.add(item)
 
-            parseSourceFolderAtUrl(fileManager, url: folder, group: item.children )
+                parseSourceFolderAtUrl(fileManager, url: folder, group: item.children, relPath: subPath)
+            }
         }
 
         for file in files {
 
-            group.add( TreeItem(name: file.lastPathComponent!) )
+            if let component = file.lastPathComponent {
+                let subPath: String = relPath + "/\(component)"
+                var item = TreeItem(name: component, path: subPath)
+                group.add(item)
+            }
         }
     }
 
