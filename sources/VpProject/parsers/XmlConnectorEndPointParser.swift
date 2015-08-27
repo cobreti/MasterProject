@@ -29,6 +29,11 @@ class XmlConnectorEndPointParser : XmlSubTreeParser {
                     _linkEndPoint.type = endPointType
                 }
             }
+
+            if let  name = attributeDict["name"] as? String,
+                    value = attributeDict["value"] as? String where name == "multiplicity" {
+                _linkEndPoint.multiplicity = value
+            }
         }
 
         super.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)

@@ -15,6 +15,15 @@ public class Model {
             return _id
         }
     }
+
+    public var name : String! {
+        get {
+            return _name
+        }
+        set (value) {
+            _name = value
+        }
+    }
     
     public var children : ModelsTable {
         get {
@@ -74,6 +83,7 @@ public class Model {
     
     
     private var _id : String
+    private var _name : String!
     private var _parent : Model!
     private var _linkEndPointTo : LinkEndPoint!
     private var _linkEndPointFrom : LinkEndPoint!

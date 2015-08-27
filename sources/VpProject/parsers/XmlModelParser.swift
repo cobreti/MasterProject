@@ -93,6 +93,11 @@ class XmlModelParser : XmlSubTreeParser {
             _model?.subDiagramName = diagramName
             debugPrint("sub diagram with name : \(diagramName)")
         }
+
+        if let  name = attributeDict["name"] as? String,
+                value = attributeDict["value"] as? String {
+            _model?.name = value
+        }
     }
 
     func onHTMLProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject:AnyObject]) {

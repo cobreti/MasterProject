@@ -36,6 +36,26 @@ class XmlConnectorParser : XmlSubTreeParser {
                 if let lnk = _lnk {
                     pushElementParser(XmlPointsParser(name: "Points", link: lnk, delegate: self))
                 }
+            case "Caption":
+                let formatter = NSNumberFormatter()
+
+                if let  xStr = attributeDict["x"] as? String,
+                        yStr = attributeDict["y"] as? String,
+                        x = formatter.numberFromString(xStr)?.floatValue,
+                        y = formatter.numberFromString(yStr)?.floatValue,
+                        lnk = _lnk {
+                    lnk.captionPos = Point(x: CGFloat(x), y: CGFloat(y))
+                }
+            case "MultiplicityCaption":
+                let formatter = NSNumberFormatter()
+
+                if let  xStr = attributeDict["x"] as? String,
+                yStr = attributeDict["y"] as? String,
+                x = formatter.numberFromString(xStr)?.floatValue,
+                y = formatter.numberFromString(yStr)?.floatValue,
+                lnk = _lnk {
+                    lnk.multiplicityCaptionPos = Point(x: CGFloat(x), y: CGFloat(y))
+                }
             default:
                 break
         }
