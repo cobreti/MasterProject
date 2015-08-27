@@ -130,8 +130,10 @@ class DiagramView : UIView {
                 dgElm.fileIcon = img
             }
 
-            if let name = model.subDiagramName {
-
+            if let  name = model.subDiagramName,
+                    subDiagram = doc.diagrams.get(name),
+                    img = UIImage(named: "subdiagram.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) {
+                dgElm.subDiagramIcon = img
             }
         }
 

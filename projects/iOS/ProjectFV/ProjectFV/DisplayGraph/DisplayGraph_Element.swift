@@ -18,6 +18,15 @@ class DisplayGraph_Element : DisplayGraphItem {
         }
     }
 
+    var subDiagramIcon: UIImage! {
+        get {
+            return _subDiagramIcon
+        }
+        set (value) {
+            _subDiagramIcon = value
+        }
+    }
+
     var name: String! {
         get {
             return _name
@@ -45,6 +54,10 @@ class DisplayGraph_Element : DisplayGraphItem {
             drawFileIcon(cgRC)
         }
 
+        if let subDiagramIcon = _subDiagramIcon {
+            drawSubDiagramIcon(cgRC)
+        }
+
         if let name = _name where params.drawingMode == .Normal {
             drawName(cgRC)
         }
@@ -63,6 +76,21 @@ class DisplayGraph_Element : DisplayGraphItem {
         let rcImg = CGRect( x: rect.maxX-imgWidth-2, y: rect.minY+2, width: imgSize, height: imgSize )
 
         _fileIcon.drawInRect(rcImg)
+    }
+
+    func drawSubDiagramIcon(rect: CGRect) {
+
+        var imgWidth = max(rect.width / 3 - 2, 0)
+        var imgHeight = rect.height / 3
+
+        imgWidth = min(imgWidth, _subDiagramIcon.size.width)
+        imgHeight = min(imgHeight, _subDiagramIcon.size.height)
+
+        let imgSize = min(imgWidth, imgHeight)
+
+        let rcImg = CGRect( x: rect.maxX-imgWidth-2, y: rect.minY+2, width: imgSize, height: imgSize )
+
+        _subDiagramIcon.drawInRect(rcImg)
     }
 
     func drawName(rect: CGRect) {
@@ -85,4 +113,5 @@ class DisplayGraph_Element : DisplayGraphItem {
     var _rect : Rect
     var _name : String!
     var _fileIcon : UIImage!
+    var _subDiagramIcon : UIImage!
 }
