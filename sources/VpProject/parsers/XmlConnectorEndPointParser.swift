@@ -31,7 +31,7 @@ class XmlConnectorEndPointParser : XmlSubTreeParser {
             }
 
             if let  name = attributeDict["name"] as? String,
-                    value = attributeDict["value"] as? String where name == "multiplicity" {
+                    value = attributeDict["value"] as? String where name == "multiplicity" && value != "Unspecified" {
                 _linkEndPoint.multiplicity = value
             }
         }

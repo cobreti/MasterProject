@@ -152,6 +152,7 @@
 		B02F36F70A8469EC39773CE8 /* ProjectSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3CDF44A0CC467A849D7E /* ProjectSelectionViewController.swift */; };
 		B02F36FA275155BBD58427C0 /* TreeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3F867005CFB33B7A4A98 /* TreeItem.swift */; };
 		B02F3749D8FB884CB0595029 /* TreeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3509C60750E4CA0427ED /* TreeItems.swift */; };
+		B02F37AE70093ECFD61599AA /* DisplayGraph_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F372904028C1220E9B3E3 /* DisplayGraph_Label.swift */; };
 		B02F3847A86C5D2D71F08523 /* DisplayGraph_CompositionEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3DF83EBA7148B656596B /* DisplayGraph_CompositionEndPoint.swift */; };
 		B02F390BACFBA5E5581CB0A6 /* RechercheSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3D2A7D55282E3F2197A0 /* RechercheSelectionViewController.swift */; };
 		B02F396D18BDEC44799E9235 /* DisplayGraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F30B8A6A892B198D56B7A /* DisplayGraphs.swift */; };
@@ -404,6 +405,7 @@
 		B02F35FB0F03E66AF590258C /* QuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionController.swift; path = Stories/Questionnaire/QuestionController.swift; sourceTree = "<group>"; };
 		B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierachicViewStory.swift; path = Stories/HerarchicView/HierachicViewStory.swift; sourceTree = "<group>"; };
 		B02F3626A63FD0EA5E397C7F /* DisplayGraphDrawParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraphDrawParams.swift; sourceTree = "<group>"; };
+		B02F372904028C1220E9B3E3 /* DisplayGraph_Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_Label.swift; sourceTree = "<group>"; };
 		B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecenterDiagramAction.swift; path = Actions/ActionObjects/RecenterDiagramAction.swift; sourceTree = "<group>"; };
 		B02F381A4E25B7456735F63C /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = folder.png; path = Resources/icons/folder.png; sourceTree = "<group>"; };
 		B02F388F4CDD1992AA97E9B0 /* RechercheItemSelectedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemSelectedAction.swift; path = Actions/ActionObjects/RechercheItemSelectedAction.swift; sourceTree = "<group>"; };
@@ -938,6 +940,7 @@
 				B02F3DF83EBA7148B656596B /* DisplayGraph_CompositionEndPoint.swift */,
 				B02F3DDF68221CB432D06AAD /* DisplayGraph_SharedEndPoint.swift */,
 				B02F3626A63FD0EA5E397C7F /* DisplayGraphDrawParams.swift */,
+				B02F372904028C1220E9B3E3 /* DisplayGraph_Label.swift */,
 			);
 			path = DisplayGraph;
 			sourceTree = "<group>";
@@ -1378,6 +1381,7 @@
 				B02F34624BBDC43B91CD5DEE /* TreeItemExpanded.swift in Sources */,
 				B02F3156EF0DDA1AE0958CE0 /* TreeItemCollapsed.swift in Sources */,
 				B02F3ED456E0667EA94CB2BE /* TreeItemSelected.swift in Sources */,
+				B02F37AE70093ECFD61599AA /* DisplayGraph_Label.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

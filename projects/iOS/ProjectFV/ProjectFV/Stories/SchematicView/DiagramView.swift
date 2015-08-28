@@ -150,6 +150,26 @@ class DiagramView : UIView {
 
         graph.items.add(dgLnk)
 
+        if let  name = lnk.name,
+                captionPos = lnk.captionPos {
+
+            graph.items.add( DisplayGraph_Label(pos: captionPos, text: name) )
+        }
+
+        if let  multiplicityCaptionPos = lnk.multiplicityCaptionPos,
+                doc = _document,
+                model = doc.models.get(lnk.modelId) {
+
+            if let  from = model.linkEndPointFrom,
+                    multiplicity = from.multiplicity {
+                graph.items.add( DisplayGraph_Label(pos: multiplicityCaptionPos, text: multiplicity) )
+            }
+            else if let to = model.linkEndPointTo,
+                        multiplicity = to.multiplicity {
+                graph.items.add( DisplayGraph_Label(pos: multiplicityCaptionPos, text: multiplicity) )
+            }
+        }
+
         if lnk.type == .generalization {
 
             var dgEndPt = DisplayGraph_GeneralizationEndPoint(  p1: lnk.segment.get(0),

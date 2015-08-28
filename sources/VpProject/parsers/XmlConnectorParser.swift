@@ -50,10 +50,10 @@ class XmlConnectorParser : XmlSubTreeParser {
                 let formatter = NSNumberFormatter()
 
                 if let  xStr = attributeDict["x"] as? String,
-                yStr = attributeDict["y"] as? String,
-                x = formatter.numberFromString(xStr)?.floatValue,
-                y = formatter.numberFromString(yStr)?.floatValue,
-                lnk = _lnk {
+                        yStr = attributeDict["y"] as? String,
+                        x = formatter.numberFromString(xStr)?.floatValue,
+                        y = formatter.numberFromString(yStr)?.floatValue,
+                        lnk = _lnk {
                     lnk.multiplicityCaptionPos = Point(x: CGFloat(x), y: CGFloat(y))
                 }
             default:
@@ -69,7 +69,7 @@ class XmlConnectorParser : XmlSubTreeParser {
         
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         
-        if let id = attributeDict["id"] as? String,
+        if let  id = attributeDict["id"] as? String,
                 xStr = attributeDict["x"] as? String,
                 x = numberFormatter.numberFromString(xStr)?.floatValue,
                 yStr = attributeDict["y"] as? String,
@@ -90,9 +90,12 @@ class XmlConnectorParser : XmlSubTreeParser {
                 }
 
                 _lnk = DiagramElements.Link(ownerDiagram: _diagram, type: lnkType)
-                
+
+                if let name = attributeDict["name"] as? String {
+                    _lnk.name = name
+                }
+
                 _lnk.box = Rect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(width), height: CGFloat(height))
-                _lnk.name = id
                 _lnk.id = id
                 _lnk.to = LinkEndPoint(id: to)
                 _lnk.from = LinkEndPoint(id: from)
