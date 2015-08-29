@@ -23,10 +23,10 @@ class DisplayGraph_Label : DisplayGraphItem {
         }
 
         var parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
-        var portalPt = params.portal.pointFromDiagramToPortal(_pos)
         var strSize = _text.sizeWithAttributes([
                                                       NSParagraphStyleAttributeName: parStyle
                                               ])
+        var portalPt = params.portal.pointFromDiagramToPortal( Point(x: _pos.x+strSize.width/2, y: _pos.y+strSize.height/2) )
         var rc : CGRect = CGRect(x: portalPt.x, y: portalPt.y, width: strSize.width, height: strSize.height)
 
         parStyle.alignment = NSTextAlignment.Center
