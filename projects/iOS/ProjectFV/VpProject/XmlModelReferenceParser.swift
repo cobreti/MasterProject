@@ -20,8 +20,12 @@ class XmlModelReferenceParser : XmlSubTreeParser {
                 name = _subDiagramName,
                 origin = _diagramOrigin {
 
-            let ref = ModelReference(id: id, name: name, origin: origin)
-            _model.subDiagrams.add(ref)
+            let originElements = origin.componentsSeparatedByString(";")
+
+            for elm in originElements {
+                let ref = ModelReference(id: id, name: name, origin: elm)
+                _model.subDiagrams.add(ref)
+            }
         }
 
         super.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
