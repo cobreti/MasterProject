@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Label.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DiagramElements/ModelReference.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DiagramElements/ModelReferences.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VpProject/XmlModelReferencesParser.swift" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramDisplay.swift" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ProjectFV.iml" afterPath="$PROJECT_DIR$/.idea/ProjectFV.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,21 +45,21 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="diagrams.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml">
+          <file leaf-file-name="XmlModelParser.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.537037">
-                  <caret line="19638" column="85" selection-start-line="19638" selection-start-column="69" selection-end-line="19638" selection-end-column="85" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="XmlConnectorEndPointParser.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift">
+          <file leaf-file-name="DiagramViewController.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.740741">
-                  <caret line="33" column="117" selection-start-line="33" selection-start-column="117" selection-end-line="33" selection-end-column="117" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="325" column="0" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -60,67 +69,57 @@
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
+                  <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DisplayGraph_Label.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Label.swift">
+          <file leaf-file-name="TapGestureHandler.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                  <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LinkEndPoint.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/LinkEndPoint.swift">
+          <file leaf-file-name="Diagram.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Diagram.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+                  <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="XmlConnectorParser.swift" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift">
+          <file leaf-file-name="SchematicViewController.swift" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.47160494">
+                <state vertical-scroll-proportion="0.33168316">
+                  <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SubDiagramPortal.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="XmlDiagramParser.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
+          <file leaf-file-name="DiagramViewsManager.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManager.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="XmlPointParser.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointParser.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="XmlModelParser.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+                  <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -130,7 +129,17 @@
             <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+                  <caret line="74" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ModelReferences.swift" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DiagramElements/ModelReferences.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -139,14 +148,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.5">
+        <splitter split-orientation="horizontal" split-proportion="0.4439776">
           <split-first>
             <leaf>
-              <file leaf-file-name="diagrams.xml" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml">
+              <file leaf-file-name="project.xml" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/../../../diagrams/XML/ProjectFV/project.xml">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.33142856">
-                      <caret line="1195" column="121" selection-start-line="1195" selection-start-column="110" selection-end-line="1195" selection-end-column="121" />
+                    <state vertical-scroll-proportion="0.36772487">
+                      <caret line="19637" column="34" selection-start-line="19637" selection-start-column="29" selection-end-line="19637" selection-end-column="34" />
                       <folding />
                     </state>
                   </provider>
@@ -156,51 +165,21 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="diagrams.xml" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml">
+              <file leaf-file-name="XmlModelReferencesParser.swift" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/VpProject/XmlModelReferencesParser.swift">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-7.1034484">
-                      <caret line="25924" column="35" selection-start-line="25924" selection-start-column="35" selection-end-line="25924" selection-end-column="35" />
+                    <state vertical-scroll-proportion="1.2518518">
+                      <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="Link.swift" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Link.swift">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.24876848">
-                      <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="Primitive.swift" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Primitive.swift">
+              <file leaf-file-name="XmlModelReferenceParser.swift" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.0">
-                      <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="DisplayGraph_Link.swift" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Link.swift">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="DisplayGraph_Element.swift" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Element.swift">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+                      <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -218,18 +197,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ProjectFV/KOTree/KOTreeViewDelegate.h" />
-        <option value="$PROJECT_DIR$/ProjectFV/KOTree/KOTreeViewController.h" />
-        <option value="$PROJECT_DIR$/ProjectFV/KOTree/KOTreeViewController.m" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/TreeViewController.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/TreeSection.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/TreeSectionsMgr.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/TreeItems.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/TreeTableDataNode.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/TreeTableDataSource.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/ProjectFV-Bridging-Header.h" />
         <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/RestartAction.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/StoriesMgr.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Application.swift" />
@@ -261,14 +231,23 @@
         <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Element.swift" />
         <option value="$PROJECT_DIR$/../../../sources/DiagramElements/LinkEndPoint.swift" />
-        <option value="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" />
-        <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
         <option value="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" />
         <option value="$PROJECT_DIR$/../../../sources/DiagramElements/Link.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Label.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift" />
+        <option value="$PROJECT_DIR$/../../../diagrams/XML/ProjectFV/project.xml" />
+        <option value="$PROJECT_DIR$/VpProject/XmlModelPropertyParser.swift" />
+        <option value="$PROJECT_DIR$/VpProject/XmlModelReferencesParser.swift" />
+        <option value="$PROJECT_DIR$/DiagramElements/ModelReference.swift" />
+        <option value="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" />
+        <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
+        <option value="$PROJECT_DIR$/DiagramElements/ModelReferences.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" />
+        <option value="$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" />
       </list>
     </option>
   </component>
@@ -283,7 +262,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="2560" />
-    <option name="height" value="1390" />
+    <option name="height" value="1386" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -327,6 +306,20 @@
       <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Products" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" />
@@ -469,6 +462,32 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Stories" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchematicView" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GestureHandler" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
@@ -504,7 +523,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects" />
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ProjectFV" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DiagramElements" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="FullScreen" value="false" />
   </component>
@@ -582,24 +601,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1390" extended-state="0" />
+    <frame x="0" y="23" width="2560" height="1386" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21855345" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15636078" sideWeight="0.368" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15636078" sideWeight="0.632" order="3" side_tool="true" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3121069" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2039236" sideWeight="0.45737857" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3462145" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3115142" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31805682" sideWeight="0.503872" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2039236" sideWeight="0.45737857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21845426" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15636078" sideWeight="0.3676976" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15636078" sideWeight="0.6323024" order="3" side_tool="true" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3468543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -622,74 +641,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml</url>
-          <line>14220</line>
+          <line>14285</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="101" />
+      <option name="time" value="109" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramPortal.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6864952">
-          <caret line="129" column="9" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/Shapes/Polyline.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72527474">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/LinkDisplay.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/LinkEndPointType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramDisplay.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraphItem.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_EndPoint.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraphs.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraphItems.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -835,14 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManager.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/StoriesMgr.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13793103">
@@ -883,22 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13793103">
-          <caret line="254" column="8" selection-start-line="254" selection-start-column="8" selection-end-line="254" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlPointsParser.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -923,25 +862,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Primitive.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.082969435">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
@@ -949,7 +872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlDiagramParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.5812274">
           <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding />
         </state>
@@ -957,7 +880,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Link.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.330131">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
@@ -965,24 +888,128 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Element.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.7676856">
           <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Link.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24876848">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Label.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.5812274">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1028881">
+          <caret line="72" column="51" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.185185">
+          <caret line="33" column="117" selection-start-line="33" selection-start-column="117" selection-end-line="33" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Link.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26637554">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33272228">
+          <caret line="25714" column="173" selection-start-line="25714" selection-start-column="158" selection-end-line="25714" selection-end-column="173" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DiagramElements/ModelReference.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DiagramElements/ModelReferences.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Diagram.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../diagrams/XML/ProjectFV/project.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36772487">
+          <caret line="19637" column="34" selection-start-line="19637" selection-start-column="29" selection-end-line="19637" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VpProject/XmlModelReferencesParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2518518">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -990,31 +1017,31 @@
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml">
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManager.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.537037">
-          <caret line="19638" column="85" selection-start-line="19638" selection-start-column="69" selection-end-line="19638" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift">
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.740741">
-          <caret line="33" column="117" selection-start-line="33" selection-start-column="117" selection-end-line="33" selection-end-column="117" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="325" column="0" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorParser.swift">
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47160494">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33168316">
+          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
           <folding />
         </state>
       </provider>

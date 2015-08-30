@@ -57,15 +57,21 @@ public class Model {
             _filePath = value
         }
     }
-    
-    public var subDiagramName : String! {
+
+    public var subDiagrams: ModelReferences {
         get {
-            return _subDiagramName
-        }
-        set (value) {
-            _subDiagramName = value
+            return _subDiagrams
         }
     }
+    
+//    public var subDiagramName : String! {
+//        get {
+//            return _subDiagramName
+//        }
+//        set (value) {
+//            _subDiagramName = value
+//        }
+//    }
 
     public var plainTextValue : String! {
         get {
@@ -89,7 +95,8 @@ public class Model {
     private var _linkEndPointFrom : LinkEndPoint!
     private var _children : ModelsTable = ModelsTable()
     private var _filePath : String!
-    private var _subDiagramName : String!
+//    private var _subDiagramName : String!
     private var _plainTextValue : String!
+    private var _subDiagrams : ModelReferences = ModelReferences()
 }
 

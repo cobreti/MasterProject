@@ -39,6 +39,8 @@ class XmlModelParser : XmlSubTreeParser {
     override func onLocalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
         
         switch elementName {
+            case "ModelsProperty":
+                onModelsProperty(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
             case "StringProperty":
                 onStringProperty(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
             case "HTMLProperty":
@@ -71,7 +73,13 @@ class XmlModelParser : XmlSubTreeParser {
             _modelsTable.add(_model)
         }
     }
-    
+
+    func onModelsProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+
+        if let  name = attributeDict["name"] as? String where name == "references" {
+            pushElementParser( XmlModelReferencesParser(name: "ModelsProperty", model: _model, delegate: self) )
+        }
+    }
     
     func onStringProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
         
@@ -84,15 +92,15 @@ class XmlModelParser : XmlSubTreeParser {
             debugPrint("url found for \(pathName) = '\(value)'")
         }
         
-        if let  diagramName = attributeDict["diagramName"] as? String,
-                diagramType = attributeDict["diagramType"] as? String,
-                displayName = attributeDict["displayName"] as? String,
-                name = attributeDict["name"] as? String,
-                value = attributeDict["value"] as? String {
-                
-            _model?.subDiagramName = diagramName
-            debugPrint("sub diagram with name : \(diagramName)")
-        }
+//        if let  diagramName = attributeDict["diagramName"] as? String,
+//                diagramType = attributeDict["diagramType"] as? String,
+//                displayName = attributeDict["displayName"] as? String,
+//                name = attributeDict["name"] as? String,
+//                value = attributeDict["value"] as? String {
+//
+//            _model?.subDiagramName = diagramName
+//            debugPrint("sub diagram with name : \(diagramName)")
+//        }
 
         if let  name = attributeDict["name"] as? String,
                 value = attributeDict["value"] as? String {

@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/DiagramElements/DiagramElements.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DiagramElements/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DiagramElements/ModelReference.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DiagramElements/ModelReferences.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DiagramElementsTests/DiagramElementsTests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DiagramElementsTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/Action.swift" isTestSource="false" />
@@ -100,7 +102,6 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemControllerDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramDisplay.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramHistoryThumbnailViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramPortal.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" isTestSource="false" />
@@ -128,6 +129,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ShapesTests/ShapesTests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VpProject/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VpProject/VpProject.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VpProject/XmlModelReferenceParser.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VpProject/XmlModelReferencesParser.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VpProjectTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VpProjectTests/VpProjectTests.swift" isTestSource="false" />
     </content>

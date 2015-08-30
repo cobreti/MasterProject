@@ -177,11 +177,11 @@ class DiagramViewController : UIViewController {
             if let  elm = p as? Element,
                     modelId = elm.modelId,
                     model = document.models.get(modelId),
-                    subDiagramName = model.subDiagramName {
+                    subDiagramRef = model.subDiagrams.getForParentDiagram(childDiagram.name) {
                 
-                debugPrintln("- subDiagramName : \(subDiagramName)")
+                debugPrintln("- subDiagramName : \(subDiagramRef.diagramName)")
                 
-                if subDiagramName == childDiagram.name {
+                if subDiagramRef.diagramName == childDiagram.name {
                     return elm
                 }
             }
