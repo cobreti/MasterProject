@@ -22,12 +22,26 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
                     app.actionsBus.send( OpenStoryAction(story: HierarchicViewStory(), sender: self))
                     break
                 case .Schematique:
-                    app.actionsBus.send( OpenStoryAction(story: DiagramSelectionStory(), sender: self))
+                    onShowSchematicView()
                     break
             }
         }
     }
 
+
+    func onShowSchematicView() {
+
+        let app = Application.instance()
+
+        if let diagram = app.document.diagrams.get("main") {
+
+            let story = SchematicViewStory(diagramName: "main")
+            Application.instance().actionsBus.send( OpenStoryAction(story: story, sender: self) )
+        }
+        else {
+            app.actionsBus.send(OpenStoryAction(story: DiagramSelectionStory(), sender: self))
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
