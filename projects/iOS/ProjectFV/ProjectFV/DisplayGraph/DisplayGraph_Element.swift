@@ -96,18 +96,40 @@ class DisplayGraph_Element : DisplayGraphItem {
     func drawName(rect: CGRect) {
 
         var parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
-        var strSize = name.sizeWithAttributes([
-                                                      NSParagraphStyleAttributeName: parStyle
-                                              ])
-        var rc : CGRect = rect
+        var strContext : NSStringDrawingContext = NSStringDrawingContext()
+        var strOptions : NSStringDrawingOptions = NSStringDrawingOptions.UsesLineFragmentOrigin
+        var rcText = rect
+        
+        rcText.inset(dx: 10, dy: 10)
 
         parStyle.alignment = NSTextAlignment.Center
+        parStyle.lineBreakMode = NSLineBreakMode.ByWordWrapping
 
-        rc.inset(dx: 0, dy: (rc.height - strSize.height)/2)
+        var rcStr = name.boundingRectWithSize(
+                                rcText.size,
+                                options: strOptions,
+                                attributes: [
+                                                NSParagraphStyleAttributeName: parStyle
+                                            ],
+                                context: strContext )
+//        var strSize = name.sizeWithAttributes([
+//                                                      NSParagraphStyleAttributeName: parStyle
+//                                              ])
+        var rc : CGRect = rcText
 
-        name.drawInRect(rc, withAttributes: [
-                NSParagraphStyleAttributeName: parStyle
-        ])
+
+        rc.inset(dx: 0, dy: (rc.height - rcStr.size.height)/2)
+
+        name.drawWithRect(  rc,
+                            options: strOptions,
+                            attributes: [
+                                NSParagraphStyleAttributeName: parStyle
+                            ],
+                            context: strContext )
+
+//        name.drawInRect(rc, withAttributes: [
+//                NSParagraphStyleAttributeName: parStyle
+//        ])
     }
 
     var _rect : Rect
