@@ -59,7 +59,7 @@ class DisplayGraph_Element : DisplayGraphItem {
         }
 
         if let name = _name where params.drawingMode == .Normal {
-            drawName(cgRC)
+            drawName(cgRC, context: params.context)
         }
     }
 
@@ -93,15 +93,14 @@ class DisplayGraph_Element : DisplayGraphItem {
         _subDiagramIcon.drawInRect(rcImg)
     }
 
-    func drawName(rect: CGRect) {
+    func drawName(rect: CGRect, context: CGContext) {
 
         var parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
         var strContext : NSStringDrawingContext = NSStringDrawingContext()
         var strOptions : NSStringDrawingOptions = NSStringDrawingOptions.UsesLineFragmentOrigin
         var rcText = rect
+        var font : UIFont = UIFont(name: "helvetica", size: 12.0)!
         
-        rcText.inset(dx: 10, dy: 10)
-
         parStyle.alignment = NSTextAlignment.Center
         parStyle.lineBreakMode = NSLineBreakMode.ByWordWrapping
 
@@ -109,27 +108,42 @@ class DisplayGraph_Element : DisplayGraphItem {
                                 rcText.size,
                                 options: strOptions,
                                 attributes: [
-                                                NSParagraphStyleAttributeName: parStyle
+                                                NSParagraphStyleAttributeName: parStyle,
+                                                NSFontAttributeName: font
                                             ],
                                 context: strContext )
-//        var strSize = name.sizeWithAttributes([
-//                                                      NSParagraphStyleAttributeName: parStyle
-//                                              ])
+
         var rc : CGRect = rcText
 
+        if rc.width - rcStr.width < 20 || rc.height - rcStr.height < 20 {
+            font = UIFont(name: "helvetica", size: 10.0)!;
 
+            rcStr = name.boundingRectWithSize(
+                                rcText.size,
+                                options: strOptions,
+                                attributes: [
+                                    NSParagraphStyleAttributeName: parStyle,
+                                    NSFontAttributeName: font
+                                ],
+                                context: strContext )
+        }
+
+        CGContextSaveGState(context)
+        CGContextClipToRect(context, rc)
+
+        CGContextSetFontSize(context, 8.0)
+        
         rc.inset(dx: 0, dy: (rc.height - rcStr.size.height)/2)
 
         name.drawWithRect(  rc,
                             options: strOptions,
                             attributes: [
-                                NSParagraphStyleAttributeName: parStyle
+                                NSParagraphStyleAttributeName: parStyle,
+                                NSFontAttributeName: font
                             ],
                             context: strContext )
 
-//        name.drawInRect(rc, withAttributes: [
-//                NSParagraphStyleAttributeName: parStyle
-//        ])
+        CGContextRestoreGState(context)
     }
 
     var _rect : Rect
