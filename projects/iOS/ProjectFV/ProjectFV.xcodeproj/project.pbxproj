@@ -33,7 +33,6 @@
 		1664059F1B370857003F720A /* DiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405971B370857003F720A /* DiagramPortal.swift */; };
 		166405A01B370857003F720A /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405981B370857003F720A /* DiagramView.swift */; };
 		166405A11B370857003F720A /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405991B370857003F720A /* DiagramViewController.swift */; };
-		166405A21B370857003F720A /* LinkDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664059A1B370857003F720A /* LinkDisplay.swift */; };
 		166405A31B370857003F720A /* PinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664059B1B370857003F720A /* PinPoint.swift */; };
 		166405A41B370857003F720A /* SchematicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664059C1B370857003F720A /* SchematicViewController.swift */; };
 		166405A51B370857003F720A /* SchematicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664059D1B370857003F720A /* SchematicViewStory.swift */; };
@@ -292,7 +291,6 @@
 		166405971B370857003F720A /* DiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramPortal.swift; path = Stories/SchematicView/DiagramPortal.swift; sourceTree = "<group>"; };
 		166405981B370857003F720A /* DiagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramView.swift; path = Stories/SchematicView/DiagramView.swift; sourceTree = "<group>"; };
 		166405991B370857003F720A /* DiagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramViewController.swift; path = Stories/SchematicView/DiagramViewController.swift; sourceTree = "<group>"; };
-		1664059A1B370857003F720A /* LinkDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkDisplay.swift; path = Stories/SchematicView/LinkDisplay.swift; sourceTree = "<group>"; };
 		1664059B1B370857003F720A /* PinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinPoint.swift; path = Stories/SchematicView/PinPoint.swift; sourceTree = "<group>"; };
 		1664059C1B370857003F720A /* SchematicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewController.swift; path = Stories/SchematicView/SchematicViewController.swift; sourceTree = "<group>"; };
 		1664059D1B370857003F720A /* SchematicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewStory.swift; path = Stories/SchematicView/SchematicViewStory.swift; sourceTree = "<group>"; };
@@ -788,7 +786,6 @@
 			isa = PBXGroup;
 			children = (
 				1642F1641B1B526900AA600D /* GestureHandler */,
-				1664059A1B370857003F720A /* LinkDisplay.swift */,
 				166405971B370857003F720A /* DiagramPortal.swift */,
 				166405981B370857003F720A /* DiagramView.swift */,
 				166405991B370857003F720A /* DiagramViewController.swift */,
@@ -1321,7 +1318,6 @@
 				16247E1A1B51DC8000F1D341 /* ActionIdentifier.swift in Sources */,
 				16247E271B547C9200F1D341 /* OpenStory.swift in Sources */,
 				16247E291B5494B200F1D341 /* PanDiagramAction.swift in Sources */,
-				166405A21B370857003F720A /* LinkDisplay.swift in Sources */,
 				166405A91B370BA7003F720A /* FileViewController.swift in Sources */,
 				16EEA0251B06B81700A872D4 /* Application.swift in Sources */,
 				16247E231B51E68200F1D341 /* ActionListeners.swift in Sources */,

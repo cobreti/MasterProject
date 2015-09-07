@@ -47,6 +47,8 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        _diagramNameLabel.text = _diagram.name
+        
         _diagramViewsManager = DiagramViewsManager(schematicViewController: self, delegate: self)
         _diagramsHistoryController._diagramViewsManager = _diagramViewsManager
     }
@@ -103,6 +105,8 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                     completionHandler?()
             })
         }
+        
+        _diagramNameLabel.text = newController.diagram.name
     }
     
     func onDiagramViewStateChanged( state: DiagramViewController.State ) {
@@ -229,6 +233,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             case .EnterSubDiagram:
                 if let esda = action as? EnterSubDiagramAction {
                     diagramViewsManager.activate(esda.subDiagramController)
+                    _diagramNameLabel.text = esda.subDiagramController.diagram.name
                 }
 
             case .ExitSubDiagram:
@@ -239,6 +244,10 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             case .RecenterDiagram:
                 if let ctrller = _diagramViewsManager.currentController {
                     ctrller.resetView()
+                }
+            case .HistoryDiagramSelected:
+                if let hdsa = action as? HistoryDiagramSelectedAction {
+                    _diagramNameLabel.text = hdsa.diagramController.diagram.name
                 }
 
             
@@ -286,6 +295,8 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     
     func onShowDiagram(action: ShowDiagramAction) {
         
+        _diagramNameLabel.text = action.diagram.name
+        
         let  controller = DiagramViewController(parentController: self, diagram: action.diagram)
         diagramViewsManager.activate(controller)
     }
@@ -296,6 +307,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
 
     var _diagramViewsManager : DiagramViewsManager!
 
+    @IBOutlet weak var _diagramNameLabel: UILabel!
     @IBOutlet var _upArrowImageView: UIImageView!
     @IBOutlet var _downArrowImageView: UIImageView!
     @IBOutlet var _leftArrowImageView: UIImageView!

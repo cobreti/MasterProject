@@ -84,13 +84,13 @@ class XmlModelParser : XmlSubTreeParser {
     func onStringProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
         
         
-        if let  displayName = attributeDict["displayName"] as? String,
-                pathName = attributeDict["pathName"] as? String,
-                value = attributeDict["value"] as? String {
-                
-            _model?.filePath = value
-            debugPrint("url found for \(pathName) = '\(value)'")
-        }
+//        if let  displayName = attributeDict["displayName"] as? String,
+//                pathName = attributeDict["pathName"] as? String,
+//                value = attributeDict["value"] as? String {
+//
+//            _model?.filePath = value
+//            debugPrint("url found for \(pathName) = '\(value)'")
+//        }
         
 //        if let  diagramName = attributeDict["diagramName"] as? String,
 //                diagramType = attributeDict["diagramType"] as? String,

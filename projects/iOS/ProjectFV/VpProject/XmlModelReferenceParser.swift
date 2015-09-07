@@ -57,6 +57,14 @@ class XmlModelReferenceParser : XmlSubTreeParser {
 
             _diagramOrigin = value
         }
+
+        if let  displayName = attributeDict["displayName"] as? String,
+                pathName = attributeDict["pathName"] as? String,
+                value = attributeDict["value"] as? String {
+
+            _model.filePath = value
+            debugPrint("url found for \(pathName) = '\(value)'")
+        }
     }
 
     var _model: Model

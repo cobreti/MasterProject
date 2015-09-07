@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="_controlsArea" destination="oi0-VJ-8ql" id="dVX-sI-y9R"/>
                 <outlet property="_diagramArea" destination="flt-J9-SI4" id="0MF-3S-NXB"/>
+                <outlet property="_diagramNameLabel" destination="fVI-6K-KtA" id="cQ9-a9-b9j"/>
                 <outlet property="_diagramsHistoryController" destination="MU6-5r-UWE" id="Hhr-iW-Pjy"/>
                 <outlet property="_downArrowImageView" destination="vOx-IW-dBA" id="KEN-xg-x4O"/>
                 <outlet property="_leftArrowImageView" destination="HIR-fT-qnS" id="cgK-78-FoZ"/>
@@ -74,15 +75,24 @@
                                 <action selector="onRecenter:" destination="-1" eventType="touchUpInside" id="NkS-dO-jLk"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVI-6K-KtA">
+                            <rect key="frame" x="557" y="14" width="407" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="fVI-6K-KtA" firstAttribute="leading" secondItem="m2N-Bv-8Vr" secondAttribute="trailing" constant="40" id="8dj-qC-ZoY"/>
+                        <constraint firstAttribute="centerY" secondItem="fVI-6K-KtA" secondAttribute="centerY" id="CmH-wi-4Ii"/>
                         <constraint firstItem="E3k-6k-wit" firstAttribute="leading" secondItem="oi0-VJ-8ql" secondAttribute="leading" constant="20" id="Idl-aG-Lko"/>
                         <constraint firstAttribute="centerY" secondItem="E3k-6k-wit" secondAttribute="centerY" id="R7k-8W-Far"/>
                         <constraint firstItem="E3k-6k-wit" firstAttribute="top" secondItem="oi0-VJ-8ql" secondAttribute="top" constant="10" id="a30-a8-W8i"/>
                         <constraint firstItem="m2N-Bv-8Vr" firstAttribute="centerY" secondItem="oi0-VJ-8ql" secondAttribute="centerY" id="aHQ-RN-8mt"/>
                         <constraint firstItem="m2N-Bv-8Vr" firstAttribute="centerX" secondItem="oi0-VJ-8ql" secondAttribute="centerX" id="eGF-PG-WHT"/>
                         <constraint firstAttribute="height" constant="50" id="edd-Xf-w0W"/>
+                        <constraint firstAttribute="trailing" secondItem="fVI-6K-KtA" secondAttribute="trailing" constant="40" id="ly3-1n-0bD"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">

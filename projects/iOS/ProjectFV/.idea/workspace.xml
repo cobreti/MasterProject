@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraphs.swift" afterPath="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraphs.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/TreeTableDataNode.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/TreeTableDataNode.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/ProjectFV/project.xml" afterPath="$PROJECT_DIR$/../../../diagrams/XML/ProjectFV/project.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" afterPath="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift" afterPath="$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift" />
     </list>
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManager.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+              <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -89,7 +83,27 @@
         <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <caret line="142" column="34" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlModelParser.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="93" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlModelReferenceParser.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8771593">
+              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -105,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiagramViewController.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DiagramViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.047984645">
-              <caret line="77" column="2" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,16 +178,16 @@
         <option value="$PROJECT_DIR$/VpProject/XmlModelReferencesParser.swift" />
         <option value="$PROJECT_DIR$/DiagramElements/ModelReference.swift" />
         <option value="$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift" />
-        <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
         <option value="$PROJECT_DIR$/DiagramElements/ModelReferences.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" />
-        <option value="$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionViewController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/TreeTableDataNode.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraphs.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
+        <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
+        <option value="$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift" />
       </list>
     </option>
   </component>
@@ -624,13 +638,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -660,13 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -828,7 +829,7 @@
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManager.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+          <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -857,14 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramsHistoryController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -883,8 +876,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047984645">
-          <caret line="77" column="2" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="142" column="34" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8771593">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
           <folding />
         </state>
       </provider>
