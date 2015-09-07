@@ -66,7 +66,7 @@ class TreeTableDataNode {
         }
     }
 
-    var _item : TreeItem
+    weak var _item : TreeItem!
     var _level : Int = 0
     var _childNodes : [TreeTableDataNode] = []
 }

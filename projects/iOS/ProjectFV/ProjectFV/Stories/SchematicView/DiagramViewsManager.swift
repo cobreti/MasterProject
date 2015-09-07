@@ -61,6 +61,7 @@ class DiagramViewsManager {
             item.view.frame = _schematicViewController._diagramArea.bounds
             item.viewDrawingMode = .Normal
             item.view.userInteractionEnabled = true
+            item.diagramView.prepareView()
             item.updatePortalRect()
         }
     }

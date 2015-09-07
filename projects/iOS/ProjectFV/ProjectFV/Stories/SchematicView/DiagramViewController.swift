@@ -73,6 +73,19 @@ class DiagramViewController : UIViewController {
         super.init(nibName: "DiagramView", bundle: nil)
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        diagramView.prepareView()
+    }
+
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        diagramView.cleanup()
+    }
+
+
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

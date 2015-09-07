@@ -67,7 +67,22 @@ class DiagramView : UIView {
             _drawingMode = value
         }
     }
-    
+
+    func prepareView() {
+
+        if let graph = buildDisplayGraph() {
+            DisplayGraphs.instance.add(graph)
+        }
+    }
+
+    func cleanup() {
+
+        if let diag = _diagram {
+
+            let graphs = DisplayGraphs.instance
+            graphs.remove(diag.name)
+        }
+    }
     
     override func drawRect(dirtyRect: CGRect) {
         
@@ -88,10 +103,10 @@ class DiagramView : UIView {
 
                 graph.draw(params)
             }
-            else if let graph = buildDisplayGraph() {
-                graphs.add(graph)
-                graph.draw(params)
-            }
+//            else if let graph = buildDisplayGraph() {
+//                graphs.add(graph)
+//                graph.draw(params)
+//            }
         }
     }
 
@@ -133,7 +148,7 @@ class DiagramView : UIView {
             if let  diagram = _diagram,
                     ref = model.subDiagrams.getForParentDiagram(diagram.name),
                     subDiagram = doc.diagrams.get(ref.diagramName),
-                    img = UIImage(named: "subdiagram.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) {
+                    img = UIImage(named: "subdiagram.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) where !diagramViewsManager.contains(ref.diagramName) {
                 dgElm.subDiagramIcon = img
             }
         }

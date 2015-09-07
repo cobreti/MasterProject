@@ -21,6 +21,10 @@ class DisplayGraphs {
         _graphs[graph.name] = graph
     }
 
+    func remove(name: String) {
+        _graphs.removeValueForKey(name)
+    }
+
     func get(name: String) -> DisplayGraph! {
         return _graphs[name]
     }
