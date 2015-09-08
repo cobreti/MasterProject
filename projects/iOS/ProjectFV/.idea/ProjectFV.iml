@@ -113,7 +113,6 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/PanGestureHandler.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/ZoomGestureHandler.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/LinkDisplay.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/PinPoint.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/SchematicViewStory.swift" isTestSource="false" />

@@ -77,7 +77,7 @@ class XmlModelParser : XmlSubTreeParser {
     func onModelsProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
 
         if let  name = attributeDict["name"] as? String where name == "references" {
-            pushElementParser( XmlModelReferencesParser(name: "ModelsProperty", model: _model, delegate: self) )
+            pushElementParser( XmlReferencesParser(name: "ModelsProperty", model: _model, delegate: self) )
         }
     }
     
