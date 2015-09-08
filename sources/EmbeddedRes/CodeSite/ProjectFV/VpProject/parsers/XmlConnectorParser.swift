@@ -12,9 +12,9 @@ import Shapes
 
 class XmlConnectorParser : XmlSubTreeParser {
     
-    init( name : String, diagramLayer : DiagramLayer, delegate : XmlElementParserDelegate! = nil) {
+    init( name : String, diagram : Diagram, delegate : XmlElementParserDelegate! = nil) {
         
-        _diagramLayer = diagramLayer
+        _diagram = diagram
         
         super.init(name: name, delegate: delegate)
         
@@ -33,7 +33,29 @@ class XmlConnectorParser : XmlSubTreeParser {
         
         switch elementName {
             case "Points":
-                pushElementParser(XmlPointsParser(name: "Points", link: _lnk, delegate: self))
+                if let lnk = _lnk {
+                    pushElementParser(XmlPointsParser(name: "Points", link: lnk, delegate: self))
+                }
+            case "Caption":
+                let formatter = NSNumberFormatter()
+
+                if let  xStr = attributeDict["x"] as? String,
+                        yStr = attributeDict["y"] as? String,
+                        x = formatter.numberFromString(xStr)?.floatValue,
+                        y = formatter.numberFromString(yStr)?.floatValue,
+                        lnk = _lnk {
+                    lnk.captionPos = Point(x: CGFloat(x), y: CGFloat(y))
+                }
+            case "MultiplicityCaption":
+                let formatter = NSNumberFormatter()
+
+                if let  xStr = attributeDict["x"] as? String,
+                        yStr = attributeDict["y"] as? String,
+                        x = formatter.numberFromString(xStr)?.floatValue,
+                        y = formatter.numberFromString(yStr)?.floatValue,
+                        lnk = _lnk {
+                    lnk.multiplicityCaptionPos = Point(x: CGFloat(x), y: CGFloat(y))
+                }
             default:
                 break
         }
@@ -47,7 +69,7 @@ class XmlConnectorParser : XmlSubTreeParser {
         
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         
-        if let id = attributeDict["id"] as? String,
+        if let  id = attributeDict["id"] as? String,
                 xStr = attributeDict["x"] as? String,
                 x = numberFormatter.numberFromString(xStr)?.floatValue,
                 yStr = attributeDict["y"] as? String,
@@ -67,19 +89,22 @@ class XmlConnectorParser : XmlSubTreeParser {
                     lnkType = t
                 }
 
-                _lnk = DiagramElements.Link(ownerDiagram: _diagramLayer, type: lnkType)
-                
+                _lnk = DiagramElements.Link(ownerDiagram: _diagram, type: lnkType)
+
+                if let name = attributeDict["name"] as? String {
+                    _lnk.name = name
+                }
+
                 _lnk.box = Rect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(width), height: CGFloat(height))
-                _lnk.name = id
                 _lnk.id = id
                 _lnk.to = LinkEndPoint(id: to)
                 _lnk.from = LinkEndPoint(id: from)
                 _lnk.modelId = modelId
                 
-                _diagramLayer.add(_lnk)
+                _diagram.add(_lnk)
         }
     }
     
-    var _diagramLayer : DiagramLayer
+    var _diagram : Diagram
     var _lnk : DiagramElements.Link!
 }

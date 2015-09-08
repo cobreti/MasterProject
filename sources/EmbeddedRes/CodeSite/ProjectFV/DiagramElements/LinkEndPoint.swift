@@ -15,6 +15,15 @@ public class LinkEndPoint {
             return _id
         }
     }
+
+    public var multiplicity : String! {
+        get {
+            return _multiplicity
+        }
+        set (value) {
+            _multiplicity = value
+        }
+    }
     
     public var type : LinkEndPointType {
         get {
@@ -30,5 +39,6 @@ public class LinkEndPoint {
     }
     
     var _id : String!
+    var _multiplicity : String!
     var _type : LinkEndPointType = LinkEndPointType.none
 }

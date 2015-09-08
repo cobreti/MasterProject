@@ -41,8 +41,26 @@ public class Link : Primitive {
             return _segment
         }
     }
+
+    public var captionPos : Point! {
+        get {
+            return _captionPos
+        }
+        set (value) {
+            _captionPos = value
+        }
+    }
+
+    public var multiplicityCaptionPos : Point! {
+        get {
+            return _multiplicityCaptionPos
+        }
+        set (value) {
+            _multiplicityCaptionPos = value
+        }
+    }
     
-    public init( ownerDiagram : DiagramLayer, type : LinkType ) {
+    public init( ownerDiagram : Diagram, type : LinkType ) {
 
         _type = type
 
@@ -53,6 +71,8 @@ public class Link : Primitive {
     var _to : LinkEndPoint!
     var _from : LinkEndPoint!
     var _type : LinkType
-    
+    var _captionPos : Point!
+    var _multiplicityCaptionPos : Point!
+
     var _segment : Polyline! = Polyline()
 }

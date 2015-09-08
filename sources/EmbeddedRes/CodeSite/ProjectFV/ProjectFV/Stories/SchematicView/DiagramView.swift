@@ -140,7 +140,8 @@ class DiagramView : UIView {
         if let  doc = _document,
                 model = doc.models.get(elm.modelId) {
 
-            if let  path = model.filePath,
+            if let  diagram = _diagram,
+                    ref = model.fileReferences.getForParentDiagram(diagram.name),
                     img = UIImage(named: "file.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) {
                 dgElm.fileIcon = img
             }

@@ -264,12 +264,14 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         
         if let  model = document.models.get(action.element.modelId) {
             
-            if let  filePath = model.filePath,
+            if let  currentController = _diagramViewsManager.currentController,
+                    currentDiagram = currentController.diagram,
+                    ref = model.fileReferences.getForParentDiagram(currentDiagram.name),
                     rootPath = document.filesPathRoot {
                     
                 let app = Application.instance()
                 
-                app.actionsBus.send( FileViewAction(file: rootPath + filePath, sender: self))
+                app.actionsBus.send( FileViewAction(file: rootPath + ref.path, sender: self))
 //                    app.stories.push( FileViewStory(file: rootPath + filePath) )
             }
             else if let currentController = _diagramViewsManager.currentController,

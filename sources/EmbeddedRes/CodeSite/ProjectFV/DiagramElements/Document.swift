@@ -7,9 +7,18 @@ import Foundation
 
 public class Document {
 
-    public var layers : DiagramLayers {
+    public var diagrams : Diagrams {
         get {
             return _layers
+        }
+    }
+    
+    public var filesPathRoot : String! {
+        get {
+            return _filesPathRoot
+        }
+        set (value) {
+            _filesPathRoot = value
         }
     }
     
@@ -19,10 +28,28 @@ public class Document {
         }
     }
 
+    public var projectName : String! {
+        get {
+            return _projectName
+        }
+        set (value) {
+            _projectName = value
+        }
+    }
+
+    public func clear() {
+
+        _filesPathRoot = nil
+        _layers.clear()
+        _models.clear()
+    }
+
     public init() {
 
     }
 
-    var _layers : DiagramLayers = DiagramLayers()
+    var _filesPathRoot : String!
+    var _layers : Diagrams = Diagrams()
     var _models : ModelsTable = ModelsTable()
+    var _projectName : String!
 }

@@ -12,10 +12,10 @@ public class Rect {
     
     public class func union(r1 : Rect, r2: Rect) -> Rect {
         
-        var x1 = min(r1.left, r2.left)
-        var y1 = min(r1.top, r2.top)
-        var x2 = max(r1.right, r2.right)
-        var y2 = max(r1.bottom, r2.bottom)
+        let x1 = min(r1.left, r2.left)
+        let y1 = min(r1.top, r2.top)
+        let x2 = max(r1.right, r2.right)
+        let y2 = max(r1.bottom, r2.bottom)
         
         return Rect(x: x1, y: y1, width: x2-x1, height: y2-y1)
     }
