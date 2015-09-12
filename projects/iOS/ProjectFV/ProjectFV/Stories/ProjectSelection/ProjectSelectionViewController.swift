@@ -9,6 +9,12 @@ import VpProject
 
 class ProjectSelectionViewController : UIViewController {
 
+    func onActivated() {
+
+        _ProjectFVBtn.enabled = true
+        _NyxBtn.enabled = true
+    }
+
     @IBAction func onProjectFVSelected(sender: AnyObject) {
 
         _ProjectFVBtn.enabled = false

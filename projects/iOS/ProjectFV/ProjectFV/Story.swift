@@ -28,8 +28,16 @@ class Story {
             _ownerStoriesMgr = owner
         }
     }
-    
+
     init() {
+    }
+
+    func onActivate() {
+
+    }
+
+    func onDeactivate() {
+
     }
     
     func onAction(action: Action) {

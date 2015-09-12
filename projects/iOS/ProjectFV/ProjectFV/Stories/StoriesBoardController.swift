@@ -39,6 +39,19 @@ class StoriesBoardController : UIViewController {
         }
     }
 
+    func enableBackButton(enabled: Bool) {
+
+        _backButton.hidden = !enabled
+    }
+
+    @IBAction func onBack(sender: AnyObject) {
+
+        let app = Application.instance()
+
+        app.stories.closeCurrentStory()
+    }
+    
+    @IBOutlet weak var _backButton: UIButton!
     @IBOutlet weak var _storyViewContainer: UIView!
     @IBOutlet weak var _versionLabel: UILabel!
 

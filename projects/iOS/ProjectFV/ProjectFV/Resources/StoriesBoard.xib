@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoriesBoardController" customModule="ProjectFV" customModuleProvider="target">
             <connections>
+                <outlet property="_backButton" destination="xLa-Cc-otH" id="vfm-Zk-28U"/>
                 <outlet property="_storyViewContainer" destination="BgW-L8-MuL" id="W3x-8W-iwj"/>
                 <outlet property="_versionLabel" destination="aEo-nw-KqU" id="j9X-oO-jlQ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="bNL-D7-T3T"/>
@@ -46,9 +47,22 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N54-sI-fyy" userLabel="Bottom Row">
                             <rect key="frame" x="0.0" y="45" width="600" height="20"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLa-Cc-otH">
+                                    <rect key="frame" x="10" y="-1" width="20" height="22"/>
+                                    <state key="normal" image="LeftArrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="fi0-De-gmn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstAttribute="centerY" secondItem="xLa-Cc-otH" secondAttribute="centerY" id="gl3-wg-teF"/>
                                 <constraint firstAttribute="height" constant="20" id="kuj-ah-c4A"/>
+                                <constraint firstItem="xLa-Cc-otH" firstAttribute="leading" secondItem="N54-sI-fyy" secondAttribute="leading" constant="10" id="lYw-Jo-xW0"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -76,4 +90,7 @@
             <point key="canvasLocation" x="428" y="132"/>
         </view>
     </objects>
+    <resources>
+        <image name="LeftArrow.png" width="20" height="20"/>
+    </resources>
 </document>

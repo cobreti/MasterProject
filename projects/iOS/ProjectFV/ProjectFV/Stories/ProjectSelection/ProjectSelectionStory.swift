@@ -20,5 +20,12 @@ class ProjectSelectionStory : Story {
         _controller = ProjectSelectionViewController(nibName: "ProjectSelection", bundle: nil)
     }
 
+    override func onActivate() {
+        super.onActivate()
+
+        _controller.onActivated()
+    }
+
+
     var _controller : ProjectSelectionViewController!
 }

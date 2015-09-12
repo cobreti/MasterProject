@@ -25,27 +25,47 @@ class StoriesMgr : ActionListener {
             story.ownerStoriesMgr = self
 
             _controller.setStoryView(story.view)
-//            wnd.addSubview(story.view)
-//            story.view.frame = wnd.bounds
+            story.onActivate()
         }
+
+        _controller.enableBackButton( _stories.count > 1 )
     }
     
     func pop() {
 
         if let lastStory = _stories.last {
-            
+
+            lastStory.onDeactivate()
             lastStory.view?.removeFromSuperview()
             _stories.removeLast()
             lastStory.ownerStoriesMgr = nil
         }
+
+        if let currentStory = _stories.last {
+
+            _controller.setStoryView(currentStory.view)
+            currentStory.onActivate()
+        }
+
+        _controller.enableBackButton( _stories.count > 1 )
     }
 
     func onWindowReady(viewContainer: UIView) {
 
         viewContainer.addSubview(_controller.view)
         _controller.view.frame = viewContainer.bounds
+
+        _controller.enableBackButton(false)
     }
-    
+
+    func closeCurrentStory() {
+
+        if let story = _stories.last {
+
+            Application.instance().actionsBus.send( CloseStoryAction(story: story, sender: self) )
+        }
+    }
+
     func onAction(action: Action) {
         
         switch action.id {
