@@ -25,9 +25,19 @@ class StoriesBoardController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        _versionLabel.text = "v1.0.1"
+        setVersionLabel()
     }
 
+    func setVersionLabel() {
+
+        if let  dict = NSBundle.mainBundle().infoDictionary,
+                versionKey = NSString(UTF8String: "CFBundleShortVersionString"),
+                version = dict[versionKey] as? String,
+                build = dict[kCFBundleVersionKey] as? String {
+
+            _versionLabel.text = "v\(version).\(build)"
+        }
+    }
 
     @IBOutlet weak var _storyViewContainer: UIView!
     @IBOutlet weak var _versionLabel: UILabel!

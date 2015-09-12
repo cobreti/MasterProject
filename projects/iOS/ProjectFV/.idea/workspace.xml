@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjectFV/Resources/StoriesBoard.xib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjectFV/Stories/StoriesBoardController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ProjectFV.iml" afterPath="$PROJECT_DIR$/.idea/ProjectFV.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcshareddata/ProjectFV.xccheckout" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcshareddata/ProjectFV.xccheckout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/xcdebugger/Expressions.xcexplist" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/xcdebugger/Expressions.xcexplist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Actions/ActionListeners.swift" afterPath="$PROJECT_DIR$/ProjectFV/Actions/ActionListeners.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Application.swift" afterPath="$PROJECT_DIR$/ProjectFV/Application.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Base.lproj/LaunchScreen.xib" afterPath="$PROJECT_DIR$/ProjectFV/Base.lproj/LaunchScreen.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/ProjectFV/Base.lproj/Main.storyboard" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Info.plist" afterPath="$PROJECT_DIR$/ProjectFV/Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/MainViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/MainViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Resources/RechercheSelection.xib" afterPath="$PROJECT_DIR$/ProjectFV/Resources/RechercheSelection.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Resources/SchematicView.xib" afterPath="$PROJECT_DIR$/ProjectFV/Resources/SchematicView.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/StoriesMgr.swift" afterPath="$PROJECT_DIR$/ProjectFV/StoriesMgr.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/StoriesBoardController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/StoriesBoardController.swift" />
     </list>
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,11 +29,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StoriesBoardController.swift" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StoriesBoardController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/StoriesBoardController.swift">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7804054">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Foundation.NSBundle.swift" pinned="false" current-in-tab="false">
+        <entry file="mock:///Foundation.NSBundle.swift">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoreFoundation.CFBundle.swift" pinned="false" current-in-tab="false">
+        <entry file="mock:///CoreFoundation.CFBundle.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -94,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionListeners.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActionListeners.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionListeners.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6418338">
+            <state vertical-scroll-proportion="0.0">
               <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
@@ -167,12 +172,12 @@
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
         <option value="$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlModelParser.swift" />
         <option value="$PROJECT_DIR$/VpProject/XmlModelReferenceParser.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/StoriesBoardController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/MainWindow/MainWindowController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/StoriesMgr.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Application.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/MainViewController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionListeners.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/StoriesBoardController.swift" />
       </list>
     </option>
   </component>
@@ -182,10 +187,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
-    <option name="y" value="80" />
-    <option name="width" value="1982" />
-    <option name="height" value="1188" />
+    <option name="x" value="637" />
+    <option name="y" value="274" />
+    <option name="width" value="1662" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -236,6 +241,38 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="ProjectFV" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stories" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -326,21 +363,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="80" width="1982" height="1188" extended-state="0" />
+    <frame x="637" y="274" width="1662" height="1082" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20244773" sideWeight="0.46143252" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24192566" sideWeight="0.45967743" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21775702" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21680498" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31805682" sideWeight="0.503872" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20244773" sideWeight="0.5385675" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24192566" sideWeight="0.5403226" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2039236" sideWeight="0.45737857" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32149532" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35684648" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -537,6 +574,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="90" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="90" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -614,6 +652,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="80" column="27" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -649,6 +688,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.18234165">
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,6 +696,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="142" column="34" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -678,22 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/StoriesBoardController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/MainViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -724,8 +749,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionListeners.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6418338">
+        <state vertical-scroll-proportion="0.0">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/MainViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/StoriesBoardController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7804054">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding />
         </state>
       </provider>
