@@ -9,6 +9,14 @@
          contextName = "ProjectFV.DiagramViewController.viewDidLoad (ProjectFV.DiagramViewController)() -&gt; ():DiagramViewController.swift">
       </ContextState>
       <ContextState
+         contextName = "ProjectFV.StoriesMgr.init (ProjectFV.StoriesMgr.Type)() -&gt; ProjectFV.StoriesMgr:StoriesMgr.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "wnd.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "DiagramElements.ModelsTable.get (DiagramElements.ModelsTable)(Swift.String) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;DiagramElements.Model&gt;:ModelsTable.swift">
       </ContextState>
       <ContextState

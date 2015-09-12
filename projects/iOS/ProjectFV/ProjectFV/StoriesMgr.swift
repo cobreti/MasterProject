@@ -14,12 +14,7 @@ class StoriesMgr : ActionListener {
     
     init() {
 
-        if let wnd = UIApplication.sharedApplication().keyWindow {
-            
-            for view in wnd.subviews {
-                view.removeFromSuperview();
-            }
-        }
+        _controller = StoriesBoardController(nibName: "StoriesBoard", bundle: nil)
     }
     
     func push( story : Story ) {
@@ -28,8 +23,10 @@ class StoriesMgr : ActionListener {
         
             _stories.append(story)
             story.ownerStoriesMgr = self
-            wnd.addSubview(story.view)
-            story.view.frame = wnd.bounds
+
+            _controller.setStoryView(story.view)
+//            wnd.addSubview(story.view)
+//            story.view.frame = wnd.bounds
         }
     }
     
@@ -41,6 +38,12 @@ class StoriesMgr : ActionListener {
             _stories.removeLast()
             lastStory.ownerStoriesMgr = nil
         }
+    }
+
+    func onWindowReady(viewContainer: UIView) {
+
+        viewContainer.addSubview(_controller.view)
+        _controller.view.frame = viewContainer.bounds
     }
     
     func onAction(action: Action) {
@@ -63,7 +66,8 @@ class StoriesMgr : ActionListener {
                 _stories.last?.onAction(action)
         }
     }
- 
+
     var _stories : [Story] = []
+    var _controller : StoriesBoardController
 }
 

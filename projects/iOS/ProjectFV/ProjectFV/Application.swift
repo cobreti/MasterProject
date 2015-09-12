@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import DiagramElements
 import VpProject
 
@@ -62,18 +63,18 @@ class Application : ActionListener {
     
     func finishedLaunching() {
     
-//        loadDiagrams()
-    
         _actionsBus = ActionsBus()
         _storiesMgr = StoriesMgr()
         
         _actionsBus.listeners.add(_storiesMgr)
         _actionsBus.listeners.add(self)
-  
-//        stories.push( DiagramSelectionStory() )
-//        stories.push( QuestionnaireStory() )
+    }
 
-//        actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
+    func onWindowReady(viewContainer: UIView) {
+
+        _storiesMgr.onWindowReady(viewContainer)
+
+        actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
     }
 
     func onAction(action: Action) {
@@ -90,6 +91,7 @@ class Application : ActionListener {
         }
     }
 
+    var _mainWindow : UIWindow!
     var _document : DiagramElements.Document = DiagramElements.Document()
     var _mainViewController : UIViewController!
     var _storiesMgr : StoriesMgr!

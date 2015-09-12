@@ -15,8 +15,8 @@ class MainViewController : UIViewController {
         super.viewDidAppear(animated)
         
         let app = Application.instance()
-        
-        app.actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
+
+        app.onWindowReady(view)
     }
 }
 

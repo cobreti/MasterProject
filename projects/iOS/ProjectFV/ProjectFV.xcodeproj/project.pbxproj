@@ -30,6 +30,7 @@
 		163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE81B12321C004C56E7 /* LinkType.swift */; };
 		1642F16D1B1D396B00AA600D /* StoriesMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F16C1B1D396B00AA600D /* StoriesMgr.swift */; };
 		1642F16F1B1D398600AA600D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F16E1B1D398600AA600D /* Story.swift */; };
+		164C07DF1BA49B8F00A99EF9 /* StoriesBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164C07DE1BA49B8F00A99EF9 /* StoriesBoard.xib */; };
 		1664058D1B370838003F720A /* DiagramsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664058A1B370838003F720A /* DiagramsDataSource.swift */; };
 		1664058E1B370838003F720A /* DiagramSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664058B1B370838003F720A /* DiagramSelectionController.swift */; };
 		1664058F1B370838003F720A /* DiagramSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664058C1B370838003F720A /* DiagramSelectionStory.swift */; };
@@ -144,6 +145,7 @@
 		B02F3309D13C89183D00C203 /* DisplayGraph_EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */; };
 		B02F33338E3FB2ED18E9EA66 /* HierachicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */; };
 		B02F33FE2B92A937DBE7F8F7 /* HierarchicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */; };
+		B02F3407ABF2FE3F93FB2E0E /* StoriesBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3169C232919A9219E048 /* StoriesBoardController.swift */; };
 		B02F34624BBDC43B91CD5DEE /* TreeItemExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B87B2EEFF186CBEA8F0 /* TreeItemExpanded.swift */; };
 		B02F34BB167D35E632578E5B /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = B02F381A4E25B7456735F63C /* folder.png */; };
 		B02F34E3D5868FBC08036CCF /* DisplayGraphDrawParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3626A63FD0EA5E397C7F /* DisplayGraphDrawParams.swift */; };
@@ -290,6 +292,7 @@
 		163EFBE81B12321C004C56E7 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
 		1642F16C1B1D396B00AA600D /* StoriesMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesMgr.swift; sourceTree = "<group>"; };
 		1642F16E1B1D398600AA600D /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		164C07DE1BA49B8F00A99EF9 /* StoriesBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StoriesBoard.xib; path = Resources/StoriesBoard.xib; sourceTree = "<group>"; };
 		1664058A1B370838003F720A /* DiagramsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramsDataSource.swift; path = Stories/DiagramSelection/DiagramsDataSource.swift; sourceTree = "<group>"; };
 		1664058B1B370838003F720A /* DiagramSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramSelectionController.swift; path = Stories/DiagramSelection/DiagramSelectionController.swift; sourceTree = "<group>"; };
 		1664058C1B370838003F720A /* DiagramSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramSelectionStory.swift; path = Stories/DiagramSelection/DiagramSelectionStory.swift; sourceTree = "<group>"; };
@@ -401,6 +404,7 @@
 		16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorEndPointParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift; sourceTree = "<group>"; };
 		B02F303F237A284112FED013 /* TreeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeController.swift; path = Stories/HerarchicView/TreeController.swift; sourceTree = "<group>"; };
 		B02F30B8A6A892B198D56B7A /* DisplayGraphs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraphs.swift; sourceTree = "<group>"; };
+		B02F3169C232919A9219E048 /* StoriesBoardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoriesBoardController.swift; path = Stories/StoriesBoardController.swift; sourceTree = "<group>"; };
 		B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_EndPoint.swift; sourceTree = "<group>"; };
 		B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataSource.swift; path = Stories/HerarchicView/TreeTableDataSource.swift; sourceTree = "<group>"; };
 		B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectSelectionStory.swift; path = Stories/ProjectSelection/ProjectSelectionStory.swift; sourceTree = "<group>"; };
@@ -569,6 +573,7 @@
 				166405891B3707B3003F720A /* FileView */,
 				16A44FB91B23D14400ABDC4E /* DiagramSelection */,
 				16CF29C31B2393E700E72CCA /* SchematicView */,
+				B02F3169C232919A9219E048 /* StoriesBoardController.swift */,
 				1642F16C1B1D396B00AA600D /* StoriesMgr.swift */,
 				1642F16E1B1D398600AA600D /* Story.swift */,
 				B02F32083F79DAE30C21F4AE /* Questionnaire */,
@@ -826,6 +831,7 @@
 				16ECF3D01B6E89A100591783 /* MethodSelection.xib */,
 				16ECF3D21B6E970A00591783 /* HierarchicView.xib */,
 				16C075371B7EDDB1004D090D /* ProjectSelection.xib */,
+				164C07DE1BA49B8F00A99EF9 /* StoriesBoard.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1222,6 +1228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164C07DF1BA49B8F00A99EF9 /* StoriesBoard.xib in Resources */,
 				16A44FBD1B23D1FC00ABDC4E /* DiagramSelection.xib in Resources */,
 				166405AF1B387A62003F720A /* file.png in Resources */,
 				16980D081B656AD400D45DED /* RechercheItem.xib in Resources */,
@@ -1392,6 +1399,7 @@
 				B02F3156EF0DDA1AE0958CE0 /* TreeItemCollapsed.swift in Sources */,
 				B02F3ED456E0667EA94CB2BE /* TreeItemSelected.swift in Sources */,
 				B02F37AE70093ECFD61599AA /* DisplayGraph_Label.swift in Sources */,
+				B02F3407ABF2FE3F93FB2E0E /* StoriesBoardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
