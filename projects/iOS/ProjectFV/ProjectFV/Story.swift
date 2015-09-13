@@ -19,6 +19,12 @@ class Story {
             return nil
         }
     }
+
+    var toolbar : UIView! {
+        get {
+            return nil
+        }
+    }
     
     var ownerStoriesMgr : StoriesMgr! {
         get {

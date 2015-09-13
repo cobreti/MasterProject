@@ -44,6 +44,22 @@ class StoriesBoardController : UIViewController {
         _backButton.hidden = !enabled
     }
 
+    func setStoryTB(tbView : UIView!) {
+
+        for obj in _storyTBArea.subviews {
+            if let v = obj as? UIView {
+                v.removeFromSuperview()
+            }
+        }
+
+        if let v = tbView {
+            _storyTBArea.addSubview(tbView)
+            tbView.frame = _storyTBArea.bounds
+            tbView.setNeedsLayout()
+            tbView.setNeedsDisplay()
+        }
+    }
+
     @IBAction func onBack(sender: AnyObject) {
 
         let app = Application.instance()
@@ -51,6 +67,7 @@ class StoriesBoardController : UIViewController {
         app.stories.closeCurrentStory()
     }
     
+    @IBOutlet weak var _storyTBArea: UIView!
     @IBOutlet weak var _backButton: UIButton!
     @IBOutlet weak var _storyViewContainer: UIView!
     @IBOutlet weak var _versionLabel: UILabel!

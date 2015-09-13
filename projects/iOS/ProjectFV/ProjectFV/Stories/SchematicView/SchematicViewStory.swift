@@ -17,7 +17,13 @@ class SchematicViewStory : Story {
             return _controller.view
         }
     }
-    
+
+    override var toolbar: UIView! {
+        get {
+            return _controller.toolbar
+        }
+    }
+
     init( diagramName : String) {
         
         _diagramName = diagramName

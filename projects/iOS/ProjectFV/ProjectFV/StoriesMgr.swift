@@ -24,8 +24,7 @@ class StoriesMgr : ActionListener {
             _stories.append(story)
             story.ownerStoriesMgr = self
 
-            _controller.setStoryView(story.view)
-            story.onActivate()
+            activateStory(story)
         }
 
         _controller.enableBackButton( _stories.count > 1 )
@@ -43,11 +42,16 @@ class StoriesMgr : ActionListener {
 
         if let currentStory = _stories.last {
 
-            _controller.setStoryView(currentStory.view)
-            currentStory.onActivate()
+            activateStory(currentStory)
         }
 
         _controller.enableBackButton( _stories.count > 1 )
+    }
+
+    func activateStory(story: Story) {
+        _controller.setStoryView(story.view)
+        _controller.setStoryTB(story.toolbar)
+        story.onActivate()
     }
 
     func onWindowReady(viewContainer: UIView) {

@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoriesBoardController" customModule="ProjectFV" customModuleProvider="target">
             <connections>
                 <outlet property="_backButton" destination="xLa-Cc-otH" id="vfm-Zk-28U"/>
+                <outlet property="_storyTBArea" destination="1D9-n8-dRF" id="xvy-09-1N6"/>
                 <outlet property="_storyViewContainer" destination="BgW-L8-MuL" id="W3x-8W-iwj"/>
                 <outlet property="_versionLabel" destination="aEo-nw-KqU" id="j9X-oO-jlQ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="bNL-D7-T3T"/>
@@ -17,10 +18,10 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgW-L8-MuL">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgW-L8-MuL">
                     <rect key="frame" x="0.0" y="70" width="600" height="530"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8y-80-IPd">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8y-80-IPd">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeQ-YT-EVS" userLabel="Top Row">
@@ -45,22 +46,39 @@
                                 <constraint firstAttribute="centerY" secondItem="aEo-nw-KqU" secondAttribute="centerY" id="ZLp-dn-HE0"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N54-sI-fyy" userLabel="Bottom Row">
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N54-sI-fyy" userLabel="Bottom Row">
                             <rect key="frame" x="0.0" y="45" width="600" height="20"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLa-Cc-otH">
                                     <rect key="frame" x="10" y="-1" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="wPU-9v-xEX"/>
+                                        <constraint firstAttribute="width" constant="20" id="xRu-8q-tEC"/>
+                                    </constraints>
                                     <state key="normal" image="LeftArrow.png">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="wPU-9v-xEX"/>
+                                        </mask>
+                                    </variation>
                                     <connections>
                                         <action selector="onBack:" destination="-1" eventType="touchUpInside" id="fi0-De-gmn"/>
                                     </connections>
                                 </button>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1D9-n8-dRF" userLabel="story TB area">
+                                    <rect key="frame" x="50" y="0.0" width="530" height="20"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstItem="1D9-n8-dRF" firstAttribute="top" secondItem="N54-sI-fyy" secondAttribute="top" id="HfU-rY-wFf"/>
+                                <constraint firstItem="1D9-n8-dRF" firstAttribute="leading" secondItem="xLa-Cc-otH" secondAttribute="trailing" constant="20" id="WPB-JL-vb7"/>
+                                <constraint firstAttribute="trailing" secondItem="1D9-n8-dRF" secondAttribute="trailing" constant="20" id="drt-65-f3H"/>
                                 <constraint firstAttribute="centerY" secondItem="xLa-Cc-otH" secondAttribute="centerY" id="gl3-wg-teF"/>
+                                <constraint firstAttribute="bottom" secondItem="1D9-n8-dRF" secondAttribute="bottom" id="jUG-2R-c5V"/>
                                 <constraint firstAttribute="height" constant="20" id="kuj-ah-c4A"/>
                                 <constraint firstItem="xLa-Cc-otH" firstAttribute="leading" secondItem="N54-sI-fyy" secondAttribute="leading" constant="10" id="lYw-Jo-xW0"/>
                             </constraints>

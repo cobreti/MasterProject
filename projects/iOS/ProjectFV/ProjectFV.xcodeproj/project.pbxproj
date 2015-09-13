@@ -25,6 +25,7 @@
 		16247E291B5494B200F1D341 /* PanDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16247E281B5494B200F1D341 /* PanDiagramAction.swift */; };
 		163694D31B48DE49000EAF38 /* DiagramsHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163694D21B48DE49000EAF38 /* DiagramsHistoryController.swift */; };
 		163694D51B4971D0000EAF38 /* ViewDrawingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163694D41B4971D0000EAF38 /* ViewDrawingMode.swift */; };
+		163999F61BA616DB00E63C24 /* SchematicViewTBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163999F51BA616DB00E63C24 /* SchematicViewTBController.swift */; };
 		163EFBE51B121EAF004C56E7 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE41B121EAF004C56E7 /* Vector2D.swift */; };
 		163EFBE71B1220D6004C56E7 /* AxisSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE61B1220D6004C56E7 /* AxisSystem.swift */; };
 		163EFBE91B12321C004C56E7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EFBE81B12321C004C56E7 /* LinkType.swift */; };
@@ -287,6 +288,7 @@
 		16247E281B5494B200F1D341 /* PanDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PanDiagramAction.swift; path = Actions/ActionObjects/PanDiagramAction.swift; sourceTree = "<group>"; };
 		163694D21B48DE49000EAF38 /* DiagramsHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramsHistoryController.swift; path = Stories/SchematicView/DiagramsHistoryController.swift; sourceTree = "<group>"; };
 		163694D41B4971D0000EAF38 /* ViewDrawingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewDrawingMode.swift; path = Stories/SchematicView/ViewDrawingMode.swift; sourceTree = "<group>"; };
+		163999F51BA616DB00E63C24 /* SchematicViewTBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchematicViewTBController.swift; path = Stories/SchematicView/SchematicViewTBController.swift; sourceTree = "<group>"; };
 		163EFBE41B121EAF004C56E7 /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector2D.swift; path = ../../../../sources/Shapes/Vector2D.swift; sourceTree = "<group>"; };
 		163EFBE61B1220D6004C56E7 /* AxisSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisSystem.swift; path = ../../../../sources/Shapes/AxisSystem.swift; sourceTree = "<group>"; };
 		163EFBE81B12321C004C56E7 /* LinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkType.swift; path = ../../../../sources/DiagramElements/LinkType.swift; sourceTree = "<group>"; };
@@ -809,6 +811,7 @@
 				163694D21B48DE49000EAF38 /* DiagramsHistoryController.swift */,
 				163694D41B4971D0000EAF38 /* ViewDrawingMode.swift */,
 				B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */,
+				163999F51BA616DB00E63C24 /* SchematicViewTBController.swift */,
 			);
 			name = SchematicView;
 			sourceTree = "<group>";
@@ -1353,6 +1356,7 @@
 				163694D31B48DE49000EAF38 /* DiagramsHistoryController.swift in Sources */,
 				16C0E7A51B55E2EC00AEA0A0 /* ShowDiagramAction.swift in Sources */,
 				16E1C5BB1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift in Sources */,
+				163999F61BA616DB00E63C24 /* SchematicViewTBController.swift in Sources */,
 				16C0E7A31B55E1B200AEA0A0 /* FileViewAction.swift in Sources */,
 				16C0E7A91B57EE7F00AEA0A0 /* ExitSubDiagramAction.swift in Sources */,
 				16247E181B51DBDB00F1D341 /* Action.swift in Sources */,
