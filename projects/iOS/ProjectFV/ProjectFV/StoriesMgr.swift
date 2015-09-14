@@ -18,16 +18,19 @@ class StoriesMgr : ActionListener {
     }
     
     func push( story : Story ) {
-        
-        if let wnd = UIApplication.sharedApplication().keyWindow {
-        
-            _stories.append(story)
-            story.ownerStoriesMgr = self
 
-            activateStory(story)
-        }
+        _stories.append(story)
+        story.ownerStoriesMgr = self
 
-        _controller.enableBackButton( _stories.count > 1 )
+        activateStory(story)
+//        if let wnd = UIApplication.sharedApplication().keyWindow {
+//
+//            story.ownerStoriesMgr = self
+//
+//            activateStory(story)
+//        }
+//
+//        _controller.enableBackButton( _stories.count > 1 )
     }
     
     func pop() {
@@ -45,13 +48,15 @@ class StoriesMgr : ActionListener {
             activateStory(currentStory)
         }
 
-        _controller.enableBackButton( _stories.count > 1 )
+//        _controller.enableBackButton( _stories.count > 1 )
     }
 
     func activateStory(story: Story) {
         _controller.setStoryView(story.view)
         _controller.setStoryTB(story.toolbar)
         story.onActivate()
+
+        _controller.enableBackButton( _stories.count > 1 )
     }
 
     func onWindowReady(viewContainer: UIView) {

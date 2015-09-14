@@ -10,16 +10,10 @@ class StoriesBoardController : UIViewController {
 
     func setStoryView(view: UIView) {
 
-        if let v = _currentStoryView {
-            v.removeFromSuperview()
-        }
-
         if let container = _storyViewContainer {
             _storyViewContainer.addSubview(view)
             view.frame = _storyViewContainer.bounds
         }
-
-        _currentStoryView = view
     }
 
     override func viewDidLoad() {
@@ -71,7 +65,5 @@ class StoriesBoardController : UIViewController {
     @IBOutlet weak var _backButton: UIButton!
     @IBOutlet weak var _storyViewContainer: UIView!
     @IBOutlet weak var _versionLabel: UILabel!
-
-    var _currentStoryView : UIView!
 }
 
