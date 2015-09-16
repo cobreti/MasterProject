@@ -146,7 +146,6 @@
 		B02F3309D13C89183D00C203 /* DisplayGraph_EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */; };
 		B02F33338E3FB2ED18E9EA66 /* HierachicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */; };
 		B02F33FE2B92A937DBE7F8F7 /* HierarchicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */; };
-		B02F3407ABF2FE3F93FB2E0E /* StoriesBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3169C232919A9219E048 /* StoriesBoardController.swift */; };
 		B02F34624BBDC43B91CD5DEE /* TreeItemExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B87B2EEFF186CBEA8F0 /* TreeItemExpanded.swift */; };
 		B02F34BB167D35E632578E5B /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = B02F381A4E25B7456735F63C /* folder.png */; };
 		B02F34E3D5868FBC08036CCF /* DisplayGraphDrawParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3626A63FD0EA5E397C7F /* DisplayGraphDrawParams.swift */; };
@@ -169,9 +168,11 @@
 		B02F3B3419ADBE03038C3515 /* MethodSelectionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */; };
 		B02F3B4C2216F0B6BB77DA45 /* TreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F303F237A284112FED013 /* TreeController.swift */; };
 		B02F3B8F8B85F7C7E9BF61AB /* DisplayGraphItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3F2AF60B208D8BD4B088 /* DisplayGraphItem.swift */; };
+		B02F3BB292CEB0883138A3AC /* StoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F38D54F7E926D9C158418 /* StoryType.swift */; };
 		B02F3BBD06EEC7268FEB372B /* DisplayGraph_Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A4B3BB325A38650561F /* DisplayGraph_Element.swift */; };
 		B02F3BD2D8752D8F13DD7EF7 /* RecenterDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */; };
 		B02F3CC589F4D1306F2CF041 /* ProjectSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */; };
+		B02F3D177B563204F6D97CBB /* StoriesBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3FBF4A3CA9DDC2726045 /* StoriesBoardController.swift */; };
 		B02F3D38C476C171D08E4F00 /* MethodSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */; };
 		B02F3E18136AE7EDDEF7D031 /* DiagramHistoryThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */; };
 		B02F3E469FB70DF8D315CB02 /* HistoryDiagramSelectedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */; };
@@ -406,7 +407,6 @@
 		16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorEndPointParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift; sourceTree = "<group>"; };
 		B02F303F237A284112FED013 /* TreeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeController.swift; path = Stories/HerarchicView/TreeController.swift; sourceTree = "<group>"; };
 		B02F30B8A6A892B198D56B7A /* DisplayGraphs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraphs.swift; sourceTree = "<group>"; };
-		B02F3169C232919A9219E048 /* StoriesBoardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoriesBoardController.swift; path = Stories/StoriesBoardController.swift; sourceTree = "<group>"; };
 		B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_EndPoint.swift; sourceTree = "<group>"; };
 		B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataSource.swift; path = Stories/HerarchicView/TreeTableDataSource.swift; sourceTree = "<group>"; };
 		B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectSelectionStory.swift; path = Stories/ProjectSelection/ProjectSelectionStory.swift; sourceTree = "<group>"; };
@@ -425,6 +425,7 @@
 		B02F388F4CDD1992AA97E9B0 /* RechercheItemSelectedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemSelectedAction.swift; path = Actions/ActionObjects/RechercheItemSelectedAction.swift; sourceTree = "<group>"; };
 		B02F38A82FCE0F348562B663 /* MethodSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionViewController.swift; path = Stories/MethodSelection/MethodSelectionViewController.swift; sourceTree = "<group>"; };
 		B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WriteQuestionAnswerAction.swift; path = Actions/ActionObjects/WriteQuestionAnswerAction.swift; sourceTree = "<group>"; };
+		B02F38D54F7E926D9C158418 /* StoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryType.swift; path = Stories/StoryType.swift; sourceTree = "<group>"; };
 		B02F3939CD236957F4EED823 /* DisplayGraph_GeneralizationEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_GeneralizationEndPoint.swift; sourceTree = "<group>"; };
 		B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDiagramSelectedAction.swift; path = Actions/ActionObjects/HistoryDiagramSelectedAction.swift; sourceTree = "<group>"; };
 		B02F3A0B131D57B393B90497 /* RechercheItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemController.swift; path = Stories/RechercheSelection/RechercheItemController.swift; sourceTree = "<group>"; };
@@ -446,6 +447,7 @@
 		B02F3EFAE6EE14C69CB5857A /* DisplayGraphItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraphItems.swift; sourceTree = "<group>"; };
 		B02F3F2AF60B208D8BD4B088 /* DisplayGraphItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraphItem.swift; sourceTree = "<group>"; };
 		B02F3F867005CFB33B7A4A98 /* TreeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItem.swift; path = Stories/HerarchicView/TreeItem.swift; sourceTree = "<group>"; };
+		B02F3FBF4A3CA9DDC2726045 /* StoriesBoardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoriesBoardController.swift; path = Stories/StoriesBoardController.swift; sourceTree = "<group>"; };
 		B02F3FE2ADC5ED662181720C /* RechercheItemControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemControllerDelegate.swift; path = Stories/RechercheSelection/RechercheItemControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -572,17 +574,18 @@
 		1642F16B1B1D392800AA600D /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				B02F3FBF4A3CA9DDC2726045 /* StoriesBoardController.swift */,
+				1642F16C1B1D396B00AA600D /* StoriesMgr.swift */,
+				1642F16E1B1D398600AA600D /* Story.swift */,
 				166405891B3707B3003F720A /* FileView */,
 				16A44FB91B23D14400ABDC4E /* DiagramSelection */,
 				16CF29C31B2393E700E72CCA /* SchematicView */,
-				B02F3169C232919A9219E048 /* StoriesBoardController.swift */,
-				1642F16C1B1D396B00AA600D /* StoriesMgr.swift */,
-				1642F16E1B1D398600AA600D /* Story.swift */,
 				B02F32083F79DAE30C21F4AE /* Questionnaire */,
 				B02F348782D80E0711BFB7B4 /* RechercheSelection */,
 				B02F36C7122ACD3BB8C1EB9E /* MethodSelection */,
 				B02F3F209C12C1DC8CF7CA3B /* HierarchicView */,
 				B02F359FEB6A1A02FB349D28 /* ProjectSelection */,
+				B02F38D54F7E926D9C158418 /* StoryType.swift */,
 			);
 			name = Stories;
 			sourceTree = "<group>";
@@ -1403,7 +1406,8 @@
 				B02F3156EF0DDA1AE0958CE0 /* TreeItemCollapsed.swift in Sources */,
 				B02F3ED456E0667EA94CB2BE /* TreeItemSelected.swift in Sources */,
 				B02F37AE70093ECFD61599AA /* DisplayGraph_Label.swift in Sources */,
-				B02F3407ABF2FE3F93FB2E0E /* StoriesBoardController.swift in Sources */,
+				B02F3D177B563204F6D97CBB /* StoriesBoardController.swift in Sources */,
+				B02F3BB292CEB0883138A3AC /* StoryType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

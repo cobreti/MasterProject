@@ -119,6 +119,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/ViewDrawingMode.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/StoriesBoardController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/StoryType.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/StoriesMgr.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Story.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFVTests/Info.plist" isTestSource="false" />

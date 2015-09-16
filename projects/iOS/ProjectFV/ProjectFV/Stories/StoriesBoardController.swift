@@ -16,6 +16,14 @@ class StoriesBoardController : UIViewController {
         }
     }
 
+    func setModalStoryView(view: UIView) {
+
+        if let wnd = _storyViewContainer.window {
+           wnd.addSubview(view)
+            view.frame = wnd.bounds
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -11,7 +11,13 @@ import UIKit
 import DiagramElements
 
 class FileViewStory : Story {
-    
+
+    override var type: StoryType {
+        get {
+            return .Modal
+        }
+    }
+
     override var view: UIView {
         get {
             return _controller.view

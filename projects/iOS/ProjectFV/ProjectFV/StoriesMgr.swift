@@ -52,11 +52,18 @@ class StoriesMgr : ActionListener {
     }
 
     func activateStory(story: Story) {
-        _controller.setStoryView(story.view)
-        _controller.setStoryTB(story.toolbar)
-        story.onActivate()
 
-        _controller.enableBackButton( _stories.count > 1 )
+        switch story.type {
+
+            case .Default:
+                _controller.setStoryView(story.view)
+                _controller.setStoryTB(story.toolbar)
+                story.onActivate()
+                _controller.enableBackButton( _stories.count > 1 )
+
+            case .Modal:
+                _controller.setModalStoryView(story.view)
+        }
     }
 
     func onWindowReady(viewContainer: UIView) {
