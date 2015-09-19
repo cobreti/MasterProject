@@ -52,7 +52,7 @@ class DisplayGraph_Link : DisplayGraphItem {
                 CGContextAddLineToPoint(params.context, CGFloat(portalPt.x), CGFloat(portalPt.y))
             }
 
-            CGContextDrawPath(params.context, kCGPathStroke)
+            CGContextDrawPath(params.context, CGPathDrawingMode.Stroke)
 
 //            switch _type {
 //

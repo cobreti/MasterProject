@@ -88,25 +88,26 @@ class DiagramView : UIView {
         
         super.drawRect(dirtyRect)
 
-        let ctx : CGContext = UIGraphicsGetCurrentContext()
+        if let ctx : CGContext = UIGraphicsGetCurrentContext() {
 
-        if let  diag = _diagram,
-                portal = diagramPortal {
+            if let  diag = _diagram,
+                    portal = diagramPortal {
 
-            let diagName = diag.name
-            let graphs = DisplayGraphs.instance
-            let params = DisplayGraphDrawParams(    ctx: ctx,
-                                                    portal: portal,
-                                                    drawingMode: _drawingMode )
+                let diagName = diag.name
+                let graphs = DisplayGraphs.instance
+                let params = DisplayGraphDrawParams(    ctx: ctx,
+                                                        portal: portal,
+                                                        drawingMode: _drawingMode )
 
-            if let graph = graphs.get(diagName) {
+                if let graph = graphs.get(diagName) {
 
-                graph.draw(params)
+                    graph.draw(params)
+                }
+    //            else if let graph = buildDisplayGraph() {
+    //                graphs.add(graph)
+    //                graph.draw(params)
+    //            }
             }
-//            else if let graph = buildDisplayGraph() {
-//                graphs.add(graph)
-//                graph.draw(params)
-//            }
         }
     }
 
@@ -115,9 +116,9 @@ class DiagramView : UIView {
         if let  diag = _diagram {
 
             let diagName = diag.name
-            var graph = DisplayGraph(name: diagName)
+            let graph = DisplayGraph(name: diagName)
 
-            for (id, prim) in diag.primitives {
+            for (_, prim) in diag.primitives {
 
                 if let elm = prim as? Element {
                     createDisplayGraphElement(graph, elm: elm)
@@ -135,20 +136,20 @@ class DiagramView : UIView {
 
     func createDisplayGraphElement(graph: DisplayGraph, elm: Element) {
 
-        var dgElm = DisplayGraph_Element(rect: elm.box)
+        let dgElm = DisplayGraph_Element(rect: elm.box)
 
         if let  doc = _document,
                 model = doc.models.get(elm.modelId) {
 
             if let  diagram = _diagram,
-                    ref = model.fileReferences.getForParentDiagram(diagram.name),
+                    _ = model.fileReferences.getForParentDiagram(diagram.name),
                     img = UIImage(named: "file.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) {
                 dgElm.fileIcon = img
             }
 
             if let  diagram = _diagram,
                     ref = model.subDiagrams.getForParentDiagram(diagram.name),
-                    subDiagram = doc.diagrams.get(ref.diagramName),
+                    _ = doc.diagrams.get(ref.diagramName),
                     img = UIImage(named: "subdiagram.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) where !diagramViewsManager.contains(ref.diagramName) {
                 dgElm.subDiagramIcon = img
             }
@@ -163,7 +164,7 @@ class DiagramView : UIView {
 
     func createDisplayGraphLink(graph: DisplayGraph, lnk: Link) {
 
-        var dgLnk = DisplayGraph_Link(pts: lnk.segment, type: lnk.type)
+        let dgLnk = DisplayGraph_Link(pts: lnk.segment, type: lnk.type)
 
         graph.items.add(dgLnk)
 
@@ -189,7 +190,7 @@ class DiagramView : UIView {
 
         if lnk.type == .generalization {
 
-            var dgEndPt = DisplayGraph_GeneralizationEndPoint(  p1: lnk.segment.get(0),
+            let dgEndPt = DisplayGraph_GeneralizationEndPoint(  p1: lnk.segment.get(0),
                                                                 p2: lnk.segment.get(1))
             graph.items.add(dgEndPt)
         }

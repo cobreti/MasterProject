@@ -133,7 +133,7 @@ class DisplayGraph_Element : DisplayGraphItem {
 
         CGContextSetFontSize(context, 8.0)
         
-        rc.inset(dx: 0, dy: (rc.height - rcStr.size.height)/2)
+        rc.insetInPlace(dx: 0, dy: (rc.height - rcStr.size.height)/2)
 
         name.drawWithRect(  rc,
                             options: strOptions,

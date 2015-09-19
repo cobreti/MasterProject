@@ -33,9 +33,8 @@ class StoriesBoardController : UIViewController {
     func setVersionLabel() {
 
         if let  dict = NSBundle.mainBundle().infoDictionary,
-                versionKey = NSString(UTF8String: "CFBundleShortVersionString"),
-                version = dict[versionKey] as? String,
-                build = dict[kCFBundleVersionKey] as? String {
+                version = dict["CFBundleShortVersionString"] as? String,
+                build = dict[kCFBundleVersionKey as String] as? String {
 
             _versionLabel.text = "v\(version).\(build)"
         }

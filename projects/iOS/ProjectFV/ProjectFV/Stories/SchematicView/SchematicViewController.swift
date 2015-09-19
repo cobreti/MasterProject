@@ -88,8 +88,8 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
      
         if let dgmView = controller.diagramView {
             let pinPt = dgmView.pinPoint!
-            let x = pinPt.x + dgmView.frame.origin.x
-            let y = pinPt.y + dgmView.frame.origin.y
+            _ = pinPt.x + dgmView.frame.origin.x
+            _ = pinPt.y + dgmView.frame.origin.y
             
             let dx = (dgmView.frame.size.width - 10) / 2
             let dy = (dgmView.frame.size.height - 10) / 2
@@ -213,7 +213,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     func onDiagramViewActivated(    oldDiagramView: DiagramViewController!,
                                     newDiagramView: DiagramViewController ) {
      
-        if let ctrller = oldDiagramView {
+        if let _ = oldDiagramView {
             _diagramsHistoryController.add(oldDiagramView)
         }
     }

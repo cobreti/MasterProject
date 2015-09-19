@@ -36,9 +36,10 @@ class FileViewController : UIViewController {
 
         let bundle = NSBundle.mainBundle();
         
-        if let  url = bundle.URLForResource("index", withExtension: "html", subdirectory: "EmbeddedRes/CodeSite"),
-                filePath = _fileURL.absoluteString,
-                indexPath = url.absoluteString {
+        if let  url = bundle.URLForResource("index", withExtension: "html", subdirectory: "EmbeddedRes/CodeSite") {
+        
+            let filePath = _fileURL.absoluteString
+            let indexPath = url.absoluteString
                 
             if let components = NSURLComponents(string: indexPath)  {
                 components.query = "file=\(filePath)"

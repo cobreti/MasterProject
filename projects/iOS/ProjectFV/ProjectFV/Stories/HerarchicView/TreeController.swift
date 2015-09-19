@@ -59,7 +59,7 @@ class TreeController : NSObject, UITableViewDelegate {
             else {
 
                 actionsBus.send( TreeItemSelected(node: node, sender: self) )
-                debugPrintln("item selected for path : \(node.item.path)")
+                debugPrint("item selected for path : \(node.item.path)")
                 actionsBus.send(FileViewAction(file: node.item.path, sender: self))
             }
         }

@@ -51,7 +51,7 @@ class Application : ActionListener {
     
     func loadDiagrams() {
     
-        var proj = VpProject( document: _document )
+        let proj = VpProject( document: _document )
         
         if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
                                                             withExtension: "xml",

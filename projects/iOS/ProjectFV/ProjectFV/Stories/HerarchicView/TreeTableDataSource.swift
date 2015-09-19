@@ -48,7 +48,7 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
             rebuildIndex()
         }
 
-        var cell : UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("TreeViewCell") as? UITableViewCell
+        var cell : UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("TreeViewCell")
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier:"TreeViewCell")
         }
@@ -92,7 +92,7 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
 
     func collapse( node: TreeTableDataNode ) -> Int {
 
-        var count : Int = node.getSubNodesCount()
+        let count : Int = node.getSubNodesCount()
 
         node.removeChildNodes()
         setDirty()

@@ -33,7 +33,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
 
         let app = Application.instance()
 
-        if let diagram = app.document.diagrams.get("main") {
+        if let _ = app.document.diagrams.get("main") {
 
             let story = SchematicViewStory(diagramName: "main")
             Application.instance().actionsBus.send( OpenStoryAction(story: story, sender: self) )
@@ -50,7 +50,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
 
         if let diag = doc.diagrams.get("Recherches") {
 
-            for (id, p) in diag.primitives {
+            for (_, p) in diag.primitives {
 
                 if let  elm = p as? Element,
                         modelId = elm.modelId,
@@ -69,11 +69,14 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
 
     func addRechercheItem(title: String, question: String) {
 
-        var controller = RechercheItemController(title: title, question: question)
+        let controller = RechercheItemController(title: title, question: question)
         controller.delegate = self
 
-        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        _itemsArea.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        _itemsArea.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+        _itemsArea.translatesAutoresizingMaskIntoConstraints = false
 
         _itemsArea.addSubview(controller.view)
 

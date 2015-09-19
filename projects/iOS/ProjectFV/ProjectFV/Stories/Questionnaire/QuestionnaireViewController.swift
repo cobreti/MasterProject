@@ -24,10 +24,10 @@ class QuestionnaireViewController : UIViewController {
 
         if let diag = _diagram {
 
-            for (id, p) in diag.primitives {
+            for (_, p) in diag.primitives {
 
                 if let elm = p as? Element {
-                    debugPrintln("element with name : \(elm.name)")
+                    debugPrint("element with name : \(elm.name)")
                     addQuestion(elm.name)
                 }
             }
@@ -54,10 +54,12 @@ class QuestionnaireViewController : UIViewController {
 
     func addQuestion(title : String) {
 
-        var controller = QuestionController(question: title)
+        let controller = QuestionController(question: title)
 
-        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        _scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+//        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        _scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        _scrollView.translatesAutoresizingMaskIntoConstraints = false;
 
         _scrollView.addSubview(controller.view)
 
@@ -115,7 +117,7 @@ class QuestionnaireViewController : UIViewController {
             )
         }
 
-        let bounds = controller.view.bounds
+        _ = controller.view.bounds
         controller.view.frame = CGRect(x:0, y:_nextYPos, width:_scrollView.bounds.width, height: 170)
         controller.view.setNeedsLayout()
         _nextYPos += 170

@@ -40,7 +40,7 @@ class SchematicViewStory : Story {
     }
     
     func onBack(sender: AnyObject, args: [String: AnyObject]!) {
-        debugPrintln("onBack story handler")
+        debugPrint("onBack story handler")
         Application.instance().actionsBus.send( CloseStoryAction(story: self, sender: self) )
 //        ownerStoriesMgr?.pop(self)
     }

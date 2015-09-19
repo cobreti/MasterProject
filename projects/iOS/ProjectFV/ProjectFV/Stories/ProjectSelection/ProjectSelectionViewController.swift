@@ -24,7 +24,7 @@ class ProjectSelectionViewController : UIViewController {
 
         doc.clear()
 
-        var proj = VpProject( document: doc )
+        let proj = VpProject( document: doc )
 
         if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
                                                             withExtension: "xml",
@@ -46,7 +46,7 @@ class ProjectSelectionViewController : UIViewController {
 
         doc.clear()
 
-        var proj = VpProject( document: doc )
+        let proj = VpProject( document: doc )
 
         if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
                                                             withExtension: "xml",
