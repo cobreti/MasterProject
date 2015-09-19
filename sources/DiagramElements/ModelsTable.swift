@@ -21,11 +21,11 @@ public class ModelsTable {
     
     public func get( id : String ) -> Model! {
         
-        if let m = _models[id] {
+        if let _ = _models[id] {
             return _models[id]
         }
         
-        for (childId, childModel) in _models {
+        for (_, childModel) in _models {
             
 //            debugPrintln("looking for id \(id) in \(childId)")
             

@@ -65,7 +65,7 @@ class XmlConnectorParser : XmlSubTreeParser {
 
         super.onElementParsingStarting(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
         
-        var numberFormatter = NSNumberFormatter()
+        let numberFormatter = NSNumberFormatter()
         
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         

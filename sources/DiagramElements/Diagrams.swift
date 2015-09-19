@@ -24,7 +24,7 @@ public class Diagrams {
         
         var list : [String] = []
         
-        for (name, obj) in _layers {
+        for (name, _) in _layers {
             list.append(name)
         }
         

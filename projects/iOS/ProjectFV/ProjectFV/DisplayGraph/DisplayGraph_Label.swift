@@ -22,12 +22,12 @@ class DisplayGraph_Label : DisplayGraphItem {
             return
         }
 
-        var parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
-        var strSize = _text.sizeWithAttributes([
+        let parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
+        let strSize = _text.sizeWithAttributes([
                                                       NSParagraphStyleAttributeName: parStyle
                                               ])
-        var portalPt = params.portal.pointFromDiagramToPortal( Point(x: _pos.x+strSize.width/2, y: _pos.y+strSize.height/2) )
-        var rc : CGRect = CGRect(x: portalPt.x, y: portalPt.y, width: strSize.width, height: strSize.height)
+        let portalPt = params.portal.pointFromDiagramToPortal( Point(x: _pos.x+strSize.width/2, y: _pos.y+strSize.height/2) )
+        let rc : CGRect = CGRect(x: portalPt.x, y: portalPt.y, width: strSize.width, height: strSize.height)
 
         parStyle.alignment = NSTextAlignment.Center
 

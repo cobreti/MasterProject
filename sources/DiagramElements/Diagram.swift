@@ -56,7 +56,7 @@ public class Diagram : CustomDebugStringConvertible {
         
         _box = nil
         
-        for (id, p) in _primitives {
+        for (_, p) in _primitives {
             
             if let layerBox = self.box {
                 _box = Rect.union(layerBox, r2: p.box)
@@ -80,7 +80,7 @@ public class Diagram : CustomDebugStringConvertible {
     public func primitivesFromPt(pt: Point) -> [Primitive] {
         var res : [Primitive] = []
         
-        for (key, item) in _primitives {
+        for (_, item) in _primitives {
             
             if let elm = item as? Element where elm.box.contains(pt) {
                 res.append(elm)

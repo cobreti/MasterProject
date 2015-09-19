@@ -68,7 +68,7 @@ class XmlReferenceParser : XmlSubTreeParser {
             _diagramOrigin = value
         }
 
-        if let  displayName = attributeDict["displayName"] as? String,
+        if let  _ = attributeDict["displayName"] as? String,
                 pathName = attributeDict["pathName"] as? String,
                 value = attributeDict["value"] as? String {
 

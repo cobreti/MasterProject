@@ -17,9 +17,9 @@ class DisplayGraph_GeneralizationEndPoint : DisplayGraph_EndPoint {
 
         let p1 = _p1
         let p2 = _p2
-        var portalPt = params.portal.pointFromDiagramToPortal(p1)
-        var portalEndPt1 = params.portal.pointFromDiagramToPortal(p1)
-        var portalEndPt2 = params.portal.pointFromDiagramToPortal(p2)
+        _ = params.portal.pointFromDiagramToPortal(p1)
+        let portalEndPt1 = params.portal.pointFromDiagramToPortal(p1)
+        let portalEndPt2 = params.portal.pointFromDiagramToPortal(p2)
 
         let axisSystem = AxisSystem(p1: portalEndPt1, p2: portalEndPt2)
 

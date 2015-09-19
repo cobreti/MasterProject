@@ -50,12 +50,12 @@ class XmlModelParser : XmlSubTreeParser {
                     pushElementParser( XmlModelsParser(name: "ChildModels", parent: parentModel, delegate: self) )
                 }
             case "FromEnd":
-                if let parentModel = _model {
+                if let _ = _model {
                     _model.linkEndPointFrom = LinkEndPoint()
                     pushElementParser( XmlConnectorEndPointParser(name: "FromEnd", linkEndPoint: _model.linkEndPointFrom, delegate: self) )
                 }
             case "ToEnd":
-                if let parentModel = _model {
+                if let _ = _model {
                     _model.linkEndPointTo = LinkEndPoint()
                     pushElementParser( XmlConnectorEndPointParser(name: "ToEnd", linkEndPoint: _model.linkEndPointTo, delegate: self) )
                 }
@@ -102,7 +102,7 @@ class XmlModelParser : XmlSubTreeParser {
 //            debugPrint("sub diagram with name : \(diagramName)")
 //        }
 
-        if let  name = attributeDict["name"] as? String,
+        if let  _ = attributeDict["name"] as? String,
                 value = attributeDict["value"] as? String {
             _model?.name = value
         }

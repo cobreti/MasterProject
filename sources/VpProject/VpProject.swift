@@ -20,7 +20,7 @@ public class VpProject {
 
     public func load( url : NSURL ) {
 
-        var parser = XmlDocParser(doc: _document)
+        let parser = XmlDocParser(doc: _document)
         parser.parse(url)
     }
 

@@ -16,8 +16,8 @@ class DisplayGraph_SharedEndPoint : DisplayGraph_EndPoint {
         }
 
 //        var portalPt = portal.pointFromDiagramToPortal(p1)
-        var portalEndPt1 = params.portal.pointFromDiagramToPortal(_p1)
-        var portalEndPt2 = params.portal.pointFromDiagramToPortal(_p2)
+        let portalEndPt1 = params.portal.pointFromDiagramToPortal(_p1)
+        let portalEndPt2 = params.portal.pointFromDiagramToPortal(_p2)
 
         let axisSystem = AxisSystem(p1: portalEndPt1, p2: portalEndPt2)
 

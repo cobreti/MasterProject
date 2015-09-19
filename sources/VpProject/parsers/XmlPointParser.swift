@@ -21,7 +21,7 @@ class XmlPointParser : XmlElementParser {
 
         super.onElementParsingStarting(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
 
-        var numberFormatter = NSNumberFormatter()
+        let numberFormatter = NSNumberFormatter()
         
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         

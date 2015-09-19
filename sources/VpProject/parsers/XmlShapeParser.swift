@@ -39,7 +39,7 @@ class XmlShapeParser : XmlSubTreeParser {
 
         super.onElementParsingStarting(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
 
-        var numberFormatter = NSNumberFormatter()
+        let numberFormatter = NSNumberFormatter()
         
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         
@@ -55,7 +55,7 @@ class XmlShapeParser : XmlSubTreeParser {
                 height = numberFormatter.numberFromString(heightStr)?.floatValue,
                 modelId = attributeDict["model"] as? String {
         
-            var elm = DiagramElements.Element(ownerDiagram: _diagram)
+            let elm = DiagramElements.Element(ownerDiagram: _diagram)
             
             elm.box = Rect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(width), height: CGFloat(height))
             elm.name = name

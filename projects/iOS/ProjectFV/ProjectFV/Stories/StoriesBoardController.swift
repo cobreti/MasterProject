@@ -10,7 +10,7 @@ class StoriesBoardController : UIViewController {
 
     func setStoryView(view: UIView) {
 
-        if let container = _storyViewContainer {
+        if let _ = _storyViewContainer {
             _storyViewContainer.addSubview(view)
             view.frame = _storyViewContainer.bounds
         }
@@ -47,13 +47,11 @@ class StoriesBoardController : UIViewController {
 
     func setStoryTB(tbView : UIView!) {
 
-        for obj in _storyTBArea.subviews {
-            if let v = obj as? UIView {
-                v.removeFromSuperview()
-            }
+        for v in _storyTBArea.subviews {
+            v.removeFromSuperview()
         }
 
-        if let v = tbView {
+        if let _ = tbView {
             _storyTBArea.addSubview(tbView)
             tbView.frame = _storyTBArea.bounds
             tbView.setNeedsLayout()
