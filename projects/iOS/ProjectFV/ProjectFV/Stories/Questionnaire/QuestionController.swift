@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-class QuestionController : UIViewController {
+class QuestionController : UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -23,25 +23,62 @@ class QuestionController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        _answerTextView.layer.borderWidth = 1.0
-        _answerTextView.layer.borderColor = UIColor.blackColor().CGColor
-
         _questionLabel.text = _question
+
+        _answerChoices?.dataSource = self
+        _answerChoices?.delegate = self
     }
 
-    func writeAnswer() {
+//    func writeAnswer() {
+//
+//        if let  q = _questionLabel.text,
+//        a = _answerTextView.text {
+//            Application.instance().actionsBus.send(
+//                WriteQuestionAnswerAction(question: q, answer: a, sender: self)
+//            )
+//        }
+//    }
 
-        if let  q = _questionLabel.text,
-        a = _answerTextView.text {
-            Application.instance().actionsBus.send(
-                WriteQuestionAnswerAction(question: q, answer: a, sender: self)
-            )
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+        if let reusableCell = tableView.dequeueReusableCellWithIdentifier("DiagramSelection") {
+
+//            reusableCell.textLabel?.text = _diagramsList[indexPath.indexAtPosition(1)]
+            reusableCell.textLabel?.text = "reused row"
+            if let selection = _selectedIndex where indexPath == selection {
+                reusableCell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            }
+            return reusableCell
         }
+
+        var cell = UITableViewCell()
+        cell.textLabel?.text = "row"
+        if let selection = _selectedIndex where indexPath == selection {
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        }
+//        cell.textLabel?.text = _diagramsList[indexPath.indexAtPosition(1)]
+
+        return cell
+    }
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        _selectedIndex = indexPath
+
+        _answerChoices.reloadData()
+    }
+
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+
     }
 
 
+    @IBOutlet weak var _answerChoices: UITableView!
     @IBOutlet weak var _questionLabel: UILabel!
-    @IBOutlet weak var _answerTextView: UITextView!
 
     var _question: String
+    var _selectedIndex: NSIndexPath!
 }

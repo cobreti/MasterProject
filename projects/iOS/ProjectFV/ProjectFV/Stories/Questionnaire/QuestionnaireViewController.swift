@@ -19,20 +19,24 @@ class QuestionnaireViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addQuestion("Éducation")
+        addQuestion("Expérience")
+        addQuestion("Connaissane de UML")
+
 //        let doc = Application.instance().document
-        _diagram = _document.diagrams.get("Questionnaire")
-
-        if let diag = _diagram {
-
-            for (_, p) in diag.primitives {
-
-                if let elm = p as? Element {
-                    debugPrint("element with name : \(elm.name)")
-                    addQuestion(elm.name)
-                }
-            }
-        }
-
+//        _diagram = _document.diagrams.get("Questionnaire")
+//
+//        if let diag = _diagram {
+//
+//            for (_, p) in diag.primitives {
+//
+//                if let elm = p as? Element {
+//                    debugPrint("element with name : \(elm.name)")
+//                    addQuestion(elm.name)
+//                }
+//            }
+//        }
+//
         let cs = _scrollView.contentSize
         _scrollView.contentSize = CGSize(width: cs.width, height: _nextYPos + 300)
     }
@@ -44,9 +48,9 @@ class QuestionnaireViewController : UIViewController {
 
     @IBAction func onContinue(sender: AnyObject) {
 
-        for question in _questions {
-            question.writeAnswer()
-        }
+//        for question in _questions {
+//            question.writeAnswer()
+//        }
 
         Application.instance().actionsBus.send( OpenStoryAction(story: ProjectSelectionStory(), sender: self))
 //        Application.instance().stories.push( RechercheSelectionStory() )
