@@ -19,9 +19,20 @@ class QuestionnaireViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addQuestion("Éducation")
-        addQuestion("Expérience")
-        addQuestion("Connaissane de UML")
+        let education = Question(question: "Éducation")
+        education.add( AnswerChoice(key: "college", text: "Diplôme collégial") )
+        education.add( AnswerChoice(key: "BACC", text: "Baccalauréat") )
+        education.add( AnswerChoice(key: "Master", text: "Maîtrise") )
+        education.add( AnswerChoice(key: "Phd", text: "Doctorat") )
+        education.add( AnswerChoice(key: "autre", text: "Autre") )
+
+        addQuestion(education)
+
+
+//        addQuestion("Expérience")
+
+
+//        addQuestion("Connaissane de UML")
 
 //        let doc = Application.instance().document
 //        _diagram = _document.diagrams.get("Questionnaire")
@@ -56,9 +67,9 @@ class QuestionnaireViewController : UIViewController {
 //        Application.instance().stories.push( RechercheSelectionStory() )
     }
 
-    func addQuestion(title : String) {
+    func addQuestion(question: Question) {
 
-        let controller = QuestionController(question: title)
+        let controller = QuestionController(question: question)
 
         controller.view.translatesAutoresizingMaskIntoConstraints = false
 //        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)

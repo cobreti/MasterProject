@@ -139,6 +139,7 @@
 		B02F301E6FB67B812AB92ADF /* DisplayGraphItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3EFAE6EE14C69CB5857A /* DisplayGraphItems.swift */; };
 		B02F3052DB099C701A7F73C8 /* DisplayGraph_GeneralizationEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3939CD236957F4EED823 /* DisplayGraph_GeneralizationEndPoint.swift */; };
 		B02F30B1EAD97062BB3E8F53 /* RechercheSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F345B968A431F1414649D /* RechercheSelectionStory.swift */; };
+		B02F3127A5B02BF6398BFD9B /* AnswerChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35E961DDD51BF37F2D8B /* AnswerChoice.swift */; };
 		B02F3156EF0DDA1AE0958CE0 /* TreeItemCollapsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35E1C01A01F13C7FC07E /* TreeItemCollapsed.swift */; };
 		B02F324EA2C4BBE8EBA66B13 /* RechercheItemControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3FE2ADC5ED662181720C /* RechercheItemControllerDelegate.swift */; };
 		B02F32888BCE847FB41A2E2E /* WriteQuestionAnswerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */; };
@@ -158,6 +159,7 @@
 		B02F36F70A8469EC39773CE8 /* ProjectSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3CDF44A0CC467A849D7E /* ProjectSelectionViewController.swift */; };
 		B02F36FA275155BBD58427C0 /* TreeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3F867005CFB33B7A4A98 /* TreeItem.swift */; };
 		B02F3749D8FB884CB0595029 /* TreeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3509C60750E4CA0427ED /* TreeItems.swift */; };
+		B02F3790B2D2D0989A162A1E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F34494221EDE7CA9EC1DC /* Question.swift */; };
 		B02F37AE70093ECFD61599AA /* DisplayGraph_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F372904028C1220E9B3E3 /* DisplayGraph_Label.swift */; };
 		B02F3847A86C5D2D71F08523 /* DisplayGraph_CompositionEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3DF83EBA7148B656596B /* DisplayGraph_CompositionEndPoint.swift */; };
 		B02F390BACFBA5E5581CB0A6 /* RechercheSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3D2A7D55282E3F2197A0 /* RechercheSelectionViewController.swift */; };
@@ -410,11 +412,13 @@
 		B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_EndPoint.swift; sourceTree = "<group>"; };
 		B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataSource.swift; path = Stories/HerarchicView/TreeTableDataSource.swift; sourceTree = "<group>"; };
 		B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectSelectionStory.swift; path = Stories/ProjectSelection/ProjectSelectionStory.swift; sourceTree = "<group>"; };
+		B02F34494221EDE7CA9EC1DC /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Stories/Questionnaire/Question.swift; sourceTree = "<group>"; };
 		B02F345B968A431F1414649D /* RechercheSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheSelectionStory.swift; path = Stories/RechercheSelection/RechercheSelectionStory.swift; sourceTree = "<group>"; };
 		B02F34D35C7D3E5690552106 /* DisplayGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph.swift; sourceTree = "<group>"; };
 		B02F3509C60750E4CA0427ED /* TreeItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItems.swift; path = Stories/HerarchicView/TreeItems.swift; sourceTree = "<group>"; };
 		B02F357257A40C9FD7C43DE7 /* QuestionnaireStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireStory.swift; path = Stories/Questionnaire/QuestionnaireStory.swift; sourceTree = "<group>"; };
 		B02F35E1C01A01F13C7FC07E /* TreeItemCollapsed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItemCollapsed.swift; path = Actions/ActionObjects/TreeItemCollapsed.swift; sourceTree = "<group>"; };
+		B02F35E961DDD51BF37F2D8B /* AnswerChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerChoice.swift; path = Stories/Questionnaire/AnswerChoice.swift; sourceTree = "<group>"; };
 		B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionStory.swift; path = Stories/MethodSelection/MethodSelectionStory.swift; sourceTree = "<group>"; };
 		B02F35FB0F03E66AF590258C /* QuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionController.swift; path = Stories/Questionnaire/QuestionController.swift; sourceTree = "<group>"; };
 		B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierachicViewStory.swift; path = Stories/HerarchicView/HierachicViewStory.swift; sourceTree = "<group>"; };
@@ -917,6 +921,8 @@
 				B02F357257A40C9FD7C43DE7 /* QuestionnaireStory.swift */,
 				B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */,
 				B02F35FB0F03E66AF590258C /* QuestionController.swift */,
+				B02F34494221EDE7CA9EC1DC /* Question.swift */,
+				B02F35E961DDD51BF37F2D8B /* AnswerChoice.swift */,
 			);
 			name = Questionnaire;
 			sourceTree = "<group>";
@@ -1408,6 +1414,8 @@
 				B02F37AE70093ECFD61599AA /* DisplayGraph_Label.swift in Sources */,
 				B02F3D177B563204F6D97CBB /* StoriesBoardController.swift in Sources */,
 				B02F3BB292CEB0883138A3AC /* StoryType.swift in Sources */,
+				B02F3790B2D2D0989A162A1E /* Question.swift in Sources */,
+				B02F3127A5B02BF6398BFD9B /* AnswerChoice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

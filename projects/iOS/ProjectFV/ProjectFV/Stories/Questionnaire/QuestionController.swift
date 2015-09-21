@@ -13,7 +13,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
     }
 
 
-    init(question: String) {
+    init(question: Question) {
 
         _question = question
 
@@ -23,7 +23,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        _questionLabel.text = _question
+        _questionLabel.text = _question.question
 
         _answerChoices?.dataSource = self
         _answerChoices?.delegate = self
@@ -40,15 +40,16 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
 //    }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return _question.answerCount
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
+        debugPrint("index at path = \(indexPath)")
+
         if let reusableCell = tableView.dequeueReusableCellWithIdentifier("DiagramSelection") {
 
-//            reusableCell.textLabel?.text = _diagramsList[indexPath.indexAtPosition(1)]
-            reusableCell.textLabel?.text = "reused row"
+            reusableCell.textLabel?.text = _question.get(indexPath.indexAtPosition(1))
             if let selection = _selectedIndex where indexPath == selection {
                 reusableCell.accessoryType = UITableViewCellAccessoryType.Checkmark
             }
@@ -56,11 +57,10 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
         }
 
         var cell = UITableViewCell()
-        cell.textLabel?.text = "row"
+        cell.textLabel?.text = _question.get(indexPath.indexAtPosition(1))
         if let selection = _selectedIndex where indexPath == selection {
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
         }
-//        cell.textLabel?.text = _diagramsList[indexPath.indexAtPosition(1)]
 
         return cell
     }
@@ -79,6 +79,6 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var _answerChoices: UITableView!
     @IBOutlet weak var _questionLabel: UILabel!
 
-    var _question: String
+    var _question: Question
     var _selectedIndex: NSIndexPath!
 }
