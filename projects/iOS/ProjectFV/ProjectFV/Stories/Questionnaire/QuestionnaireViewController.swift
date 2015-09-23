@@ -24,7 +24,7 @@ class QuestionnaireViewController : UIViewController {
         education.add( AnswerChoice(key: "BACC", text: "Baccalauréat") )
         education.add( AnswerChoice(key: "Master", text: "Maîtrise") )
         education.add( AnswerChoice(key: "Phd", text: "Doctorat") )
-        education.add( AnswerChoice(key: "autre", text: "Autre") )
+        education.add( AnswerChoice(key: "autre", text: "Autre", useOtherField: true) )
 
         addQuestion(education)
 

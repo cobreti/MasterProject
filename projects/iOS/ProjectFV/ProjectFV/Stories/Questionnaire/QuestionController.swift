@@ -27,6 +27,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
 
         _answerChoices?.dataSource = self
         _answerChoices?.delegate = self
+        _otherField?.hidden = true
     }
 
 //    func writeAnswer() {
@@ -47,19 +48,23 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
 
         debugPrint("index at path = \(indexPath)")
 
+        let answer = _question.get(indexPath.indexAtPosition(1))
+
         if let reusableCell = tableView.dequeueReusableCellWithIdentifier("DiagramSelection") {
 
-            reusableCell.textLabel?.text = _question.get(indexPath.indexAtPosition(1))
+            reusableCell.textLabel?.text = answer.text
             if let selection = _selectedIndex where indexPath == selection {
                 reusableCell.accessoryType = UITableViewCellAccessoryType.Checkmark
             }
             return reusableCell
         }
 
-        var cell = UITableViewCell()
-        cell.textLabel?.text = _question.get(indexPath.indexAtPosition(1))
+        let cell = UITableViewCell()
+        cell.textLabel?.text = answer.text
         if let selection = _selectedIndex where indexPath == selection {
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+
+            _otherField.hidden = !answer.useOtherField
         }
 
         return cell
@@ -76,6 +81,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
     }
 
 
+    @IBOutlet weak var _otherField: UITextView!
     @IBOutlet weak var _answerChoices: UITableView!
     @IBOutlet weak var _questionLabel: UILabel!
 

@@ -27,8 +27,8 @@ class Question {
         _answers.append(choice)
     }
 
-    func get( index: Int ) -> String {
-        return _answers[index].text
+    func get( index: Int ) -> AnswerChoice {
+        return _answers[index]
     }
 
     var _question: String

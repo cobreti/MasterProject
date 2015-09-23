@@ -19,11 +19,19 @@ class AnswerChoice {
         }
     }
 
-    init(key: String, text: String) {
+    var useOtherField : Bool {
+        get {
+            return _useOtherField
+        }
+    }
+
+    init(key: String, text: String, useOtherField: Bool = false) {
         _key = key
         _text = text
+        _useOtherField = useOtherField
     }
 
     var _key : String
     var _text : String
+    var _useOtherField : Bool = false
 }
