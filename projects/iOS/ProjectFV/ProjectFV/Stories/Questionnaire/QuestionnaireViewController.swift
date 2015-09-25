@@ -59,9 +59,9 @@ class QuestionnaireViewController : UIViewController {
 
     @IBAction func onContinue(sender: AnyObject) {
 
-//        for question in _questions {
-//            question.writeAnswer()
-//        }
+        for question in _questions {
+            question.writeAnswer()
+        }
 
         Application.instance().actionsBus.send( OpenStoryAction(story: ProjectSelectionStory(), sender: self))
 //        Application.instance().stories.push( RechercheSelectionStory() )

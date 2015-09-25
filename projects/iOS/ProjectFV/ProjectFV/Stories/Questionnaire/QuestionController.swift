@@ -30,15 +30,27 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
         _otherField?.hidden = true
     }
 
-//    func writeAnswer() {
-//
-//        if let  q = _questionLabel.text,
-//        a = _answerTextView.text {
-//            Application.instance().actionsBus.send(
-//                WriteQuestionAnswerAction(question: q, answer: a, sender: self)
-//            )
-//        }
-//    }
+    func writeAnswer() {
+
+        if let  q = _questionLabel.text {
+
+            var answerText = "none"
+
+            if let answer = _currentAnswer {
+
+                if answer.useOtherField {
+                    answerText = "\(answer.text) --> \(_otherField.text)"
+                }
+                else {
+                    answerText = answer.text
+                }
+            }
+
+            Application.instance().actionsBus.send(
+                WriteQuestionAnswerAction(question: q, answer: answerText, sender: self)
+            )
+        }
+    }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return _question.answerCount
@@ -63,7 +75,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
         cell.textLabel?.text = answer.text
         if let selection = _selectedIndex where indexPath == selection {
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
-
+            _currentAnswer = answer
             _otherField.hidden = !answer.useOtherField
         }
 
@@ -72,6 +84,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         _selectedIndex = indexPath
+        _currentAnswer = nil
 
         _answerChoices.reloadData()
     }
@@ -87,4 +100,5 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
 
     var _question: Question
     var _selectedIndex: NSIndexPath!
+    var _currentAnswer : AnswerChoice!
 }
