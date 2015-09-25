@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Resources/Question.xib" afterPath="$PROJECT_DIR$/ProjectFV/Resources/Question.xib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" />
     </list>
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,8 +94,8 @@
           <file leaf-file-name="AnswerChoice.swift" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/AnswerChoice.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.07964602">
-                  <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+                <state vertical-scroll-proportion="0.7463127">
+                  <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -158,8 +158,8 @@
           <file leaf-file-name="QuestionController.swift" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.26890758">
-                  <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+                <state vertical-scroll-proportion="0.8235294">
+                  <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -254,8 +254,8 @@
         <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionDataSource.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/AnswerChoice.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/Question.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift" />
       </list>
     </option>
   </component>
@@ -857,14 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/AnswerChoice.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.07964602">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -875,8 +867,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26890758">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.8235294">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/Questionnaire/AnswerChoice.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7463127">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding />
         </state>
       </provider>

@@ -28,6 +28,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
         _answerChoices?.dataSource = self
         _answerChoices?.delegate = self
         _otherField?.hidden = true
+        _otherFieldFrame?.hidden = true
     }
 
     func writeAnswer() {
@@ -77,6 +78,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
             _currentAnswer = answer
             _otherField.hidden = !answer.useOtherField
+            _otherFieldFrame.hidden = !answer.useOtherField
         }
 
         return cell
@@ -94,6 +96,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
     }
 
 
+    @IBOutlet weak var _otherFieldFrame: UIView!
     @IBOutlet weak var _otherField: UITextView!
     @IBOutlet weak var _answerChoices: UITableView!
     @IBOutlet weak var _questionLabel: UILabel!

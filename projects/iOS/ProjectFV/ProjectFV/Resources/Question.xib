@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="_answerChoices" destination="PeF-ln-A26" id="tJc-oX-PpG"/>
                 <outlet property="_otherField" destination="por-lj-Yet" id="ee1-ZZ-B0o"/>
+                <outlet property="_otherFieldFrame" destination="Hwr-ls-bNG" id="oUI-Tl-aFa"/>
                 <outlet property="_questionLabel" destination="9mh-jh-Tm0" id="2jp-Hp-4vI"/>
                 <outlet property="view" destination="iN0-l3-epB" id="A1e-6d-ogm"/>
             </connections>
@@ -34,8 +35,13 @@
                         <constraint firstAttribute="width" constant="250" id="7lU-aH-Y9X"/>
                     </constraints>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwr-ls-bNG" userLabel="other frame">
+                    <rect key="frame" x="368" y="98" width="506" height="240"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="por-lj-Yet">
                     <rect key="frame" x="370" y="100" width="502" height="236"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
@@ -47,11 +53,15 @@
                 <constraint firstAttribute="bottom" secondItem="PeF-ln-A26" secondAttribute="bottom" constant="20" id="Dkq-eB-Nrt"/>
                 <constraint firstAttribute="trailing" secondItem="por-lj-Yet" secondAttribute="trailing" constant="50" id="H5g-2o-7d0"/>
                 <constraint firstItem="por-lj-Yet" firstAttribute="top" secondItem="PeF-ln-A26" secondAttribute="top" constant="20" id="H8l-4C-Kdb"/>
+                <constraint firstItem="Hwr-ls-bNG" firstAttribute="leading" secondItem="PeF-ln-A26" secondAttribute="trailing" constant="98" id="Qot-TI-OBv"/>
                 <constraint firstAttribute="trailing" secondItem="9mh-jh-Tm0" secondAttribute="trailing" constant="20" id="SBl-w9-pyl"/>
                 <constraint firstItem="por-lj-Yet" firstAttribute="bottom" secondItem="PeF-ln-A26" secondAttribute="bottom" constant="-20" id="aAy-jN-cW9"/>
                 <constraint firstItem="PeF-ln-A26" firstAttribute="top" secondItem="9mh-jh-Tm0" secondAttribute="bottom" constant="20" id="dlE-Ry-FjL"/>
                 <constraint firstItem="9mh-jh-Tm0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="ezS-4T-cmG"/>
+                <constraint firstAttribute="trailing" secondItem="Hwr-ls-bNG" secondAttribute="trailing" constant="48" id="nzh-83-uqK"/>
                 <constraint firstItem="por-lj-Yet" firstAttribute="leading" secondItem="PeF-ln-A26" secondAttribute="trailing" constant="100" id="pjj-qA-glj"/>
+                <constraint firstItem="Hwr-ls-bNG" firstAttribute="bottom" secondItem="PeF-ln-A26" secondAttribute="bottom" constant="-18" id="sEd-ca-qjD"/>
+                <constraint firstItem="Hwr-ls-bNG" firstAttribute="top" secondItem="PeF-ln-A26" secondAttribute="top" constant="18" id="zpo-8e-LAd"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
