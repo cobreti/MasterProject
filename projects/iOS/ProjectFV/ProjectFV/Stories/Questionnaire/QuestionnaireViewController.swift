@@ -25,9 +25,31 @@ class QuestionnaireViewController : UIViewController {
         education.add( AnswerChoice(key: "Master", text: "Maîtrise") )
         education.add( AnswerChoice(key: "Phd", text: "Doctorat") )
         education.add( AnswerChoice(key: "autre", text: "Autre", useOtherField: true) )
-
         addQuestion(education)
 
+        let umlExp = Question(question: "Connaissance de UML")
+        umlExp.add( AnswerChoice(key: "none", text: "Aucune"))
+        umlExp.add( AnswerChoice(key: "beginner", text: "Débutant"))
+        umlExp.add( AnswerChoice(key: "intermediate", text: "Intermédiaire"))
+        umlExp.add( AnswerChoice(key: "advanced", text: "Avancé"))
+        addQuestion(umlExp)
+
+        let umlUsage = Question(question: "Utilisation de UML")
+        umlUsage.add( AnswerChoice(key: "never", text: "Jamais") )
+        umlUsage.add( AnswerChoice(key: "rarely", text: "Occasionnellement") )
+        umlUsage.add( AnswerChoice(key: "frequently", text: "Fréquemment"))
+        addQuestion(umlUsage)
+
+        let devExp = Question(question: "Expérience en développement logiciel")
+        devExp.add( AnswerChoice(key: "beginner", text: "Débutant (moins de 5 ans)"))
+        devExp.add( AnswerChoice(key: "Intermédiaire", text: "Intermédiaire (5 à 15 ans)"))
+        devExp.add( AnswerChoice(key: "Advanced", text: "Avancé (plus de 15 ans)"))
+        addQuestion(devExp)
+
+        let touchDevice = Question(question: "Possédez ou utilisez vous régulièrement un appareil à écran tactile")
+        touchDevice.add( AnswerChoice(key: "oui", text: "oui"))
+        touchDevice.add( AnswerChoice(key: "non", text: "non"))
+        addQuestion(touchDevice)
 
 //        addQuestion("Expérience")
 
@@ -49,7 +71,7 @@ class QuestionnaireViewController : UIViewController {
 //        }
 //
         let cs = _scrollView.contentSize
-        _scrollView.contentSize = CGSize(width: cs.width, height: _nextYPos + 300)
+        _scrollView.contentSize = CGSize(width: cs.width, height: _nextYPos + 400)
     }
 
     override func viewWillAppear(animated: Bool) {
