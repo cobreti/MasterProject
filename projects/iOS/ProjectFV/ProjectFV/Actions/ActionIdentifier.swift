@@ -29,5 +29,6 @@ enum ActionIdentifier : String {
     case TreeItemExpanded           = "Tree Item Expanded"
     case TreeItemCollapsed          = "Tree Item Collapsed"
     case TreeItemSelected           = "Tree Item Selected"
+    case ShowQuestionRecherche      = "Show Question Recherche"
 }
 

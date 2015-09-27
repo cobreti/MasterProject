@@ -18,8 +18,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7YH-t5-2rm">
-                    <rect key="frame" x="0.0" y="0.0" width="374" height="276"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="268"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <gestureRecognizers/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuL-ih-kkY">
@@ -35,7 +35,7 @@
             <constraints>
                 <constraint firstAttribute="centerY" secondItem="wuL-ih-kkY" secondAttribute="centerY" id="2gb-lp-5Ef"/>
                 <constraint firstItem="7YH-t5-2rm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6HU-5k-tJ1"/>
-                <constraint firstItem="wuL-ih-kkY" firstAttribute="top" secondItem="7YH-t5-2rm" secondAttribute="bottom" constant="2" id="N1Y-II-Ms2"/>
+                <constraint firstItem="wuL-ih-kkY" firstAttribute="top" secondItem="7YH-t5-2rm" secondAttribute="bottom" constant="10" id="N1Y-II-Ms2"/>
                 <constraint firstAttribute="bottom" secondItem="wuL-ih-kkY" secondAttribute="bottom" id="Ozz-C3-fZR"/>
                 <constraint firstAttribute="centerX" secondItem="wuL-ih-kkY" secondAttribute="centerX" id="S6t-VC-Sqh"/>
                 <constraint firstAttribute="bottom" secondItem="7YH-t5-2rm" secondAttribute="bottom" id="SrA-jH-gYE"/>

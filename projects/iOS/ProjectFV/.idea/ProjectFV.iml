@@ -25,6 +25,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/RestartAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/SelectDiagramElementAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/ShowDiagramAction.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/ShowQuestionRechercheAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/TapDiagramAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/TreeItemCollapsed.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/TreeItemExpanded.swift" isTestSource="false" />
@@ -62,6 +63,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/MethodSelection.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/ProjectSelection.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/Question.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/QuestionRecherchePopup.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/Questionnaire.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/RechercheSelection.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/SchematicView.xib" isTestSource="false" />
@@ -76,6 +78,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/file.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/folder.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/home.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/question-collapse.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/question-expand.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/recenter.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/subdiagram.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/DiagramSelection/DiagramSelectionController.swift" isTestSource="false" />
@@ -94,6 +98,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/MethodSelection/MethodSelectionViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/ProjectSelection/ProjectSelectionStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/ProjectSelection/ProjectSelectionViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/QuestionRecherchePopup/QuestionRecherchePopupStory.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/QuestionRecherchePopup/QuestionRecherchePopupViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/AnswerChoice.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/Question.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift" isTestSource="false" />

@@ -29,6 +29,9 @@ class HierarchicViewStory : Story {
                     Application.instance().stories.push( FileViewStory(file: fva.file) )
                 }
 
+            case .ShowQuestionRecherche:
+                Application.instance().stories.push( QuestionRecherchePopupStory() )
+
             default:
                 break
         }

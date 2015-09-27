@@ -62,6 +62,10 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         _toolbarController.recenterDelegate = { () -> Void in
             self.onRecenter()
         }
+
+        _toolbarController.showQuestionRechercheDelegate = { () -> Void in
+            Application.instance().actionsBus.send( ShowQuestionRechercheAction(sender: self) )
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -236,7 +240,11 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                 if let fva = action as? FileViewAction {
                     onFileViewAction(fva)
                 }
-            
+
+            case .ShowQuestionRecherche:
+                Application.instance().stories.push( QuestionRecherchePopupStory() )
+
+
             case .ShowDiagram:
                 if let sda = action as? ShowDiagramAction {
                     onShowDiagram(sda)

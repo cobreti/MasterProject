@@ -12,6 +12,7 @@ import UIKit
 class SchematicViewTBController : UIViewController {
 
     typealias RecenterDelegate = () -> Void
+    typealias ShowQuestionRechercheDelegate = () -> Void
 
     var recenterDelegate : RecenterDelegate! {
         get {
@@ -19,6 +20,15 @@ class SchematicViewTBController : UIViewController {
         }
         set(delegate) {
             _recenterDelegate = delegate
+        }
+    }
+
+    var showQuestionRechercheDelegate: ShowQuestionRechercheDelegate! {
+        get {
+            return _showQuestionRechercheDelegate
+        }
+        set(delegate) {
+            _showQuestionRechercheDelegate = delegate
         }
     }
 
@@ -40,7 +50,12 @@ class SchematicViewTBController : UIViewController {
         _recenterDelegate?()
     }
     
+    @IBAction func onShowQuestion(sender: AnyObject) {
+        _showQuestionRechercheDelegate?()
+    }
+    
     @IBOutlet weak var _diagramNameLabel: UILabel!
 
     var _recenterDelegate : RecenterDelegate!
+    var _showQuestionRechercheDelegate : ShowQuestionRechercheDelegate!
 }

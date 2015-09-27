@@ -26,7 +26,7 @@
             <view key="view" contentMode="scaleToFill" id="Ute-VS-d7m">
                 <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.97254901960784312" green="0.98039215686274506" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
             </view>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
@@ -47,6 +47,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXJ-v8-rXF">
+                        <rect key="frame" x="20" y="0.0" width="270" height="20"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqj-dM-vZZ">
+                                <rect key="frame" x="90" y="2" width="90" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="zDN-EX-NZS"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="question-expand.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Question">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="onShowQuestion:" destination="4zF-e4-jd5" eventType="touchUpInside" id="jPV-TA-0TY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pqj-dM-vZZ" firstAttribute="centerY" secondItem="bXJ-v8-rXF" secondAttribute="centerY" id="X0C-Cb-d7N"/>
+                            <constraint firstItem="pqj-dM-vZZ" firstAttribute="centerX" secondItem="bXJ-v8-rXF" secondAttribute="centerX" id="eTe-wg-Eyj"/>
+                        </constraints>
+                    </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2N-Bv-8Vr">
                         <rect key="frame" x="290" y="-1" width="20" height="22"/>
                         <constraints>
@@ -72,9 +102,21 @@
                     <constraint firstAttribute="centerX" secondItem="m2N-Bv-8Vr" secondAttribute="centerX" id="1cP-iL-6pM"/>
                     <constraint firstAttribute="trailingMargin" secondItem="fVI-6K-KtA" secondAttribute="trailing" constant="20" id="3dn-sM-foR"/>
                     <constraint firstAttribute="centerY" secondItem="m2N-Bv-8Vr" secondAttribute="centerY" id="Cgi-xK-LCG"/>
+                    <constraint firstItem="bXJ-v8-rXF" firstAttribute="leading" secondItem="GLp-wx-fgC" secondAttribute="leadingMargin" id="FLB-tS-h0T"/>
+                    <constraint firstItem="bXJ-v8-rXF" firstAttribute="centerY" secondItem="GLp-wx-fgC" secondAttribute="centerY" id="I0y-dc-WiA"/>
+                    <constraint firstItem="m2N-Bv-8Vr" firstAttribute="leading" secondItem="bXJ-v8-rXF" secondAttribute="trailing" id="La8-zP-ErL"/>
+                    <constraint firstItem="bXJ-v8-rXF" firstAttribute="height" secondItem="GLp-wx-fgC" secondAttribute="height" id="eHk-iE-xZr"/>
+                    <constraint firstItem="bXJ-v8-rXF" firstAttribute="leading" secondItem="m2N-Bv-8Vr" secondAttribute="leading" constant="10" id="f5O-Ul-9aL"/>
                     <constraint firstAttribute="centerY" secondItem="fVI-6K-KtA" secondAttribute="centerY" id="gXX-lN-RIz"/>
+                    <constraint firstItem="bXJ-v8-rXF" firstAttribute="trailing" secondItem="m2N-Bv-8Vr" secondAttribute="trailing" id="h4S-QX-prw"/>
                     <constraint firstItem="fVI-6K-KtA" firstAttribute="leading" secondItem="m2N-Bv-8Vr" secondAttribute="trailing" constant="20" id="r22-l5-t4I"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="f5O-Ul-9aL"/>
+                        <exclude reference="h4S-QX-prw"/>
+                    </mask>
+                </variation>
             </view>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
@@ -97,6 +139,7 @@
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuD-xX-MFb">
                     <rect key="frame" x="874" y="0.0" width="150" height="768"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.98039215690000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -140,6 +183,7 @@
         <image name="LeftArrow.png" width="20" height="20"/>
         <image name="RightArrow.png" width="20" height="20"/>
         <image name="UpArrow.png" width="20" height="20"/>
+        <image name="question-expand.png" width="16" height="16"/>
         <image name="recenter.png" width="20" height="20"/>
     </resources>
 </document>
