@@ -21,12 +21,10 @@ class RechercheItemController : UIViewController {
         }
     }
 
-    var itemTitle: String {
-        return _title
-    }
-
-    var itemQuestion: String {
-        return _question
+    var question: SearchQuestion {
+        get {
+            return _question
+        }
     }
 
     func onSelected() {
@@ -41,9 +39,8 @@ class RechercheItemController : UIViewController {
         view.setNeedsDisplay()
     }
 
-    init(title: String, question: String) {
+    init(question: SearchQuestion) {
 
-        _title = title
         _question = question
 
         super.init(nibName: "RechercheItem", bundle:nil)
@@ -58,15 +55,14 @@ class RechercheItemController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        _titleLabel.text = _title
-        _questionTextView.text = _question
+        _titleLabel.text = _question.title
+        _questionTextView.text = _question.content
         view.layer.cornerRadius = 10.0
     }
 
 
-    var _title : String
-    var _question : String
     var _delegate : RechercheItemControllerDelegate!
+    var _question: SearchQuestion
 
     @IBOutlet weak var _titleLabel: UILabel!
     @IBOutlet weak var _questionTextView: UITextView!

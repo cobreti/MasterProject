@@ -82,6 +82,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/question-expand.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/recenter.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/subdiagram.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/SearchQuestions/SearchQuestion.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/SearchQuestions/SearchQuestions.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/DiagramSelection/DiagramSelectionController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/DiagramSelection/DiagramSelectionStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/DiagramSelection/DiagramsDataSource.swift" isTestSource="false" />

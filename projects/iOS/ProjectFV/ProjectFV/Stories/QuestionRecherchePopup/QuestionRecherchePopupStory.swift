@@ -24,8 +24,12 @@ class QuestionRecherchePopupStory : Story {
         super.init()
 
         _controller = QuestionRecherchePopupViewController(nibName: "QuestionRecherchePopup", bundle: nil)
+        _controller.closeEventHandler = onClosePopup
     }
 
+    func onClosePopup(sender: AnyObject, args: [String:AnyObject]!) {
+        Application.instance().actionsBus.send( CloseStoryAction(story: self, sender: self) )
+    }
 
     var _controller : QuestionRecherchePopupViewController!
 }

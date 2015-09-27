@@ -14,7 +14,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
 
         let app = Application.instance()
 
-        app.actionsBus.send( RechercheItemSelectedAction(title: _selection.itemTitle, question: _selection.itemQuestion, sender: self))
+        app.actionsBus.send( RechercheItemSelectedAction(question: _selection.question, sender: self))
 
         if let method = app.method {
             switch method {
@@ -58,7 +58,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
                         name = elm.name,
                         plainTextValue = model.plainTextValue {
 
-                    addRechercheItem(name, question: plainTextValue)
+                    addRechercheItem( SearchQuestion(title: name, content: plainTextValue))
                 }
             }
         }
@@ -67,9 +67,9 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
     }
 
 
-    func addRechercheItem(title: String, question: String) {
+    func addRechercheItem( question: SearchQuestion ) {
 
-        let controller = RechercheItemController(title: title, question: question)
+        let controller = RechercheItemController(question: question)
         controller.delegate = self
 
 //        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)

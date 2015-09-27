@@ -49,6 +49,12 @@ class Application : ActionListener {
         }
     }
     
+    var searchQuestion : SearchQuestion! {
+        get {
+            return _searchQuestion
+        }
+    }
+    
     func loadDiagrams() {
     
         let proj = VpProject( document: _document )
@@ -85,6 +91,11 @@ class Application : ActionListener {
                     _method = msa.method
                     actionsBus.send( OpenStoryAction(story: RechercheSelectionStory(), sender: self) )
                 }
+            
+            case .RechercheItemSelected:
+                if let risa = action as? RechercheItemSelectedAction {
+                    _searchQuestion = risa.question
+                }
 
             default:
                 break
@@ -97,5 +108,6 @@ class Application : ActionListener {
     var _storiesMgr : StoriesMgr!
     var _actionsBus : ActionsBus!
     var _method : MethodType!
+    var _searchQuestion : SearchQuestion!
 }
 
