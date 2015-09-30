@@ -80,7 +80,8 @@ class Application : ActionListener {
 
         _storiesMgr.onWindowReady(viewContainer)
 
-        actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
+//        actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
+        actionsBus.send( OpenStoryAction(story: PresentationPageStory(), sender: self))
     }
 
     func onAction(action: Action) {

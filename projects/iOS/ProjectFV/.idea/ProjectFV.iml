@@ -61,6 +61,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/FileView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/HierarchicView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/MethodSelection.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/PresentationPage.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/ProjectSelection.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/Question.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/QuestionRecherchePopup.xib" isTestSource="false" />
@@ -98,6 +99,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/HerarchicView/TreeTableDataSource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/MethodSelection/MethodSelectionStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/MethodSelection/MethodSelectionViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/PresentationPage/PresentationPageStory.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/PresentationPage/PresentationPageViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/ProjectSelection/ProjectSelectionStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/ProjectSelection/ProjectSelectionViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/QuestionRecherchePopup/QuestionRecherchePopupStory.swift" isTestSource="false" />
@@ -191,7 +194,9 @@
     <content url="file://$MODULE_DIR$/../../../sources/DiagramElements/Primitive.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/DiagramElements/Primitive.swift" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/../../../sources/EmbeddedRes" />
+    <content url="file://$MODULE_DIR$/../../../sources/EmbeddedRes">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sources/EmbeddedRes/presentation/index.html" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sources/Shapes/AxisSystem.swift">
       <sourceFolder url="file://$MODULE_DIR$/../../../sources/Shapes/AxisSystem.swift" isTestSource="false" />
     </content>

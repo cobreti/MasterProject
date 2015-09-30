@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160C35F21BBB7EF50090CF73 /* PresentationPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160C35F11BBB7EF50090CF73 /* PresentationPage.xib */; settings = {ASSET_TAGS = (); }; };
 		160D0D571B3F33BA00BC3C1C /* recenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 160D0D561B3F33BA00BC3C1C /* recenter.png */; };
 		161E24541B9E5A7F009B7DE8 /* ModelReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E24521B9E5A7F009B7DE8 /* ModelReference.swift */; };
 		161E24551B9E5A7F009B7DE8 /* ModelReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E24531B9E5A7F009B7DE8 /* ModelReferences.swift */; };
@@ -151,6 +152,7 @@
 		B02F3308C2A0E44B5F43D7FA /* RestartAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A5B73A9CCA6960D56E0 /* RestartAction.swift */; };
 		B02F3309D13C89183D00C203 /* DisplayGraph_EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */; };
 		B02F33338E3FB2ED18E9EA66 /* HierachicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */; };
+		B02F337B42610832A1D85AC7 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B02F316C1B5AD09D159E575A /* index.html */; };
 		B02F33FE2B92A937DBE7F8F7 /* HierarchicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */; };
 		B02F3408C2DDF7C1CC505093 /* ShowQuestionRechercheAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F335DB6CEBD0451F05F09 /* ShowQuestionRechercheAction.swift */; };
 		B02F34624BBDC43B91CD5DEE /* TreeItemExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B87B2EEFF186CBEA8F0 /* TreeItemExpanded.swift */; };
@@ -178,9 +180,11 @@
 		B02F3B3419ADBE03038C3515 /* MethodSelectionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */; };
 		B02F3B4C2216F0B6BB77DA45 /* TreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F303F237A284112FED013 /* TreeController.swift */; };
 		B02F3B8F8B85F7C7E9BF61AB /* DisplayGraphItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3F2AF60B208D8BD4B088 /* DisplayGraphItem.swift */; };
+		B02F3BB03DC0E9E841042047 /* PresentationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F390FE6CDCEA085BE88B8 /* PresentationPageViewController.swift */; };
 		B02F3BB292CEB0883138A3AC /* StoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F38D54F7E926D9C158418 /* StoryType.swift */; };
 		B02F3BBD06EEC7268FEB372B /* DisplayGraph_Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A4B3BB325A38650561F /* DisplayGraph_Element.swift */; };
 		B02F3BD2D8752D8F13DD7EF7 /* RecenterDiagramAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */; };
+		B02F3BF10D6FC7F6382AFD24 /* PresentationPageStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B054722B09935F41D58 /* PresentationPageStory.swift */; };
 		B02F3CC589F4D1306F2CF041 /* ProjectSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */; };
 		B02F3D177B563204F6D97CBB /* StoriesBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3FBF4A3CA9DDC2726045 /* StoriesBoardController.swift */; };
 		B02F3D38C476C171D08E4F00 /* MethodSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */; };
@@ -281,6 +285,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		160C35F11BBB7EF50090CF73 /* PresentationPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PresentationPage.xib; path = Resources/PresentationPage.xib; sourceTree = "<group>"; };
 		160D0D561B3F33BA00BC3C1C /* recenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recenter.png; path = Resources/icons/recenter.png; sourceTree = "<group>"; };
 		161E24521B9E5A7F009B7DE8 /* ModelReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelReference.swift; path = ../../../../sources/DiagramElements/ModelReference.swift; sourceTree = "<group>"; };
 		161E24531B9E5A7F009B7DE8 /* ModelReferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelReferences.swift; path = ../../../../sources/DiagramElements/ModelReferences.swift; sourceTree = "<group>"; };
@@ -420,6 +425,7 @@
 		16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorEndPointParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift; sourceTree = "<group>"; };
 		B02F303F237A284112FED013 /* TreeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeController.swift; path = Stories/HerarchicView/TreeController.swift; sourceTree = "<group>"; };
 		B02F30B8A6A892B198D56B7A /* DisplayGraphs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraphs.swift; sourceTree = "<group>"; };
+		B02F316C1B5AD09D159E575A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../../../sources/EmbeddedRes/presentation/index.html; sourceTree = "<group>"; };
 		B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_EndPoint.swift; sourceTree = "<group>"; };
 		B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataSource.swift; path = Stories/HerarchicView/TreeTableDataSource.swift; sourceTree = "<group>"; };
 		B02F32B9ECB889FED6342D02 /* QuestionRecherchePopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionRecherchePopupViewController.swift; path = Stories/QuestionRecherchePopup/QuestionRecherchePopupViewController.swift; sourceTree = "<group>"; };
@@ -446,11 +452,13 @@
 		B02F38A82FCE0F348562B663 /* MethodSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionViewController.swift; path = Stories/MethodSelection/MethodSelectionViewController.swift; sourceTree = "<group>"; };
 		B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WriteQuestionAnswerAction.swift; path = Actions/ActionObjects/WriteQuestionAnswerAction.swift; sourceTree = "<group>"; };
 		B02F38D54F7E926D9C158418 /* StoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryType.swift; path = Stories/StoryType.swift; sourceTree = "<group>"; };
+		B02F390FE6CDCEA085BE88B8 /* PresentationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationPageViewController.swift; path = Stories/PresentationPage/PresentationPageViewController.swift; sourceTree = "<group>"; };
 		B02F3939CD236957F4EED823 /* DisplayGraph_GeneralizationEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_GeneralizationEndPoint.swift; sourceTree = "<group>"; };
 		B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDiagramSelectedAction.swift; path = Actions/ActionObjects/HistoryDiagramSelectedAction.swift; sourceTree = "<group>"; };
 		B02F3A0B131D57B393B90497 /* RechercheItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemController.swift; path = Stories/RechercheSelection/RechercheItemController.swift; sourceTree = "<group>"; };
 		B02F3A4B3BB325A38650561F /* DisplayGraph_Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_Element.swift; sourceTree = "<group>"; };
 		B02F3A5B73A9CCA6960D56E0 /* RestartAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestartAction.swift; path = Actions/ActionObjects/RestartAction.swift; sourceTree = "<group>"; };
+		B02F3B054722B09935F41D58 /* PresentationPageStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationPageStory.swift; path = Stories/PresentationPage/PresentationPageStory.swift; sourceTree = "<group>"; };
 		B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierarchicViewController.swift; path = Stories/HerarchicView/HierarchicViewController.swift; sourceTree = "<group>"; };
 		B02F3B4F110F2E21C44C9D19 /* TreeItemSelected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItemSelected.swift; path = Actions/ActionObjects/TreeItemSelected.swift; sourceTree = "<group>"; };
 		B02F3B87B2EEFF186CBEA8F0 /* TreeItemExpanded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItemExpanded.swift; path = Actions/ActionObjects/TreeItemExpanded.swift; sourceTree = "<group>"; };
@@ -608,6 +616,7 @@
 				B02F359FEB6A1A02FB349D28 /* ProjectSelection */,
 				B02F38D54F7E926D9C158418 /* StoryType.swift */,
 				B02F37084BB6C575BEF0CFB6 /* QuestionRecherchePopup */,
+				B02F3BE6FAD94F3F4DAB36EA /* PresentationPage */,
 			);
 			name = Stories;
 			sourceTree = "<group>";
@@ -633,6 +642,7 @@
 				16EE9FF91B06A77900A872D4 /* Shapes */,
 				16EEA0081B06A77900A872D4 /* ShapesTests */,
 				1673BDF11AF5502600C8F9AE /* Products */,
+				B02F316C1B5AD09D159E575A /* index.html */,
 			);
 			sourceTree = "<group>";
 		};
@@ -864,6 +874,7 @@
 				16C075371B7EDDB1004D090D /* ProjectSelection.xib */,
 				164C07DE1BA49B8F00A99EF9 /* StoriesBoard.xib */,
 				167B515B1BB87AB000794DAC /* QuestionRecherchePopup.xib */,
+				160C35F11BBB7EF50090CF73 /* PresentationPage.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -985,6 +996,15 @@
 				B02F32B9ECB889FED6342D02 /* QuestionRecherchePopupViewController.swift */,
 			);
 			name = QuestionRecherchePopup;
+			sourceTree = "<group>";
+		};
+		B02F3BE6FAD94F3F4DAB36EA /* PresentationPage */ = {
+			isa = PBXGroup;
+			children = (
+				B02F3B054722B09935F41D58 /* PresentationPageStory.swift */,
+				B02F390FE6CDCEA085BE88B8 /* PresentationPageViewController.swift */,
+			);
+			name = PresentationPage;
 			sourceTree = "<group>";
 		};
 		B02F3C03093697F20D10F36B /* DisplayGraph */ = {
@@ -1294,6 +1314,7 @@
 				16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */,
 				16C0E7AB1B5808D100AEA0A0 /* DiagramHistoryThumbnailView.xib in Resources */,
 				16ECF3D11B6E89A100591783 /* MethodSelection.xib in Resources */,
+				160C35F21BBB7EF50090CF73 /* PresentationPage.xib in Resources */,
 				16AE13F81B45F9D300F2FCFB /* LeftArrow.png in Resources */,
 				16AE13F91B45F9D300F2FCFB /* RightArrow.png in Resources */,
 				166405B51B39AE77003F720A /* subdiagram.png in Resources */,
@@ -1312,6 +1333,7 @@
 				1673BE451AF550A700C8F9AE /* EmbeddedRes in Resources */,
 				16C075381B7EDDB1004D090D /* ProjectSelection.xib in Resources */,
 				B02F34BB167D35E632578E5B /* folder.png in Resources */,
+				B02F337B42610832A1D85AC7 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1464,6 +1486,8 @@
 				B02F3408C2DDF7C1CC505093 /* ShowQuestionRechercheAction.swift in Sources */,
 				B02F38722A4857F8751A4D8F /* SearchQuestion.swift in Sources */,
 				B02F3A216B1C841C6A6418B3 /* SearchQuestions.swift in Sources */,
+				B02F3BF10D6FC7F6382AFD24 /* PresentationPageStory.swift in Sources */,
+				B02F3BB03DC0E9E841042047 /* PresentationPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
