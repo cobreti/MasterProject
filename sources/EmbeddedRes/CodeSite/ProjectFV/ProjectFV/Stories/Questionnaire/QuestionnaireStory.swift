@@ -33,7 +33,7 @@ class QuestionnaireStory : Story {
 
     func loadDiagrams() {
 
-        var vpProj = VpProject(document: _document)
+        let vpProj = VpProject(document: _document)
 
         if let url = NSBundle.mainBundle().URLForResource("diagrams",
                                                           withExtension: "xml",

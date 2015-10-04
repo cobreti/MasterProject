@@ -7,17 +7,21 @@ import Foundation
 
 class RechercheItemSelectedAction : Action {
 
-    override var description: String {
-        return "recherche item selectionne : \(_title)  --- \(_question)"
+    var question: SearchQuestion {
+        get {
+            return _question
+        }
     }
 
-    init(title: String, question: String, sender: AnyObject!) {
+    override var description: String {
+        return "recherche item selectionne : \(_question.title)  --- \(_question.content)"
+    }
 
-        _title = title
+    init(question: SearchQuestion, sender: AnyObject!) {
+
         _question = question
         super.init(id: .RechercheItemSelected, sender: sender)
     }
-
-    var _question: String
-    var _title: String
+    
+    var _question : SearchQuestion
 }

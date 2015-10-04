@@ -11,7 +11,13 @@ import UIKit
 import DiagramElements
 
 class FileViewStory : Story {
-    
+
+    override var type: StoryType {
+        get {
+            return .Modal
+        }
+    }
+
     override var view: UIView {
         get {
             return _controller.view
@@ -34,14 +40,14 @@ class FileViewStory : Story {
         
         if let fileURL = NSBundle.mainBundle().URLForResource(filenameParts[0], withExtension: filenameParts[1], subdirectory: filePath) {
             
-            debugPrintln(fileURL)
+            debugPrint(fileURL)
             _controller = FileViewController(fileURL: fileURL)
             _controller.backEventHandler = onBack
         }
     }
     
     func onBack(sender: AnyObject, args: [String: AnyObject]!) {
-        debugPrintln("onBack story handler")
+        debugPrint("onBack story handler")
         Application.instance().actionsBus.send( CloseStoryAction(story: self, sender: self) )
     }
 

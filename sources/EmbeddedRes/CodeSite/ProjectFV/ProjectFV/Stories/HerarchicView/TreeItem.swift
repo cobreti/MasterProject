@@ -7,19 +7,19 @@ import Foundation
 
 class TreeItem {
 
-    public var name: String {
+    internal var name: String {
         get {
             return _name
         }
     }
 
-    public var path : String {
+    internal var path : String {
         get {
             return _path
         }
     }
 
-    public var children: TreeItems {
+    internal var children: TreeItems {
         get {
             return _children
         }

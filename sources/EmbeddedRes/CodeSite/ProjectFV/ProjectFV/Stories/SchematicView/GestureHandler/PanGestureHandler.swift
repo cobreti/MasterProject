@@ -19,7 +19,7 @@ class PanGestureHandler : BaseGestureHandler {
 
         super.init(view: view, portal: portal)
 
-        var panRecognizer = UIPanGestureRecognizer()
+        let panRecognizer = UIPanGestureRecognizer()
         panRecognizer.addTarget(self, action: "onPan:")
         self.view.addGestureRecognizer(panRecognizer)
     }
@@ -40,7 +40,7 @@ class PanGestureHandler : BaseGestureHandler {
                 break
             case UIGestureRecognizerState.Changed:
                 let pt = sender.translationInView(self.view)
-                var transform = Point(pt: _originalTranslation)
+                let transform = Point(pt: _originalTranslation)
                 transform.x += pt.x / self.portal.scalingFactor
                 transform.y += pt.y / self.portal.scalingFactor
                 actionsBus.send( PanDiagramAction(translation: transform, state: .Changed, sender: self) )

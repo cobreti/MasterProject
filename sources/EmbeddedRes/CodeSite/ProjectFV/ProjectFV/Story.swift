@@ -12,9 +12,20 @@ import UIKit
 typealias EventHandler = (sender : AnyObject, args: [String : AnyObject]!) -> Void
 
 class Story {
-    
+
+    var type : StoryType {
+        get {
+            return StoryType.Default
+        }
+    }
     
     var view : UIView! {
+        get {
+            return nil
+        }
+    }
+
+    var toolbar : UIView! {
         get {
             return nil
         }
@@ -28,8 +39,16 @@ class Story {
             _ownerStoriesMgr = owner
         }
     }
-    
+
     init() {
+    }
+
+    func onActivate() {
+
+    }
+
+    func onDeactivate() {
+
     }
     
     func onAction(action: Action) {

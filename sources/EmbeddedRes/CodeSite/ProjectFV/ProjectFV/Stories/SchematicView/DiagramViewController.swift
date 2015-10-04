@@ -112,7 +112,7 @@ class DiagramViewController : UIViewController {
         
         let document = Application.instance().document
         
-        view.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
+        view.autoresizingMask = [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
         
         let frame = view.bounds
 
@@ -155,14 +155,14 @@ class DiagramViewController : UIViewController {
         
         let childDiagramBox = childDiagramController._diagramPortal.boundingBox
         
-        debugPrintln("adjusting around child")
+        debugPrint("adjusting around child")
         
         if let  childDiagram = childDiagramController.diagram,
                 elm = getDiagramElementContainingChild(childDiagram),
                 box = elm.box,
                 dgmView = view as? DiagramView {
 
-            debugPrintln("-- adjusting around child")
+            debugPrint("-- adjusting around child")
 
             _diagramPortal.pinPoint = PinPoint(x: box.midX, y: box.midY)
             dgmView.pinPoint = PinPoint(x: childDiagramBox.midX, y: childDiagramBox.midY)
@@ -184,15 +184,15 @@ class DiagramViewController : UIViewController {
         
         let document = Application.instance().document
 
-        debugPrintln("looking for element containing \(childDiagram.name)")
+        debugPrint("looking for element containing \(childDiagram.name)")
 
-        for (id, p) in _diagram.primitives {
+        for (_, p) in _diagram.primitives {
             if let  elm = p as? Element,
                     modelId = elm.modelId,
                     model = document.models.get(modelId),
                     subDiagramRef = model.subDiagrams.getForParentDiagram(childDiagram.name) {
                 
-                debugPrintln("- subDiagramName : \(subDiagramRef.diagramName)")
+                debugPrint("- subDiagramName : \(subDiagramRef.diagramName)")
                 
                 if subDiagramRef.diagramName == childDiagram.name {
                     return elm
@@ -200,7 +200,7 @@ class DiagramViewController : UIViewController {
             }
         }
         
-        debugPrintln("--> no element found for child")
+        debugPrint("--> no element found for child")
 
         return nil
     }

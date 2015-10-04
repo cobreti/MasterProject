@@ -19,22 +19,59 @@ class QuestionnaireViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let education = Question(question: "Éducation")
+        education.add( AnswerChoice(key: "college", text: "Diplôme collégial") )
+        education.add( AnswerChoice(key: "BACC", text: "Baccalauréat") )
+        education.add( AnswerChoice(key: "Master", text: "Maîtrise") )
+        education.add( AnswerChoice(key: "Phd", text: "Doctorat") )
+        education.add( AnswerChoice(key: "autre", text: "Autre", useOtherField: true) )
+        addQuestion(education)
+
+        let umlExp = Question(question: "Connaissance de UML")
+        umlExp.add( AnswerChoice(key: "none", text: "Aucune"))
+        umlExp.add( AnswerChoice(key: "beginner", text: "Débutant"))
+        umlExp.add( AnswerChoice(key: "intermediate", text: "Intermédiaire"))
+        umlExp.add( AnswerChoice(key: "advanced", text: "Avancé"))
+        addQuestion(umlExp)
+
+        let umlUsage = Question(question: "Utilisation de UML")
+        umlUsage.add( AnswerChoice(key: "never", text: "Jamais") )
+        umlUsage.add( AnswerChoice(key: "rarely", text: "Occasionnellement") )
+        umlUsage.add( AnswerChoice(key: "frequently", text: "Fréquemment"))
+        addQuestion(umlUsage)
+
+        let devExp = Question(question: "Expérience en développement logiciel")
+        devExp.add( AnswerChoice(key: "beginner", text: "Débutant (moins de 5 ans)"))
+        devExp.add( AnswerChoice(key: "Intermédiaire", text: "Intermédiaire (5 à 15 ans)"))
+        devExp.add( AnswerChoice(key: "Advanced", text: "Avancé (plus de 15 ans)"))
+        addQuestion(devExp)
+
+        let touchDevice = Question(question: "Possédez ou utilisez vous régulièrement un appareil à écran tactile")
+        touchDevice.add( AnswerChoice(key: "oui", text: "oui"))
+        touchDevice.add( AnswerChoice(key: "non", text: "non"))
+        addQuestion(touchDevice)
+
+//        addQuestion("Expérience")
+
+
+//        addQuestion("Connaissane de UML")
+
 //        let doc = Application.instance().document
-        _diagram = _document.diagrams.get("Questionnaire")
-
-        if let diag = _diagram {
-
-            for (id, p) in diag.primitives {
-
-                if let elm = p as? Element {
-                    debugPrintln("element with name : \(elm.name)")
-                    addQuestion(elm.name)
-                }
-            }
-        }
-
+//        _diagram = _document.diagrams.get("Questionnaire")
+//
+//        if let diag = _diagram {
+//
+//            for (_, p) in diag.primitives {
+//
+//                if let elm = p as? Element {
+//                    debugPrint("element with name : \(elm.name)")
+//                    addQuestion(elm.name)
+//                }
+//            }
+//        }
+//
         let cs = _scrollView.contentSize
-        _scrollView.contentSize = CGSize(width: cs.width, height: _nextYPos + 300)
+        _scrollView.contentSize = CGSize(width: cs.width, height: _nextYPos + 400)
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -52,12 +89,14 @@ class QuestionnaireViewController : UIViewController {
 //        Application.instance().stories.push( RechercheSelectionStory() )
     }
 
-    func addQuestion(title : String) {
+    func addQuestion(question: Question) {
 
-        var controller = QuestionController(question: title)
+        let controller = QuestionController(question: question)
 
-        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        _scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+//        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        _scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        _scrollView.translatesAutoresizingMaskIntoConstraints = false;
 
         _scrollView.addSubview(controller.view)
 
@@ -115,7 +154,7 @@ class QuestionnaireViewController : UIViewController {
             )
         }
 
-        let bounds = controller.view.bounds
+        _ = controller.view.bounds
         controller.view.frame = CGRect(x:0, y:_nextYPos, width:_scrollView.bounds.width, height: 170)
         controller.view.setNeedsLayout()
         _nextYPos += 170

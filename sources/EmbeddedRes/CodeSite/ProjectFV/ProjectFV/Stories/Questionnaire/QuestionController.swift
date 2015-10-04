@@ -6,14 +6,14 @@
 import Foundation
 import UIKit
 
-class QuestionController : UIViewController {
+class QuestionController : UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
 
-    init(question: String) {
+    init(question: Question) {
 
         _question = question
 
@@ -23,25 +23,85 @@ class QuestionController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        _answerTextView.layer.borderWidth = 1.0
-        _answerTextView.layer.borderColor = UIColor.blackColor().CGColor
+        _questionLabel.text = _question.question
 
-        _questionLabel.text = _question
+        _answerChoices?.dataSource = self
+        _answerChoices?.delegate = self
+        _otherField?.hidden = true
+        _otherFieldFrame?.hidden = true
     }
 
     func writeAnswer() {
 
-        if let  q = _questionLabel.text,
-        a = _answerTextView.text {
+        if let  q = _questionLabel.text {
+
+            var answerText = "none"
+
+            if let answer = _currentAnswer {
+
+                if answer.useOtherField {
+                    answerText = "\(answer.text) --> \(_otherField.text)"
+                }
+                else {
+                    answerText = answer.text
+                }
+            }
+
             Application.instance().actionsBus.send(
-                WriteQuestionAnswerAction(question: q, answer: a, sender: self)
+                WriteQuestionAnswerAction(question: q, answer: answerText, sender: self)
             )
         }
     }
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return _question.answerCount
+    }
 
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+        debugPrint("index at path = \(indexPath)")
+
+        let answer = _question.get(indexPath.indexAtPosition(1))
+
+        if let reusableCell = tableView.dequeueReusableCellWithIdentifier("DiagramSelection") {
+
+            reusableCell.textLabel?.text = answer.text
+            if let selection = _selectedIndex where indexPath == selection {
+                reusableCell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            }
+            return reusableCell
+        }
+
+        let cell = UITableViewCell()
+        cell.textLabel?.text = answer.text
+        if let selection = _selectedIndex where indexPath == selection {
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            _currentAnswer = answer
+            _otherField.hidden = !answer.useOtherField
+            _otherFieldFrame.hidden = !answer.useOtherField
+        }
+
+        return cell
+    }
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        _selectedIndex = indexPath
+        _currentAnswer = nil
+
+        _answerChoices.reloadData()
+    }
+
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+
+    }
+
+
+    @IBOutlet weak var _otherFieldFrame: UIView!
+    @IBOutlet weak var _otherField: UITextView!
+    @IBOutlet weak var _answerChoices: UITableView!
     @IBOutlet weak var _questionLabel: UILabel!
-    @IBOutlet weak var _answerTextView: UITextView!
 
-    var _question: String
+    var _question: Question
+    var _selectedIndex: NSIndexPath!
+    var _currentAnswer : AnswerChoice!
 }

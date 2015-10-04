@@ -14,35 +14,74 @@ class StoriesMgr : ActionListener {
     
     init() {
 
-        if let wnd = UIApplication.sharedApplication().keyWindow {
-            
-            for view in wnd.subviews {
-                view.removeFromSuperview();
-            }
-        }
+        _controller = StoriesBoardController(nibName: "StoriesBoard", bundle: nil)
     }
     
     func push( story : Story ) {
-        
-        if let wnd = UIApplication.sharedApplication().keyWindow {
-        
-            _stories.append(story)
-            story.ownerStoriesMgr = self
-            wnd.addSubview(story.view)
-            story.view.frame = wnd.bounds
-        }
+
+        _stories.append(story)
+        story.ownerStoriesMgr = self
+
+        activateStory(story)
+//        if let wnd = UIApplication.sharedApplication().keyWindow {
+//
+//            story.ownerStoriesMgr = self
+//
+//            activateStory(story)
+//        }
+//
+//        _controller.enableBackButton( _stories.count > 1 )
     }
     
     func pop() {
 
         if let lastStory = _stories.last {
-            
+
+            lastStory.onDeactivate()
             lastStory.view?.removeFromSuperview()
             _stories.removeLast()
             lastStory.ownerStoriesMgr = nil
         }
+
+        if let currentStory = _stories.last {
+
+            activateStory(currentStory)
+        }
+
+//        _controller.enableBackButton( _stories.count > 1 )
     }
-    
+
+    func activateStory(story: Story) {
+
+        switch story.type {
+
+            case .Default:
+                _controller.setStoryView(story.view)
+                _controller.setStoryTB(story.toolbar)
+                story.onActivate()
+                _controller.enableBackButton( _stories.count > 1 )
+
+            case .Modal:
+                _controller.setModalStoryView(story.view)
+        }
+    }
+
+    func onWindowReady(viewContainer: UIView) {
+
+        viewContainer.addSubview(_controller.view)
+        _controller.view.frame = viewContainer.bounds
+
+        _controller.enableBackButton(false)
+    }
+
+    func closeCurrentStory() {
+
+        if let story = _stories.last {
+
+            Application.instance().actionsBus.send( CloseStoryAction(story: story, sender: self) )
+        }
+    }
+
     func onAction(action: Action) {
         
         switch action.id {
@@ -63,7 +102,8 @@ class StoriesMgr : ActionListener {
                 _stories.last?.onAction(action)
         }
     }
- 
+
     var _stories : [Story] = []
+    var _controller : StoriesBoardController
 }
 

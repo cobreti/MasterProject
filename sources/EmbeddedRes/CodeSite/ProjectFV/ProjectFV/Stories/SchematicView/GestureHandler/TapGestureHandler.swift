@@ -39,7 +39,7 @@ class TapGestureHandler : BaseGestureHandler {
                 _element = nil
             
             case UIGestureRecognizerState.Ended:
-                if let diagram = view.diagram {
+                if let _ = view.diagram {
                     let ptInView = sender.locationInView(view)
                     
                     let diagPt = portal.pointFromViewToPortal(Point(x: ptInView.x, y: ptInView.y))

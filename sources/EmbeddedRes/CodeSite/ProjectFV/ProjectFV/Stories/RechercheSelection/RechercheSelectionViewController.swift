@@ -14,7 +14,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
 
         let app = Application.instance()
 
-        app.actionsBus.send( RechercheItemSelectedAction(title: _selection.itemTitle, question: _selection.itemQuestion, sender: self))
+        app.actionsBus.send( RechercheItemSelectedAction(question: _selection.question, sender: self))
 
         if let method = app.method {
             switch method {
@@ -33,7 +33,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
 
         let app = Application.instance()
 
-        if let diagram = app.document.diagrams.get("main") {
+        if let _ = app.document.diagrams.get("main") {
 
             let story = SchematicViewStory(diagramName: "main")
             Application.instance().actionsBus.send( OpenStoryAction(story: story, sender: self) )
@@ -50,7 +50,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
 
         if let diag = doc.diagrams.get("Recherches") {
 
-            for (id, p) in diag.primitives {
+            for (_, p) in diag.primitives {
 
                 if let  elm = p as? Element,
                         modelId = elm.modelId,
@@ -58,7 +58,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
                         name = elm.name,
                         plainTextValue = model.plainTextValue {
 
-                    addRechercheItem(name, question: plainTextValue)
+                    addRechercheItem( SearchQuestion(title: name, content: plainTextValue))
                 }
             }
         }
@@ -67,13 +67,16 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
     }
 
 
-    func addRechercheItem(title: String, question: String) {
+    func addRechercheItem( question: SearchQuestion ) {
 
-        var controller = RechercheItemController(title: title, question: question)
+        let controller = RechercheItemController(question: question)
         controller.delegate = self
 
-        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        _itemsArea.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        controller.view.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        _itemsArea.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+        _itemsArea.translatesAutoresizingMaskIntoConstraints = false
 
         _itemsArea.addSubview(controller.view)
 

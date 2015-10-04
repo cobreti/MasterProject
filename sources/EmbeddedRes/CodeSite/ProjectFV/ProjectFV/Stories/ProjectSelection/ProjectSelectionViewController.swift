@@ -9,6 +9,12 @@ import VpProject
 
 class ProjectSelectionViewController : UIViewController {
 
+    func onActivated() {
+
+        _ProjectFVBtn.enabled = true
+        _NyxBtn.enabled = true
+    }
+
     @IBAction func onProjectFVSelected(sender: AnyObject) {
 
         _ProjectFVBtn.enabled = false
@@ -18,7 +24,7 @@ class ProjectSelectionViewController : UIViewController {
 
         doc.clear()
 
-        var proj = VpProject( document: doc )
+        let proj = VpProject( document: doc )
 
         if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
                                                             withExtension: "xml",
@@ -40,7 +46,7 @@ class ProjectSelectionViewController : UIViewController {
 
         doc.clear()
 
-        var proj = VpProject( document: doc )
+        let proj = VpProject( document: doc )
 
         if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
                                                             withExtension: "xml",

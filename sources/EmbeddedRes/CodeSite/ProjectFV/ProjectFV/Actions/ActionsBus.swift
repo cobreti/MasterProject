@@ -27,7 +27,7 @@ class ActionsBus : NSObject {
         
         
         if action.log {
-            debugPrintln(action.traceline)
+            debugPrint(action.traceline)
             writeToLog(action.traceline)
         }
         _listeners.send(action)
@@ -40,21 +40,27 @@ class ActionsBus : NSObject {
         let data = textLine.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
 
         
-        if  let dirs : [String] = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true) as? [String] {
-            let dir = dirs[0] //documents directory
-            let path = dir.stringByAppendingPathComponent(file);
-            let fileURL = NSURL(fileURLWithPath: path)
+        let dirs : [String] = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true)
+        let dir = NSURL(fileURLWithPath: dirs[0]) //documents directory
+        let path = dir.URLByAppendingPathComponent(file);
+        let fileURL = path
+        
+        do {
+            let  fileHandle = try NSFileHandle(forWritingToURL: fileURL)
             
-            if let  fileHandle = NSFileHandle(forWritingToURL: fileURL!, error: nil) {
-                    fileHandle.seekToEndOfFile()
-                    fileHandle.writeData(data)
-                    fileHandle.closeFile()
+            fileHandle.seekToEndOfFile()
+            fileHandle.writeData(data)
+            fileHandle.closeFile()
+        }
+        catch _ {
+            do {
+                
+                try textLine.writeToFile(path.path!, atomically: false, encoding: NSUTF8StringEncoding);
             }
-            else {
-                textLine.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding, error: nil);
+            catch _ {
+                debugPrint("failure to write to file")
             }
-
-            }
+        }
     }
     
     private var _listeners : ActionListeners

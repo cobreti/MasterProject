@@ -20,7 +20,7 @@ class ZoomGestureHandler : BaseGestureHandler {
 
         super.init(view: view, portal: portal)
 
-        var zoomRecognizer = UIPinchGestureRecognizer()
+        let zoomRecognizer = UIPinchGestureRecognizer()
         zoomRecognizer.addTarget(self, action: "onZoom:")
         view.addGestureRecognizer(zoomRecognizer)
     }

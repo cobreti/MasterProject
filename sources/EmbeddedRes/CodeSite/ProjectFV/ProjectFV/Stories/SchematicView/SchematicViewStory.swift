@@ -17,7 +17,13 @@ class SchematicViewStory : Story {
             return _controller.view
         }
     }
-    
+
+    override var toolbar: UIView! {
+        get {
+            return _controller.toolbar
+        }
+    }
+
     init( diagramName : String) {
         
         _diagramName = diagramName
@@ -34,7 +40,7 @@ class SchematicViewStory : Story {
     }
     
     func onBack(sender: AnyObject, args: [String: AnyObject]!) {
-        debugPrintln("onBack story handler")
+        debugPrint("onBack story handler")
         Application.instance().actionsBus.send( CloseStoryAction(story: self, sender: self) )
 //        ownerStoriesMgr?.pop(self)
     }

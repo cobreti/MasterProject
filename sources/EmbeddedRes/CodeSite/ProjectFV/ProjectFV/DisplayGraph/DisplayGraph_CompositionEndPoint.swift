@@ -17,13 +17,13 @@ class DisplayGraph_CompositionEndPoint : DisplayGraph_EndPoint {
 
 //        var portalPt = portal.pointFromDiagramToPortal(_p1)
 
-        var portalEndPt1 = params.portal.pointFromDiagramToPortal(_p1)
-        var portalEndPt2 = params.portal.pointFromDiagramToPortal(_p2)
+        let portalEndPt1 = params.portal.pointFromDiagramToPortal(_p1)
+        let portalEndPt2 = params.portal.pointFromDiagramToPortal(_p2)
 
         let axisSystem = AxisSystem(p1: portalEndPt1, p2: portalEndPt2)
 
         var p : Point = _p1
-        var p2 : Point = Point(x: 0,y: 0)
+        _  = Point(x: 0,y: 0)
 
         CGContextBeginPath(params.context)
         p = axisSystem.fromAxis(Point(x: 0, y: 0))

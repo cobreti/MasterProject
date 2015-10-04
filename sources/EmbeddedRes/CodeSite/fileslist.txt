@@ -1,0 +1,177 @@
+
+ProjectFV/DiagramElements:
+-rw-r--r--@  1 dannyt  staff  1924  4 Jul 16:29 Diagram.swift
+-rw-r--r--   1 dannyt  staff   716 14 Aug 23:29 Diagrams.swift
+-rw-r--r--   1 dannyt  staff   986 14 Aug 23:35 Document.swift
+-rw-r--r--@  1 dannyt  staff   279  4 Jul 16:37 Element.swift
+-rw-r--r--@  1 dannyt  staff   581  7 Sep 20:03 FileReference.swift
+-rw-r--r--@  1 dannyt  staff   458  7 Sep 20:02 FileReferences.swift
+-rw-r--r--@  1 dannyt  staff   681  7 Jun 16:12 LayerSelection.swift
+-rw-r--r--   1 dannyt  staff  1424 26 Aug 22:54 Link.swift
+-rw-r--r--   1 dannyt  staff   803 26 Aug 22:24 LinkEndPoint.swift
+-rw-r--r--@  1 dannyt  staff   306 20 May 19:47 LinkEndPointType.swift
+-rw-r--r--@  1 dannyt  staff   317 24 May 12:25 LinkType.swift
+-rw-r--r--@  1 dannyt  staff  1836  7 Sep 20:07 Model.swift
+-rw-r--r--   1 dannyt  staff   709 29 Aug 19:43 ModelReference.swift
+-rw-r--r--   1 dannyt  staff   409 29 Aug 20:01 ModelReferences.swift
+-rw-r--r--   1 dannyt  staff   892 14 Aug 23:29 ModelsTable.swift
+-rw-r--r--@  1 dannyt  staff  1279  4 Jul 16:36 Primitive.swift
+
+ProjectFV/ProjectFV:
+-rw-r--r--@  1 dannyt  staff  2584 12 Aug 22:06 AppDelegate.swift
+-rw-r--r--   1 dannyt  staff  2836 29 Sep 22:35 Application.swift
+-rw-r--r--   1 dannyt  staff   425 12 Sep 17:26 MainViewController.swift
+-rw-r--r--   1 dannyt  staff   236  2 Aug 13:46 MethodType.swift
+-rw-r--r--   1 dannyt  staff  2571 15 Sep 20:15 StoriesMgr.swift
+-rw-r--r--   1 dannyt  staff   907 15 Sep 20:13 Story.swift
+-rw-r--r--   1 dannyt  staff   520  6 Jun 21:09 ViewController.swift
+
+ProjectFV/ProjectFV/Actions:
+-rw-r--r--@  1 dannyt  staff  1313 13 Jul 21:14 Action.swift
+-rw-r--r--   1 dannyt  staff  1414 27 Sep 15:42 ActionIdentifier.swift
+-rw-r--r--@  1 dannyt  staff   246 11 Jul 19:35 ActionListener.swift
+-rw-r--r--   1 dannyt  staff   653 12 Sep 17:40 ActionListeners.swift
+-rw-r--r--@  1 dannyt  staff  1792 19 Sep 11:13 ActionsBus.swift
+
+ProjectFV/ProjectFV/Actions/ActionObjects:
+-rw-r--r--@  1 dannyt  staff  601 13 Jul 19:12 CloseStoryAction.swift
+-rw-r--r--@  1 dannyt  staff  671 13 Jul 19:12 DiagramSelectedAction.swift
+-rw-r--r--@  1 dannyt  staff  767 16 Jul 09:46 EnterSubDiagramAction.swift
+-rw-r--r--@  1 dannyt  staff  769 16 Jul 09:55 ExitSubDiagramAction.swift
+-rw-r--r--@  1 dannyt  staff  585 14 Jul 20:34 FileViewAction.swift
+-rw-r--r--@  1 dannyt  staff  698 14 Jul 19:21 GestureAction.swift
+-rw-r--r--   1 dannyt  staff  668 16 Jul 12:53 HistoryDiagramSelectedAction.swift
+-rw-r--r--   1 dannyt  staff  533  2 Aug 13:49 MethodSelectionAction.swift
+-rw-r--r--   1 dannyt  staff  598 26 Jul 22:51 OpenStory.swift
+-rw-r--r--@  1 dannyt  staff  737 14 Jul 19:24 PanDiagramAction.swift
+-rw-r--r--   1 dannyt  staff  270 16 Jul 10:50 RecenterDiagramAction.swift
+-rw-r--r--@  1 dannyt  staff  607 27 Sep 18:49 RechercheItemSelectedAction.swift
+-rw-r--r--   1 dannyt  staff  351 12 Aug 18:44 RestartAction.swift
+-rw-r--r--@  1 dannyt  staff  685 14 Jul 20:25 SelectDiagramElementAction.swift
+-rw-r--r--@  1 dannyt  staff  648 14 Jul 20:40 ShowDiagramAction.swift
+-rw-r--r--   1 dannyt  staff  279 27 Sep 15:43 ShowQuestionRechercheAction.swift
+-rw-r--r--@  1 dannyt  staff  631 14 Jul 20:26 TapDiagramAction.swift
+-rw-r--r--   1 dannyt  staff  458 17 Aug 20:54 TreeItemCollapsed.swift
+-rw-r--r--   1 dannyt  staff  458 17 Aug 20:54 TreeItemExpanded.swift
+-rw-r--r--   1 dannyt  staff  458 17 Aug 21:01 TreeItemSelected.swift
+-rw-r--r--   1 dannyt  staff  541 22 Jul 21:10 WriteQuestionAnswerAction.swift
+-rw-r--r--@  1 dannyt  staff  904 14 Jul 19:22 ZoomDiagramAction.swift
+
+ProjectFV/ProjectFV/DisplayGraph:
+-rw-r--r--   1 dannyt  staff   636 16 Aug 20:16 DisplayGraph.swift
+-rw-r--r--   1 dannyt  staff   736 16 Aug 20:03 DisplayGraphDrawParams.swift
+-rw-r--r--   1 dannyt  staff   230 16 Aug 20:03 DisplayGraphItem.swift
+-rw-r--r--   1 dannyt  staff   503 15 Aug 22:39 DisplayGraphItems.swift
+-rw-r--r--@  1 dannyt  staff  1983 19 Sep 18:10 DisplayGraph_CompositionEndPoint.swift
+-rw-r--r--@  1 dannyt  staff  4574 19 Sep 18:08 DisplayGraph_Element.swift
+-rw-r--r--   1 dannyt  staff   324 16 Aug 14:56 DisplayGraph_EndPoint.swift
+-rw-r--r--@  1 dannyt  staff  1769 19 Sep 18:08 DisplayGraph_GeneralizationEndPoint.swift
+-rw-r--r--@  1 dannyt  staff  1168 19 Sep 18:08 DisplayGraph_Label.swift
+-rw-r--r--@  1 dannyt  staff  7314 19 Sep 17:58 DisplayGraph_Link.swift
+-rw-r--r--@  1 dannyt  staff  1946 19 Sep 18:12 DisplayGraph_SharedEndPoint.swift
+-rw-r--r--   1 dannyt  staff   623  6 Sep 19:51 DisplayGraphs.swift
+
+ProjectFV/ProjectFV/SearchQuestions:
+-rw-r--r--   1 dannyt  staff  471 27 Sep 16:55 SearchQuestion.swift
+
+ProjectFV/ProjectFV/Stories:
+-rw-r--r--@  1 dannyt  staff  1742 19 Sep 18:08 StoriesBoardController.swift
+-rw-r--r--   1 dannyt  staff   184 15 Sep 20:13 StoryType.swift
+
+ProjectFV/ProjectFV/Stories/DiagramSelection:
+-rw-r--r--@  1 dannyt  staff   987 19 Sep 17:48 DiagramSelectionController.swift
+-rw-r--r--@  1 dannyt  staff  1122 13 Jul 19:14 DiagramSelectionStory.swift
+-rw-r--r--@  1 dannyt  staff  1166 19 Sep 17:46 DiagramsDataSource.swift
+
+ProjectFV/ProjectFV/Stories/FileView:
+-rw-r--r--@  1 dannyt  staff  1739 19 Sep 17:45 FileViewController.swift
+-rw-r--r--@  1 dannyt  staff  1375 19 Sep 17:46 FileViewStory.swift
+
+ProjectFV/ProjectFV/Stories/HerarchicView:
+-rw-r--r--   1 dannyt  staff   924 27 Sep 15:45 HierachicViewStory.swift
+-rw-r--r--@  1 dannyt  staff  2939 19 Sep 17:59 HierarchicViewController.swift
+-rw-r--r--@  1 dannyt  staff  2371 19 Sep 17:59 TreeController.swift
+-rw-r--r--@  1 dannyt  staff   607 19 Sep 17:59 TreeItem.swift
+-rw-r--r--   1 dannyt  staff   560  9 Aug 15:07 TreeItems.swift
+-rw-r--r--   1 dannyt  staff  1351  6 Sep 19:36 TreeTableDataNode.swift
+-rw-r--r--@  1 dannyt  staff  3700 19 Sep 17:59 TreeTableDataSource.swift
+
+ProjectFV/ProjectFV/Stories/MethodSelection:
+-rw-r--r--   1 dannyt  staff  481  2 Aug 13:34 MethodSelectionStory.swift
+-rw-r--r--@  1 dannyt  staff  577  2 Aug 13:52 MethodSelectionViewController.swift
+
+ProjectFV/ProjectFV/Stories/PresentationPage:
+total 16
+-rw-r--r--   1 dannyt  staff   488 29 Sep 22:33 PresentationPageStory.swift
+-rw-r--r--   1 dannyt  staff  1031 29 Sep 22:37 PresentationPageViewController.swift
+
+ProjectFV/ProjectFV/Stories/ProjectSelection:
+-rw-r--r--   1 dannyt  staff   587 12 Sep 18:10 ProjectSelectionStory.swift
+-rw-r--r--@  1 dannyt  staff  1953 19 Sep 17:56 ProjectSelectionViewController.swift
+
+ProjectFV/ProjectFV/Stories/QuestionRecherchePopup:
+-rw-r--r--   1 dannyt  staff  834 27 Sep 19:06 QuestionRecherchePopupStory.swift
+-rw-r--r--   1 dannyt  staff  906 27 Sep 19:04 QuestionRecherchePopupViewController.swift
+
+ProjectFV/ProjectFV/Stories/Questionnaire:
+-rw-r--r--   1 dannyt  staff   643 22 Sep 23:00 AnswerChoice.swift
+-rw-r--r--   1 dannyt  staff   624 22 Sep 23:02 Question.swift
+-rw-r--r--   1 dannyt  staff  3091 25 Sep 19:23 QuestionController.swift
+-rw-r--r--@  1 dannyt  staff  1096 19 Sep 17:59 QuestionnaireStory.swift
+-rw-r--r--   1 dannyt  staff  6240 26 Sep 21:40 QuestionnaireViewController.swift
+
+ProjectFV/ProjectFV/Stories/RechercheSelection:
+-rw-r--r--@  1 dannyt  staff  1581 27 Sep 18:24 RechercheItemController.swift
+-rw-r--r--   1 dannyt  staff   232 26 Jul 22:14 RechercheItemControllerDelegate.swift
+-rw-r--r--   1 dannyt  staff   495 26 Jul 15:06 RechercheSelectionStory.swift
+-rw-r--r--@  1 dannyt  staff  5221 27 Sep 18:32 RechercheSelectionViewController.swift
+
+ProjectFV/ProjectFV/Stories/SchematicView:
+-rw-r--r--   1 dannyt  staff   1474 16 Jul 13:01 DiagramHistoryThumbnailViewController.swift
+-rw-r--r--@  1 dannyt  staff   4252 19 Sep 11:01 DiagramPortal.swift
+-rw-r--r--@  1 dannyt  staff   7285 19 Sep 17:59 DiagramView.swift
+-rw-r--r--@  1 dannyt  staff  10743 19 Sep 11:16 DiagramViewController.swift
+-rw-r--r--@  1 dannyt  staff   3314  6 Sep 20:05 DiagramViewsManager.swift
+-rw-r--r--@  1 dannyt  staff    464  6 Jul 21:21 DiagramViewsManagerDelegate.swift
+-rw-r--r--   1 dannyt  staff   1943 16 Jul 13:18 DiagramsHistoryController.swift
+-rw-r--r--@  1 dannyt  staff    377 27 May 21:45 PinPoint.swift
+-rw-r--r--   1 dannyt  staff  12402 27 Sep 15:53 SchematicViewController.swift
+-rw-r--r--@  1 dannyt  staff   1334 19 Sep 17:48 SchematicViewStory.swift
+-rw-r--r--   1 dannyt  staff   1469 27 Sep 15:52 SchematicViewTBController.swift
+-rw-r--r--   1 dannyt  staff   3646 29 Aug 20:05 SubDiagramPortal.swift
+-rw-r--r--   1 dannyt  staff    239 16 Jul 11:28 ViewDrawingMode.swift
+
+ProjectFV/ProjectFV/Stories/SchematicView/GestureHandler:
+-rw-r--r--   1 dannyt  staff   798 16 Jul 11:06 BaseGestureHandler.swift
+-rw-r--r--@  1 dannyt  staff  1900 19 Sep 17:59 PanGestureHandler.swift
+-rw-r--r--@  1 dannyt  staff  1435 19 Sep 17:59 TapGestureHandler.swift
+-rw-r--r--@  1 dannyt  staff  2078 19 Sep 17:59 ZoomGestureHandler.swift
+
+ProjectFV/Shapes:
+-rw-r--r--@  1 dannyt  staff   717 24 May 11:42 AxisSystem.swift
+-rw-r--r--@  1 dannyt  staff  1162  7 Jun 12:16 Margins.swift
+-rw-r--r--@  1 dannyt  staff   694  7 Jun 12:15 Point.swift
+-rw-r--r--@  1 dannyt  staff   711  7 Jun 12:16 Polyline.swift
+-rw-r--r--@  1 dannyt  staff  2345 27 Jun 14:17 Rect.swift
+-rw-r--r--@  1 dannyt  staff   681  7 Jun 12:16 Size.swift
+-rw-r--r--@  1 dannyt  staff   871  7 Jun 12:16 Vector2D.swift
+
+ProjectFV/VpProject:
+-rw-r--r--@  1 dannyt  staff   567  3 May 19:17 VpProject.swift
+-rw-r--r--   1 dannyt  staff  3027 12 Aug 21:43 XmlDocParser.swift
+-rw-r--r--@  1 dannyt  staff  1951  2 Jul 13:18 XmlElementParser.swift
+-rw-r--r--@  1 dannyt  staff   290 15 May 10:11 XmlElementParserDelegate.swift
+-rw-r--r--@  1 dannyt  staff  1070 20 May 15:04 XmlParserState.swift
+-rw-r--r--@  1 dannyt  staff  2834 20 May 18:03 XmlSubTreeParser.swift
+
+ProjectFV/VpProject/parsers:
+-rw-r--r--   1 dannyt  staff  1461 27 Aug 22:09 XmlConnectorEndPointParser.swift
+-rw-r--r--   1 dannyt  staff  4470 27 Aug 22:09 XmlConnectorParser.swift
+-rw-r--r--   1 dannyt  staff  2222 12 Aug 21:10 XmlDiagramParser.swift
+-rw-r--r--@  1 dannyt  staff  5267  7 Sep 19:53 XmlModelParser.swift
+-rw-r--r--@  1 dannyt  staff  1868 20 May 19:29 XmlModelsParser.swift
+-rw-r--r--@  1 dannyt  staff  1114  7 Jun 12:17 XmlPointParser.swift
+-rw-r--r--@  1 dannyt  staff  1430 20 May 14:55 XmlPointsParser.swift
+-rw-r--r--@  1 dannyt  staff  2820  7 Sep 20:06 XmlReferenceParser.swift
+-rw-r--r--@  1 dannyt  staff  1641  7 Sep 19:53 XmlReferencesParser.swift
+-rw-r--r--@  1 dannyt  staff  2645  4 Jul 16:39 XmlShapeParser.swift

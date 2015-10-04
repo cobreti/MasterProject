@@ -24,6 +24,12 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             return _diagramArea
         }
     }
+
+    var toolbar : UIView! {
+        get {
+            return _toolbarController.view
+        }
+    }
     
     var backEventHandler : EventHandler! {
         get {
@@ -46,11 +52,20 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        _diagramNameLabel.text = _diagram.name
+
+        _toolbarController?.diagramName = _diagram.name
+//        _diagramNameLabel.text = _diagram.name
         
         _diagramViewsManager = DiagramViewsManager(schematicViewController: self, delegate: self)
         _diagramsHistoryController._diagramViewsManager = _diagramViewsManager
+
+        _toolbarController.recenterDelegate = { () -> Void in
+            self.onRecenter()
+        }
+
+        _toolbarController.showQuestionRechercheDelegate = { () -> Void in
+            Application.instance().actionsBus.send( ShowQuestionRechercheAction(sender: self) )
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -77,8 +92,8 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
      
         if let dgmView = controller.diagramView {
             let pinPt = dgmView.pinPoint!
-            let x = pinPt.x + dgmView.frame.origin.x
-            let y = pinPt.y + dgmView.frame.origin.y
+            _ = pinPt.x + dgmView.frame.origin.x
+            _ = pinPt.y + dgmView.frame.origin.y
             
             let dx = (dgmView.frame.size.width - 10) / 2
             let dy = (dgmView.frame.size.height - 10) / 2
@@ -106,7 +121,8 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             })
         }
         
-        _diagramNameLabel.text = newController.diagram.name
+//        _diagramNameLabel.text = newController.diagram.name
+        _toolbarController?.diagramName = newController.diagram.name
     }
     
     func onDiagramViewStateChanged( state: DiagramViewController.State ) {
@@ -193,7 +209,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
 //        }
     }
     
-    @IBAction func onRecenter(sender: AnyObject) {
+    func onRecenter() {
 
         Application.instance().actionsBus.send( RecenterDiagramAction(sender: nil) )
     }
@@ -201,7 +217,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     func onDiagramViewActivated(    oldDiagramView: DiagramViewController!,
                                     newDiagramView: DiagramViewController ) {
      
-        if let ctrller = oldDiagramView {
+        if let _ = oldDiagramView {
             _diagramsHistoryController.add(oldDiagramView)
         }
     }
@@ -224,7 +240,11 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                 if let fva = action as? FileViewAction {
                     onFileViewAction(fva)
                 }
-            
+
+            case .ShowQuestionRecherche:
+                Application.instance().stories.push( QuestionRecherchePopupStory() )
+
+
             case .ShowDiagram:
                 if let sda = action as? ShowDiagramAction {
                     onShowDiagram(sda)
@@ -233,7 +253,8 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             case .EnterSubDiagram:
                 if let esda = action as? EnterSubDiagramAction {
                     diagramViewsManager.activate(esda.subDiagramController)
-                    _diagramNameLabel.text = esda.subDiagramController.diagram.name
+                    _toolbarController?.diagramName = esda.subDiagramController.diagram.name
+//                    _diagramNameLabel.text = esda.subDiagramController.diagram.name
                 }
 
             case .ExitSubDiagram:
@@ -247,7 +268,8 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                 }
             case .HistoryDiagramSelected:
                 if let hdsa = action as? HistoryDiagramSelectedAction {
-                    _diagramNameLabel.text = hdsa.diagramController.diagram.name
+                    _toolbarController.diagramName = hdsa.diagramController.diagram.name
+//                    _diagramNameLabel?.text = hdsa.diagramController.diagram.name
                 }
 
             
@@ -297,7 +319,8 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     
     func onShowDiagram(action: ShowDiagramAction) {
         
-        _diagramNameLabel.text = action.diagram.name
+//        _diagramNameLabel?.text = action.diagram.name
+        _toolbarController?.diagramName = action.diagram.name
         
         let  controller = DiagramViewController(parentController: self, diagram: action.diagram)
         diagramViewsManager.activate(controller)
@@ -309,14 +332,13 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
 
     var _diagramViewsManager : DiagramViewsManager!
 
-    @IBOutlet weak var _diagramNameLabel: UILabel!
     @IBOutlet var _upArrowImageView: UIImageView!
     @IBOutlet var _downArrowImageView: UIImageView!
     @IBOutlet var _leftArrowImageView: UIImageView!
     @IBOutlet var _rightArrowImageView: UIImageView!
     
+    @IBOutlet var _toolbarController: SchematicViewTBController!
     @IBOutlet var _diagramsHistoryController: DiagramsHistoryController!
-    @IBOutlet weak var _controlsArea: UIView!
     @IBOutlet weak var _diagramArea: UIView!
     
 }

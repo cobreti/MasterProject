@@ -50,15 +50,15 @@ class DisplayGraph_Element : DisplayGraphItem {
 
         CGContextStrokeRect(params.context, cgRC)
 
-        if let fileIcon = _fileIcon {
+        if let _ = _fileIcon {
             drawFileIcon(cgRC)
         }
 
-        if let subDiagramIcon = _subDiagramIcon {
+        if let _ = _subDiagramIcon {
             drawSubDiagramIcon(cgRC)
         }
 
-        if let name = _name where params.drawingMode == .Normal {
+        if let _ = _name where params.drawingMode == .Normal {
             drawName(cgRC, context: params.context)
         }
     }
@@ -95,10 +95,10 @@ class DisplayGraph_Element : DisplayGraphItem {
 
     func drawName(rect: CGRect, context: CGContext) {
 
-        var parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
-        var strContext : NSStringDrawingContext = NSStringDrawingContext()
-        var strOptions : NSStringDrawingOptions = NSStringDrawingOptions.UsesLineFragmentOrigin
-        var rcText = rect
+        let parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
+        let strContext : NSStringDrawingContext = NSStringDrawingContext()
+        let strOptions : NSStringDrawingOptions = NSStringDrawingOptions.UsesLineFragmentOrigin
+        let rcText = rect
         var font : UIFont = UIFont(name: "helvetica", size: 12.0)!
         
         parStyle.alignment = NSTextAlignment.Center
@@ -133,7 +133,7 @@ class DisplayGraph_Element : DisplayGraphItem {
 
         CGContextSetFontSize(context, 8.0)
         
-        rc.inset(dx: 0, dy: (rc.height - rcStr.size.height)/2)
+        rc.insetInPlace(dx: 0, dy: (rc.height - rcStr.size.height)/2)
 
         name.drawWithRect(  rc,
                             options: strOptions,
