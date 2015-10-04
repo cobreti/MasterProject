@@ -108,7 +108,6 @@
 		16E1C5BB1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1C5BA1B4878A100B909F3 /* DiagramViewsManagerDelegate.swift */; };
 		16ECF3D11B6E89A100591783 /* MethodSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16ECF3D01B6E89A100591783 /* MethodSelection.xib */; };
 		16ECF3D31B6E970A00591783 /* HierarchicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16ECF3D21B6E970A00591783 /* HierarchicView.xib */; };
-		16ECF3D61B7C31E000591783 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECF3D51B7C31E000591783 /* MainViewController.swift */; };
 		16EE9FE11B06A72000A872D4 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE01B06A72000A872D4 /* Link.swift */; };
 		16EE9FE81B06A73B00A872D4 /* XmlConnectorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */; };
 		16EE9FE91B06A73B00A872D4 /* XmlDiagramParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */; };
@@ -153,6 +152,7 @@
 		B02F3309D13C89183D00C203 /* DisplayGraph_EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */; };
 		B02F33338E3FB2ED18E9EA66 /* HierachicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */; };
 		B02F337B42610832A1D85AC7 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B02F316C1B5AD09D159E575A /* index.html */; };
+		B02F338B473F64C440E92E4C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3AEE16CAD2AEC6062D7C /* MainViewController.swift */; };
 		B02F33FE2B92A937DBE7F8F7 /* HierarchicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */; };
 		B02F3408C2DDF7C1CC505093 /* ShowQuestionRechercheAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F335DB6CEBD0451F05F09 /* ShowQuestionRechercheAction.swift */; };
 		B02F34624BBDC43B91CD5DEE /* TreeItemExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B87B2EEFF186CBEA8F0 /* TreeItemExpanded.swift */; };
@@ -391,7 +391,6 @@
 		16ECF3D01B6E89A100591783 /* MethodSelection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MethodSelection.xib; path = Resources/MethodSelection.xib; sourceTree = "<group>"; };
 		16ECF3D21B6E970A00591783 /* HierarchicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HierarchicView.xib; path = Resources/HierarchicView.xib; sourceTree = "<group>"; };
 		16ECF3D41B6E98D900591783 /* ProjectFV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProjectFV-Bridging-Header.h"; sourceTree = "<group>"; };
-		16ECF3D51B7C31E000591783 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		16EE9FE01B06A72000A872D4 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../sources/DiagramElements/Link.swift; sourceTree = "<group>"; };
 		16EE9FE31B06A73B00A872D4 /* XmlConnectorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlConnectorParser.swift; path = ../../../../sources/VpProject/parsers/XmlConnectorParser.swift; sourceTree = "<group>"; };
 		16EE9FE41B06A73B00A872D4 /* XmlDiagramParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XmlDiagramParser.swift; path = ../../../../sources/VpProject/parsers/XmlDiagramParser.swift; sourceTree = "<group>"; };
@@ -456,6 +455,7 @@
 		B02F3A0B131D57B393B90497 /* RechercheItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheItemController.swift; path = Stories/RechercheSelection/RechercheItemController.swift; sourceTree = "<group>"; };
 		B02F3A4B3BB325A38650561F /* DisplayGraph_Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_Element.swift; sourceTree = "<group>"; };
 		B02F3A5B73A9CCA6960D56E0 /* RestartAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestartAction.swift; path = Actions/ActionObjects/RestartAction.swift; sourceTree = "<group>"; };
+		B02F3AEE16CAD2AEC6062D7C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B02F3B054722B09935F41D58 /* PresentationPageStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationPageStory.swift; path = Stories/PresentationPage/PresentationPageStory.swift; sourceTree = "<group>"; };
 		B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierarchicViewController.swift; path = Stories/HerarchicView/HierarchicViewController.swift; sourceTree = "<group>"; };
 		B02F3B4F110F2E21C44C9D19 /* TreeItemSelected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItemSelected.swift; path = Actions/ActionObjects/TreeItemSelected.swift; sourceTree = "<group>"; };
@@ -883,7 +883,7 @@
 				1673BDF51AF5502600C8F9AE /* AppDelegate.swift */,
 				16EEA0241B06B81700A872D4 /* Application.swift */,
 				B02F3E4510669556D3E99287 /* MethodType.swift */,
-				16ECF3D51B7C31E000591783 /* MainViewController.swift */,
+				B02F3AEE16CAD2AEC6062D7C /* MainViewController.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -1397,7 +1397,6 @@
 				1664059F1B370857003F720A /* DiagramPortal.swift in Sources */,
 				166405A11B370857003F720A /* DiagramViewController.swift in Sources */,
 				1642F16D1B1D396B00AA600D /* StoriesMgr.swift in Sources */,
-				16ECF3D61B7C31E000591783 /* MainViewController.swift in Sources */,
 				16247E211B51E4EF00F1D341 /* ActionsBus.swift in Sources */,
 				16C0E7A11B55DE0B00AEA0A0 /* SelectDiagramElementAction.swift in Sources */,
 				166405941B370847003F720A /* TapGestureHandler.swift in Sources */,
@@ -1484,6 +1483,7 @@
 				B02F38722A4857F8751A4D8F /* SearchQuestion.swift in Sources */,
 				B02F3BF10D6FC7F6382AFD24 /* PresentationPageStory.swift in Sources */,
 				B02F3BB03DC0E9E841042047 /* PresentationPageViewController.swift in Sources */,
+				B02F338B473F64C440E92E4C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
