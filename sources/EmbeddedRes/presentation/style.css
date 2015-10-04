@@ -1,0 +1,38 @@
+h1 {
+
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    top: 8em;
+    bottom: 4em;
+    left: 1em;
+    right: 1em;
+    overflow: auto;
+}
+
+.content .description {
+    position: relative;
+    width: 100%;
+    min-height: 5000px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+}
+
+.footer .identity {
+    float: left;
+    margin-left: 3em;
+}
+
+.footer .university {
+    float: right;
+    margin-right: 3em;
+}
+
