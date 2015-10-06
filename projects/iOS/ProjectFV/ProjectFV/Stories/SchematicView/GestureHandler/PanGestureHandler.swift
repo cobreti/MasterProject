@@ -41,8 +41,8 @@ class PanGestureHandler : BaseGestureHandler {
             case UIGestureRecognizerState.Changed:
                 let pt = sender.translationInView(self.view)
                 let transform = Point(pt: _originalTranslation)
-                transform.x += pt.x / self.portal.scalingFactor
-                transform.y += pt.y / self.portal.scalingFactor
+                transform.x += pt.x // / self.portal.scalingFactor
+                transform.y += pt.y // / self.portal.scalingFactor
                 actionsBus.send( PanDiagramAction(translation: transform, state: .Changed, sender: self) )
                 break
             case UIGestureRecognizerState.Ended:
