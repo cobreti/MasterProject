@@ -73,7 +73,7 @@ class DisplayGraph_Element : DisplayGraphItem {
 
         let imgSize = min(imgWidth, imgHeight)
 
-        let rcImg = CGRect( x: rect.maxX-imgWidth-2, y: rect.minY+2, width: imgSize, height: imgSize )
+        let rcImg = CGRect( x: rect.minX+2, y: rect.minY+2, width: imgSize, height: imgSize )
 
         _fileIcon.drawInRect(rcImg)
     }
