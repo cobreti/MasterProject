@@ -14,6 +14,13 @@ class HierarchicViewStory : Story {
         }
     }
 
+    override var backEnabled: Bool {
+        get {
+            return false
+        }
+    }
+
+
     override init() {
         super.init()
 

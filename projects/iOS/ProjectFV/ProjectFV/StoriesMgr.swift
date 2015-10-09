@@ -59,7 +59,7 @@ class StoriesMgr : ActionListener {
                 _controller.setStoryView(story.view)
                 _controller.setStoryTB(story.toolbar)
                 story.onActivate()
-                _controller.enableBackButton( _stories.count > 1 )
+                _controller.enableBackButton( _stories.count > 1 && story.backEnabled)
 
             case .Modal:
                 _controller.setModalStoryView(story.view)

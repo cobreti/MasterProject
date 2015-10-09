@@ -24,6 +24,13 @@ class SchematicViewStory : Story {
         }
     }
 
+    override var backEnabled: Bool {
+        get {
+            return false
+        }
+    }
+
+
     init( diagramName : String) {
         
         _diagramName = diagramName
@@ -41,7 +48,7 @@ class SchematicViewStory : Story {
     
     func onBack(sender: AnyObject, args: [String: AnyObject]!) {
         debugPrint("onBack story handler")
-        Application.instance().actionsBus.send( CloseStoryAction(story: self, sender: self) )
+//        Application.instance().actionsBus.send( CloseStoryAction(story: self, sender: self) )
 //        ownerStoriesMgr?.pop(self)
     }
     

@@ -30,6 +30,12 @@ class Story {
             return nil
         }
     }
+
+    var backEnabled : Bool {
+        get {
+            return true
+        }
+    }
     
     var ownerStoriesMgr : StoriesMgr! {
         get {
