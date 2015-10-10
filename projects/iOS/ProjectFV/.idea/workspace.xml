@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierachicViewStory.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierachicViewStory.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewStory.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewStory.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/StoriesMgr.swift" afterPath="$PROJECT_DIR$/ProjectFV/StoriesMgr.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Story.swift" afterPath="$PROJECT_DIR$/ProjectFV/Story.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/FileReferences.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/FileReferences.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/DiagramElements/ModelReferences.swift" afterPath="$PROJECT_DIR$/../../../sources/DiagramElements/ModelReferences.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" />
-    </list>
+    <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="" />
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -126,8 +118,8 @@
       <file leaf-file-name="FileReferences.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/FileReferences.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35172415">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.82758623">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -208,8 +200,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="833" />
-    <option name="y" value="80" />
+    <option name="x" value="770" />
+    <option name="y" value="92" />
     <option name="width" value="1662" />
     <option name="height" value="1238" />
   </component>
@@ -472,8 +464,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="833" y="80" width="1662" height="1238" extended-state="0" />
-    <editor active="true" />
+    <frame x="770" y="92" width="1662" height="1238" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21607143" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -482,7 +474,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24192566" sideWeight="0.5086321" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24192566" sideWeight="0.49136788" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32767856" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767856" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294643" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20353442" sideWeight="0.4544643" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31805682" sideWeight="0.503872" order="8" side_tool="true" content_ui="tabs" />
@@ -891,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/FileReferences.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35172415">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.82758623">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
