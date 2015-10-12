@@ -132,55 +132,91 @@ class DisplayGraph_Element : DisplayGraphItem {
 
     func drawName(rect: CGRect, context: CGContext) {
 
+        let textArea = CGRectInset(rect, 5, 5)
         let parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
         let strContext : NSStringDrawingContext = NSStringDrawingContext()
         let strOptions : NSStringDrawingOptions = NSStringDrawingOptions.UsesLineFragmentOrigin
-        let rcText = rect
+        let rcText = textArea
         var font : UIFont = UIFont(name: "helvetica", size: 12.0)!
         
         parStyle.alignment = NSTextAlignment.Center
         parStyle.lineBreakMode = NSLineBreakMode.ByWordWrapping
 
-        var rcStr = name.boundingRectWithSize(
-                                rcText.size,
-                                options: strOptions,
-                                attributes: [
-                                                NSParagraphStyleAttributeName: parStyle,
-                                                NSFontAttributeName: font
-                                            ],
-                                context: strContext )
+        let strSize = name.sizeWithAttributes(
+            [
+                    NSParagraphStyleAttributeName: parStyle,
+                    NSFontAttributeName: font
+            ]
+        )
 
-        var rc : CGRect = rcText
+        if strSize.width > textArea.size.width {
 
-        if rc.width - rcStr.width < 20 || rc.height - rcStr.height < 20 {
-            font = UIFont(name: "helvetica", size: 10.0)!;
+            let ratio = strSize.height / strSize.width
 
-            rcStr = name.boundingRectWithSize(
-                                rcText.size,
-                                options: strOptions,
-                                attributes: [
-                                    NSParagraphStyleAttributeName: parStyle,
-                                    NSFontAttributeName: font
-                                ],
-                                context: strContext )
+            UIGraphicsBeginImageContextWithOptions(strSize, false, UIScreen.mainScreen().scale)
+
+            name.drawWithRect(CGRect(origin: CGPoint(x: 0, y: 0), size: strSize),
+                              options: strOptions,
+                              attributes: [
+                                      NSParagraphStyleAttributeName: parStyle,
+                                      NSFontAttributeName: font
+                              ],
+                              context: strContext)
+
+            let textImg = UIGraphicsGetImageFromCurrentImageContext()
+
+            UIGraphicsEndImageContext()
+
+            let height = ratio*textArea.width;
+            let y = textArea.origin.y + (textArea.size.height - height)/2
+            let rc = CGRect(    origin: CGPoint(x: textArea.origin.x, y: y),
+                                size: CGSize(width: textArea.width, height: ratio * textArea.width))
+
+            textImg.drawInRect(rc)
         }
+        else {
 
-        CGContextSaveGState(context)
-        CGContextClipToRect(context, rc)
+            var rcStr = name.boundingRectWithSize(
+            textArea.size,
+            options: strOptions,
+            attributes: [
+                    NSParagraphStyleAttributeName: parStyle,
+                    NSFontAttributeName: font
+            ],
+            context: strContext)
 
-        CGContextSetFontSize(context, 8.0)
-        
-        rc.insetInPlace(dx: 0, dy: (rc.height - rcStr.size.height)/2)
+            var rc: CGRect = rcText
 
-        name.drawWithRect(  rc,
-                            options: strOptions,
-                            attributes: [
-                                NSParagraphStyleAttributeName: parStyle,
-                                NSFontAttributeName: font
-                            ],
-                            context: strContext )
+            if rc.width - rcStr.width < 20 || rc.height - rcStr.height < 20 {
+                font = UIFont(name: "helvetica", size: 10.0)!;
 
-        CGContextRestoreGState(context)
+                rcStr = name.boundingRectWithSize(
+                    rcText.size,
+                    options: strOptions,
+                    attributes: [
+                            NSParagraphStyleAttributeName: parStyle,
+                            NSFontAttributeName: font
+                    ],
+                    context: strContext)
+            }
+
+            CGContextSaveGState(context)
+            CGContextClipToRect(context, rc)
+
+            CGContextSetFontSize(context, 8.0)
+
+            rc.insetInPlace(dx: 0, dy: (rc.height - rcStr.size.height) / 2)
+
+            name.drawWithRect(rc,
+                              options: strOptions,
+                              attributes: [
+                                      NSParagraphStyleAttributeName: parStyle,
+                                      NSFontAttributeName: font
+                              ],
+                              context: strContext)
+
+            CGContextRestoreGState(context)
+        }
     }
 
     var _rect : Rect
