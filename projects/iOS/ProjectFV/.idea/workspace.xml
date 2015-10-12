@@ -2,6 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/HerarchicView/HierachicViewStory.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/HerarchicView/TreeController.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/HerarchicView/TreeItem.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/HerarchicView/TreeItems.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/HerarchicView/TreeTableDataNode.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/HerarchicView/TreeTableDataSource.swift" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierachicViewStory.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewStory.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/12C71365-0307-4876-B646-9E9507945A9A-36494-0000FA4CB339F917.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/12C71365-0307-4876-B646-9E9507945A9A-36494-0000FA4CB339F917.task" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/AB9101FB-E8BC-423B-8D06-8848A10C73CE-36494-0000FA4B5F5DA3D3.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/AB9101FB-E8BC-423B-8D06-8848A10C73CE-36494-0000FA4B5F5DA3D3.task" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B491D079-3DF6-4A0E-AEE4-5284F7383483-36494-0000FA4A0DFA98A1.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B491D079-3DF6-4A0E-AEE4-5284F7383483-36494-0000FA4A0DFA98A1.task" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B7A8F438-2005-4792-A87B-C5F6932FEBB8-36494-0000FA4E5B9347C9.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B7A8F438-2005-4792-A87B-C5F6932FEBB8-36494-0000FA4E5B9347C9.task" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/ProjectFV.vpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/ProjectFV/data.zip" afterPath="$PROJECT_DIR$/../../../diagrams/XML/ProjectFV/data.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/ProjectFV/project.xml" afterPath="$PROJECT_DIR$/../../../diagrams/XML/ProjectFV/project.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ProjectFV.iml" afterPath="$PROJECT_DIR$/.idea/ProjectFV.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
@@ -63,11 +82,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlConnectorEndPointParser.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="XmlConnectorEndPointParser.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55825245">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileViewStory.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/FileView/FileViewStory.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HierarchicViewStory.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewStory.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppDelegate.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProjectFV/AppDelegate.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14563107">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -149,8 +198,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="540" />
-    <option name="y" value="71" />
+    <option name="x" value="487" />
+    <option name="y" value="75" />
     <option name="width" value="1914" />
     <option name="height" value="1131" />
   </component>
@@ -206,38 +255,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="ProjectFV" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VpProject" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VpProject" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parsers" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -308,7 +325,25 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SchematicView" />
+              <option name="myItemId" value="HierarchicView" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,8 +444,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="540" y="71" width="1914" height="1131" extended-state="0" />
-    <editor active="false" />
+    <frame x="487" y="75" width="1914" height="1131" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2142152" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -419,7 +454,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972002" sideWeight="0.5340557" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972002" sideWeight="0.46594426" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36229023" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36229023" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294643" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20353442" sideWeight="0.4544643" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31805682" sideWeight="0.503872" order="8" side_tool="true" content_ui="tabs" />
@@ -524,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="29" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -594,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierachicViewStory.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.082417585">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -661,13 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -811,8 +825,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlConnectorEndPointParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55825245">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/FileView/FileViewStory.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewStory.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14563107">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding />
         </state>
       </provider>

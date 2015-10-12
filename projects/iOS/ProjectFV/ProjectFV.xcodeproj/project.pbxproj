@@ -150,7 +150,7 @@
 		B02F32888BCE847FB41A2E2E /* WriteQuestionAnswerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */; };
 		B02F3308C2A0E44B5F43D7FA /* RestartAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A5B73A9CCA6960D56E0 /* RestartAction.swift */; };
 		B02F3309D13C89183D00C203 /* DisplayGraph_EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */; };
-		B02F33338E3FB2ED18E9EA66 /* HierachicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */; };
+		B02F33338E3FB2ED18E9EA66 /* HierarchicViewStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F360AA5BA1C7813AA89FC /* HierarchicViewStory.swift */; };
 		B02F337B42610832A1D85AC7 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B02F316C1B5AD09D159E575A /* index.html */; };
 		B02F338B473F64C440E92E4C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3AEE16CAD2AEC6062D7C /* MainViewController.swift */; };
 		B02F33FE2B92A937DBE7F8F7 /* HierarchicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */; };
@@ -441,7 +441,7 @@
 		B02F35E961DDD51BF37F2D8B /* AnswerChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerChoice.swift; path = Stories/Questionnaire/AnswerChoice.swift; sourceTree = "<group>"; };
 		B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionStory.swift; path = Stories/MethodSelection/MethodSelectionStory.swift; sourceTree = "<group>"; };
 		B02F35FB0F03E66AF590258C /* QuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionController.swift; path = Stories/Questionnaire/QuestionController.swift; sourceTree = "<group>"; };
-		B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierachicViewStory.swift; path = Stories/HerarchicView/HierachicViewStory.swift; sourceTree = "<group>"; };
+		B02F360AA5BA1C7813AA89FC /* HierarchicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierarchicViewStory.swift; path = Stories/HerarchicView/HierarchicViewStory.swift; sourceTree = "<group>"; };
 		B02F3626A63FD0EA5E397C7F /* DisplayGraphDrawParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraphDrawParams.swift; sourceTree = "<group>"; };
 		B02F372904028C1220E9B3E3 /* DisplayGraph_Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_Label.swift; sourceTree = "<group>"; };
 		B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecenterDiagramAction.swift; path = Actions/ActionObjects/RecenterDiagramAction.swift; sourceTree = "<group>"; };
@@ -1034,7 +1034,7 @@
 			isa = PBXGroup;
 			children = (
 				B02F3B17B591545F44B573A5 /* HierarchicViewController.swift */,
-				B02F360AA5BA1C7813AA89FC /* HierachicViewStory.swift */,
+				B02F360AA5BA1C7813AA89FC /* HierarchicViewStory.swift */,
 				B02F303F237A284112FED013 /* TreeController.swift */,
 				B02F3F867005CFB33B7A4A98 /* TreeItem.swift */,
 				B02F3509C60750E4CA0427ED /* TreeItems.swift */,
@@ -1455,7 +1455,7 @@
 				B02F35501E560333D9F1395C /* MethodType.swift in Sources */,
 				B02F3B3419ADBE03038C3515 /* MethodSelectionAction.swift in Sources */,
 				B02F33FE2B92A937DBE7F8F7 /* HierarchicViewController.swift in Sources */,
-				B02F33338E3FB2ED18E9EA66 /* HierachicViewStory.swift in Sources */,
+				B02F33338E3FB2ED18E9EA66 /* HierarchicViewStory.swift in Sources */,
 				B02F3B4C2216F0B6BB77DA45 /* TreeController.swift in Sources */,
 				B02F36FA275155BBD58427C0 /* TreeItem.swift in Sources */,
 				B02F3749D8FB884CB0595029 /* TreeItems.swift in Sources */,
