@@ -12,12 +12,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/127D8A68-8352-46C2-8A4E-03BE9F3AFE5C-36494-0000FA55FDA3D7E1.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/127D8A68-8352-46C2-8A4E-03BE9F3AFE5C-36494-0000FA55FDA3D7E1.task" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/12C71365-0307-4876-B646-9E9507945A9A-36494-0000FA4CB339F917.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/12C71365-0307-4876-B646-9E9507945A9A-36494-0000FA4CB339F917.task" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/1A1FFB68-3D8F-4760-BF72-8995BC63BAA3-36494-0000FA5C34E0703E.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/1A1FFB68-3D8F-4760-BF72-8995BC63BAA3-36494-0000FA5C34E0703E.task" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/4DE695ED-F300-4B20-B53C-9E15D90A52C8-36494-0000FA776C5ABA20.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/4DE695ED-F300-4B20-B53C-9E15D90A52C8-36494-0000FA776C5ABA20.task" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/7A52488D-5A0A-45CB-B5E7-3C0ABE8676B0-36494-0000FA74B04D8867.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/7A52488D-5A0A-45CB-B5E7-3C0ABE8676B0-36494-0000FA74B04D8867.task" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/83CF63B0-F3D4-4C78-9546-FCD587522848-36494-0000FA5FD8DE2679.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/83CF63B0-F3D4-4C78-9546-FCD587522848-36494-0000FA5FD8DE2679.task" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/AB9101FB-E8BC-423B-8D06-8848A10C73CE-36494-0000FA4B5F5DA3D3.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/AB9101FB-E8BC-423B-8D06-8848A10C73CE-36494-0000FA4B5F5DA3D3.task" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B491D079-3DF6-4A0E-AEE4-5284F7383483-36494-0000FA4A0DFA98A1.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B491D079-3DF6-4A0E-AEE4-5284F7383483-36494-0000FA4A0DFA98A1.task" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B7A0597C-B7D6-4913-8EF0-1274E08BF3EF-36494-0000FA5A68D4DABD.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B7A0597C-B7D6-4913-8EF0-1274E08BF3EF-36494-0000FA5A68D4DABD.task" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B7A8F438-2005-4792-A87B-C5F6932FEBB8-36494-0000FA4E5B9347C9.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/B7A8F438-2005-4792-A87B-C5F6932FEBB8-36494-0000FA4E5B9347C9.task" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/BE7ABA02-66CB-4CA6-A40A-25C372272291-36494-0000FA62BB2AA005.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/BE7ABA02-66CB-4CA6-A40A-25C372272291-36494-0000FA62BB2AA005.task" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/DD393B6D-D88F-4FC8-A6C0-6059CB6BE635-36494-0000FA5802A09B4C.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/DD393B6D-D88F-4FC8-A6C0-6059CB6BE635-36494-0000FA5802A09B4C.task" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/ProjectFV/diagrams.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -212,6 +215,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DisplayGraph" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Supporting Files" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,13 +476,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/DiagramSelectedAction.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/CloseStoryAction.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -807,6 +821,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectFV/Info.plist">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
