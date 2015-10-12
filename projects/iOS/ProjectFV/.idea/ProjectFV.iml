@@ -17,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/FileViewAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/GestureAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/HistoryDiagramSelectedAction.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/LongPressAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/MethodSelectionAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/PanDiagramAction.swift" isTestSource="false" />
@@ -121,6 +122,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManagerDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramsHistoryController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/BaseGestureHandler.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/LongPressGestureHandler.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/PanGestureHandler.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/TapGestureHandler.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/ZoomGestureHandler.swift" isTestSource="false" />

@@ -13,6 +13,14 @@ class DisplayGraphItems {
 
     func add(item: DisplayGraphItem) {
         _items.append(item)
+
+        if let id = item.id {
+            _itemsById[id] = item
+        }
+    }
+
+    func get(id: String) -> DisplayGraphItem! {
+        return _itemsById[id]
     }
 
     func clear() {
@@ -27,4 +35,5 @@ class DisplayGraphItems {
     }
 
     var _items : [DisplayGraphItem] = []
+    var _itemsById : [String:DisplayGraphItem] = [:]
 }

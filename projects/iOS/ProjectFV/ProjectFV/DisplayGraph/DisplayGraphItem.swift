@@ -8,7 +8,18 @@ import UIKit
 
 class DisplayGraphItem {
 
+    var id : String! {
+        get {
+            return _id
+        }
+        set (value) {
+            _id = value
+        }
+    }
+
     func draw(  params: DisplayGraphDrawParams ) {
 
     }
+
+    var _id : String!
 }

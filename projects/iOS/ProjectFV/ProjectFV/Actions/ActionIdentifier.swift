@@ -30,5 +30,6 @@ enum ActionIdentifier : String {
     case TreeItemCollapsed          = "Tree Item Collapsed"
     case TreeItemSelected           = "Tree Item Selected"
     case ShowQuestionRecherche      = "Show Question Recherche"
+    case LongPress                  = "Long Press"
 }
 

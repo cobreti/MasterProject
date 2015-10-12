@@ -9,6 +9,20 @@ import Shapes
 
 class DisplayGraph_Element : DisplayGraphItem {
 
+    enum State {
+        case Normal
+        case Selected
+    }
+
+    var state: State {
+        get {
+            return _state
+        }
+        set (value) {
+            _state = value
+        }
+    }
+
     var fileIcon: UIImage! {
         get {
             return _fileIcon
@@ -48,7 +62,23 @@ class DisplayGraph_Element : DisplayGraphItem {
                             width: portalRect.size.width,
                             height: portalRect.size.height)
 
-        CGContextStrokeRect(params.context, cgRC)
+
+
+        if _state == .Selected {
+
+            let fillColor = UIColor(red: 241.0/255.0, green: 244.0/255.0, blue: 238.0/255.0, alpha: 1.0)
+            CGContextSetFillColorWithColor(params.context, fillColor.CGColor)
+            CGContextFillRect(params.context, cgRC)
+
+            let rc = CGRectInset(cgRC, -3, -3)
+            CGContextSetLineWidth(params.context, 3.0)
+            CGContextStrokeRect(params.context, rc)
+            CGContextSetLineWidth(params.context, 1.0)
+        }
+        else {
+
+            CGContextStrokeRect(params.context, cgRC)
+        }
 
         if let _ = _fileIcon {
             drawFileIcon(cgRC)
@@ -88,9 +118,16 @@ class DisplayGraph_Element : DisplayGraphItem {
 
         let imgSize = min(imgWidth, imgHeight)
 
-        let rcImg = CGRect( x: rect.maxX-imgWidth-2, y: rect.minY+2, width: imgSize, height: imgSize )
+        if let _ = _fileIcon {
+            let rcImg = CGRect(x: rect.maxX - imgWidth - 2, y: rect.minY + 2, width: imgSize, height: imgSize)
 
-        _subDiagramIcon.drawInRect(rcImg)
+            _subDiagramIcon.drawInRect(rcImg)
+        }
+        else {
+            let rcImg = CGRect(x: rect.minX + 2, y: rect.minY + 2, width: imgSize, height: imgSize)
+
+            _subDiagramIcon.drawInRect(rcImg)
+        }
     }
 
     func drawName(rect: CGRect, context: CGContext) {
@@ -150,4 +187,5 @@ class DisplayGraph_Element : DisplayGraphItem {
     var _name : String!
     var _fileIcon : UIImage!
     var _subDiagramIcon : UIImage!
+    var _state : State = .Normal
 }

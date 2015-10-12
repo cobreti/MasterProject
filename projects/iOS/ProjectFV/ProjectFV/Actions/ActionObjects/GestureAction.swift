@@ -14,6 +14,7 @@ class GestureAction : Action {
         case Began = "Began"
         case Changed = "Changed"
         case Ended = "Ended"
+        case Cancelled = "Cancelled"
     }
 
     var state: State {

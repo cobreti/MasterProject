@@ -49,6 +49,7 @@ class DiagramViewController : UIViewController {
             _panGestureHandler?.enabled = value
             _zoomGestureHandler?.enabled = value
             _tapGestureHandler?.enabled = value
+            _longPressGestureHandler?.enabled = value
         }
     }
     
@@ -130,11 +131,13 @@ class DiagramViewController : UIViewController {
             _panGestureHandler = PanGestureHandler(view: dgmView, portal: _diagramPortal)
             _zoomGestureHandler = ZoomGestureHandler(view: dgmView, portal: _diagramPortal)
             _tapGestureHandler = TapGestureHandler(view: dgmView, portal: _diagramPortal)
+            _longPressGestureHandler = LongPressGestureHandler(view: dgmView, portal: _diagramPortal)
             _subDiagramPortal = SubDiagramPortal(view: dgmView, portal: _diagramPortal, parentController: _parentController)
             
             _panGestureHandler?.enabled = _gestureEnabled
             _zoomGestureHandler?.enabled = _gestureEnabled
             _tapGestureHandler?.enabled = _gestureEnabled
+            _longPressGestureHandler?.enabled = _gestureEnabled
         }
     }
     
@@ -270,7 +273,12 @@ class DiagramViewController : UIViewController {
                 if let tda = action as? TapDiagramAction {
                     onTapAction(tda)
                 }
-            
+
+            case .LongPress:
+                if let lpa = action as? LongPressAction {
+                    onLongPressAction(lpa)
+                }
+
             default:
                 break
         }
@@ -322,6 +330,9 @@ class DiagramViewController : UIViewController {
                 }
             
                 view.setNeedsDisplay()
+
+            case .Cancelled:
+                break
         }
     }
     
@@ -344,6 +355,69 @@ class DiagramViewController : UIViewController {
         }
     }
 
+    func onLongPressAction(action: LongPressAction) {
+
+        let primitives = _diagram.primitivesFromPt(action.pt)
+
+        if !primitives.isEmpty {
+
+            var selectedElm : Element! = nil
+
+            for item in primitives {
+                if let elm = item as? Element {
+                    selectedElm = elm
+                    break
+                }
+            }
+
+            let graphs = DisplayGraphs.instance
+
+
+            if let  elm = selectedElm,
+
+                    graph = graphs.get(_diagram.name),
+                    graphElm = graph.items.get(elm.modelId) as? DisplayGraph_Element,
+                    _ = graphElm.subDiagramIcon {
+
+                switch action.state {
+
+                    case .Began:
+                        graphElm.state = .Selected
+                        _selectedGraphElement = graphElm
+                        view?.setNeedsDisplay()
+                        break;
+
+                    case .Ended:
+                        graphElm.state = .Normal
+                        _selectedGraphElement = nil
+                        view?.setNeedsDisplay()
+
+                        let document = Application.instance().document
+
+                        if let  model = document.models.get(elm.modelId),
+                                ref = model.subDiagrams.getForParentDiagram(_diagram.name),
+                                subDiagram = document.diagrams.get(ref.diagramName) {
+                            Application.instance().actionsBus.send(ShowDiagramAction(diagram: subDiagram, sender: self))
+                        }
+
+//                        Application.instance().actionsBus.send( SelectDiagramElementAction(element: elm, sender: self))
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+        }
+        else {
+
+            if let e = _selectedGraphElement {
+                e.state = .Normal
+                _selectedGraphElement = nil
+                view?.setNeedsDisplay()
+            }
+        }
+    }
+
     var _diagramPortal : DiagramPortal!
     var _diagram : Diagram!
     var _parentController : SchematicViewController
@@ -351,8 +425,11 @@ class DiagramViewController : UIViewController {
     var _panGestureHandler : PanGestureHandler!
     var _zoomGestureHandler : ZoomGestureHandler!
     var _tapGestureHandler : TapGestureHandler!
+    var _longPressGestureHandler : LongPressGestureHandler!
     var _subDiagramPortal : SubDiagramPortal!
-    
+
+    var _selectedGraphElement : DisplayGraph_Element!
+
     var _state : State = .Normal
     
     var _gestureEnabled : Bool = true

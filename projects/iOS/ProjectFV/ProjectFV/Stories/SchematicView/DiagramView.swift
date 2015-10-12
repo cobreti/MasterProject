@@ -155,6 +155,8 @@ class DiagramView : UIView {
             }
         }
 
+        dgElm.id = elm.modelId
+
         if let name = elm.name {
             dgElm.name = name
         }
