@@ -88,9 +88,9 @@ class DisplayGraph_Element : DisplayGraphItem {
             drawSubDiagramIcon(cgRC)
         }
 
-        if let _ = _name where params.drawingMode == .Normal {
+//        if let _ = _name where params.drawingMode == .Normal {
             drawName(cgRC, context: params.context)
-        }
+//        }
     }
 
     func drawFileIcon(rect: CGRect) {
