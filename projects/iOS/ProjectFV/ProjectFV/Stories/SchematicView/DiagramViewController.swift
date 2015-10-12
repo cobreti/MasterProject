@@ -287,6 +287,7 @@ class DiagramViewController : UIViewController {
     func onPanAction(action: PanDiagramAction) {
     
         _diagramPortal.translation = action.translation
+        _subDiagramPortal?.updateSubDiagramArea()
         view.setNeedsDisplay()
     }
     
