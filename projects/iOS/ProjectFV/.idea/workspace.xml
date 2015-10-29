@@ -22,7 +22,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/BE7ABA02-66CB-4CA6-A40A-25C372272291-36494-0000FA62BB2AA005.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/BE7ABA02-66CB-4CA6-A40A-25C372272291-36494-0000FA62BB2AA005.task" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/DD393B6D-D88F-4FC8-A6C0-6059CB6BE635-36494-0000FA5802A09B4C.task" afterPath="$PROJECT_DIR$/../../../Documents/Tasks.supertask/DD393B6D-D88F-4FC8-A6C0-6059CB6BE635-36494-0000FA5802A09B4C.task" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
     </list>
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +36,7 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_0343b3cd753a0df3730dc63520f84d3e3bc15e72" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
   <component name="FavoritesManager">
     <favorites_list name="ProjectFV" />
   </component>
@@ -506,7 +505,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="430" y="75" width="1914" height="1131" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2142152" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -515,7 +514,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972002" sideWeight="0.5340557" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972002" sideWeight="0.46594426" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36229023" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36229023" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294643" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20353442" sideWeight="0.4544643" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31805682" sideWeight="0.503872" order="8" side_tool="true" content_ui="tabs" />
