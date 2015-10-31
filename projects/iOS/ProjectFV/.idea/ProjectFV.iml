@@ -90,8 +90,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/DiagramSelection/DiagramsDataSource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/FileView/FileViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/FileView/FileViewStory.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/HerarchicView/TreeController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/HerarchicView/TreeItem.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/HerarchicView/TreeItems.swift" isTestSource="false" />
