@@ -9773,7 +9773,7 @@
 						<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
 						<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 						<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446298733414"/>
-						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138133"/>
+						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574176"/>
 						<StringProperty displayName="Id" name="userID"/>
 						<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
 						<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
@@ -11206,6 +11206,98 @@
 								</DiagramElementRefProperty>
 							</ModelProperties>
 						</Model>
+						<Model composite="false" considerDefaultProperties="false" displayModelType="Generalization" id="rkKQYwqGAqAEZxoU" modelType="Generalization">
+							<ModelProperties>
+								<StringProperty displayName="Name" name="name"/>
+								<StringProperty displayName="Model Type" name="modelType" value="Generalization"/>
+								<ModelRefProperty displayName="From" name="from">
+									<ModelRef id="FLIQYwqGAqAEZxnm"/>
+								</ModelRefProperty>
+								<ModelRefProperty displayName="To" name="to">
+									<ModelRef id="VB3gYwqGAqAEZxnQ"/>
+								</ModelRefProperty>
+								<ModelsProperty displayName="Comments" name="comments"/>
+								<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
+								<ModelsProperty displayName="Voices" name="voices"/>
+								<ModelsProperty displayName="References" name="references"/>
+								<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+								<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+								<StringProperty displayName="Transit From" name="transitFrom"/>
+								<StringProperty displayName="Transit To" name="transitTo"/>
+								<ModelRefProperty displayName="Pm Status" name="pmStatus"/>
+								<ModelRefProperty displayName="Pm Difficulty" name="pmDifficulty"/>
+								<ModelRefProperty displayName="Pm Priority" name="pmPriority"/>
+								<ModelRefProperty displayName="Pm Version" name="pmVersion"/>
+								<ModelRefProperty displayName="Pm Iteration" name="pmIteration"/>
+								<ModelRefProperty displayName="Pm Phase" name="pmPhase"/>
+								<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
+								<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+								<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446431507061"/>
+								<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574174"/>
+								<StringProperty displayName="Id" name="userID"/>
+								<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
+								<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+								<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+								<ModelRefsProperty displayName="Sync Mapping Models" name="syncMappingModels"/>
+								<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+								<StringProperty displayName="Quality Reason" name="qualityReason"/>
+								<ModelRefProperty displayName="Generalization Set" name="generalizationSet"/>
+								<BooleanProperty displayName="Substitutable" name="substitutable" value="false"/>
+								<ModelProperty displayName="Dotnet Code Detail" name="dotnetCodeDetail"/>
+								<ModelProperty displayName="Template Type Bind Info" name="templateTypeBindInfo"/>
+								<StringProperty displayName="Visibility" name="visibility" value="Unspecified"/>
+								<StringProperty displayName="Connect To Code Model" name="connectToCodeModel" value="None"/>
+								<DiagramElementRefProperty displayName="Master View" name="masterView">
+									<DiagramElementRef displayShapeType="Generalization" id="HkKQYwqGAqAEZxoV" model="rkKQYwqGAqAEZxoU" shapeType="Generalization"/>
+								</DiagramElementRefProperty>
+							</ModelProperties>
+						</Model>
+						<Model composite="false" considerDefaultProperties="false" displayModelType="Generalization" id="ruaQYwqGAqAEZxoa" modelType="Generalization">
+							<ModelProperties>
+								<StringProperty displayName="Name" name="name"/>
+								<StringProperty displayName="Model Type" name="modelType" value="Generalization"/>
+								<ModelRefProperty displayName="From" name="from">
+									<ModelRef id="bP4QYwqGAqAEZxn4"/>
+								</ModelRefProperty>
+								<ModelRefProperty displayName="To" name="to">
+									<ModelRef id="VB3gYwqGAqAEZxnQ"/>
+								</ModelRefProperty>
+								<ModelsProperty displayName="Comments" name="comments"/>
+								<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
+								<ModelsProperty displayName="Voices" name="voices"/>
+								<ModelsProperty displayName="References" name="references"/>
+								<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+								<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+								<StringProperty displayName="Transit From" name="transitFrom"/>
+								<StringProperty displayName="Transit To" name="transitTo"/>
+								<ModelRefProperty displayName="Pm Status" name="pmStatus"/>
+								<ModelRefProperty displayName="Pm Difficulty" name="pmDifficulty"/>
+								<ModelRefProperty displayName="Pm Priority" name="pmPriority"/>
+								<ModelRefProperty displayName="Pm Version" name="pmVersion"/>
+								<ModelRefProperty displayName="Pm Iteration" name="pmIteration"/>
+								<ModelRefProperty displayName="Pm Phase" name="pmPhase"/>
+								<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
+								<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+								<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446431516533"/>
+								<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574175"/>
+								<StringProperty displayName="Id" name="userID"/>
+								<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
+								<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+								<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+								<ModelRefsProperty displayName="Sync Mapping Models" name="syncMappingModels"/>
+								<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+								<StringProperty displayName="Quality Reason" name="qualityReason"/>
+								<ModelRefProperty displayName="Generalization Set" name="generalizationSet"/>
+								<BooleanProperty displayName="Substitutable" name="substitutable" value="false"/>
+								<ModelProperty displayName="Dotnet Code Detail" name="dotnetCodeDetail"/>
+								<ModelProperty displayName="Template Type Bind Info" name="templateTypeBindInfo"/>
+								<StringProperty displayName="Visibility" name="visibility" value="Unspecified"/>
+								<StringProperty displayName="Connect To Code Model" name="connectToCodeModel" value="None"/>
+								<DiagramElementRefProperty displayName="Master View" name="masterView">
+									<DiagramElementRef displayShapeType="Generalization" id="3uaQYwqGAqAEZxob" model="ruaQYwqGAqAEZxoa" shapeType="Generalization"/>
+								</DiagramElementRefProperty>
+							</ModelProperties>
+						</Model>
 					</ChildModels>
 				</Model>
 				<Model composite="false" considerDefaultProperties="false" displayModelType="ModelRelationshipContainer" id="B_tUfQqGAqAEZyAR" modelType="ModelRelationshipContainer" name="Dependency">
@@ -11285,7 +11377,7 @@
 						<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
 						<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 						<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446420508692"/>
-						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446430187388"/>
+						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574175"/>
 						<StringProperty displayName="Id" name="userID"/>
 						<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
 						<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
@@ -11382,6 +11474,51 @@
 								</DiagramElementRefProperty>
 							</ModelProperties>
 						</Model>
+						<Model composite="false" considerDefaultProperties="false" displayModelType="Usage" id="WqhQYwqGAqAEZxpC" modelType="Usage">
+							<ModelProperties>
+								<StringProperty displayName="Name" name="name"/>
+								<StringProperty displayName="Model Type" name="modelType" value="Usage"/>
+								<ModelRefProperty displayName="From" name="from">
+									<ModelRef id="nxeQYwqGAqAEZxor"/>
+								</ModelRefProperty>
+								<ModelRefProperty displayName="To" name="to">
+									<ModelRef id="VB3gYwqGAqAEZxnQ"/>
+								</ModelRefProperty>
+								<ModelsProperty displayName="Comments" name="comments"/>
+								<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
+								<ModelsProperty displayName="Voices" name="voices"/>
+								<ModelsProperty displayName="References" name="references"/>
+								<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+								<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+								<StringProperty displayName="Transit From" name="transitFrom"/>
+								<StringProperty displayName="Transit To" name="transitTo"/>
+								<ModelRefProperty displayName="Pm Status" name="pmStatus"/>
+								<ModelRefProperty displayName="Pm Difficulty" name="pmDifficulty"/>
+								<ModelRefProperty displayName="Pm Priority" name="pmPriority"/>
+								<ModelRefProperty displayName="Pm Version" name="pmVersion"/>
+								<ModelRefProperty displayName="Pm Iteration" name="pmIteration"/>
+								<ModelRefProperty displayName="Pm Phase" name="pmPhase"/>
+								<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
+								<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+								<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446431561050"/>
+								<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574175"/>
+								<StringProperty displayName="Id" name="userID"/>
+								<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
+								<ModelRefsProperty displayName="Additional Clients" name="additionalClients"/>
+								<ModelRefsProperty displayName="Additional Suppliers" name="additionalSuppliers"/>
+								<StringProperty displayName="Visibility" name="visibility" value="Unspecified"/>
+								<ModelRefsProperty displayName="Stereotypes" name="stereotypes">
+									<ModelRef id="mc_6owqGAqAEZwv7"/>
+								</ModelRefsProperty>
+								<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+								<ModelRefsProperty displayName="Sync Mapping Models" name="syncMappingModels"/>
+								<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+								<StringProperty displayName="Quality Reason" name="qualityReason"/>
+								<DiagramElementRefProperty displayName="Master View" name="masterView">
+									<DiagramElementRef displayShapeType="Usage" id="uqhQYwqGAqAEZxpD" model="WqhQYwqGAqAEZxpC" shapeType="Usage"/>
+								</DiagramElementRefProperty>
+							</ModelProperties>
+						</Model>
 					</ChildModels>
 				</Model>
 			</ChildModels>
@@ -11444,7 +11581,7 @@
 				<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446420508692"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446430187388"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574175"/>
 				<StringProperty displayName="Id" name="userID"/>
 				<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
 				<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
@@ -11541,6 +11678,51 @@
 						</DiagramElementRefProperty>
 					</ModelProperties>
 				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Usage" id="WqhQYwqGAqAEZxpC" modelType="Usage">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name"/>
+						<StringProperty displayName="Model Type" name="modelType" value="Usage"/>
+						<ModelRefProperty displayName="From" name="from">
+							<ModelRef id="nxeQYwqGAqAEZxor"/>
+						</ModelRefProperty>
+						<ModelRefProperty displayName="To" name="to">
+							<ModelRef id="VB3gYwqGAqAEZxnQ"/>
+						</ModelRefProperty>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
+						<ModelsProperty displayName="Voices" name="voices"/>
+						<ModelsProperty displayName="References" name="references"/>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelRefProperty displayName="Pm Status" name="pmStatus"/>
+						<ModelRefProperty displayName="Pm Difficulty" name="pmDifficulty"/>
+						<ModelRefProperty displayName="Pm Priority" name="pmPriority"/>
+						<ModelRefProperty displayName="Pm Version" name="pmVersion"/>
+						<ModelRefProperty displayName="Pm Iteration" name="pmIteration"/>
+						<ModelRefProperty displayName="Pm Phase" name="pmPhase"/>
+						<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
+						<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+						<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446431561050"/>
+						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574175"/>
+						<StringProperty displayName="Id" name="userID"/>
+						<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
+						<ModelRefsProperty displayName="Additional Clients" name="additionalClients"/>
+						<ModelRefsProperty displayName="Additional Suppliers" name="additionalSuppliers"/>
+						<StringProperty displayName="Visibility" name="visibility" value="Unspecified"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes">
+							<ModelRef id="mc_6owqGAqAEZwv7"/>
+						</ModelRefsProperty>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelRefsProperty displayName="Sync Mapping Models" name="syncMappingModels"/>
+						<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+						<StringProperty displayName="Quality Reason" name="qualityReason"/>
+						<DiagramElementRefProperty displayName="Master View" name="masterView">
+							<DiagramElementRef displayShapeType="Usage" id="uqhQYwqGAqAEZxpD" model="WqhQYwqGAqAEZxpC" shapeType="Usage"/>
+						</DiagramElementRefProperty>
+					</ModelProperties>
+				</Model>
 			</ChildModels>
 		</Model>
 		<Model composite="false" considerDefaultProperties="false" displayModelType="Package" id="1Rj3owqGAqAEZxT7" modelType="Package" name="Nyx">
@@ -11564,7 +11746,7 @@
 				<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446429792427"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138133"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574176"/>
 				<StringProperty displayName="Id" name="userID"/>
 				<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
 				<BooleanProperty displayName="Abstract" name="abstract" value="false"/>
@@ -13524,7 +13706,17 @@
 						<ModelsProperty displayName="Comments" name="comments"/>
 						<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
 						<ModelsProperty displayName="Voices" name="voices"/>
-						<ModelsProperty displayName="References" name="references"/>
+						<ModelsProperty displayName="References" name="references">
+							<Model composite="true" considerDefaultProperties="false" displayModelType="Reference" id="CkvQYwqGAqAEZxqR" modelType="Reference" name="Class Diagram/Nyx - Streams">
+								<ModelProperties>
+									<StringProperty displayName="Name" name="name" value="Class Diagram/Nyx - Streams"/>
+									<StringProperty displayName="Model Type" name="modelType" value="Reference"/>
+									<StringProperty displayName="Description" name="description" value="Nyx&#10;"/>
+									<StringProperty diagramName="Nyx - Streams" diagramType="ClassDiagram" displayName="Url" name="url" value="eEVgYwqGAqAEZxnB"/>
+									<StringProperty displayName="Type" name="type" value="Diagram"/>
+								</ModelProperties>
+							</Model>
+						</ModelsProperty>
 						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
 						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
 						<StringProperty displayName="Transit From" name="transitFrom"/>
@@ -13538,7 +13730,7 @@
 						<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
 						<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 						<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446397987000"/>
-						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446430187396"/>
+						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675780"/>
 						<StringProperty displayName="Id" name="userID"/>
 						<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
 						<BooleanProperty displayName="Abstract" name="abstract" value="false"/>
@@ -14256,6 +14448,268 @@
 						<RelationshipRef from="GD_IIwqGAqAEZwfQ" id="Yx9AYwqGAqAEZxmD" to="2HtAYwqGAqAEZxl."/>
 					</ToSimpleRelationships>
 				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Class" id="VB3gYwqGAqAEZxnQ" modelType="Class" name="IStreamRW">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value="IStreamRW"/>
+						<StringProperty displayName="Model Type" name="modelType" value="Class"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
+						<ModelsProperty displayName="Voices" name="voices"/>
+						<ModelsProperty displayName="References" name="references">
+							<Model composite="true" considerDefaultProperties="false" displayModelType="Reference" id="bRfgYwqGAqAEZxnW" modelType="Reference" name="">
+								<ModelProperties>
+									<StringProperty displayName="Name" name="name" value=""/>
+									<StringProperty displayName="Model Type" name="modelType" value="Reference"/>
+									<StringProperty displayName="Description" name="description" value=""/>
+									<StringProperty displayName="Url" name="url" pathName="NyxStreamRW.hpp" value="Nyx/NyxStreamRW.hpp"/>
+									<StringProperty displayName="Type" name="type" value="File"/>
+								</ModelProperties>
+							</Model>
+						</ModelsProperty>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelRefProperty displayName="Pm Status" name="pmStatus"/>
+						<ModelRefProperty displayName="Pm Difficulty" name="pmDifficulty"/>
+						<ModelRefProperty displayName="Pm Priority" name="pmPriority"/>
+						<ModelRefProperty displayName="Pm Version" name="pmVersion"/>
+						<ModelRefProperty displayName="Pm Iteration" name="pmIteration"/>
+						<ModelRefProperty displayName="Pm Phase" name="pmPhase"/>
+						<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
+						<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+						<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446431406122"/>
+						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574174"/>
+						<StringProperty displayName="Id" name="userID"/>
+						<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
+						<ModelsProperty displayName="Orm Qualifiers" name="ormQualifiers"/>
+						<BooleanProperty displayName="Active" name="active" value="false"/>
+						<BooleanProperty displayName="Business Key Mutable" name="businessKeyMutable" value="true"/>
+						<ModelProperty displayName="Java Detail" name="javaDetail"/>
+						<ModelProperty displayName="Orm Detail" name="ormDetail"/>
+						<ModelProperty displayName="Dotnet Code Detail" name="dotnetCodeDetail"/>
+						<ModelProperty displayName="Action Script Code Detail" name="actionScriptCodeDetail"/>
+						<ModelProperty displayName="Ejb Code Detail" name="ejbCodeDetail"/>
+						<ModelProperty displayName="Xs Detail" name="xsDetail"/>
+						<ModelsProperty displayName="Template Parameters" name="templateParameters"/>
+						<StringProperty displayName="Connect To Code Model" name="connectToCodeModel" value="None"/>
+						<BooleanProperty displayName="Business Model" name="businessModel" value="false"/>
+						<StringProperty displayName="Visibility" name="visibility" value="public"/>
+						<BooleanProperty displayName="Abstract" name="abstract" value="false"/>
+						<BooleanProperty displayName="Leaf" name="leaf" value="false"/>
+						<BooleanProperty displayName="Root" name="root" value="false"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes">
+							<ModelRef id="DB3gYwqGAqAEZxnR"/>
+						</ModelRefsProperty>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelRefsProperty displayName="Sync Mapping Models" name="syncMappingModels"/>
+						<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+						<StringProperty displayName="Quality Reason" name="qualityReason"/>
+						<DiagramElementRefProperty displayName="Master View" name="masterView">
+							<DiagramElementRef displayShapeType="Class" id="lB3gYwqGAqAEZxnP" model="VB3gYwqGAqAEZxnQ" name="IStreamRW" shapeType="Class"/>
+						</DiagramElementRefProperty>
+					</ModelProperties>
+					<ToSimpleRelationships>
+						<RelationshipRef from="FLIQYwqGAqAEZxnm" id="rkKQYwqGAqAEZxoU" to="VB3gYwqGAqAEZxnQ"/>
+						<RelationshipRef from="bP4QYwqGAqAEZxn4" id="ruaQYwqGAqAEZxoa" to="VB3gYwqGAqAEZxnQ"/>
+						<RelationshipRef from="nxeQYwqGAqAEZxor" id="WqhQYwqGAqAEZxpC" to="VB3gYwqGAqAEZxnQ"/>
+					</ToSimpleRelationships>
+				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Class" id="FLIQYwqGAqAEZxnm" modelType="Class" name="IStreamReader">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value="IStreamReader"/>
+						<StringProperty displayName="Model Type" name="modelType" value="Class"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
+						<ModelsProperty displayName="Voices" name="voices"/>
+						<ModelsProperty displayName="References" name="references">
+							<Model composite="true" considerDefaultProperties="false" displayModelType="Reference" id="uI4QYwqGAqAEZxnr" modelType="Reference" name="">
+								<ModelProperties>
+									<StringProperty displayName="Name" name="name" value=""/>
+									<StringProperty displayName="Model Type" name="modelType" value="Reference"/>
+									<StringProperty displayName="Description" name="description" value=""/>
+									<StringProperty displayName="Url" name="url" pathName="NyxStreamReader.hpp" value="Nyx/NyxStreamReader.hpp"/>
+									<StringProperty displayName="Type" name="type" value="File"/>
+								</ModelProperties>
+							</Model>
+						</ModelsProperty>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelRefProperty displayName="Pm Status" name="pmStatus"/>
+						<ModelRefProperty displayName="Pm Difficulty" name="pmDifficulty"/>
+						<ModelRefProperty displayName="Pm Priority" name="pmPriority"/>
+						<ModelRefProperty displayName="Pm Version" name="pmVersion"/>
+						<ModelRefProperty displayName="Pm Iteration" name="pmIteration"/>
+						<ModelRefProperty displayName="Pm Phase" name="pmPhase"/>
+						<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
+						<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+						<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446431444264"/>
+						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574176"/>
+						<StringProperty displayName="Id" name="userID"/>
+						<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
+						<ModelsProperty displayName="Orm Qualifiers" name="ormQualifiers"/>
+						<BooleanProperty displayName="Active" name="active" value="false"/>
+						<BooleanProperty displayName="Business Key Mutable" name="businessKeyMutable" value="true"/>
+						<ModelProperty displayName="Java Detail" name="javaDetail"/>
+						<ModelProperty displayName="Orm Detail" name="ormDetail"/>
+						<ModelProperty displayName="Dotnet Code Detail" name="dotnetCodeDetail"/>
+						<ModelProperty displayName="Action Script Code Detail" name="actionScriptCodeDetail"/>
+						<ModelProperty displayName="Ejb Code Detail" name="ejbCodeDetail"/>
+						<ModelProperty displayName="Xs Detail" name="xsDetail"/>
+						<ModelsProperty displayName="Template Parameters" name="templateParameters"/>
+						<StringProperty displayName="Connect To Code Model" name="connectToCodeModel" value="None"/>
+						<BooleanProperty displayName="Business Model" name="businessModel" value="false"/>
+						<StringProperty displayName="Visibility" name="visibility" value="public"/>
+						<BooleanProperty displayName="Abstract" name="abstract" value="false"/>
+						<BooleanProperty displayName="Leaf" name="leaf" value="false"/>
+						<BooleanProperty displayName="Root" name="root" value="false"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes">
+							<ModelRef id="DB3gYwqGAqAEZxnR"/>
+						</ModelRefsProperty>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelRefsProperty displayName="Sync Mapping Models" name="syncMappingModels"/>
+						<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+						<StringProperty displayName="Quality Reason" name="qualityReason"/>
+						<DiagramElementRefProperty displayName="Master View" name="masterView">
+							<DiagramElementRef displayShapeType="Class" id="FLIQYwqGAqAEZxnl" model="FLIQYwqGAqAEZxnm" name="IStreamReader" shapeType="Class"/>
+						</DiagramElementRefProperty>
+					</ModelProperties>
+					<FromSimpleRelationships>
+						<RelationshipRef from="FLIQYwqGAqAEZxnm" id="rkKQYwqGAqAEZxoU" to="VB3gYwqGAqAEZxnQ"/>
+					</FromSimpleRelationships>
+				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Class" id="bP4QYwqGAqAEZxn4" modelType="Class" name="IStreamWriter">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value="IStreamWriter"/>
+						<StringProperty displayName="Model Type" name="modelType" value="Class"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
+						<ModelsProperty displayName="Voices" name="voices"/>
+						<ModelsProperty displayName="References" name="references">
+							<Model composite="true" considerDefaultProperties="false" displayModelType="Reference" id=".PUQYwqGAqAEZxn9" modelType="Reference" name="">
+								<ModelProperties>
+									<StringProperty displayName="Name" name="name" value=""/>
+									<StringProperty displayName="Model Type" name="modelType" value="Reference"/>
+									<StringProperty displayName="Description" name="description" value=""/>
+									<StringProperty displayName="Url" name="url" pathName="NyxStreamWriter.hpp" value="Nyx/NyxStreamWriter.hpp"/>
+									<StringProperty displayName="Type" name="type" value="File"/>
+								</ModelProperties>
+							</Model>
+						</ModelsProperty>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelRefProperty displayName="Pm Status" name="pmStatus"/>
+						<ModelRefProperty displayName="Pm Difficulty" name="pmDifficulty"/>
+						<ModelRefProperty displayName="Pm Priority" name="pmPriority"/>
+						<ModelRefProperty displayName="Pm Version" name="pmVersion"/>
+						<ModelRefProperty displayName="Pm Iteration" name="pmIteration"/>
+						<ModelRefProperty displayName="Pm Phase" name="pmPhase"/>
+						<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
+						<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+						<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446431457078"/>
+						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574175"/>
+						<StringProperty displayName="Id" name="userID"/>
+						<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
+						<ModelsProperty displayName="Orm Qualifiers" name="ormQualifiers"/>
+						<BooleanProperty displayName="Active" name="active" value="false"/>
+						<BooleanProperty displayName="Business Key Mutable" name="businessKeyMutable" value="true"/>
+						<ModelProperty displayName="Java Detail" name="javaDetail"/>
+						<ModelProperty displayName="Orm Detail" name="ormDetail"/>
+						<ModelProperty displayName="Dotnet Code Detail" name="dotnetCodeDetail"/>
+						<ModelProperty displayName="Action Script Code Detail" name="actionScriptCodeDetail"/>
+						<ModelProperty displayName="Ejb Code Detail" name="ejbCodeDetail"/>
+						<ModelProperty displayName="Xs Detail" name="xsDetail"/>
+						<ModelsProperty displayName="Template Parameters" name="templateParameters"/>
+						<StringProperty displayName="Connect To Code Model" name="connectToCodeModel" value="None"/>
+						<BooleanProperty displayName="Business Model" name="businessModel" value="false"/>
+						<StringProperty displayName="Visibility" name="visibility" value="public"/>
+						<BooleanProperty displayName="Abstract" name="abstract" value="false"/>
+						<BooleanProperty displayName="Leaf" name="leaf" value="false"/>
+						<BooleanProperty displayName="Root" name="root" value="false"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes">
+							<ModelRef id="DB3gYwqGAqAEZxnR"/>
+						</ModelRefsProperty>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelRefsProperty displayName="Sync Mapping Models" name="syncMappingModels"/>
+						<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+						<StringProperty displayName="Quality Reason" name="qualityReason"/>
+						<DiagramElementRefProperty displayName="Master View" name="masterView">
+							<DiagramElementRef displayShapeType="Class" id="bP4QYwqGAqAEZxn3" model="bP4QYwqGAqAEZxn4" name="IStreamWriter" shapeType="Class"/>
+						</DiagramElementRefProperty>
+					</ModelProperties>
+					<FromSimpleRelationships>
+						<RelationshipRef from="bP4QYwqGAqAEZxn4" id="ruaQYwqGAqAEZxoa" to="VB3gYwqGAqAEZxnQ"/>
+					</FromSimpleRelationships>
+				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Class" id="nxeQYwqGAqAEZxor" modelType="Class" name="IStreamHandler">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value="IStreamHandler"/>
+						<StringProperty displayName="Model Type" name="modelType" value="Class"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
+						<ModelsProperty displayName="Voices" name="voices"/>
+						<ModelsProperty displayName="References" name="references">
+							<Model composite="true" considerDefaultProperties="false" displayModelType="Reference" id="4aJQYwqGAqAEZxpQ" modelType="Reference" name="">
+								<ModelProperties>
+									<StringProperty displayName="Name" name="name" value=""/>
+									<StringProperty displayName="Model Type" name="modelType" value="Reference"/>
+									<StringProperty displayName="Description" name="description" value=""/>
+									<StringProperty displayName="Url" name="url" pathName="NyxStreamHandler.hpp" value="Nyx/NyxStreamHandler.hpp"/>
+									<StringProperty displayName="Type" name="type" value="File"/>
+								</ModelProperties>
+							</Model>
+						</ModelsProperty>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelRefProperty displayName="Pm Status" name="pmStatus"/>
+						<ModelRefProperty displayName="Pm Difficulty" name="pmDifficulty"/>
+						<ModelRefProperty displayName="Pm Priority" name="pmPriority"/>
+						<ModelRefProperty displayName="Pm Version" name="pmVersion"/>
+						<ModelRefProperty displayName="Pm Iteration" name="pmIteration"/>
+						<ModelRefProperty displayName="Pm Phase" name="pmPhase"/>
+						<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
+						<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+						<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446431549689"/>
+						<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574176"/>
+						<StringProperty displayName="Id" name="userID"/>
+						<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
+						<ModelsProperty displayName="Orm Qualifiers" name="ormQualifiers"/>
+						<BooleanProperty displayName="Active" name="active" value="false"/>
+						<BooleanProperty displayName="Business Key Mutable" name="businessKeyMutable" value="true"/>
+						<ModelProperty displayName="Java Detail" name="javaDetail"/>
+						<ModelProperty displayName="Orm Detail" name="ormDetail"/>
+						<ModelProperty displayName="Dotnet Code Detail" name="dotnetCodeDetail"/>
+						<ModelProperty displayName="Action Script Code Detail" name="actionScriptCodeDetail"/>
+						<ModelProperty displayName="Ejb Code Detail" name="ejbCodeDetail"/>
+						<ModelProperty displayName="Xs Detail" name="xsDetail"/>
+						<ModelsProperty displayName="Template Parameters" name="templateParameters"/>
+						<StringProperty displayName="Connect To Code Model" name="connectToCodeModel" value="None"/>
+						<BooleanProperty displayName="Business Model" name="businessModel" value="false"/>
+						<StringProperty displayName="Visibility" name="visibility" value="public"/>
+						<BooleanProperty displayName="Abstract" name="abstract" value="false"/>
+						<BooleanProperty displayName="Leaf" name="leaf" value="false"/>
+						<BooleanProperty displayName="Root" name="root" value="false"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes">
+							<ModelRef id="DB3gYwqGAqAEZxnR"/>
+						</ModelRefsProperty>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelRefsProperty displayName="Sync Mapping Models" name="syncMappingModels"/>
+						<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+						<StringProperty displayName="Quality Reason" name="qualityReason"/>
+						<DiagramElementRefProperty displayName="Master View" name="masterView">
+							<DiagramElementRef displayShapeType="Class" id="nxeQYwqGAqAEZxoq" model="nxeQYwqGAqAEZxor" name="IStreamHandler" shapeType="Class"/>
+						</DiagramElementRefProperty>
+					</ModelProperties>
+					<FromSimpleRelationships>
+						<RelationshipRef from="nxeQYwqGAqAEZxor" id="WqhQYwqGAqAEZxpC" to="VB3gYwqGAqAEZxnQ"/>
+					</FromSimpleRelationships>
+				</Model>
 			</ChildModels>
 			<SubDiagrams>
 				<DiagramRef diagramType="ClassDiagram" id="SAZnowqGAqAEZxOv" name="Nyx - Threading"/>
@@ -14266,6 +14720,7 @@
 				<DiagramRef diagramType="ClassDiagram" id="MIrTowqGAqAEZw8i" name="Nyx - Tracing - AnsiTraceFeeds"/>
 				<DiagramRef diagramType="ClassDiagram" id="OtsrowqGAqAEZxHG" name="Nyx - Tracing - WideCharTraceFeeds"/>
 				<DiagramRef diagramType="ClassDiagram" id="87oAYwqGAqAEZxi4" name="Nyx - Tasks"/>
+				<DiagramRef diagramType="ClassDiagram" id="eEVgYwqGAqAEZxnB" name="Nyx - Streams"/>
 			</SubDiagrams>
 		</Model>
 		<Model composite="false" considerDefaultProperties="false" displayModelType="Package" id="F7wQIwqGAqAEZwXc" modelType="Package" name="NyxBase">
@@ -14536,6 +14991,43 @@
 				</Model>
 			</ChildModels>
 		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Stereotype" id="DB3gYwqGAqAEZxnR" modelType="Stereotype" name="Interface">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name" value="Interface"/>
+				<StringProperty displayName="Model Type" name="modelType" value="Stereotype"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Description" name="documentation" plainTextValue=""/>
+				<ModelsProperty displayName="Voices" name="voices"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+				<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<ModelRefProperty displayName="Pm Status" name="pmStatus"/>
+				<ModelRefProperty displayName="Pm Difficulty" name="pmDifficulty"/>
+				<ModelRefProperty displayName="Pm Priority" name="pmPriority"/>
+				<ModelRefProperty displayName="Pm Version" name="pmVersion"/>
+				<ModelRefProperty displayName="Pm Iteration" name="pmIteration"/>
+				<ModelRefProperty displayName="Pm Phase" name="pmPhase"/>
+				<ModelRefProperty displayName="Pm Discipline" name="pmDiscipline"/>
+				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1292644759511"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431574176"/>
+				<StringProperty displayName="Id" name="userID"/>
+				<IntegerProperty displayName="User IDLast Numeric Value" name="userIDLastNumericValue" value="0"/>
+				<BooleanProperty displayName="Abstract" name="abstract" value="false"/>
+				<BooleanProperty displayName="Leaf" name="leaf" value="false"/>
+				<BooleanProperty displayName="Root" name="root" value="false"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelRefsProperty displayName="Sync Mapping Models" name="syncMappingModels"/>
+				<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+				<StringProperty displayName="Quality Reason" name="qualityReason"/>
+				<ModelProperty displayName="Tagged Value Definitions" name="taggedValueDefinitions"/>
+				<StringProperty displayName="Base Type" name="baseType" value="Class"/>
+				<StringProperty displayName="Icon Path" name="iconPath" value=""/>
+			</ModelProperties>
+		</Model>
 	</Models>
 	<Diagrams>
 		<Diagram connectorStyle="Rectlinear" diagramType="ClassDiagram" displayDiagramType="Class Diagram" documentation="" id="0vD53QqGAqAEZwXf" imageHeight="0" imageScale="1.0" imageWidth="0" name="main" rtfDocumentation="" trimmedHeight="0" trimmedWidth="0">
@@ -14554,7 +15046,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446256774987"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138134"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675780"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
@@ -15110,7 +15602,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446397883575"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138134"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431678412"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
@@ -15483,9 +15975,9 @@
 					<Caption height="14" internalHeight="-2147483648" internalWidth="-2147483648" side="FreeMove" visible="true" width="140" x="0" y="20"/>
 					<FillColor color="Cr:122,207,245,255" style="1" transparency="0" type="1"/>
 				</Shape>
-				<Shape height="100" id="uApQIwqGAqAEZwaM" model="uApQIwqGAqAEZwaN" name="Threading" shapeType="Package" width="140" x="75" y="226" zorder="2">
+				<Shape height="100" id="uApQIwqGAqAEZwaM" model="uApQIwqGAqAEZwaN" name="Threading" shapeType="Package" width="140" x="75" y="226" zorder="3">
 					<DiagramElementProperties>
-						<IntegerProperty displayName="ZOrder" name="zOrder" value="2"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="3"/>
 						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
 							<ModelRef id="uApQIwqGAqAEZwaN"/>
 						</ModelRefProperty>
@@ -15599,7 +16091,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446398596477"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138134"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675781"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
@@ -16339,7 +16831,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446419703242"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138134"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675781"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
@@ -16803,7 +17295,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446420165946"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138134"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675781"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
@@ -18408,7 +18900,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446427447563"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138135"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675781"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
@@ -19843,7 +20335,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446428072796"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138135"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675781"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
@@ -20303,7 +20795,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446429220882"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138135"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675781"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
@@ -21458,7 +21950,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446430924238"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431144605"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675782"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
@@ -22045,6 +22537,607 @@
 				</Connector>
 			</Connectors>
 		</Diagram>
+		<Diagram connectorStyle="Rectlinear" diagramType="ClassDiagram" displayDiagramType="Class Diagram" documentation="" id="eEVgYwqGAqAEZxnB" imageHeight="0" imageScale="1.0" imageWidth="0" name="Nyx - Streams" rtfDocumentation="" trimmedHeight="0" trimmedWidth="0">
+			<DiagramProperties>
+				<BooleanProperty displayName="Show Shape Stereotype Icon Name" name="showShapeStereotypeIconName" value="true"/>
+				<BooleanProperty displayName="Show Allocated From" name="showAllocatedFrom" value="true"/>
+				<BooleanProperty displayName="Show Allocated To" name="showAllocatedTo" value="true"/>
+				<StringProperty displayName="Viewpoint Address" name="viewpointAddress"/>
+				<StringProperty displayName="Reference Container Id" name="referenceContainerId"/>
+				<StringProperty displayName="Pm Status Id" name="pmStatusId"/>
+				<StringProperty displayName="Pm Difficulty Id" name="pmDifficultyId"/>
+				<StringProperty displayName="Pm Discipline Id" name="pmDisciplineId"/>
+				<StringProperty displayName="Pm Priority Id" name="pmPriorityId"/>
+				<StringProperty displayName="Pm Version Id" name="pmVersionId"/>
+				<StringProperty displayName="Pm Iteration Id" name="pmIterationId"/>
+				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
+				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
+				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446431334942"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675782"/>
+				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
+				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
+				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
+				<IntegerProperty displayName="Show Connector Name" name="showConnectorName" value="0"/>
+				<IntegerProperty displayName="Paint Connector Through Label" name="paintConnectorThroughLabel" value="0"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<IntegerProperty displayName="Show Activity State Node Caption" name="showActivityStateNodeCaption" value="65535"/>
+				<StringProperty displayName="Description" name="documentation"/>
+				<BooleanProperty displayName="Editable" name="editable" value="true"/>
+				<StringProperty displayName="Request Layout Type" name="requestLayoutType"/>
+				<BooleanProperty displayName="Follow Diagram Parent Element" name="followDiagramParentElement" value="true"/>
+				<BooleanProperty displayName="Auto Fit Shapes Size" name="autoFitShapesSize" value="false"/>
+				<BooleanProperty displayName="Show Tagged Values" name="showTaggedValues" value="false"/>
+				<BooleanProperty displayName="Hide Empty Tagged Values" name="hideEmptyTaggedValues" value="false"/>
+				<BooleanProperty displayName="Show Stereotypes" name="showStereotypes" value="true"/>
+				<BooleanProperty displayName="Show PMIteration" name="showPMIteration" value="false"/>
+				<BooleanProperty displayName="Show PMPhase" name="showPMPhase" value="false"/>
+				<BooleanProperty displayName="Show PMDiscipline" name="showPMDiscipline" value="false"/>
+				<BooleanProperty displayName="Show PMVersion" name="showPMVersion" value="false"/>
+				<BooleanProperty displayName="Show PMPriority" name="showPMPriority" value="false"/>
+				<BooleanProperty displayName="Show PMStatus" name="showPMStatus" value="false"/>
+				<BooleanProperty displayName="Show PMDifficulty" name="showPMDifficulty" value="false"/>
+				<BooleanProperty displayName="Show PMAuthor" name="showPMAuthor" value="false"/>
+				<BooleanProperty displayName="Show Constraints" name="showConstraints" value="false"/>
+				<BooleanProperty displayName="Align To Grid" name="alignToGrid" value="false"/>
+				<IntegerProperty displayName="Grid Width" name="gridWidth" value="10"/>
+				<IntegerProperty displayName="Grid Height" name="gridHeight" value="10"/>
+				<ColorProperty displayName="Grid Color" name="gridColor" value="Cr:192,192,192,255"/>
+				<ColorProperty displayName="Diagram Background" name="diagramBackground" value="Cr:255,255,255,255"/>
+				<IntegerProperty displayName="Connector Style" name="connectorStyle" value="0"/>
+				<IntegerProperty displayName="Connector Line Jumps" name="connectorLineJumps" value="0"/>
+				<IntegerProperty displayName="Connector Line Jumps Size" name="connectorLineJumpsSize" value="0"/>
+				<IntegerProperty displayName="Connection Point Style" name="connectionPointStyle" value="0"/>
+				<IntegerProperty displayName="Connector Label Orientation" name="connectorLabelOrientation" value="0"/>
+				<IntegerProperty displayName="Model Element Name Alignment" name="modelElementNameAlignment" value="4"/>
+				<IntegerProperty displayName="Shape Presentation Option" name="shapePresentationOption" value="0"/>
+				<DoubleProperty displayName="Zoom Ratio" name="zoomRatio" value="1.0"/>
+				<IntegerProperty displayName="X" name="x" value="0"/>
+				<IntegerProperty displayName="Y" name="y" value="0"/>
+				<IntegerProperty displayName="Width" name="width" value="1804"/>
+				<IntegerProperty displayName="Height" name="height" value="1217"/>
+				<IntegerProperty displayName="Quality Score" name="qualityScore" value="-1"/>
+				<ModelRefProperty displayName="Parent Model" name="parentModel">
+					<ModelRef id="1Rj3owqGAqAEZxT7"/>
+				</ModelRefProperty>
+				<BooleanProperty displayName="Global Palette Option" name="_globalPaletteOption" value="true"/>
+				<BooleanProperty displayName="Always Show Reference And Subdiagram Resource" name="_alwaysShowReferenceAndSubdiagramResource" value="true"/>
+				<BooleanProperty displayName="Initialize Diagram For Create" name="initializeDiagramForCreate" value="true"/>
+				<BooleanProperty displayName="Request Validate Snap To Grid" name="requestValidateSnapToGrid" value="false"/>
+				<StringArrayProperty displayName="Hidden Diagram Element Ids" name="hiddenDiagramElementIds"/>
+				<StringArrayProperty displayName="Show Model Element Id Model Types" name="showModelElementIdModelTypes"/>
+				<StringArrayProperty displayName="Voice Ids" name="voiceIds"/>
+				<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+				<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses">
+					<Values>
+						<Value value="1Rj3owqGAqAEZxT7:HROQIwqGAqAEZwZW"/>
+					</Values>
+				</StringArrayProperty>
+				<BooleanProperty displayName="Show Default Package" name="showDefaultPackage" value="true"/>
+				<BooleanProperty displayName="Show Attribute Getter Setter" name="showAttributeGetterSetter" value="false"/>
+				<IntegerProperty displayName="Show Class Owner" name="showClassOwner" value="0"/>
+				<IntegerProperty displayName="Show Package Owner" name="showPackageOwner" value="2"/>
+				<BooleanProperty displayName="Show Template Info Of Generalization And Realization" name="showTemplateInfoOfGeneralizationAndRealization" value="false"/>
+				<BooleanProperty displayName="Suppress Implied1 Multiplicity For Attribute And Association End" name="suppressImplied1MultiplicityForAttributeAndAssociationEnd" value="false"/>
+				<IntegerProperty displayName="Show Class Empty Compartments" name="showClassEmptyCompartments" value="2"/>
+				<IntegerProperty displayName="Show Attributes Code Details" name="showAttributesCodeDetails" value="2"/>
+				<IntegerProperty displayName="Show Attributes Property Modifiers" name="showAttributesPropertyModifiers" value="2"/>
+				<IntegerProperty displayName="Show Attributes Type" name="showAttributesType" value="1"/>
+				<IntegerProperty displayName="Show Operations Parameters" name="showOperationsParameters" value="1"/>
+				<IntegerProperty displayName="Show Operations Return Type" name="showOperationsReturnType" value="1"/>
+				<IntegerProperty displayName="Show Operations Code Details" name="showOperationsCodeDetails" value="2"/>
+				<IntegerProperty displayName="Show Parameters Code Details" name="showParametersCodeDetails" value="2"/>
+				<IntegerProperty displayName="Show Ellipsis For Unshown Class Members" name="showEllipsisForUnshownClassMembers" value="2"/>
+				<IntegerProperty displayName="Generalization Set Notation" name="generalizationSetNotation" value="2"/>
+				<IntegerProperty displayName="Show Association Navigation Arrows" name="showAssociationNavigationArrows" value="3"/>
+			</DiagramProperties>
+			<Shapes>
+				<Shape height="46" id="lB3gYwqGAqAEZxnP" model="VB3gYwqGAqAEZxnQ" name="IStreamRW" shapeType="Class" width="92" x="431" y="245" zorder="7">
+					<DiagramElementProperties>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="7"/>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="VB3gYwqGAqAEZxnQ"/>
+						</ModelRefProperty>
+						<ModelRefProperty displayName="Style" name="style"/>
+						<IntegerProperty displayName="X" name="x" value="431"/>
+						<IntegerProperty displayName="Y" name="y" value="245"/>
+						<IntegerProperty displayName="Width" name="width" value="92"/>
+						<IntegerProperty displayName="Height" name="height" value="46"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:122,207,245,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<IntegerProperty displayName="Presentation Option" name="presentationOption" value="4"/>
+						<IntegerProperty displayName="Primitive Shape Type" name="primitiveShapeType" value="0"/>
+						<StringProperty displayName="Custom Text" name="customText"/>
+						<IntegerProperty displayName="Show Stereotype Icon Name" name="showStereotypeIconName" value="0"/>
+						<IntegerProperty displayName="Show Allocated From" name="showAllocatedFrom" value="0"/>
+						<IntegerProperty displayName="Show Allocated To" name="showAllocatedTo" value="0"/>
+						<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+						<StringProperty displayName="Display Stereotype Icon Stereotype Id" name="displayStereotypeIconStereotypeId"/>
+						<StringArrayProperty displayName="Hidden Stereotype Ids" name="hiddenStereotypeIds"/>
+						<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+						<IntegerProperty displayName="Request Set Size Option" name="requestSetSizeOption" value="0"/>
+						<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="40"/>
+						<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="10"/>
+						<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+						<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+						<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+						<IntegerProperty displayName="Model Element Name Alignment" name="modelElementNameAlignment" value="9"/>
+						<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+						<BooleanProperty displayName="Display As Robustness Analysis Icon" name="displayAsRobustnessAnalysisIcon" value="true"/>
+						<StringArrayProperty displayName="Hidden Attributes For Associations" name="hiddenAttributesForAssociations"/>
+						<StringArrayProperty displayName="Hidden Attributes" name="hiddenAttributes"/>
+						<StringArrayProperty displayName="Hidden Operations" name="hiddenOperations"/>
+						<StringArrayProperty displayName="Hidden Enumeration Literals" name="hiddenEnumerationLiterals"/>
+						<IntegerProperty displayName="Visibility Style" name="visibilityStyle" value="1"/>
+						<IntegerProperty displayName="Show Attribute Type" name="showAttributeType" value="1"/>
+						<IntegerProperty displayName="Show Operation Type" name="showOperationType" value="1"/>
+						<IntegerProperty displayName="Show Enumeration Literal Type" name="showEnumerationLiteralType" value="1"/>
+						<BooleanProperty displayName="MSw Tp Pts" name="mSwTpPts" value="true"/>
+						<BooleanProperty displayName="Lsh Rf Ats" name="lshRfAts" value="true"/>
+						<BooleanProperty displayName="MSh Dr At" name="mShDrAt" value="false"/>
+						<BooleanProperty displayName="KSh Dr Op" name="kShDrOp" value="false"/>
+						<BooleanProperty displayName="KSw Cs Mb St" name="kSwCsMbSt" value="true"/>
+						<BooleanProperty displayName="Show Class Member Constraints" name="showClassMemberConstraints" value="true"/>
+						<BooleanProperty displayName="LSh Cm Ml" name="lShCmMl" value="false"/>
+						<BooleanProperty displayName="Show Operation Parameter Direction" name="showOperationParameterDirection" value="false"/>
+						<BooleanProperty displayName="Show Operation Raised Exceptions" name="showOperationRaisedExceptions" value="false"/>
+						<BooleanProperty displayName="Show Parameter Name In Operation Signature" name="showParameterNameInOperationSignature" value="true"/>
+						<BooleanProperty displayName="Show Operation Template Parameters" name="showOperationTemplateParameters" value="false"/>
+						<BooleanProperty displayName="Show Operation Properties" name="showOperationProperties" value="false"/>
+						<BooleanProperty displayName="Wp Mbs" name="wpMbs" value="false"/>
+						<IntegerProperty displayName="Attribute Sort Type" name="attributeSortType" value="0"/>
+						<IntegerProperty displayName="Operation Sort Type" name="operationSortType" value="0"/>
+						<IntegerProperty displayName="Enumeration Literal Sort Type" name="enumerationLiteralSortType" value="0"/>
+						<BooleanProperty displayName="Show Initial Attribute Value" name="showInitialAttributeValue" value="true"/>
+						<BooleanProperty displayName="Show Operation Signature" name="showOperationSignature" value="true"/>
+						<BooleanProperty displayName="Interface Ball" name="interfaceBall" value="false"/>
+						<IntegerProperty displayName="Show Empty Compartments" name="showEmptyCompartments" value="0"/>
+						<IntegerProperty displayName="Show Ellipsis For Unshown Members" name="showEllipsisForUnshownMembers" value="0"/>
+						<IntegerProperty displayName="Show Attributes Code Details" name="showAttributesCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Attributes Property Modifiers" name="showAttributesPropertyModifiers" value="0"/>
+						<IntegerProperty displayName="Show Operations Code Details" name="showOperationsCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Parameters Code Details" name="showParametersCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Type Option" name="showTypeOption" value="0"/>
+						<IntegerProperty displayName="Show Owner Option" name="showOwnerOption" value="3"/>
+						<IntegerProperty displayName="Show Attributes Type" name="showAttributesType" value="0"/>
+						<IntegerProperty displayName="Show Operations Parameters" name="showOperationsParameters" value="0"/>
+						<IntegerProperty displayName="Show Operations Return Type" name="showOperationsReturnType" value="0"/>
+						<IntegerProperty displayName="Suppress Implied1 Multiplicity For Attribute" name="suppressImplied1MultiplicityForAttribute" value="0"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="42" internalHeight="-2147483648" internalWidth="-2147483648" side="FreeMove" visible="true" width="92" x="0" y="0"/>
+					<FillColor color="Cr:122,207,245,255" style="1" transparency="0" type="1"/>
+				</Shape>
+				<Shape height="46" id="FLIQYwqGAqAEZxnl" model="FLIQYwqGAqAEZxnm" name="IStreamReader" shapeType="Class" width="93" x="338" y="98" zorder="5">
+					<DiagramElementProperties>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="5"/>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="FLIQYwqGAqAEZxnm"/>
+						</ModelRefProperty>
+						<ModelRefProperty displayName="Style" name="style"/>
+						<IntegerProperty displayName="X" name="x" value="338"/>
+						<IntegerProperty displayName="Y" name="y" value="98"/>
+						<IntegerProperty displayName="Width" name="width" value="93"/>
+						<IntegerProperty displayName="Height" name="height" value="46"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:122,207,245,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<IntegerProperty displayName="Presentation Option" name="presentationOption" value="4"/>
+						<IntegerProperty displayName="Primitive Shape Type" name="primitiveShapeType" value="0"/>
+						<StringProperty displayName="Custom Text" name="customText"/>
+						<IntegerProperty displayName="Show Stereotype Icon Name" name="showStereotypeIconName" value="0"/>
+						<IntegerProperty displayName="Show Allocated From" name="showAllocatedFrom" value="0"/>
+						<IntegerProperty displayName="Show Allocated To" name="showAllocatedTo" value="0"/>
+						<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+						<StringProperty displayName="Display Stereotype Icon Stereotype Id" name="displayStereotypeIconStereotypeId"/>
+						<StringArrayProperty displayName="Hidden Stereotype Ids" name="hiddenStereotypeIds"/>
+						<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+						<IntegerProperty displayName="Request Set Size Option" name="requestSetSizeOption" value="0"/>
+						<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="40"/>
+						<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="10"/>
+						<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+						<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+						<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+						<IntegerProperty displayName="Model Element Name Alignment" name="modelElementNameAlignment" value="9"/>
+						<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+						<BooleanProperty displayName="Display As Robustness Analysis Icon" name="displayAsRobustnessAnalysisIcon" value="true"/>
+						<StringArrayProperty displayName="Hidden Attributes For Associations" name="hiddenAttributesForAssociations"/>
+						<StringArrayProperty displayName="Hidden Attributes" name="hiddenAttributes"/>
+						<StringArrayProperty displayName="Hidden Operations" name="hiddenOperations"/>
+						<StringArrayProperty displayName="Hidden Enumeration Literals" name="hiddenEnumerationLiterals"/>
+						<IntegerProperty displayName="Visibility Style" name="visibilityStyle" value="1"/>
+						<IntegerProperty displayName="Show Attribute Type" name="showAttributeType" value="1"/>
+						<IntegerProperty displayName="Show Operation Type" name="showOperationType" value="1"/>
+						<IntegerProperty displayName="Show Enumeration Literal Type" name="showEnumerationLiteralType" value="1"/>
+						<BooleanProperty displayName="MSw Tp Pts" name="mSwTpPts" value="true"/>
+						<BooleanProperty displayName="Lsh Rf Ats" name="lshRfAts" value="true"/>
+						<BooleanProperty displayName="MSh Dr At" name="mShDrAt" value="false"/>
+						<BooleanProperty displayName="KSh Dr Op" name="kShDrOp" value="false"/>
+						<BooleanProperty displayName="KSw Cs Mb St" name="kSwCsMbSt" value="true"/>
+						<BooleanProperty displayName="Show Class Member Constraints" name="showClassMemberConstraints" value="true"/>
+						<BooleanProperty displayName="LSh Cm Ml" name="lShCmMl" value="false"/>
+						<BooleanProperty displayName="Show Operation Parameter Direction" name="showOperationParameterDirection" value="false"/>
+						<BooleanProperty displayName="Show Operation Raised Exceptions" name="showOperationRaisedExceptions" value="false"/>
+						<BooleanProperty displayName="Show Parameter Name In Operation Signature" name="showParameterNameInOperationSignature" value="true"/>
+						<BooleanProperty displayName="Show Operation Template Parameters" name="showOperationTemplateParameters" value="false"/>
+						<BooleanProperty displayName="Show Operation Properties" name="showOperationProperties" value="false"/>
+						<BooleanProperty displayName="Wp Mbs" name="wpMbs" value="false"/>
+						<IntegerProperty displayName="Attribute Sort Type" name="attributeSortType" value="0"/>
+						<IntegerProperty displayName="Operation Sort Type" name="operationSortType" value="0"/>
+						<IntegerProperty displayName="Enumeration Literal Sort Type" name="enumerationLiteralSortType" value="0"/>
+						<BooleanProperty displayName="Show Initial Attribute Value" name="showInitialAttributeValue" value="true"/>
+						<BooleanProperty displayName="Show Operation Signature" name="showOperationSignature" value="true"/>
+						<BooleanProperty displayName="Interface Ball" name="interfaceBall" value="false"/>
+						<IntegerProperty displayName="Show Empty Compartments" name="showEmptyCompartments" value="0"/>
+						<IntegerProperty displayName="Show Ellipsis For Unshown Members" name="showEllipsisForUnshownMembers" value="0"/>
+						<IntegerProperty displayName="Show Attributes Code Details" name="showAttributesCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Attributes Property Modifiers" name="showAttributesPropertyModifiers" value="0"/>
+						<IntegerProperty displayName="Show Operations Code Details" name="showOperationsCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Parameters Code Details" name="showParametersCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Type Option" name="showTypeOption" value="0"/>
+						<IntegerProperty displayName="Show Owner Option" name="showOwnerOption" value="3"/>
+						<IntegerProperty displayName="Show Attributes Type" name="showAttributesType" value="0"/>
+						<IntegerProperty displayName="Show Operations Parameters" name="showOperationsParameters" value="0"/>
+						<IntegerProperty displayName="Show Operations Return Type" name="showOperationsReturnType" value="0"/>
+						<IntegerProperty displayName="Suppress Implied1 Multiplicity For Attribute" name="suppressImplied1MultiplicityForAttribute" value="0"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="42" internalHeight="-2147483648" internalWidth="-2147483648" side="FreeMove" visible="true" width="93" x="0" y="0"/>
+					<FillColor color="Cr:122,207,245,255" style="1" transparency="0" type="1"/>
+				</Shape>
+				<Shape height="46" id="bP4QYwqGAqAEZxn3" model="bP4QYwqGAqAEZxn4" name="IStreamWriter" shapeType="Class" width="92" x="523" y="98" zorder="3">
+					<DiagramElementProperties>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="3"/>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="bP4QYwqGAqAEZxn4"/>
+						</ModelRefProperty>
+						<ModelRefProperty displayName="Style" name="style"/>
+						<IntegerProperty displayName="X" name="x" value="523"/>
+						<IntegerProperty displayName="Y" name="y" value="98"/>
+						<IntegerProperty displayName="Width" name="width" value="92"/>
+						<IntegerProperty displayName="Height" name="height" value="46"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:122,207,245,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<IntegerProperty displayName="Presentation Option" name="presentationOption" value="4"/>
+						<IntegerProperty displayName="Primitive Shape Type" name="primitiveShapeType" value="0"/>
+						<StringProperty displayName="Custom Text" name="customText"/>
+						<IntegerProperty displayName="Show Stereotype Icon Name" name="showStereotypeIconName" value="0"/>
+						<IntegerProperty displayName="Show Allocated From" name="showAllocatedFrom" value="0"/>
+						<IntegerProperty displayName="Show Allocated To" name="showAllocatedTo" value="0"/>
+						<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+						<StringProperty displayName="Display Stereotype Icon Stereotype Id" name="displayStereotypeIconStereotypeId"/>
+						<StringArrayProperty displayName="Hidden Stereotype Ids" name="hiddenStereotypeIds"/>
+						<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+						<IntegerProperty displayName="Request Set Size Option" name="requestSetSizeOption" value="0"/>
+						<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="40"/>
+						<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="10"/>
+						<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+						<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+						<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+						<IntegerProperty displayName="Model Element Name Alignment" name="modelElementNameAlignment" value="9"/>
+						<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+						<BooleanProperty displayName="Display As Robustness Analysis Icon" name="displayAsRobustnessAnalysisIcon" value="true"/>
+						<StringArrayProperty displayName="Hidden Attributes For Associations" name="hiddenAttributesForAssociations"/>
+						<StringArrayProperty displayName="Hidden Attributes" name="hiddenAttributes"/>
+						<StringArrayProperty displayName="Hidden Operations" name="hiddenOperations"/>
+						<StringArrayProperty displayName="Hidden Enumeration Literals" name="hiddenEnumerationLiterals"/>
+						<IntegerProperty displayName="Visibility Style" name="visibilityStyle" value="1"/>
+						<IntegerProperty displayName="Show Attribute Type" name="showAttributeType" value="1"/>
+						<IntegerProperty displayName="Show Operation Type" name="showOperationType" value="1"/>
+						<IntegerProperty displayName="Show Enumeration Literal Type" name="showEnumerationLiteralType" value="1"/>
+						<BooleanProperty displayName="MSw Tp Pts" name="mSwTpPts" value="true"/>
+						<BooleanProperty displayName="Lsh Rf Ats" name="lshRfAts" value="true"/>
+						<BooleanProperty displayName="MSh Dr At" name="mShDrAt" value="false"/>
+						<BooleanProperty displayName="KSh Dr Op" name="kShDrOp" value="false"/>
+						<BooleanProperty displayName="KSw Cs Mb St" name="kSwCsMbSt" value="true"/>
+						<BooleanProperty displayName="Show Class Member Constraints" name="showClassMemberConstraints" value="true"/>
+						<BooleanProperty displayName="LSh Cm Ml" name="lShCmMl" value="false"/>
+						<BooleanProperty displayName="Show Operation Parameter Direction" name="showOperationParameterDirection" value="false"/>
+						<BooleanProperty displayName="Show Operation Raised Exceptions" name="showOperationRaisedExceptions" value="false"/>
+						<BooleanProperty displayName="Show Parameter Name In Operation Signature" name="showParameterNameInOperationSignature" value="true"/>
+						<BooleanProperty displayName="Show Operation Template Parameters" name="showOperationTemplateParameters" value="false"/>
+						<BooleanProperty displayName="Show Operation Properties" name="showOperationProperties" value="false"/>
+						<BooleanProperty displayName="Wp Mbs" name="wpMbs" value="false"/>
+						<IntegerProperty displayName="Attribute Sort Type" name="attributeSortType" value="0"/>
+						<IntegerProperty displayName="Operation Sort Type" name="operationSortType" value="0"/>
+						<IntegerProperty displayName="Enumeration Literal Sort Type" name="enumerationLiteralSortType" value="0"/>
+						<BooleanProperty displayName="Show Initial Attribute Value" name="showInitialAttributeValue" value="true"/>
+						<BooleanProperty displayName="Show Operation Signature" name="showOperationSignature" value="true"/>
+						<BooleanProperty displayName="Interface Ball" name="interfaceBall" value="false"/>
+						<IntegerProperty displayName="Show Empty Compartments" name="showEmptyCompartments" value="0"/>
+						<IntegerProperty displayName="Show Ellipsis For Unshown Members" name="showEllipsisForUnshownMembers" value="0"/>
+						<IntegerProperty displayName="Show Attributes Code Details" name="showAttributesCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Attributes Property Modifiers" name="showAttributesPropertyModifiers" value="0"/>
+						<IntegerProperty displayName="Show Operations Code Details" name="showOperationsCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Parameters Code Details" name="showParametersCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Type Option" name="showTypeOption" value="0"/>
+						<IntegerProperty displayName="Show Owner Option" name="showOwnerOption" value="3"/>
+						<IntegerProperty displayName="Show Attributes Type" name="showAttributesType" value="0"/>
+						<IntegerProperty displayName="Show Operations Parameters" name="showOperationsParameters" value="0"/>
+						<IntegerProperty displayName="Show Operations Return Type" name="showOperationsReturnType" value="0"/>
+						<IntegerProperty displayName="Suppress Implied1 Multiplicity For Attribute" name="suppressImplied1MultiplicityForAttribute" value="0"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="42" internalHeight="-2147483648" internalWidth="-2147483648" side="FreeMove" visible="true" width="92" x="0" y="0"/>
+					<FillColor color="Cr:122,207,245,255" style="1" transparency="0" type="1"/>
+				</Shape>
+				<Shape height="46" id="nxeQYwqGAqAEZxoq" model="nxeQYwqGAqAEZxor" name="IStreamHandler" shapeType="Class" width="98" x="140" y="245" zorder="0">
+					<DiagramElementProperties>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="0"/>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="nxeQYwqGAqAEZxor"/>
+						</ModelRefProperty>
+						<ModelRefProperty displayName="Style" name="style"/>
+						<IntegerProperty displayName="X" name="x" value="140"/>
+						<IntegerProperty displayName="Y" name="y" value="245"/>
+						<IntegerProperty displayName="Width" name="width" value="98"/>
+						<IntegerProperty displayName="Height" name="height" value="46"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:122,207,245,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<IntegerProperty displayName="Presentation Option" name="presentationOption" value="4"/>
+						<IntegerProperty displayName="Primitive Shape Type" name="primitiveShapeType" value="0"/>
+						<StringProperty displayName="Custom Text" name="customText"/>
+						<IntegerProperty displayName="Show Stereotype Icon Name" name="showStereotypeIconName" value="0"/>
+						<IntegerProperty displayName="Show Allocated From" name="showAllocatedFrom" value="0"/>
+						<IntegerProperty displayName="Show Allocated To" name="showAllocatedTo" value="0"/>
+						<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+						<StringProperty displayName="Display Stereotype Icon Stereotype Id" name="displayStereotypeIconStereotypeId"/>
+						<StringArrayProperty displayName="Hidden Stereotype Ids" name="hiddenStereotypeIds"/>
+						<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+						<IntegerProperty displayName="Request Set Size Option" name="requestSetSizeOption" value="0"/>
+						<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="40"/>
+						<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="10"/>
+						<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+						<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+						<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+						<IntegerProperty displayName="Model Element Name Alignment" name="modelElementNameAlignment" value="9"/>
+						<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+						<BooleanProperty displayName="Display As Robustness Analysis Icon" name="displayAsRobustnessAnalysisIcon" value="true"/>
+						<StringArrayProperty displayName="Hidden Attributes For Associations" name="hiddenAttributesForAssociations"/>
+						<StringArrayProperty displayName="Hidden Attributes" name="hiddenAttributes"/>
+						<StringArrayProperty displayName="Hidden Operations" name="hiddenOperations"/>
+						<StringArrayProperty displayName="Hidden Enumeration Literals" name="hiddenEnumerationLiterals"/>
+						<IntegerProperty displayName="Visibility Style" name="visibilityStyle" value="1"/>
+						<IntegerProperty displayName="Show Attribute Type" name="showAttributeType" value="1"/>
+						<IntegerProperty displayName="Show Operation Type" name="showOperationType" value="1"/>
+						<IntegerProperty displayName="Show Enumeration Literal Type" name="showEnumerationLiteralType" value="1"/>
+						<BooleanProperty displayName="MSw Tp Pts" name="mSwTpPts" value="true"/>
+						<BooleanProperty displayName="Lsh Rf Ats" name="lshRfAts" value="true"/>
+						<BooleanProperty displayName="MSh Dr At" name="mShDrAt" value="false"/>
+						<BooleanProperty displayName="KSh Dr Op" name="kShDrOp" value="false"/>
+						<BooleanProperty displayName="KSw Cs Mb St" name="kSwCsMbSt" value="true"/>
+						<BooleanProperty displayName="Show Class Member Constraints" name="showClassMemberConstraints" value="true"/>
+						<BooleanProperty displayName="LSh Cm Ml" name="lShCmMl" value="false"/>
+						<BooleanProperty displayName="Show Operation Parameter Direction" name="showOperationParameterDirection" value="false"/>
+						<BooleanProperty displayName="Show Operation Raised Exceptions" name="showOperationRaisedExceptions" value="false"/>
+						<BooleanProperty displayName="Show Parameter Name In Operation Signature" name="showParameterNameInOperationSignature" value="true"/>
+						<BooleanProperty displayName="Show Operation Template Parameters" name="showOperationTemplateParameters" value="false"/>
+						<BooleanProperty displayName="Show Operation Properties" name="showOperationProperties" value="false"/>
+						<BooleanProperty displayName="Wp Mbs" name="wpMbs" value="false"/>
+						<IntegerProperty displayName="Attribute Sort Type" name="attributeSortType" value="0"/>
+						<IntegerProperty displayName="Operation Sort Type" name="operationSortType" value="0"/>
+						<IntegerProperty displayName="Enumeration Literal Sort Type" name="enumerationLiteralSortType" value="0"/>
+						<BooleanProperty displayName="Show Initial Attribute Value" name="showInitialAttributeValue" value="true"/>
+						<BooleanProperty displayName="Show Operation Signature" name="showOperationSignature" value="true"/>
+						<BooleanProperty displayName="Interface Ball" name="interfaceBall" value="false"/>
+						<IntegerProperty displayName="Show Empty Compartments" name="showEmptyCompartments" value="0"/>
+						<IntegerProperty displayName="Show Ellipsis For Unshown Members" name="showEllipsisForUnshownMembers" value="0"/>
+						<IntegerProperty displayName="Show Attributes Code Details" name="showAttributesCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Attributes Property Modifiers" name="showAttributesPropertyModifiers" value="0"/>
+						<IntegerProperty displayName="Show Operations Code Details" name="showOperationsCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Parameters Code Details" name="showParametersCodeDetails" value="0"/>
+						<IntegerProperty displayName="Show Type Option" name="showTypeOption" value="0"/>
+						<IntegerProperty displayName="Show Owner Option" name="showOwnerOption" value="3"/>
+						<IntegerProperty displayName="Show Attributes Type" name="showAttributesType" value="0"/>
+						<IntegerProperty displayName="Show Operations Parameters" name="showOperationsParameters" value="0"/>
+						<IntegerProperty displayName="Show Operations Return Type" name="showOperationsReturnType" value="0"/>
+						<IntegerProperty displayName="Suppress Implied1 Multiplicity For Attribute" name="suppressImplied1MultiplicityForAttribute" value="0"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="42" internalHeight="-2147483648" internalWidth="-2147483648" side="FreeMove" visible="true" width="98" x="0" y="0"/>
+					<FillColor color="Cr:122,207,245,255" style="1" transparency="0" type="1"/>
+				</Shape>
+			</Shapes>
+			<Connectors>
+				<Connector connectorStyle="Follow Diagram" from="FLIQYwqGAqAEZxnl" height="199" id="HkKQYwqGAqAEZxoV" model="rkKQYwqGAqAEZxoU" shapeType="Generalization" to="lB3gYwqGAqAEZxnP" width="193" x="334" y="95" zorder="-1">
+					<DiagramElementProperties>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="-1"/>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="rkKQYwqGAqAEZxoU"/>
+						</ModelRefProperty>
+						<ModelRefProperty displayName="Style" name="style"/>
+						<IntegerProperty displayName="X" name="x" value="334"/>
+						<IntegerProperty displayName="Y" name="y" value="95"/>
+						<IntegerProperty displayName="Width" name="width" value="193"/>
+						<IntegerProperty displayName="Height" name="height" value="199"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:255,255,255,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType" value="ClassDiagram"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<StringProperty displayName="From Member Id" name="fromMemberId"/>
+						<StringProperty displayName="To Member Id" name="toMemberId"/>
+						<IntegerProperty displayName="Connector Style" name="connectorStyle" value="3"/>
+						<IntegerProperty displayName="Connector Line Jumps" name="connectorLineJumps" value="4"/>
+						<IntegerProperty displayName="Connector Label Orientation" name="connectorLabelOrientation" value="4"/>
+						<IntegerProperty displayName="From Shape XDiff" name="fromShapeXDiff" value="0"/>
+						<IntegerProperty displayName="From Shape YDiff" name="fromShapeYDiff" value="0"/>
+						<IntegerProperty displayName="To Shape XDiff" name="toShapeXDiff" value="0"/>
+						<IntegerProperty displayName="To Shape YDiff" name="toShapeYDiff" value="0"/>
+						<IntegerProperty displayName="From Connect Type" name="fromConnectType" value="0"/>
+						<IntegerProperty displayName="To Connect Type" name="toConnectType" value="0"/>
+						<BooleanProperty displayName="Use From Shape Center" name="useFromShapeCenter" value="true"/>
+						<BooleanProperty displayName="Use To Shape Center" name="useToShapeCenter" value="true"/>
+						<IntegerProperty displayName="From Pin Type" name="fromPinType" value="1"/>
+						<IntegerProperty displayName="To Pin Type" name="toPinType" value="1"/>
+						<PointProperty displayName="From Pin Ratio" name="fromPinRatio" value=""/>
+						<PointProperty displayName="To Pin Ratio" name="toPinRatio" value=""/>
+						<BooleanProperty displayName="Request Rebuild" name="requestRebuild" value="false"/>
+						<IntegerProperty displayName="Show Connector Name" name="showConnectorName" value="2"/>
+						<IntegerProperty displayName="Paint Through Label" name="paintThroughLabel" value="2"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="0" internalHeight="-2147483648" internalWidth="-2147483648" side="None" visible="true" width="20" x="400" y="202"/>
+					<Points>
+						<Point x="384" y="145"/>
+						<Point x="384" y="202"/>
+						<Point x="477" y="202"/>
+						<Point x="477" y="244"/>
+					</Points>
+				</Connector>
+				<Connector connectorStyle="Follow Diagram" from="bP4QYwqGAqAEZxn3" height="199" id="3uaQYwqGAqAEZxob" model="ruaQYwqGAqAEZxoa" shapeType="Generalization" to="lB3gYwqGAqAEZxnP" width="192" x="427" y="95" zorder="-1">
+					<DiagramElementProperties>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="-1"/>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="ruaQYwqGAqAEZxoa"/>
+						</ModelRefProperty>
+						<ModelRefProperty displayName="Style" name="style"/>
+						<IntegerProperty displayName="X" name="x" value="427"/>
+						<IntegerProperty displayName="Y" name="y" value="95"/>
+						<IntegerProperty displayName="Width" name="width" value="192"/>
+						<IntegerProperty displayName="Height" name="height" value="199"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:255,255,255,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType" value="ClassDiagram"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<StringProperty displayName="From Member Id" name="fromMemberId"/>
+						<StringProperty displayName="To Member Id" name="toMemberId"/>
+						<IntegerProperty displayName="Connector Style" name="connectorStyle" value="3"/>
+						<IntegerProperty displayName="Connector Line Jumps" name="connectorLineJumps" value="4"/>
+						<IntegerProperty displayName="Connector Label Orientation" name="connectorLabelOrientation" value="4"/>
+						<IntegerProperty displayName="From Shape XDiff" name="fromShapeXDiff" value="0"/>
+						<IntegerProperty displayName="From Shape YDiff" name="fromShapeYDiff" value="0"/>
+						<IntegerProperty displayName="To Shape XDiff" name="toShapeXDiff" value="0"/>
+						<IntegerProperty displayName="To Shape YDiff" name="toShapeYDiff" value="0"/>
+						<IntegerProperty displayName="From Connect Type" name="fromConnectType" value="0"/>
+						<IntegerProperty displayName="To Connect Type" name="toConnectType" value="0"/>
+						<BooleanProperty displayName="Use From Shape Center" name="useFromShapeCenter" value="true"/>
+						<BooleanProperty displayName="Use To Shape Center" name="useToShapeCenter" value="true"/>
+						<IntegerProperty displayName="From Pin Type" name="fromPinType" value="1"/>
+						<IntegerProperty displayName="To Pin Type" name="toPinType" value="1"/>
+						<PointProperty displayName="From Pin Ratio" name="fromPinRatio" value=""/>
+						<PointProperty displayName="To Pin Ratio" name="toPinRatio" value=""/>
+						<BooleanProperty displayName="Request Rebuild" name="requestRebuild" value="false"/>
+						<IntegerProperty displayName="Show Connector Name" name="showConnectorName" value="2"/>
+						<IntegerProperty displayName="Paint Through Label" name="paintThroughLabel" value="2"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="0" internalHeight="-2147483648" internalWidth="-2147483648" side="None" visible="true" width="20" x="554" y="202"/>
+					<Points>
+						<Point x="569" y="145"/>
+						<Point x="569" y="202"/>
+						<Point x="477" y="202"/>
+						<Point x="477" y="244"/>
+					</Points>
+				</Connector>
+				<Connector connectorStyle="Follow Diagram" from="nxeQYwqGAqAEZxoq" height="100" id="uqhQYwqGAqAEZxpD" model="WqhQYwqGAqAEZxpC" shapeType="Usage" to="lB3gYwqGAqAEZxnP" width="291" x="189" y="218" zorder="-1">
+					<DiagramElementProperties>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="-1"/>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="WqhQYwqGAqAEZxpC"/>
+						</ModelRefProperty>
+						<ModelRefProperty displayName="Style" name="style"/>
+						<IntegerProperty displayName="X" name="x" value="189"/>
+						<IntegerProperty displayName="Y" name="y" value="218"/>
+						<IntegerProperty displayName="Width" name="width" value="291"/>
+						<IntegerProperty displayName="Height" name="height" value="100"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:122,207,245,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType" value="ClassDiagram"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringArrayProperty displayName="Referenced By Diagram Ids" name="referencedByDiagramIds"/>
+						<StringArrayProperty displayName="Referenced By Model Addresses" name="referencedByModelAddresses"/>
+						<StringProperty displayName="From Member Id" name="fromMemberId"/>
+						<StringProperty displayName="To Member Id" name="toMemberId"/>
+						<IntegerProperty displayName="Connector Style" name="connectorStyle" value="3"/>
+						<IntegerProperty displayName="Connector Line Jumps" name="connectorLineJumps" value="4"/>
+						<IntegerProperty displayName="Connector Label Orientation" name="connectorLabelOrientation" value="4"/>
+						<IntegerProperty displayName="From Shape XDiff" name="fromShapeXDiff" value="0"/>
+						<IntegerProperty displayName="From Shape YDiff" name="fromShapeYDiff" value="0"/>
+						<IntegerProperty displayName="To Shape XDiff" name="toShapeXDiff" value="0"/>
+						<IntegerProperty displayName="To Shape YDiff" name="toShapeYDiff" value="0"/>
+						<IntegerProperty displayName="From Connect Type" name="fromConnectType" value="0"/>
+						<IntegerProperty displayName="To Connect Type" name="toConnectType" value="0"/>
+						<BooleanProperty displayName="Use From Shape Center" name="useFromShapeCenter" value="true"/>
+						<BooleanProperty displayName="Use To Shape Center" name="useToShapeCenter" value="true"/>
+						<IntegerProperty displayName="From Pin Type" name="fromPinType" value="1"/>
+						<IntegerProperty displayName="To Pin Type" name="toPinType" value="1"/>
+						<PointProperty displayName="From Pin Ratio" name="fromPinRatio" value=""/>
+						<PointProperty displayName="To Pin Ratio" name="toPinRatio" value=""/>
+						<BooleanProperty displayName="Request Rebuild" name="requestRebuild" value="false"/>
+						<IntegerProperty displayName="Show Connector Name" name="showConnectorName" value="2"/>
+						<IntegerProperty displayName="Paint Through Label" name="paintThroughLabel" value="2"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="14" internalHeight="-2147483648" internalWidth="-2147483648" side="None" visible="true" width="74" x="297" y="248"/>
+					<Points>
+						<Point x="239" y="268"/>
+						<Point x="430" y="268"/>
+					</Points>
+				</Connector>
+			</Connectors>
+		</Diagram>
 		<Diagram connectorStyle="Oblique" diagramType="ObjectDiagram" displayDiagramType="Object Diagram" documentation="" id="A8AZ3QqGAqAEZwWC" imageHeight="0" imageScale="1.0" imageWidth="0" name="Recherches" rtfDocumentation="&lt;html&gt;&#10;  &lt;head&gt;&#10;    &lt;style type=&quot;text/css&quot;&gt;&#10;      &lt;!--&#10;        body { color: #000000; font-family: Dialog; font-size: 11px }&#10;      --&gt;&#10;    &lt;/style&gt;&#10;    &#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;    &lt;p&gt;&#10;      &#10;    &lt;/p&gt;&#10;  &lt;/body&gt;&#10;&lt;/html&gt;&#10;" trimmedHeight="0" trimmedWidth="0">
 			<DiagramProperties>
 				<BooleanProperty displayName="Show Shape Stereotype Icon Name" name="showShapeStereotypeIconName" value="true"/>
@@ -22061,7 +23154,7 @@
 				<StringProperty displayName="Pm Phase Id" name="pmPhaseId"/>
 				<StringProperty displayName="Pm Author" name="pmAuthor" value="dannyt"/>
 				<StringProperty displayName="Pm Create Date Time" name="pmCreateDateTime" value="1446256313279"/>
-				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431138136"/>
+				<StringProperty displayName="Pm Last Modified" name="pmLastModified" value="1446431675782"/>
 				<StringProperty displayName="Last Committed User" name="lastCommittedUser"/>
 				<StringProperty displayName="Last Committed User Name" name="lastCommittedUserName"/>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
