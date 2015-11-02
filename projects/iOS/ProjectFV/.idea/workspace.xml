@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/data.zip" afterPath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/data.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/project.xml" afterPath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/project.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../scripts/HeaderFilesExtract/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../scripts/HeaderFilesExtract/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
@@ -182,8 +180,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="428" />
-    <option name="y" value="113" />
+    <option name="x" value="486" />
+    <option name="y" value="227" />
     <option name="width" value="1914" />
     <option name="height" value="1131" />
   </component>
@@ -454,7 +452,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="428" y="113" width="1914" height="1131" extended-state="0" />
+    <frame x="486" y="227" width="1914" height="1131" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2142152" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
