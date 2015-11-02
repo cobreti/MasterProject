@@ -2,103 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxActiveObject_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxAnsiFile_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxConsoleTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxEvent_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxExternalModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxMemoryPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxMsgHandlers_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxMsgQueue_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxMutex_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxObjectsPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxTestUnitsGroup_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxThreadId_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxThreadModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxThread_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxTraceCompositor_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Linux/Source/NyxTraceModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxActiveObject_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxAnsiFile_Impl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxConsoleTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxEvent_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxExternalModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxMemoryPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxMsgHandlers_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxMsgQueue_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxMutex_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxObjectsPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxString_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxTestUnitsGroup_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxThreadId_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxThreadModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxThread_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxTraceCompositor_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/OSX/Source/NyxTraceModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Source/NyxTaskExecuterPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Source/NyxThreadTaskExecuter_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxActiveObject_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxAnsiFile_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxConsoleTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxEvent_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxExternalModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxMemoryPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxMsgHandlers_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxMsgQueue_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxMutex_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxObjectsPool_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxTestUnitsGroup_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxThreadId_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxThreadModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxThread_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxTraceCompositor_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxBase/Windows/Source/NyxTraceModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Linux/Source/NyxNetModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Linux/Source/NyxNetPipeClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Linux/Source/NyxNetPipeServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Linux/Source/NyxNetPipeSocketReader_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Linux/Source/NyxNetPipeSocketWriter_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Linux/Source/NyxNetSSLTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Linux/Source/NyxNetTcpIpClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Linux/Source/NyxNetTcpIpServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Linux/Source/NyxNetTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/OSX/Source/NyxNetModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/OSX/Source/NyxNetPipeClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/OSX/Source/NyxNetPipeServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/OSX/Source/NyxNetPipeSocketReader_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/OSX/Source/NyxNetPipeSocketWriter_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/OSX/Source/NyxNetSSLTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/OSX/Source/NyxNetTcpIpClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/OSX/Source/NyxNetTcpIpServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/OSX/Source/NyxNetTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Source/NyxNetConnectionsTable_Impl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Source/NyxNetConnectionsTable_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Source/NyxNetNxConnection_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Source/NyxNetPipeTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Source/NyxNetTcpIpTraceOutput_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Windows/Source/NyxNetModule_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Windows/Source/NyxNetPipeClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Windows/Source/NyxNetPipeServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Windows/Source/NyxNetPipeSocketReader_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Windows/Source/NyxNetPipeSocketWriter_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Windows/Source/NyxNetSSLTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Windows/Source/NyxNetTcpIpClientConn.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Windows/Source/NyxNetTcpIpServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxNet/Windows/Source/NyxNetTcpIpSocket_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/Linux/Source/Module_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/OSX/Source/Module_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/Source/ConnHandler_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/Source/ConnHttpHandler_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/Source/ConnListener_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/Source/Header_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/Source/HttpHandlersTable_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/Source/HttpServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/Source/HttpsServer_Impl.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/backup/NyxWebSvr/Windows/Source/Module_Impl.hpp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp~33" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp~34" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/data.zip" afterPath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/data.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/project.xml" afterPath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/project.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../scripts/HeaderFilesExtract/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../scripts/HeaderFilesExtract/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
@@ -193,8 +102,8 @@
       <file leaf-file-name="FileViewStory.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/FileView/FileViewStory.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.893401">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3106796">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -276,8 +185,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="439" />
-    <option name="y" value="164" />
+    <option name="x" value="428" />
+    <option name="y" value="113" />
     <option name="width" value="1914" />
     <option name="height" value="1131" />
   </component>
@@ -548,7 +457,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="439" y="164" width="1914" height="1131" extended-state="0" />
+    <frame x="428" y="113" width="1914" height="1131" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2142152" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
@@ -556,9 +465,9 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972002" sideWeight="0.5439289" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972002" sideWeight="0.45607108" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36229023" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972002" sideWeight="0.54643965" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972002" sideWeight="0.45356038" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36229023" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294643" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20353442" sideWeight="0.4544643" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31805682" sideWeight="0.503872" order="8" side_tool="true" content_ui="tabs" />
@@ -976,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/FileView/FileViewStory.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.893401">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3106796">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding />
         </state>
       </provider>
