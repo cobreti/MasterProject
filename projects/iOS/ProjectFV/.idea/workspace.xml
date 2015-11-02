@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/TraceClientCore/include/DbgTracesFeeder.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/TraceClientCore/include/DbgTracesFeederCore.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/TraceClientCore/include/TcpTracesReceiversTable.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/QtTraceClient/resource.h" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/data.zip" afterPath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/data.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/project.xml" afterPath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/project.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" />
     </list>
     <ignored path="ProjectFV.iws" />
@@ -100,8 +100,8 @@
       <file leaf-file-name="FileViewStory.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/FileView/FileViewStory.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5436893">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.2588997">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -183,8 +183,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="476" />
-    <option name="y" value="257" />
+    <option name="x" value="469" />
+    <option name="y" value="244" />
     <option name="width" value="1914" />
     <option name="height" value="1131" />
   </component>
@@ -455,7 +455,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="476" y="257" width="1914" height="1131" extended-state="0" />
+    <frame x="469" y="244" width="1914" height="1131" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2142152" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
@@ -883,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/FileView/FileViewStory.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5436893">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.2588997">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>
