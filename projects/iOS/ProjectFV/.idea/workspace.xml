@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxAlgorithm.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxAssert.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxAtomicValue.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxBodyBlock.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxDbg.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxDefs.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxDelegateBase.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxFixedString.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxInterfaceRef.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxLock.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxMemPoolObj.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxMemPoolWString.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxMsgQueue.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxNet/NyxNetTraceStreamWriter.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxRange.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxSize.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxStdAllocators.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxStringsFormat.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxSwap.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxTime.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxTraces.hpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxTypes.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxNet/NyxNetConnectionsTable.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxNet/NyxNetNxDataHeader.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/Nyx/Nyx/NyxNet/NyxNetTypes.hpp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp" afterPath="$PROJECT_DIR$/../../../diagrams/Nyx.vpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/data.zip" afterPath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/data.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/project.xml" afterPath="$PROJECT_DIR$/../../../diagrams/XML/Nyx/project.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../scripts/HeaderFilesExtract/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../scripts/HeaderFilesExtract/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" />
     </list>
@@ -124,8 +102,8 @@
       <file leaf-file-name="XmlReferenceParser.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlReferenceParser.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26229507">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.0">
+              <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -447,7 +425,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="293" y="269" width="1914" height="1131" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21322803" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
@@ -461,7 +439,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34553573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21183307" sideWeight="0.5579937" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20353442" sideWeight="0.4544643" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37018755" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37018755" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -889,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlReferenceParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26229507">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.0">
+          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
           <folding />
         </state>
       </provider>
