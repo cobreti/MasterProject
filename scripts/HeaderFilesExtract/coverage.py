@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 
 def buildFilesList():
 
-    nyxPath = os.path.abspath("/Volumes/data/dev/MasterProject/sources/EmbeddedRes/CodeSite/Nyx")
+    nyxPath = os.path.abspath("/Users/dannyt/dev/MasterProject/sources/EmbeddedRes/CodeSite/Nyx")
     files = {}
 
     for folder, folderNames, filenames in os.walk(nyxPath):
@@ -18,7 +18,7 @@ def buildFilesList():
 
 def buildMappedFilesList():
 
-    xmlPath = os.path.abspath("/Volumes/data/dev/MasterProject/sources/EmbeddedRes/diagrams/Nyx/diagrams.xml")
+    xmlPath = os.path.abspath("/Users/dannyt/dev/MasterProject/sources/EmbeddedRes/diagrams/Nyx/diagrams.xml")
     tree = ET.parse(xmlPath)
     root = tree.getroot()
     mappedFiles = {}
@@ -61,6 +61,17 @@ for file in srcFiles:
 
     if srcFiles[file] > 0:
         refItems = refItems + 1
+
+print()
+print()
+print("Files not mapped")
+print("================")
+
+for file in srcFiles:
+    if srcFiles[file] == 0:
+        print(file + " : ", end="")
+        print(srcFiles[file])
+
 
 print()
 print()

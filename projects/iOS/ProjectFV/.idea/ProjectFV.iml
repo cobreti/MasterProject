@@ -40,9 +40,6 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DiagramView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphDrawParams.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphItem.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphItems.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_CompositionEndPoint.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Element.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_EndPoint.swift" isTestSource="false" />
@@ -50,6 +47,9 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Label.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Link.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraph_SharedEndPoint.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphDrawParams.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphItem.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphItems.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/DisplayGraph/DisplayGraphs.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Images.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Info.plist" isTestSource="false" />
@@ -61,33 +61,33 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/DiagramSelection.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/FileView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/HierarchicView.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/back.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/circled-cross.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/cross.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/DnArrow.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/file.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/folder.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/home.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/LeftArrow.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/question-collapse.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/question-expand.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/recenter.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/RightArrow.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/subdiagram.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/UpArrow.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/MethodSelection.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/PresentationPage.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/ProjectSelection.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/Question.xib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/QuestionRecherchePopup.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/Questionnaire.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/QuestionRecherchePopup.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/RechercheSelection.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/SchematicView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/StoriesBoard.xib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/DnArrow.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/LeftArrow.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/RightArrow.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/UpArrow.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/back.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/circled-cross.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/cross.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/file.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/folder.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/home.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/question-collapse.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/question-expand.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/recenter.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Resources/icons/subdiagram.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/SearchQuestions/SearchQuestion.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/DiagramSelection/DiagramsDataSource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/DiagramSelection/DiagramSelectionController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/DiagramSelection/DiagramSelectionStory.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/DiagramSelection/DiagramsDataSource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/FileView/FileViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/FileView/FileViewStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/HerarchicView/HierarchicViewController.swift" isTestSource="false" />
@@ -103,24 +103,24 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/PresentationPage/PresentationPageViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/ProjectSelection/ProjectSelectionStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/ProjectSelection/ProjectSelectionViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/QuestionRecherchePopup/QuestionRecherchePopupStory.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/QuestionRecherchePopup/QuestionRecherchePopupViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/AnswerChoice.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/Question.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/QuestionController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/Questionnaire/QuestionnaireViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/QuestionRecherchePopup/QuestionRecherchePopupStory.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/QuestionRecherchePopup/QuestionRecherchePopupViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemControllerDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramHistoryThumbnailViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramPortal.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramsHistoryController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManager.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramViewsManagerDelegate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/DiagramsHistoryController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/BaseGestureHandler.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/LongPressGestureHandler.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/PanGestureHandler.swift" isTestSource="false" />

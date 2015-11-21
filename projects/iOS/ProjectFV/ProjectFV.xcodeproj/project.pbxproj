@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		160C35F21BBB7EF50090CF73 /* PresentationPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160C35F11BBB7EF50090CF73 /* PresentationPage.xib */; settings = {ASSET_TAGS = (); }; };
+		160C35F21BBB7EF50090CF73 /* PresentationPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160C35F11BBB7EF50090CF73 /* PresentationPage.xib */; };
 		160D0D571B3F33BA00BC3C1C /* recenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 160D0D561B3F33BA00BC3C1C /* recenter.png */; };
 		161E24541B9E5A7F009B7DE8 /* ModelReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E24521B9E5A7F009B7DE8 /* ModelReference.swift */; };
 		161E24551B9E5A7F009B7DE8 /* ModelReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E24531B9E5A7F009B7DE8 /* ModelReferences.swift */; };
@@ -77,9 +77,9 @@
 		1673BE6C1AF550CA00C8F9AE /* VpProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6A1AF550CA00C8F9AE /* VpProject.swift */; };
 		1673BE6D1AF550CA00C8F9AE /* XmlDocParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BE6B1AF550CA00C8F9AE /* XmlDocParser.swift */; };
 		1673BE6E1AF550D000C8F9AE /* DiagramElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1673BE1A1AF5504800C8F9AE /* DiagramElements.framework */; };
-		167B51591BB82E5100794DAC /* question-collapse.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B51571BB82E5100794DAC /* question-collapse.png */; settings = {ASSET_TAGS = (); }; };
-		167B515A1BB82E5100794DAC /* question-expand.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B51581BB82E5100794DAC /* question-expand.png */; settings = {ASSET_TAGS = (); }; };
-		167B515C1BB87AB000794DAC /* QuestionRecherchePopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167B515B1BB87AB000794DAC /* QuestionRecherchePopup.xib */; settings = {ASSET_TAGS = (); }; };
+		167B51591BB82E5100794DAC /* question-collapse.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B51571BB82E5100794DAC /* question-collapse.png */; };
+		167B515A1BB82E5100794DAC /* question-expand.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B51581BB82E5100794DAC /* question-expand.png */; };
+		167B515C1BB87AB000794DAC /* QuestionRecherchePopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167B515B1BB87AB000794DAC /* QuestionRecherchePopup.xib */; };
 		16980D061B65651E00D45DED /* RechercheSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16980D051B65651E00D45DED /* RechercheSelection.xib */; };
 		16980D081B656AD400D45DED /* RechercheItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16980D071B656AD400D45DED /* RechercheItem.xib */; };
 		16A44FB81B23CFE500ABDC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A44FB61B23CFE500ABDC4E /* Main.storyboard */; };
@@ -1754,7 +1754,7 @@
 				INFOPLIST_FILE = ProjectFV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cb8f4613-47b0-4401-a6d3-9f1aeabf79e3";
+				PROVISIONING_PROFILE = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ProjectFV/ProjectFV-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1764,12 +1764,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Danny Thibaudeau (NG32FJ2KRC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjectFV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cb8f4613-47b0-4401-a6d3-9f1aeabf79e3";
+				PROVISIONING_PROFILE = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ProjectFV/ProjectFV-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

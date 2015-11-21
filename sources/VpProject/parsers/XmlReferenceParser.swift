@@ -73,7 +73,7 @@ class XmlReferenceParser : XmlSubTreeParser {
                 value = attributeDict["value"] as? String {
 
             _filePath = value
-            debugPrint("url found for \(pathName) = '\(value)'")
+//            debugPrint("url found for \(pathName) = '\(value)'")
         }
     }
 

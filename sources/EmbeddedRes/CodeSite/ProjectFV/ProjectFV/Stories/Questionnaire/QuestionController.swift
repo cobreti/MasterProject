@@ -59,7 +59,7 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        debugPrint("index at path = \(indexPath)")
+//        debugPrint("index at path = \(indexPath)")
 
         let answer = _question.get(indexPath.indexAtPosition(1))
 

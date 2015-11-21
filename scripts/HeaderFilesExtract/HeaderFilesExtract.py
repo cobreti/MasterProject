@@ -1,8 +1,8 @@
 import os.path
 import shutil
 
-baseSourcePath = os.path.abspath("/Volumes/data/dev/NyxDev/")
-baseDestPath = os.path.abspath("/Volumes/data/dev/MasterProject/sources/EmbeddedRes/CodeSite/Nyx")
+baseSourcePath = os.path.abspath("/Users/dannyt/dev/NyxDev/")
+baseDestPath = os.path.abspath("/Users/dannyt/dev/MasterProject/sources/EmbeddedRes/CodeSite/Nyx")
 
 srcPaths = \
     [
