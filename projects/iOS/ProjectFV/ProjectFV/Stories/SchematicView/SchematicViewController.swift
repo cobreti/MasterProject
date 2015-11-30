@@ -300,9 +300,9 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                         currentDiagram = currentController.diagram,
                         ref = model.subDiagrams.getForParentDiagram(currentDiagram.name),
                         subDiagram = document.diagrams.get(ref.diagramName) where !diagramViewsManager.contains(ref.diagramName) {
-                        
+
                 let app = Application.instance()
-                
+
                 app.actionsBus.send( ShowDiagramAction(diagram: subDiagram, sender: self) )
 //                    let  controller = DiagramViewController(parentController: self, diagram: subDiagram)
 //                    diagramViewsManager.activate(controller)

@@ -25,13 +25,17 @@ public class FileReferences {
         }
     }
     
-    public func getForParentDiagram(origin: String) -> FileReference! {
+    public func getForParentDiagram(origin: String!) -> FileReference! {
 
         if let ref = _defRef {
             return ref
         }
 
-        return _refs[origin]
+        if let org = origin {
+            return _refs[org]
+        }
+
+        return nil
     }
 
     var _refs : [String:FileReference] = [:]

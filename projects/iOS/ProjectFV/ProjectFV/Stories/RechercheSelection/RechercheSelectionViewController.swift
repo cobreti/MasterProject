@@ -47,6 +47,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
         super.viewDidLoad()
 
         let doc = Application.instance().document
+        var questions : [String:SearchQuestion] = [:]
 
         if let diag = doc.diagrams.get("Recherches") {
 
@@ -58,8 +59,22 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
                         name = elm.name,
                         plainTextValue = model.plainTextValue {
 
-                    addRechercheItem( SearchQuestion(title: name, content: plainTextValue))
+                    var question = SearchQuestion(title: "", content: plainTextValue);
+                    if let fileRef = model.fileReferences.getForParentDiagram(nil) {
+                        question.file = fileRef.path
+                    }
+                    questions[name] = question
+
+//                    addRechercheItem( SearchQuestion(title: name, content: plainTextValue))
                 }
+            }
+        }
+
+        let sortedQuestionKeys = Array(questions.keys).sort(<)
+
+        for name in sortedQuestionKeys {
+            if let question = questions[name] {
+                addRechercheItem(question)
             }
         }
 

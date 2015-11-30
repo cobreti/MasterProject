@@ -19,6 +19,15 @@ class SearchQuestion {
         }
     }
 
+    var file : String! {
+        get {
+            return _file
+        }
+        set (value) {
+            _file = value
+        }
+    }
+
     init(title: String, content:String) {
         _title = title
         _content = content
@@ -26,5 +35,6 @@ class SearchQuestion {
 
     var _title: String
     var _content: String
+    var _file : String!
 }
 
