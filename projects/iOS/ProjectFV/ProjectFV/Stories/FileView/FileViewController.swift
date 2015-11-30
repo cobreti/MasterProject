@@ -35,15 +35,31 @@ class FileViewController : UIViewController {
         super.viewDidLoad()
 
         let bundle = NSBundle.mainBundle();
+        let app = Application.instance();
         
         if let  url = bundle.URLForResource("index", withExtension: "html", subdirectory: "EmbeddedRes/CodeSite") {
         
             let filePath = _fileURL.absoluteString
             let indexPath = url.absoluteString
                 
-            if let components = NSURLComponents(string: indexPath)  {
-                components.query = "file=\(filePath)"
-            
+            if let  components = NSURLComponents(string: indexPath)  {
+
+                var queryString = "file=\(filePath)"
+
+//                components.query = "file=\(filePath)"
+
+                if let  question = app.searchQuestion,
+                        questionURL = question.fileURL {
+
+                    if questionURL == _fileURL {
+                        debugPrint("item found")
+                        queryString += "&found=true"
+                    }
+                }
+
+                components.query = queryString
+
+
                 if let componentsURL = components.URL {
                     let request = NSURLRequest(URL: componentsURL)
 

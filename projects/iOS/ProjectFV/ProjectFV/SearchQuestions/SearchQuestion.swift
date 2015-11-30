@@ -28,6 +28,27 @@ class SearchQuestion {
         }
     }
 
+    var fileURL : NSURL! {
+        get {
+            var f : String = Application.instance().document.filesPathRoot + file
+            var fileParts = f.componentsSeparatedByString("/")
+            let lastFilePart = fileParts.removeLast()
+            let filenameParts = lastFilePart.componentsSeparatedByString(".")
+
+            var filePath = ""
+
+            for s in fileParts {
+                filePath += "\(s)/"
+            }
+
+            if let url = NSBundle.mainBundle().URLForResource(filenameParts[0], withExtension: filenameParts[1], subdirectory: filePath) {
+                return url
+            }
+
+            return nil
+        }
+    }
+
     init(title: String, content:String) {
         _title = title
         _content = content

@@ -14,10 +14,16 @@
     }
     if (args.file != null) {
 //      file = args.file.replace('.', '/');
-      return $.get(args.file, function(data) {
+      $.get(args.file, function(data) {
         $("#code").text(data);
         return SyntaxHighlighter.highlight($("#code"));
       });
+    }
+
+    if (args.found != null) {
+      var h1 = $("<h1 style='text-align: center;'></h1>");
+      h1.text("item found");
+      $('body').prepend(h1);
     }
   });
 

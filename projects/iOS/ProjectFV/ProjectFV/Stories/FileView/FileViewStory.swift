@@ -45,16 +45,16 @@ class FileViewStory : Story {
             _controller.backEventHandler = onBack
         }
 
-        let app = Application.instance();
-        if let  question = app.searchQuestion,
-                rootPath = app.document.filesPathRoot,
-                questionFile = question.file {
-
-            let questionFilePath = rootPath + questionFile
-            if questionFilePath == file {
-                debugPrint("item found")
-            }
-        }
+//        let app = Application.instance();
+//        if let  question = app.searchQuestion,
+//                rootPath = app.document.filesPathRoot,
+//                questionFile = question.file {
+//
+//            let questionFilePath = rootPath + questionFile
+//            if questionFilePath == file {
+//                debugPrint("item found")
+//            }
+//        }
 
     }
     
