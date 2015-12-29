@@ -1252,6 +1252,7 @@
 					};
 					1673BE191AF5504800C8F9AE = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = W5GCGQZUS5;
 					};
 					1673BE231AF5504800C8F9AE = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -1259,6 +1260,7 @@
 					};
 					1673BE4A1AF550B500C8F9AE = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = W5GCGQZUS5;
 					};
 					1673BE541AF550B500C8F9AE = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -1266,6 +1268,7 @@
 					};
 					16EE9FF71B06A77900A872D4 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = W5GCGQZUS5;
 					};
 					16EEA0011B06A77900A872D4 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -1813,6 +1816,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1837,6 +1841,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1888,6 +1893,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1912,6 +1918,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1963,6 +1970,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1987,6 +1995,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

@@ -30,19 +30,23 @@ class SearchQuestion {
 
     var fileURL : NSURL! {
         get {
-            var f : String = Application.instance().document.filesPathRoot + file
-            var fileParts = f.componentsSeparatedByString("/")
-            let lastFilePart = fileParts.removeLast()
-            let filenameParts = lastFilePart.componentsSeparatedByString(".")
 
-            var filePath = ""
+            if let file = self.file {
+                
+                let f: String = Application.instance().document.filesPathRoot + file
+                var fileParts = f.componentsSeparatedByString("/")
+                let lastFilePart = fileParts.removeLast()
+                let filenameParts = lastFilePart.componentsSeparatedByString(".")
 
-            for s in fileParts {
-                filePath += "\(s)/"
-            }
+                var filePath = ""
 
-            if let url = NSBundle.mainBundle().URLForResource(filenameParts[0], withExtension: filenameParts[1], subdirectory: filePath) {
-                return url
+                for s in fileParts {
+                    filePath += "\(s)/"
+                }
+
+                if let url = NSBundle.mainBundle().URLForResource(filenameParts[0], withExtension: filenameParts[1], subdirectory: filePath) {
+                    return url
+                }
             }
 
             return nil

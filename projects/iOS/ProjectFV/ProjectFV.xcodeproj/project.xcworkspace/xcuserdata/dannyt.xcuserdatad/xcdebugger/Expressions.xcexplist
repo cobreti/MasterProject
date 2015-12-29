@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "SearchQuestion.fileURL.getter:SearchQuestion.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Application.instance().document">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ProjectFV.FileViewController.webView (ProjectFV.FileViewController)(ObjectiveC.UIWebView, shouldStartLoadWithRequest : ObjectiveC.NSURLRequest, navigationType : C.UIWebViewNavigationType) -&gt; Swift.Bool:FileViewController.swift">
       </ContextState>
       <ContextState
