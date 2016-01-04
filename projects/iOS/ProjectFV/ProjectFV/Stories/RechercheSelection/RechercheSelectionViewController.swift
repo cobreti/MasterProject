@@ -59,7 +59,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
                         name = elm.name,
                         plainTextValue = model.plainTextValue {
 
-                    var question = SearchQuestion(title: "", content: plainTextValue);
+                    let question = SearchQuestion(title: "", content: plainTextValue);
                     if let fileRef = model.fileReferences.getForParentDiagram(nil) {
                         question.file = fileRef.path
                     }

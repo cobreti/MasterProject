@@ -398,6 +398,9 @@ class DiagramViewController : UIViewController {
                         if let  model = document.models.get(elm.modelId),
                                 ref = model.subDiagrams.getForParentDiagram(_diagram.name),
                                 subDiagram = document.diagrams.get(ref.diagramName) {
+
+                            debugPrint("element selected : '\(elm.modelId)' in diagram : \(_diagram.name)")
+
                             Application.instance().actionsBus.send(ShowDiagramAction(diagram: subDiagram, sender: self))
                         }
 

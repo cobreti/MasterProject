@@ -140,6 +140,7 @@
 		16FB69E81B0D46EA00322E1F /* XmlConnectorEndPointParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB69E71B0D46EA00322E1F /* XmlConnectorEndPointParser.swift */; };
 		B02F3009E4AC2A1D428201EB /* RechercheItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A0B131D57B393B90497 /* RechercheItemController.swift */; };
 		B02F301E6FB67B812AB92ADF /* DisplayGraphItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3EFAE6EE14C69CB5857A /* DisplayGraphItems.swift */; };
+		B02F304A2751577C9CAE4A9D /* NavigationItemsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3C691627F5B0D93F5B46 /* NavigationItemsGroup.swift */; };
 		B02F3052DB099C701A7F73C8 /* DisplayGraph_GeneralizationEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3939CD236957F4EED823 /* DisplayGraph_GeneralizationEndPoint.swift */; };
 		B02F30994B5F5A858E1C7F0D /* QuestionRecherchePopupStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3819703A309B1EE86301 /* QuestionRecherchePopupStory.swift */; };
 		B02F30B1EAD97062BB3E8F53 /* RechercheSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F345B968A431F1414649D /* RechercheSelectionStory.swift */; };
@@ -175,6 +176,7 @@
 		B02F396D18BDEC44799E9235 /* DisplayGraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F30B8A6A892B198D56B7A /* DisplayGraphs.swift */; };
 		B02F397B7452DB4DA7C7465D /* RechercheItemSelectedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F388F4CDD1992AA97E9B0 /* RechercheItemSelectedAction.swift */; };
 		B02F399E81ACA3183182F4DA /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35FB0F03E66AF590258C /* QuestionController.swift */; };
+		B02F3A63B8ADCA8E373DE0BB /* NavigationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F32B16EF1812CDFE6E4AC /* NavigationHistory.swift */; };
 		B02F3AE00830FE3193596B52 /* TreeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */; };
 		B02F3B3419ADBE03038C3515 /* MethodSelectionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */; };
 		B02F3B4C2216F0B6BB77DA45 /* TreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F303F237A284112FED013 /* TreeController.swift */; };
@@ -190,6 +192,7 @@
 		B02F3D38C476C171D08E4F00 /* MethodSelectionStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */; };
 		B02F3D3C380D17A896BF1302 /* LongPressGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F332B498E3C3075AA1836 /* LongPressGestureHandler.swift */; };
 		B02F3E18136AE7EDDEF7D031 /* DiagramHistoryThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3DF8E59A62DCE917C40A /* DiagramHistoryThumbnailViewController.swift */; };
+		B02F3E30CEAFA599FFF7713F /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F33F7529A10785A46461B /* NavigationItem.swift */; };
 		B02F3E469FB70DF8D315CB02 /* HistoryDiagramSelectedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F39719F5A8738FCB65A02 /* HistoryDiagramSelectedAction.swift */; };
 		B02F3ED456E0667EA94CB2BE /* TreeItemSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3B4F110F2E21C44C9D19 /* TreeItemSelected.swift */; };
 		B02F3EFE51C01D10B16E7917 /* DisplayGraph_Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3CDC39065307EEC4980B /* DisplayGraph_Link.swift */; };
@@ -428,9 +431,11 @@
 		B02F316C1B5AD09D159E575A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../../../sources/EmbeddedRes/presentation/index.html; sourceTree = "<group>"; };
 		B02F325B3D5FD78D0BC7C96D /* DisplayGraph_EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_EndPoint.swift; sourceTree = "<group>"; };
 		B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataSource.swift; path = Stories/HerarchicView/TreeTableDataSource.swift; sourceTree = "<group>"; };
+		B02F32B16EF1812CDFE6E4AC /* NavigationHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationHistory.swift; path = Stories/SchematicView/Navigation/NavigationHistory.swift; sourceTree = "<group>"; };
 		B02F32B9ECB889FED6342D02 /* QuestionRecherchePopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionRecherchePopupViewController.swift; path = Stories/QuestionRecherchePopup/QuestionRecherchePopupViewController.swift; sourceTree = "<group>"; };
 		B02F332B498E3C3075AA1836 /* LongPressGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongPressGestureHandler.swift; path = Stories/SchematicView/GestureHandler/LongPressGestureHandler.swift; sourceTree = "<group>"; };
 		B02F335DB6CEBD0451F05F09 /* ShowQuestionRechercheAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowQuestionRechercheAction.swift; path = Actions/ActionObjects/ShowQuestionRechercheAction.swift; sourceTree = "<group>"; };
+		B02F33F7529A10785A46461B /* NavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationItem.swift; path = Stories/SchematicView/Navigation/NavigationItem.swift; sourceTree = "<group>"; };
 		B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectSelectionStory.swift; path = Stories/ProjectSelection/ProjectSelectionStory.swift; sourceTree = "<group>"; };
 		B02F34494221EDE7CA9EC1DC /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Stories/Questionnaire/Question.swift; sourceTree = "<group>"; };
 		B02F345B968A431F1414649D /* RechercheSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RechercheSelectionStory.swift; path = Stories/RechercheSelection/RechercheSelectionStory.swift; sourceTree = "<group>"; };
@@ -466,6 +471,7 @@
 		B02F3B87B2EEFF186CBEA8F0 /* TreeItemExpanded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeItemExpanded.swift; path = Actions/ActionObjects/TreeItemExpanded.swift; sourceTree = "<group>"; };
 		B02F3BC555A751908872BB10 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireViewController.swift; path = Stories/Questionnaire/QuestionnaireViewController.swift; sourceTree = "<group>"; };
 		B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionAction.swift; path = Actions/ActionObjects/MethodSelectionAction.swift; sourceTree = "<group>"; };
+		B02F3C691627F5B0D93F5B46 /* NavigationItemsGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationItemsGroup.swift; path = Stories/SchematicView/Navigation/NavigationItemsGroup.swift; sourceTree = "<group>"; };
 		B02F3CDC39065307EEC4980B /* DisplayGraph_Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_Link.swift; sourceTree = "<group>"; };
 		B02F3CDF44A0CC467A849D7E /* ProjectSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectSelectionViewController.swift; path = Stories/ProjectSelection/ProjectSelectionViewController.swift; sourceTree = "<group>"; };
 		B02F3D1E03E6568B9130B67F /* TreeTableDataNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableDataNode.swift; path = Stories/HerarchicView/TreeTableDataNode.swift; sourceTree = "<group>"; };
@@ -841,6 +847,7 @@
 			isa = PBXGroup;
 			children = (
 				1642F1641B1B526900AA600D /* GestureHandler */,
+				B02F3F908788819517FA65DF /* Navigation */,
 				166405971B370857003F720A /* DiagramPortal.swift */,
 				166405981B370857003F720A /* DiagramView.swift */,
 				166405991B370857003F720A /* DiagramViewController.swift */,
@@ -1050,6 +1057,16 @@
 				B02F382DBC22646EFA1F2836 /* SearchQuestion.swift */,
 			);
 			path = SearchQuestions;
+			sourceTree = "<group>";
+		};
+		B02F3F908788819517FA65DF /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B02F33F7529A10785A46461B /* NavigationItem.swift */,
+				B02F32B16EF1812CDFE6E4AC /* NavigationHistory.swift */,
+				B02F3C691627F5B0D93F5B46 /* NavigationItemsGroup.swift */,
+			);
+			name = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1495,6 +1512,9 @@
 				B02F338B473F64C440E92E4C /* MainViewController.swift in Sources */,
 				B02F3D3C380D17A896BF1302 /* LongPressGestureHandler.swift in Sources */,
 				B02F3BEC55D4848A73DDC74A /* LongPressAction.swift in Sources */,
+				B02F3E30CEAFA599FFF7713F /* NavigationItem.swift in Sources */,
+				B02F3A63B8ADCA8E373DE0BB /* NavigationHistory.swift in Sources */,
+				B02F304A2751577C9CAE4A9D /* NavigationItemsGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
