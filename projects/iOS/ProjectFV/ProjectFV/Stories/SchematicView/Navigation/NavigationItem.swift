@@ -7,23 +7,15 @@ import Foundation
 
 class NavigationItem {
 
-    var diagramName : String {
-        get {
-            return _diagramName
-        }
-    }
-
     var modelId : String {
         get {
             return _modelId
         }
     }
 
-    init(diagramName: String, modelId: String) {
-        _diagramName = diagramName
+    init(modelId: String) {
         _modelId = modelId
     }
 
-    let _diagramName: String
     let _modelId: String
 }

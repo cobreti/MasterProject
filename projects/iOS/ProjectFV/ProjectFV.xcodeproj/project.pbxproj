@@ -176,6 +176,7 @@
 		B02F396D18BDEC44799E9235 /* DisplayGraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F30B8A6A892B198D56B7A /* DisplayGraphs.swift */; };
 		B02F397B7452DB4DA7C7465D /* RechercheItemSelectedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F388F4CDD1992AA97E9B0 /* RechercheItemSelectedAction.swift */; };
 		B02F399E81ACA3183182F4DA /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35FB0F03E66AF590258C /* QuestionController.swift */; };
+		B02F39CE7F6021C4C81C38FF /* DiagramOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F360E2FBEF611238409C4 /* DiagramOpened.swift */; };
 		B02F3A63B8ADCA8E373DE0BB /* NavigationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F32B16EF1812CDFE6E4AC /* NavigationHistory.swift */; };
 		B02F3AE00830FE3193596B52 /* TreeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */; };
 		B02F3B3419ADBE03038C3515 /* MethodSelectionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3BF1AAA0FE59F9489C94 /* MethodSelectionAction.swift */; };
@@ -447,6 +448,7 @@
 		B02F35EB59A2D7DBB487FE96 /* MethodSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodSelectionStory.swift; path = Stories/MethodSelection/MethodSelectionStory.swift; sourceTree = "<group>"; };
 		B02F35FB0F03E66AF590258C /* QuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionController.swift; path = Stories/Questionnaire/QuestionController.swift; sourceTree = "<group>"; };
 		B02F360AA5BA1C7813AA89FC /* HierarchicViewStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HierarchicViewStory.swift; path = Stories/HerarchicView/HierarchicViewStory.swift; sourceTree = "<group>"; };
+		B02F360E2FBEF611238409C4 /* DiagramOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagramOpened.swift; path = Actions/ActionObjects/DiagramOpened.swift; sourceTree = "<group>"; };
 		B02F3626A63FD0EA5E397C7F /* DisplayGraphDrawParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraphDrawParams.swift; sourceTree = "<group>"; };
 		B02F372904028C1220E9B3E3 /* DisplayGraph_Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGraph_Label.swift; sourceTree = "<group>"; };
 		B02F3766EB806F5DB43B4824 /* RecenterDiagramAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecenterDiagramAction.swift; path = Actions/ActionObjects/RecenterDiagramAction.swift; sourceTree = "<group>"; };
@@ -594,6 +596,7 @@
 				B02F3B4F110F2E21C44C9D19 /* TreeItemSelected.swift */,
 				B02F335DB6CEBD0451F05F09 /* ShowQuestionRechercheAction.swift */,
 				B02F3AECC3D955AF9D15EBAF /* LongPressAction.swift */,
+				B02F360E2FBEF611238409C4 /* DiagramOpened.swift */,
 			);
 			name = ActionObjects;
 			sourceTree = "<group>";
@@ -1515,6 +1518,7 @@
 				B02F3E30CEAFA599FFF7713F /* NavigationItem.swift in Sources */,
 				B02F3A63B8ADCA8E373DE0BB /* NavigationHistory.swift in Sources */,
 				B02F304A2751577C9CAE4A9D /* NavigationItemsGroup.swift in Sources */,
+				B02F39CE7F6021C4C81C38FF /* DiagramOpened.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

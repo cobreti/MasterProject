@@ -65,7 +65,6 @@ class DiagramsHistoryController : UIViewController {
             _historyControllers.removeLast()
             item.view.removeFromSuperview()
         }
-
     }
  
     weak var _diagramViewsManager : DiagramViewsManager!

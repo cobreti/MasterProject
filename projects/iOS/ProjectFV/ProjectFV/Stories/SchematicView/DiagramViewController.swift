@@ -401,6 +401,7 @@ class DiagramViewController : UIViewController {
 
                             debugPrint("element selected : '\(elm.modelId)' in diagram : \(_diagram.name)")
 
+                            Application.instance().actionsBus.send( DiagramOpened(diagramName: subDiagram.name, modelName: elm.name, modelId: elm.modelId, sender: self) )
                             Application.instance().actionsBus.send(ShowDiagramAction(diagram: subDiagram, sender: self))
                         }
 

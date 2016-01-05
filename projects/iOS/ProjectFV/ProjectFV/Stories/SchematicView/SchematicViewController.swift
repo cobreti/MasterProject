@@ -39,6 +39,12 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             _backEventHandler = value
         }
     }
+
+    var navigationHistory : NavigationHistory {
+        get {
+            return _navigationHistory
+        }
+    }
     
     init(diagram : Diagram) {
         _diagram = diagram
@@ -329,6 +335,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     var _diagram : Diagram
     var _backEventHandler : EventHandler!
     var _tempParentController : DiagramViewController!
+    var _navigationHistory : NavigationHistory = NavigationHistory()
 
     var _diagramViewsManager : DiagramViewsManager!
 

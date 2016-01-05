@@ -13,10 +13,19 @@ class NavigationItemsGroup {
         }
     }
 
+    var item : NavigationItem! {
+        get {
+            return _item
+        }
+        set(value) {
+            _item = value
+        }
+    }
+
     init( diagramName : String ) {
         _diagramName = diagramName
     }
 
     let _diagramName : String
-    var _items : [NavigationItem] = []
+    var _item : NavigationItem!
 }

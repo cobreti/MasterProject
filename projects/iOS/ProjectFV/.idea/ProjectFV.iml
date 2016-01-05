@@ -64,6 +64,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/TapDiagramAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/OpenStory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/RechercheItemSelectedAction.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/DiagramOpened.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/ShowQuestionRechercheAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/ZoomDiagramAction.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProjectFV/Actions/ActionObjects/RestartAction.swift" isTestSource="false" />
