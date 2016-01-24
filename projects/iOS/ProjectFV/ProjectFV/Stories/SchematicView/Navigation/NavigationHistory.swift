@@ -11,56 +11,21 @@ class NavigationHistory {
 
     }
 
-    var previous: String! {
+    var currentGroup : NavigationItemsGroup! {
         get {
-            let count = _history.count
-            if count > 1 {
-                if let item = _history[count-2].item {
-                    return item.modelId
-                }
-            }
-
-            return nil
+            return _history[_history.count-1]
         }
     }
 
-    var next: String! {
-        get {
-            let count = _history.count
-            if count > 0 {
-                if let item = _history[count-2].item {
-                    return item.modelId
-                }
-            }
+    func add( diagramName : String ) -> NavigationItemsGroup {
 
-            return nil
-        }
+        let group = NavigationItemsGroup(diagramName: diagramName)
+        _history.append( group )
+        return group
     }
 
-    func add( diagramName : String, modelId : String ) {
-
-        if let g = _history.last where g.diagramName == diagramName {
-            g.item = NavigationItem(modelId: modelId)
-        }
-        else {
-            _history.append( NavigationItemsGroup(diagramName: diagramName) )
-        }
-    }
-
-    func removeItemsWithDiagramName( diagramName: String ) {
-
-        var index = _history.count-1;
-        while ( index >= 0 ) {
-
-            let itemGroup = _history[index]
-
-            if itemGroup.diagramName == diagramName {
-                _history.removeAtIndex(index)
-                break
-            }
-
-            --index
-        }
+    func removeCurrentGroup() {
+        _history.removeLast()
     }
 
     var _history: [NavigationItemsGroup] = []

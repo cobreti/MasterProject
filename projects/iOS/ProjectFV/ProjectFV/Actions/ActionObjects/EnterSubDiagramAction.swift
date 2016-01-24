@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import DiagramElements
 
 class EnterSubDiagramAction : Action {
 
@@ -22,12 +23,20 @@ class EnterSubDiagramAction : Action {
         }
     }
 
-    init( subDiagramController : DiagramViewController, sender: AnyObject! ) {
+    var selectedElement: Element! {
+        get {
+            return _selectedElement
+        }
+    }
+
+    init( subDiagramController : DiagramViewController, selectedElement: Element!, sender: AnyObject! ) {
         
         _subDiagramController = subDiagramController
+        _selectedElement = selectedElement
         
         super.init(id: .EnterSubDiagram, sender: sender)
     }
 
     var _subDiagramController : DiagramViewController
+    var _selectedElement : Element!
 }

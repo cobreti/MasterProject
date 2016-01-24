@@ -13,12 +13,12 @@ class NavigationItemsGroup {
         }
     }
 
-    var item : NavigationItem! {
+    var next : NavigationItem! {
         get {
-            return _item
+            return _next
         }
-        set(value) {
-            _item = value
+        set (value) {
+            _next = value
         }
     }
 
@@ -27,5 +27,5 @@ class NavigationItemsGroup {
     }
 
     let _diagramName : String
-    var _item : NavigationItem!
+    var _next : NavigationItem!
 }

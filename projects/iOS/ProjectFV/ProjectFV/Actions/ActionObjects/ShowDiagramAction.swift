@@ -17,6 +17,12 @@ class ShowDiagramAction : Action {
             return _diagram
         }
     }
+
+    var originModelId: String! {
+        get {
+            return _originModelId
+        }
+    }
     
     override var description : String {
         get {
@@ -24,12 +30,14 @@ class ShowDiagramAction : Action {
         }
     }
     
-    init(diagram: Diagram, sender: AnyObject) {
+    init(diagram: Diagram, originModelId: String!, sender: AnyObject) {
         
         _diagram = diagram
+        _originModelId = originModelId
         
         super.init(id: .ShowDiagram, sender: sender)
     }
     
     var _diagram : Diagram
+    var _originModelId : String!
 }

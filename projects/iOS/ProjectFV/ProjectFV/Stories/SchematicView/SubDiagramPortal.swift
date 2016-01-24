@@ -17,6 +17,12 @@ class SubDiagramPortal {
             return _controller
         }
     }
+
+    var pickedElement: Element! {
+        get {
+            return _element
+        }
+    }
     
     init(view: DiagramView, portal: DiagramPortal, parentController: SchematicViewController) {
         _view  = view
@@ -84,7 +90,7 @@ class SubDiagramPortal {
             if (portalRect.size.width > 400 || portalRect.size.height > 400) {
                 
                 if _controller == nil {
-                    _controller = DiagramViewController(parentController: _parentController, diagram: _subDiagram)
+                    _controller = DiagramViewController(parentController: _parentController, diagram: _subDiagram, originModelId: elm.modelId)
                     _controller.view?.userInteractionEnabled = false
                     _controller.viewDrawingMode = .Thumbnail
                     _view.addSubview(_controller.view)

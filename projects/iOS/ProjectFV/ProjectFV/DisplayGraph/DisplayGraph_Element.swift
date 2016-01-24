@@ -41,6 +41,15 @@ class DisplayGraph_Element : DisplayGraphItem {
         }
     }
 
+    var originIcon: UIImage! {
+        get {
+            return _originIcon
+        }
+        set (value) {
+            _originIcon = value
+        }
+    }
+
     var name: String! {
         get {
             return _name
@@ -88,9 +97,47 @@ class DisplayGraph_Element : DisplayGraphItem {
             drawSubDiagramIcon(cgRC)
         }
 
+        if let _ = _originIcon {
+            drawOriginIcon(cgRC)
+        }
+
+        if let _ = _lastSelectedIcon {
+            drawLastSelectedIcon(cgRC)
+        }
+
 //        if let _ = _name where params.drawingMode == .Normal {
             drawName(cgRC, context: params.context)
 //        }
+    }
+
+    func drawOriginIcon(rect: CGRect) {
+
+        var imgWidth = max(rect.width / 3 - 2, 0)
+        var imgHeight = rect.height / 3
+
+        imgWidth = min(imgWidth, _originIcon.size.width)
+        imgHeight = min(imgHeight, _originIcon.size.height)
+
+        let imgSize = min(imgWidth, imgHeight)
+
+        let rcImg = CGRect( x: rect.minX - imgSize, y: rect.minY - imgSize, width: imgSize, height: imgSize )
+
+        _originIcon.drawInRect(rcImg)
+    }
+
+    func drawLastSelectedIcon(rect: CGRect) {
+
+        var imgWidth = max(rect.width / 3 - 2, 0)
+        var imgHeight = rect.height / 3
+
+        imgWidth = min(imgWidth, _lastSelectedIcon.size.width)
+        imgHeight = min(imgHeight, _lastSelectedIcon.size.height)
+
+        let imgSize = min(imgWidth, imgHeight)
+
+        let rcImg = CGRect( x: rect.maxX, y: rect.maxY, width: imgSize, height: imgSize )
+
+        _lastSelectedIcon.drawInRect(rcImg)
     }
 
     func drawFileIcon(rect: CGRect) {
@@ -223,5 +270,7 @@ class DisplayGraph_Element : DisplayGraphItem {
     var _name : String!
     var _fileIcon : UIImage!
     var _subDiagramIcon : UIImage!
+    var _originIcon : UIImage!
+    var _lastSelectedIcon : UIImage!
     var _state : State = .Normal
 }

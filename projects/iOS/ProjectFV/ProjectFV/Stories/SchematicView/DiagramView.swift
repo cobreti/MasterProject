@@ -68,6 +68,37 @@ class DiagramView : UIView {
         }
     }
 
+//    var navigationItemsGroup : NavigationItemsGroup! {
+//        get {
+//            return _navigationItemsGroup
+//        }
+//        set (value) {
+//            _navigationItemsGroup = value
+//        }
+//    }
+
+    var originModelId: String! {
+        get {
+            return _originModelId
+        }
+        set (value) {
+            _originModelId = value
+        }
+    }
+
+    var selectedModelId : String! {
+        get {
+            return _selectedModelId
+        }
+        set (value) {
+            if ( value != _selectedModelId ) {
+                _selectedModelId = value
+                buildDisplayGraph()
+                setNeedsDisplay()
+            }
+        }
+    }
+
     func prepareView() {
 
         if let graph = buildDisplayGraph() {
@@ -153,6 +184,16 @@ class DiagramView : UIView {
                     img = UIImage(named: "subdiagram.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) where !diagramViewsManager.contains(ref.diagramName) {
                 dgElm.subDiagramIcon = img
             }
+        }
+
+        if let  oModelId = _originModelId,
+                img = UIImage(named: "origin.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) where oModelId == elm.modelId {
+            dgElm.originIcon = img
+        }
+
+        if let  oModelId = _selectedModelId,
+        img = UIImage(named: "last-chosen.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) where oModelId == elm.modelId {
+            dgElm._lastSelectedIcon = img
         }
 
         dgElm.id = elm.modelId
@@ -243,5 +284,8 @@ class DiagramView : UIView {
     var _pinPoint : PinPoint?
     var _drawingMode : ViewDrawingMode = .Normal
     var _diagramViewsManager : DiagramViewsManager!
+//    var _navigationItemsGroup : NavigationItemsGroup!
+    var _originModelId : String!
+    var _selectedModelId : String!
 }
 

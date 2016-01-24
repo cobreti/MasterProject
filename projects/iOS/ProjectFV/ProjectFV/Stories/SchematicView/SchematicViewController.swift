@@ -40,15 +40,17 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         }
     }
 
-    var navigationHistory : NavigationHistory {
-        get {
-            return _navigationHistory
-        }
-    }
+//    var navigationHistory : NavigationHistory {
+//        get {
+//            return _navigationHistory
+//        }
+//    }
     
     init(diagram : Diagram) {
         _diagram = diagram
-        
+
+//        _navigationHistory.add(_diagram.name)
+
         super.init(nibName: "SchematicView", bundle: nil)
     }
 
@@ -76,7 +78,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     
     override func viewDidAppear(animated: Bool) {
 
-        _diagramViewsManager.activate( DiagramViewController(parentController: self, diagram: _diagram) )
+        _diagramViewsManager.activate( DiagramViewController(parentController: self, diagram: _diagram, originModelId: nil) )
     }
 
     func activate(controller: DiagramViewController, completionHandler: (() -> Void)! ) {
@@ -258,6 +260,12 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             
             case .EnterSubDiagram:
                 if let esda = action as? EnterSubDiagramAction {
+
+                    if let  ctrller = diagramViewsManager.currentController,
+                    elm = esda.selectedElement {
+                        ctrller.setSelectedElm(elm.modelId)
+                    }
+
                     diagramViewsManager.activate(esda.subDiagramController)
                     _toolbarController?.diagramName = esda.subDiagramController.diagram.name
 //                    _diagramNameLabel.text = esda.subDiagramController.diagram.name
@@ -291,7 +299,9 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         let document = Application.instance().document
         
         if let  model = document.models.get(action.element.modelId) {
-            
+
+//            navigationHistory.currentGroup.next = NavigationItem(modelId: model.id);
+
             if let  currentController = _diagramViewsManager.currentController,
                     currentDiagram = currentController.diagram,
                     ref = model.fileReferences.getForParentDiagram(currentDiagram.name),
@@ -309,11 +319,15 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
 
                 let app = Application.instance()
 
-                app.actionsBus.send( ShowDiagramAction(diagram: subDiagram, sender: self) )
+                app.actionsBus.send( ShowDiagramAction(diagram: subDiagram, originModelId: action.element.modelId, sender: self) )
 //                    let  controller = DiagramViewController(parentController: self, diagram: subDiagram)
 //                    diagramViewsManager.activate(controller)
             }
-            
+
+            if let currentController = _diagramViewsManager.currentController {
+                currentController.setSelectedElm(action.element.modelId)
+            }
+
         }
     }
     
@@ -328,14 +342,14 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
 //        _diagramNameLabel?.text = action.diagram.name
         _toolbarController?.diagramName = action.diagram.name
         
-        let  controller = DiagramViewController(parentController: self, diagram: action.diagram)
+        let  controller = DiagramViewController(parentController: self, diagram: action.diagram, originModelId: action.originModelId)
         diagramViewsManager.activate(controller)
     }
 
     var _diagram : Diagram
     var _backEventHandler : EventHandler!
     var _tempParentController : DiagramViewController!
-    var _navigationHistory : NavigationHistory = NavigationHistory()
+//    var _navigationHistory : NavigationHistory = NavigationHistory()
 
     var _diagramViewsManager : DiagramViewsManager!
 

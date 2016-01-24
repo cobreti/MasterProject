@@ -3,10 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "SearchQuestion.fileURL.getter:SearchQuestion.swift">
+         contextName = "ProjectFV.SchematicViewController.viewDidLoad (ProjectFV.SchematicViewController)() -&gt; ():SchematicViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "Application.instance().document">
+               value = "_diagramArea.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DiagramViewController.onZoomAction(ZoomDiagramAction) -&gt; ():DiagramViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_subDiagramPortal">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -47,10 +55,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ProjectFV.SchematicViewController.viewDidLoad (ProjectFV.SchematicViewController)() -&gt; ():SchematicViewController.swift">
+         contextName = "SearchQuestion.fileURL.getter:SearchQuestion.swift">
          <PersistentStrings>
             <PersistentString
-               value = "_diagramArea.bounds">
+               value = "Application.instance().document">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

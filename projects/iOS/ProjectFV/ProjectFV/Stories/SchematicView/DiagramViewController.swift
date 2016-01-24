@@ -52,7 +52,7 @@ class DiagramViewController : UIViewController {
             _longPressGestureHandler?.enabled = value
         }
     }
-    
+
     var viewDrawingMode : ViewDrawingMode {
         get {
             return _viewDrawingMode
@@ -66,10 +66,11 @@ class DiagramViewController : UIViewController {
         }
     }
     
-    init(parentController: SchematicViewController, diagram: Diagram) {
+    init(parentController: SchematicViewController, diagram: Diagram, originModelId: String!) {
         
         _parentController = parentController
         _diagram = diagram
+        _originModelId = originModelId
         
         super.init(nibName: "DiagramView", bundle: nil)
     }
@@ -90,7 +91,14 @@ class DiagramViewController : UIViewController {
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
+
+    func setSelectedElm( modelId: String! ) {
+        if let dgmView = view as? DiagramView {
+            dgmView.selectedModelId = modelId
+        }
+    }
+
     func deactivate() {
         
         view.removeFromSuperview()
@@ -123,6 +131,8 @@ class DiagramViewController : UIViewController {
         
         if let dgmView = view as? DiagramView {
             dgmView.diagram = _diagram
+//            dgmView.navigationItemsGroup = _parentController.navigationHistory.currentGroup;
+            dgmView.originModelId = _originModelId
             dgmView.diagramDocument = document
             dgmView.diagramPortal = _diagramPortal
             dgmView.pinPoint = PinPoint( x: frame.midX, y: frame.midY )
@@ -321,8 +331,9 @@ class DiagramViewController : UIViewController {
                 
                 if enterSubDiagram(action.velocity) {
                     let subDiagramController = _subDiagramPortal.subDiagramController
+                    let pickedElm = _subDiagramPortal?.pickedElement
                     _subDiagramPortal.detach()
-                    Application.instance().actionsBus.send( EnterSubDiagramAction(subDiagramController: subDiagramController, sender: nil) )
+                    Application.instance().actionsBus.send( EnterSubDiagramAction(subDiagramController: subDiagramController, selectedElement: pickedElm, sender: nil) )
 
                 }
                 else if enterParentDiagram() {
@@ -380,6 +391,12 @@ class DiagramViewController : UIViewController {
                     graphElm = graph.items.get(elm.modelId) as? DisplayGraph_Element,
                     _ = graphElm.subDiagramIcon {
 
+//                _parentController.navigationHistory.currentGroup.next = NavigationItem(modelId: elm.modelId);
+
+                if let v = view as? DiagramView {
+                    v.selectedModelId = elm.modelId
+                }
+
                 switch action.state {
 
                     case .Began:
@@ -401,8 +418,7 @@ class DiagramViewController : UIViewController {
 
                             debugPrint("element selected : '\(elm.modelId)' in diagram : \(_diagram.name)")
 
-                            Application.instance().actionsBus.send( DiagramOpened(diagramName: subDiagram.name, modelName: elm.name, modelId: elm.modelId, sender: self) )
-                            Application.instance().actionsBus.send(ShowDiagramAction(diagram: subDiagram, sender: self))
+                            Application.instance().actionsBus.send(ShowDiagramAction(diagram: subDiagram, originModelId: elm.modelId, sender: self))
                         }
 
 //                        Application.instance().actionsBus.send( SelectDiagramElementAction(element: elm, sender: self))
@@ -439,4 +455,6 @@ class DiagramViewController : UIViewController {
     
     var _gestureEnabled : Bool = true
     var _viewDrawingMode : ViewDrawingMode = .Normal
+
+    var _originModelId: String!
 }
