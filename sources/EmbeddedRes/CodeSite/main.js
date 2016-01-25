@@ -21,7 +21,7 @@
     }
 
     if (args.found != null) {
-      var h1 = $("<h1 style='text-align: center;'></h1>");
+      var h1 = $("<h1 style='text-align: center; color: #55DD55'></h1>");
       h1.text("item found");
       $('body').prepend(h1);
     }
