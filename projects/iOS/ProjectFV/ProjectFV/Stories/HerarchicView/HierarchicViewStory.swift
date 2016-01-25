@@ -19,6 +19,12 @@ class HierarchicViewStory : Story {
             return false
         }
     }
+    
+    override var toolbar : UIView! {
+        get {
+            return _controller.toolbar
+        }
+    }
 
 
     override init() {

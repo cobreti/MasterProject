@@ -16,6 +16,16 @@ class HierarchicViewController : UIViewController {
         parseSourceFolders()
 
         _treeController.invalidate()
+
+        _toolbarController.showQuestionRechercheDelegate = { () -> Void in
+            Application.instance().actionsBus.send( ShowQuestionRechercheAction(sender: self) )
+        }
+}
+    
+    var toolbar : UIView! {
+        get {
+            return _toolbarController.view
+        }
     }
 
     func parseSourceFolders() {
@@ -93,6 +103,7 @@ class HierarchicViewController : UIViewController {
     
     
     @IBOutlet weak var _tableView: UITableView!
+    @IBOutlet var _toolbarController: HierarchicViewTBController!
 
     var _treeController : TreeController!
 }

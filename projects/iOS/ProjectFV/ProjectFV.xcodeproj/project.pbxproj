@@ -55,6 +55,7 @@
 		166405BB1B3CDA8C003F720A /* SubDiagramPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166405BA1B3CDA8C003F720A /* SubDiagramPortal.swift */; };
 		1673A2A51C55398C006C27FB /* last-chosen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1673A2A31C55398C006C27FB /* last-chosen.png */; };
 		1673A2A61C55398C006C27FB /* origin.png in Resources */ = {isa = PBXBuildFile; fileRef = 1673A2A41C55398C006C27FB /* origin.png */; };
+		1673A2A81C55B7C1006C27FB /* HierarchicViewTBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A2A71C55B7C1006C27FB /* HierarchicViewTBController.swift */; };
 		1673BDF61AF5502600C8F9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673BDF51AF5502600C8F9AE /* AppDelegate.swift */; };
 		1673BDFD1AF5502600C8F9AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFC1AF5502600C8F9AE /* Images.xcassets */; };
 		1673BE001AF5502600C8F9AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673BDFE1AF5502600C8F9AE /* LaunchScreen.xib */; };
@@ -340,6 +341,7 @@
 		166405BA1B3CDA8C003F720A /* SubDiagramPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubDiagramPortal.swift; path = Stories/SchematicView/SubDiagramPortal.swift; sourceTree = "<group>"; };
 		1673A2A31C55398C006C27FB /* last-chosen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "last-chosen.png"; path = "Resources/icons/last-chosen.png"; sourceTree = "<group>"; };
 		1673A2A41C55398C006C27FB /* origin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = origin.png; path = Resources/icons/origin.png; sourceTree = "<group>"; };
+		1673A2A71C55B7C1006C27FB /* HierarchicViewTBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchicViewTBController.swift; sourceTree = "<group>"; };
 		1673BDF01AF5502600C8F9AE /* ProjectFV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1673BDF41AF5502600C8F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1673BDF51AF5502600C8F9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1056,6 +1058,7 @@
 				B02F3509C60750E4CA0427ED /* TreeItems.swift */,
 				B02F32A41284178CB9A32051 /* TreeTableDataSource.swift */,
 				B02F3D1E03E6568B9130B67F /* TreeTableDataNode.swift */,
+				1673A2A71C55B7C1006C27FB /* HierarchicViewTBController.swift */,
 			);
 			name = HierarchicView;
 			sourceTree = "<group>";
@@ -1524,6 +1527,7 @@
 				B02F3BEC55D4848A73DDC74A /* LongPressAction.swift in Sources */,
 				B02F3E30CEAFA599FFF7713F /* NavigationItem.swift in Sources */,
 				B02F3A63B8ADCA8E373DE0BB /* NavigationHistory.swift in Sources */,
+				1673A2A81C55B7C1006C27FB /* HierarchicViewTBController.swift in Sources */,
 				B02F304A2751577C9CAE4A9D /* NavigationItemsGroup.swift in Sources */,
 				B02F39CE7F6021C4C81C38FF /* DiagramOpened.swift in Sources */,
 				B02F342F6989916DE726BD73 /* DiagramSelectionStory.swift in Sources */,

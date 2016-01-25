@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PresentationPageViewController" customModule="ProjectFV" customModuleProvider="target">
@@ -19,12 +19,10 @@
             <subviews>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jV3-hp-XgJ">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
-                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </webView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVk-RD-3F0">
                     <rect key="frame" x="450" y="560" width="100" height="30"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="aQM-Qb-kEp"/>
                     </constraints>
@@ -34,7 +32,6 @@
                     </connections>
                 </button>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="jV3-hp-XgJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9mw-2E-DDy"/>
