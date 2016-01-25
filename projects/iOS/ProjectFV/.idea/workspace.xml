@@ -3,19 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="634bd49f-b9d4-44b5-ab94-6d48672f693f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.xcworkspace/xcuserdata/dannyt.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ProjectFV.iml" afterPath="$PROJECT_DIR$/.idea/ProjectFV.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ProjectFV.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/EnterSubDiagramAction.swift" afterPath="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/EnterSubDiagramAction.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/ShowDiagramAction.swift" afterPath="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/ShowDiagramAction.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraphDrawParams.swift" afterPath="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraphDrawParams.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Element.swift" afterPath="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Element.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/Navigation/NavigationHistory.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/Navigation/NavigationHistory.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/Navigation/NavigationItemsGroup.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/Navigation/NavigationItemsGroup.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift" afterPath="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/diagrams/Nyx/diagrams.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/index.html" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/style.css" afterPath="$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/style.css" />
     </list>
     <ignored path="ProjectFV.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,94 +25,14 @@
     <favorites_list name="ProjectFV" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.59619814">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DiagramViewController.swift" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
+        <leaf>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.675">
-                  <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="EnterSubDiagramAction.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/EnterSubDiagramAction.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="XmlReferenceParser.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlReferenceParser.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SubDiagramPortal.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ShowDiagramAction.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/ShowDiagramAction.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="NavigationHistory.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/Navigation/NavigationHistory.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SchematicViewController.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.7777777">
-                  <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SchematicViewStory.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewStory.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DiagramsHistoryController.swift" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramsHistoryController.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.65384614">
+                  <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -132,11 +42,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="SchematicViewController.swift" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.69072163">
-                  <caret line="333" column="33" selection-start-line="333" selection-start-column="33" selection-end-line="333" selection-end-column="33" />
+                <state vertical-scroll-proportion="0.26923078">
+                  <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -168,8 +78,6 @@
         <option value="$PROJECT_DIR$/ProjectFV/Application.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/PresentationPage/PresentationPageViewController.swift" />
         <option value="$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/style.scss" />
-        <option value="$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/index.html" />
-        <option value="$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/style.css" />
         <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/ZoomDiagramAction.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/GestureHandler/PanGestureHandler.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/StoriesMgr.swift" />
@@ -207,10 +115,12 @@
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramView.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/DisplayGraph/DisplayGraph_Element.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift" />
-        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/EnterSubDiagramAction.swift" />
         <option value="$PROJECT_DIR$/../../../sources/EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Stories/SchematicView/SchematicViewController.swift" />
         <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift" />
+        <option value="$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift" />
+        <option value="$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/index.html" />
+        <option value="$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/style.css" />
       </list>
     </option>
   </component>
@@ -221,9 +131,9 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="376" />
+    <option name="x" value="132" />
     <option name="y" value="34" />
-    <option name="width" value="1914" />
+    <option name="width" value="2158" />
     <option name="height" value="1332" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -322,20 +232,6 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DiagramElements" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="ProjectFV" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
@@ -354,7 +250,29 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DisplayGraph" />
+              <option name="myItemId" value="EmbeddedRes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectFV" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmbeddedRes" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,95 +290,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Stories" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stories" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SchematicView" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stories" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SchematicView" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigation" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Actions" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectFV" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Actions" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ActionObjects" />
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,8 +390,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="376" y="34" width="1914" height="1332" extended-state="1" />
-    <editor active="true" />
+    <frame x="132" y="34" width="2158" height="1332" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25700164" sideWeight="0.49612802" order="10" side_tool="false" content_ui="tabs" />
@@ -571,9 +401,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294643" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21183307" sideWeight="0.4158654" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18764624" sideWeight="0.4158654" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3443163" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21183307" sideWeight="0.58413464" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18764624" sideWeight="0.58413464" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20338088" sideWeight="0.44827586" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31466228" sideWeight="0.49612802" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -605,20 +435,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../sources/DiagramElements/Model.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheSelectionStory.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/RechercheSelection/RechercheItemController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -907,7 +723,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramsHistoryController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.11627907">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
@@ -915,7 +731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/Navigation/NavigationHistory.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.89405686">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
@@ -923,7 +739,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/ShowDiagramAction.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="1.1705426">
           <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding />
         </state>
@@ -947,7 +763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewStory.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.53488374">
           <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
           <folding />
         </state>
@@ -963,7 +779,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../sources/VpProject/parsers/XmlReferenceParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.6795866">
           <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
           <folding />
         </state>
@@ -971,7 +787,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SubDiagramPortal.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-2.131783">
           <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding />
         </state>
@@ -979,7 +795,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Actions/ActionObjects/EnterSubDiagramAction.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.3488372">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
@@ -987,16 +803,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/SchematicViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7777777">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="333" column="33" selection-start-line="333" selection-start-column="33" selection-end-line="333" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectFV/Stories/SchematicView/DiagramViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.675">
-          <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.71666664">
+          <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26923078">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../sources/EmbeddedRes/presentation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65384614">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>

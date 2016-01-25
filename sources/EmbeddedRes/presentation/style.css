@@ -11,12 +11,22 @@ h1 {
     left: 1em;
     right: 1em;
     overflow: auto;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .content .description {
     position: relative;
     width: 100%;
-    min-height: 5000px;
+    margin-top: 3em;
+    font-size: 14pt;
+}
+
+.content .but {
+    position: relative;
+    margin-top: 5em;
+    width: 100%;
+    font-size: 14pt;
 }
 
 .footer {
