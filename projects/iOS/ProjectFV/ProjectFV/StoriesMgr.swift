@@ -51,6 +51,19 @@ class StoriesMgr : ActionListener {
 //        _controller.enableBackButton( _stories.count > 1 )
     }
 
+    func removeAllStories() {
+
+        _controller.removeStoryTB()
+
+        while let story = _stories.last {
+
+            story.onDeactivate()
+            story.view?.removeFromSuperview()
+            _stories.removeLast()
+            story.ownerStoriesMgr = nil
+        }
+    }
+
     func activateStory(story: Story) {
 
         switch story.type {

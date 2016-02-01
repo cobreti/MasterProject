@@ -149,6 +149,7 @@
 		B02F31246EDEE9B6D33DD1F2 /* QuestionRecherchePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F32B9ECB889FED6342D02 /* QuestionRecherchePopupViewController.swift */; };
 		B02F3127A5B02BF6398BFD9B /* AnswerChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35E961DDD51BF37F2D8B /* AnswerChoice.swift */; };
 		B02F3156EF0DDA1AE0958CE0 /* TreeItemCollapsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F35E1C01A01F13C7FC07E /* TreeItemCollapsed.swift */; };
+		B02F31928ED4E0C7D602E4CA /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F33D3C625D978EA450E01 /* Step.swift */; };
 		B02F324EA2C4BBE8EBA66B13 /* RechercheItemControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3FE2ADC5ED662181720C /* RechercheItemControllerDelegate.swift */; };
 		B02F32888BCE847FB41A2E2E /* WriteQuestionAnswerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F38C81D062732D0530EF6 /* WriteQuestionAnswerAction.swift */; };
 		B02F3308C2A0E44B5F43D7FA /* RestartAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F3A5B73A9CCA6960D56E0 /* RestartAction.swift */; };
@@ -442,6 +443,7 @@
 		B02F32B9ECB889FED6342D02 /* QuestionRecherchePopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionRecherchePopupViewController.swift; path = Stories/QuestionRecherchePopup/QuestionRecherchePopupViewController.swift; sourceTree = "<group>"; };
 		B02F332B498E3C3075AA1836 /* LongPressGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongPressGestureHandler.swift; path = Stories/SchematicView/GestureHandler/LongPressGestureHandler.swift; sourceTree = "<group>"; };
 		B02F335DB6CEBD0451F05F09 /* ShowQuestionRechercheAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowQuestionRechercheAction.swift; path = Actions/ActionObjects/ShowQuestionRechercheAction.swift; sourceTree = "<group>"; };
+		B02F33D3C625D978EA450E01 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		B02F33F7529A10785A46461B /* NavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationItem.swift; path = Stories/SchematicView/Navigation/NavigationItem.swift; sourceTree = "<group>"; };
 		B02F3411F0EE607D06D43742 /* ProjectSelectionStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectSelectionStory.swift; path = Stories/ProjectSelection/ProjectSelectionStory.swift; sourceTree = "<group>"; };
 		B02F34494221EDE7CA9EC1DC /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Stories/Questionnaire/Question.swift; sourceTree = "<group>"; };
@@ -908,6 +910,7 @@
 				16EEA0241B06B81700A872D4 /* Application.swift */,
 				B02F3E4510669556D3E99287 /* MethodType.swift */,
 				B02F3AEE16CAD2AEC6062D7C /* MainViewController.swift */,
+				B02F33D3C625D978EA450E01 /* Step.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -1531,6 +1534,7 @@
 				B02F304A2751577C9CAE4A9D /* NavigationItemsGroup.swift in Sources */,
 				B02F39CE7F6021C4C81C38FF /* DiagramOpened.swift in Sources */,
 				B02F342F6989916DE726BD73 /* DiagramSelectionStory.swift in Sources */,
+				B02F31928ED4E0C7D602E4CA /* Step.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

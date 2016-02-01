@@ -52,6 +52,7 @@ class FileViewController : UIViewController {
                         questionURL = question.fileURL {
 
                     if questionURL == _fileURL {
+                        _itemFound = true
                         debugPrint("item found")
                         queryString += "&found=true"
                     }
@@ -73,7 +74,11 @@ class FileViewController : UIViewController {
     }
   
     @IBAction func onBack(sender: AnyObject) {
-        if let handler = _backEventHandler {
+        if _itemFound {
+            let app = Application.instance()
+            app.executeNextStep()
+        }
+        else if let handler = _backEventHandler {
             handler(sender: self, args: nil)
         }
     }
@@ -83,4 +88,5 @@ class FileViewController : UIViewController {
     
     var _fileURL : NSURL
     var _backEventHandler : EventHandler!
+    var _itemFound : Bool = false
 }

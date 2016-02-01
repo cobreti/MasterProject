@@ -59,6 +59,13 @@ class StoriesBoardController : UIViewController {
         }
     }
 
+    func removeStoryTB() {
+
+        for v in _storyTBArea.subviews {
+            v.removeFromSuperview()
+        }
+    }
+
     @IBAction func onBack(sender: AnyObject) {
 
         let app = Application.instance()
