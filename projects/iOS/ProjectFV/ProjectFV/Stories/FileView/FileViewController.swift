@@ -55,6 +55,8 @@ class FileViewController : UIViewController {
                         _itemFound = true
                         debugPrint("item found")
                         queryString += "&found=true"
+                        
+                        app.writeToLog("item found")
                     }
                 }
 

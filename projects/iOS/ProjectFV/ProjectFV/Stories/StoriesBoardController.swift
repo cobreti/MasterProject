@@ -42,7 +42,7 @@ class StoriesBoardController : UIViewController {
 
     func enableBackButton(enabled: Bool) {
 
-        _backButton.hidden = !enabled
+        _backButton.hidden = true
     }
 
     func setStoryTB(tbView : UIView!) {

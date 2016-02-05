@@ -169,6 +169,7 @@ class Application : ActionListener {
         }))
 
         _steps.append( Step( fct: { () -> Void in
+            self.writeToLog("Starting warmup question")
             self.startSearchView()
         }))
 
@@ -238,6 +239,7 @@ class Application : ActionListener {
         }))
 
         _steps.append( Step( fct: { () -> Void in
+            self.writeToLog("starting question 1")
             self.startSearchView();
         }))
 
@@ -251,6 +253,7 @@ class Application : ActionListener {
         }))
 
         _steps.append( Step( fct: { () -> Void in
+            self.writeToLog("starting question 2")
             self.startSearchView();
         }))
 
@@ -265,6 +268,7 @@ class Application : ActionListener {
         }))
 
         _steps.append( Step( fct: { () -> Void in
+            self.writeToLog("starting question 3")
             self.startSearchView();
         }))
 
@@ -290,6 +294,16 @@ class Application : ActionListener {
                 break
             }
         }
+    }
+    
+    func writeToLog(text: String) {
+        
+        let formatter = NSDateFormatter()
+        let timestamp = NSDate()
+        formatter.dateStyle = NSDateFormatterStyle.FullStyle
+        formatter.timeStyle = NSDateFormatterStyle.FullStyle
+        let line = "[\(formatter.stringFromDate(timestamp))] \(text)\n"
+        actionsBus.writeToLog(line)
     }
 
     func onShowSchematicView() {
