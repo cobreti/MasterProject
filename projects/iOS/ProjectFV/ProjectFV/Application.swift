@@ -155,11 +155,29 @@ class Application : ActionListener {
                         }
 
                         self._searchQuestion = question
-                        self.startSearchView();
+//                        self.startSearchView();
                     }
                 }
             }
+
+            self.executeNextStep()
         }));
+
+        _steps.append( Step( fct: { () -> Void in
+            let story = DisplayTextContentStory(title: "question de réchauffement", content: self._searchQuestion.content)
+            self.actionsBus.send( OpenStoryAction(story: story, sender: self))
+        }))
+
+        _steps.append( Step( fct: { () -> Void in
+            self.startSearchView()
+        }))
+
+        _steps.append( Step( fct: { () -> Void in
+            self._storiesMgr.removeAllStories()
+            let story = DisplayTextContentStory(title: "Démarrage du test principal", content: "Ce test consiste en 3 recherches du même style que pour le réchauffement. \n\n appuyez sur le bouton « continuer » quand vous êtes prêt! ")
+            self.actionsBus.send( OpenStoryAction(story: story, sender: self))
+        }))
+
 
         // clear stories and load Nyx project
         _steps.append( Step(fct: { () -> Void in
@@ -187,7 +205,7 @@ class Application : ActionListener {
         _steps.append( Step( fct: { () -> Void in
 
             let doc = self.document
-            var questions : [String:SearchQuestion] = [:]
+//            var questions : [String:SearchQuestion] = [:]
 
             if let diag = doc.diagrams.get("Recherches") {
 
@@ -196,7 +214,7 @@ class Application : ActionListener {
                     if let  elm = p as? Element,
                     modelId = elm.modelId,
                     model = doc.models.get(modelId),
-                    name = elm.name,
+                    _ = elm.name,
                     plainTextValue = model.plainTextValue {
 
                         let question = SearchQuestion(title: "", content: plainTextValue);
@@ -213,9 +231,13 @@ class Application : ActionListener {
         }));
 
         _steps.append( Step( fct: { () -> Void in
-
             let question = self._searchQuestions.removeFirst()
             self._searchQuestion = question
+            let story = DisplayTextContentStory(title: "Question 1", content: question.content)
+            self.actionsBus.send( OpenStoryAction(story: story, sender: self))
+        }))
+
+        _steps.append( Step( fct: { () -> Void in
             self.startSearchView();
         }))
 
@@ -224,20 +246,33 @@ class Application : ActionListener {
             self._storiesMgr.removeAllStories()
             let question = self._searchQuestions.removeFirst()
             self._searchQuestion = question
+            let story = DisplayTextContentStory(title: "Question 2", content: question.content)
+            self.actionsBus.send( OpenStoryAction(story: story, sender: self))
+        }))
+
+        _steps.append( Step( fct: { () -> Void in
             self.startSearchView();
         }))
+
 
         _steps.append( Step( fct: { () -> Void in
 
             self._storiesMgr.removeAllStories()
             let question = self._searchQuestions.removeFirst()
             self._searchQuestion = question
+            let story = DisplayTextContentStory(title: "Question 3", content: question.content)
+            self.actionsBus.send( OpenStoryAction(story: story, sender: self))
+        }))
+
+        _steps.append( Step( fct: { () -> Void in
             self.startSearchView();
         }))
 
         _steps.append( Step( fct: { () -> Void in
 
             self._storiesMgr.removeAllStories()
+            let story = DisplayTextContentStory(title: "Test terminé", content: "Merci d'avoir participé à la recherche !!")
+            self.actionsBus.send( OpenStoryAction(story: story, sender: self))
         }))
 
         executeNextStep();
