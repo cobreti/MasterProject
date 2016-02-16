@@ -14,11 +14,11 @@ class DisplayTextContentStory : Story {
         }
     }
 
-    init(title: String, content:String) {
+    init(title: String, content:String, hideButton: Bool = false) {
 
         super.init();
 
-        _controller = DisplayTextContentViewController(title: title, content: content);
+        _controller = DisplayTextContentViewController(title: title, content: content, hideButton: hideButton);
     }
 
     var _controller : DisplayTextContentViewController!

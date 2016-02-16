@@ -8,11 +8,14 @@ import UIKit
 
 class DisplayTextContentViewController  : UIViewController {
 
-    convenience init(title:String, content:String) {
+    convenience init(title:String, content:String, hideButton: Bool = false) {
+        
         self.init(nibName: "DisplayTextContent", bundle: nil)
 
         _titleText = title
         _contentText = content
+        _hideButton = hideButton
+
     }
 
     override func viewDidLoad() {
@@ -20,6 +23,8 @@ class DisplayTextContentViewController  : UIViewController {
 
         _textContent.text = _contentText
         _title.text = _titleText
+        
+        _continueBtn.hidden = _hideButton
     }
 
 
@@ -30,7 +35,9 @@ class DisplayTextContentViewController  : UIViewController {
     
     @IBOutlet weak var _textContent: UITextView!
     @IBOutlet weak var _title: UILabel!
-
+    @IBOutlet weak var _continueBtn: UIButton!
+    
     var _titleText: String!
     var _contentText: String!
+    var _hideButton: Bool = false
 }

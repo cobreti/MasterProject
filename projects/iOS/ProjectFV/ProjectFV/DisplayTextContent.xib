@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DisplayTextContentViewController" customModule="ProjectFV" customModuleProvider="target">
             <connections>
+                <outlet property="_continueBtn" destination="Yrr-G3-IKq" id="O0c-Nf-305"/>
                 <outlet property="_textContent" destination="M6o-GL-yXE" id="RVn-fl-XZR"/>
                 <outlet property="_title" destination="bES-Pg-aDG" id="fdd-LO-Rzd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="arw-1C-KY0"/>
@@ -31,7 +32,7 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="I4k-XL-CER"/>
                     </constraints>
-                    <state key="normal" title="Continue"/>
+                    <state key="normal" title="Continuer"/>
                     <connections>
                         <action selector="onContinue:" destination="-1" eventType="touchUpInside" id="3Ae-UC-ebJ"/>
                     </connections>

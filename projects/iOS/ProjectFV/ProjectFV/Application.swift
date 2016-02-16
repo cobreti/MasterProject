@@ -275,7 +275,7 @@ class Application : ActionListener {
         _steps.append( Step( fct: { () -> Void in
 
             self._storiesMgr.removeAllStories()
-            let story = DisplayTextContentStory(title: "Test terminé", content: "Merci d'avoir participé à la recherche !!")
+            let story = DisplayTextContentStory(title: "Test terminé", content: "Merci d'avoir participé à la recherche !!", hideButton: true)
             self.actionsBus.send( OpenStoryAction(story: story, sender: self))
         }))
 
