@@ -9,6 +9,12 @@
 import Foundation
 
 public class FileReferences {
+
+    public var empty : Bool  {
+        get {
+            return _refs.count == 0
+        }
+    }
     
     public func add(ref: FileReference) {
 

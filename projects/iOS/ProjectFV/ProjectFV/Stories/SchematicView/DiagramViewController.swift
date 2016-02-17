@@ -357,8 +357,17 @@ class DiagramViewController : UIViewController {
         }
         else {
             for item in primitives {
-                
+
+                let document = Application.instance().document
+
+
                 if let elm = item as? Element {
+
+                    if let  v = view as? DiagramView,
+                            model = document.models.get(elm.modelId) where model.fileReferences.empty {
+                        v.selectedModelId = elm.modelId
+                    }
+
                     Application.instance().actionsBus.send( SelectDiagramElementAction(element: elm, sender: self))
 //                    _element = elm
                 }
