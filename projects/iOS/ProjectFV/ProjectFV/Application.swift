@@ -216,10 +216,10 @@ class Application : ActionListener {
                     if let  elm = p as? Element,
                     modelId = elm.modelId,
                     model = doc.models.get(modelId),
-                    _ = elm.name,
+                    name = elm.name,
                     plainTextValue = model.plainTextValue {
 
-                        let question = SearchQuestion(title: "", content: plainTextValue);
+                        let question = SearchQuestion(title: name, content: plainTextValue);
                         if let fileRef = model.fileReferences.getForParentDiagram(nil) {
                             question.file = fileRef.path
                         }
@@ -228,6 +228,8 @@ class Application : ActionListener {
                     }
                 }
             }
+            
+            self._searchQuestions.sortInPlace({$0.title < $1.title});
 
             self.executeNextStep()
         }));
