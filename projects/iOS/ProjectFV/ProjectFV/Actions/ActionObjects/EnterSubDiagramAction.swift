@@ -13,7 +13,7 @@ class EnterSubDiagramAction : Action {
 
     override var description: String {
         get {
-            return "enter sub diagram \(_subDiagramController.diagram!.name)"
+            return "enter sub diagram : '\(_selectedElement!.name)'"
         }
     }
 

@@ -166,6 +166,7 @@ class Application : ActionListener {
         _steps.append( Step( fct: { () -> Void in
             let story = DisplayTextContentStory(title: "question de réchauffement", content: self._searchQuestion.content)
             self.actionsBus.send( OpenStoryAction(story: story, sender: self))
+            self.writeToLog("question : '\(self._searchQuestion.content)'")
         }))
 
         _steps.append( Step( fct: { () -> Void in
@@ -236,6 +237,7 @@ class Application : ActionListener {
             self._searchQuestion = question
             let story = DisplayTextContentStory(title: "Question 1", content: question.content)
             self.actionsBus.send( OpenStoryAction(story: story, sender: self))
+            self.writeToLog("question : '\(question.content)'")
         }))
 
         _steps.append( Step( fct: { () -> Void in
@@ -250,6 +252,7 @@ class Application : ActionListener {
             self._searchQuestion = question
             let story = DisplayTextContentStory(title: "Question 2", content: question.content)
             self.actionsBus.send( OpenStoryAction(story: story, sender: self))
+            self.writeToLog("question : '\(question.content)'")
         }))
 
         _steps.append( Step( fct: { () -> Void in
@@ -265,6 +268,7 @@ class Application : ActionListener {
             self._searchQuestion = question
             let story = DisplayTextContentStory(title: "Question 3", content: question.content)
             self.actionsBus.send( OpenStoryAction(story: story, sender: self))
+            self.writeToLog("question : '\(question.content)'")
         }))
 
         _steps.append( Step( fct: { () -> Void in
