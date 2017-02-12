@@ -1,0 +1,157 @@
+[Saturday, March 19, 2016 at 15:24:44 GMT-04:00, Open Story] opening story PresentationPageStory
+[Saturday, March 19, 2016 at 15:25:10 GMT-04:00, Open Story] opening story QuestionnaireStory
+[Saturday, March 19, 2016 at 15:25:30 GMT-04:00, Write Question & Answer]  {Éducation} -- Diplôme collégial
+[Saturday, March 19, 2016 at 15:25:30 GMT-04:00, Write Question & Answer]  {Connaissance de UML} -- Intermédiaire
+[Saturday, March 19, 2016 at 15:25:30 GMT-04:00, Write Question & Answer]  {Utilisation de UML} -- Jamais
+[Saturday, March 19, 2016 at 15:25:30 GMT-04:00, Write Question & Answer]  {Expérience en développement logiciel} -- none
+[Saturday, March 19, 2016 at 15:25:30 GMT-04:00, Write Question & Answer]  {Possédez ou utilisez vous régulièrement un appareil à écran tactile} -- none
+[Saturday, March 19, 2016 at 15:25:30 GMT-04:00, Open Story] opening story MethodSelectionStory
+[Saturday, March 19, 2016 at 15:25:38 GMT-04:00, Method Selection] method selected : Schematique
+[Saturday, March 19, 2016 at 15:25:47 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:25:47 GMT-04:00] question : 'Trouver l'élément de base responsable du parsing XML.'
+[Saturday, March 19, 2016 at 15:26:02 GMT-04:00] Starting warmup question
+[Saturday, March 19, 2016 at 15:26:02 GMT-04:00, Open Story] opening story SchematicViewStory
+[Saturday, March 19, 2016 at 15:26:12 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:26:20 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:26:27 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:26:29 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:26:29 GMT-04:00, Tap Diagram] tap diagram action at : (699.971563981043, 179.95971563981)
+[Saturday, March 19, 2016 at 15:26:29 GMT-04:00, Select Diagram Element] diagram element selected: loading
+[Saturday, March 19, 2016 at 15:26:29 GMT-04:00, Show Diagram] showing diagram loading
+[Saturday, March 19, 2016 at 15:26:39 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:26:40 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:26:50 GMT-04:00, Tap Diagram] tap diagram action at : (414.74644549763, 400.332938388626)
+[Saturday, March 19, 2016 at 15:26:50 GMT-04:00, Select Diagram Element] diagram element selected: XmlDocParser
+[Saturday, March 19, 2016 at 15:26:50 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/VpProject/XmlDocParser.swift
+[Saturday, March 19, 2016 at 15:27:00 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:27:11 GMT-04:00, Recenter Diagram] 
+[Saturday, March 19, 2016 at 15:27:12 GMT-04:00, Pan Diagram] Began --> Translation = (7.4892367906067, 33.8923679060666)
+[Saturday, March 19, 2016 at 15:27:12 GMT-04:00, Pan Diagram] Ended --> Translation = (99.4892367906067, -100.607632093933)
+[Saturday, March 19, 2016 at 15:27:13 GMT-04:00, Tap Diagram] tap diagram action at : (411.719194312796, 415.469194312796)
+[Saturday, March 19, 2016 at 15:27:13 GMT-04:00, Select Diagram Element] diagram element selected: XmlDocParser
+[Saturday, March 19, 2016 at 15:27:13 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/VpProject/XmlDocParser.swift
+[Saturday, March 19, 2016 at 15:27:16 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:27:17 GMT-04:00, Pan Diagram] Began --> Translation = (99.4892367906067, -100.607632093933)
+[Saturday, March 19, 2016 at 15:27:18 GMT-04:00, Pan Diagram] Ended --> Translation = (94.4892367906067, 34.8923679060666)
+[Saturday, March 19, 2016 at 15:27:20 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:27:22 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:27:27 GMT-04:00, Tap Diagram] tap diagram action at : (230.084123222749, 192.058056872038)
+[Saturday, March 19, 2016 at 15:27:27 GMT-04:00, Select Diagram Element] diagram element selected: VpProject
+[Saturday, March 19, 2016 at 15:27:28 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/VpProject/VpProject.swift
+[Saturday, March 19, 2016 at 15:27:30 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:27:34 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 1.0, velocity = 0.420652075885383
+[Saturday, March 19, 2016 at 15:27:35 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 1.66786079915007, velocity = -0.379115397592479
+[Saturday, March 19, 2016 at 15:27:36 GMT-04:00, Pan Diagram] Began --> Translation = (-329.275628595739, -208.280846240827)
+[Saturday, March 19, 2016 at 15:27:36 GMT-04:00, Pan Diagram] Ended --> Translation = (-49.2756285957391, -157.280846240827)
+[Saturday, March 19, 2016 at 15:27:39 GMT-04:00, Tap Diagram] tap diagram action at : (502.606025146988, 205.304579918702)
+[Saturday, March 19, 2016 at 15:27:40 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 1.66786079915007, velocity = 0.0560673298200254
+[Saturday, March 19, 2016 at 15:27:41 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 8.3982247474737, velocity = 0.0
+[Saturday, March 19, 2016 at 15:27:41 GMT-04:00, Pan Diagram] Began --> Translation = (-2826.69295237429, -1280.23509758044)
+[Saturday, March 19, 2016 at 15:27:42 GMT-04:00, Pan Diagram] Ended --> Translation = (-2678.69295237429, -1096.73509758044)
+[Saturday, March 19, 2016 at 15:27:42 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 8.3982247474737, velocity = 0.054208277911423
+[Saturday, March 19, 2016 at 15:27:43 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 20.6444578236693, velocity = 5.09787152998118
+[Saturday, March 19, 2016 at 15:27:43 GMT-04:00, Enter subdiagram] enter sub diagram : 'Document'
+[Saturday, March 19, 2016 at 15:27:47 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 1.0, velocity = -0.0469421473184272
+[Saturday, March 19, 2016 at 15:27:48 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 0.347978427950956, velocity = -5.39269499910429
+[Saturday, March 19, 2016 at 15:27:48 GMT-04:00, Exit subdiagram] exit subdiagram Document
+[Saturday, March 19, 2016 at 15:27:49 GMT-04:00, Pan Diagram] Began --> Translation = (7.4892367906067, 33.8923679060666)
+[Saturday, March 19, 2016 at 15:27:50 GMT-04:00, Pan Diagram] Ended --> Translation = (142.989236790607, -23.1076320939334)
+[Saturday, March 19, 2016 at 15:27:50 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 1.0, velocity = 0.237546516526268
+[Saturday, March 19, 2016 at 15:27:51 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 2.45163612213865, velocity = 3.76611227876501
+[Saturday, March 19, 2016 at 15:27:52 GMT-04:00, Pan Diagram] Began --> Translation = (-643.813165672087, -493.593978302311)
+[Saturday, March 19, 2016 at 15:27:52 GMT-04:00, Pan Diagram] Ended --> Translation = (-355.813165672087, -479.593978302311)
+[Saturday, March 19, 2016 at 15:27:53 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 2.45163612213865, velocity = 0.233058291693739
+[Saturday, March 19, 2016 at 15:27:53 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 13.0300810650752, velocity = 8.00660581142865
+[Saturday, March 19, 2016 at 15:27:54 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 13.0300810650752, velocity = 0.691033118984694
+[Saturday, March 19, 2016 at 15:27:54 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 28.4105167475936, velocity = 6.24920127520829
+[Saturday, March 19, 2016 at 15:27:55 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 28.4105167475936, velocity = -0.540830834338273
+[Saturday, March 19, 2016 at 15:27:56 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 4.82387354930154, velocity = -0.569062124819022
+[Saturday, March 19, 2016 at 15:27:56 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 0.772400514703171, velocity = -0.148563808715831
+[Saturday, March 19, 2016 at 15:27:58 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 0.772400514703171, velocity = 1.36785937986523
+[Saturday, March 19, 2016 at 15:27:59 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 1.50934394163425, velocity = 0.377375104436922
+[Saturday, March 19, 2016 at 15:27:59 GMT-04:00, Pan Diagram] Began --> Translation = (-60.1570725593547, -61.3005974120065)
+[Saturday, March 19, 2016 at 15:28:00 GMT-04:00, Pan Diagram] Ended --> Translation = (-12.6570725593547, 142.199402587993)
+[Saturday, March 19, 2016 at 15:28:01 GMT-04:00, Tap Diagram] tap diagram action at : (516.386380011544, 74.0499458523292)
+[Saturday, March 19, 2016 at 15:28:02 GMT-04:00, Tap Diagram] tap diagram action at : (501.544395921743, 70.4397335061615)
+[Saturday, March 19, 2016 at 15:28:02 GMT-04:00, Select Diagram Element] diagram element selected: Application
+[Saturday, March 19, 2016 at 15:28:02 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/ProjectFV/Application.swift
+[Saturday, March 19, 2016 at 15:28:08 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:28:09 GMT-04:00, Pan Diagram] Began --> Translation = (-12.6570725593547, 142.199402587993)
+[Saturday, March 19, 2016 at 15:28:09 GMT-04:00, Pan Diagram] Ended --> Translation = (28.3429274406453, -272.300597412007)
+[Saturday, March 19, 2016 at 15:28:10 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 1.50934394163425, velocity = -0.823878370215738
+[Saturday, March 19, 2016 at 15:28:11 GMT-04:00, Zoom Diagram] diagram zoom --> scale = 1.01754270081742, velocity = -0.648110763393706
+[Saturday, March 19, 2016 at 15:28:11 GMT-04:00, Pan Diagram] Began --> Translation = (251.755888368831, -30.4310375348689)
+[Saturday, March 19, 2016 at 15:28:14 GMT-04:00, Pan Diagram] Ended --> Translation = (33.7558883688313, -19.4310375348689)
+[Saturday, March 19, 2016 at 15:28:19 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:28:23 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:28:27 GMT-04:00, Tap Diagram] tap diagram action at : (400.733653772937, 318.249415808689)
+[Saturday, March 19, 2016 at 15:28:27 GMT-04:00, Select Diagram Element] diagram element selected: NSObject
+[Saturday, March 19, 2016 at 15:28:27 GMT-04:00, Tap Diagram] tap diagram action at : (412.633896121105, 276.598567590102)
+[Saturday, March 19, 2016 at 15:28:28 GMT-04:00, Tap Diagram] tap diagram action at : (426.914186938906, 298.614015934212)
+[Saturday, March 19, 2016 at 15:28:28 GMT-04:00, Select Diagram Element] diagram element selected: NSObject
+[Saturday, March 19, 2016 at 15:28:28 GMT-04:00, Tap Diagram] tap diagram action at : (425.129150586681, 292.06888264272)
+[Saturday, March 19, 2016 at 15:28:28 GMT-04:00, Select Diagram Element] diagram element selected: NSObject
+[Saturday, March 19, 2016 at 15:28:29 GMT-04:00, Tap Diagram] tap diagram action at : (410.253847651471, 317.654403691281)
+[Saturday, March 19, 2016 at 15:28:29 GMT-04:00, Select Diagram Element] diagram element selected: NSObject
+[Saturday, March 19, 2016 at 15:28:29 GMT-04:00, Tap Diagram] tap diagram action at : (387.643387189953, 516.388450905683)
+[Saturday, March 19, 2016 at 15:28:29 GMT-04:00, Select Diagram Element] diagram element selected: XmlElementParserDelegate
+[Saturday, March 19, 2016 at 15:28:29 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/VpProject/XmlElementParserDelegate.swift
+[Saturday, March 19, 2016 at 15:28:31 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:28:32 GMT-04:00, Tap Diagram] tap diagram action at : (636.358452266659, 411.071306124398)
+[Saturday, March 19, 2016 at 15:28:32 GMT-04:00, Select Diagram Element] diagram element selected: XMLElementParser
+[Saturday, March 19, 2016 at 15:28:32 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/VpProject/XmlElementParser.swift
+[Saturday, March 19, 2016 at 15:28:32 GMT-04:00] item found
+[Saturday, March 19, 2016 at 15:28:34 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:28:59 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:28:59 GMT-04:00] question : 'Problème avec les string UTF-8'
+[Saturday, March 19, 2016 at 15:28:59 GMT-04:00] starting question 1
+[Saturday, March 19, 2016 at 15:28:59 GMT-04:00, Open Story] opening story SchematicViewStory
+[Saturday, March 19, 2016 at 15:29:03 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:29:08 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:29:18 GMT-04:00, Pan Diagram] Began --> Translation = (-59.1422018348624, -36.6605504587156)
+[Saturday, March 19, 2016 at 15:29:19 GMT-04:00, Pan Diagram] Ended --> Translation = (-57.6422018348624, -163.660550458716)
+[Saturday, March 19, 2016 at 15:29:20 GMT-04:00, Tap Diagram] tap diagram action at : (192.252279635258, 471.556231003039)
+[Saturday, March 19, 2016 at 15:29:20 GMT-04:00, Select Diagram Element] diagram element selected: Nyx
+[Saturday, March 19, 2016 at 15:29:20 GMT-04:00, Show Diagram] showing diagram Nyx
+[Saturday, March 19, 2016 at 15:29:28 GMT-04:00, Tap Diagram] tap diagram action at : (368.818389057751, 86.7211246200608)
+[Saturday, March 19, 2016 at 15:29:28 GMT-04:00, Select Diagram Element] diagram element selected: Strings
+[Saturday, March 19, 2016 at 15:29:28 GMT-04:00, Show Diagram] showing diagram Nyx - Strings
+[Saturday, March 19, 2016 at 15:29:31 GMT-04:00, Tap Diagram] tap diagram action at : (544.796208530806, 328.63981042654)
+[Saturday, March 19, 2016 at 15:29:31 GMT-04:00, Select Diagram Element] diagram element selected: CUtf8String
+[Saturday, March 19, 2016 at 15:29:31 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxUtf8String.hpp
+[Saturday, March 19, 2016 at 15:29:31 GMT-04:00] item found
+[Saturday, March 19, 2016 at 15:29:32 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:29:32 GMT-04:00] question : 'Problème de lecture de configuration lors du démarrage de l'application'
+[Saturday, March 19, 2016 at 15:29:35 GMT-04:00] starting question 2
+[Saturday, March 19, 2016 at 15:29:35 GMT-04:00, Open Story] opening story SchematicViewStory
+[Saturday, March 19, 2016 at 15:29:39 GMT-04:00, Tap Diagram] tap diagram action at : (402.300911854103, 126.996960486322)
+[Saturday, March 19, 2016 at 15:29:39 GMT-04:00, Select Diagram Element] diagram element selected: TraceClient
+[Saturday, March 19, 2016 at 15:29:39 GMT-04:00, Show Diagram] showing diagram TraceClient
+[Saturday, March 19, 2016 at 15:29:40 GMT-04:00, Pan Diagram] Began --> Translation = (-107.092896174863, 114.44262295082)
+[Saturday, March 19, 2016 at 15:29:41 GMT-04:00, Pan Diagram] Ended --> Translation = (-113.092896174863, 118.94262295082)
+[Saturday, March 19, 2016 at 15:29:41 GMT-04:00, Tap Diagram] tap diagram action at : (144.445497630332, 128.168246445498)
+[Saturday, March 19, 2016 at 15:29:41 GMT-04:00, Select Diagram Element] diagram element selected: Application
+[Saturday, March 19, 2016 at 15:29:41 GMT-04:00, Show Diagram] showing diagram TraceClient - App
+[Saturday, March 19, 2016 at 15:29:45 GMT-04:00, Tap Diagram] tap diagram action at : (451.407582938389, 535.135071090047)
+[Saturday, March 19, 2016 at 15:29:45 GMT-04:00, Select Diagram Element] diagram element selected: CConfigReader
+[Saturday, March 19, 2016 at 15:29:45 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/QtTraceClient/Sources/Config/ConfigReader.hpp
+[Saturday, March 19, 2016 at 15:29:45 GMT-04:00] item found
+[Saturday, March 19, 2016 at 15:29:46 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:29:46 GMT-04:00] question : 'Problème de mise à jour du status lors de la création d'une nouvelle vue ou de l'affichage d'une boite de dialogue.'
+[Saturday, March 19, 2016 at 15:29:55 GMT-04:00] starting question 3
+[Saturday, March 19, 2016 at 15:29:55 GMT-04:00, Open Story] opening story SchematicViewStory
+[Saturday, March 19, 2016 at 15:29:56 GMT-04:00, Tap Diagram] tap diagram action at : (414.227963525836, 117.720364741641)
+[Saturday, March 19, 2016 at 15:29:56 GMT-04:00, Select Diagram Element] diagram element selected: TraceClient
+[Saturday, March 19, 2016 at 15:29:56 GMT-04:00, Show Diagram] showing diagram TraceClient
+[Saturday, March 19, 2016 at 15:29:57 GMT-04:00, Tap Diagram] tap diagram action at : (387.289099526066, 123.614928909953)
+[Saturday, March 19, 2016 at 15:29:57 GMT-04:00, Select Diagram Element] diagram element selected: Dialogs
+[Saturday, March 19, 2016 at 15:29:57 GMT-04:00, Show Diagram] showing diagram TraceClient - Dialogs
+[Saturday, March 19, 2016 at 15:30:01 GMT-04:00, Tap Diagram] tap diagram action at : (1214.74585308057, 229.982819905213)
+[Saturday, March 19, 2016 at 15:30:01 GMT-04:00, Select Diagram Element] diagram element selected: CNewViewDlg
+[Saturday, March 19, 2016 at 15:30:01 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/QtTraceClient/Sources/Dialogs/NewViewDlg.hpp
+[Saturday, March 19, 2016 at 15:30:03 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:30:04 GMT-04:00, Tap Diagram] tap diagram action at : (1154.48696682464, 429.541469194313)
+[Saturday, March 19, 2016 at 15:30:04 GMT-04:00, Select Diagram Element] diagram element selected: CStatusUpdater
+[Saturday, March 19, 2016 at 15:30:04 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/QtTraceClient/Sources/StatusUpdaters/StatusUpdater.hpp
+[Saturday, March 19, 2016 at 15:30:04 GMT-04:00] item found
+[Saturday, March 19, 2016 at 15:30:05 GMT-04:00, Open Story] opening story DisplayTextContentStory

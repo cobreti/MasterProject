@@ -1,0 +1,173 @@
+[Saturday, March 19, 2016 at 15:05:49 GMT-04:00, Open Story] opening story PresentationPageStory
+[Saturday, March 19, 2016 at 15:06:47 GMT-04:00, Open Story] opening story QuestionnaireStory
+[Saturday, March 19, 2016 at 15:07:16 GMT-04:00, Write Question & Answer]  {Éducation} -- Baccalauréat
+[Saturday, March 19, 2016 at 15:07:16 GMT-04:00, Write Question & Answer]  {Connaissance de UML} -- Aucune
+[Saturday, March 19, 2016 at 15:07:16 GMT-04:00, Write Question & Answer]  {Utilisation de UML} -- Occasionnellement
+[Saturday, March 19, 2016 at 15:07:16 GMT-04:00, Write Question & Answer]  {Expérience en développement logiciel} -- Intermédiaire (5 à 15 ans)
+[Saturday, March 19, 2016 at 15:07:16 GMT-04:00, Write Question & Answer]  {Possédez ou utilisez vous régulièrement un appareil à écran tactile} -- oui
+[Saturday, March 19, 2016 at 15:07:16 GMT-04:00, Open Story] opening story MethodSelectionStory
+[Saturday, March 19, 2016 at 15:07:18 GMT-04:00, Method Selection] method selected : Hierarchique
+[Saturday, March 19, 2016 at 15:07:26 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:07:26 GMT-04:00] question : 'Trouver l'élément de base responsable du parsing XML.'
+[Saturday, March 19, 2016 at 15:07:35 GMT-04:00] Starting warmup question
+[Saturday, March 19, 2016 at 15:07:35 GMT-04:00, Open Story] opening story HierarchicViewStory
+[Saturday, March 19, 2016 at 15:07:43 GMT-04:00, Tree Item Expanded]  DiagramElements
+[Saturday, March 19, 2016 at 15:07:47 GMT-04:00, Tree Item Expanded]  DiagramElements
+[Saturday, March 19, 2016 at 15:07:49 GMT-04:00, Tree Item Expanded]  ProjectFV
+[Saturday, March 19, 2016 at 15:07:51 GMT-04:00, Tree Item Expanded]  ProjectFV
+[Saturday, March 19, 2016 at 15:07:54 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:08:00 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:08:14 GMT-04:00, Tree Item Expanded]  VpProject
+[Saturday, March 19, 2016 at 15:08:16 GMT-04:00, Tree Item Expanded]  parsers
+[Saturday, March 19, 2016 at 15:08:33 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:08:44 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:08:55 GMT-04:00, Tree Item Selected]  XmlDocParser.swift
+[Saturday, March 19, 2016 at 15:08:55 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/VpProject/XmlDocParser.swift
+[Saturday, March 19, 2016 at 15:08:58 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:09:10 GMT-04:00, Tree Item Selected]  XmlParserState.swift
+[Saturday, March 19, 2016 at 15:09:10 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/VpProject/XmlParserState.swift
+[Saturday, March 19, 2016 at 15:09:11 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:09:21 GMT-04:00, Tree Item Expanded]  parsers
+[Saturday, March 19, 2016 at 15:09:25 GMT-04:00, Tree Item Selected]  VpProject.swift
+[Saturday, March 19, 2016 at 15:09:25 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/VpProject/VpProject.swift
+[Saturday, March 19, 2016 at 15:09:27 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:09:34 GMT-04:00, Tree Item Expanded]  DiagramElements
+[Saturday, March 19, 2016 at 15:09:40 GMT-04:00, Tree Item Expanded]  ProjectFV
+[Saturday, March 19, 2016 at 15:10:01 GMT-04:00, Tree Item Selected]  XmlElementParser.swift
+[Saturday, March 19, 2016 at 15:10:01 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/ProjectFV/VpProject/XmlElementParser.swift
+[Saturday, March 19, 2016 at 15:10:01 GMT-04:00] item found
+[Saturday, March 19, 2016 at 15:10:08 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:11:03 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:11:03 GMT-04:00] question : 'Problème avec les string UTF-8'
+[Saturday, March 19, 2016 at 15:11:10 GMT-04:00] starting question 1
+[Saturday, March 19, 2016 at 15:11:10 GMT-04:00, Open Story] opening story HierarchicViewStory
+[Saturday, March 19, 2016 at 15:11:19 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:11:21 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:11:23 GMT-04:00, Tree Item Expanded]  Nyx
+[Saturday, March 19, 2016 at 15:11:33 GMT-04:00, Tree Item Expanded]  NyxTraceViewer
+[Saturday, March 19, 2016 at 15:11:35 GMT-04:00, Tree Item Expanded]  NyxTraceViewer
+[Saturday, March 19, 2016 at 15:11:40 GMT-04:00, Tree Item Expanded]  NyxWebSvr
+[Saturday, March 19, 2016 at 15:11:43 GMT-04:00, Tree Item Expanded]  NyxNet
+[Saturday, March 19, 2016 at 15:11:47 GMT-04:00, Tree Item Expanded]  NyxNet
+[Saturday, March 19, 2016 at 15:11:54 GMT-04:00, Tree Item Expanded]  NyxWebSvr
+[Saturday, March 19, 2016 at 15:11:55 GMT-04:00, Tree Item Selected]  NyxAString.hpp
+[Saturday, March 19, 2016 at 15:11:55 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxAString.hpp
+[Saturday, March 19, 2016 at 15:11:58 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:12:13 GMT-04:00, Tree Item Expanded]  NyxWebSvr
+[Saturday, March 19, 2016 at 15:12:33 GMT-04:00, Tree Item Selected]  NyxUtf8String.hpp
+[Saturday, March 19, 2016 at 15:12:33 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxUtf8String.hpp
+[Saturday, March 19, 2016 at 15:12:33 GMT-04:00] item found
+[Saturday, March 19, 2016 at 15:12:38 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:12:38 GMT-04:00] question : 'Problème de lecture de configuration lors du démarrage de l'application'
+[Saturday, March 19, 2016 at 15:12:47 GMT-04:00] starting question 2
+[Saturday, March 19, 2016 at 15:12:47 GMT-04:00, Open Story] opening story HierarchicViewStory
+[Saturday, March 19, 2016 at 15:12:52 GMT-04:00, Tree Item Expanded]  NyxTraceViewer
+[Saturday, March 19, 2016 at 15:12:55 GMT-04:00, Tree Item Expanded]  Nyx
+[Saturday, March 19, 2016 at 15:13:13 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:13:16 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:13:28 GMT-04:00, Tree Item Expanded]  NyxNet
+[Saturday, March 19, 2016 at 15:13:34 GMT-04:00, Tree Item Selected]  NyxNetAddress.hpp
+[Saturday, March 19, 2016 at 15:13:34 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxNet/NyxNetAddress.hpp
+[Saturday, March 19, 2016 at 15:13:36 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:13:40 GMT-04:00, Tree Item Selected]  NyxNetNxStreamRW.hpp
+[Saturday, March 19, 2016 at 15:13:40 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxNet/NyxNetNxStreamRW.hpp
+[Saturday, March 19, 2016 at 15:13:42 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:13:55 GMT-04:00, Tree Item Selected]  NyxFile.hpp
+[Saturday, March 19, 2016 at 15:13:55 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxFile.hpp
+[Saturday, March 19, 2016 at 15:13:57 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:14:16 GMT-04:00, Tree Item Expanded]  TraceClientCore
+[Saturday, March 19, 2016 at 15:14:20 GMT-04:00, Tree Item Expanded]  QtTraceClient
+[Saturday, March 19, 2016 at 15:14:24 GMT-04:00, Tree Item Expanded]  Sources
+[Saturday, March 19, 2016 at 15:14:28 GMT-04:00, Tree Item Expanded]  Config
+[Saturday, March 19, 2016 at 15:14:31 GMT-04:00, Tree Item Selected]  ConfigReader.hpp
+[Saturday, March 19, 2016 at 15:14:31 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/QtTraceClient/Sources/Config/ConfigReader.hpp
+[Saturday, March 19, 2016 at 15:14:31 GMT-04:00] item found
+[Saturday, March 19, 2016 at 15:14:33 GMT-04:00, Open Story] opening story DisplayTextContentStory
+[Saturday, March 19, 2016 at 15:14:33 GMT-04:00] question : 'Problème de mise à jour du status lors de la création d'une nouvelle vue ou de l'affichage d'une boite de dialogue.'
+[Saturday, March 19, 2016 at 15:14:50 GMT-04:00] starting question 3
+[Saturday, March 19, 2016 at 15:14:50 GMT-04:00, Open Story] opening story HierarchicViewStory
+[Saturday, March 19, 2016 at 15:14:54 GMT-04:00, Tree Item Expanded]  NyxTraceViewer
+[Saturday, March 19, 2016 at 15:14:58 GMT-04:00, Tree Item Expanded]  QtTraceClient
+[Saturday, March 19, 2016 at 15:15:00 GMT-04:00, Tree Item Expanded]  Sources
+[Saturday, March 19, 2016 at 15:15:02 GMT-04:00, Tree Item Expanded]  Controls
+[Saturday, March 19, 2016 at 15:15:06 GMT-04:00, Tree Item Selected]  ConnectionStatusToolButton.h
+[Saturday, March 19, 2016 at 15:15:06 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/QtTraceClient/Sources/Controls/ConnectionStatusToolButton.h
+[Saturday, March 19, 2016 at 15:15:08 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:15:15 GMT-04:00, Tree Item Expanded]  Dialogs
+[Saturday, March 19, 2016 at 15:15:21 GMT-04:00, Tree Item Selected]  NewViewDlg.hpp
+[Saturday, March 19, 2016 at 15:15:21 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/QtTraceClient/Sources/Dialogs/NewViewDlg.hpp
+[Saturday, March 19, 2016 at 15:15:22 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:15:38 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:15:48 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:15:51 GMT-04:00, Tree Item Expanded]  Sources
+[Saturday, March 19, 2016 at 15:15:53 GMT-04:00, Tree Item Expanded]  Nyx
+[Saturday, March 19, 2016 at 15:16:00 GMT-04:00, Tree Item Selected]  NyxModule.hpp
+[Saturday, March 19, 2016 at 15:16:00 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxModule.hpp
+[Saturday, March 19, 2016 at 15:16:03 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:16:27 GMT-04:00, Tree Item Expanded]  NyxWebSvr
+[Saturday, March 19, 2016 at 15:16:34 GMT-04:00, Tree Item Expanded]  NyxNet
+[Saturday, March 19, 2016 at 15:16:44 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:16:58 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:17:01 GMT-04:00, Tree Item Expanded]  NyxNet
+[Saturday, March 19, 2016 at 15:17:02 GMT-04:00, Tree Item Expanded]  NyxWebSvr
+[Saturday, March 19, 2016 at 15:17:04 GMT-04:00, Tree Item Expanded]  NyxWebSvr
+[Saturday, March 19, 2016 at 15:17:20 GMT-04:00, Tree Item Selected]  NyxMsgHandler.hpp
+[Saturday, March 19, 2016 at 15:17:20 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxMsgHandler.hpp
+[Saturday, March 19, 2016 at 15:17:22 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:17:24 GMT-04:00, Tree Item Selected]  NyxMsg.hpp
+[Saturday, March 19, 2016 at 15:17:24 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxMsg.hpp
+[Saturday, March 19, 2016 at 15:17:27 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:17:33 GMT-04:00, Tree Item Selected]  NyxEvent.hpp
+[Saturday, March 19, 2016 at 15:17:33 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxEvent.hpp
+[Saturday, March 19, 2016 at 15:17:35 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:17:36 GMT-04:00, Tree Item Selected]  NyxException.hpp
+[Saturday, March 19, 2016 at 15:17:36 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxException.hpp
+[Saturday, March 19, 2016 at 15:17:38 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:17:56 GMT-04:00, Tree Item Expanded]  NyxNet
+[Saturday, March 19, 2016 at 15:18:18 GMT-04:00, Tree Item Selected]  NyxConsoleTraceOutput.hpp
+[Saturday, March 19, 2016 at 15:18:18 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxConsoleTraceOutput.hpp
+[Saturday, March 19, 2016 at 15:18:20 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:18:35 GMT-04:00, Tree Item Selected]  NyxResException.hpp
+[Saturday, March 19, 2016 at 15:18:35 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxResException.hpp
+[Saturday, March 19, 2016 at 15:18:37 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:19:07 GMT-04:00, Tree Item Expanded]  Nyx
+[Saturday, March 19, 2016 at 15:19:08 GMT-04:00, Tree Item Expanded]  Nyx
+[Saturday, March 19, 2016 at 15:19:17 GMT-04:00, Tree Item Selected]  NyxConsoleTraceOutput.hpp
+[Saturday, March 19, 2016 at 15:19:17 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxConsoleTraceOutput.hpp
+[Saturday, March 19, 2016 at 15:19:18 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:19:22 GMT-04:00, Tree Item Selected]  NyxException.hpp
+[Saturday, March 19, 2016 at 15:19:22 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxException.hpp
+[Saturday, March 19, 2016 at 15:19:23 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:19:27 GMT-04:00, Tree Item Selected]  NyxEvent.hpp
+[Saturday, March 19, 2016 at 15:19:27 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxEvent.hpp
+[Saturday, March 19, 2016 at 15:19:28 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:19:35 GMT-04:00, Tree Item Selected]  NyxMsgHandler.hpp
+[Saturday, March 19, 2016 at 15:19:35 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxMsgHandler.hpp
+[Saturday, March 19, 2016 at 15:19:37 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:20:08 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:20:26 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:20:37 GMT-04:00, Tree Item Expanded]  NyxWebSvr
+[Saturday, March 19, 2016 at 15:20:41 GMT-04:00, Tree Item Selected]  HttpServer.hpp
+[Saturday, March 19, 2016 at 15:20:41 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxWebSvr/HttpServer.hpp
+[Saturday, March 19, 2016 at 15:20:43 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:20:44 GMT-04:00, Tree Item Selected]  HttpsServer.hpp
+[Saturday, March 19, 2016 at 15:20:44 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxWebSvr/HttpsServer.hpp
+[Saturday, March 19, 2016 at 15:20:45 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:20:47 GMT-04:00, Tree Item Selected]  ConnListener.hpp
+[Saturday, March 19, 2016 at 15:20:47 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxWebSvr/ConnListener.hpp
+[Saturday, March 19, 2016 at 15:20:48 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:21:35 GMT-04:00, Tree Item Expanded]  QtTraceClient
+[Saturday, March 19, 2016 at 15:21:36 GMT-04:00, Tree Item Expanded]  NyxTraceViewer
+[Saturday, March 19, 2016 at 15:21:36 GMT-04:00, Tree Item Selected]  NyxWString.hpp
+[Saturday, March 19, 2016 at 15:21:36 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/Nyx/NyxWString.hpp
+[Saturday, March 19, 2016 at 15:21:38 GMT-04:00, Close Story] closing story FileViewStory
+[Saturday, March 19, 2016 at 15:21:39 GMT-04:00, Show Question Recherche] 
+[Saturday, March 19, 2016 at 15:21:45 GMT-04:00, Close Story] closing story QuestionRecherchePopupStory
+[Saturday, March 19, 2016 at 15:21:48 GMT-04:00, Tree Item Expanded]  NyxTraceViewer
+[Saturday, March 19, 2016 at 15:21:50 GMT-04:00, Tree Item Expanded]  QtTraceClient
+[Saturday, March 19, 2016 at 15:21:51 GMT-04:00, Tree Item Expanded]  Sources
+[Saturday, March 19, 2016 at 15:21:58 GMT-04:00, Tree Item Expanded]  StatusUpdaters
+[Saturday, March 19, 2016 at 15:22:00 GMT-04:00, Tree Item Selected]  StatusUpdater.hpp
+[Saturday, March 19, 2016 at 15:22:00 GMT-04:00, File View] viewing file : EmbeddedRes/CodeSite/Nyx/NyxTraceViewer/QtTraceClient/Sources/StatusUpdaters/StatusUpdater.hpp
+[Saturday, March 19, 2016 at 15:22:00 GMT-04:00] item found
+[Saturday, March 19, 2016 at 15:22:02 GMT-04:00, Open Story] opening story DisplayTextContentStory
