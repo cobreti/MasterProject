@@ -17,15 +17,15 @@ class DisplayGraphs {
 
     }
 
-    func add(graph: DisplayGraph) {
+    func add(_ graph: DisplayGraph) {
         _graphs[graph.name] = graph
     }
 
-    func remove(name: String) {
-        _graphs.removeValueForKey(name)
+    func remove(_ name: String) {
+        _graphs.removeValue(forKey: name)
     }
 
-    func get(name: String) -> DisplayGraph! {
+    func get(_ name: String) -> DisplayGraph! {
         return _graphs[name]
     }
 

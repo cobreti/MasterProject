@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-typealias EventHandler = (sender : AnyObject, args: [String : AnyObject]!) -> Void
+typealias EventHandler = (_ sender : AnyObject, _ args: [String : AnyObject]?) -> Void
 
 class Story {
 
     var type : StoryType {
         get {
-            return StoryType.Default
+            return StoryType.default
         }
     }
     
@@ -57,7 +57,7 @@ class Story {
 
     }
     
-    func onAction(action: Action) {
+    func onAction(_ action: Action) {
         
     }
     

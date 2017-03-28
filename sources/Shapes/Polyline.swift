@@ -8,21 +8,21 @@
 
 import Foundation
 
-public class Polyline {
+open class Polyline {
     
-    public var count : Int {
+    open var count : Int {
         get {
             return _pts.count
         }
     }
     
-    public var first : Point {
+    open var first : Point {
         get {
             return _pts[0]
         }
     }
     
-    public var last : Point {
+    open var last : Point {
         get {
             return _pts.last!
         }
@@ -32,13 +32,13 @@ public class Polyline {
         
     }
     
-    public func add( pt : Point ) {
+    open func add( _ pt : Point ) {
         _pts.append(pt)
     }
     
-    public func get( idx : Int ) -> Point {
+    open func get( _ idx : Int ) -> Point {
         return _pts[idx]
     }
     
-    private var _pts : [Point] = []
+    fileprivate var _pts : [Point] = []
 }

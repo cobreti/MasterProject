@@ -10,8 +10,8 @@ import Shapes
 class DisplayGraph_Element : DisplayGraphItem {
 
     enum State {
-        case Normal
-        case Selected
+        case normal
+        case selected
     }
 
     var state: State {
@@ -63,7 +63,7 @@ class DisplayGraph_Element : DisplayGraphItem {
         _rect = rect
     }
 
-    override func draw(params: DisplayGraphDrawParams) {
+    override func draw(_ params: DisplayGraphDrawParams) {
 
         let portalRect = params.portal.rectFromDiagramToPortal(_rect)
         let cgRC = CGRect(  x: portalRect.pos.x,
@@ -73,20 +73,20 @@ class DisplayGraph_Element : DisplayGraphItem {
 
 
 
-        if _state == .Selected {
+        if _state == .selected {
 
             let fillColor = UIColor(red: 241.0/255.0, green: 244.0/255.0, blue: 238.0/255.0, alpha: 1.0)
-            CGContextSetFillColorWithColor(params.context, fillColor.CGColor)
-            CGContextFillRect(params.context, cgRC)
+            params.context.setFillColor(fillColor.cgColor)
+            params.context.fill(cgRC)
 
-            let rc = CGRectInset(cgRC, -3, -3)
-            CGContextSetLineWidth(params.context, 3.0)
-            CGContextStrokeRect(params.context, rc)
-            CGContextSetLineWidth(params.context, 1.0)
+            let rc = cgRC.insetBy(dx: -3, dy: -3)
+            params.context.setLineWidth(3.0)
+            params.context.stroke(rc)
+            params.context.setLineWidth(1.0)
         }
         else {
 
-            CGContextStrokeRect(params.context, cgRC)
+            params.context.stroke(cgRC)
         }
 
         if let _ = _fileIcon {
@@ -110,7 +110,7 @@ class DisplayGraph_Element : DisplayGraphItem {
 //        }
     }
 
-    func drawOriginIcon(rect: CGRect) {
+    func drawOriginIcon(_ rect: CGRect) {
 
         var imgWidth = max(rect.width / 3 - 2, 0)
         var imgHeight = rect.height / 3
@@ -122,10 +122,10 @@ class DisplayGraph_Element : DisplayGraphItem {
 
         let rcImg = CGRect( x: rect.minX - imgSize, y: rect.minY - imgSize, width: imgSize, height: imgSize )
 
-        _originIcon.drawInRect(rcImg)
+        _originIcon.draw(in: rcImg)
     }
 
-    func drawLastSelectedIcon(rect: CGRect) {
+    func drawLastSelectedIcon(_ rect: CGRect) {
 
         var imgWidth = max(rect.width / 3 - 2, 0)
         var imgHeight = rect.height / 3
@@ -137,10 +137,10 @@ class DisplayGraph_Element : DisplayGraphItem {
 
         let rcImg = CGRect( x: rect.maxX, y: rect.maxY, width: imgSize, height: imgSize )
 
-        _lastSelectedIcon.drawInRect(rcImg)
+        _lastSelectedIcon.draw(in: rcImg)
     }
 
-    func drawFileIcon(rect: CGRect) {
+    func drawFileIcon(_ rect: CGRect) {
 
         var imgWidth = max(rect.width / 3 - 2, 0)
         var imgHeight = rect.height / 3
@@ -152,10 +152,10 @@ class DisplayGraph_Element : DisplayGraphItem {
 
         let rcImg = CGRect( x: rect.minX+2, y: rect.minY+2, width: imgSize, height: imgSize )
 
-        _fileIcon.drawInRect(rcImg)
+        _fileIcon.draw(in: rcImg)
     }
 
-    func drawSubDiagramIcon(rect: CGRect) {
+    func drawSubDiagramIcon(_ rect: CGRect) {
 
         var imgWidth = max(rect.width / 3 - 2, 0)
         var imgHeight = rect.height / 3
@@ -168,29 +168,29 @@ class DisplayGraph_Element : DisplayGraphItem {
         if let _ = _fileIcon {
             let rcImg = CGRect(x: rect.maxX - imgWidth - 2, y: rect.minY + 2, width: imgSize, height: imgSize)
 
-            _subDiagramIcon.drawInRect(rcImg)
+            _subDiagramIcon.draw(in: rcImg)
         }
         else {
             let rcImg = CGRect(x: rect.minX + 2, y: rect.minY + 2, width: imgSize, height: imgSize)
 
-            _subDiagramIcon.drawInRect(rcImg)
+            _subDiagramIcon.draw(in: rcImg)
         }
     }
 
-    func drawName(rect: CGRect, context: CGContext) {
+    func drawName(_ rect: CGRect, context: CGContext) {
 
-        let textArea = CGRectInset(rect, 5, 5)
+        let textArea = rect.insetBy(dx: 5, dy: 5)
         let parStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
         let strContext : NSStringDrawingContext = NSStringDrawingContext()
-        let strOptions : NSStringDrawingOptions = NSStringDrawingOptions.UsesLineFragmentOrigin
+        let strOptions : NSStringDrawingOptions = NSStringDrawingOptions.usesLineFragmentOrigin
         let rcText = textArea
         var font : UIFont = UIFont(name: "helvetica", size: 12.0)!
         
-        parStyle.alignment = NSTextAlignment.Center
-        parStyle.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        parStyle.alignment = NSTextAlignment.center
+        parStyle.lineBreakMode = NSLineBreakMode.byWordWrapping
 
-        let strSize = name.sizeWithAttributes(
-            [
+        let strSize = name.size(
+            attributes: [
                     NSParagraphStyleAttributeName: parStyle,
                     NSFontAttributeName: font
             ]
@@ -200,9 +200,9 @@ class DisplayGraph_Element : DisplayGraphItem {
 
             let ratio = strSize.height / strSize.width
 
-            UIGraphicsBeginImageContextWithOptions(strSize, false, UIScreen.mainScreen().scale)
+            UIGraphicsBeginImageContextWithOptions(strSize, false, UIScreen.main.scale)
 
-            name.drawWithRect(CGRect(origin: CGPoint(x: 0, y: 0), size: strSize),
+            name.draw(with: CGRect(origin: CGPoint(x: 0, y: 0), size: strSize),
                               options: strOptions,
                               attributes: [
                                       NSParagraphStyleAttributeName: parStyle,
@@ -219,12 +219,12 @@ class DisplayGraph_Element : DisplayGraphItem {
             let rc = CGRect(    origin: CGPoint(x: textArea.origin.x, y: y),
                                 size: CGSize(width: textArea.width, height: ratio * textArea.width))
 
-            textImg.drawInRect(rc)
+            textImg?.draw(in: rc)
         }
         else {
 
-            var rcStr = name.boundingRectWithSize(
-            textArea.size,
+            var rcStr = name.boundingRect(
+            with: textArea.size,
             options: strOptions,
             attributes: [
                     NSParagraphStyleAttributeName: parStyle,
@@ -237,8 +237,8 @@ class DisplayGraph_Element : DisplayGraphItem {
             if rc.width - rcStr.width < 20 || rc.height - rcStr.height < 20 {
                 font = UIFont(name: "helvetica", size: 10.0)!;
 
-                rcStr = name.boundingRectWithSize(
-                    rcText.size,
+                rcStr = name.boundingRect(
+                    with: rcText.size,
                     options: strOptions,
                     attributes: [
                             NSParagraphStyleAttributeName: parStyle,
@@ -247,14 +247,14 @@ class DisplayGraph_Element : DisplayGraphItem {
                     context: strContext)
             }
 
-            CGContextSaveGState(context)
-            CGContextClipToRect(context, rc)
+            context.saveGState()
+            context.clip(to: rc)
 
-            CGContextSetFontSize(context, 8.0)
+            context.setFontSize(8.0)
 
-            rc.insetInPlace(dx: 0, dy: (rc.height - rcStr.size.height) / 2)
+            rc = rc.insetBy(dx: 0, dy: (rc.height - rcStr.size.height) / 2)
 
-            name.drawWithRect(rc,
+            name.draw(with: rc,
                               options: strOptions,
                               attributes: [
                                       NSParagraphStyleAttributeName: parStyle,
@@ -262,7 +262,7 @@ class DisplayGraph_Element : DisplayGraphItem {
                               ],
                               context: strContext)
 
-            CGContextRestoreGState(context)
+            context.restoreGState()
         }
     }
 
@@ -272,5 +272,5 @@ class DisplayGraph_Element : DisplayGraphItem {
     var _subDiagramIcon : UIImage!
     var _originIcon : UIImage!
     var _lastSelectedIcon : UIImage!
-    var _state : State = .Normal
+    var _state : State = .normal
 }

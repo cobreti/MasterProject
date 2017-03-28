@@ -8,15 +8,15 @@
 
 import Foundation
 
-public class LinkEndPoint {
+open class LinkEndPoint {
     
-    public var id : String {
+    open var id : String {
         get {
             return _id
         }
     }
 
-    public var multiplicity : String! {
+    open var multiplicity : String! {
         get {
             return _multiplicity
         }
@@ -25,7 +25,7 @@ public class LinkEndPoint {
         }
     }
     
-    public var type : LinkEndPointType {
+    open var type : LinkEndPointType {
         get {
             return _type
         }

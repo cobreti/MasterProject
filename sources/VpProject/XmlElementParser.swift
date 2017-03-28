@@ -31,14 +31,14 @@ class XmlElementParser {
         _delegate = delegate
     }
     
-    func onGlobalStartElement( elementName : String,
+    func onGlobalStartElement( _ elementName : String,
         namespaceURI : String?,
         qualifiedName : String?,
-        attributeDict : [NSObject:AnyObject]) {
+        attributeDict : [AnyHashable: Any]) {
             
     }
     
-    func onGlobalEndElement(  elementName : String,
+    func onGlobalEndElement(  _ elementName : String,
         namespaceURI : String?,
         qualifiedName : String? ) {
             
@@ -47,13 +47,13 @@ class XmlElementParser {
         }
     }
     
-    func onElementParsingStarting(  elementName : String,
+    func onElementParsingStarting(  _ elementName : String,
                                     namespaceURI : String?,
                                     qualifiedName : String?,
-                                    attributeDict : [NSObject:AnyObject]) {
+                                    attributeDict : [AnyHashable: Any]) {
             
         var indent = ""
-        for var idx = 0; idx < g_xmlParserIndent; idx++ {
+        for idx in 0 ..< g_xmlParserIndent {
             indent += "  "
         }
 
@@ -65,12 +65,12 @@ class XmlElementParser {
                                         
 //        debugPrint(">\(indent)\(elementName) - \(id)")
 
-        g_xmlParserIndent++
+        g_xmlParserIndent += 1
     }
     
     func onElementParsingCompleted() {
         
-        g_xmlParserIndent--
+        g_xmlParserIndent -= 1
         
         if let delegate = self.delegate {
             delegate.onParsingCompleted(self)

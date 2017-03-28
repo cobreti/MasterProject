@@ -14,15 +14,15 @@ class XmlReferencesParser : XmlSubTreeParser {
         super.init(name: name, delegate: delegate)
     }
 
-    override func onGlobalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject:AnyObject]) {
+    override func onGlobalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
         super.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
 
-    override func onGlobalEndElement(elementName: String, namespaceURI: String?, qualifiedName: String?) {
+    override func onGlobalEndElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?) {
         super.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
     }
 
-    override func onLocalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject:AnyObject]) {
+    override func onLocalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
 
         switch elementName {
 
@@ -35,9 +35,9 @@ class XmlReferencesParser : XmlSubTreeParser {
 
     }
 
-    func onModelElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject:AnyObject]) {
+    func onModelElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
 
-        if let modelType = attributeDict["modelType"] as? String where modelType == "Reference" {
+        if let modelType = attributeDict["modelType"] as? String, modelType == "Reference" {
             pushElementParser( XmlReferenceParser(name: "Model", model: _model, delegate: self) )
         }
     }

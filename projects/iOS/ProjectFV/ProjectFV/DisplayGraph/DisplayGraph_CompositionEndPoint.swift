@@ -9,9 +9,9 @@ import UIKit
 
 class DisplayGraph_CompositionEndPoint : DisplayGraph_EndPoint {
 
-    override func draw(params: DisplayGraphDrawParams) {
+    override func draw(_ params: DisplayGraphDrawParams) {
 
-        if params.drawingMode != .Normal {
+        if params.drawingMode != .normal {
             return
         }
 
@@ -25,39 +25,39 @@ class DisplayGraph_CompositionEndPoint : DisplayGraph_EndPoint {
         var p : Point = _p1
         _  = Point(x: 0,y: 0)
 
-        CGContextBeginPath(params.context)
+        params.context.beginPath()
         p = axisSystem.fromAxis(Point(x: 0, y: 0))
-        CGContextMoveToPoint(params.context, p.x, p.y)
+        params.context.move(to: CGPoint(x: p.x, y: p.y))
 
         p = axisSystem.fromAxis(Point(x: 10, y: 7))
-        CGContextAddLineToPoint(params.context, p.x, p.y)
+        params.context.addLine(to: CGPoint(x: p.x, y: p.y))
 
         p = axisSystem.fromAxis(Point(x: 20, y: 0))
-        CGContextAddLineToPoint(params.context, p.x, p.y)
+        params.context.addLine(to: CGPoint(x: p.x, y: p.y))
 
         p = axisSystem.fromAxis(Point(x: 10, y: -7))
-        CGContextAddLineToPoint(params.context, p.x, p.y)
+        params.context.addLine(to: CGPoint(x: p.x, y: p.y))
 
-        CGContextClosePath(params.context)
-        CGContextSetRGBFillColor(params.context, 0.0, 0.0, 0.0, 1.0)
-        CGContextFillPath(params.context)
+        params.context.closePath()
+        params.context.setFillColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+        params.context.fillPath()
 
-        CGContextBeginPath(params.context)
+        params.context.beginPath()
         p = axisSystem.fromAxis(Point(x: 0, y: 0))
-        CGContextMoveToPoint(params.context, p.x, p.y)
+        params.context.move(to: CGPoint(x: p.x, y: p.y))
 
         p = axisSystem.fromAxis(Point(x: 10, y: 7))
-        CGContextAddLineToPoint(params.context, p.x, p.y)
+        params.context.addLine(to: CGPoint(x: p.x, y: p.y))
 
         p = axisSystem.fromAxis(Point(x: 20, y: 0))
-        CGContextAddLineToPoint(params.context, p.x, p.y)
+        params.context.addLine(to: CGPoint(x: p.x, y: p.y))
 
         p = axisSystem.fromAxis(Point(x: 10, y: -7))
-        CGContextAddLineToPoint(params.context, p.x, p.y)
+        params.context.addLine(to: CGPoint(x: p.x, y: p.y))
 
-        CGContextClosePath(params.context)
-        CGContextSetRGBStrokeColor(params.context, 0.0, 0.0, 0.0, 1.0)
-        CGContextStrokePath(params.context)
+        params.context.closePath()
+        params.context.setStrokeColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+        params.context.strokePath()
     }
 
 }

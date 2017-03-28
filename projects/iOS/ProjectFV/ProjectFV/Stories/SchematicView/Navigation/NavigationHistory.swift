@@ -17,7 +17,7 @@ class NavigationHistory {
         }
     }
 
-    func add( diagramName : String ) -> NavigationItemsGroup {
+    func add( _ diagramName : String ) -> NavigationItemsGroup {
 
         let group = NavigationItemsGroup(diagramName: diagramName)
         _history.append( group )

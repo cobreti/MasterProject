@@ -17,24 +17,24 @@ class DiagramsDataSource : NSObject, UITableViewDataSource {
         _diagramsList = Application.instance().document.diagrams.list()
     }
     
-    func getDiagramAtIndex(idx : Int) -> String {
+    func getDiagramAtIndex(_ idx : Int) -> String {
         return _diagramsList[idx]
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return _diagramsList.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-        if let reusableCell = tableView.dequeueReusableCellWithIdentifier("DiagramSelection") {
+        if let reusableCell = tableView.dequeueReusableCell(withIdentifier: "DiagramSelection") {
         
-            reusableCell.textLabel?.text = _diagramsList[indexPath.indexAtPosition(1)]
+            reusableCell.textLabel?.text = _diagramsList[indexPath.item]
             return reusableCell
         }
         
         let cell = UITableViewCell()
-        cell.textLabel?.text = _diagramsList[indexPath.indexAtPosition(1)]
+        cell.textLabel?.text = _diagramsList[indexPath.item]
         
         return cell
     }

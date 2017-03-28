@@ -8,12 +8,12 @@ import UIKit
 
 class MethodSelectionViewController : UIViewController {
 
-    @IBAction func onSchematiqueSelected(sender: AnyObject) {
+    @IBAction func onSchematiqueSelected(_ sender: AnyObject) {
         
         Application.instance().actionsBus.send( MethodSelectionAction(method: .Schematique, sender: self) )
     }
     
-    @IBAction func onHierarchiqueSelected(sender: AnyObject) {
+    @IBAction func onHierarchiqueSelected(_ sender: AnyObject) {
     
         Application.instance().actionsBus.send( MethodSelectionAction(method: .Hierarchique, sender: self) )
     }

@@ -8,7 +8,7 @@ import UIKit
 
 class StoriesBoardController : UIViewController {
 
-    func setStoryView(view: UIView) {
+    func setStoryView(_ view: UIView) {
 
         if let _ = _storyViewContainer {
             _storyViewContainer.addSubview(view)
@@ -16,7 +16,7 @@ class StoriesBoardController : UIViewController {
         }
     }
 
-    func setModalStoryView(view: UIView) {
+    func setModalStoryView(_ view: UIView) {
 
         if let wnd = _storyViewContainer.window {
            wnd.addSubview(view)
@@ -32,20 +32,20 @@ class StoriesBoardController : UIViewController {
 
     func setVersionLabel() {
 
-        if let  dict = NSBundle.mainBundle().infoDictionary,
-                version = dict["CFBundleShortVersionString"] as? String,
-                build = dict[kCFBundleVersionKey as String] as? String {
+        if let  dict = Bundle.main.infoDictionary,
+                let version = dict["CFBundleShortVersionString"] as? String,
+                let build = dict[kCFBundleVersionKey as String] as? String {
 
             _versionLabel.text = "v\(version).\(build)"
         }
     }
 
-    func enableBackButton(enabled: Bool) {
+    func enableBackButton(_ enabled: Bool) {
 
-        _backButton.hidden = true
+        _backButton.isHidden = true
     }
 
-    func setStoryTB(tbView : UIView!) {
+    func setStoryTB(_ tbView : UIView!) {
 
         for v in _storyTBArea.subviews {
             v.removeFromSuperview()
@@ -66,7 +66,7 @@ class StoriesBoardController : UIViewController {
         }
     }
 
-    @IBAction func onBack(sender: AnyObject) {
+    @IBAction func onBack(_ sender: AnyObject) {
 
         let app = Application.instance()
 

@@ -13,19 +13,19 @@ class TreeItems {
         }
     }
 
-    func getItemAtIndex(index: Int) -> TreeItem! {
+    func getItemAtIndex(_ index: Int) -> TreeItem! {
 
         return _items[index]
     }
 
-    func add(item: TreeItem) {
+    func add(_ item: TreeItem) {
         _items.append(item)
     }
 
-    func forEach( callback: (item: TreeItem) -> Void ) {
+    func forEach( _ callback: (_ item: TreeItem) -> Void ) {
 
         for item in _items {
-            callback(item: item)
+            callback(item)
         }
     }
 

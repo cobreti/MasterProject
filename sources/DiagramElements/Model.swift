@@ -8,15 +8,15 @@
 
 import Foundation
 
-public class Model {
+open class Model {
     
-    public var id : String {
+    open var id : String {
         get {
             return _id
         }
     }
 
-    public var name : String! {
+    open var name : String! {
         get {
             return _name
         }
@@ -25,13 +25,13 @@ public class Model {
         }
     }
     
-    public var children : ModelsTable {
+    open var children : ModelsTable {
         get {
             return _children
         }
     }
 
-    public var linkEndPointFrom : LinkEndPoint! {
+    open var linkEndPointFrom : LinkEndPoint! {
         get {
             return _linkEndPointFrom
         }
@@ -40,7 +40,7 @@ public class Model {
         }
     }
     
-    public var linkEndPointTo : LinkEndPoint! {
+    open var linkEndPointTo : LinkEndPoint! {
         get {
             return _linkEndPointTo
         }
@@ -49,19 +49,19 @@ public class Model {
         }
     }
     
-    public var fileReferences : FileReferences {
+    open var fileReferences : FileReferences {
         get {
             return _fileReferences
         }
     }
     
-    public var subDiagrams: ModelReferences {
+    open var subDiagrams: ModelReferences {
         get {
             return _subDiagrams
         }
     }
     
-    public var plainTextValue : String! {
+    open var plainTextValue : String! {
         get {
             return _plainTextValue
         }
@@ -76,14 +76,14 @@ public class Model {
     }
     
     
-    private var _id : String
-    private var _name : String!
-    private var _parent : Model!
-    private var _linkEndPointTo : LinkEndPoint!
-    private var _linkEndPointFrom : LinkEndPoint!
-    private var _children : ModelsTable = ModelsTable()
-    private var _plainTextValue : String!
-    private var _subDiagrams : ModelReferences = ModelReferences()
-    private var _fileReferences : FileReferences = FileReferences()
+    fileprivate var _id : String
+    fileprivate var _name : String!
+    fileprivate var _parent : Model!
+    fileprivate var _linkEndPointTo : LinkEndPoint!
+    fileprivate var _linkEndPointFrom : LinkEndPoint!
+    fileprivate var _children : ModelsTable = ModelsTable()
+    fileprivate var _plainTextValue : String!
+    fileprivate var _subDiagrams : ModelReferences = ModelReferences()
+    fileprivate var _fileReferences : FileReferences = FileReferences()
 }
 

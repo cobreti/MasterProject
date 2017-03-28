@@ -18,7 +18,7 @@ class CloseStoryAction : Action {
     
     override var description : String {
         get {
-            return "closing story \(_story.dynamicType)"
+            return "closing story \(type(of: _story))"
         }
     }
     

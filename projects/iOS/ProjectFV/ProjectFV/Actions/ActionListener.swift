@@ -10,5 +10,5 @@ import Foundation
 
 protocol ActionListener {
     
-    func onAction( action: Action )
+    func onAction( _ action: Action )
 }

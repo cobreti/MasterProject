@@ -24,7 +24,7 @@ class DisplayGraph {
         _name = name
     }
 
-    func draw(  params: DisplayGraphDrawParams ) {
+    func draw(  _ params: DisplayGraphDrawParams ) {
 
         _items.forEach( { (item: DisplayGraphItem) -> Void in
 

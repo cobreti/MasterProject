@@ -23,7 +23,7 @@ class ActionsBus : NSObject {
         super.init()
     }
     
-    func send( action: Action ) {
+    func send( _ action: Action ) {
         
         
         if action.log {
@@ -33,29 +33,29 @@ class ActionsBus : NSObject {
         _listeners.send(action)
     }
     
-    func writeToLog(text: String) {
+    func writeToLog(_ text: String) {
         
         let file = "actions_log_\(_timestamp).txt"
         let textLine = text
-        let data = textLine.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
+        let data = textLine.data(using: String.Encoding.utf8, allowLossyConversion: false)!
 
         
-        let dirs : [String] = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true)
-        let dir = NSURL(fileURLWithPath: dirs[0]) //documents directory
-        let path = dir.URLByAppendingPathComponent(file);
+        let dirs : [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+        let dir = URL(fileURLWithPath: dirs[0]) //documents directory
+        let path = dir.appendingPathComponent(file);
         let fileURL = path
         
         do {
-            let  fileHandle = try NSFileHandle(forWritingToURL: fileURL)
+            let  fileHandle = try FileHandle(forWritingTo: fileURL)
             
             fileHandle.seekToEndOfFile()
-            fileHandle.writeData(data)
+            fileHandle.write(data)
             fileHandle.closeFile()
         }
         catch _ {
             do {
                 
-                try textLine.writeToFile(path.path!, atomically: false, encoding: NSUTF8StringEncoding);
+                try textLine.write(toFile: path.path, atomically: false, encoding: String.Encoding.utf8);
             }
             catch _ {
                 debugPrint("failure to write to file")
@@ -63,6 +63,6 @@ class ActionsBus : NSObject {
         }
     }
     
-    private var _listeners : ActionListeners
-    private let _timestamp : NSDate = NSDate()
+    fileprivate var _listeners : ActionListeners
+    fileprivate let _timestamp : Date = Date()
 }

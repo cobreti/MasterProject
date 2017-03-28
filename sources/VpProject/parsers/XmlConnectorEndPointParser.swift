@@ -18,12 +18,12 @@ class XmlConnectorEndPointParser : XmlSubTreeParser {
         super.init(name: name, delegate: delegate)
     }
     
-    override func onGlobalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onGlobalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
 
         if elementName == "StringProperty" {
             
             if let  name = attributeDict["name"] as? String,
-                    value = attributeDict["value"] as? String where name == "aggregationKind" {
+                    let value = attributeDict["value"] as? String, name == "aggregationKind" {
                 
                 if let endPointType = LinkEndPointType(rawValue: value) {
                     _linkEndPoint.type = endPointType
@@ -31,7 +31,7 @@ class XmlConnectorEndPointParser : XmlSubTreeParser {
             }
 
             if let  name = attributeDict["name"] as? String,
-                    value = attributeDict["value"] as? String where name == "multiplicity" && value != "Unspecified" {
+                    let value = attributeDict["value"] as? String, name == "multiplicity" && value != "Unspecified" {
                 _linkEndPoint.multiplicity = value
             }
         }

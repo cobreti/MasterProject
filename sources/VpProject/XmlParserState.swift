@@ -28,7 +28,7 @@ class XmlParserState {
         }
     }
     
-    var attributeDict : [NSObject:AnyObject] {
+    var attributeDict : [AnyHashable: Any] {
         get {
             return _attributeDict
         }
@@ -37,7 +37,7 @@ class XmlParserState {
     init(   elementName : String,
             namespaceURI : String?,
             qualifiedName : String?,
-            attributeDict : [NSObject:AnyObject]) {
+            attributeDict : [AnyHashable: Any]) {
             
         _name = elementName
         _namespaceURI = namespaceURI
@@ -48,5 +48,5 @@ class XmlParserState {
     var _name : String
     var _namespaceURI : String?
     var _qualifiedName : String?
-    var _attributeDict : [NSObject:AnyObject]
+    var _attributeDict : [AnyHashable: Any]
 }

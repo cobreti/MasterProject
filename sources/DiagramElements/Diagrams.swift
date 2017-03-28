@@ -9,18 +9,18 @@
 import Foundation
 
 
-public class Diagrams {
+open class Diagrams {
 
     
-    public func add( layer : Diagram ) {
+    open func add( _ layer : Diagram ) {
         _layers[layer.name] = layer
     }
     
-    public func get( name : String ) -> Diagram! {
+    open func get( _ name : String ) -> Diagram! {
         return _layers[name]
     }
     
-    public func list() -> [String] {
+    open func list() -> [String] {
         
         var list : [String] = []
         
@@ -31,8 +31,8 @@ public class Diagrams {
         return list
     }
 
-    public func clear() {
-        _layers.removeAll(keepCapacity: false)
+    open func clear() {
+        _layers.removeAll(keepingCapacity: false)
     }
     
     var _layers : [String : Diagram] = [:]

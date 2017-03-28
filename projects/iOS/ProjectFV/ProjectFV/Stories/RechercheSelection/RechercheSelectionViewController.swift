@@ -9,7 +9,7 @@ import DiagramElements
 
 class RechercheSelectionViewController : UIViewController, RechercheItemControllerDelegate {
 
-    @IBAction func OnStart(sender: AnyObject) {
+    @IBAction func OnStart(_ sender: AnyObject) {
 //        Application.instance().stories.push( DiagramSelectionStory() )
 
         let app = Application.instance()
@@ -54,10 +54,10 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
             for (_, p) in diag.primitives {
 
                 if let  elm = p as? Element,
-                        modelId = elm.modelId,
-                        model = doc.models.get(modelId),
-                        name = elm.name,
-                        plainTextValue = model.plainTextValue {
+                        let modelId = elm.modelId,
+                        let model = doc.models.get(modelId),
+                        let name = elm.name,
+                        let plainTextValue = model.plainTextValue {
 
                     let question = SearchQuestion(title: "", content: plainTextValue);
                     if let fileRef = model.fileReferences.getForParentDiagram(nil) {
@@ -70,7 +70,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
             }
         }
 
-        let sortedQuestionKeys = Array(questions.keys).sort(<)
+        let sortedQuestionKeys = Array(questions.keys).sorted(by: <)
 
         for name in sortedQuestionKeys {
             if let question = questions[name] {
@@ -78,11 +78,11 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
             }
         }
 
-        _startBtn.enabled = false
+        _startBtn.isEnabled = false
     }
 
 
-    func addRechercheItem( question: SearchQuestion ) {
+    func addRechercheItem( _ question: SearchQuestion ) {
 
         let controller = RechercheItemController(question: question)
         controller.delegate = self
@@ -97,30 +97,30 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
 
         _itemsArea.addConstraint(
         NSLayoutConstraint( item: controller.view,
-                attribute: NSLayoutAttribute.Right,
-                relatedBy: NSLayoutRelation.Equal,
+                attribute: NSLayoutAttribute.right,
+                relatedBy: NSLayoutRelation.equal,
                 toItem: _itemsArea,
-                attribute: NSLayoutAttribute.Right,
+                attribute: NSLayoutAttribute.right,
                 multiplier: 1.0,
                 constant: -30)
         )
 
         _itemsArea.addConstraint(
             NSLayoutConstraint( item: controller.view,
-                    attribute: NSLayoutAttribute.Left,
-                    relatedBy: NSLayoutRelation.Equal,
+                    attribute: NSLayoutAttribute.left,
+                    relatedBy: NSLayoutRelation.equal,
                     toItem: _itemsArea,
-                    attribute: NSLayoutAttribute.Left,
+                    attribute: NSLayoutAttribute.left,
                     multiplier: 1.0,
                     constant: 30)
         )
 
         _itemsArea.addConstraint(
         NSLayoutConstraint( item: controller.view,
-                attribute: NSLayoutAttribute.Height,
-                relatedBy: NSLayoutRelation.Equal,
+                attribute: NSLayoutAttribute.height,
+                relatedBy: NSLayoutRelation.equal,
                 toItem: nil,
-                attribute: NSLayoutAttribute.NotAnAttribute,
+                attribute: NSLayoutAttribute.notAnAttribute,
                 multiplier: 1.0,
                 constant: 150)
         )
@@ -128,10 +128,10 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
         if let prevController = _rechercheItems.last {
             _itemsArea.addConstraint(
             NSLayoutConstraint( item: controller.view,
-                    attribute: NSLayoutAttribute.Top,
-                    relatedBy: NSLayoutRelation.Equal,
+                    attribute: NSLayoutAttribute.top,
+                    relatedBy: NSLayoutRelation.equal,
                     toItem: prevController.view,
-                    attribute: NSLayoutAttribute.Bottom,
+                    attribute: NSLayoutAttribute.bottom,
                     multiplier: 1.0,
                     constant: 20)
             )
@@ -139,10 +139,10 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
         else {
             _itemsArea.addConstraint(
             NSLayoutConstraint( item: controller.view,
-                    attribute: NSLayoutAttribute.Top,
-                    relatedBy: NSLayoutRelation.Equal,
+                    attribute: NSLayoutAttribute.top,
+                    relatedBy: NSLayoutRelation.equal,
                     toItem: _itemsArea,
-                    attribute: NSLayoutAttribute.Top,
+                    attribute: NSLayoutAttribute.top,
                     multiplier: 1.0,
                     constant: 0)
             )
@@ -157,7 +157,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
     }
 
 
-    func onItemSelected(item: RechercheItemController) {
+    func onItemSelected(_ item: RechercheItemController) {
 
         if item !== _selection {
 
@@ -166,7 +166,7 @@ class RechercheSelectionViewController : UIViewController, RechercheItemControll
             _selection?.onSelected()
             view.setNeedsDisplay()
 
-            _startBtn.enabled = true
+            _startBtn.isEnabled = true
         }
     }
 

@@ -14,7 +14,7 @@ class FileViewStory : Story {
 
     override var type: StoryType {
         get {
-            return .Modal
+            return .modal
         }
     }
 
@@ -28,9 +28,9 @@ class FileViewStory : Story {
         
         super.init()
 
-        var fileParts = file.componentsSeparatedByString("/")
+        var fileParts = file.components(separatedBy: "/")
         let lastFilePart = fileParts.removeLast()
-        let filenameParts = lastFilePart.componentsSeparatedByString(".")
+        let filenameParts = lastFilePart.components(separatedBy: ".")
         
         var filePath = ""
         
@@ -38,7 +38,7 @@ class FileViewStory : Story {
             filePath += "\(s)/"
         }
         
-        if let fileURL = NSBundle.mainBundle().URLForResource(filenameParts[0], withExtension: filenameParts[1], subdirectory: filePath) {
+        if let fileURL = Bundle.main.url(forResource: filenameParts[0], withExtension: filenameParts[1], subdirectory: filePath) {
             
             debugPrint(fileURL)
             _controller = FileViewController(fileURL: fileURL)
@@ -58,7 +58,7 @@ class FileViewStory : Story {
 
     }
     
-    func onBack(sender: AnyObject, args: [String: AnyObject]!) {
+    func onBack(_ sender: AnyObject, args: [String: AnyObject]!) {
         debugPrint("onBack story handler")
         Application.instance().actionsBus.send( CloseStoryAction(story: self, sender: self) )
     }

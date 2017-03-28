@@ -23,11 +23,11 @@ class Question {
         _question = question
     }
 
-    func add( choice : AnswerChoice ) {
+    func add( _ choice : AnswerChoice ) {
         _answers.append(choice)
     }
 
-    func get( index: Int ) -> AnswerChoice {
+    func get( _ index: Int ) -> AnswerChoice {
         return _answers[index]
     }
 

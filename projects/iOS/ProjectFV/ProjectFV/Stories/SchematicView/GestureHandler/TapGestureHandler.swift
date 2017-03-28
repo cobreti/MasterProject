@@ -28,19 +28,19 @@ class TapGestureHandler : BaseGestureHandler {
         self.view.addGestureRecognizer(tapRecognizer)
     }
     
-    func onTap( sender : UITapGestureRecognizer ) {
+    func onTap( _ sender : UITapGestureRecognizer ) {
         
         if !enabled {
             return
         }
         
         switch sender.state {
-            case UIGestureRecognizerState.Began:
+            case UIGestureRecognizerState.began:
                 _element = nil
             
-            case UIGestureRecognizerState.Ended:
+            case UIGestureRecognizerState.ended:
                 if let _ = view.diagram {
-                    let ptInView = sender.locationInView(view)
+                    let ptInView = sender.location(in: view)
                     
                     let diagPt = portal.pointFromViewToPortal(Point(x: ptInView.x, y: ptInView.y))
                     

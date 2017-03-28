@@ -115,14 +115,14 @@ class DiagramView : UIView {
         }
     }
     
-    override func drawRect(dirtyRect: CGRect) {
+    override func draw(_ dirtyRect: CGRect) {
         
-        super.drawRect(dirtyRect)
+        super.draw(dirtyRect)
 
         if let ctx : CGContext = UIGraphicsGetCurrentContext() {
 
             if let  diag = _diagram,
-                    portal = diagramPortal {
+                    let portal = diagramPortal {
 
                 let diagName = diag.name
                 let graphs = DisplayGraphs.instance
@@ -165,34 +165,34 @@ class DiagramView : UIView {
         return nil
     }
 
-    func createDisplayGraphElement(graph: DisplayGraph, elm: Element) {
+    func createDisplayGraphElement(_ graph: DisplayGraph, elm: Element) {
 
         let dgElm = DisplayGraph_Element(rect: elm.box)
 
         if let  doc = _document,
-                model = doc.models.get(elm.modelId) {
+                let model = doc.models.get(elm.modelId) {
 
             if let  diagram = _diagram,
-                    _ = model.fileReferences.getForParentDiagram(diagram.name),
-                    img = UIImage(named: "file.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) {
+                    let _ = model.fileReferences.getForParentDiagram(diagram.name),
+                    let img = UIImage(named: "file.png", in: Bundle.main, compatibleWith: nil) {
                 dgElm.fileIcon = img
             }
 
             if let  diagram = _diagram,
-                    ref = model.subDiagrams.getForParentDiagram(diagram.name),
-                    _ = doc.diagrams.get(ref.diagramName),
-                    img = UIImage(named: "subdiagram.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) where !diagramViewsManager.contains(ref.diagramName) {
+                    let ref = model.subDiagrams.getForParentDiagram(diagram.name),
+                    let _ = doc.diagrams.get(ref.diagramName),
+                    let img = UIImage(named: "subdiagram.png", in: Bundle.main, compatibleWith: nil), !diagramViewsManager.contains(ref.diagramName) {
                 dgElm.subDiagramIcon = img
             }
         }
 
         if let  oModelId = _originModelId,
-                img = UIImage(named: "origin.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) where oModelId == elm.modelId {
+                let img = UIImage(named: "origin.png", in: Bundle.main, compatibleWith: nil), oModelId == elm.modelId {
             dgElm.originIcon = img
         }
 
         if let  oModelId = _selectedModelId,
-        img = UIImage(named: "last-chosen.png", inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: nil) where oModelId == elm.modelId {
+        let img = UIImage(named: "last-chosen.png", in: Bundle.main, compatibleWith: nil), oModelId == elm.modelId {
             dgElm._lastSelectedIcon = img
         }
 
@@ -205,28 +205,28 @@ class DiagramView : UIView {
         graph.items.add(dgElm)
     }
 
-    func createDisplayGraphLink(graph: DisplayGraph, lnk: Link) {
+    func createDisplayGraphLink(_ graph: DisplayGraph, lnk: Link) {
 
         let dgLnk = DisplayGraph_Link(pts: lnk.segment, type: lnk.type)
 
         graph.items.add(dgLnk)
 
         if let  name = lnk.name,
-                captionPos = lnk.captionPos {
+                let captionPos = lnk.captionPos {
 
             graph.items.add( DisplayGraph_Label(pos: captionPos, text: name) )
         }
 
         if let  multiplicityCaptionPos = lnk.multiplicityCaptionPos,
-                doc = _document,
-                model = doc.models.get(lnk.modelId) {
+                let doc = _document,
+                let model = doc.models.get(lnk.modelId) {
 
             if let  from = model.linkEndPointFrom,
-                    multiplicity = from.multiplicity {
+                    let multiplicity = from.multiplicity {
                 graph.items.add( DisplayGraph_Label(pos: multiplicityCaptionPos, text: multiplicity) )
             }
             else if let to = model.linkEndPointTo,
-                        multiplicity = to.multiplicity {
+                        let multiplicity = to.multiplicity {
                 graph.items.add( DisplayGraph_Label(pos: multiplicityCaptionPos, text: multiplicity) )
             }
         }
@@ -241,7 +241,7 @@ class DiagramView : UIView {
         if lnk.type == .association {
 
             if let  doc = _document,
-                    model = doc.models.get(lnk.modelId) {
+                    let model = doc.models.get(lnk.modelId) {
 
                 let count = lnk.segment.count
 
@@ -282,7 +282,7 @@ class DiagramView : UIView {
     var _diagram : Diagram?
     var _document : Document?
     var _pinPoint : PinPoint?
-    var _drawingMode : ViewDrawingMode = .Normal
+    var _drawingMode : ViewDrawingMode = .normal
     var _diagramViewsManager : DiagramViewsManager!
 //    var _navigationItemsGroup : NavigationItemsGroup!
     var _originModelId : String!

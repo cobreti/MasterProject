@@ -41,27 +41,27 @@ class TreeTableDataNode {
         var count : Int = 0
 
         for node in _childNodes {
-            ++count
+            count += 1
             count += node.getSubNodesCount()
         }
 
         return count
     }
 
-    func add(node: TreeTableDataNode) {
+    func add(_ node: TreeTableDataNode) {
         _childNodes.append(node)
     }
 
     func removeChildNodes() {
 
-        _childNodes.removeAll(keepCapacity: false)
+        _childNodes.removeAll(keepingCapacity: false)
     }
 
-    func forEachSubNodes( level: Int, callback: (level: Int, node: TreeTableDataNode) -> Void ) {
+    func forEachSubNodes( _ level: Int, callback: (_ level: Int, _ node: TreeTableDataNode) -> Void ) {
 
         for node in _childNodes {
 
-            callback(level: level, node: node)
+            callback(level, node)
             node.forEachSubNodes(level+1, callback: callback)
         }
     }

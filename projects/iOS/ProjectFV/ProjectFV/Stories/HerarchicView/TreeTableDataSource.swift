@@ -17,12 +17,12 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
     override init() {
         super.init()
 
-        let bundle = NSBundle.mainBundle()
+        let bundle = Bundle.main
 //        let url = bundle.pathForResource("folder", ofType: "png")
-        _folderImage = UIImage(named: "folder.png", inBundle: bundle, compatibleWithTraitCollection: nil)
+        _folderImage = UIImage(named: "folder.png", in: bundle, compatibleWith: nil)
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         if _dirty {
             rebuildIndex()
@@ -31,9 +31,9 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
         return _nodeIndex.count
     }
 
-    func getNodeFromIndexPath( indexPath: NSIndexPath ) -> TreeTableDataNode! {
+    func getNodeFromIndexPath( _ indexPath: IndexPath ) -> TreeTableDataNode! {
 
-        let idx = indexPath.indexAtPosition(1)
+        let idx = indexPath.item
 
         if idx < _nodeIndex.count {
             return _nodeIndex[idx]
@@ -42,18 +42,18 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
         return nil
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         if _dirty {
             rebuildIndex()
         }
 
-        var cell : UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("TreeViewCell")
+        var cell : UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "TreeViewCell")
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier:"TreeViewCell")
+            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier:"TreeViewCell")
         }
 
-        let idx = indexPath.indexAtPosition(1)
+        let idx = indexPath.item
 
         if idx < _nodeIndex.count {
             let node = _nodeIndex[idx]
@@ -77,20 +77,20 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
         return cell!
     }
 
-    func expand( node: TreeTableDataNode ) -> Int {
+    func expand( _ node: TreeTableDataNode ) -> Int {
 
         let item = node.item
         var count : Int = 0
 
         item.children.forEach( { (subItem: TreeItem) -> Void in
             self.addVisibleItem(subItem, parentNode: node)
-            ++count
+            count += 1
         })
 
         return count
     }
 
-    func collapse( node: TreeTableDataNode ) -> Int {
+    func collapse( _ node: TreeTableDataNode ) -> Int {
 
         let count : Int = node.getSubNodesCount()
 
@@ -100,7 +100,7 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
         return count
     }
 
-    func addVisibleItem( item: TreeItem, parentNode: TreeTableDataNode! ) {
+    func addVisibleItem( _ item: TreeItem, parentNode: TreeTableDataNode! ) {
 
         if let parent = parentNode {
             parent.add( TreeTableDataNode(item: item, level: parent.level+1) )
@@ -118,7 +118,7 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
 
     func rebuildIndex() {
 
-        _nodeIndex.removeAll(keepCapacity: true)
+        _nodeIndex.removeAll(keepingCapacity: true)
 
         for node in _nodes {
 
@@ -134,7 +134,7 @@ class TreeTableDataSource : NSObject, UITableViewDataSource {
 
     func invalidate() {
 
-        _nodes.removeAll(keepCapacity: true)
+        _nodes.removeAll(keepingCapacity: true)
 
         _root.forEach( { (item: TreeItem) -> Void in
             self._nodes.append( TreeTableDataNode(item: item, level: 0) )

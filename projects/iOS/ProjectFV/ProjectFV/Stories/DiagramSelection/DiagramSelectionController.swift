@@ -18,9 +18,9 @@ class DiagramSelectionController : UIViewController, UITableViewDelegate {
         _tableView.dataSource = _dataSource
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let name = _dataSource.getDiagramAtIndex(indexPath.indexAtPosition(1))
+        let name = _dataSource.getDiagramAtIndex(indexPath.item)
         debugPrint("diagram selected :\(name)")
         
         Application.instance().actionsBus.send( DiagramSelectedAction(name: name, sender: self) )

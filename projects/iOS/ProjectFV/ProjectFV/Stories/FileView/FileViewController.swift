@@ -20,7 +20,7 @@ class FileViewController : UIViewController {
         }
     }
  
-    init( fileURL : NSURL ) {
+    init( fileURL : URL ) {
         
         _fileURL = fileURL
         
@@ -34,22 +34,22 @@ class FileViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let bundle = NSBundle.mainBundle();
+        let bundle = Bundle.main;
         let app = Application.instance();
         
-        if let  url = bundle.URLForResource("index", withExtension: "html", subdirectory: "EmbeddedRes/CodeSite") {
+        if let  url = bundle.url(forResource: "index", withExtension: "html", subdirectory: "EmbeddedRes/CodeSite") {
         
             let filePath = _fileURL.absoluteString
             let indexPath = url.absoluteString
                 
-            if let  components = NSURLComponents(string: indexPath)  {
+            if var  components = URLComponents(string: indexPath)  {
 
                 var queryString = "file=\(filePath)"
 
 //                components.query = "file=\(filePath)"
 
                 if let  question = app.searchQuestion,
-                        questionURL = question.fileURL {
+                        let questionURL = question.fileURL {
 
                     if questionURL == _fileURL {
                         _itemFound = true
@@ -63,8 +63,8 @@ class FileViewController : UIViewController {
                 components.query = queryString
 
 
-                if let componentsURL = components.URL {
-                    let request = NSURLRequest(URL: componentsURL)
+                if let componentsURL = components.url {
+                    let request = URLRequest(url: componentsURL)
 
                     _webView.loadRequest(request)
                 }
@@ -75,20 +75,20 @@ class FileViewController : UIViewController {
 
     }
   
-    @IBAction func onBack(sender: AnyObject) {
+    @IBAction func onBack(_ sender: AnyObject) {
         if _itemFound {
             let app = Application.instance()
             app.executeNextStep()
         }
         else if let handler = _backEventHandler {
-            handler(sender: self, args: nil)
+            handler(self, nil)
         }
     }
     
     @IBOutlet weak var _webView: UIWebView!
     @IBOutlet weak var _backBtn: UIButton!
     
-    var _fileURL : NSURL
+    var _fileURL : URL
     var _backEventHandler : EventHandler!
     var _itemFound : Bool = false
 }

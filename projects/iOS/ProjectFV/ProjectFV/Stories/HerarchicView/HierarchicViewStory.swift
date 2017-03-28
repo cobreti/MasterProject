@@ -33,7 +33,7 @@ class HierarchicViewStory : Story {
         _controller = HierarchicViewController(nibName: "HierarchicView", bundle: nil)
     }
 
-    override func onAction(action: Action) {
+    override func onAction(_ action: Action) {
 
         switch action.id {
 

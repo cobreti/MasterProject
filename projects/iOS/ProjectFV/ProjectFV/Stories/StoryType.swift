@@ -6,6 +6,6 @@
 import Foundation
 
 enum StoryType {
-    case Default
-    case Modal
+    case `default`
+    case modal
 }

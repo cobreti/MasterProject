@@ -10,8 +10,8 @@ import Foundation
 
 protocol DiagramViewsManagerDelegate {
     
-    func onDiagramViewActivated(    oldDiagramView: DiagramViewController!,
+    func onDiagramViewActivated(    _ oldDiagramView: DiagramViewController!,
                                     newDiagramView: DiagramViewController )
     
-    func onDiagramViewDeactivated( diagramView: DiagramViewController )
+    func onDiagramViewDeactivated( _ diagramView: DiagramViewController )
 }

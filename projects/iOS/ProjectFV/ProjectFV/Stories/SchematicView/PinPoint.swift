@@ -11,7 +11,7 @@ import Shapes
 
 class PinPoint : Shapes.Point {
     
-    func ptOfRect( rc : Rect ) -> Point {
+    func ptOfRect( _ rc : Rect ) -> Point {
         
         return Point(x: rc.size.width * self.x + rc.left, y: rc.size.height * self.y + rc.top )
     }

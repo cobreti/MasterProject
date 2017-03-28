@@ -9,10 +9,10 @@
 import Foundation
 import Shapes
 
-public class Link : Primitive {
+open class Link : Primitive {
     
     
-    public var to : LinkEndPoint! {
+    open var to : LinkEndPoint! {
         get {
             return _to
         }
@@ -21,7 +21,7 @@ public class Link : Primitive {
         }
     }
     
-    public var from : LinkEndPoint! {
+    open var from : LinkEndPoint! {
         get {
             return _from
         }
@@ -30,19 +30,19 @@ public class Link : Primitive {
         }
     }
 
-    public var type : LinkType {
+    open var type : LinkType {
         get {
             return _type
         }
     }
     
-    public var segment : Polyline {
+    open var segment : Polyline {
         get {
             return _segment
         }
     }
 
-    public var captionPos : Point! {
+    open var captionPos : Point! {
         get {
             return _captionPos
         }
@@ -51,7 +51,7 @@ public class Link : Primitive {
         }
     }
 
-    public var multiplicityCaptionPos : Point! {
+    open var multiplicityCaptionPos : Point! {
         get {
             return _multiplicityCaptionPos
         }

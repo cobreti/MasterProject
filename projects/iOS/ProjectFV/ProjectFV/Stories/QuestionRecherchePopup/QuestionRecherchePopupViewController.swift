@@ -27,8 +27,8 @@ class QuestionRecherchePopupViewController : UIViewController {
         }
     }
 
-    @IBAction func onClosePopup(sender: AnyObject) {
-        _closeEventHandler?(sender: self, args: nil)
+    @IBAction func onClosePopup(_ sender: AnyObject) {
+        _closeEventHandler?(self, nil)
     }
 
     @IBOutlet weak var _questionTitle: UILabel!

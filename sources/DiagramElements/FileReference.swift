@@ -8,15 +8,15 @@
 
 import Foundation
 
-public class FileReference {
+open class FileReference {
     
-    public var path: String {
+    open var path: String {
         get {
             return _path
         }
     }
     
-    public var diagramOrigin: String {
+    open var diagramOrigin: String {
         get {
             return _diagramOrigin
         }

@@ -29,5 +29,5 @@ class DiagramSelectedAction : Action {
         super.init(id: ActionIdentifier.DiagramSelected, sender: sender )
     }
     
-    private var _diagramName : String
+    fileprivate var _diagramName : String
 }

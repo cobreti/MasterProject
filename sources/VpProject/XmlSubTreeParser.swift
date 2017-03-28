@@ -17,10 +17,10 @@ class XmlSubTreeParser : XmlElementParser, XmlElementParserDelegate {
         }
     }
     
-    override func onGlobalStartElement( elementName : String,
+    override func onGlobalStartElement( _ elementName : String,
                                         namespaceURI : String?,
                                         qualifiedName : String?,
-                                        attributeDict : [NSObject:AnyObject]) {
+                                        attributeDict : [AnyHashable: Any]) {
         
         _state = XmlParserState(elementName: elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
         
@@ -32,7 +32,7 @@ class XmlSubTreeParser : XmlElementParser, XmlElementParserDelegate {
         }
     }
     
-    override func onGlobalEndElement(   elementName : String,
+    override func onGlobalEndElement(   _ elementName : String,
                                         namespaceURI : String?,
                                         qualifiedName : String? ) {
             
@@ -50,23 +50,23 @@ class XmlSubTreeParser : XmlElementParser, XmlElementParserDelegate {
     }
     
 
-    func onLocalStartElement(   elementName : String,
+    func onLocalStartElement(   _ elementName : String,
                                 namespaceURI : String?,
                                 qualifiedName : String?,
-                                attributeDict : [NSObject:AnyObject]) {
+                                attributeDict : [AnyHashable: Any]) {
     }
 
-    func onLocalEndElement( elementName : String,
+    func onLocalEndElement( _ elementName : String,
                             namespaceURI : String?,
                             qualifiedName : String? ) {
     }
     
-    func onParsingCompleted( elmParser : XmlElementParser ) {
+    func onParsingCompleted( _ elmParser : XmlElementParser ) {
         
         popElementParser(elmParser)
     }
     
-    func pushElementParser( parser : XmlElementParser ) {
+    func pushElementParser( _ parser : XmlElementParser ) {
         _elementParsers.append(parser)
         
         if let state = _state {
@@ -74,7 +74,7 @@ class XmlSubTreeParser : XmlElementParser, XmlElementParserDelegate {
         }
     }
     
-    func popElementParser( parser : XmlElementParser ) {
+    func popElementParser( _ parser : XmlElementParser ) {
         _elementParsers.removeLast()
     }
     

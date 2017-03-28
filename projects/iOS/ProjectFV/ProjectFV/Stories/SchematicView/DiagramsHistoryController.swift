@@ -21,7 +21,7 @@ class DiagramsHistoryController : UIViewController {
         }
     }
 
-    func add(controller: DiagramViewController) {
+    func add(_ controller: DiagramViewController) {
         
         let yPos = _historyControllers.count * (100 + 10)
 
@@ -32,7 +32,7 @@ class DiagramsHistoryController : UIViewController {
         _historyControllers.append(ctrller)
     }
     
-    func remove(controller: DiagramViewController) {
+    func remove(_ controller: DiagramViewController) {
         
         if let l = _historyControllers.last {
             _historyControllers.removeLast()
@@ -40,7 +40,7 @@ class DiagramsHistoryController : UIViewController {
         }
     }
 
-    func onAction(action: Action) {
+    func onAction(_ action: Action) {
 
         switch action.id {
 
@@ -54,9 +54,9 @@ class DiagramsHistoryController : UIViewController {
         }
     }
 
-    func onHistoryDiagramSelected(action: HistoryDiagramSelectedAction) {
+    func onHistoryDiagramSelected(_ action: HistoryDiagramSelectedAction) {
 
-        while let item = _historyControllers.last where item.diagramController !== action.diagramController {
+        while let item = _historyControllers.last, item.diagramController !== action.diagramController {
             _historyControllers.removeLast()
             item.view.removeFromSuperview()
         }

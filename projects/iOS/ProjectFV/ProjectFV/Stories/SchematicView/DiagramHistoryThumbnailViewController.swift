@@ -30,19 +30,19 @@ class DiagramHistoryThumbnailViewController : UIViewController {
 
         _diagramPlaceholder.addSubview(_diagramController.view)
         _diagramController.resetView()
-        _diagramController.viewDrawingMode = .Thumbnail
-        _diagramController.view.userInteractionEnabled = false
+        _diagramController.viewDrawingMode = .thumbnail
+        _diagramController.view.isUserInteractionEnabled = false
 
         _diagramNameLabel.text = _diagramController.diagram?.name
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         _diagramController.view.frame = view.bounds
     }
 
-    @IBAction func onTap(sender: AnyObject) {
+    @IBAction func onTap(_ sender: AnyObject) {
 
         Application.instance().actionsBus.send( HistoryDiagramSelectedAction(controller: _diagramController, sender: self) )
     }

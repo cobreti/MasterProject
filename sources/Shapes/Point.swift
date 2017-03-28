@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class Point {
+open class Point {
 
-    public var x : CGFloat {
+    open var x : CGFloat {
         get {
             return _x
         }
@@ -19,7 +19,7 @@ public class Point {
         }
     }
     
-    public var y : CGFloat {
+    open var y : CGFloat {
         get {
             return _y
         }
@@ -38,6 +38,6 @@ public class Point {
         _y = pt.y
     }
     
-    private var _x : CGFloat
-    private var _y : CGFloat
+    fileprivate var _x : CGFloat
+    fileprivate var _y : CGFloat
 }

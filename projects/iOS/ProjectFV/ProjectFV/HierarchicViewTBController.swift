@@ -22,7 +22,7 @@ class HierarchicViewTBController : UIViewController {
         }
     }
     
-    @IBAction func onShowQuestion(sender: AnyObject) {
+    @IBAction func onShowQuestion(_ sender: AnyObject) {
         _showQuestionRechercheDelegate?()
     }
     

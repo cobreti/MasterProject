@@ -7,5 +7,5 @@ import Foundation
 
 protocol RechercheItemControllerDelegate {
 
-    func onItemSelected(item: RechercheItemController)
+    func onItemSelected(_ item: RechercheItemController)
 }

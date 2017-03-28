@@ -17,18 +17,18 @@ class XmlPointParser : XmlElementParser {
         }
     }   
     
-    override func onElementParsingStarting(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onElementParsingStarting(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
 
         super.onElementParsingStarting(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
 
-        let numberFormatter = NSNumberFormatter()
+        let numberFormatter = NumberFormatter()
         
-        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
         
         if let  xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.floatValue,
-                yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.floatValue {
+                let x = numberFormatter.number(from: xStr)?.floatValue,
+                let yStr = attributeDict["y"] as? String,
+                let y = numberFormatter.number(from: yStr)?.floatValue {
         
             _pt = Point(x: CGFloat(x), y: CGFloat(y))
         }

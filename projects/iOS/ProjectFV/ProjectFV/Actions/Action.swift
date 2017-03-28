@@ -19,10 +19,10 @@ class Action {
     
     var header : String {
         get {
-            let formatter = NSDateFormatter()
-            formatter.dateStyle = NSDateFormatterStyle.FullStyle
-            formatter.timeStyle = NSDateFormatterStyle.FullStyle
-            return "[\(formatter.stringFromDate(_timestamp)), \(_id.rawValue)]"
+            let formatter = DateFormatter()
+            formatter.dateStyle = DateFormatter.Style.full
+            formatter.timeStyle = DateFormatter.Style.full
+            return "[\(formatter.string(from: _timestamp)), \(_id.rawValue)]"
         }
     }
     
@@ -44,7 +44,7 @@ class Action {
         }
     }
     
-    var timestamp : NSDate {
+    var timestamp : Date {
         get {
             return _timestamp
         }
@@ -58,12 +58,12 @@ class Action {
     
     init( id: ActionIdentifier, sender: AnyObject! ) {
         _id = id
-        _timestamp = NSDate()
+        _timestamp = Date()
         _sender = sender
     }
     
-    private var _id : ActionIdentifier
-    private var _timestamp : NSDate
-    private var _sender : AnyObject!
+    fileprivate var _id : ActionIdentifier
+    fileprivate var _timestamp : Date
+    fileprivate var _sender : AnyObject!
 }
 

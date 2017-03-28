@@ -18,7 +18,7 @@ class OpenStoryAction : Action {
     
     override var description : String {
         get {
-            return "opening story \(_story.dynamicType)"
+            return "opening story \(type(of: _story))"
         }
     }
     

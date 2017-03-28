@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class Size {
+open class Size {
     
-    public var width : CGFloat {
+    open var width : CGFloat {
         get {
             return _width
         }
@@ -19,7 +19,7 @@ public class Size {
         }
     }
     
-    public var height : CGFloat {
+    open var height : CGFloat {
         get {
             return _height
         }
@@ -33,6 +33,6 @@ public class Size {
         _height = height
     }
     
-    private var _width : CGFloat
-    private var _height : CGFloat
+    fileprivate var _width : CGFloat
+    fileprivate var _height : CGFloat
 }

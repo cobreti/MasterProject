@@ -11,7 +11,7 @@ import UIKit
 
 class MainViewController : UIViewController {
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         let app = Application.instance()

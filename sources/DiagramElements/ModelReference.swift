@@ -5,21 +5,21 @@
 
 import Foundation
 
-public class ModelReference {
+open class ModelReference {
 
-    public var diagramId : String! {
+    open var diagramId : String! {
         get {
             return _diagramId
         }
     }
 
-    public var diagramName : String {
+    open var diagramName : String {
         get {
             return _diagramName
         }
     }
 
-    public var diagramOrigin: String {
+    open var diagramOrigin: String {
         get {
             return _diagramOrigin
         }

@@ -20,40 +20,40 @@ class XmlShapeParser : XmlSubTreeParser {
         
     }
 
-    override func onGlobalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onGlobalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
 
         super.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
 
 
-    override func onGlobalEndElement(elementName: String, namespaceURI: String?, qualifiedName: String?) {
+    override func onGlobalEndElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?) {
 
         super.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
     }
 
     
-    override func onLocalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onLocalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
     }
     
-    override func onElementParsingStarting(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onElementParsingStarting(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
 
         super.onElementParsingStarting(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
 
-        let numberFormatter = NSNumberFormatter()
+        let numberFormatter = NumberFormatter()
         
-        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
         
         if let  id = attributeDict["id"] as? String,
-                name = attributeDict["name"] as? String,
-                xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.floatValue,
-                yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.floatValue,
-                widthStr = attributeDict["width"] as? String,
-                width = numberFormatter.numberFromString(widthStr)?.floatValue,
-                heightStr = attributeDict["height"] as? String,
-                height = numberFormatter.numberFromString(heightStr)?.floatValue,
-                modelId = attributeDict["model"] as? String {
+                let name = attributeDict["name"] as? String,
+                let xStr = attributeDict["x"] as? String,
+                let x = numberFormatter.number(from: xStr)?.floatValue,
+                let yStr = attributeDict["y"] as? String,
+                let y = numberFormatter.number(from: yStr)?.floatValue,
+                let widthStr = attributeDict["width"] as? String,
+                let width = numberFormatter.number(from: widthStr)?.floatValue,
+                let heightStr = attributeDict["height"] as? String,
+                let height = numberFormatter.number(from: heightStr)?.floatValue,
+                let modelId = attributeDict["model"] as? String {
         
             let elm = DiagramElements.Element(ownerDiagram: _diagram)
             

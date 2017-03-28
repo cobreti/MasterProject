@@ -11,7 +11,7 @@ class DisplayGraphItems {
 
     }
 
-    func add(item: DisplayGraphItem) {
+    func add(_ item: DisplayGraphItem) {
         _items.append(item)
 
         if let id = item.id {
@@ -19,18 +19,18 @@ class DisplayGraphItems {
         }
     }
 
-    func get(id: String) -> DisplayGraphItem! {
+    func get(_ id: String) -> DisplayGraphItem! {
         return _itemsById[id]
     }
 
     func clear() {
-        _items.removeAll(keepCapacity: false)
+        _items.removeAll(keepingCapacity: false)
     }
 
-    func forEach( fct: (item: DisplayGraphItem) -> Void ) {
+    func forEach( _ fct: (_ item: DisplayGraphItem) -> Void ) {
 
         for item in _items {
-            fct(item: item)
+            fct(item)
         }
     }
 

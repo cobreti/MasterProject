@@ -49,7 +49,7 @@ class SubDiagramPortal {
     func pickElm() {
         
         if let  diagram = _view.diagram,
-                pinPt = _view.pinPoint {
+                let pinPt = _view.pinPoint {
                 
             for (_, prim) in diagram.primitives {
                 
@@ -59,8 +59,8 @@ class SubDiagramPortal {
 
                     if portalRect.contains(pinPt) {
                         if let  model = _view.diagramDocument?.models.get(elm.modelId),
-                                ref = model.subDiagrams.getForParentDiagram(diagram.name),
-                                subDiagram = _view.diagramDocument?.diagrams.get(ref.diagramName) where !_parentController.diagramViewsManager.contains(ref.diagramName) {
+                                let ref = model.subDiagrams.getForParentDiagram(diagram.name),
+                                let subDiagram = _view.diagramDocument?.diagrams.get(ref.diagramName), !_parentController.diagramViewsManager.contains(ref.diagramName) {
                                 
                             _element = elm
                             _subDiagram = subDiagram
@@ -91,8 +91,8 @@ class SubDiagramPortal {
                 
                 if _controller == nil {
                     _controller = DiagramViewController(parentController: _parentController, diagram: _subDiagram, originModelId: elm.modelId)
-                    _controller.view?.userInteractionEnabled = false
-                    _controller.viewDrawingMode = .Thumbnail
+                    _controller.view?.isUserInteractionEnabled = false
+                    _controller.viewDrawingMode = .thumbnail
                     _view.addSubview(_controller.view)
                 }
 

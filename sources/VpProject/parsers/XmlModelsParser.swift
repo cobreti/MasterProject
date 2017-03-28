@@ -24,17 +24,17 @@ class XmlModelsParser : XmlSubTreeParser {
         _parent = parent
     }
 
-    override func onGlobalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onGlobalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
         
         super.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
 
-    override func onGlobalEndElement(elementName: String, namespaceURI: String?, qualifiedName: String?) {
+    override func onGlobalEndElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?) {
                 
         super.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
     }
     
-    override func onLocalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onLocalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
         
         switch elementName {
             case "Model":

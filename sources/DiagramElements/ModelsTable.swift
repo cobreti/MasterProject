@@ -8,18 +8,18 @@
 
 import Foundation
 
-public class ModelsTable {
+open class ModelsTable {
     
     public init() {
         
     }
     
-    public func add( model : Model ) {
+    open func add( _ model : Model ) {
         
         _models[model.id] = model
     }
     
-    public func get( id : String ) -> Model! {
+    open func get( _ id : String ) -> Model! {
         
         if let _ = _models[id] {
             return _models[id]
@@ -37,9 +37,9 @@ public class ModelsTable {
         return nil
     }
 
-    public func clear() {
-        _models.removeAll(keepCapacity: false)
+    open func clear() {
+        _models.removeAll(keepingCapacity: false)
     }
         
-    private var _models : [String : Model] = [:]
+    fileprivate var _models : [String : Model] = [:]
 }

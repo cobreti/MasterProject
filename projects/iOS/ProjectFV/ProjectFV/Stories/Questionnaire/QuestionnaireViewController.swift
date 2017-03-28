@@ -74,12 +74,12 @@ class QuestionnaireViewController : UIViewController {
         _scrollView.contentSize = CGSize(width: cs.width, height: _nextYPos + 400)
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
     }
 
-    @IBAction func onContinue(sender: AnyObject) {
+    @IBAction func onContinue(_ sender: AnyObject) {
 
         for question in _questions {
             question.writeAnswer()
@@ -89,7 +89,7 @@ class QuestionnaireViewController : UIViewController {
 //        Application.instance().stories.push( RechercheSelectionStory() )
     }
 
-    func addQuestion(question: Question) {
+    func addQuestion(_ question: Question) {
 
         let controller = QuestionController(question: question)
 
@@ -103,30 +103,30 @@ class QuestionnaireViewController : UIViewController {
 
         _scrollView.addConstraint(
         NSLayoutConstraint( item: controller.view,
-                attribute: NSLayoutAttribute.Left,
-                relatedBy: NSLayoutRelation.Equal,
+                attribute: NSLayoutAttribute.left,
+                relatedBy: NSLayoutRelation.equal,
                 toItem: _scrollView,
-                attribute: NSLayoutAttribute.Left,
+                attribute: NSLayoutAttribute.left,
                 multiplier: 1.0,
                 constant: 20)
         )
 
         _scrollView.addConstraint(
         NSLayoutConstraint( item: controller.view,
-                attribute: NSLayoutAttribute.Width,
-                relatedBy: NSLayoutRelation.Equal,
+                attribute: NSLayoutAttribute.width,
+                relatedBy: NSLayoutRelation.equal,
                 toItem: _scrollView,
-                attribute: NSLayoutAttribute.Width,
+                attribute: NSLayoutAttribute.width,
                 multiplier: 1.0,
                 constant: -40)
         )
 
         _scrollView.addConstraint(
             NSLayoutConstraint( item: controller.view,
-                    attribute: NSLayoutAttribute.Height,
-                    relatedBy: NSLayoutRelation.Equal,
+                    attribute: NSLayoutAttribute.height,
+                    relatedBy: NSLayoutRelation.equal,
                     toItem: nil,
-                    attribute: NSLayoutAttribute.NotAnAttribute,
+                    attribute: NSLayoutAttribute.notAnAttribute,
                     multiplier: 1.0,
                     constant: 250)
         )
@@ -134,10 +134,10 @@ class QuestionnaireViewController : UIViewController {
         if let prevController = _questions.last {
             _scrollView.addConstraint(
                 NSLayoutConstraint( item: controller.view,
-                        attribute: NSLayoutAttribute.Top,
-                        relatedBy: NSLayoutRelation.Equal,
+                        attribute: NSLayoutAttribute.top,
+                        relatedBy: NSLayoutRelation.equal,
                         toItem: prevController.view,
-                        attribute: NSLayoutAttribute.Bottom,
+                        attribute: NSLayoutAttribute.bottom,
                         multiplier: 1.0,
                         constant: 20)
             )
@@ -145,10 +145,10 @@ class QuestionnaireViewController : UIViewController {
         else {
             _scrollView.addConstraint(
                 NSLayoutConstraint( item: controller.view,
-                        attribute: NSLayoutAttribute.Top,
-                        relatedBy: NSLayoutRelation.Equal,
+                        attribute: NSLayoutAttribute.top,
+                        relatedBy: NSLayoutRelation.equal,
                         toItem: _scrollView,
-                        attribute: NSLayoutAttribute.Top,
+                        attribute: NSLayoutAttribute.top,
                         multiplier: 1.0,
                         constant: 0)
             )

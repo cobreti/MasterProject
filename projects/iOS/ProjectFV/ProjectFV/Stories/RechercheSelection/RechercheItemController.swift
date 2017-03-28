@@ -46,7 +46,7 @@ class RechercheItemController : UIViewController {
         super.init(nibName: "RechercheItem", bundle:nil)
     }
 
-    @IBAction func onTap(sender: AnyObject) {
+    @IBAction func onTap(_ sender: AnyObject) {
 
         delegate?.onItemSelected(self)
 //        view.backgroundColor = UIColor.lightGrayColor()

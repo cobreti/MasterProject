@@ -8,23 +8,23 @@ import UIKit
 
 class PresentationPageViewController : UIViewController {
 
-    @IBAction func onStart(sender: AnyObject) {
+    @IBAction func onStart(_ sender: AnyObject) {
         Application.instance().actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let bundle = NSBundle.mainBundle();
+        let bundle = Bundle.main;
 
-        if let  url = bundle.URLForResource("index", withExtension: "html", subdirectory: "EmbeddedRes/presentation") {
+        if let  url = bundle.url(forResource: "index", withExtension: "html", subdirectory: "EmbeddedRes/presentation") {
 
             let indexPath = url.absoluteString
 
-            if let components = NSURLComponents(string: indexPath)  {
+            if let components = URLComponents(string: indexPath)  {
 
-                if let componentsURL = components.URL {
-                    let request = NSURLRequest(URL: componentsURL)
+                if let componentsURL = components.url {
+                    let request = URLRequest(url: componentsURL)
 
                     _webView.loadRequest(request)
                 }

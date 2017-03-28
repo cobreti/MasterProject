@@ -17,7 +17,7 @@ class DisplayGraphItem {
         }
     }
 
-    func draw(  params: DisplayGraphDrawParams ) {
+    func draw(  _ params: DisplayGraphDrawParams ) {
 
     }
 

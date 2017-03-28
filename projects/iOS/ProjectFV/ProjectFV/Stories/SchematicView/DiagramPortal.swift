@@ -81,7 +81,7 @@ class DiagramPortal {
         _pinPoint = PinPoint(x: _diagramBox.midX, y: _diagramBox.midY)
     }
     
-    func alignWithViewPinPoint( viewPinPoint: PinPoint ) {
+    func alignWithViewPinPoint( _ viewPinPoint: PinPoint ) {
         
         let factor = _zoom * _scaling
         
@@ -102,7 +102,7 @@ class DiagramPortal {
         debugPrint("dx = \(dx)   dy = \(dy)")
     }
     
-    func rectFromDiagramToPortal( rc : Rect ) -> Rect {
+    func rectFromDiagramToPortal( _ rc : Rect ) -> Rect {
         
         return Rect(
             x: (rc.left * _scaling * _zoom) + _margins.left + _translation.x + _offset.x,
@@ -111,7 +111,7 @@ class DiagramPortal {
             height: rc.size.height * _scaling * _zoom )
     }
     
-    func pointFromViewToPortal( pt: Point ) -> Point {
+    func pointFromViewToPortal( _ pt: Point ) -> Point {
         let factor = _scaling * _zoom
     
         return Point(
@@ -120,14 +120,14 @@ class DiagramPortal {
         )
     }
     
-    func pointFromPortalToDiagram( pt: Point ) -> Point {
+    func pointFromPortalToDiagram( _ pt: Point ) -> Point {
         return Point(
             x: (pt.x - _margins.left - _translation.x) / (_zoom * _scaling) - _offset.x,
             y: (pt.y - _margins.top - _translation.y) / (_zoom * _scaling) - _offset.y
         )
     }
     
-    func pointFromDiagramToPortal( pt : Point ) -> Point {
+    func pointFromDiagramToPortal( _ pt : Point ) -> Point {
         
         return Point(
             x: (pt.x ) * _scaling * _zoom + _margins.left + _translation.x + _offset.x,
@@ -135,15 +135,15 @@ class DiagramPortal {
         )
     }
     
-    private var _area : Rect
-    private var _diagramBox : Rect
-    private var _boundingBox : Rect
-    private var _margins : Margins = Margins(left: 10, top: 10, right: 10, bottom: 10)
-    private var _offset : Point
-    private var _scaling : CGFloat = 1.0
+    fileprivate var _area : Rect
+    fileprivate var _diagramBox : Rect
+    fileprivate var _boundingBox : Rect
+    fileprivate var _margins : Margins = Margins(left: 10, top: 10, right: 10, bottom: 10)
+    fileprivate var _offset : Point
+    fileprivate var _scaling : CGFloat = 1.0
     
-    private var _zoom : CGFloat = 1.0
-    private var _translation : Point
-    private var _pinPoint : PinPoint
+    fileprivate var _zoom : CGFloat = 1.0
+    fileprivate var _translation : Point
+    fileprivate var _pinPoint : PinPoint
 }
 

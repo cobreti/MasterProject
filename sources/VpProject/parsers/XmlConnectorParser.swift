@@ -20,16 +20,16 @@ class XmlConnectorParser : XmlSubTreeParser {
         
     }
     
-    override func onGlobalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onGlobalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
         
         super.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
     
-    override func onGlobalEndElement(elementName: String, namespaceURI: String?, qualifiedName: String?) {
+    override func onGlobalEndElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?) {
         super.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
     }
     
-    override func onLocalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onLocalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
         
         switch elementName {
             case "Points":
@@ -37,23 +37,23 @@ class XmlConnectorParser : XmlSubTreeParser {
                     pushElementParser(XmlPointsParser(name: "Points", link: lnk, delegate: self))
                 }
             case "Caption":
-                let formatter = NSNumberFormatter()
+                let formatter = NumberFormatter()
 
                 if let  xStr = attributeDict["x"] as? String,
-                        yStr = attributeDict["y"] as? String,
-                        x = formatter.numberFromString(xStr)?.floatValue,
-                        y = formatter.numberFromString(yStr)?.floatValue,
-                        lnk = _lnk {
+                        let yStr = attributeDict["y"] as? String,
+                        let x = formatter.number(from: xStr)?.floatValue,
+                        let y = formatter.number(from: yStr)?.floatValue,
+                        let lnk = _lnk {
                     lnk.captionPos = Point(x: CGFloat(x), y: CGFloat(y))
                 }
             case "MultiplicityCaption":
-                let formatter = NSNumberFormatter()
+                let formatter = NumberFormatter()
 
                 if let  xStr = attributeDict["x"] as? String,
-                        yStr = attributeDict["y"] as? String,
-                        x = formatter.numberFromString(xStr)?.floatValue,
-                        y = formatter.numberFromString(yStr)?.floatValue,
-                        lnk = _lnk {
+                        let yStr = attributeDict["y"] as? String,
+                        let x = formatter.number(from: xStr)?.floatValue,
+                        let y = formatter.number(from: yStr)?.floatValue,
+                        let lnk = _lnk {
                     lnk.multiplicityCaptionPos = Point(x: CGFloat(x), y: CGFloat(y))
                 }
             default:
@@ -61,27 +61,27 @@ class XmlConnectorParser : XmlSubTreeParser {
         }
     }
     
-    override func onElementParsingStarting(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onElementParsingStarting(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
 
         super.onElementParsingStarting(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
         
-        let numberFormatter = NSNumberFormatter()
+        let numberFormatter = NumberFormatter()
         
-        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
         
         if let  id = attributeDict["id"] as? String,
-                xStr = attributeDict["x"] as? String,
-                x = numberFormatter.numberFromString(xStr)?.floatValue,
-                yStr = attributeDict["y"] as? String,
-                y = numberFormatter.numberFromString(yStr)?.floatValue,
-                widthStr = attributeDict["width"] as? String,
-                width = numberFormatter.numberFromString(widthStr)?.floatValue,
-                heightStr = attributeDict["height"] as? String,
-                height = numberFormatter.numberFromString(heightStr)?.floatValue,
-                to = attributeDict["to"] as? String,
-                from = attributeDict["from"] as? String,
-                modelId = attributeDict["model"] as? String,
-                shapeType = attributeDict["shapeType"] as? String {
+                let xStr = attributeDict["x"] as? String,
+                let x = numberFormatter.number(from: xStr)?.floatValue,
+                let yStr = attributeDict["y"] as? String,
+                let y = numberFormatter.number(from: yStr)?.floatValue,
+                let widthStr = attributeDict["width"] as? String,
+                let width = numberFormatter.number(from: widthStr)?.floatValue,
+                let heightStr = attributeDict["height"] as? String,
+                let height = numberFormatter.number(from: heightStr)?.floatValue,
+                let to = attributeDict["to"] as? String,
+                let from = attributeDict["from"] as? String,
+                let modelId = attributeDict["model"] as? String,
+                let shapeType = attributeDict["shapeType"] as? String {
 
                 var lnkType = LinkType.unknown
 

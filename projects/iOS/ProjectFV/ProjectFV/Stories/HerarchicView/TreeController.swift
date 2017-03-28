@@ -31,11 +31,11 @@ class TreeController : NSObject, UITableViewDelegate {
         _table?.reloadData()
     }
 
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         if let node = _dataSource.getNodeFromIndexPath(indexPath) {
 
-            let startIndex = indexPath.indexAtPosition(1) + 1
+            let startIndex = indexPath.item + 1
             let actionsBus = Application.instance().actionsBus
 
             if node.hasChildren {
@@ -43,18 +43,18 @@ class TreeController : NSObject, UITableViewDelegate {
                 actionsBus.send( TreeItemCollapsed(node: node, sender: self) )
 
                 let removedCount = _dataSource.collapse(node)
-                let indexes: [NSIndexPath] = createIndexPaths( startIndex, count: removedCount )
+                let indexes: [IndexPath] = createIndexPaths( startIndex, count: removedCount )
 
-                _table?.deleteRowsAtIndexPaths(indexes, withRowAnimation: UITableViewRowAnimation.Top)
+                _table?.deleteRows(at: indexes, with: UITableViewRowAnimation.top)
             }
             else if node.item.children.count > 0 {
 
                 actionsBus.send( TreeItemExpanded(node: node, sender:self) )
 
                 let addedCount = _dataSource.expand(node)
-                let indexes: [NSIndexPath] = createIndexPaths( startIndex, count: addedCount )
+                let indexes: [IndexPath] = createIndexPaths( startIndex, count: addedCount )
 
-                _table?.insertRowsAtIndexPaths(indexes, withRowAnimation: UITableViewRowAnimation.Bottom)
+                _table?.insertRows(at: indexes, with: UITableViewRowAnimation.bottom)
             }
             else {
 
@@ -65,12 +65,12 @@ class TreeController : NSObject, UITableViewDelegate {
         }
     }
 
-    func createIndexPaths( startIndex: Int, count: Int ) -> [NSIndexPath] {
+    func createIndexPaths( _ startIndex: Int, count: Int ) -> [IndexPath] {
 
-        var indexes : [NSIndexPath] = []
+        var indexes : [IndexPath] = []
 
-        for (var idx : Int = 0; idx < count; ++idx) {
-            let index = NSIndexPath(indexes: [0, idx + startIndex], length: 2)
+        for idx in 0 ..< count {
+            let index = NSIndexPath(indexes: [0, idx + startIndex], length: 2) as IndexPath
             indexes.append(index)
         }
 

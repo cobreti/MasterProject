@@ -44,7 +44,7 @@ class DisplayGraphDrawParams {
         }
     }
 
-    init(ctx: CGContext, portal: DiagramPortal, drawingMode: ViewDrawingMode = .Normal) {
+    init(ctx: CGContext, portal: DiagramPortal, drawingMode: ViewDrawingMode = .normal) {
         _context = ctx
         _portal = portal
         _drawingMode = drawingMode

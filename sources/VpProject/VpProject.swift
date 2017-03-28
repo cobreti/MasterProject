@@ -6,7 +6,7 @@
 import Foundation
 import DiagramElements
 
-public class VpProject {
+open class VpProject {
 
     public init( document : DiagramElements.Document! = nil ) {
 
@@ -18,7 +18,7 @@ public class VpProject {
         }
     }
 
-    public func load( url : NSURL ) {
+    open func load( _ url : URL ) {
 
         let parser = XmlDocParser(doc: _document)
         parser.parse(url)

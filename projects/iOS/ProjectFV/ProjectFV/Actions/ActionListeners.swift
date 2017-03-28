@@ -12,21 +12,22 @@ class ActionListeners {
 
     typealias ListenerId = Int
     
-    func add( listener: ActionListener ) -> ListenerId {
+    func add( _ listener: ActionListener ) -> ListenerId {
         
-        let id = _nextId++
+        let id : ListenerId = _nextId + 1
+        _nextId += 1
         _listeners[id] = listener
         
         return id
     }
     
-    func send(action: Action) {
+    func send(_ action: Action) {
         
         for (_, listener) in _listeners {
             listener.onAction(action)
         }
     }
     
-    private var _nextId : ListenerId = 1
-    private var _listeners : [ListenerId:ActionListener] = [:]
+    fileprivate var _nextId : ListenerId = 1
+    fileprivate var _listeners : [ListenerId:ActionListener] = [:]
 }

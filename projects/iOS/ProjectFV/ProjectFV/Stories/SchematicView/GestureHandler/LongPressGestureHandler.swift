@@ -19,14 +19,14 @@ class LongPressGestureHandler : BaseGestureHandler {
     }
 
 
-    func onLongPress(sender: UILongPressGestureRecognizer) {
+    func onLongPress(_ sender: UILongPressGestureRecognizer) {
 
         if !enabled {
             return
         }
 
         if let _ = view.diagram {
-            let ptInView = sender.locationInView(view)
+            let ptInView = sender.location(in: view)
 
             let diagPt = portal.pointFromViewToPortal(Point(x: ptInView.x, y: ptInView.y))
 
@@ -34,13 +34,13 @@ class LongPressGestureHandler : BaseGestureHandler {
 
             switch sender.state {
 
-                case UIGestureRecognizerState.Began:
+                case UIGestureRecognizerState.began:
                     actionBus.send( LongPressAction(pt: diagPt, state: .Began, sender: self))
                     break
-                case UIGestureRecognizerState.Ended:
+                case UIGestureRecognizerState.ended:
                     actionBus.send( LongPressAction(pt: diagPt, state: .Ended, sender: self))
                     break
-                case UIGestureRecognizerState.Cancelled:
+                case UIGestureRecognizerState.cancelled:
                     actionBus.send( LongPressAction(pt: diagPt, state: .Cancelled, sender: self))
                     break
                 default:

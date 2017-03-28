@@ -10,7 +10,7 @@ class QuestionRecherchePopupStory : Story {
 
     override var type: StoryType {
         get {
-            return StoryType.Modal
+            return StoryType.modal
         }
     }
 
@@ -27,7 +27,7 @@ class QuestionRecherchePopupStory : Story {
         _controller.closeEventHandler = onClosePopup
     }
 
-    func onClosePopup(sender: AnyObject, args: [String:AnyObject]!) {
+    func onClosePopup(_ sender: AnyObject, args: [String:AnyObject]!) {
         Application.instance().actionsBus.send( CloseStoryAction(story: self, sender: self) )
     }
 

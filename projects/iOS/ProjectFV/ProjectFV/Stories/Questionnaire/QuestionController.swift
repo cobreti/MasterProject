@@ -27,8 +27,8 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
 
         _answerChoices?.dataSource = self
         _answerChoices?.delegate = self
-        _otherField?.hidden = true
-        _otherFieldFrame?.hidden = true
+        _otherField?.isHidden = true
+        _otherFieldFrame?.isHidden = true
     }
 
     func writeAnswer() {
@@ -53,45 +53,45 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return _question.answerCount
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         debugPrint("index at path = \(indexPath)")
 
-        let answer = _question.get(indexPath.indexAtPosition(1))
+        let answer = _question.get(indexPath.item)
 
-        if let reusableCell = tableView.dequeueReusableCellWithIdentifier("DiagramSelection") {
+        if let reusableCell = tableView.dequeueReusableCell(withIdentifier: "DiagramSelection") {
 
             reusableCell.textLabel?.text = answer.text
-            if let selection = _selectedIndex where indexPath == selection {
-                reusableCell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            if let selection = _selectedIndex, indexPath == selection {
+                reusableCell.accessoryType = UITableViewCellAccessoryType.checkmark
             }
             return reusableCell
         }
 
         let cell = UITableViewCell()
         cell.textLabel?.text = answer.text
-        if let selection = _selectedIndex where indexPath == selection {
-            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        if let selection = _selectedIndex, indexPath == selection {
+            cell.accessoryType = UITableViewCellAccessoryType.checkmark
             _currentAnswer = answer
-            _otherField.hidden = !answer.useOtherField
-            _otherFieldFrame.hidden = !answer.useOtherField
+            _otherField.isHidden = !answer.useOtherField
+            _otherFieldFrame.isHidden = !answer.useOtherField
         }
 
         return cell
     }
 
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         _selectedIndex = indexPath
         _currentAnswer = nil
 
         _answerChoices.reloadData()
     }
 
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 
     }
 
@@ -102,6 +102,6 @@ class QuestionController : UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var _questionLabel: UILabel!
 
     var _question: Question
-    var _selectedIndex: NSIndexPath!
+    var _selectedIndex: IndexPath!
     var _currentAnswer : AnswerChoice!
 }

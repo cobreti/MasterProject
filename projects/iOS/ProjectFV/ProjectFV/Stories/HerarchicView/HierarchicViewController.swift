@@ -30,37 +30,37 @@ class HierarchicViewController : UIViewController {
 
     func parseSourceFolders() {
 
-        let fm = NSFileManager()
-        let bundle = NSBundle.mainBundle()
+        let fm = FileManager()
+        let bundle = Bundle.main
         let doc = Application.instance().document
 
         if let  projectName = doc.projectName,
-                url = bundle.URLForResource(projectName, withExtension: "", subdirectory: "EmbeddedRes/CodeSite") {
+                let url = bundle.url(forResource: projectName, withExtension: "", subdirectory: "EmbeddedRes/CodeSite") {
 
             let relPath = "EmbeddedRes/CodeSite/\(projectName)"
             _ = parseSourceFolderAtUrl(fm, url: url, group: _treeController.root, relPath: relPath)
         }
     }
 
-    func parseSourceFolderAtUrl(fileManager: NSFileManager, url: NSURL, group: TreeItems, relPath: String) {
+    func parseSourceFolderAtUrl(_ fileManager: FileManager, url: URL, group: TreeItems, relPath: String) {
 
         debugPrint("parsing content of '\(url)")
 
-        var folders : [NSURL] = []
-        var files : [NSURL] = []
+        var folders : [URL] = []
+        var files : [URL] = []
 
         do {
             
-            let content = try fileManager.contentsOfDirectoryAtURL(  url,
+            let content = try fileManager.contentsOfDirectory(  at: url,
                                                                 includingPropertiesForKeys: nil,
-                                                                options: NSDirectoryEnumerationOptions.SkipsHiddenFiles )
+                                                                options: FileManager.DirectoryEnumerationOptions.skipsHiddenFiles )
 
             for item in content {
 
                 do {
-                    _ = try fileManager.contentsOfDirectoryAtURL(   item,
+                    _ = try fileManager.contentsOfDirectory(   at: item,
                                                                     includingPropertiesForKeys: nil,
-                                                                    options: NSDirectoryEnumerationOptions.SkipsHiddenFiles )
+                                                                    options: FileManager.DirectoryEnumerationOptions.skipsHiddenFiles )
                     folders.append(item)
                 }
                 catch _ {
@@ -75,26 +75,25 @@ class HierarchicViewController : UIViewController {
 
         for folder in folders {
 
-            if let component = folder.lastPathComponent {
-                let subPath: String = relPath + "/\(component)"
-                let item = TreeItem(name: component, path: subPath)
-                group.add(item)
+            let component = folder.lastPathComponent
+            let subPath: String = relPath + "/\(component)"
+            let item = TreeItem(name: component, path: subPath)
+            group.add(item)
 
-                parseSourceFolderAtUrl(fileManager, url: folder, group: item.children, relPath: subPath)
-            }
+            parseSourceFolderAtUrl(fileManager, url: folder, group: item.children, relPath: subPath)
         }
 
         for file in files {
 
-            if let component = file.lastPathComponent {
-                let subPath: String = relPath + "/\(component)"
-                let item = TreeItem(name: component, path: subPath)
-                group.add(item)
-            }
+            let component = file.lastPathComponent
+            let subPath: String = relPath + "/\(component)"
+            let item = TreeItem(name: component, path: subPath)
+            group.add(item)
+        
         }
     }
 
-    @IBAction func onHome(sender: AnyObject) {
+    @IBAction func onHome(_ sender: AnyObject) {
 
         let app = Application.instance()
 

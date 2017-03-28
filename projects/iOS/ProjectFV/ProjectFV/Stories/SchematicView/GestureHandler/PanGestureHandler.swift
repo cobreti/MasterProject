@@ -24,7 +24,7 @@ class PanGestureHandler : BaseGestureHandler {
         self.view.addGestureRecognizer(panRecognizer)
     }
     
-    func onPan( sender : UIPanGestureRecognizer ) {
+    func onPan( _ sender : UIPanGestureRecognizer ) {
     
         if !enabled {
             return
@@ -33,19 +33,19 @@ class PanGestureHandler : BaseGestureHandler {
         let actionsBus = Application.instance().actionsBus
     
         switch sender.state {
-            case UIGestureRecognizerState.Began:
-                _startPt = sender.translationInView(self.view)
+            case UIGestureRecognizerState.began:
+                _startPt = sender.translation(in: self.view)
                 _originalTranslation = self.portal.translation
                 actionsBus.send( PanDiagramAction(translation: self.portal.translation, state: .Began, sender: self) )
                 break
-            case UIGestureRecognizerState.Changed:
-                let pt = sender.translationInView(self.view)
+            case UIGestureRecognizerState.changed:
+                let pt = sender.translation(in: self.view)
                 let transform = Point(pt: _originalTranslation)
                 transform.x += pt.x // / self.portal.scalingFactor
                 transform.y += pt.y // / self.portal.scalingFactor
                 actionsBus.send( PanDiagramAction(translation: transform, state: .Changed, sender: self) )
                 break
-            case UIGestureRecognizerState.Ended:
+            case UIGestureRecognizerState.ended:
                 actionsBus.send( PanDiagramAction(translation: self.portal.translation, state: .Ended, sender: self) )
             default:
                 break

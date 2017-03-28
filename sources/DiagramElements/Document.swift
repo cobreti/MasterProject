@@ -5,15 +5,15 @@
 
 import Foundation
 
-public class Document {
+open class Document {
 
-    public var diagrams : Diagrams {
+    open var diagrams : Diagrams {
         get {
             return _layers
         }
     }
     
-    public var filesPathRoot : String! {
+    open var filesPathRoot : String! {
         get {
             return _filesPathRoot
         }
@@ -22,13 +22,13 @@ public class Document {
         }
     }
     
-    public var models : ModelsTable {
+    open var models : ModelsTable {
         get {
             return _models
         }
     }
 
-    public var projectName : String! {
+    open var projectName : String! {
         get {
             return _projectName
         }
@@ -37,7 +37,7 @@ public class Document {
         }
     }
 
-    public func clear() {
+    open func clear() {
 
         _filesPathRoot = nil
         _layers.clear()

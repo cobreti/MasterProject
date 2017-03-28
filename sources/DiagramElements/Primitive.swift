@@ -6,9 +6,9 @@
 import Foundation
 import Shapes
 
-public class Primitive {
+open class Primitive {
 
-    public var box : Rect! {
+    open var box : Rect! {
         get {
             return _box
         }
@@ -17,7 +17,7 @@ public class Primitive {
         }
     }
     
-    public var id : String! {
+    open var id : String! {
         get {
             return _id
         }
@@ -26,13 +26,13 @@ public class Primitive {
         }
     }
     
-    public var uuid : NSUUID {
+    open var uuid : UUID {
         get {
             return _uuid
         }
     }
     
-    public var name : String! {
+    open var name : String! {
         get {
             return _name
         }
@@ -41,7 +41,7 @@ public class Primitive {
         }
     }
     
-    public var modelId : String! {
+    open var modelId : String! {
         get {
             return _modelId
         }
@@ -50,7 +50,7 @@ public class Primitive {
         }
     }
     
-    public var ownerDiagram : Diagram! {
+    open var ownerDiagram : Diagram! {
         get {
             return _diagram
         }
@@ -59,10 +59,10 @@ public class Primitive {
     public init( ownerDiagram : Diagram ) {
 
         _diagram = ownerDiagram
-        _uuid = NSUUID()
+        _uuid = UUID()
     }
     
-    public func onAdded() {
+    open func onAdded() {
         
     }
 
@@ -70,7 +70,7 @@ public class Primitive {
     var _id : String!
     var _name : String!
     var _modelId : String!
-    var _uuid : NSUUID
+    var _uuid : UUID
     
     weak var _diagram : Diagram!
 }

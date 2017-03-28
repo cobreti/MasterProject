@@ -25,16 +25,16 @@ class ZoomGestureHandler : BaseGestureHandler {
         view.addGestureRecognizer(zoomRecognizer)
     }
     
-    func onZoom( sender : UIPinchGestureRecognizer ) {
+    func onZoom( _ sender : UIPinchGestureRecognizer ) {
     
         if !enabled {
             return
         }
         
         switch sender.state {
-            case UIGestureRecognizerState.Began:
+            case UIGestureRecognizerState.began:
                 sender.scale = CGFloat(portal.zoom)
-                let pt = sender.locationInView(view)
+                let pt = sender.location(in: view)
                 let pinPt = PinPoint(x: pt.x, y: pt.y)
                 
                 _ptInView = Point(x: pt.x, y: pt.y)
@@ -45,13 +45,13 @@ class ZoomGestureHandler : BaseGestureHandler {
             
                 Application.instance().actionsBus.send( ZoomDiagramAction(scale: sender.scale, velocity: sender.velocity, state: .Began, sender: self) )
             
-            case UIGestureRecognizerState.Changed:
+            case UIGestureRecognizerState.changed:
                 portal.zoom = sender.scale
                 portal.alignWithViewPinPoint(view.pinPoint!)
 
                 Application.instance().actionsBus.send( ZoomDiagramAction(scale: sender.scale, velocity: sender.velocity, state: .Changed, sender: self) )
 
-            case UIGestureRecognizerState.Ended:
+            case UIGestureRecognizerState.ended:
                 Application.instance().actionsBus.send( ZoomDiagramAction(scale: sender.scale, velocity: sender.velocity, state: .Ended, sender: self) )
 
             default:

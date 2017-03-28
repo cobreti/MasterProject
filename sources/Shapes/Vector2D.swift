@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class Vector2D {
+open class Vector2D {
 
-    public var x : CGFloat {
+    open var x : CGFloat {
         get {
             return _x
         }
@@ -19,7 +19,7 @@ public class Vector2D {
         }
     }
 
-    public var y : CGFloat {
+    open var y : CGFloat {
         get {
             return _y
         }
@@ -28,13 +28,13 @@ public class Vector2D {
         }
     }
 
-    public var module : CGFloat {
+    open var module : CGFloat {
         get {
             return sqrt( _x*_x + _y*_y )
         }
     }
 
-    public var unitVector : Vector2D! {
+    open var unitVector : Vector2D! {
         get {
             let m = self.module
             return Vector2D(x: _x / m, y: _y / m)
@@ -46,7 +46,7 @@ public class Vector2D {
         _y = y
     }
 
-    private var _x : CGFloat
-    private var _y : CGFloat
+    fileprivate var _x : CGFloat
+    fileprivate var _y : CGFloat
 }
 

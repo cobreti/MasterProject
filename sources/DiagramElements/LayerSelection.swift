@@ -8,28 +8,28 @@
 
 import Foundation
 
-public class LayerSelection {
+open class LayerSelection {
 
     public init() {
         
     }
     
-    public func add(item: Primitive) {
+    open func add(_ item: Primitive) {
         
         _items[item.uuid] = item
     }
     
-    public func remove(item: Primitive) {
-        _items.removeValueForKey(item.uuid)
+    open func remove(_ item: Primitive) {
+        _items.removeValue(forKey: item.uuid)
     }
     
-    public func clear() {
-        _items.removeAll(keepCapacity: true)
+    open func clear() {
+        _items.removeAll(keepingCapacity: true)
     }
     
-    public func isSelected(item : Primitive) -> Bool {
-        return _items.indexForKey(item.uuid) != nil
+    open func isSelected(_ item : Primitive) -> Bool {
+        return _items.index(forKey: item.uuid) != nil
     }
     
-    var _items : [NSUUID:Primitive] = [:]
+    var _items : [UUID:Primitive] = [:]
 }

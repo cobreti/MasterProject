@@ -9,7 +9,7 @@ class Step {
 
     typealias StepFunction = () -> Void
 
-    init( fct: StepFunction ) {
+    init( fct: @escaping StepFunction ) {
 
         _function = fct
     }

@@ -24,7 +24,7 @@ class DiagramSelectionStory : Story {
         _controller = DiagramSelectionController(nibName: "DiagramSelection", bundle: nil)
     }
     
-    override func onAction(action: Action) {
+    override func onAction(_ action: Action) {
         
         switch action.id {
             case .DiagramSelected:

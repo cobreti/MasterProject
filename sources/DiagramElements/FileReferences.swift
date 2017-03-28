@@ -8,15 +8,15 @@
 
 import Foundation
 
-public class FileReferences {
+open class FileReferences {
 
-    public var empty : Bool  {
+    open var empty : Bool  {
         get {
             return _refs.count == 0
         }
     }
     
-    public func add(ref: FileReference) {
+    open func add(_ ref: FileReference) {
 
         _refs[ref.diagramOrigin] = ref
 
@@ -25,13 +25,13 @@ public class FileReferences {
         }
         else {
 
-            if let r = _defRef where r.path != ref.path {
+            if let r = _defRef, r.path != ref.path {
                 _defRef = nil
             }
         }
     }
     
-    public func getForParentDiagram(origin: String!) -> FileReference! {
+    open func getForParentDiagram(_ origin: String!) -> FileReference! {
 
         if let ref = _defRef {
             return ref

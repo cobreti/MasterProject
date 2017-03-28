@@ -35,7 +35,7 @@ class QuestionnaireStory : Story {
 
         let vpProj = VpProject(document: _document)
 
-        if let url = NSBundle.mainBundle().URLForResource("diagrams",
+        if let url = Bundle.main.url(forResource: "diagrams",
                                                           withExtension: "xml",
                                                           subdirectory: "EmbeddedRes/diagrams/Questionnaire") {
 

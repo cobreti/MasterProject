@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class AxisSystem {
+open class AxisSystem {
 
     public init( p1 : Point, p2 : Point ) {
 
@@ -20,13 +20,13 @@ public class AxisSystem {
         _origin = p1
     }
 
-    public func fromAxis( p : Point ) -> Point {
+    open func fromAxis( _ p : Point ) -> Point {
 
         return Point( x: p.x * _xAxis.x + p.y * _xAxis.y + _origin.x, y: p.x * _yAxis.x + p.y * _yAxis.y + _origin.y )
     }
 
-    private var _xAxis : Vector2D
-    private var _yAxis : Vector2D
-    private var _origin : Point
+    fileprivate var _xAxis : Vector2D
+    fileprivate var _yAxis : Vector2D
+    fileprivate var _origin : Point
 }
 

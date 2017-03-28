@@ -11,14 +11,14 @@ class ProjectSelectionViewController : UIViewController {
 
     func onActivated() {
 
-        _ProjectFVBtn.enabled = true
-        _NyxBtn.enabled = true
+        _ProjectFVBtn.isEnabled = true
+        _NyxBtn.isEnabled = true
     }
 
-    @IBAction func onProjectFVSelected(sender: AnyObject) {
+    @IBAction func onProjectFVSelected(_ sender: AnyObject) {
 
-        _ProjectFVBtn.enabled = false
-        _NyxBtn.enabled = false
+        _ProjectFVBtn.isEnabled = false
+        _NyxBtn.isEnabled = false
 
         let doc = Application.instance().document
 
@@ -26,7 +26,7 @@ class ProjectSelectionViewController : UIViewController {
 
         let proj = VpProject( document: doc )
 
-        if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
+        if let url = Bundle.main.url(  forResource: "diagrams",
                                                             withExtension: "xml",
                                                             subdirectory: "EmbeddedRes/diagrams/ProjectFV") {
             proj.load(url)
@@ -37,10 +37,10 @@ class ProjectSelectionViewController : UIViewController {
         Application.instance().actionsBus.send( OpenStoryAction(story: MethodSelectionStory(), sender: self))
     }
     
-    @IBAction func onNyxSelected(sender: AnyObject) {
+    @IBAction func onNyxSelected(_ sender: AnyObject) {
 
-        _ProjectFVBtn.enabled = false
-        _NyxBtn.enabled = false
+        _ProjectFVBtn.isEnabled = false
+        _NyxBtn.isEnabled = false
 
         let doc = Application.instance().document
 
@@ -48,7 +48,7 @@ class ProjectSelectionViewController : UIViewController {
 
         let proj = VpProject( document: doc )
 
-        if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
+        if let url = Bundle.main.url(  forResource: "diagrams",
                                                             withExtension: "xml",
                                                             subdirectory: "EmbeddedRes/diagrams/Nyx") {
             proj.load(url)

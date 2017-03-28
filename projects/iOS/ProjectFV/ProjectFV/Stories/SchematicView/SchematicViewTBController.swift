@@ -46,11 +46,11 @@ class SchematicViewTBController : UIViewController {
         }
     }
 
-    @IBAction func onRecenter(sender: AnyObject) {
+    @IBAction func onRecenter(_ sender: AnyObject) {
         _recenterDelegate?()
     }
     
-    @IBAction func onShowQuestion(sender: AnyObject) {
+    @IBAction func onShowQuestion(_ sender: AnyObject) {
         _showQuestionRechercheDelegate?()
     }
     

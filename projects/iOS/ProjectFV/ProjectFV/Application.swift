@@ -59,7 +59,7 @@ class Application : ActionListener {
     
         let proj = VpProject( document: _document )
         
-        if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
+        if let url = Bundle.main.url(  forResource: "diagrams",
                                                             withExtension: "xml",
                                                             subdirectory: "EmbeddedRes/diagrams/ProjectFV") {
             proj.load(url)
@@ -76,7 +76,7 @@ class Application : ActionListener {
         _actionsBus.listeners.add(self)
     }
 
-    func onWindowReady(viewContainer: UIView) {
+    func onWindowReady(_ viewContainer: UIView) {
 
         _storiesMgr.onWindowReady(viewContainer)
 
@@ -84,7 +84,7 @@ class Application : ActionListener {
         actionsBus.send( OpenStoryAction(story: PresentationPageStory(), sender: self))
     }
 
-    func onAction(action: Action) {
+    func onAction(_ action: Action) {
 
         switch action.id {
             case .MethodSelection:
@@ -122,7 +122,7 @@ class Application : ActionListener {
 
             let proj = VpProject( document: doc )
 
-            if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
+            if let url = Bundle.main.url(  forResource: "diagrams",
                     withExtension: "xml",
                     subdirectory: "EmbeddedRes/diagrams/ProjectFV") {
                 proj.load(url)
@@ -144,10 +144,10 @@ class Application : ActionListener {
                 for (_, p) in diag.primitives {
 
                     if let  elm = p as? Element,
-                            modelId = elm.modelId,
-                            model = doc.models.get(modelId),
-                            name = elm.name,
-                            plainTextValue = model.plainTextValue {
+                            let modelId = elm.modelId,
+                            let model = doc.models.get(modelId),
+                            let name = elm.name,
+                            let plainTextValue = model.plainTextValue {
 
                         let question = SearchQuestion(title: "", content: plainTextValue);
                         if let fileRef = model.fileReferences.getForParentDiagram(nil) {
@@ -192,7 +192,7 @@ class Application : ActionListener {
 
             let proj = VpProject( document: doc )
 
-            if let url = NSBundle.mainBundle().URLForResource(  "diagrams",
+            if let url = Bundle.main.url(  forResource: "diagrams",
                     withExtension: "xml",
                     subdirectory: "EmbeddedRes/diagrams/Nyx") {
                 proj.load(url)
@@ -214,10 +214,10 @@ class Application : ActionListener {
                 for (_, p) in diag.primitives {
 
                     if let  elm = p as? Element,
-                    modelId = elm.modelId,
-                    model = doc.models.get(modelId),
-                    name = elm.name,
-                    plainTextValue = model.plainTextValue {
+                    let modelId = elm.modelId,
+                    let model = doc.models.get(modelId),
+                    let name = elm.name,
+                    let plainTextValue = model.plainTextValue {
 
                         let question = SearchQuestion(title: name, content: plainTextValue);
                         if let fileRef = model.fileReferences.getForParentDiagram(nil) {
@@ -229,7 +229,7 @@ class Application : ActionListener {
                 }
             }
             
-            self._searchQuestions.sortInPlace({$0.title < $1.title});
+            self._searchQuestions.sort(by: {$0.title < $1.title});
 
             self.executeNextStep()
         }));
@@ -302,13 +302,13 @@ class Application : ActionListener {
         }
     }
     
-    func writeToLog(text: String) {
+    func writeToLog(_ text: String) {
         
-        let formatter = NSDateFormatter()
-        let timestamp = NSDate()
-        formatter.dateStyle = NSDateFormatterStyle.FullStyle
-        formatter.timeStyle = NSDateFormatterStyle.FullStyle
-        let line = "[\(formatter.stringFromDate(timestamp))] \(text)\n"
+        let formatter = DateFormatter()
+        let timestamp = Date()
+        formatter.dateStyle = DateFormatter.Style.full
+        formatter.timeStyle = DateFormatter.Style.full
+        let line = "[\(formatter.string(from: timestamp))] \(text)\n"
         actionsBus.writeToLog(line)
     }
 

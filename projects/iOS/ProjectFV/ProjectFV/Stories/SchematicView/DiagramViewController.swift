@@ -14,9 +14,9 @@ import UIKit
 class DiagramViewController : UIViewController {
     
     enum State {
-        case Normal
-        case WillShowSubDiagram
-        case WillShowParentDiagram
+        case normal
+        case willShowSubDiagram
+        case willShowParentDiagram
     }
     
     var diagramPortal : DiagramPortal! {
@@ -75,13 +75,13 @@ class DiagramViewController : UIViewController {
         super.init(nibName: "DiagramView", bundle: nil)
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         diagramView.prepareView()
     }
 
-    override func viewDidDisappear(animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 
         diagramView.cleanup()
@@ -93,7 +93,7 @@ class DiagramViewController : UIViewController {
     }
 
 
-    func setSelectedElm( modelId: String! ) {
+    func setSelectedElm( _ modelId: String! ) {
         if let dgmView = view as? DiagramView {
             dgmView.selectedModelId = modelId
         }
@@ -104,7 +104,7 @@ class DiagramViewController : UIViewController {
         view.removeFromSuperview()
     }
     
-    func activateInView(parentView : UIView) {
+    func activateInView(_ parentView : UIView) {
         
         parentView.addSubview(view)
     }
@@ -121,7 +121,7 @@ class DiagramViewController : UIViewController {
         
         let document = Application.instance().document
         
-        view.autoresizingMask = [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
+        view.autoresizingMask = [UIViewAutoresizing.flexibleHeight, UIViewAutoresizing.flexibleWidth]
         
         let frame = view.bounds
 
@@ -151,7 +151,7 @@ class DiagramViewController : UIViewController {
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         let frame = view.bounds
 
@@ -164,16 +164,16 @@ class DiagramViewController : UIViewController {
         }
     }
     
-    func adjustAroundChild( childDiagramController: DiagramViewController ) {
+    func adjustAroundChild( _ childDiagramController: DiagramViewController ) {
         
         let childDiagramBox = childDiagramController._diagramPortal.boundingBox
         
         debugPrint("adjusting around child")
         
         if let  childDiagram = childDiagramController.diagram,
-                elm = getDiagramElementContainingChild(childDiagram),
-                box = elm.box,
-                dgmView = view as? DiagramView {
+                let elm = getDiagramElementContainingChild(childDiagram),
+                let box = elm.box,
+                let dgmView = view as? DiagramView {
 
             debugPrint("-- adjusting around child")
 
@@ -193,7 +193,7 @@ class DiagramViewController : UIViewController {
 
     }
     
-    func getDiagramElementContainingChild( childDiagram : Diagram ) -> Element! {
+    func getDiagramElementContainingChild( _ childDiagram : Diagram ) -> Element! {
         
         let document = Application.instance().document
 
@@ -201,9 +201,9 @@ class DiagramViewController : UIViewController {
 
         for (_, p) in _diagram.primitives {
             if let  elm = p as? Element,
-                    modelId = elm.modelId,
-                    model = document.models.get(modelId),
-                    subDiagramRef = model.subDiagrams.getForParentDiagram(childDiagram.name) {
+                    let modelId = elm.modelId,
+                    let model = document.models.get(modelId),
+                    let subDiagramRef = model.subDiagrams.getForParentDiagram(childDiagram.name) {
                 
                 debugPrint("- subDiagramName : \(subDiagramRef.diagramName)")
                 
@@ -231,11 +231,11 @@ class DiagramViewController : UIViewController {
         }
     }
 
-    func enterSubDiagram(velocity: CGFloat) -> Bool {
+    func enterSubDiagram(_ velocity: CGFloat) -> Bool {
         
         if let  portal = _subDiagramPortal,
-                ctrller = portal.subDiagramController,
-                diagram = ctrller.diagram {
+                let ctrller = portal.subDiagramController,
+                let diagram = ctrller.diagram {
             
             if _parentController.diagramViewsManager.contains(diagram.name) {
                 return false
@@ -257,7 +257,7 @@ class DiagramViewController : UIViewController {
         return portalRect.size.width < 400 && portalRect.size.height < 400
     }
     
-    func setState( state: State ) {
+    func setState( _ state: State ) {
     
         if _state != state {
             _state = state
@@ -265,7 +265,7 @@ class DiagramViewController : UIViewController {
         }
     }
     
-    func onAction(action: Action) {
+    func onAction(_ action: Action) {
         
         switch action.id {
             
@@ -294,14 +294,14 @@ class DiagramViewController : UIViewController {
         }
     }
     
-    func onPanAction(action: PanDiagramAction) {
+    func onPanAction(_ action: PanDiagramAction) {
     
         _diagramPortal.translation = action.translation
         _subDiagramPortal?.updateSubDiagramArea()
         view.setNeedsDisplay()
     }
     
-    func onZoomAction(action: ZoomDiagramAction) {
+    func onZoomAction(_ action: ZoomDiagramAction) {
         
         switch action.state {
             case .Began:
@@ -311,13 +311,13 @@ class DiagramViewController : UIViewController {
                 _subDiagramPortal?.updateSubDiagramArea()
                 
                 if enterSubDiagram(action.velocity) {
-                    setState(.WillShowSubDiagram)
+                    setState(.willShowSubDiagram)
                 }
                 else if enterParentDiagram() {
-                    setState(.WillShowParentDiagram)
+                    setState(.willShowParentDiagram)
                 }
                 else {
-                    setState(.Normal)
+                    setState(.normal)
                 }
                 
                 view.setNeedsDisplay()
@@ -327,13 +327,13 @@ class DiagramViewController : UIViewController {
             case .Ended:
                 _subDiagramPortal?.updateSubDiagramArea()
                 
-                setState(.Normal)
+                setState(.normal)
                 
                 if enterSubDiagram(action.velocity) {
                     let subDiagramController = _subDiagramPortal.subDiagramController
                     let pickedElm = _subDiagramPortal?.pickedElement
                     _subDiagramPortal.detach()
-                    Application.instance().actionsBus.send( EnterSubDiagramAction(subDiagramController: subDiagramController, selectedElement: pickedElm, sender: nil) )
+                    Application.instance().actionsBus.send( EnterSubDiagramAction(subDiagramController: subDiagramController!, selectedElement: pickedElm, sender: nil) )
 
                 }
                 else if enterParentDiagram() {
@@ -348,7 +348,7 @@ class DiagramViewController : UIViewController {
         }
     }
     
-    func onTapAction(action: TapDiagramAction) {
+    func onTapAction(_ action: TapDiagramAction) {
         
         let primitives = _diagram.primitivesFromPt(action.pt)
         
@@ -364,7 +364,7 @@ class DiagramViewController : UIViewController {
                 if let elm = item as? Element {
 
                     if let  v = view as? DiagramView,
-                            model = document.models.get(elm.modelId) where model.fileReferences.empty {
+                            let model = document.models.get(elm.modelId), model.fileReferences.empty {
                         v.selectedModelId = elm.modelId
                     }
 
@@ -376,7 +376,7 @@ class DiagramViewController : UIViewController {
         }
     }
 
-    func onLongPressAction(action: LongPressAction) {
+    func onLongPressAction(_ action: LongPressAction) {
 
         let primitives = _diagram.primitivesFromPt(action.pt)
 
@@ -396,9 +396,9 @@ class DiagramViewController : UIViewController {
 
             if let  elm = selectedElm,
 
-                    graph = graphs.get(_diagram.name),
-                    graphElm = graph.items.get(elm.modelId) as? DisplayGraph_Element,
-                    _ = graphElm.subDiagramIcon {
+                    let graph = graphs.get(_diagram.name),
+                    let graphElm = graph.items.get(elm.modelId) as? DisplayGraph_Element,
+                    let _ = graphElm.subDiagramIcon {
 
 //                _parentController.navigationHistory.currentGroup.next = NavigationItem(modelId: elm.modelId);
 
@@ -409,21 +409,21 @@ class DiagramViewController : UIViewController {
                 switch action.state {
 
                     case .Began:
-                        graphElm.state = .Selected
+                        graphElm.state = .selected
                         _selectedGraphElement = graphElm
                         view?.setNeedsDisplay()
                         break;
 
                     case .Ended:
-                        graphElm.state = .Normal
+                        graphElm.state = .normal
                         _selectedGraphElement = nil
                         view?.setNeedsDisplay()
 
                         let document = Application.instance().document
 
                         if let  model = document.models.get(elm.modelId),
-                                ref = model.subDiagrams.getForParentDiagram(_diagram.name),
-                                subDiagram = document.diagrams.get(ref.diagramName) {
+                                let ref = model.subDiagrams.getForParentDiagram(_diagram.name),
+                                let subDiagram = document.diagrams.get(ref.diagramName) {
 
                             debugPrint("element selected : '\(elm.modelId)' in diagram : \(_diagram.name)")
 
@@ -441,7 +441,7 @@ class DiagramViewController : UIViewController {
         else {
 
             if let e = _selectedGraphElement {
-                e.state = .Normal
+                e.state = .normal
                 _selectedGraphElement = nil
                 view?.setNeedsDisplay()
             }
@@ -460,10 +460,10 @@ class DiagramViewController : UIViewController {
 
     var _selectedGraphElement : DisplayGraph_Element!
 
-    var _state : State = .Normal
+    var _state : State = .normal
     
     var _gestureEnabled : Bool = true
-    var _viewDrawingMode : ViewDrawingMode = .Normal
+    var _viewDrawingMode : ViewDrawingMode = .normal
 
     var _originModelId: String!
 }

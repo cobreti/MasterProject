@@ -76,27 +76,27 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
 
         _diagramViewsManager.activate( DiagramViewController(parentController: self, diagram: _diagram, originModelId: nil) )
     }
 
-    func activate(controller: DiagramViewController, completionHandler: (() -> Void)! ) {
+    func activate(_ controller: DiagramViewController, completionHandler: (() -> Void)! ) {
         
         controller.activateInView( _diagramArea )
-        controller.viewDrawingMode = .Normal
+        controller.viewDrawingMode = .normal
         
-        UIView.animateWithDuration(
-            NSTimeInterval(0.5), animations: {() -> Void in
+        UIView.animate(
+            withDuration: TimeInterval(0.5), animations: {() -> Void in
                 controller.view.frame = self._diagramArea.bounds
             }, completion: {(Bool) -> Void in
-                controller.view.userInteractionEnabled = true
+                controller.view.isUserInteractionEnabled = true
                 controller.updatePortalRect()
                 completionHandler?()
         })
     }
     
-    func deactivate( controller: DiagramViewController, newController: DiagramViewController, completionHandler: (() -> Void)! ) {
+    func deactivate( _ controller: DiagramViewController, newController: DiagramViewController, completionHandler: (() -> Void)! ) {
      
         if let dgmView = controller.diagramView {
             let pinPt = dgmView.pinPoint!
@@ -110,17 +110,17 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             newController.view.frame = newViewFrame
             newController.view.alpha = 0.0
             newController.resetView()
-            newController.view.userInteractionEnabled = true
+            newController.view.isUserInteractionEnabled = true
             newController.activateInView(_diagramArea)
             controller.view.alpha = 1.0
             
-            UIView.animateWithDuration(
-                NSTimeInterval(0.5),
+            UIView.animate(
+                withDuration: TimeInterval(0.5),
                 animations: { () -> Void in
                     controller.view.alpha = 0.0
                     newController.view.frame = self._diagramArea.bounds
                     newController.view.alpha = 1.0
-                    newController.viewDrawingMode = .Normal
+                    newController.viewDrawingMode = .normal
                 },
                 completion: {(Bool) -> Void in
                     controller.deactivate()
@@ -133,10 +133,10 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         _toolbarController?.diagramName = newController.diagram.name
     }
     
-    func onDiagramViewStateChanged( state: DiagramViewController.State ) {
+    func onDiagramViewStateChanged( _ state: DiagramViewController.State ) {
         
         switch state {
-            case .Normal:
+            case .normal:
                 _upArrowImageView.removeFromSuperview()
                 _downArrowImageView.removeFromSuperview()
                 _leftArrowImageView.removeFromSuperview()
@@ -144,10 +144,10 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                 _tempParentController?.view.removeFromSuperview()
                 _tempParentController = nil
                 break
-            case .WillShowParentDiagram:
+            case .willShowParentDiagram:
                 onWillShowParentDiagram()
                 break
-            case .WillShowSubDiagram:
+            case .willShowSubDiagram:
                 onWillShowSubDiagram()
                 break
         }
@@ -182,7 +182,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
             _tempParentController.view.frame = _diagramArea.bounds
             _tempParentController.adjustAroundChild(_diagramViewsManager.currentController!)
             _tempParentController.view.alpha = 0.5
-            _tempParentController.view.userInteractionEnabled = false
+            _tempParentController.view.isUserInteractionEnabled = false
             _diagramArea.addSubview(_tempParentController.view)
         }
         
@@ -206,7 +206,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
     }
     
 
-    @IBAction func onBack(sender: AnyObject) {
+    @IBAction func onBack(_ sender: AnyObject) {
 
         let app = Application.instance()
 
@@ -222,7 +222,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         Application.instance().actionsBus.send( RecenterDiagramAction(sender: nil) )
     }
     
-    func onDiagramViewActivated(    oldDiagramView: DiagramViewController!,
+    func onDiagramViewActivated(    _ oldDiagramView: DiagramViewController!,
                                     newDiagramView: DiagramViewController ) {
      
         if let _ = oldDiagramView {
@@ -230,11 +230,11 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         }
     }
     
-    func onDiagramViewDeactivated(diagramView: DiagramViewController) {
+    func onDiagramViewDeactivated(_ diagramView: DiagramViewController) {
         _diagramsHistoryController.remove(diagramView)
     }
     
-    func onAction(action: Action) {
+    func onAction(_ action: Action) {
         
         switch action.id {
 
@@ -262,7 +262,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
                 if let esda = action as? EnterSubDiagramAction {
 
                     if let  ctrller = diagramViewsManager.currentController,
-                    elm = esda.selectedElement {
+                    let elm = esda.selectedElement {
                         ctrller.setSelectedElm(elm.modelId)
                     }
 
@@ -295,7 +295,7 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         _diagramsHistoryController.onAction(action)
     }
     
-    func onSelectDiagramElement(action: SelectDiagramElementAction) {
+    func onSelectDiagramElement(_ action: SelectDiagramElementAction) {
         let document = Application.instance().document
         
         if let  model = document.models.get(action.element.modelId) {
@@ -303,9 +303,9 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
 //            navigationHistory.currentGroup.next = NavigationItem(modelId: model.id);
 
             if let  currentController = _diagramViewsManager.currentController,
-                    currentDiagram = currentController.diagram,
-                    ref = model.fileReferences.getForParentDiagram(currentDiagram.name),
-                    rootPath = document.filesPathRoot {
+                    let currentDiagram = currentController.diagram,
+                    let ref = model.fileReferences.getForParentDiagram(currentDiagram.name),
+                    let rootPath = document.filesPathRoot {
                     
                 let app = Application.instance()
                 
@@ -313,9 +313,9 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
 //                    app.stories.push( FileViewStory(file: rootPath + filePath) )
             }
             else if let currentController = _diagramViewsManager.currentController,
-                        currentDiagram = currentController.diagram,
-                        ref = model.subDiagrams.getForParentDiagram(currentDiagram.name),
-                        subDiagram = document.diagrams.get(ref.diagramName) where !diagramViewsManager.contains(ref.diagramName) {
+                        let currentDiagram = currentController.diagram,
+                        let ref = model.subDiagrams.getForParentDiagram(currentDiagram.name),
+                        let subDiagram = document.diagrams.get(ref.diagramName), !diagramViewsManager.contains(ref.diagramName) {
 
                 let app = Application.instance()
 
@@ -331,13 +331,13 @@ class SchematicViewController : UIViewController, DiagramViewsManagerDelegate {
         }
     }
     
-    func onFileViewAction(action: FileViewAction) {
+    func onFileViewAction(_ action: FileViewAction) {
 
         let app = Application.instance()
         app.stories.push( FileViewStory(file: action.file) )
     }
     
-    func onShowDiagram(action: ShowDiagramAction) {
+    func onShowDiagram(_ action: ShowDiagramAction) {
         
 //        _diagramNameLabel?.text = action.diagram.name
         _toolbarController?.diagramName = action.diagram.name

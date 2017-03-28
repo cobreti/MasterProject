@@ -10,5 +10,5 @@ import Foundation
 
 protocol XmlElementParserDelegate {
     
-    func onParsingCompleted( elmParser : XmlElementParser )
+    func onParsingCompleted( _ elmParser : XmlElementParser )
 }

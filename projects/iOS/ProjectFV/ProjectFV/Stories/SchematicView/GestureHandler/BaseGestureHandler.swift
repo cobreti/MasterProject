@@ -37,7 +37,7 @@ class BaseGestureHandler : NSObject {
         _portal = portal
     }
     
-    private var _view : DiagramView
-    private var _portal : DiagramPortal
-    private var _enabled : Bool = true
+    fileprivate var _view : DiagramView
+    fileprivate var _portal : DiagramPortal
+    fileprivate var _enabled : Bool = true
 }

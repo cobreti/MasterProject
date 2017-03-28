@@ -24,11 +24,11 @@ class DisplayTextContentViewController  : UIViewController {
         _textContent.text = _contentText
         _title.text = _titleText
         
-        _continueBtn.hidden = _hideButton
+        _continueBtn.isHidden = _hideButton
     }
 
 
-    @IBAction func onContinue(sender: AnyObject) {
+    @IBAction func onContinue(_ sender: AnyObject) {
         let app = Application.instance()
         app.executeNextStep()
     }

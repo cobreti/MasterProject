@@ -34,25 +34,25 @@ class DisplayGraph_Link : DisplayGraphItem {
         _type = type
     }
 
-    override func draw(params: DisplayGraphDrawParams) {
+    override func draw(_ params: DisplayGraphDrawParams) {
 
         let count = _pts.count
 
         if count > 1 {
 
-            CGContextBeginPath(params.context)
+            params.context.beginPath()
 
             var pt = _pts.get(0)
             var portalPt = params.portal.pointFromDiagramToPortal(pt)
-            CGContextMoveToPoint(params.context, CGFloat(portalPt.x), CGFloat(portalPt.y))
+            params.context.move(to: CGPoint(x: CGFloat(portalPt.x), y: CGFloat(portalPt.y)))
 
-            for var idx = 1; idx < count; idx++ {
+            for idx in 1 ..< count {
                 pt = _pts.get(idx)
                 portalPt = params.portal.pointFromDiagramToPortal(pt)
-                CGContextAddLineToPoint(params.context, CGFloat(portalPt.x), CGFloat(portalPt.y))
+                params.context.addLine(to: CGPoint(x: CGFloat(portalPt.x), y: CGFloat(portalPt.y)))
             }
 
-            CGContextDrawPath(params.context, CGPathDrawingMode.Stroke)
+            params.context.drawPath(using: CGPathDrawingMode.stroke)
 
 //            switch _type {
 //

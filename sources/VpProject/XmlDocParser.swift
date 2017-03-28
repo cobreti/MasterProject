@@ -7,16 +7,16 @@ import Foundation
 import DiagramElements
 import Shapes
 
-class XmlDocParser : NSObject, NSXMLParserDelegate {
+class XmlDocParser : NSObject, XMLParserDelegate {
 
     init( doc : DiagramElements.Document ) {
 
         _doc = doc
     }
 
-    func parse( url : NSURL ) {
+    func parse( _ url : URL ) {
 
-        let parser = NSXMLParser(contentsOfURL: url)
+        let parser = XMLParser(contentsOf: url)
 
         parser?.delegate = self
         parser?.parse()
@@ -37,7 +37,7 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
     /**
      *
      */
-    func parser(parser: NSXMLParser,
+    func parser(_ parser: XMLParser,
                 didStartElement elementName: String,
                 namespaceURI: String?,
                 qualifiedName qName: String?,
@@ -71,7 +71,7 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
         
     }
 
-    func parser(    parser: NSXMLParser,
+    func parser(    _ parser: XMLParser,
                     didEndElement elementName: String,
                     namespaceURI: String?,
                     qualifiedName qName: String?) {
@@ -81,7 +81,7 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
         }
     }
 
-    func pushElementParser( parser : XmlElementParser ) {
+    func pushElementParser( _ parser : XmlElementParser ) {
         _elementParsers.append(parser)
         
         if let state = _xmlState {
@@ -89,14 +89,14 @@ class XmlDocParser : NSObject, NSXMLParserDelegate {
         }
     }
 
-    func popElementParser( parser : XmlElementParser ) {
+    func popElementParser( _ parser : XmlElementParser ) {
         _elementParsers.removeLast()
     }
 
     /**
     *
     */
-    func onPoints(attributeDict : [NSObject:AnyObject]) {
+    func onPoints(_ attributeDict : [AnyHashable: Any]) {
         
     }
 

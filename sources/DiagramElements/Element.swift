@@ -5,7 +5,7 @@
 
 import Foundation
 
-public class Element : Primitive {
+open class Element : Primitive {
     
     public override init( ownerDiagram : Diagram ) {
         super.init(ownerDiagram: ownerDiagram)

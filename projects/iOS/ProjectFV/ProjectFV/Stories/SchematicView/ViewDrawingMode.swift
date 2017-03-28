@@ -10,6 +10,6 @@ import Foundation
 
 
 enum ViewDrawingMode {
-    case Normal
-    case Thumbnail
+    case normal
+    case thumbnail
 }

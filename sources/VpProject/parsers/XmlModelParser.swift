@@ -25,18 +25,18 @@ class XmlModelParser : XmlSubTreeParser {
         _parent = parent
     }
     
-    override func onGlobalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onGlobalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
         
         
         super.onGlobalStartElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
     }
     
-    override func onGlobalEndElement(elementName: String, namespaceURI: String?, qualifiedName: String?) {
+    override func onGlobalEndElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?) {
         
         super.onGlobalEndElement(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName)
     }
     
-    override func onLocalStartElement(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onLocalStartElement(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
         
         switch elementName {
             case "ModelsProperty":
@@ -64,7 +64,7 @@ class XmlModelParser : XmlSubTreeParser {
         }
     }
     
-    override func onElementParsingStarting(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    override func onElementParsingStarting(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
         
         super.onElementParsingStarting(elementName, namespaceURI: namespaceURI, qualifiedName: qualifiedName, attributeDict: attributeDict)
 
@@ -74,14 +74,14 @@ class XmlModelParser : XmlSubTreeParser {
         }
     }
 
-    func onModelsProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    func onModelsProperty(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
 
-        if let  name = attributeDict["name"] as? String where name == "references" {
+        if let  name = attributeDict["name"] as? String, name == "references" {
             pushElementParser( XmlReferencesParser(name: "ModelsProperty", model: _model, delegate: self) )
         }
     }
     
-    func onStringProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject : AnyObject]) {
+    func onStringProperty(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
         
         
 //        if let  displayName = attributeDict["displayName"] as? String,
@@ -103,16 +103,16 @@ class XmlModelParser : XmlSubTreeParser {
 //        }
 
         if let  _ = attributeDict["name"] as? String,
-                value = attributeDict["value"] as? String {
+                let value = attributeDict["value"] as? String {
             _model?.name = value
         }
     }
 
-    func onHTMLProperty(elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [NSObject:AnyObject]) {
+    func onHTMLProperty(_ elementName: String, namespaceURI: String?, qualifiedName: String?, attributeDict: [AnyHashable: Any]) {
 
         if let  name = attributeDict["name"] as? String,
-                displayName = attributeDict["displayName"] as? String,
-                plainTextValue = attributeDict["plainTextValue"] as? String where name == "documentation" && displayName == "Description" {
+                let displayName = attributeDict["displayName"] as? String,
+                let plainTextValue = attributeDict["plainTextValue"] as? String, name == "documentation" && displayName == "Description" {
 
             _model?.plainTextValue = plainTextValue
         }

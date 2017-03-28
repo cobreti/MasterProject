@@ -17,7 +17,7 @@ class StoriesMgr : ActionListener {
         _controller = StoriesBoardController(nibName: "StoriesBoard", bundle: nil)
     }
     
-    func push( story : Story ) {
+    func push( _ story : Story ) {
 
         _stories.append(story)
         story.ownerStoriesMgr = self
@@ -64,22 +64,22 @@ class StoriesMgr : ActionListener {
         }
     }
 
-    func activateStory(story: Story) {
+    func activateStory(_ story: Story) {
 
         switch story.type {
 
-            case .Default:
+            case .default:
                 _controller.setStoryView(story.view)
                 _controller.setStoryTB(story.toolbar)
                 story.onActivate()
                 _controller.enableBackButton( _stories.count > 1 && story.backEnabled)
 
-            case .Modal:
+            case .modal:
                 _controller.setModalStoryView(story.view)
         }
     }
 
-    func onWindowReady(viewContainer: UIView) {
+    func onWindowReady(_ viewContainer: UIView) {
 
         viewContainer.addSubview(_controller.view)
         _controller.view.frame = viewContainer.bounds
@@ -95,7 +95,7 @@ class StoriesMgr : ActionListener {
         }
     }
 
-    func onAction(action: Action) {
+    func onAction(_ action: Action) {
         
         switch action.id {
             
@@ -108,7 +108,7 @@ class StoriesMgr : ActionListener {
                 }
 
             case .Restart:
-                _stories.removeAll(keepCapacity: false)
+                _stories.removeAll(keepingCapacity: false)
                 Application.instance().actionsBus.send( OpenStoryAction(story: QuestionnaireStory(), sender: self))
 
             default:

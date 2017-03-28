@@ -32,7 +32,7 @@ class DiagramViewsManager {
         _delegate = delegate
     }
     
-    func onAction(action: Action) {
+    func onAction(_ action: Action) {
 
         switch action.id {
 
@@ -48,9 +48,9 @@ class DiagramViewsManager {
         currentController?.onAction(action)
     }
 
-    func onHistoryDiagramSelected(action: HistoryDiagramSelectedAction) {
+    func onHistoryDiagramSelected(_ action: HistoryDiagramSelectedAction) {
 
-        while let item = _diagramViewControllers.last where item !== action.diagramController {
+        while let item = _diagramViewControllers.last, item !== action.diagramController {
 
             item.deactivate()
             _diagramViewControllers.removeLast()
@@ -59,14 +59,14 @@ class DiagramViewsManager {
         if let item = _diagramViewControllers.last {
             item.activateInView(_schematicViewController._diagramArea)
             item.view.frame = _schematicViewController._diagramArea.bounds
-            item.viewDrawingMode = .Normal
-            item.view.userInteractionEnabled = true
+            item.viewDrawingMode = .normal
+            item.view.isUserInteractionEnabled = true
             item.diagramView.prepareView()
             item.updatePortalRect()
         }
     }
     
-    func activate(controller: DiagramViewController) {
+    func activate(_ controller: DiagramViewController) {
      
         var oldController : DiagramViewController! = nil
      
@@ -81,13 +81,13 @@ class DiagramViewsManager {
         })
     }
  
-    func deactivate(controller: DiagramViewController) {
+    func deactivate(_ controller: DiagramViewController) {
         
         if _diagramViewControllers.count < 2 {
             return
         }
         
-        if let ctrller = currentController where ctrller === controller {
+        if let ctrller = currentController, ctrller === controller {
             
             _diagramViewControllers.removeLast()
             _schematicViewController.deactivate(controller, newController: currentController!, completionHandler: {() -> Void in
@@ -96,10 +96,10 @@ class DiagramViewsManager {
         }
     }
     
-    func contains(diagramName : String) -> Bool {
+    func contains(_ diagramName : String) -> Bool {
         
         for c in _diagramViewControllers {
-            if let  d = c.diagram where d.name == diagramName {
+            if let  d = c.diagram, d.name == diagramName {
                 return true
             }
         }

@@ -10,27 +10,27 @@ import Foundation
 import Shapes
 
 
-public class Diagram : CustomDebugStringConvertible {
+open class Diagram : CustomDebugStringConvertible {
 
-    public var box : Rect! {
+    open var box : Rect! {
         get {
             return _box
         }
     }
 
-    public var name : String {
+    open var name : String {
         get {
             return _name
         }
     }
     
-    public var primitives : [String : Primitive] {
+    open var primitives : [String : Primitive] {
         get {
             return _primitives
         }
     }
     
-    public var selection : LayerSelection {
+    open var selection : LayerSelection {
         get {
             return _selection
         }
@@ -41,18 +41,18 @@ public class Diagram : CustomDebugStringConvertible {
         _selection = LayerSelection()
     }
 
-    public func add( primitive : Primitive ) {
+    open func add( _ primitive : Primitive ) {
 
         _primitives[primitive.id] = primitive
         
         primitive.onAdded()
     }
     
-    public func get( id : String ) -> Primitive! {
+    open func get( _ id : String ) -> Primitive! {
         return _primitives[id]
     }
 
-    public func updateBoundingBox() {
+    open func updateBoundingBox() {
         
         _box = nil
         
@@ -71,18 +71,18 @@ public class Diagram : CustomDebugStringConvertible {
         }
     }
     
-    public var debugDescription: String {
+    open var debugDescription: String {
         get {
             return ""
         }
     }
     
-    public func primitivesFromPt(pt: Point) -> [Primitive] {
+    open func primitivesFromPt(_ pt: Point) -> [Primitive] {
         var res : [Primitive] = []
         
         for (_, item) in _primitives {
             
-            if let elm = item as? Element where elm.box.contains(pt) {
+            if let elm = item as? Element, elm.box.contains(pt) {
                 res.append(elm)
             }
         }
